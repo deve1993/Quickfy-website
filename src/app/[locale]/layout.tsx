@@ -7,6 +7,7 @@ import { locales } from '../../i18n/request';
 import { FloatingLanguageSwitcher } from '@/components/ui/language-switcher';
 import { PerformanceMonitor, ResourceMonitor } from '@/components/PerformanceMonitor';
 import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
 import { ToastProvider } from '@/components/ui/toast';
 import './globals.css';
 import Script from 'next/script';
@@ -91,6 +92,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <ToastProvider>
               <Header />
               {children}
+              <Footer />
               <FloatingLanguageSwitcher />
               <PerformanceMonitor />
               <ResourceMonitor />

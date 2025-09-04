@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { BarChart3, Mail, Phone, MapPin, ArrowUp, Linkedin, Twitter } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { PhoneLink } from '../ui/PhoneLink';
 
 export function Footer() {
   const t = useTranslations();
@@ -56,13 +57,13 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" aria-hidden="true" />
-                <a 
-                  href="tel:+390123456789" 
+                <PhoneLink 
+                  phoneNumber="+390123456789"
                   className="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
-                  aria-label="Chiama QuickFy"
+                  ariaLabel="Chiama QuickFy"
                 >
                   +39 012 345 6789
-                </a>
+                </PhoneLink>
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary flex-shrink-0" aria-hidden="true" />

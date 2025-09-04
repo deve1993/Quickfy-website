@@ -1,7 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import { HeroSection } from '@/components/sections/HeroSection';
 import dynamic from 'next/dynamic';
-import { Footer } from '@/components/layout/Footer';
 import { PreloadScript } from '@/components/PreloadScript';
 import { Suspense } from 'react';
 import { FeaturesSectionSkeleton } from '@/components/ui/skeleton';
@@ -149,8 +148,6 @@ export default async function HomePage() {
         <Suspense fallback={<div className="h-96 flex items-center justify-center"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div></div>}>
           <ContactSection />
         </Suspense>
-        
-        <Footer />
       </main>
     </>
   );
