@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "title": "QuickFy - Transform Marketing Data into Clear Business Decisions",
+    "description": "Platform for SMEs that simplifies digital marketing data analysis and optimizes advertising performance for effective strategic decisions."
+  },
+  "hero": {
+    "headline": "Transform digital marketing data into",
+    "headlineHighlight": "clear business decisions",
+    "subheadline": "QuickFy Performance Suite helps SMEs navigate digital marketing complexity, transforming scattered data into strategic insights for confident growth.",
+    "cta": {
+      "primary": "Discover QuickFy",
+      "secondary": "Book Demo"
+    },
+    "metrics": {
+      "hoursSaved": "15+ Hours Saved Weekly",
+      "roiImprovement": "+35% ROI Improvement",
+      "clarity": "100% Clarity in Results"
+    },
+    "typewriter": [
+      "strategic decisions",
+      "sustainable growth",
+      "measurable results",
+      "digital success"
+    ]
+  },
+  "features": {
+    "title": "The 3 Pillars of the",
+    "titleHighlight": "Performance Suite",
+    "subtitle": "A comprehensive platform that transforms digital marketing complexity into strategic clarity for SMEs",
+    "items": [
+      {
+        "id": "data-intelligence",
+        "title": "Data Intelligence & Reporting",
+        "description": "Centralized dashboard that unifies all marketing channels into a single source of truth for informed decisions.",
+        "benefits": [
+          "Unified view of all channels",
+          "Automated and customizable reports",
+          "Clear and actionable strategic KPIs"
+        ],
+        "icon": "BarChart3"
+      },
+      {
+        "id": "performance-ads",
+        "title": "Advertising Performance Management",
+        "description": "Continuous optimization of advertising campaigns with real-time monitoring and intelligent automation.",
+        "benefits": [
+          "Automatic budget optimization",
+          "Real-time performance monitoring",
+          "Constantly improved ROI and ROAS"
+        ],
+        "icon": "Target"
+      },
+      {
+        "id": "client-platform",
+        "title": "Exclusive Client Platform",
+        "description": "Dedicated client access with personalized reports and intuitive dashboards for complete transparency.",
+        "benefits": [
+          "24/7 access to personalized reports",
+          "Intuitive and user-friendly dashboards",
+          "Complete transparency on results"
+        ],
+        "icon": "Users"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Why SMEs choose",
+    "titleHighlight": "QuickFy",
+    "subtitle": "Concrete results that make a difference for your business growth",
+    "items": [
+      {
+        "title": "Time Returned",
+        "description": "Weekly hours recovered from report automation",
+        "value": "15+",
+        "unit": "hours/week"
+      },
+      {
+        "title": "Strategic Clarity",
+        "description": "Decisions based on clear data and actionable insights",
+        "value": "100%",
+        "unit": "transparency"
+      },
+      {
+        "title": "Improved ROI",
+        "description": "Average increase in advertising investment returns",
+        "value": "35%",
+        "unit": "ROI increase"
+      },
+      {
+        "title": "Client Retention Rate",
+        "description": "The satisfaction and trust of our clients is our priority.",
+        "value": "92%",
+        "unit": "retention rate"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Your Business, Under Control.",
+    "subtitle": "Access your personal portal, make your requests and track your Google Analytics results in a simple and intuitive way.",
+    "perfectFor": "Perfect for:",
+    "features": "Features:",
+    "plans": {
+      "analytics": {
+        "name": "ANALYTICS",
+        "price": "19",
+        "period": "month",
+        "badge": "RECOMMENDED",
+        "perfectFor": "Perfect for: All clients who want a single reference point to collaborate with us and monitor their website performance without getting lost in Google Analytics complexity.",
+        "features": {
+          "0": "Access to Personal Client Portal",
+          "1": "Simple Ticketing System",
+          "2": "Simplified Google Analytics Dashboard",
+          "3": "Portal Support"
+        },
+        "cta": "Get Started"
+      },
+      "plus": {
+        "name": "PLUS (Reputation)",
+        "price": "39",
+        "period": "month",
+        "badge": "COMING SOON",
+        "perfectFor": "Perfect for: Local businesses, restaurants, hotels and professionals for whom online reviews are vital.",
+        "features": {
+          "0": "All ANALYTICS plan features",
+          "1": "Reviews Management Module",
+          "2": "Simplified Responses"
+        },
+        "cta": "Coming Soon"
+      },
+      "pro": {
+        "name": "PRO (Social Hub)",
+        "price": "69",
+        "period": "month",
+        "badge": "COMING SOON",
+        "perfectFor": "Perfect for: Companies that actively invest in social media and want a single place to monitor their entire online presence.",
+        "features": {
+          "0": "All PLUS plan features",
+          "1": "Social Hub Module",
+          "2": "Social Media Dashboard",
+          "3": "(Future) Post scheduling capability"
+        },
+        "cta": "Coming Soon"
+      }
+    },
+    "consultation": {
+      "title": "Not sure which plan is right for you?",
+      "subtitle": "Book a free 30-minute consultation to discover the solution that best fits your needs.",
+      "cta": "Free Consultation",
+      "formMessage": "Hello! I would like to book a free consultation to find out which QuickFy plan best suits my company's needs. "
+    }
+  },
+  "contact": {
+    "title": "Ready to transform",
+    "titleHighlight": "your marketing",
+    "subtitle": "Start your journey today towards clearer marketing decisions and measurable results",
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Your name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Your business email"
+        },
+        "company": {
+          "label": "Company",
+          "placeholder": "Company name"
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "Phone number"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Describe your current marketing challenges..."
+        }
+      },
+      "submit": "Request Free Consultation",
+      "submitting": "Sending...",
+      "privacy": "I agree to the processing of personal data according to the Privacy Policy"
+    },
+    "success": {
+      "title": "Request Sent!",
+      "message": "We will contact you within 24 hours to schedule your free consultation."
+    }
+  },
+  "languageSwitcher": {
+    "label": "Change language",
+    "languages": {
+      "cs": "Čeština",
+      "en": "English",
+      "it": "Italiano"
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Read about the experiences of companies that automated their processes with us and achieved exceptional results",
+    "previousTestimonial": "Previous testimonial",
+    "nextTestimonial": "Next testimonial",
+    "goToTestimonial": "Go to testimonial",
+    "trustIndicators": {
+      "rating": "4.9/5 rating",
+      "clients": "500+ satisfied clients",
+      "projects": "1200+ successful projects"
+    },
+    "testimonial1": {
+      "name": "James Wilson",
+      "role": "Operations Director",
+      "company": "TechFlow Solutions",
+      "content": "QuickFy helped us reduce administrative time by 60%. Our teams can now focus on strategic tasks instead of routine activities. ROI was achieved within just 3 months."
+    },
+    "testimonial2": {
+      "name": "Sarah Johnson",
+      "role": "IT Manager",
+      "company": "FinanceFirst Ltd",
+      "content": "The integration of QuickFy into our systems was seamless. Automating financial reports saves us 20 hours per week and eliminated human errors. Highly recommended."
+    },
+    "testimonial3": {
+      "name": "Michael Brown",
+      "role": "CEO",
+      "company": "LogiStream UK",
+      "content": "With QuickFy, we optimized our entire supply chain. Logistics costs decreased by 35% and efficiency increased by 45%. The best investment we've made in recent years."
+    },
+    "testimonial4": {
+      "name": "Emma Davis",
+      "role": "HR Director",
+      "company": "PeopleConnect Inc",
+      "content": "QuickFy automated our HR process from recruitment to onboarding. Processing new employees went from weeks to days. Both employees and managers are much happier."
+    },
+    "testimonial5": {
+      "name": "David Miller",
+      "role": "Sales Director",
+      "company": "GrowthHub London",
+      "content": "Automating our sales funnel brought a 50% increase in conversions. QuickFy analyzes customer data in real-time and suggests optimal actions. Sales have never been easier."
+    }
+  },
+  "footer": {
+    "description": "QuickFy Performance Suite - The platform that transforms digital marketing complexity into strategic clarity for SMEs.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "contact": "Contact"
+    },
+    "copyright": "© 2024 QuickFy. All rights reserved."
+  }
+}

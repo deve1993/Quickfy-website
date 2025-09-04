@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "title": "QuickFy - Trasforma i dati marketing in decisioni aziendali chiare",
+    "description": "Piattaforma per PMI che semplifica l'analisi dei dati marketing digitale e ottimizza le performance pubblicitarie per decisioni strategiche efficaci."
+  },
+  "hero": {
+    "headline": "Trasforma i dati del marketing digitale in ",
+    "headlineHighlight": "decisioni aziendali chiare",
+    "subheadline": "QuickFy Performance Suite aiuta le PMI a navigare nella complessità del marketing digitale, trasformando dati sparsi in strategie concrete per crescere con sicurezza.",
+    "cta": {
+      "primary": "Scopri QuickFy",
+      "secondary": "Prenota Demo"
+    },
+    "metrics": {
+      "hoursSaved": "15+ Ore Risparmiate a Settimana",
+      "roiImprovement": "+35% Miglioramento del ROI",
+      "clarity": "100% Chiarezza nei Risultati"
+    },
+    "typewriter": [
+      "decisioni strategiche",
+      "crescita sostenibile", 
+      "risultati misurabili",
+      "successo digitale"
+    ]
+  },
+  "features": {
+    "title": "I 3 Pilastri della",
+    "titleHighlight": "Performance Suite",
+    "subtitle": "Una piattaforma completa che trasforma la complessità del marketing digitale in chiarezza strategica per le PMI",
+    "items": [
+      {
+        "id": "data-intelligence",
+        "title": "Data Intelligence & Reporting",
+        "description": "Dashboard centralizzata che unifica tutti i canali marketing in un'unica fonte di verità per decisioni informate.",
+        "benefits": [
+          "Visione unificata di tutti i canali",
+          "Report automatizzati e personalizzabili", 
+          "KPI strategici chiari e actionable"
+        ],
+        "icon": "BarChart3"
+      },
+      {
+        "id": "performance-ads",
+        "title": "Gestione Performance Pubblicitaria",
+        "description": "Ottimizzazione continua delle campagne pubblicitarie con monitoraggio in tempo reale e automazioni intelligenti.",
+        "benefits": [
+          "Ottimizzazione automatica dei budget",
+          "Monitoraggio performance in tempo reale",
+          "ROI e ROAS migliorati costantemente"
+        ],
+        "icon": "Target"
+      },
+      {
+        "id": "client-platform", 
+        "title": "Piattaforma Cliente Esclusiva",
+        "description": "Accesso dedicato per clienti con report personalizzati e dashboard intuitive per trasparenza totale.",
+        "benefits": [
+          "Accesso 24/7 ai report personalizzati",
+          "Dashboard intuitive e user-friendly",
+          "Trasparenza totale sui risultati"
+        ],
+        "icon": "Users"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Perché le PMI scelgono",
+    "titleHighlight": "QuickFy",
+    "subtitle": "Risultati concreti che fanno la differenza per la crescita del tuo business",
+    "items": [
+      {
+        "title": "Tempo Restituito",
+        "description": "Ore settimanali recuperate dall'automazione dei report",
+        "value": "15+",
+        "unit": "ore/settimana"
+      },
+      {
+        "title": "Chiarezza Strategica", 
+        "description": "Decisioni basate su dati chiari e insights actionable",
+        "value": "100%",
+        "unit": "trasparenza"
+      },
+      {
+        "title": "ROI Migliorato",
+        "description": "Incremento medio del ritorno sugli investimenti pubblicitari",
+        "value": "35%",
+        "unit": "aumento ROI"
+      },
+      {
+        "title": "Tasso di Mantenimento Clienti",
+        "description": "La soddisfazione e la fiducia dei nostri clienti è la nostra priorità.",
+        "value": "92%",
+        "unit": "tasso mantenimento"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Il Tuo Business, Sotto Controllo.",
+    "subtitle": "Accedi al tuo portale personale, fai le tue richieste e tieni traccia dei risultati di Google Analytics in modo semplice e intuitivo.",
+    "perfectFor": "Perfetto per:",
+    "features": "Funzionalità:",
+    "plans": {
+      "analytics": {
+        "name": "ANALYTICS",
+        "price": "19",
+        "period": "mese",
+        "badge": "CONSIGLIATO",
+        "perfectFor": "Perfetto per: Tutti i clienti che vogliono un punto di riferimento unico per collaborare con noi e per monitorare l'andamento del proprio sito web senza perdersi nella complessità di Google Analytics.",
+        "features": {
+          "0": "Accesso al Portale Cliente personale",
+          "1": "Sistema di Ticketing Semplice",
+          "2": "Dashboard Google Analytics Semplificata",
+          "3": "Supporto via Portale"
+        },
+        "cta": "Inizia Ora"
+      },
+      "plus": {
+        "name": "PLUS (Reputation)",
+        "price": "39",
+        "period": "mese",
+        "badge": "COMING SOON",
+        "perfectFor": "Perfetto per: Attività locali, ristoranti, hotel e professionisti per cui le recensioni online sono vitali.",
+        "features": {
+          "0": "Tutte le funzionalità del piano ANALYTICS",
+          "1": "Modulo Gestione Recensioni",
+          "2": "Risposte Semplificate"
+        },
+        "cta": "Prossimamente"
+      },
+      "pro": {
+        "name": "PRO (Social Hub)",
+        "price": "69",
+        "period": "mese",
+        "badge": "COMING SOON",
+        "perfectFor": "Perfetto per: Aziende che investono attivamente sui social media e vogliono un unico luogo per monitorare tutta la loro presenza online.",
+        "features": {
+          "0": "Tutte le funzionalità del piano PLUS",
+          "1": "Modulo Social Hub",
+          "2": "Dashboard Social Media",
+          "3": "(Futuro) Possibilità di programmare post"
+        },
+        "cta": "Prossimamente"
+      }
+    },
+    "consultation": {
+      "title": "Non sai quale piano fa per te?",
+      "subtitle": "Prenota una consulenza gratuita di 30 minuti per scoprire la soluzione più adatta alle tue esigenze.",
+      "cta": "Consulenza Gratuita",
+      "formMessage": "Buongiorno! Vorrei prenotare una consulenza gratuita per scoprire quale piano QuickFy si adatta meglio alle esigenze della mia azienda. "
+    }
+  },
+  "contact": {
+    "title": "Pronto a trasformare",
+    "titleHighlight": "il tuo marketing",
+    "subtitle": "Inizia oggi il tuo percorso verso decisioni marketing più chiare e risultati misurabili",
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Nome",
+          "placeholder": "Il tuo nome"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "La tua email aziendale"
+        },
+        "company": {
+          "label": "Azienda",
+          "placeholder": "Nome dell'azienda"
+        },
+        "phone": {
+          "label": "Telefono",
+          "placeholder": "Numero di telefono"
+        },
+        "message": {
+          "label": "Messaggio",
+          "placeholder": "Descrivi le tue sfide marketing attuali..."
+        }
+      },
+      "submit": "Richiedi Consulenza Gratuita",
+      "submitting": "Invio in corso...",
+      "privacy": "Accetto il trattamento dei dati personali secondo la Privacy Policy"
+    },
+    "success": {
+      "title": "Richiesta Inviata!",
+      "message": "Ti contatteremo entro 24 ore per programmare la tua consulenza gratuita."
+    }
+  },
+  "languageSwitcher": {
+    "label": "Cambia lingua",
+    "languages": {
+      "cs": "Čeština",
+      "en": "English",
+      "it": "Italiano"
+    }
+  },
+  "testimonials": {
+    "title": "Cosa Dicono i Nostri Clienti",
+    "subtitle": "Scopri le esperienze delle aziende che hanno automatizzato i loro processi con noi e ottenuto risultati eccezionali",
+    "previousTestimonial": "Testimonianza precedente",
+    "nextTestimonial": "Prossima testimonianza",
+    "goToTestimonial": "Vai alla testimonianza",
+    "trustIndicators": {
+      "rating": "4.9/5 valutazione",
+      "clients": "500+ clienti soddisfatti",
+      "projects": "1200+ progetti di successo"
+    },
+    "testimonial1": {
+      "name": "Marco Rossi",
+      "role": "Direttore Operativo",
+      "company": "TechItalia S.p.A.",
+      "content": "QuickFy ci ha aiutato a ridurre del 60% il tempo dedicato alle attività amministrative. I nostri team ora possono concentrarsi su compiti strategici invece che su attività routinarie. ROI raggiunto in soli 3 mesi."
+    },
+    "testimonial2": {
+      "name": "Giulia Bianchi",
+      "role": "Manager IT",
+      "company": "FinanzaPro Milano",
+      "content": "L'integrazione di QuickFy nei nostri sistemi è stata perfetta. L'automazione dei report finanziari ci fa risparmiare 20 ore a settimana ed ha eliminato gli errori umani. Altamente raccomandato."
+    },
+    "testimonial3": {
+      "name": "Alessandro Ferrari",
+      "role": "Amministratore Delegato",
+      "company": "LogiFlow Italia",
+      "content": "Con QuickFy abbiamo ottimizzato l'intera supply chain. I costi logistici sono diminuiti del 35% e l'efficienza è aumentata del 45%. Il miglior investimento degli ultimi anni."
+    },
+    "testimonial4": {
+      "name": "Francesca Romano",
+      "role": "Direttore HR",
+      "company": "PersonePlus S.r.l.",
+      "content": "QuickFy ha automatizzato il nostro processo HR dal reclutamento all'onboarding. Il tempo di elaborazione dei nuovi dipendenti è passato da settimane a giorni. Dipendenti e manager sono molto più soddisfatti."
+    },
+    "testimonial5": {
+      "name": "Luca Conti",
+      "role": "Direttore Commerciale",
+      "company": "VenditePro Roma",
+      "content": "L'automazione del nostro sales funnel ha portato un aumento del 50% delle conversioni. QuickFy analizza i dati dei clienti in tempo reale e suggerisce azioni ottimali. Le vendite non sono mai state così facili."
+    }
+  },
+  "footer": {
+    "description": "QuickFy Performance Suite - La piattaforma che trasforma la complessità del marketing digitale in chiarezza strategica per le PMI.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Termini di Servizio",
+      "contact": "Contatti"
+    },
+    "copyright": "© 2024 QuickFy. Tutti i diritti riservati."
+  }
+}

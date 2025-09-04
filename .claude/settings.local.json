@@ -1,0 +1,53 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__shadcn-ui__list_components",
+      "Bash(npx create-next-app:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm run build:*)",
+      "Bash(wmic:*)",
+      "Bash(npm run lint)",
+      "Bash(pkill:*)",
+      "Bash(taskkill:*)",
+      "Bash(npm install:*)",
+      "Bash(curl:*)",
+      "Bash(rg:*)",
+      "mcp___21st-dev_magic__21st_magic_component_inspiration",
+      "mcp___21st-dev_magic__21st_magic_component_builder",
+      "Bash(timeout 5 tail -f .next/server/server.log)",
+      "Bash(jobs)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Read(C:\\c\\Users\\devec\\progetti-web\\quickfy-website\\src\\components\\accessibility/**)",
+      "Bash(lsof:*)",
+      "Bash(netstat:*)",
+      "Bash(npm start)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_evaluate",
+      "mcp__playwright__browser_click",
+      "Bash(set ANALYZE=true)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git config:*)",
+      "Bash(git push:*)",
+      "Bash(git remote add:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(git rm:*)",
+      "Bash(git filter-branch:*)",
+      "Bash(git init:*)"
+    ],
+    "additionalDirectories": [
+      "C:\\c\\Users\\devec\\progetti-web",
+      "C:\\c\\Users\\devec\\progetti-web\\quickfy-website"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "context7",
+    "Puppeter",
+    "playwright",
+    "shadcn-ui",
+    "aceternityui",
+    "@21st-dev/magic"
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "title": "QuickFy - Transformujte marketingová data na jasná obchodní rozhodnutí",
+    "description": "Platforma pro SME, která zjednodušuje analýzu digitálních marketingových dat a optimalizuje reklamní výkon pro efektivní strategická rozhodnutí."
+  },
+  "hero": {
+    "headline": "Transformujte digitální marketingová data na",
+    "headlineHighlight": "jasná obchodní rozhodnutí",
+    "subheadline": "QuickFy Performance Suite pomáhá SME orientovat se v komplexitě digitálního marketingu, transformuje rozptýlená data na strategické poznatky pro bezpečný růst.",
+    "cta": {
+      "primary": "Objevte QuickFy",
+      "secondary": "Rezervovat Demo"
+    },
+    "metrics": {
+      "hoursSaved": "15+ Ušetřených hodin týdně",
+      "roiImprovement": "+35% Zlepšení ROI",
+      "clarity": "100% Jasnost ve Výsledcích"
+    },
+    "typewriter": [
+      "strategická rozhodnutí",
+      "udržitelný růst",
+      "měřitelné výsledky",
+      "digitální úspěch"
+    ]
+  },
+  "features": {
+    "title": "3 Pilíře",
+    "titleHighlight": "Performance Suite",
+    "subtitle": "Komplexní platforma, která transformuje složitost digitálního marketingu na strategickou jasnost pro SME",
+    "items": [
+      {
+        "id": "data-intelligence",
+        "title": "Data Intelligence & Reporting",
+        "description": "Centralizovaný dashboard, který sjednocuje všechny marketingové kanály do jednoho zdroje pravdy pro informovaná rozhodnutí.",
+        "benefits": [
+          "Jednotný pohled na všechny kanály",
+          "Automatizované a přizpůsobitelné reporty",
+          "Jasné a proveditelné strategické KPI"
+        ],
+        "icon": "BarChart3"
+      },
+      {
+        "id": "performance-ads",
+        "title": "Správa Reklamního Výkonu",
+        "description": "Kontinuální optimalizace reklamních kampaní s monitorováním v reálném čase a inteligentními automatizacemi.",
+        "benefits": [
+          "Automatická optimalizace rozpočtů",
+          "Monitoring výkonu v reálném čase",
+          "Konstantně zlepšované ROI a ROAS"
+        ],
+        "icon": "Target"
+      },
+      {
+        "id": "client-platform",
+        "title": "Exkluzivní Klientská Platforma",
+        "description": "Vyhrazený přístup pro klienty s personalizovanými reporty a intuitivními dashboardy pro úplnou transparentnost.",
+        "benefits": [
+          "24/7 přístup k personalizovaným reportům",
+          "Intuitivní a uživatelsky přívětivé dashboardy",
+          "Úplná transparentnost výsledků"
+        ],
+        "icon": "Users"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Proč SME volí",
+    "titleHighlight": "QuickFy",
+    "subtitle": "Konkrétní výsledky, které dělají rozdíl pro růst vašeho podnikání",
+    "items": [
+      {
+        "title": "Vrácený Čas",
+        "description": "Týdenní hodiny získané automatizací reportů",
+        "value": "15+",
+        "unit": "hodin/týden"
+      },
+      {
+        "title": "Strategická Jasnost",
+        "description": "Rozhodnutí založená na jasných datech a proveditelných poznatcích",
+        "value": "100%",
+        "unit": "transparentnost"
+      },
+      {
+        "title": "Zlepšené ROI",
+        "description": "Průměrný nárůst návratnosti reklamních investic",
+        "value": "35%",
+        "unit": "nárůst ROI"
+      },
+      {
+        "title": "Míra Udržení Klientů",
+        "description": "Spokojenost a důvěra našich klientů je naší prioritou.",
+        "value": "92%",
+        "unit": "míra udržení"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Vaše podnikání pod kontrolou.",
+    "subtitle": "Přistupujte k vašemu osobnímu portálu, podávejte žádosti a sledujte výsledky Google Analytics jednoduchým a intuitivním způsobem.",
+    "perfectFor": "Perfektní pro:",
+    "features": "Funkce:",
+    "plans": {
+      "analytics": {
+        "name": "ANALYTICS",
+        "price": "19",
+        "period": "měsíc",
+        "badge": "DOPORUČENÉ",
+        "perfectFor": "Perfektní pro: Všechny klienty, kteří chtějí jediný referenční bod pro spolupráci s námi a monitorování výkonu své webové stránky bez ztracení se v složitosti Google Analytics.",
+        "features": {
+          "0": "Přístup k osobnímu klientskému portálu",
+          "1": "Jednoduchý ticketingový systém",
+          "2": "Zjednodušený Google Analytics dashboard",
+          "3": "Podpora přes portál"
+        },
+        "cta": "Začít hned"
+      },
+      "plus": {
+        "name": "PLUS (Reputation)",
+        "price": "39",
+        "period": "měsíc",
+        "badge": "COMING SOON",
+        "perfectFor": "Perfektní pro: Místní podniky, restaurace, hotely a profesionály, pro které jsou online recenze životně důležité.",
+        "features": {
+          "0": "Všechny funkce plánu ANALYTICS",
+          "1": "Modul správy recenzí",
+          "2": "Zjednodušené odpovědi"
+        },
+        "cta": "Připravujeme"
+      },
+      "pro": {
+        "name": "PRO (Social Hub)",
+        "price": "69",
+        "period": "měsíc",
+        "badge": "COMING SOON",
+        "perfectFor": "Perfektní pro: Firmy, které aktivně investují do sociálních médií a chtějí jediné místo pro sledování celé své online přítomnosti.",
+        "features": {
+          "0": "Všechny funkce plánu PLUS",
+          "1": "Social Hub modul",
+          "2": "Dashboard sociálních médií",
+          "3": "(Budoucnost) Možnost plánování příspěvků"
+        },
+        "cta": "Připravujeme"
+      }
+    },
+    "consultation": {
+      "title": "Nevíte, který plán je pro vás správný?",
+      "subtitle": "Rezervujte si bezplatnou 30minutovou konzultaci a objevte řešení, které nejlépe vyhovuje vašim potřebám.",
+      "cta": "Bezplatná konzultace",
+      "formMessage": "Dobrý den! Rád bych si rezervoval bezplatnou konzultaci, abych zjistil, který plán QuickFy nejlépe vyhovuje potřebám mé firmy. "
+    }
+  },
+  "contact": {
+    "title": "Připraveni transformovat",
+    "titleHighlight": "váš marketing",
+    "subtitle": "Začněte dnes svou cestu k jasnějším marketingovým rozhodnutím a měřitelným výsledkům",
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Jméno",
+          "placeholder": "Vaše jméno"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Váš firemní email"
+        },
+        "company": {
+          "label": "Společnost",
+          "placeholder": "Název společnosti"
+        },
+        "phone": {
+          "label": "Telefon",
+          "placeholder": "Telefonní číslo"
+        },
+        "message": {
+          "label": "Zpráva",
+          "placeholder": "Popište své současné marketingové výzvy..."
+        }
+      },
+      "submit": "Požádat o Bezplatnou Konzultaci",
+      "submitting": "Odesílání...",
+      "privacy": "Souhlasím se zpracováním osobních údajů podle Zásad ochrany osobních údajů"
+    },
+    "success": {
+      "title": "Žádost Odeslána!",
+      "message": "Budeme vás kontaktovat do 24 hodin pro naplánování vaší bezplatné konzultace."
+    }
+  },
+  "languageSwitcher": {
+    "label": "Změnit jazyk",
+    "languages": {
+      "cs": "Čeština",
+      "en": "English",
+      "it": "Italiano"
+    }
+  },
+  "testimonials": {
+    "title": "Co o nás říkají naši klienti",
+    "subtitle": "Přečtěte si zkušenosti firem, které s námi automatizovaly své procesy a dosáhly výjimečných výsledků",
+    "previousTestimonial": "Předchozí reference",
+    "nextTestimonial": "Další reference", 
+    "goToTestimonial": "Přejít na referenci",
+    "trustIndicators": {
+      "rating": "4.9/5 hodnocení",
+      "clients": "500+ spokojených klientů",
+      "projects": "1200+ úspěšných projektů"
+    },
+    "testimonial1": {
+      "name": "Jan Novák",
+      "role": "Provozní ředitel",
+      "company": "TechCorp Praha",
+      "content": "QuickFy nám pomohl snížit čas strávený administrativou o 60%. Naše týmy se teď mohou soustředit na strategické úkoly místo rutinních činností. ROI bylo dosaženo již za 3 měsíce."
+    },
+    "testimonial2": {
+      "name": "Marie Svobodová",
+      "role": "IT Manažerka",
+      "company": "Finanza Solutions",
+      "content": "Integrace QuickFy do našich systémů byla bezproblémová. Automatizace finančních reportů nám ušetří 20 hodin týdně a eliminovala lidské chyby. Rozhodně doporučujeme."
+    },
+    "testimonial3": {
+      "name": "Petr Koukal",
+      "role": "Generální ředitel",
+      "company": "LogiFlow Czech",
+      "content": "S QuickFy jsme optimalizovali celý supply chain. Náklady na logistiku se snížily o 35% a efektivita vzrostla o 45%. Nejlepší investice, kterou jsme za poslední roky udělali."
+    },
+    "testimonial4": {
+      "name": "Anna Horáková",
+      "role": "Vedoucí HR",
+      "company": "PeopleFirst s.r.o.",
+      "content": "QuickFy automatizoval náš HR proces od náboru po onboarding. Čas na zpracování nových zaměstnanců se zkrátil z týdnů na dny. Zaměstnanci i manažeři jsou mnohem spokojenější."
+    },
+    "testimonial5": {
+      "name": "Tomáš Černý",
+      "role": "Obchodní ředitel",
+      "company": "SalesBoost Praha",
+      "content": "Automatizace našeho sales funnelu přinesla 50% nárůst konverzí. QuickFy analyzuje zákaznická data v reálném čase a navrhuje optimální akce. Prodeje nikdy nebyly jednodušší."
+    }
+  },
+  "footer": {
+    "description": "QuickFy Performance Suite - Platforma, která transformuje složitost digitálního marketingu na strategickou jasnost pro SME.",
+    "links": {
+      "privacy": "Zásady ochrany osobních údajů",
+      "terms": "Podmínky služby",
+      "contact": "Kontakt"
+    },
+    "copyright": "© 2024 QuickFy. Všechna práva vyhrazena."
+  }
+}
