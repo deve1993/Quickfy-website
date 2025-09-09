@@ -3,6 +3,20 @@
     "title": "QuickFy - Transform Marketing Data into Clear Business Decisions",
     "description": "Platform for SMEs that simplifies digital marketing data analysis and optimizes advertising performance for effective strategic decisions."
   },
+  "navigation": {
+    "features": "Features",
+    "benefits": "Benefits",
+    "pricing": "Pricing",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "startNow": "Start Now",
+    "logoAria": "QuickFy - Return to top of page",
+    "startNowAria": "Start now - Go to contact form",
+    "sectionAria": "Go to {section} section",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobileMenu": "Mobile menu"
+  },
   "hero": {
     "headline": "Transform digital marketing data into",
     "headlineHighlight": "clear business decisions",

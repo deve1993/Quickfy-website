@@ -3,10 +3,12 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const t = useTranslations('navigation');
 
   // Handle scroll effect
   useEffect(() => {
@@ -58,11 +60,11 @@ export function Header() {
   };
 
   const navigationItems = [
-    { id: 'features', label: 'Funzionalità' },
-    { id: 'benefits', label: 'Vantaggi' },
-    { id: 'pricing', label: 'Prezzi' },
-    { id: 'testimonials', label: 'Testimonianze' },
-    { id: 'contact', label: 'Contatti' }
+    { id: 'features', label: t('features') },
+    { id: 'benefits', label: t('benefits') },
+    { id: 'pricing', label: t('pricing') },
+    { id: 'testimonials', label: t('testimonials') },
+    { id: 'contact', label: t('contact') }
   ];
 
   return (
@@ -84,12 +86,16 @@ export function Header() {
             <motion.button
               onClick={() => scrollToSection('main-content')}
               whileHover={{ scale: 1.05 }}
-              className={`text-2xl font-bold focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md px-2 py-1 transition-colors ${
-                isScrolled ? 'text-gray-900 hover:text-blue-600' : 'text-white hover:text-blue-300'
-              }`}
-              aria-label="QuickFy - Torna all'inizio della pagina"
+              className="focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-lg px-2 py-1 transition-all duration-300"
+              aria-label={t('logoAria')}
             >
-              QuickFy
+              <h1 className={`text-xl md:text-2xl font-bold transition-colors duration-300 ${
+                isScrolled 
+                  ? 'text-gray-900' 
+                  : 'text-white'
+              }`}>
+                QuickFy
+              </h1>
             </motion.button>
           </div>
 
@@ -106,7 +112,7 @@ export function Header() {
                 }`}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                aria-label={`Vai alla sezione ${item.label}`}
+                aria-label={t('sectionAria', { section: item.label })}
               >
                 {item.label}
               </motion.button>
@@ -117,9 +123,9 @@ export function Header() {
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 focus:from-blue-700 focus:to-purple-700 px-6 py-2 rounded-lg text-white font-semibold text-sm shadow-lg hover:shadow-xl focus:shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              aria-label="Inizia ora - Vai al modulo di contatto"
+              aria-label={t('startNowAria')}
             >
-              Inizia Ora
+              {t('startNow')}
             </motion.button>
           </nav>
 
@@ -130,7 +136,7 @@ export function Header() {
             className={`md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors ${
               isScrolled ? 'text-gray-900' : 'text-white'
             }`}
-            aria-label={isMenuOpen ? 'Chiudi menu' : 'Apri menu'}
+            aria-label={isMenuOpen ? t('closeMenu') : t('openMenu')}
             aria-expanded={isMenuOpen}
             aria-controls="mobile-menu"
           >
@@ -154,7 +160,7 @@ export function Header() {
             transition={{ duration: 0.3 }}
             className="md:hidden mt-4 pb-4 border-t border-gray-200"
             role="navigation"
-            aria-label="Menu mobile"
+            aria-label={t('mobileMenu')}
           >
             <div className="flex flex-col space-y-3 pt-4">
               {navigationItems.map((item, index) => (
@@ -169,7 +175,7 @@ export function Header() {
                       ? 'text-gray-700 hover:bg-gray-100 hover:text-blue-600' 
                       : 'text-gray-200 hover:bg-white/10 hover:text-white'
                   }`}
-                  aria-label={`Vai alla sezione ${item.label}`}
+                  aria-label={t('sectionAria', { section: item.label })}
                 >
                   {item.label}
                 </motion.button>
@@ -181,9 +187,9 @@ export function Header() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: navigationItems.length * 0.1 }}
                 className="mt-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 focus:from-blue-700 focus:to-purple-700 px-4 py-3 rounded-lg text-white font-semibold text-center shadow-lg hover:shadow-xl focus:shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                aria-label="Inizia ora - Vai al modulo di contatto"
+                aria-label={t('startNowAria')}
               >
-                Inizia Ora
+                {t('startNow')}
               </motion.button>
             </div>
           </motion.div>

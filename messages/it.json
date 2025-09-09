@@ -3,6 +3,20 @@
     "title": "QuickFy - Trasforma i dati marketing in decisioni aziendali chiare",
     "description": "Piattaforma per PMI che semplifica l'analisi dei dati marketing digitale e ottimizza le performance pubblicitarie per decisioni strategiche efficaci."
   },
+  "navigation": {
+    "features": "Funzionalità",
+    "benefits": "Vantaggi",
+    "pricing": "Prezzi",
+    "testimonials": "Testimonianze",
+    "contact": "Contatti",
+    "startNow": "Inizia Ora",
+    "logoAria": "QuickFy - Torna all'inizio della pagina",
+    "startNowAria": "Inizia ora - Vai al modulo di contatto",
+    "sectionAria": "Vai alla sezione {section}",
+    "openMenu": "Apri menu",
+    "closeMenu": "Chiudi menu",
+    "mobileMenu": "Menu mobile"
+  },
   "hero": {
     "headline": "Trasforma i dati del marketing digitale in ",
     "headlineHighlight": "decisioni aziendali chiare",

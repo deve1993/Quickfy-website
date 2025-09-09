@@ -1,51 +1,73 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
-const logos = [
-  {
-    name: 'TechItalia',
-    logo: '/logos/techitalia.svg',
-    width: 120,
-    height: 40
-  },
-  {
-    name: 'InnovateCorp',
-    logo: '/logos/innovatecorp.svg',
-    width: 140,
-    height: 35
-  },
-  {
-    name: 'DigitalFlow',
-    logo: '/logos/digitalflow.svg',
-    width: 130,
-    height: 42
-  },
-  {
-    name: 'MarketPro',
-    logo: '/logos/marketpro.svg',
-    width: 125,
-    height: 38
-  },
-  {
-    name: 'GrowthLab',
-    logo: '/logos/growthlab.svg',
-    width: 135,
-    height: 40
-  },
-  {
-    name: 'ScaleUp',
-    logo: '/logos/scaleup.svg',
-    width: 115,
-    height: 36
-  }
-];
+import Image from 'next/image';
+import { getEnabledPartners, partnersConfig } from '@/config/partners';
+import type { PartnerLogo } from '@/types/partners';
 
 export function LogosSection() {
+  // Get enabled partner logos from configuration
+  const enabledLogos = getEnabledPartners();
+  const { animation, display } = partnersConfig;
 
+  // If no logos are enabled, don't render the section
+  if (enabledLogos.length === 0) {
+    return null;
+  }
+
+  const renderLogo = (logo: PartnerLogo, keyPrefix: string) => (
+    <div
+      key={`${keyPrefix}-${logo.id}`}
+      className="relative flex-shrink-0"
+    >
+      <div className="relative p-8 rounded-xl bg-white/90 backdrop-blur-sm border border-white/40 shadow-sm">
+        <div 
+          className="flex items-center justify-center relative min-w-fit"
+          style={{ width: logo.width, height: logo.height }}
+        >
+          <Image
+            src={logo.logoPath}
+            alt={logo.alt || `${logo.name} logo`}
+            width={logo.width}
+            height={logo.height}
+            className="object-contain max-w-none"
+            priority={false}
+            onError={(e) => {
+              // Fallback to text display if image fails to load
+              const target = e.target as HTMLElement;
+              if (target.parentElement) {
+                target.parentElement.innerHTML = `
+                  <div class="flex items-center justify-center text-gray-400 font-bold text-lg whitespace-nowrap w-full h-full">
+                    ${logo.name}
+                  </div>
+                `;
+              }
+            }}
+          />
+        </div>
+        
+        {/* Optional website link */}
+        {logo.website && (
+          <a
+            href={logo.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute inset-0 z-10"
+            aria-label={`Visit ${logo.name} website`}
+          />
+        )}
+      </div>
+    </div>
+  );
 
   return (
     <section className="relative py-24 px-4">
+      <style jsx>{`
+        .mask-gradient {
+          mask: linear-gradient(90deg, transparent, black 20%, black 80%, transparent);
+          -webkit-mask: linear-gradient(90deg, transparent, black 20%, black 80%, transparent);
+        }
+      `}</style>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -60,12 +82,12 @@ export function LogosSection() {
         </motion.div>
 
         {/* Infinite horizontal scrolling logos */}
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden mask-gradient">
           <motion.div
-            className="flex gap-8 md:gap-12 items-center"
-            animate={{ x: [-1200, 0] }}
+            className={`flex ${display.gap} items-center will-change-transform`}
+            animate={animation.enabled ? { x: [`0%`, `-50%`] } : {}}
             transition={{
-              duration: 20,
+              duration: animation.scrollDuration,
               repeat: Infinity,
               repeatType: "loop",
               ease: "linear"
@@ -73,48 +95,10 @@ export function LogosSection() {
             style={{ width: "200%" }}
           >
             {/* First set of logos */}
-            {logos.map((logo) => (
-              <motion.div
-                key={`first-${logo.name}`}
-                className="group relative flex-shrink-0"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-              >
-                <div className="relative p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-white/20 shadow-sm hover:shadow-lg transition-all duration-300">
-                  <div 
-                    className="flex items-center justify-center text-gray-400 font-bold text-lg whitespace-nowrap"
-                    style={{ width: logo.width, height: logo.height }}
-                  >
-                    {logo.name}
-                  </div>
-                  
-                  {/* Hover effect overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </div>
-              </motion.div>
-            ))}
+            {enabledLogos.map((logo) => renderLogo(logo, 'first'))}
             
             {/* Duplicate set for seamless loop */}
-            {logos.map((logo) => (
-              <motion.div
-                key={`second-${logo.name}`}
-                className="group relative flex-shrink-0"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-              >
-                <div className="relative p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-white/20 shadow-sm hover:shadow-lg transition-all duration-300">
-                  <div 
-                    className="flex items-center justify-center text-gray-400 font-bold text-lg whitespace-nowrap"
-                    style={{ width: logo.width, height: logo.height }}
-                  >
-                    {logo.name}
-                  </div>
-                  
-                  {/* Hover effect overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </div>
-              </motion.div>
-            ))}
+            {enabledLogos.map((logo) => renderLogo(logo, 'second'))}
           </motion.div>
         </div>
 
@@ -127,7 +111,7 @@ export function LogosSection() {
           className="text-center mt-12"
         >
           <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Join 500+ companies that trust QuickFy for their marketing automation
+            Join {Math.round(enabledLogos.length * 85)}+ companies that trust QuickFy for their marketing automation
           </p>
         </motion.div>
       </div>

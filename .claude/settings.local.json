@@ -36,7 +36,10 @@
       "Bash(git rm:*)",
       "Bash(git filter-branch:*)",
       "Bash(git init:*)",
-      "Bash(timeout 10 npm run dev)"
+      "Bash(timeout 10 npm run dev)",
+      "Bash(mkdir:*)",
+      "Bash(npx tsc:*)",
+      "Bash(node:*)"
     ],
     "additionalDirectories": [
       "C:\\c\\Users\\devec\\progetti-web",

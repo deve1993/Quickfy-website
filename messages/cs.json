@@ -3,6 +3,20 @@
     "title": "QuickFy - Transformujte marketingová data na jasná obchodní rozhodnutí",
     "description": "Platforma pro SME, která zjednodušuje analýzu digitálních marketingových dat a optimalizuje reklamní výkon pro efektivní strategická rozhodnutí."
   },
+  "navigation": {
+    "features": "Funkce",
+    "benefits": "Výhody",
+    "pricing": "Ceny",
+    "testimonials": "Reference",
+    "contact": "Kontakt",
+    "startNow": "Začněte nyní",
+    "logoAria": "QuickFy - Vrátit se na začátek stránky",
+    "startNowAria": "Začněte nyní - Jít na kontaktní formulář",
+    "sectionAria": "Jít na sekci {section}",
+    "openMenu": "Otevřít menu",
+    "closeMenu": "Zavřít menu",
+    "mobileMenu": "Mobilní menu"
+  },
   "hero": {
     "headline": "Transformujte digitální marketingová data na",
     "headlineHighlight": "jasná obchodní rozhodnutí",
