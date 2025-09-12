@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import { PreloadScript } from '@/components/PreloadScript';
 import { Suspense } from 'react';
 import { FeaturesSectionSkeleton } from '@/components/ui/skeleton';
+import { BreadcrumbLayout } from '@/components/layout/BreadcrumbLayout';
 
 // Optimized lazy loading with reduced bundle size
 const FeaturesSection = dynamic(
@@ -110,9 +111,10 @@ export default async function HomePage() {
   return (
     <>
       <PreloadScript />
-      <main id="main-content" className="min-h-screen" role="main">
-        {/* Critical above-the-fold content */}
-        <HeroSection />
+      <BreadcrumbLayout showBreadcrumb={false}>
+        <main id="main-content" className="min-h-screen" role="main">
+          {/* Critical above-the-fold content */}
+          <HeroSection />
         
         {/* Lazy loaded sections with Suspense boundaries */}
         <Suspense fallback={<FeaturesSectionSkeleton />}>
@@ -148,7 +150,8 @@ export default async function HomePage() {
         <Suspense fallback={<div className="h-96 flex items-center justify-center"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div></div>}>
           <ContactSection />
         </Suspense>
-      </main>
+        </main>
+      </BreadcrumbLayout>
     </>
   );
 }
