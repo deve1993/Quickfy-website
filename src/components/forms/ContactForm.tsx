@@ -13,22 +13,33 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { cn } from '@/lib/utils';
 import { useToastHelpers } from '@/components/ui/toast';
 
-const contactFormSchema = z.object({
-  name: z.string().min(2, 'Il nome deve contenere almeno 2 caratteri'),
-  email: z.string().email('Inserisci un indirizzo email valido'),
-  company: z.string().min(2, 'Il nome dell\'azienda deve contenere almeno 2 caratteri'),
-  phone: z.string().min(10, 'Il numero di telefono deve contenere almeno 10 cifre'),
-  message: z.string().min(10, 'Il messaggio deve contenere almeno 10 caratteri'),
-  privacy: z.boolean().refine((val) => val === true, 'Devi accettare il trattamento dei dati personali'),
+// Create validation schema function to support i18n
+const createContactFormSchema = (t: ReturnType<typeof useTranslations>) => z.object({
+  name: z.string().min(2, t('contact.form.validation.name')),
+  email: z.string().email(t('contact.form.validation.email')),
+  company: z.string().min(2, t('contact.form.validation.company')),
+  phone: z.string().min(10, t('contact.form.validation.phone')),
+  message: z.string().min(10, t('contact.form.validation.message')),
+  privacy: z.boolean().refine((val) => val === true, t('contact.form.validation.privacy')),
 });
 
-type ContactFormData = z.infer<typeof contactFormSchema>;
+type ContactFormData = {
+  name: string;
+  email: string;
+  company: string;
+  phone: string;
+  message: string;
+  privacy: boolean;
+};
 
 export function ContactForm() {
   const t = useTranslations();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const { success, error } = useToastHelpers();
+
+  // Create schema with translations
+  const contactFormSchema = createContactFormSchema(t);
 
   const {
     register,
@@ -53,10 +64,10 @@ export function ContactForm() {
       console.log('Form submitted:', data);
       setSubmitStatus('success');
       success(
-        'Richiesta inviata con successo!',
-        'Ti contatteremo entro 24 ore per programmare la tua consulenza gratuita.',
+        t('contact.success.title'),
+        t('contact.success.message'),
         {
-          label: 'Invia un\'altra richiesta',
+          label: t('contact.form.submitAnother'),
           onClick: () => {
             setSubmitStatus('idle');
             reset();
@@ -68,10 +79,10 @@ export function ContactForm() {
       console.error('Form submission error:', err);
       setSubmitStatus('error');
       error(
-        'Errore nell\'invio della richiesta',
-        'Si è verificato un problema. Riprova o contattaci direttamente.',
+        t('contact.form.error.title'),
+        t('contact.form.error.message'),
         {
-          label: 'Riprova',
+          label: t('contact.form.error.retry'),
           onClick: () => setSubmitStatus('idle')
         }
       );
@@ -102,7 +113,7 @@ export function ContactForm() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Invia Altra Richiesta
+            {t('contact.form.submitAnother')}
           </motion.button>
         </motion.div>
       </div>
@@ -111,7 +122,7 @@ export function ContactForm() {
 
   return (
     <div className="bg-card rounded-2xl shadow-xl p-8 border border-border">
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6" noValidate aria-label="Modulo di contatto QuickFy">
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-6" noValidate aria-label={t('contact.form.ariaLabel')}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label htmlFor="name" className="sr-only">{t('contact.form.fields.name.label')}</label>
@@ -233,7 +244,7 @@ export function ContactForm() {
             className="flex items-center gap-2 text-destructive bg-destructive/10 p-3 rounded-lg"
           >
             <AlertCircle size={20} />
-            <span>Si è verificato un errore. Riprova o contattaci direttamente.</span>
+            <span>{t('contact.form.error.message')}</span>
           </motion.div>
         )}
 

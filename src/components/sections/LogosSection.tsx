@@ -4,8 +4,12 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { getEnabledPartners, partnersConfig } from '@/config/partners';
 import type { PartnerLogo } from '@/types/partners';
+import { useTranslations } from 'next-intl';
 
 export function LogosSection() {
+  // Get translations
+  const t = useTranslations('logos');
+  
   // Get enabled partner logos from configuration
   const enabledLogos = getEnabledPartners();
   const { animation, display } = partnersConfig;
@@ -62,12 +66,6 @@ export function LogosSection() {
 
   return (
     <section className="relative py-24 px-4">
-      <style jsx>{`
-        .mask-gradient {
-          mask: linear-gradient(90deg, transparent, black 20%, black 80%, transparent);
-          -webkit-mask: linear-gradient(90deg, transparent, black 20%, black 80%, transparent);
-        }
-      `}</style>
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -77,12 +75,18 @@ export function LogosSection() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent mb-8 leading-tight">
-            Trusted by leading companies worldwide
+            {t('title')}
           </h2>
         </motion.div>
 
         {/* Infinite horizontal scrolling logos */}
-        <div className="relative overflow-hidden mask-gradient">
+        <div 
+          className="relative overflow-hidden" 
+          style={{
+            mask: 'linear-gradient(90deg, transparent, black 20%, black 80%, transparent)',
+            WebkitMask: 'linear-gradient(90deg, transparent, black 20%, black 80%, transparent)'
+          }}
+        >
           <motion.div
             className={`flex ${display.gap} items-center will-change-transform`}
             animate={animation.enabled ? { x: [`0%`, `-50%`] } : {}}
@@ -111,7 +115,7 @@ export function LogosSection() {
           className="text-center mt-12"
         >
           <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Join {Math.round(enabledLogos.length * 85)}+ companies that trust QuickFy for their marketing automation
+            {t('description', { count: Math.round(enabledLogos.length * 85) })}
           </p>
         </motion.div>
       </div>

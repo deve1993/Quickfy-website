@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "QuickFy - Trasforma i dati marketing in decisioni aziendali chiare",
-    "description": "Piattaforma per PMI che semplifica l'analisi dei dati marketing digitale e ottimizza le performance pubblicitarie per decisioni strategiche efficaci."
+    "title": "Automazione Marketing PMI | CRM Piccole Imprese | Analytics Marketing Digitale",
+    "description": "CRM piccole imprese con automazione marketing PMI. Analytics marketing digitale per PMI con 35% ROI migliorato. Soluzioni marketing automation per piccole aziende."
   },
   "navigation": {
     "features": "Funzionalità",
@@ -18,12 +18,12 @@
     "mobileMenu": "Menu mobile"
   },
   "hero": {
-    "headline": "Trasforma i dati del marketing digitale in ",
-    "headlineHighlight": "decisioni aziendali chiare",
-    "subheadline": "QuickFy Performance Suite aiuta le PMI a navigare nella complessità del marketing digitale, trasformando dati sparsi in strategie concrete per crescere con sicurezza.",
+    "headline": "Automazione marketing PMI per",
+    "headlineHighlight": "analytics marketing digitale e crescita",
+    "subheadline": "CRM piccole imprese con automazione marketing PMI integrata. Trasforma analytics marketing digitale in crescita strategica con 35% ROI migliorato per PMI.",
     "cta": {
-      "primary": "Scopri QuickFy",
-      "secondary": "Prenota Demo"
+      "primary": "Prova Automazione Marketing PMI",
+      "secondary": "Demo CRM Piccole Imprese"
     },
     "metrics": {
       "hoursSaved": "15+ Ore Risparmiate a Settimana",
@@ -38,49 +38,49 @@
     ]
   },
   "features": {
-    "title": "I 3 Pilastri della",
-    "titleHighlight": "Performance Suite",
-    "subtitle": "Una piattaforma completa che trasforma la complessità del marketing digitale in chiarezza strategica per le PMI",
+    "title": "Automazione Marketing PMI:",
+    "titleHighlight": "3 Moduli Essenziali",
+    "subtitle": "CRM piccole imprese con analytics marketing digitale integrato - tutto quello che serve alle PMI per automazione marketing efficace",
     "items": [
       {
         "id": "data-intelligence",
-        "title": "Data Intelligence & Reporting",
-        "description": "Dashboard centralizzata che unifica tutti i canali marketing in un'unica fonte di verità per decisioni informate.",
+        "title": "CRM Analytics & Analytics Marketing Digitale",
+        "description": "Dashboard centralizzato CRM piccole imprese con avanzato analytics marketing digitale. Tutti i canali marketing unificati per automazione marketing PMI.",
         "benefits": [
-          "Visione unificata di tutti i canali",
-          "Report automatizzati e personalizzabili", 
-          "KPI strategici chiari e actionable"
+          "Dashboard CRM unificato per PMI",
+          "Analytics marketing digitale automatizzato",
+          "Automazione marketing con KPI chiari"
         ],
         "icon": "BarChart3"
       },
       {
         "id": "performance-ads",
-        "title": "Gestione Performance Pubblicitaria",
-        "description": "Ottimizzazione continua delle campagne pubblicitarie con monitoraggio in tempo reale e automazioni intelligenti.",
+        "title": "Automazione Marketing & Ottimizzazione ROI",
+        "description": "Avanzata automazione marketing PMI con ottimizzazione intelligente campagne. CRM piccole imprese con gestione budget automatizzata.",
         "benefits": [
-          "Ottimizzazione automatica dei budget",
-          "Monitoraggio performance in tempo reale",
-          "ROI e ROAS migliorati costantemente"
+          "Ottimizzazione automatica campagne marketing PMI",
+          "Analytics marketing digitale in tempo reale",
+          "35% ROI superiore con automazione marketing"
         ],
         "icon": "Target"
       },
       {
         "id": "client-platform", 
-        "title": "Piattaforma Cliente Esclusiva",
-        "description": "Accesso dedicato per clienti con report personalizzati e dashboard intuitive per trasparenza totale.",
+        "title": "CRM Cloud per Piccole Imprese",
+        "description": "CRM cloud sicuro per piccole imprese con dashboard personalizzati per automazione marketing PMI. Accesso 24/7 ad analytics marketing digitale.",
         "benefits": [
-          "Accesso 24/7 ai report personalizzati",
-          "Dashboard intuitive e user-friendly",
-          "Trasparenza totale sui risultati"
+          "Accesso 24/7 al CRM piccole imprese",
+          "Dashboard automazione marketing personalizzati",
+          "Trasparenza completa analytics marketing digitale"
         ],
         "icon": "Users"
       }
     ]
   },
   "benefits": {
-    "title": "Perché le PMI scelgono",
-    "titleHighlight": "QuickFy",
-    "subtitle": "Risultati concreti che fanno la differenza per la crescita del tuo business",
+    "title": "Perché le PMI scelgono QuickFy",
+    "titleHighlight": "Automazione Marketing",
+    "subtitle": "Risultati comprovati CRM piccole imprese con analytics marketing digitale integrato e automazione marketing PMI",
     "items": [
       {
         "title": "Tempo Restituito",
@@ -89,14 +89,14 @@
         "unit": "ore/settimana"
       },
       {
-        "title": "Chiarezza Strategica", 
-        "description": "Decisioni basate su dati chiari e insights actionable",
+        "title": "Efficienza CRM per PMI",
+        "description": "Decisioni basate su analytics marketing digitale e dati CRM piccole imprese",
         "value": "100%",
         "unit": "trasparenza"
       },
       {
-        "title": "ROI Migliorato",
-        "description": "Incremento medio del ritorno sugli investimenti pubblicitari",
+        "title": "ROI Automazione Marketing PMI",
+        "description": "Incremento medio ROI con automazione marketing PMI e ottimizzazione CRM piccole imprese",
         "value": "35%",
         "unit": "aumento ROI"
       },
@@ -109,8 +109,8 @@
     ]
   },
   "pricing": {
-    "title": "Il Tuo Business, Sotto Controllo.",
-    "subtitle": "Accedi al tuo portale personale, fai le tue richieste e tieni traccia dei risultati di Google Analytics in modo semplice e intuitivo.",
+    "title": "CRM Piccole Imprese - Prezzi Accessibili",
+    "subtitle": "Automazione marketing PMI con prezzi trasparenti. Soluzioni analytics marketing digitale e CRM progettate per budget PMI.",
     "perfectFor": "Perfetto per:",
     "features": "Funzionalità:",
     "plans": {
@@ -119,12 +119,12 @@
         "price": "19",
         "period": "mese",
         "badge": "CONSIGLIATO",
-        "perfectFor": "Perfetto per: Tutti i clienti che vogliono un punto di riferimento unico per collaborare con noi e per monitorare l'andamento del proprio sito web senza perdersi nella complessità di Google Analytics.",
+        "perfectFor": "Perfetto per: PMI che necessitano di CRM piccole imprese essenziale con semplice analytics marketing digitale senza complessità.",
         "features": {
-          "0": "Accesso al Portale Cliente personale",
-          "1": "Sistema di Ticketing Semplice",
-          "2": "Dashboard Google Analytics Semplificata",
-          "3": "Supporto via Portale"
+          "0": "CRM essenziale per piccole imprese",
+          "1": "Automazione marketing PMI - base",
+          "2": "Dashboard analytics marketing digitale",
+          "3": "Supporto CRM per PMI"
         },
         "cta": "Inizia Ora"
       },
@@ -164,9 +164,9 @@
     }
   },
   "contact": {
-    "title": "Pronto a trasformare",
-    "titleHighlight": "il tuo marketing",
-    "subtitle": "Inizia oggi il tuo percorso verso decisioni marketing più chiare e risultati misurabili",
+    "title": "Pronto per Automazione Marketing",
+    "titleHighlight": "per la tua PMI?",
+    "subtitle": "Inizia con CRM piccole imprese e analytics marketing digitale oggi stesso. Consulenza gratuita automazione marketing PMI.",
     "form": {
       "fields": {
         "name": {
@@ -190,9 +190,24 @@
           "placeholder": "Descrivi le tue sfide marketing attuali..."
         }
       },
-      "submit": "Richiedi Consulenza Gratuita",
+      "submit": "Consulenza Automazione Marketing PMI",
       "submitting": "Invio in corso...",
-      "privacy": "Accetto il trattamento dei dati personali secondo la Privacy Policy"
+      "submitAnother": "Invia Altra Richiesta",
+      "ariaLabel": "Modulo di contatto QuickFy",
+      "privacy": "Accetto il trattamento dei dati personali secondo la Privacy Policy",
+      "validation": {
+        "name": "Il nome deve contenere almeno 2 caratteri",
+        "email": "Inserisci un indirizzo email valido",
+        "company": "Il nome dell'azienda deve contenere almeno 2 caratteri",
+        "phone": "Il numero di telefono deve contenere almeno 10 cifre",
+        "message": "Il messaggio deve contenere almeno 10 caratteri",
+        "privacy": "Devi accettare il trattamento dei dati personali"
+      },
+      "error": {
+        "title": "Errore nell'invio della richiesta",
+        "message": "Si è verificato un problema. Riprova o contattaci direttamente.",
+        "retry": "Riprova"
+      }
     },
     "success": {
       "title": "Richiesta Inviata!",
@@ -249,8 +264,22 @@
       "content": "L'automazione del nostro sales funnel ha portato un aumento del 50% delle conversioni. QuickFy analizza i dati dei clienti in tempo reale e suggerisce azioni ottimali. Le vendite non sono mai state così facili."
     }
   },
+  "logos": {
+    "title": "Aziende leader in tutto il mondo si fidano di noi",
+    "description": "Unisciti a {count}+ aziende che si affidano a QuickFy per la loro automazione marketing"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "homeAria": "Torna alla homepage",
+    "currentPageAria": "Pagina corrente",
+    "navigationAria": "Navigazione breadcrumb",
+    "separator": "Vai a"
+  },
   "footer": {
-    "description": "QuickFy Performance Suite - La piattaforma che trasforma la complessità del marketing digitale in chiarezza strategica per le PMI.",
+    "description": "QuickFy - Automazione marketing PMI e CRM piccole imprese. Analytics marketing digitale con ROI comprovato superiore per piccole e medie imprese.",
+    "contact": {
+      "emailAria": "Invia email a QuickFy"
+    },
     "links": {
       "privacy": "Privacy Policy",
       "terms": "Termini di Servizio",

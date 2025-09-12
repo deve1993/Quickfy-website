@@ -39,7 +39,14 @@
       "Bash(timeout 10 npm run dev)",
       "Bash(mkdir:*)",
       "Bash(npx tsc:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(timeout 15 npm run build)",
+      "Bash(timeout 20 npm run build)",
+      "Bash(powershell.exe:*)",
+      "Bash(timeout 30 npm run build)",
+      "Bash(timeout 35 npm run build)",
+      "Bash(tasklist)",
+      "Bash(tasklist:*)"
     ],
     "additionalDirectories": [
       "C:\\c\\Users\\devec\\progetti-web",

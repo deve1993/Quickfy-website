@@ -5,22 +5,20 @@ import { throttle, debounce } from '@/lib/utils';
 
 // Hook for optimizing scroll performance
 export function useOptimizedScroll(callback: () => void, delay: number = 16) {
-  const throttledCallback = useCallback(throttle(callback, delay), [callback, delay]);
-
   useEffect(() => {
+    const throttledCallback = throttle(callback, delay);
     window.addEventListener('scroll', throttledCallback, { passive: true });
     return () => window.removeEventListener('scroll', throttledCallback);
-  }, [throttledCallback]);
+  }, [callback, delay]);
 }
 
 // Hook for optimizing resize performance
 export function useOptimizedResize(callback: () => void, delay: number = 250) {
-  const debouncedCallback = useCallback(debounce(callback, delay), [callback, delay]);
-
   useEffect(() => {
+    const debouncedCallback = debounce(callback, delay);
     window.addEventListener('resize', debouncedCallback, { passive: true });
     return () => window.removeEventListener('resize', debouncedCallback);
-  }, [debouncedCallback]);
+  }, [callback, delay]);
 }
 
 // Hook for intersection observer with performance optimization

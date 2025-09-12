@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "QuickFy - Transform Marketing Data into Clear Business Decisions",
-    "description": "Platform for SMEs that simplifies digital marketing data analysis and optimizes advertising performance for effective strategic decisions."
+    "title": "B2B Marketing Automation | Small Business CRM | SME Digital Marketing ROI",
+    "description": "Small business CRM with B2B marketing automation. SME digital marketing ROI analytics platform. Proven 35% ROI improvement for small business marketing automation."
   },
   "navigation": {
     "features": "Features",
@@ -18,12 +18,12 @@
     "mobileMenu": "Mobile menu"
   },
   "hero": {
-    "headline": "Transform digital marketing data into",
-    "headlineHighlight": "clear business decisions",
-    "subheadline": "QuickFy Performance Suite helps SMEs navigate digital marketing complexity, transforming scattered data into strategic insights for confident growth.",
+    "headline": "B2B marketing automation platform for",
+    "headlineHighlight": "SME digital marketing ROI growth",
+    "subheadline": "Small business CRM with integrated B2B marketing automation. Transform SME digital marketing ROI with proven analytics and 35% performance improvement.",
     "cta": {
-      "primary": "Discover QuickFy",
-      "secondary": "Book Demo"
+      "primary": "Try B2B Marketing Automation",
+      "secondary": "Small Business CRM Demo"
     },
     "metrics": {
       "hoursSaved": "15+ Hours Saved Weekly",
@@ -38,49 +38,49 @@
     ]
   },
   "features": {
-    "title": "The 3 Pillars of the",
-    "titleHighlight": "Performance Suite",
-    "subtitle": "A comprehensive platform that transforms digital marketing complexity into strategic clarity for SMEs",
+    "title": "B2B Marketing Automation:",
+    "titleHighlight": "3 Core SME Solutions",
+    "subtitle": "Small business CRM with integrated SME digital marketing ROI analytics - everything SMEs need for effective B2B marketing automation",
     "items": [
       {
         "id": "data-intelligence",
-        "title": "Data Intelligence & Reporting",
-        "description": "Centralized dashboard that unifies all marketing channels into a single source of truth for informed decisions.",
+        "title": "Small Business CRM & SME Digital Marketing Analytics",
+        "description": "Centralized small business CRM with advanced SME digital marketing ROI analytics. All marketing channels unified for B2B marketing automation.",
         "benefits": [
-          "Unified view of all channels",
-          "Automated and customizable reports",
-          "Clear and actionable strategic KPIs"
+          "Unified small business CRM dashboard",
+          "Automated SME digital marketing ROI reports",
+          "B2B marketing automation with clear KPIs"
         ],
         "icon": "BarChart3"
       },
       {
         "id": "performance-ads",
-        "title": "Advertising Performance Management",
-        "description": "Continuous optimization of advertising campaigns with real-time monitoring and intelligent automation.",
+        "title": "B2B Marketing Automation & ROI Optimization",
+        "description": "Advanced B2B marketing automation for SMEs with intelligent campaign optimization. Small business CRM with automated budget management.",
         "benefits": [
-          "Automatic budget optimization",
-          "Real-time performance monitoring",
-          "Constantly improved ROI and ROAS"
+          "Automated B2B marketing campaign optimization",
+          "Real-time SME digital marketing ROI tracking",
+          "35% higher ROI through marketing automation"
         ],
         "icon": "Target"
       },
       {
         "id": "client-platform",
-        "title": "Exclusive Client Platform",
-        "description": "Dedicated client access with personalized reports and intuitive dashboards for complete transparency.",
+        "title": "Cloud Small Business CRM Platform",
+        "description": "Secure cloud-based small business CRM with personalized B2B marketing automation dashboards. 24/7 access to SME digital marketing ROI analytics.",
         "benefits": [
-          "24/7 access to personalized reports",
-          "Intuitive and user-friendly dashboards",
-          "Complete transparency on results"
+          "24/7 small business CRM access",
+          "Personalized B2B marketing automation dashboards",
+          "Complete SME digital marketing ROI transparency"
         ],
         "icon": "Users"
       }
     ]
   },
   "benefits": {
-    "title": "Why SMEs choose",
-    "titleHighlight": "QuickFy",
-    "subtitle": "Concrete results that make a difference for your business growth",
+    "title": "Why SMEs choose QuickFy",
+    "titleHighlight": "B2B Marketing Automation",
+    "subtitle": "Proven small business CRM results with integrated SME digital marketing ROI analytics and B2B marketing automation",
     "items": [
       {
         "title": "Time Returned",
@@ -89,14 +89,14 @@
         "unit": "hours/week"
       },
       {
-        "title": "Strategic Clarity",
-        "description": "Decisions based on clear data and actionable insights",
+        "title": "Small Business CRM Efficiency",
+        "description": "Decisions based on SME digital marketing ROI data and small business CRM insights",
         "value": "100%",
         "unit": "transparency"
       },
       {
-        "title": "Improved ROI",
-        "description": "Average increase in advertising investment returns",
+        "title": "B2B Marketing Automation ROI",
+        "description": "Average SME digital marketing ROI increase through B2B marketing automation and small business CRM optimization",
         "value": "35%",
         "unit": "ROI increase"
       },
@@ -109,8 +109,8 @@
     ]
   },
   "pricing": {
-    "title": "Your Business, Under Control.",
-    "subtitle": "Access your personal portal, make your requests and track your Google Analytics results in a simple and intuitive way.",
+    "title": "Small Business CRM - Affordable Pricing",
+    "subtitle": "B2B marketing automation for SMEs with transparent pricing. SME digital marketing ROI solutions designed for small business budgets.",
     "perfectFor": "Perfect for:",
     "features": "Features:",
     "plans": {
@@ -119,12 +119,12 @@
         "price": "19",
         "period": "month",
         "badge": "RECOMMENDED",
-        "perfectFor": "Perfect for: All clients who want a single reference point to collaborate with us and monitor their website performance without getting lost in Google Analytics complexity.",
+        "perfectFor": "Perfect for: SMEs needing essential small business CRM with simple SME digital marketing ROI analytics without complexity.",
         "features": {
-          "0": "Access to Personal Client Portal",
-          "1": "Simple Ticketing System",
-          "2": "Simplified Google Analytics Dashboard",
-          "3": "Portal Support"
+          "0": "Essential Small Business CRM",
+          "1": "B2B Marketing Automation - Basic",
+          "2": "SME Digital Marketing ROI Dashboard",
+          "3": "Small Business CRM Support"
         },
         "cta": "Get Started"
       },
@@ -164,9 +164,9 @@
     }
   },
   "contact": {
-    "title": "Ready to transform",
-    "titleHighlight": "your marketing",
-    "subtitle": "Start your journey today towards clearer marketing decisions and measurable results",
+    "title": "Ready for B2B Marketing Automation",
+    "titleHighlight": "for your SME?",
+    "subtitle": "Start with small business CRM and SME digital marketing ROI analytics today. Free B2B marketing automation consultation for SMEs.",
     "form": {
       "fields": {
         "name": {
@@ -190,9 +190,24 @@
           "placeholder": "Describe your current marketing challenges..."
         }
       },
-      "submit": "Request Free Consultation",
+      "submit": "B2B Marketing Automation Consultation",
       "submitting": "Sending...",
-      "privacy": "I agree to the processing of personal data according to the Privacy Policy"
+      "submitAnother": "Submit Another Request",
+      "ariaLabel": "QuickFy contact form",
+      "privacy": "I agree to the processing of personal data according to the Privacy Policy",
+      "validation": {
+        "name": "Name must contain at least 2 characters",
+        "email": "Please enter a valid email address",
+        "company": "Company name must contain at least 2 characters",
+        "phone": "Phone number must contain at least 10 digits",
+        "message": "Message must contain at least 10 characters",
+        "privacy": "You must accept the processing of personal data"
+      },
+      "error": {
+        "title": "Request Sending Error",
+        "message": "An error occurred. Please try again or contact us directly.",
+        "retry": "Retry"
+      }
     },
     "success": {
       "title": "Request Sent!",
@@ -249,8 +264,22 @@
       "content": "Automating our sales funnel brought a 50% increase in conversions. QuickFy analyzes customer data in real-time and suggests optimal actions. Sales have never been easier."
     }
   },
+  "logos": {
+    "title": "Trusted by leading companies worldwide",
+    "description": "Join {count}+ companies that trust QuickFy for their marketing automation"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "homeAria": "Go back to homepage",
+    "currentPageAria": "Current page",
+    "navigationAria": "Breadcrumb navigation",
+    "separator": "Navigate to"
+  },
   "footer": {
-    "description": "QuickFy Performance Suite - The platform that transforms digital marketing complexity into strategic clarity for SMEs.",
+    "description": "QuickFy - B2B marketing automation and small business CRM for SMEs. SME digital marketing ROI analytics with proven higher ROI for small and medium businesses.",
+    "contact": {
+      "emailAria": "Send email to QuickFy"
+    },
     "links": {
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",

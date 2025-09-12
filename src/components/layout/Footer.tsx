@@ -21,11 +21,11 @@ export function Footer() {
   };
 
   const quickLinks = [
-    { label: 'Funzionalità', sectionId: 'features' },
-    { label: 'Vantaggi', sectionId: 'benefits' },
-    { label: 'Prezzi', sectionId: 'pricing' },
-    { label: 'Testimonianze', sectionId: 'testimonials' },
-    { label: 'Contatti', sectionId: 'contact' }
+    { label: t('navigation.features'), sectionId: 'features' },
+    { label: t('navigation.benefits'), sectionId: 'benefits' },
+    { label: t('navigation.pricing'), sectionId: 'pricing' },
+    { label: t('navigation.testimonials'), sectionId: 'testimonials' },
+    { label: t('navigation.contact'), sectionId: 'contact' }
   ];
 
   return (
@@ -50,7 +50,7 @@ export function Footer() {
                 <a 
                   href="mailto:info@quickfy.com" 
                   className="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
-                  aria-label="Invia email a QuickFy"
+                  aria-label={t('footer.contact.emailAria')}
                 >
                   info@quickfy.com
                 </a>

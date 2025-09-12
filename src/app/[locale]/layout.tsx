@@ -9,6 +9,8 @@ import { PerformanceMonitor, ResourceMonitor } from '@/components/PerformanceMon
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { ToastProvider } from '@/components/ui/toast';
+import { ClientOnly } from '@/components/ui/ClientOnly';
+import { FloatingBreadcrumb } from '@/components/ui/QuickfyBreadcrumb';
 import './globals.css';
 import Script from 'next/script';
 
@@ -56,12 +58,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
         
-        {/* Preload critical CSS */}
-        <link
-          rel="preload"
-          href="/_next/static/css/app/layout.css"
-          as="style"
-        />
+        {/* Critical CSS is automatically handled by Next.js 15 */}
         
         {/* Performance monitoring */}
         <Script
@@ -104,9 +101,12 @@ export default async function LocaleLayout({ children, params }: Props) {
               <Header />
               {children}
               <Footer />
-              <FloatingLanguageSwitcher />
-              <PerformanceMonitor />
-              <ResourceMonitor />
+              <ClientOnly>
+                <FloatingLanguageSwitcher />
+                <FloatingBreadcrumb />
+                <PerformanceMonitor />
+                <ResourceMonitor />
+              </ClientOnly>
             </ToastProvider>
           </NextIntlClientProvider>
         </div>
