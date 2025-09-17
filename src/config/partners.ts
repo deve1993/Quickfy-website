@@ -2,14 +2,14 @@ import { PartnersConfig } from '@/types/partners';
 
 /**
  * Partner logos configuration
- * 
+ *
  * To add a new partner logo:
  * 1. Add the SVG file to /public/logos/
  * 2. Add a new entry to the logos array below
  * 3. Set enabled: true and appropriate order value
- * 
+ *
  * To temporarily hide a logo, set enabled: false
- * 
+ *
  * Note: Dimensions are base sizes that will be scaled up automatically
  * to prevent cropping while maintaining aspect ratios.
  */
@@ -19,8 +19,8 @@ export const partnersConfig: PartnersConfig = {
       id: 'easychange',
       name: 'EasyChange',
       logoPath: '/logos/easychange_logo.svg',
-      width: 170,  // Increased from 140 to accommodate natural SVG dimensions
-      height: 55,  // Increased from 45 to maintain aspect ratio
+      width: 255,  // Scaled up 50% from 170 (170 * 1.5 = 255)
+      height: 83,  // Scaled up 50% from 55 (55 * 1.5 = 82.5, rounded to 83)
       alt: 'EasyChange company logo',
       enabled: true,
       order: 1
@@ -29,8 +29,8 @@ export const partnersConfig: PartnersConfig = {
       id: 'europlatba',
       name: 'Europlatba',
       logoPath: '/logos/europlatba_logo.svg',
-      width: 160,  // Increased from 130 for better visibility
-      height: 50,  // Increased from 40 to prevent cropping
+      width: 240,  // Scaled up 50% from 160 (160 * 1.5 = 240)
+      height: 75,  // Scaled up 50% from 50 (50 * 1.5 = 75)
       alt: 'Europlatba company logo',
       enabled: true,
       order: 2
@@ -49,8 +49,8 @@ export const partnersConfig: PartnersConfig = {
       id: 'easyfunding',
       name: 'EasyFunding',
       logoPath: '/logos/logo_easyfunding_regular.svg',
-      width: 140,  // Reduced from 190 to balance with other logos (26% reduction)
-      height: 40,  // Reduced from 55 to maintain aspect ratio (27% reduction)
+      width: 84,  // Reduced by 40% from 140 (140 * 0.6 = 84)
+      height: 24,  // Reduced by 40% from 40 (40 * 0.6 = 24)
       alt: 'EasyFunding company logo',
       enabled: true,
       order: 4
@@ -110,7 +110,7 @@ export const addPartner = (partner: Omit<import('@/types/partners').PartnerLogo,
     ...partner,
     id: partner.id || partner.name.toLowerCase().replace(/\s+/g, '-'),
   };
-  
+
   partnersConfig.logos.push(newPartner as import('@/types/partners').PartnerLogo);
   return newPartner;
 };

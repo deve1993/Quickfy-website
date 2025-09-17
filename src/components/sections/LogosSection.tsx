@@ -9,7 +9,7 @@ import { useTranslations } from 'next-intl';
 export function LogosSection() {
   // Get translations
   const t = useTranslations('logos');
-  
+
   // Get enabled partner logos from configuration
   const enabledLogos = getEnabledPartners();
   const { animation, display } = partnersConfig;
@@ -25,11 +25,11 @@ export function LogosSection() {
       className="relative flex-shrink-0"
     >
       <div className="relative">
-        <div 
-          className="flex items-center justify-center relative min-w-fit"
-          style={{ 
-            width: Math.max(logo.width * 1.2, 160), // Increase container width by 20% with minimum
-            height: Math.max(logo.height * 1.5, 60)  // Increase container height by 50% with minimum
+        <div
+          className="flex items-center justify-center relative"
+          style={{
+            width: 180, // Standardized container width for uniform spacing
+            height: 90  // Standardized container height for consistent alignment
           }}
         >
           <Image
@@ -40,8 +40,8 @@ export function LogosSection() {
             className="object-contain max-w-full max-h-full"
             priority={false}
             style={{
-              width: 'auto',
-              height: 'auto',
+              width: logo.width,
+              height: logo.height,
               maxWidth: '100%',
               maxHeight: '100%'
             }}
@@ -58,7 +58,7 @@ export function LogosSection() {
             }}
           />
         </div>
-        
+
         {/* Optional website link */}
         {logo.website && (
           <a
@@ -89,8 +89,8 @@ export function LogosSection() {
         </motion.div>
 
         {/* Infinite horizontal scrolling logos */}
-        <div 
-          className="relative overflow-hidden py-8" 
+        <div
+          className="relative overflow-hidden py-8"
           style={{
             mask: 'linear-gradient(90deg, transparent, black 20%, black 80%, transparent)',
             WebkitMask: 'linear-gradient(90deg, transparent, black 20%, black 80%, transparent)',
@@ -98,7 +98,11 @@ export function LogosSection() {
           }}
         >
           <motion.div
-            className={`flex ${display.gap} items-center will-change-transform`}
+            className="flex items-center will-change-transform"
+            style={{
+              gap: '2rem', // Uniform 32px spacing between all logos
+              width: "200%"
+            }}
             animate={animation.enabled ? { x: [`0%`, `-50%`] } : {}}
             transition={{
               duration: animation.scrollDuration,
@@ -106,11 +110,10 @@ export function LogosSection() {
               repeatType: "loop",
               ease: "linear"
             }}
-            style={{ width: "200%" }}
           >
             {/* First set of logos */}
             {enabledLogos.map((logo) => renderLogo(logo, 'first'))}
-            
+
             {/* Duplicate set for seamless loop */}
             {enabledLogos.map((logo) => renderLogo(logo, 'second'))}
           </motion.div>
