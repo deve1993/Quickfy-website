@@ -24,18 +24,27 @@ export function LogosSection() {
       key={`${keyPrefix}-${logo.id}`}
       className="relative flex-shrink-0"
     >
-      <div className="relative p-8 rounded-xl bg-white/90 backdrop-blur-sm border border-white/40 shadow-sm">
+      <div className="relative">
         <div 
           className="flex items-center justify-center relative min-w-fit"
-          style={{ width: logo.width, height: logo.height }}
+          style={{ 
+            width: Math.max(logo.width * 1.2, 160), // Increase container width by 20% with minimum
+            height: Math.max(logo.height * 1.5, 60)  // Increase container height by 50% with minimum
+          }}
         >
           <Image
             src={logo.logoPath}
             alt={logo.alt || `${logo.name} logo`}
             width={logo.width}
             height={logo.height}
-            className="object-contain max-w-none"
+            className="object-contain max-w-full max-h-full"
             priority={false}
+            style={{
+              width: 'auto',
+              height: 'auto',
+              maxWidth: '100%',
+              maxHeight: '100%'
+            }}
             onError={(e) => {
               // Fallback to text display if image fails to load
               const target = e.target as HTMLElement;
@@ -81,10 +90,11 @@ export function LogosSection() {
 
         {/* Infinite horizontal scrolling logos */}
         <div 
-          className="relative overflow-hidden" 
+          className="relative overflow-hidden py-8" 
           style={{
             mask: 'linear-gradient(90deg, transparent, black 20%, black 80%, transparent)',
-            WebkitMask: 'linear-gradient(90deg, transparent, black 20%, black 80%, transparent)'
+            WebkitMask: 'linear-gradient(90deg, transparent, black 20%, black 80%, transparent)',
+            minHeight: '120px' // Ensure adequate height for larger logos
           }}
         >
           <motion.div

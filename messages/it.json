@@ -1,7 +1,8 @@
 {
   "meta": {
     "title": "Automazione Marketing PMI | CRM Piccole Imprese | Analytics Marketing Digitale",
-    "description": "CRM piccole imprese con automazione marketing PMI. Analytics marketing digitale per PMI con 35% ROI migliorato. Soluzioni marketing automation per piccole aziende."
+    "description": "CRM piccole imprese con automazione marketing PMI. Analytics marketing digitale per PMI con 35% ROI migliorato. Soluzioni marketing automation per piccole aziende.",
+    "locale": "it"
   },
   "navigation": {
     "features": "Funzionalità",
@@ -32,7 +33,7 @@
     },
     "typewriter": [
       "decisioni strategiche",
-      "crescita sostenibile", 
+      "crescita sostenibile",
       "risultati misurabili",
       "successo digitale"
     ]
@@ -65,7 +66,7 @@
         "icon": "Target"
       },
       {
-        "id": "client-platform", 
+        "id": "client-platform",
         "title": "CRM Cloud per Piccole Imprese",
         "description": "CRM cloud sicuro per piccole imprese con dashboard personalizzati per automazione marketing PMI. Accesso 24/7 ad analytics marketing digitale.",
         "benefits": [
@@ -282,9 +283,348 @@
     },
     "links": {
       "privacy": "Privacy Policy",
-      "terms": "Termini di Servizio",
+      "terms": "Termini e Condizioni Generali",
       "contact": "Contatti"
     },
     "copyright": "© 2024 QuickFy. Tutti i diritti riservati."
+  },
+  "cookieConsent": {
+    "title": "Utilizziamo i cookie per una migliore esperienza",
+    "description": "Utilizziamo i cookie per il funzionamento essenziale del sito, l'analisi del traffico e per migliorare la tua esperienza. Puoi scegliere quali tipi di cookie consentire.",
+    "acceptAll": "Accetta Tutti",
+    "rejectAll": "Rifiuta Tutti",
+    "managePreferences": "Gestisci Preferenze",
+    "savePreferences": "Salva Preferenze",
+    "close": "Chiudi",
+    "legalNotice": "Maggiori informazioni sull'utilizzo dei cookie sono disponibili nella nostra",
+    "categories": {
+      "necessary": "Necessari",
+      "analytics": "Analitici",
+      "marketing": "Marketing",
+      "preferences": "Preferenze",
+      "alwaysEnabled": "Sempre abilitati",
+      "optional": "Opzionali",
+      "necessaryDescription": "Questi cookie sono essenziali per il corretto funzionamento del sito web e non possono essere disabilitati. Sono solitamente impostati in risposta ad azioni dell'utente come l'impostazione della lingua o l'accesso.",
+      "analyticsDescription": "I cookie analitici ci aiutano a capire come i visitatori interagiscono con il sito web, forniscono informazioni sul traffico e ci aiutano a migliorare le prestazioni del sito.",
+      "marketingDescription": "I cookie di marketing vengono utilizzati per personalizzare gli annunci e fornire contenuti più rilevanti. Possono essere utilizzati per misurare l'efficacia delle campagne pubblicitarie.",
+      "preferencesDescription": "I cookie delle preferenze ricordano le tue scelte e personalizzano la tua esperienza, come la lingua preferita o le impostazioni dell'interfaccia utente."
+    },
+    "preferences": {
+      "title": "Impostazioni Cookie",
+      "subtitle": "Gestisci le tue preferenze sui cookie e sulla privacy",
+      "introduction": "Puoi scegliere quali tipi di cookie consentire sul nostro sito. Le tue scelte saranno rispettate e memorizzate per 1 anno."
+    }
+  },
+  "privacyPolicy": {
+    "meta": {
+      "title": "Privacy Policy - QuickFy",
+      "description": "Privacy Policy per QuickFy Performance Suite. Informazioni trasparenti sul trattamento dei tuoi dati personali secondo GDPR."
+    },
+    "title": "Privacy Policy di FL1 s.r.o.",
+    "lastUpdated": "Ultimo aggiornamento: {date}",
+    "sections": {
+      "introduction": {
+        "title": "I. Introduzione",
+        "content": "Questa Privacy Policy (la \"Policy\") definisce il modo in cui FL1 s.r.o., con sede legale in Moskevská 1464/61, Vršovice, 101 00 Praha 10, Partita IVA: 19990146, registrata nel Registro delle Imprese tenuto dal Tribunale Municipale di Praga, Sezione C, Inserto 398569 (di seguito \"Titolare\" o \"QuickFy\"), raccoglie, utilizza, conserva e protegge i dati personali degli utenti dei suoi servizi."
+      },
+      "dataController": {
+        "title": "II. Titolare del trattamento",
+        "content": [
+          "Il titolare del trattamento secondo il GDPR è:",
+          "FL1 s.r.o.",
+          "Moskevská 1464/61, Vršovice, 101 00 Praha 10",
+          "Partita IVA: 19990146",
+          "Email: info@quickfy.eu",
+          "Telefono: +420 775 113 732"
+        ]
+      },
+      "typesOfData": {
+        "title": "III. Quali dati personali trattiamo",
+        "content": [
+          "a) Dati identificativi: nome, cognome, indirizzo email, numero di telefono",
+          "b) Dati aziendali: nome dell'azienda, posizione in azienda, indirizzo aziendale",
+          "c) Dati tecnici: indirizzo IP, cookies, informazioni su dispositivo e browser",
+          "d) Dati di utilizzo servizi: statistiche di utilizzo, preferenze, impostazioni",
+          "e) Dati di comunicazione: contenuto richieste, corrispondenza, feedback"
+        ]
+      },
+      "purposes": {
+        "title": "IV. Finalità del trattamento dei dati personali",
+        "content": [
+          "Trattiamo i tuoi dati personali per le seguenti finalità:",
+          "a) Fornitura dei servizi QuickFy Performance Suite",
+          "b) Comunicazione con gli utenti e supporto tecnico",
+          "c) Miglioramento della qualità e delle funzionalità dei nostri servizi",
+          "d) Finalità di marketing (solo con consenso)",
+          "e) Adempimento agli obblighi di legge",
+          "f) Protezione dalle frodi e garanzia della sicurezza"
+        ]
+      },
+      "legalBasis": {
+        "title": "V. Base giuridica per il trattamento",
+        "content": [
+          "Trattiamo i dati personali sulla base di:",
+          "a) Contratto - per la fornitura di servizi e l'adempimento degli obblighi contrattuali",
+          "b) Interesse legittimo - per il funzionamento tecnico dei servizi e il loro miglioramento",
+          "c) Consenso - per finalità di marketing e invio newsletter",
+          "d) Obbligo legale - per archiviazione e registrazioni contabili"
+        ]
+      },
+      "sharing": {
+        "title": "VI. Condivisione dei dati con terze parti",
+        "content": [
+          "Possiamo condividere i tuoi dati personali con:",
+          "a) Fornitori di servizi IT e soluzioni cloud",
+          "b) Partner per analisi e ottimizzazione delle prestazioni",
+          "c) Autorità pubbliche in caso di obbligo legale",
+          "d) Revisori e consulenti legali",
+          "Tutti i destinatari sono vincolati da riservatezza e conformità GDPR."
+        ]
+      },
+      "internationalTransfer": {
+        "title": "VII. Trasferimento internazionale dei dati",
+        "content": [
+          "In caso di trasferimento di dati personali verso paesi terzi, garantiamo:",
+          "a) Trasferimento solo verso paesi con decisione di adeguatezza CE",
+          "b) Uso di clausole contrattuali standard approvate dalla CE",
+          "c) Implementazione di garanzie appropriate secondo GDPR",
+          "d) Ottenimento del tuo consenso esplicito negli altri casi"
+        ]
+      },
+      "retention": {
+        "title": "VIII. Periodo di conservazione dei dati",
+        "content": [
+          "Conserviamo i dati personali per:",
+          "a) Durata del rapporto contrattuale + 3 anni dopo la cessazione",
+          "b) Fino alla revoca del consenso (finalità di marketing)",
+          "c) Periodo stabilito dalla legge (documenti contabili 10 anni)",
+          "d) Periodo necessario per far valere i diritti (max. 3 anni)"
+        ]
+      },
+      "rights": {
+        "title": "IX. I tuoi diritti",
+        "content": [
+          "In relazione al trattamento dei dati personali, hai il diritto:",
+          "a) Di accesso ai dati personali - ottenere informazioni sul trattamento",
+          "b) Di rettifica - richiedere la correzione di dati inesatti",
+          "c) Di cancellazione (\"diritto all'oblio\") - soggetto alle condizioni legali",
+          "d) Di limitazione del trattamento - nei casi specificati dal GDPR",
+          "e) Alla portabilità dei dati - ricevere i dati in formato strutturato",
+          "f) Di opposizione al trattamento - specialmente per finalità di marketing",
+          "g) Di presentare reclamo presso l'autorità di controllo - Garante per la Protezione dei Dati Personali"
+        ]
+      },
+      "security": {
+        "title": "X. Sicurezza dei dati",
+        "content": [
+          "Implementiamo misure tecniche e organizzative appropriate:",
+          "a) Crittografia dei dati durante la trasmissione e la conservazione",
+          "b) Audit di sicurezza regolari e test",
+          "c) Accesso limitato solo al personale autorizzato",
+          "d) Formazione regolare del personale sulla protezione dei dati",
+          "e) Piani di risposta agli incidenti per violazioni della sicurezza",
+          "f) Backup e ripristino regolare dei dati"
+        ]
+      },
+      "cookies": {
+        "title": "XI. Cookies e tecnologie di tracciamento",
+        "content": [
+          "Sui nostri siti web utilizziamo:",
+          "a) Cookies necessari per il funzionamento del sito",
+          "b) Cookies analitici per la misurazione del traffico (Google Analytics)",
+          "c) Cookies di marketing (solo con consenso)",
+          "d) Cookies per la personalizzazione dell'esperienza utente",
+          "Puoi gestire i cookies nelle impostazioni del tuo browser."
+        ]
+      },
+      "minors": {
+        "title": "XII. Protezione dei minori",
+        "content": [
+          "I nostri servizi non sono destinati a persone di età inferiore ai 16 anni. Se veniamo a sapere di aver raccolto dati personali da un minore senza il consenso dei genitori, cancelleremo immediatamente tali dati. I genitori possono contattare il nostro supporto clienti per affrontare queste questioni."
+        ]
+      },
+      "changes": {
+        "title": "XIII. Modifiche a questa policy",
+        "content": [
+          "Questa Policy può essere aggiornata in conformità con lo sviluppo dei nostri servizi e i cambiamenti nelle normative legali. Ti informeremo di modifiche significative attraverso:",
+          "a) Notifica via email",
+          "b) Avviso sui nostri siti web",
+          "c) Notifica direttamente nell'applicazione QuickFy",
+          "Continuando a utilizzare i nostri servizi dopo le modifiche alla Policy, esprimi il consenso ai termini aggiornati."
+        ]
+      },
+      "contact": {
+        "title": "Contatti",
+        "content": [
+          "Per domande riguardanti la protezione dei dati personali, contattaci:",
+          "Email: privacy@quickfy.eu",
+          "Telefono: +420 775 113 732",
+          "Indirizzo postale: FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10",
+          "",
+          "Puoi presentare reclami presso l'autorità di controllo:",
+          "Garante per la Protezione dei Dati Personali",
+          "Piazza di Monte Citorio, n. 121, 00186 Roma",
+          "Tel.: +39 06 69677 1",
+          "Email: garante@gpdp.it"
+        ]
+      }
+    }
+  },
+  "termsAndConditions": {
+    "meta": {
+      "title": "Termini e Condizioni Generali - QuickFy",
+      "description": "Termini e Condizioni Generali per QuickFy Performance Suite. Condizioni contrattuali complete per l'utilizzo dei nostri servizi."
+    },
+    "title": "Termini e Condizioni Generali di FL1 s.r.o.",
+    "lastUpdated": "Ultimo aggiornamento: {date}",
+    "tableOfContents": {
+      "title": "Indice",
+      "showToc": "Mostra indice",
+      "hideToc": "Nascondi indice"
+    },
+    "sections": {
+      "basicProvisions": {
+        "title": "I. Disposizioni Generali",
+        "content": [
+          "1.1. Le presenti condizioni generali di contratto (di seguito \"CGC\") regolano i diritti e gli obblighi reciproci derivanti da un contratto di acquisto (di seguito \"contratto di acquisto\") concluso tramite l'interfaccia web situata all'indirizzo www.quickfy.eu (di seguito \"interfaccia web\") tra FL1 s.r.o., con sede legale in Moskevská 1464/61, Vršovice, 101 00 Praha 10, Partita IVA: 19990146, iscritta nel Registro delle Imprese tenuto dal Tribunale Municipale di Praga, Sezione C, Inserto 398569 (di seguito \"venditore\") e una persona fisica che conclude un contratto non relativo alla sua attività commerciale come consumatore, o in diretta connessione con la sua attività commerciale (di seguito \"acquirente\").",
+          "1.2. Le disposizioni che deviano dalle CGC possono essere concordate nel contratto di acquisto. Gli accordi devianti nel contratto di acquisto hanno precedenza sulle disposizioni delle CGC.",
+          "1.3. Le disposizioni delle CGC sono parte integrante del contratto di acquisto. Il contratto di acquisto e le CGC sono redatti in lingua ceca. Il contratto di acquisto può essere concluso in lingua ceca.",
+          "1.4. Il venditore può modificare o integrare il testo delle CGC. Questa disposizione non pregiudica i diritti e gli obblighi sorti durante la validità del precedente testo delle CGC."
+        ]
+      },
+      "userAccount": {
+        "title": "II. Account Utente",
+        "content": [
+          "2.1. Sulla base della registrazione dell'acquirente nell'interfaccia web, l'acquirente può accedere al proprio account utente. Dal proprio account utente, l'acquirente può ordinare merci (di seguito \"account utente\").",
+          "2.2. Quando si registra per un account utente e quando si ordinano merci, l'acquirente è obbligato a fornire tutte le informazioni correttamente e veracemente. L'acquirente è obbligato ad aggiornare le informazioni fornite nell'account utente in caso di modifiche. Le informazioni fornite dall'acquirente nell'account utente e quando si ordinano merci sono considerate corrette dal venditore.",
+          "2.3. L'accesso all'account utente è protetto da nome utente e password. L'acquirente è obbligato a mantenere la riservatezza riguardo alle informazioni necessarie per accedere al proprio account utente.",
+          "2.4. L'acquirente non deve consentire a terzi di utilizzare l'account utente.",
+          "2.5. Il venditore può cancellare l'account utente, specialmente se l'acquirente non ha utilizzato il proprio account utente per più di 1 anno, o se l'acquirente viola i propri obblighi derivanti dal contratto di acquisto (specialmente le condizioni di pagamento).",
+          "2.6. L'acquirente riconosce che l'account utente potrebbe non essere disponibile continuamente, specialmente a causa della necessaria manutenzione dell'hardware e software del venditore, o della necessaria manutenzione dell'hardware e software di terzi."
+        ]
+      },
+      "contractConclusion": {
+        "title": "III. Conclusione del Contratto di Acquisto",
+        "content": [
+          "3.1. Tutta la presentazione delle merci inserita nell'interfaccia web è di natura informativa e il venditore non è obbligato a concludere un contratto di acquisto riguardo a tali merci. L'articolo 1732 paragrafo 2 del Codice Civile non si applica.",
+          "3.2. L'interfaccia web contiene informazioni sulle merci, inclusi i prezzi delle singole merci e i costi per la restituzione delle merci, se tali merci non possono essere restituite per posta ordinaria a causa della loro natura. I prezzi delle merci sono indicati comprensivi di IVA e tutte le commissioni correlate. I prezzi delle merci rimangono validi per il periodo in cui sono visualizzati nell'interfaccia web. Questa disposizione non limita la possibilità del venditore di concludere un contratto di acquisto secondo condizioni concordate individualmente.",
+          "3.3. L'interfaccia web contiene anche informazioni sui costi relativi all'imballaggio e alla consegna delle merci. Le informazioni sui costi relativi all'imballaggio e alla consegna delle merci indicate nell'interfaccia web si applicano solo quando le merci vengono consegnate nel territorio della Repubblica Ceca.",
+          "3.4. Per ordinare merci, l'acquirente compila un modulo d'ordine nell'interfaccia web. Il modulo d'ordine contiene informazioni su: a) merci ordinate (le merci ordinate sono \"inserite\" dall'acquirente nel carrello elettronico dell'interfaccia web), b) metodo di pagamento per il prezzo di acquisto delle merci, informazioni sul metodo richiesto di consegna delle merci ordinate, c) informazioni sui costi relativi alla consegna delle merci (di seguito collettivamente denominato \"ordine\").",
+          "3.5. Prima di inviare l'ordine al venditore, all'acquirente è consentito controllare e modificare i dati che l'acquirente ha inserito nell'ordine, considerando anche la capacità dell'acquirente di riconoscere e correggere errori verificatisi durante l'inserimento dei dati nell'ordine. L'acquirente invia l'ordine al venditore facendo clic sul pulsante \"completa ordine\". I dati indicati nell'ordine sono considerati corretti dal venditore. La condizione per la validità dell'ordine è la compilazione di tutti i dati obbligatori nel modulo d'ordine e la conferma da parte dell'acquirente di aver letto queste CGC.",
+          "3.6. Immediatamente dopo aver ricevuto l'ordine, il venditore invia all'acquirente la conferma di ricezione dell'ordine all'indirizzo elettronico che l'acquirente ha fornito quando ha ordinato le merci. Questa conferma è automatica e non è considerata conclusione del contratto. Insieme alla conferma, l'acquirente riceve queste CGC. Il contratto di acquisto è concluso solo con la conferma dell'ordine da parte del venditore all'indirizzo elettronico dell'acquirente."
+        ]
+      },
+      "priceAndPayment": {
+        "title": "IV. Prezzo e Condizioni di Pagamento",
+        "content": [
+          "4.1. L'acquirente può pagare al venditore il prezzo delle merci e gli eventuali costi relativi alla consegna delle merci secondo il contratto di acquisto nei seguenti modi: senza contanti tramite bonifico sul conto del venditore n. 2801707992/2010, tenuto presso Fio banka, a.s.; senza contanti tramite carta di pagamento; senza contanti tramite sistema di pagamento.",
+          "4.2. Insieme al prezzo di acquisto, l'acquirente è obbligato a pagare al venditore anche i costi relativi all'imballaggio e alla consegna delle merci nell'importo concordato. Se non diversamente specificato, il prezzo di acquisto include anche i costi relativi alla consegna delle merci.",
+          "4.3. Il venditore non richiede un deposito o altro pagamento simile dall'acquirente. Questo non si applica ai casi in cui è richiesto il pagamento del prezzo di acquisto prima dell'invio delle merci.",
+          "4.4. In caso di pagamento tramite gateway di pagamento, l'acquirente viene reindirizzato all'interfaccia della banca pertinente per effettuare il pagamento.",
+          "4.5. In caso di pagamento senza contanti, l'obbligo dell'acquirente di pagare il prezzo di acquisto è soddisfatto quando l'importo pertinente viene accreditato sul conto del venditore.",
+          "4.6. Il venditore ha diritto, specialmente se l'acquirente non conferma successivamente l'ordine, di richiedere il pagamento dell'intero prezzo di acquisto prima di inviare le merci all'acquirente. L'articolo 2119 paragrafo 1 del Codice Civile non si applica.",
+          "4.7. Eventuali sconti sul prezzo delle merci forniti dal venditore all'acquirente non possono essere combinati reciprocamente.",
+          "4.8. Se è consuetudine nelle relazioni commerciali o se richiesto da normative legali generalmente vincolanti, il venditore emetterà all'acquirente un documento fiscale - fattura riguardo ai pagamenti effettuati sulla base del contratto di acquisto. Il venditore è un contribuente IVA. Il venditore emetterà un documento fiscale - fattura all'acquirente dopo il pagamento del prezzo delle merci e lo invierà in forma elettronica all'indirizzo elettronico dell'acquirente."
+        ]
+      },
+      "cancellationWithdrawal": {
+        "title": "V. Recesso dal Contratto",
+        "content": [
+          "5.1. L'acquirente che ha concluso un contratto di acquisto al di fuori della sua attività commerciale come consumatore ha il diritto di recedere dal contratto di acquisto.",
+          "5.2. Il termine per il recesso dal contratto è di 14 giorni: a) dalla ricezione delle merci, b) dalla ricezione dell'ultimo pezzo di merci, se diversi pezzi di merci sono oggetto dell'ordine, c) dalla ricezione della prima consegna, se oggetto del contratto è la consegna regolare ripetuta di merci.",
+          "5.3. L'acquirente non può, tra l'altro, recedere dal contratto di acquisto: a) per la fornitura di servizi, se sono stati forniti completamente e il servizio ha iniziato ad essere fornito con il consenso espresso dell'acquirente prima della scadenza del termine per il recesso dal contratto e l'acquirente ha dichiarato di sapere che dopo la fornitura completa del servizio da parte del venditore perderà il diritto di recesso dal contratto, b) per la consegna di merci modificate secondo i desideri dell'acquirente o per la sua persona, c) per la consegna di merci soggette a rapido deterioramento, nonché merci che sono state irreversibilmente mescolate con altre merci dopo la consegna, d) per la consegna di registrazioni audio o video o programmi per computer se hanno violato il loro imballaggio originale, e) per la consegna di giornali, periodici o riviste ad eccezione degli abbonamenti, f) per alloggio, trasporto, ristorazione o uso del tempo libero, se il contratto specifica una data o periodo specifico di esecuzione, g) per contenuto elettronico non consegnato su supporto fisico, se il contenuto ha iniziato ad essere fornito con il consenso espresso dell'acquirente prima della scadenza del termine per il recesso dal contratto e l'acquirente ha dichiarato di sapere che perderà il diritto di recesso dal contratto.",
+          "5.4. Per recedere dal contratto di acquisto, l'acquirente deve informare il venditore della sua decisione di recedere dal contratto di acquisto con una dichiarazione inequivocabile (ad esempio, una lettera inviata per posta o email). A questo scopo, l'acquirente può utilizzare il modulo di recesso campione fornito dal venditore, che costituisce un'appendice a queste CGC. L'acquirente può anche informare il venditore del recesso dal contratto di acquisto tramite un modulo situato sul sito web del venditore. L'acquirente invia avviso di recesso dal contratto al venditore a info@quickfy.eu o all'indirizzo di FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10.",
+          "5.5. L'acquirente che ha receduto dal contratto di acquisto è obbligato a restituire le merci al venditore senza indebito ritardo, al più tardi entro 14 giorni dal recesso dal contratto di acquisto. L'acquirente è obbligato a sostenere i costi associati alla restituzione delle merci al venditore, anche se le merci non possono essere restituite per posta ordinaria a causa della loro natura.",
+          "5.6. Se l'acquirente ha receduto dal contratto di acquisto, il venditore restituirà tutti i fondi monetari ricevuti da lui sulla base del contratto di acquisto senza indebito ritardo, al più tardi entro 14 giorni dal recesso dal contratto di acquisto, inclusi i costi per la consegna delle merci. Il venditore restituirà i fondi monetari all'acquirente nello stesso modo in cui li ha ricevuti dall'acquirente. Il venditore restituirà i fondi monetari all'acquirente in modo diverso solo se l'acquirente è d'accordo e se questo non comporta costi aggiuntivi.",
+          "5.7. Se l'acquirente ha receduto dal contratto di acquisto, il venditore non è obbligato a restituire i fondi monetari all'acquirente prima che l'acquirente restituisca le merci o dimostri di aver inviato le merci al venditore.",
+          "5.8. L'acquirente deve restituire le merci al venditore non danneggiate, inutilizzate e non sporche e se possibile nell'imballaggio originale. Il venditore ha diritto di compensare unilateralmente il risarcimento per danni causati alle merci contro la richiesta dell'acquirente per la restituzione del prezzo di acquisto.",
+          "5.9. Il venditore ha diritto di recedere dal contratto di acquisto a causa di scorte esaurite, indisponibilità delle merci, o quando il produttore, importatore o fornitore delle merci ha terminato la produzione o l'importazione delle merci. Il venditore informa immediatamente l'acquirente tramite l'indirizzo elettronico indicato nell'ordine e restituisce tutti i fondi monetari ricevuti da lui sulla base del contratto di acquisto entro un periodo ragionevole, al più tardi entro 14 giorni dalla notifica del recesso dal contratto di acquisto."
+        ]
+      },
+      "transportDelivery": {
+        "title": "VI. Trasporto e Consegna delle Merci",
+        "content": [
+          "6.1. Se il metodo di trasporto è concordato sulla base di una richiesta speciale dell'acquirente, l'acquirente sopporta il rischio e gli eventuali costi aggiuntivi associati a questo metodo di trasporto.",
+          "6.2. Se il venditore è obbligato secondo il contratto di acquisto a consegnare le merci in un luogo designato dall'acquirente nell'ordine, l'acquirente è obbligato a prendere in consegna le merci alla consegna.",
+          "6.3. Se, per motivi dalla parte dell'acquirente, è necessario consegnare le merci ripetutamente o in modo diverso da quello indicato nell'ordine, l'acquirente è obbligato a pagare i costi associati alla consegna ripetuta delle merci, o i costi associati a un metodo diverso di consegna.",
+          "6.4. Quando prende in consegna le merci dal corriere, l'acquirente è obbligato a controllare l'integrità dell'imballaggio delle merci e in caso di difetti, notificare immediatamente il corriere. Se viene riscontrato danno all'imballaggio che indica ingresso non autorizzato nella spedizione, l'acquirente non deve prendere in consegna la spedizione dal corriere.",
+          "6.5. Diritti e obblighi aggiuntivi delle parti durante il trasporto delle merci possono essere regolati da condizioni di consegna speciali del venditore, se emesse dal venditore."
+        ]
+      },
+      "rightsDefects": {
+        "title": "VII. Diritti da Prestazione Difettosa",
+        "content": [
+          "7.1. I diritti e gli obblighi delle parti contrattuali riguardo ai diritti da prestazione difettosa sono regolati dalle pertinenti normative legali generalmente vincolanti (specialmente le disposizioni degli articoli da 1914 a 1925, da 2099 a 2117 e da 2161 a 2174 del Codice Civile).",
+          "7.2. Il venditore è responsabile verso l'acquirente che le merci non abbiano difetti alla ricezione. In particolare, il venditore è responsabile verso l'acquirente che al momento in cui l'acquirente ha preso in consegna le merci: a) le merci abbiano proprietà che le parti hanno concordato, e se non c'è accordo, tali proprietà che il venditore o produttore ha descritto o che l'acquirente si aspettava considerando la natura delle merci e sulla base della pubblicità da loro condotta, b) le merci siano adatte allo scopo che il venditore indica per il loro uso o per il quale le merci di questo tipo sono solitamente utilizzate, c) le merci corrispondano alla qualità o design del campione contrattuale o modello, se la qualità o design è stata determinata secondo il campione contrattuale o modello, d) le merci siano nella quantità, misura o peso appropriati e e) le merci rispettino i requisiti legali.",
+          "7.3. Le disposizioni indicate nel punto 7.2 di queste CGC non si applicano alle merci vendute a prezzo inferiore per un difetto per il quale è stato concordato il prezzo inferiore, per usura delle merci causata dal loro uso abituale, per merci usate per un difetto corrispondente al grado di uso o usura che le merci avevano quando prese in consegna dall'acquirente, o se segue dalla natura delle merci.",
+          "7.4. Se un difetto si manifesta entro sei mesi dalla ricezione, si presume che le merci fossero difettose alla ricezione. L'acquirente può far valere il diritto da un difetto che si verifica nei beni di consumo entro ventiquattro mesi dalla ricezione. Questa disposizione non si applica alle merci vendute a prezzo inferiore per un difetto per il quale è stato concordato il prezzo inferiore, per usura delle merci causata dal loro uso abituale, per merci usate per un difetto corrispondente al grado di uso o usura che le merci avevano quando prese in consegna dall'acquirente, o se segue dalla natura delle merci.",
+          "7.5. L'acquirente fa valere i diritti da prestazione difettosa presso il venditore a FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10, o secondo la decisione dell'acquirente anche all'indirizzo di una filiale dove l'accettazione di reclami è possibile considerando la gamma di merci vendute, o nella sede centrale o filiale designata. Il momento di presentazione di un reclamo è contato dal giorno in cui il venditore ha ricevuto il reclamo.",
+          "7.6. Requisiti e condizioni aggiuntivi per la gestione dei reclami possono essere regolati dalla procedura di reclamo del venditore, se emessa dal venditore."
+        ]
+      },
+      "additionalRights": {
+        "title": "VIII. Diritti e Obblighi Aggiuntivi delle Parti Contrattuali",
+        "content": [
+          "8.1. L'acquirente acquisisce la proprietà delle merci pagando l'intero prezzo di acquisto delle merci.",
+          "8.2. Il venditore non è vincolato da alcun codice di condotta verso l'acquirente nel senso dell'articolo 1826 paragrafo 1 lettera e) del Codice Civile.",
+          "8.3. La risoluzione extragiudiziale delle controversie derivanti da contratti di consumo è fornita dall'Ispezione Commerciale Ceca, con sede in Štěpánská 567/15, 120 00 Praha 2, Partita IVA: 000 20 869, sito web: https://adr.coi.cz. La piattaforma per la risoluzione online delle controversie situata su https://ec.europa.eu/consumers/odr può essere utilizzata per risolvere controversie tra il venditore e l'acquirente dal contratto di acquisto.",
+          "8.4. Centro Europeo Consumatori Repubblica Ceca, con sede in Štěpánská 567/15, 120 00 Praha 2, sito web: http://www.evropskyspotrebitel.cz è il punto di contatto secondo il Regolamento (UE) n. 524/2013 del Parlamento Europeo e del Consiglio sulla risoluzione online delle controversie dei consumatori e che modifica il Regolamento (CE) n. 2006/2004 e la Direttiva 2009/22/CE (Regolamento sulla risoluzione online delle controversie dei consumatori).",
+          "8.5. Il venditore è autorizzato a vendere merci sulla base di autorizzazione commerciale. Il controllo commerciale è effettuato nel suo ambito dall'ufficio commerciale pertinente. La supervisione sull'area della protezione dei dati personali è esercitata dall'Ufficio per la Protezione dei Dati Personali. L'Ispezione Commerciale Ceca esercita la supervisione sul rispetto della Legge n. 634/1992 Racc., sulla protezione dei consumatori, come modificata, entro un ambito definito.",
+          "8.6. L'acquirente riconosce con la presente che il venditore non è obbligato a consegnare merci all'acquirente se le merci sono già esaurite o non disponibili dal fornitore, nel qual caso l'acquirente sarà immediatamente informato di questo fatto e qualsiasi importo già pagato sarà restituito."
+        ]
+      },
+      "dataProtection": {
+        "title": "IX. Protezione dei Dati Personali",
+        "content": [
+          "9.1. La protezione dei dati personali dell'acquirente che è una persona fisica è regolata nei principi di protezione dei dati personali del venditore.",
+          "9.2. L'acquirente consente al trattamento di questi dati personali: nome e cognome, residenza, numero di identificazione, numero di identificazione fiscale, indirizzo elettronico, numero di telefono (di seguito \"dati personali\") da parte del venditore allo scopo di realizzare diritti e obblighi dal contratto di acquisto e allo scopo di mantenere l'account utente. L'acquirente consente al trattamento dei dati personali da parte del venditore allo scopo di inviare informazioni e comunicazioni commerciali all'acquirente. L'acquirente consente al trattamento dei dati personali da parte del venditore allo scopo di inviare informazioni e comunicazioni commerciali all'acquirente tramite mezzi elettronici di comunicazione.",
+          "9.3. L'acquirente riconosce di essere obbligato a fornire i propri dati personali (durante la registrazione, nell'ordine, quando conclude il contratto di acquisto) correttamente e veracemente e di essere obbligato a informare immediatamente il venditore dei cambiamenti ai propri dati personali.",
+          "9.4. Il venditore può affidare il trattamento dei dati personali a una terza parte come processore. I dati personali non saranno trasferiti a terze parti o resi disponibili a terze parti senza il consenso preventivo dell'acquirente.",
+          "9.5. I dati personali saranno trattati per il periodo necessario per l'esercizio dei diritti e obblighi derivanti dal contratto di acquisto e l'asserzione di rivendicazioni da questo contratto e per un periodo di 3 anni dalla cessazione del rapporto contrattuale tra l'acquirente e il venditore.",
+          "9.6. L'acquirente ha il diritto di chiedere al venditore informazioni su quali dati personali il venditore tratta su di lui, chiedere la loro correzione o completamento, o sotto condizioni stabilite nelle pertinenti normative legali chiedere la loro liquidazione e ha anche il diritto di sollevare un'obiezione contro il trattamento di dati personali destinati a scopi di marketing diretto e il diritto alla portabilità dei dati personali. L'acquirente ha il diritto di revocare il consenso al trattamento dei dati personali.",
+          "9.7. Se l'acquirente crede che i suoi dati personali siano trattati in violazione della privacy e vita personale dell'acquirente o in violazione delle normative legali, specialmente se i dati personali sono inesatti considerando lo scopo del loro trattamento, può: a) chiedere al venditore spiegazioni, b) richiedere che il venditore rimedi a tale situazione.",
+          "9.8. Se l'acquirente richiede informazioni secondo il punto 9.6 di queste CGC, il venditore è obbligato a fornire queste informazioni. Per fornire informazioni secondo questo punto, il venditore può richiedere un compenso ragionevole che non superi i costi necessari per fornire informazioni."
+        ]
+      },
+      "deliveryElectronic": {
+        "title": "X. Consegna di Comunicazioni Elettroniche",
+        "content": [
+          "10.1. L'acquirente consente alla consegna di comunicazioni elettroniche relative all'esecuzione del contratto all'indirizzo elettronico che ha fornito nell'ordine o nel suo account utente.",
+          "10.2. Il venditore consegna comunicazioni elettroniche all'acquirente all'indirizzo elettronico dell'acquirente indicato nell'ordine o registrato nell'account utente dell'acquirente. L'acquirente è obbligato a controllare regolarmente l'indirizzo elettronico indicato nell'ordine o registrato nel suo account utente e familiarizzare con le comunicazioni elettroniche consegnate.",
+          "10.3. L'acquirente riconosce che alcune comunicazioni elettroniche riguardanti l'ordine o rapporto legale con il venditore possono contenere informazioni riservate. Pertanto, l'acquirente è obbligato a garantire la protezione del suo indirizzo elettronico contro l'abuso da parte di terzi e anche contro l'accesso non autorizzato da parte di terzi a questo indirizzo elettronico.",
+          "10.4. Il venditore consegna comunicazioni elettroniche all'indirizzo elettronico dell'acquirente nella sua casella di posta elettronica tramite il fornitore di servizi email dell'acquirente. La comunicazione elettronica è considerata consegnata quando il messaggio appare nella casella di posta elettronica del destinatario presso il suo fornitore di servizi email, indipendentemente dal fatto che il destinatario venga a conoscenza della comunicazione."
+        ]
+      },
+      "finalProvisions": {
+        "title": "XI. Disposizioni Finali",
+        "content": [
+          "11.1. Se un rapporto stabilito dal contratto di acquisto contiene un elemento internazionale (straniero), le parti hanno concordato che il rapporto è regolato dalla legge ceca. Questo non pregiudica i diritti dei consumatori derivanti da normative legali generalmente vincolanti.",
+          "11.2. Se qualche disposizione delle CGC diventa invalida o inefficace, le disposizioni il cui significato si avvicina di più alla disposizione invalida o inefficace sostituiranno le disposizioni invalide. L'invalidità o l'inefficacia di una disposizione non pregiudica la validità delle altre disposizioni. Modifiche e aggiunte al contratto di acquisto o alle CGC richiedono forma scritta.",
+          "11.3. Il contratto di acquisto incluse le CGC è archiviato dal venditore in forma elettronica e non è accessibile.",
+          "11.4. Il modulo di recesso campione costituisce un'appendice a queste CGC.",
+          "11.5. Dettagli di contatto del venditore: indirizzo di consegna FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10, indirizzo elettronico info@quickfy.eu, telefono +420775113732."
+        ]
+      },
+      "withdrawalForm": {
+        "title": "Modulo di Recesso Campione",
+        "content": [
+          "Destinatario: FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10, indirizzo elettronico: info@quickfy.eu",
+          "",
+          "Con la presente notifico/notifichiamo* il mio/nostro* recesso dal mio/nostro* contratto di vendita delle seguenti merci*/per la fornitura del seguente servizio*:",
+          "",
+          "Ordinato il*/ricevuto il*:",
+          "",
+          "Nome del/dei consumatore/i:",
+          "",
+          "Indirizzo del/dei consumatore/i:",
+          "",
+          "Firma del/dei consumatore/i (solo se questo modulo è presentato in forma cartacea):",
+          "",
+          "Data:",
+          "",
+          "*Cancellare quanto non appropriato."
+        ]
+      }
+    }
   }
 }

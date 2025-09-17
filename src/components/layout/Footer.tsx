@@ -4,19 +4,40 @@ import { useTranslations } from 'next-intl';
 import { BarChart3, Mail, Phone, MapPin, ArrowUp, Linkedin, Twitter } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { PhoneLink } from '../ui/PhoneLink';
 
 export function Footer() {
   const t = useTranslations();
+  const pathname = usePathname();
+  
+  // Check if we're on the home page (any locale home page)
+  const isHomePage = pathname === '/' || pathname.match(/^\/[a-z]{2}$/);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (isHomePage) {
+      // If we're on home page, scroll to section
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      // If we're not on home page, navigate to home page with hash
+      window.location.href = `/#${sectionId}`;
+    }
+  };
+
+  const handleQuickLinkClick = (sectionId: string) => {
+    if (isHomePage) {
+      // If we're on home page, scroll to section
+      scrollToSection(sectionId);
+    } else {
+      // If we're not on home page, navigate to home page with hash
+      window.location.href = `/#${sectionId}`;
     }
   };
 
@@ -48,26 +69,26 @@ export function Footer() {
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" aria-hidden="true" />
                 <a 
-                  href="mailto:info@quickfy.com" 
+                  href="mailto:info@quickfy.eu" 
                   className="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
                   aria-label={t('footer.contact.emailAria')}
                 >
-                  info@quickfy.com
+                  info@quickfy.eu
                 </a>
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" aria-hidden="true" />
                 <PhoneLink 
-                  phoneNumber="+390123456789"
+                  phoneNumber="+420775113732"
                   className="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
-                  ariaLabel="Chiama QuickFy"
+                  ariaLabel="Zavolat QuickFy"
                 >
-                  +39 012 345 6789
+                  +420 775 113 732
                 </PhoneLink>
               </div>
               <div className="flex items-center gap-3 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary flex-shrink-0" aria-hidden="true" />
-                <span>Milano, Italia</span>
+                <span>Moskevská 1464/61, Vršovice, Praha 10</span>
               </div>
             </div>
           </div>
@@ -79,13 +100,23 @@ export function Footer() {
               <ul className="space-y-3">
                 {quickLinks.map((link) => (
                   <li key={link.sectionId}>
-                    <button
-                      onClick={() => scrollToSection(link.sectionId)}
-                      className="text-muted-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded text-left"
-                      aria-label={`Vai alla sezione ${link.label}`}
-                    >
-                      {link.label}
-                    </button>
+                    {isHomePage ? (
+                      <button
+                        onClick={() => handleQuickLinkClick(link.sectionId)}
+                        className="text-muted-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded text-left"
+                        aria-label={`Vai alla sezione ${link.label}`}
+                      >
+                        {link.label}
+                      </button>
+                    ) : (
+                      <Link
+                        href={`/#${link.sectionId}`}
+                        className="text-muted-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
+                        aria-label={`Vai alla sezione ${link.label}`}
+                      >
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -131,7 +162,7 @@ export function Footer() {
                 </li>
                 <li>
                   <Link 
-                    href="/terms-of-service" 
+                    href="/terms-and-conditions" 
                     className="text-muted-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
                   >
                     {t('footer.links.terms')}

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run validate:translations && next build",
     "build:analyze": "cross-env ANALYZE=true next build",
     "build:prod": "cross-env NODE_ENV=production next build",
     "start": "next start",
@@ -14,7 +14,9 @@
     "perf:audit": "lighthouse http://localhost:3000 --output json --output html --view",
     "analyze": "npx @next/bundle-analyzer",
     "type-check": "tsc --noEmit",
-    "clean": "rm -rf .next"
+    "clean": "rm -rf .next",
+    "validate:translations": "node scripts/validate-json.js",
+    "prebuild": "npm run validate:translations"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.2",

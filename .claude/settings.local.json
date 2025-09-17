@@ -46,7 +46,11 @@
       "Bash(timeout 30 npm run build)",
       "Bash(timeout 35 npm run build)",
       "Bash(tasklist)",
-      "Bash(tasklist:*)"
+      "Bash(tasklist:*)",
+      "Bash(kill:*)",
+      "Bash(npm cache clean:*)",
+      "Bash(rm:*)",
+      "Bash(npm run validate:translations:*)"
     ],
     "additionalDirectories": [
       "C:\\c\\Users\\devec\\progetti-web",

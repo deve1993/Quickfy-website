@@ -4,11 +4,17 @@ import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const t = useTranslations('navigation');
+  const pathname = usePathname();
+  
+  // Check if we're on the home page (any locale home page)
+  const isHomePage = pathname === '/' || pathname.match(/^\/[a-z]{2}$/);
 
   // Handle scroll effect
   useEffect(() => {
@@ -52,11 +58,30 @@ export function Header() {
   }, [isMenuOpen]);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      setIsMenuOpen(false);
+    if (isHomePage) {
+      // If we're on home page, scroll to section
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setIsMenuOpen(false);
+      }
+    } else {
+      // If we're not on home page, navigate to home page with hash
+      window.location.href = `/#${sectionId}`;
     }
+  };
+
+  const handleBrandClick = () => {
+    if (isHomePage) {
+      // If we're on home page, scroll to top/main content
+      const element = document.getElementById('main-content');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+    // If we're not on home page, Link component will handle navigation
   };
 
   const navigationItems = [
@@ -66,6 +91,23 @@ export function Header() {
     { id: 'testimonials', label: t('testimonials') },
     { id: 'contact', label: t('contact') }
   ];
+
+  const BrandContent = (
+    <motion.div
+      onClick={isHomePage ? handleBrandClick : undefined}
+      whileHover={{ scale: 1.05 }}
+      className="focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-lg px-2 py-1 transition-all duration-300 cursor-pointer"
+      aria-label={t('logoAria')}
+    >
+      <h1 className={`text-xl md:text-2xl font-bold transition-colors duration-300 ${
+        isScrolled 
+          ? 'text-gray-900 hover:text-blue-600' 
+          : 'text-white hover:text-blue-400'
+      }`}>
+        QuickFy
+      </h1>
+    </motion.div>
+  );
 
   return (
     <motion.header
@@ -83,20 +125,13 @@ export function Header() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <motion.button
-              onClick={() => scrollToSection('main-content')}
-              whileHover={{ scale: 1.05 }}
-              className="focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-lg px-2 py-1 transition-all duration-300"
-              aria-label={t('logoAria')}
-            >
-              <h1 className={`text-xl md:text-2xl font-bold transition-colors duration-300 ${
-                isScrolled 
-                  ? 'text-gray-900' 
-                  : 'text-white'
-              }`}>
-                QuickFy
-              </h1>
-            </motion.button>
+            {isHomePage ? (
+              BrandContent
+            ) : (
+              <Link href="/" className="focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-lg">
+                {BrandContent}
+              </Link>
+            )}
           </div>
 
           {/* Desktop Navigation */}

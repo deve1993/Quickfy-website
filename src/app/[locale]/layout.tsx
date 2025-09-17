@@ -11,6 +11,8 @@ import { Footer } from '@/components/layout/Footer';
 import { ToastProvider } from '@/components/ui/toast';
 import { ClientOnly } from '@/components/ui/ClientOnly';
 import { FloatingBreadcrumb } from '@/components/ui/QuickfyBreadcrumb';
+import { CookieConsentProvider } from '@/contexts/CookieConsentContext';
+import { CookieConsentBanner } from '@/components/ui/CookieConsentBanner';
 import './globals.css';
 import Script from 'next/script';
 
@@ -60,6 +62,30 @@ export default async function LocaleLayout({ children, params }: Props) {
         
         {/* Critical CSS is automatically handled by Next.js 15 */}
         
+        {/* Google Analytics with consent management */}
+        <Script
+          id="gtag-config"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              
+              // Initialize with denied consent by default
+              gtag('consent', 'default', {
+                'analytics_storage': 'denied',
+                'ad_storage': 'denied',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied'
+              });
+              
+              // Configure GA4 (replace with your actual measurement ID)
+              // gtag('config', 'GA_MEASUREMENT_ID');
+            `
+          }}
+        />
+        
         {/* Performance monitoring */}
         <Script
           id="performance-observer"
@@ -97,17 +123,20 @@ export default async function LocaleLayout({ children, params }: Props) {
         
         <div className="relative z-10">
           <NextIntlClientProvider messages={messages}>
-            <ToastProvider>
-              <Header />
-              {children}
-              <Footer />
-              <ClientOnly>
-                <FloatingLanguageSwitcher />
-                <FloatingBreadcrumb />
-                <PerformanceMonitor />
-                <ResourceMonitor />
-              </ClientOnly>
-            </ToastProvider>
+            <CookieConsentProvider>
+              <ToastProvider>
+                <Header />
+                {children}
+                <Footer />
+                <ClientOnly>
+                  <FloatingLanguageSwitcher />
+                  <FloatingBreadcrumb />
+                  <PerformanceMonitor />
+                  <ResourceMonitor />
+                  <CookieConsentBanner />
+                </ClientOnly>
+              </ToastProvider>
+            </CookieConsentProvider>
           </NextIntlClientProvider>
         </div>
         
