@@ -135,7 +135,7 @@ export function TestimonialsSection() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Enhanced Header */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -151,12 +151,12 @@ export function TestimonialsSection() {
             <Star className="w-4 h-4 mr-2 text-yellow-500 fill-current" />
             Client Success Stories
           </motion.div>
-          
+
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent mb-8 leading-tight">
             {t('title')}
           </h2>
-          
-          <motion.p 
+
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -166,18 +166,18 @@ export function TestimonialsSection() {
           </motion.p>
         </motion.div>
 
-        {/* Premium Testimonials Slider */}
-        <motion.div 
+        {/* Premium Testimonials Slider - Optimized Card Size */}
+        <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="relative max-w-6xl mx-auto perspective-1000"
+          className="relative max-w-4xl mx-auto perspective-1000"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          {/* Main Card Container */}
-          <div className="relative min-h-[600px] md:min-h-[500px] overflow-hidden">
+          {/* Main Card Container - Massive Reduction (60% total) */}
+          <div className="relative min-h-[235px] md:min-h-[196px] overflow-hidden rounded-3xl">
             <AnimatePresence initial={false} custom={direction} mode="wait">
               <motion.div
                 key={currentIndex}
@@ -205,48 +205,49 @@ export function TestimonialsSection() {
                 }}
                 className="absolute inset-0 cursor-grab active:cursor-grabbing"
               >
-                <div className="h-full bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/20 overflow-hidden">
-                  <div className="relative h-full p-8 md:p-12 lg:p-16">
-                    {/* Decorative Elements */}
-                    <div className="absolute top-6 left-6 w-16 h-16 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-2xl flex items-center justify-center backdrop-blur-sm">
-                      <Quote className="w-8 h-8 text-blue-600/60 transform rotate-180" />
+                <div className="h-full bg-white rounded-3xl shadow-2xl border border-white/20 overflow-hidden">
+                  {/* Minimal Padding (60% total reduction) */}
+                  <div className="relative h-full p-3 md:p-4 lg:p-6">
+                    {/* Tiny Decorative Elements (60% total reduction) */}
+                    <div className="absolute top-3 left-3 w-6 h-6 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-lg flex items-center justify-center backdrop-blur-sm">
+                      <Quote className="w-3 h-3 text-blue-600/60 transform rotate-180" />
                     </div>
-                    <div className="absolute bottom-6 right-6 w-16 h-16 bg-gradient-to-br from-purple-500/10 to-blue-500/10 rounded-2xl flex items-center justify-center backdrop-blur-sm">
-                      <Quote className="w-8 h-8 text-purple-600/60" />
+                    <div className="absolute bottom-3 right-3 w-6 h-6 bg-gradient-to-br from-purple-500/10 to-blue-500/10 rounded-lg flex items-center justify-center backdrop-blur-sm">
+                      <Quote className="w-3 h-3 text-purple-600/60" />
                     </div>
 
                     {/* Content Container */}
                     <div className="flex flex-col justify-center h-full text-center relative z-10">
                       {/* Star Rating */}
-                      <motion.div 
+                      <motion.div
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        className="flex justify-center mb-8"
+                        className="flex justify-center mb-3"
                       >
                         {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
                           <motion.div
                             key={i}
                             initial={{ scale: 0, rotate: -180 }}
                             animate={{ scale: 1, rotate: 0 }}
-                            transition={{ 
-                              delay: 0.3 + i * 0.1, 
-                              type: "spring", 
-                              stiffness: 500, 
-                              damping: 15 
+                            transition={{
+                              delay: 0.3 + i * 0.1,
+                              type: "spring",
+                              stiffness: 500,
+                              damping: 15
                             }}
                           >
-                            <Star className="w-7 h-7 text-yellow-400 fill-current mx-1 drop-shadow-sm" />
+                            <Star className="w-4 h-4 text-yellow-400 fill-current mx-0.5 drop-shadow-sm" />
                           </motion.div>
                         ))}
                       </motion.div>
 
-                      {/* Testimonial Text */}
+                      {/* Testimonial Text - Reduced Font Size */}
                       <motion.blockquote
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-800 leading-relaxed mb-12 italic max-w-4xl mx-auto"
+                        className="text-base md:text-lg lg:text-xl font-light text-gray-800 leading-relaxed mb-4 italic max-w-xl mx-auto"
                       >
                         &ldquo;{testimonials[currentIndex].content}&rdquo;
                       </motion.blockquote>
@@ -256,32 +257,32 @@ export function TestimonialsSection() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.6 }}
-                        className="flex flex-col sm:flex-row items-center justify-center gap-6"
+                        className="flex flex-col sm:flex-row items-center justify-center gap-2"
                       >
                         <div className="relative">
-                          <motion.div 
+                          <motion.div
                             whileHover={{ scale: 1.05 }}
-                            className="w-20 h-20 rounded-full overflow-hidden ring-4 ring-white shadow-2xl relative z-10"
+                            className="w-10 h-10 rounded-full overflow-hidden ring-2 ring-white shadow-lg relative z-10"
                           >
-                            <Image 
+                            <Image
                               src={testimonials[currentIndex].avatar}
                               alt={testimonials[currentIndex].name}
-                              width={80}
-                              height={80}
+                              width={40}
+                              height={40}
                               className="w-full h-full object-cover"
                             />
                           </motion.div>
                           <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/30 to-purple-600/30 animate-pulse" />
                         </div>
-                        
+
                         <div className="text-center sm:text-left">
-                          <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                          <h4 className="text-base md:text-lg font-bold text-gray-900 mb-1">
                             {testimonials[currentIndex].name}
                           </h4>
-                          <p className="text-lg text-gray-600 mb-1 font-medium">
+                          <p className="text-xs text-gray-600 mb-1 font-medium">
                             {testimonials[currentIndex].role}
                           </p>
-                          <p className="text-lg font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                          <p className="text-xs font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                             {testimonials[currentIndex].company}
                           </p>
                         </div>
@@ -293,34 +294,70 @@ export function TestimonialsSection() {
             </AnimatePresence>
           </div>
 
-          {/* Enhanced Navigation */}
-          <div className="absolute inset-y-0 left-0 flex items-center">
+          {/* Enhanced Prominent Navigation Arrows */}
+          <div className="absolute inset-y-0 -left-16 md:-left-20 flex items-center z-20">
             <motion.button
-              whileHover={{ scale: 1.1, x: -4 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{
+                scale: 1.15,
+                x: -8,
+                y: -8,
+                boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.5)"
+              }}
+              whileTap={{ scale: 0.9 }}
               onClick={prevSlide}
-              className="-ml-4 p-4 bg-white/90 backdrop-blur-xl rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 group"
+              className="group relative p-4 md:p-5 bg-white rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 border-2 border-gray-100 hover:border-blue-200 z-30"
+              style={{
+                filter: 'drop-shadow(0 20px 25px rgba(0, 0, 0, 0.1))',
+              }}
               aria-label={t('previousTestimonial')}
             >
-              <ChevronLeft className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
+              {/* Gradient Background Effect */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-50 to-purple-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+              {/* Glowing Ring Effect */}
+              <div className="absolute inset-0 rounded-full ring-4 ring-blue-400/0 group-hover:ring-blue-400/20 transition-all duration-300" />
+
+              {/* Arrow Icon */}
+              <ChevronLeft className="w-6 h-6 md:w-7 md:h-7 text-gray-700 group-hover:text-blue-600 transition-all duration-300 relative z-10 transform group-hover:scale-110" />
+
+              {/* Shine Effect */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-white/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </motion.button>
           </div>
-          
-          <div className="absolute inset-y-0 right-0 flex items-center">
+
+          <div className="absolute inset-y-0 -right-16 md:-right-20 flex items-center z-20">
             <motion.button
-              whileHover={{ scale: 1.1, x: 4 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{
+                scale: 1.15,
+                x: 8,
+                y: -8,
+                boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.5)"
+              }}
+              whileTap={{ scale: 0.9 }}
               onClick={nextSlide}
-              className="-mr-4 p-4 bg-white/90 backdrop-blur-xl rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/20 group"
+              className="group relative p-4 md:p-5 bg-white rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 border-2 border-gray-100 hover:border-purple-200 z-30"
+              style={{
+                filter: 'drop-shadow(0 20px 25px rgba(0, 0, 0, 0.1))',
+              }}
               aria-label={t('nextTestimonial')}
             >
-              <ChevronRight className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
+              {/* Gradient Background Effect */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-purple-50 to-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+              {/* Glowing Ring Effect */}
+              <div className="absolute inset-0 rounded-full ring-4 ring-purple-400/0 group-hover:ring-purple-400/20 transition-all duration-300" />
+
+              {/* Arrow Icon */}
+              <ChevronRight className="w-6 h-6 md:w-7 md:h-7 text-gray-700 group-hover:text-purple-600 transition-all duration-300 relative z-10 transform group-hover:scale-110" />
+
+              {/* Shine Effect */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-white/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </motion.button>
           </div>
         </motion.div>
 
         {/* Enhanced Controls */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
@@ -336,8 +373,8 @@ export function TestimonialsSection() {
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
                 className={`relative overflow-hidden rounded-full transition-all duration-500 ${
-                  index === currentIndex 
-                    ? 'w-12 h-4 bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg' 
+                  index === currentIndex
+                    ? 'w-12 h-4 bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg'
                     : 'w-3 h-3 bg-gray-300 hover:bg-gray-400'
                 }`}
                 aria-label={`${t('goToTestimonial')} ${index + 1}`}
@@ -376,7 +413,7 @@ export function TestimonialsSection() {
         </motion.div>
 
         {/* Premium Trust Indicators */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1 }}
@@ -385,7 +422,7 @@ export function TestimonialsSection() {
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {/* Rating Card */}
-            <motion.div 
+            <motion.div
               whileHover={{ scale: 1.05, y: -4 }}
               className="relative group"
             >
@@ -401,9 +438,9 @@ export function TestimonialsSection() {
                 </p>
               </div>
             </motion.div>
-            
+
             {/* Satisfied Clients Card with Thumbs Up */}
-            <motion.div 
+            <motion.div
               whileHover={{ scale: 1.05, y: -4 }}
               className="relative group"
             >
@@ -419,9 +456,9 @@ export function TestimonialsSection() {
                 </p>
               </div>
             </motion.div>
-            
+
             {/* Successful Projects Card with Checkmark */}
-            <motion.div 
+            <motion.div
               whileHover={{ scale: 1.05, y: -4 }}
               className="relative group"
             >

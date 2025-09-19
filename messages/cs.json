@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Marketing Automatizace SME | CRM pro malé firmy - QuickFy",
-    "description": "Digitální marketing analýza a CRM pro malé firmy. Marketing automatizace SME s 35% lepším ROI. Zjednodušte svůj marketing s QuickFy Performance Suite.",
+    "title": "QuickFy - Marketing automatizace pro malé firmy",
+    "description": "CRM a marketing automatizace pro SME. Zvyšte ROI digitálního marketingu o 35% s integrovanými analytickými nástroji.",
     "locale": "cs"
   },
   "navigation": {
@@ -19,12 +19,12 @@
     "mobileMenu": "Mobilní menu"
   },
   "hero": {
-    "headline": "Marketing automatizace SME pro",
-    "headlineHighlight": "digitální marketing analýza a růst",
-    "subheadline": "CRM pro malé firmy s integrovanou marketing automatizací. Transformujte digitální marketing analýzu na strategický růst s 35% lepším ROI pro SME.",
+    "headline": "Marketing automatizace pro",
+    "headlineHighlight": "růst malých firem",
+    "subheadline": "Integrovaný CRM s marketing automatizací navržený pro SME. Transformujte digitální marketing s analytikou a dosáhněte o 35% lepšího ROI.",
     "cta": {
       "primary": "Vyzkoušet Marketing Automatizaci",
-      "secondary": "Demo CRM pro SME"
+      "secondary": "CRM Demo"
     },
     "metrics": {
       "hoursSaved": "15+ Ušetřených hodin týdně",
@@ -39,40 +39,40 @@
     ]
   },
   "features": {
-    "title": "Marketing Automatizace SME:",
+    "title": "Marketing Automatizace:",
     "titleHighlight": "3 Klíčové Moduly",
-    "subtitle": "CRM pro malé firmy s integrovanou digitální marketing analýzou - všechno na jednom místě pro efektivní marketing automatizaci",
+    "subtitle": "Integrovaný CRM s digitální marketing analytikou - všechno pro efektivní automatizaci SME",
     "items": [
       {
         "id": "data-intelligence",
-        "title": "CRM Analytics & Digitální Marketing Analýza",
-        "description": "Centralizovaný CRM pro malé firmy s pokročilou digitální marketing analýzou. Všechny marketingové kanály na jednom místě pro SME.",
+        "title": "CRM Analytics & Digitální Marketing Intelligence",
+        "description": "Centralizovaná CRM platforma s pokročilou digitální marketing analytikou. Všechny marketingové kanály sjednocené pro automatizaci.",
         "benefits": [
-          "Jednotný CRM dashboard pro SME",
-          "Automatizovaná digitální marketing analýza",
-          "Marketing automatizace s jasným ROI"
+          "Jednotný CRM dashboard",
+          "Automatizované marketingové reporty",
+          "Jasné sledování ROI"
         ],
         "icon": "BarChart3"
       },
       {
         "id": "performance-ads",
-        "title": "Marketing Automatizace & ROI Optimalizace",
-        "description": "Pokročilá marketing automatizace SME s inteligentní optimalizací kampaní. CRM pro malé firmy s automatizovaným rozpočtovým managementem.",
+        "title": "Automatizace kampaní & ROI Optimalizace",
+        "description": "Pokročilá marketing automatizace s inteligentní optimalizací kampaní. Automatizované rozpočtové řízení součástí.",
         "benefits": [
-          "Automatizace marketingových kampaní pro SME",
-          "Real-time digitální marketing analýza",
+          "Automatizovaná optimalizace kampaní",
+          "Real-time sledování ROI",
           "35% vyšší ROI díky automatizaci"
         ],
         "icon": "Target"
       },
       {
         "id": "client-platform",
-        "title": "Cloudové CRM pro Malé Firmy",
-        "description": "Zabezpečené cloudové CRM pro malé firmy s personalizovanými dashboardy pro marketing automatizaci. 24/7 přístup k digitální marketing analýze.",
+        "title": "Cloudová CRM Platforma",
+        "description": "Zabezpečený cloudový CRM s personalizovanými automatizačními dashboardy. 24/7 přístup k marketing analytice.",
         "benefits": [
-          "24/7 přístup k CRM pro SME",
-          "Personalizované marketing automatizace dashboardy",
-          "Kompletní transparentnost digitální marketing analýzy"
+          "24/7 přístup k CRM",
+          "Personalizované automatizační dashboardy",
+          "Kompletní marketingová transparentnost"
         ],
         "icon": "Users"
       }
@@ -81,7 +81,7 @@
   "benefits": {
     "title": "Proč malé firmy volí QuickFy",
     "titleHighlight": "Marketing Automatizaci",
-    "subtitle": "Prokazatelné výsledky CRM pro malé firmy s integrovanou digitální marketing analýzou a automatizací procesů",
+    "subtitle": "Prokazatelné výsledky s integrovanou digitální marketing analytikou a automatizačními procesy",
     "items": [
       {
         "title": "Vrácený Čas",
@@ -90,14 +90,14 @@
         "unit": "hodin/týden"
       },
       {
-        "title": "CRM Efektivita pro SME",
-        "description": "Rozhodnutí založená na digitální marketing analýze a CRM datech pro malé firmy",
+        "title": "CRM Efektivita",
+        "description": "Rozhodnutí založená na digitálních marketing datech a CRM pozorováních",
         "value": "100%",
         "unit": "transparentnost"
       },
       {
-        "title": "Marketing Automatizace ROI",
-        "description": "Průměrný nárůst ROI díky marketing automatizaci SME a CRM optimalizaci",
+        "title": "Marketing ROI",
+        "description": "Průměrný nárůst ROI díky automatizaci a CRM optimalizaci",
         "value": "35%",
         "unit": "nárůst ROI"
       },
@@ -111,7 +111,7 @@
   },
   "pricing": {
     "title": "CRM pro Malé Firmy - Dostupné Ceny",
-    "subtitle": "Marketing automatizace SME s transparentními cenami. Digitální marketing analýza a CRM řešení přizpůsobené malým firmám.",
+    "subtitle": "Marketing automatizace pro SME s transparentními cenami. Digitální marketing řešení navržená pro rozpočty malých firem.",
     "perfectFor": "Perfektní pro:",
     "features": "Funkce:",
     "plans": {
@@ -120,12 +120,12 @@
         "price": "19",
         "period": "měsíc",
         "badge": "DOPORUČENÉ",
-        "perfectFor": "Perfektní pro: SME, které potřebují základní CRM pro malé firmy s jednoduchou digitální marketing analýzou bez složitosti.",
+        "perfectFor": "Perfektní pro: SME potřebující základní CRM s jednoduchou digitální marketing analytikou bez složitosti.",
         "features": {
-          "0": "Základní CRM pro malé firmy",
-          "1": "Marketing automatizace SME - základní",
-          "2": "Digitální marketing analýza dashboard",
-          "3": "CRM podpora pro SME"
+          "0": "Základní CRM Platforma",
+          "1": "Základní Marketing Automatizace",
+          "2": "Digitální Marketing Dashboard",
+          "3": "CRM Podpora"
         },
         "cta": "Začít hned"
       },
@@ -145,7 +145,7 @@
       "pro": {
         "name": "PRO (Social Hub)",
         "price": "69",
-        "period": "měsíč",
+        "period": "měsíc",
         "badge": "COMING SOON",
         "perfectFor": "Perfektní pro: Firmy, které aktivně investují do sociálních médií a chtějí jediné místo pro sledování celé své online přítomnosti.",
         "features": {
@@ -167,15 +167,15 @@
   "contact": {
     "title": "Připraveni na Marketing Automatizaci",
     "titleHighlight": "pro vaši SME?",
-    "subtitle": "Začněte s CRM pro malé firmy a digitální marketing analýzou ještě dnes. Bezplatná konzultace marketing automatizace SME.",
+    "subtitle": "Začněte s CRM a digitální marketing analytikou ještě dnes. Bezplatná konzultace marketing automatizace pro SME.",
     "form": {
       "fields": {
         "name": {
-          "label": "Jméno",
-          "placeholder": "Vaše jméno"
+          "label": "Celé jméno",
+          "placeholder": "Vaše celé jméno"
         },
         "email": {
-          "label": "Email",
+          "label": "E-mailová adresa",
           "placeholder": "Váš firemní email"
         },
         "company": {
@@ -191,11 +191,22 @@
           "placeholder": "Popište své současné marketingové výzvy..."
         }
       },
-      "submit": "Konzultace Marketing Automatizace SME",
+      "submit": "Konzultace Marketing Automatizace",
       "submitting": "Odesílání...",
       "submitAnother": "Odeslat Další Žádost",
       "ariaLabel": "Kontaktní formulář QuickFy",
       "privacy": "Souhlasím se zpracováním osobních údajů podle Zásad ochrany osobních údajů",
+      "socialProof": {
+        "response": "Odpověď do 24h",
+        "clients": "500+ Spokojených Klientů",
+        "roi": "Garantované ROI"
+      },
+      "progress": {
+        "label": "Průběh vyplnění"
+      },
+      "footer": {
+        "security": "🔒 Vaše data jsou v bezpečí • ✓ Garantovaná odpověď do 24h • 💬 Bezplatná 30minutová konzultace"
+      },
       "validation": {
         "name": "Jméno musí obsahovat alespoň 2 znaky",
         "email": "Zadejte platnou e-mailovou adresu",
@@ -227,7 +238,7 @@
     "title": "Co o nás říkají naši klienti",
     "subtitle": "Přečtěte si zkušenosti firem, které s námi automatizovaly své procesy a dosáhly výjimečných výsledků",
     "previousTestimonial": "Předchozí reference",
-    "nextTestimonial": "Další reference", 
+    "nextTestimonial": "Další reference",
     "goToTestimonial": "Přejít na referenci",
     "trustIndicators": {
       "rating": "4.9/5 hodnocení",
@@ -277,7 +288,7 @@
     "separator": "Přejít na"
   },
   "footer": {
-    "description": "QuickFy - Marketing automatizace SME a CRM pro malé firmy. Digitální marketing analýza s prokazatelně vyšším ROI pro malé a střední podniky.",
+    "description": "QuickFy - Marketing automatizace a CRM pro SME. Digitální marketing analytika s prokazatelně vyšším ROI pro malé a střední podniky.",
     "contact": {
       "emailAria": "Odeslat email na QuickFy"
     },

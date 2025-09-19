@@ -19,8 +19,8 @@ export const partnersConfig: PartnersConfig = {
       id: 'easychange',
       name: 'EasyChange',
       logoPath: '/logos/easychange_logo.svg',
-      width: 255,  // Scaled up 50% from 170 (170 * 1.5 = 255)
-      height: 83,  // Scaled up 50% from 55 (55 * 1.5 = 82.5, rounded to 83)
+      width: 510,  // Doubled from 255 (100% increase)
+      height: 166, // Doubled from 83 (100% increase)
       alt: 'EasyChange company logo',
       enabled: true,
       order: 1
@@ -29,8 +29,8 @@ export const partnersConfig: PartnersConfig = {
       id: 'europlatba',
       name: 'Europlatba',
       logoPath: '/logos/europlatba_logo.svg',
-      width: 240,  // Scaled up 50% from 160 (160 * 1.5 = 240)
-      height: 75,  // Scaled up 50% from 50 (50 * 1.5 = 75)
+      width: 480,  // Doubled from 240 (100% increase)
+      height: 150, // Doubled from 75 (100% increase)
       alt: 'Europlatba company logo',
       enabled: true,
       order: 2
@@ -39,8 +39,8 @@ export const partnersConfig: PartnersConfig = {
       id: 'fl1-odoo-magic',
       name: 'FL1 Odoo Magic',
       logoPath: '/logos/FL1 _ Odoo Magic.svg',
-      width: 150,  // Increased from 120 for better readability
-      height: 50,  // Increased from 40 to prevent text cropping
+      width: 300,  // Doubled from 150 (100% increase)
+      height: 100, // Doubled from 50 (100% increase)
       alt: 'FL1 Odoo Magic company logo',
       enabled: true,
       order: 3
@@ -49,8 +49,8 @@ export const partnersConfig: PartnersConfig = {
       id: 'easyfunding',
       name: 'EasyFunding',
       logoPath: '/logos/logo_easyfunding_regular.svg',
-      width: 84,  // Reduced by 40% from 140 (140 * 0.6 = 84)
-      height: 24,  // Reduced by 40% from 40 (40 * 0.6 = 24)
+      width: 168,  // Doubled from 84 (100% increase)
+      height: 48,  // Doubled from 24 (100% increase)
       alt: 'EasyFunding company logo',
       enabled: true,
       order: 4
@@ -59,8 +59,8 @@ export const partnersConfig: PartnersConfig = {
       id: 'terramare',
       name: 'TerraeMare',
       logoPath: '/logos/Logo_TerraeMare_black.svg',
-      width: 130,  // Increased from 104 for better visibility
-      height: 35,  // Increased from 28 to prevent cropping
+      width: 260,  // Doubled from 130 (100% increase)
+      height: 70,  // Doubled from 35 (100% increase)
       alt: 'TerraeMare company logo',
       enabled: true,
       order: 5
@@ -69,8 +69,8 @@ export const partnersConfig: PartnersConfig = {
       id: 'minuteshop',
       name: 'Minuteshop',
       logoPath: '/logos/Minuteshop.svg',
-      width: 120,  // Increased from 95 for better readability
-      height: 35,  // Increased from 27 to prevent cropping
+      width: 240,  // Doubled from 120 (100% increase)
+      height: 70,  // Doubled from 35 (100% increase)
       alt: 'Minuteshop company logo',
       enabled: true,
       order: 6
@@ -81,7 +81,7 @@ export const partnersConfig: PartnersConfig = {
     enabled: true
   },
   display: {
-    gap: 'gap-8 md:gap-10 lg:gap-12', // Increased gaps for better spacing with larger logos
+    gap: 'gap-2.5', // OPTIMIZED: Updated from gap-7 (28px) to gap-2.5 (10px) - Maximum proximity achieved with 0.625rem spacing for optimal brand recognition and mobile usability
     showHoverEffects: false
   }
 };

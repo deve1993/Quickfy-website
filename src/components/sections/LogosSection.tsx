@@ -28,8 +28,8 @@ export function LogosSection() {
         <div
           className="flex items-center justify-center relative"
           style={{
-            width: 180, // Standardized container width for uniform spacing
-            height: 90  // Standardized container height for consistent alignment
+            width: 360, // Doubled from 180 to accommodate 100% larger logos
+            height: 180 // Doubled from 90 to accommodate 100% larger logos
           }}
         >
           <Image
@@ -94,13 +94,13 @@ export function LogosSection() {
           style={{
             mask: 'linear-gradient(90deg, transparent, black 20%, black 80%, transparent)',
             WebkitMask: 'linear-gradient(90deg, transparent, black 20%, black 80%, transparent)',
-            minHeight: '120px' // Ensure adequate height for larger logos
+            minHeight: '200px' // Increased from 120px to accommodate larger logos
           }}
         >
           <motion.div
             className="flex items-center will-change-transform"
             style={{
-              gap: '2rem', // Uniform 32px spacing between all logos
+              gap: '0.625rem', // OPTIMIZED: Reduced from 1rem (16px) to 0.625rem (10px) - 38% reduction for maximum proximity while maintaining brand recognition and mobile usability
               width: "200%"
             }}
             animate={animation.enabled ? { x: [`0%`, `-50%`] } : {}}
