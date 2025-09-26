@@ -25,7 +25,8 @@ const nextConfig = {
       '@radix-ui/react-icons',
       '@tabler/icons-react',
       '@radix-ui/react-checkbox',
-      '@radix-ui/react-slot'
+      '@radix-ui/react-slot',
+      'framer-motion'
     ],
     turbo: {
       rules: {
@@ -74,35 +75,42 @@ const nextConfig = {
           ...config.optimization.splitChunks,
           cacheGroups: {
             ...config.optimization.splitChunks.cacheGroups,
-            // Separate vendor chunks for better caching
+            // Large vendor packages for better caching
             react: {
               name: 'vendors-react',
               test: /[\/]node_modules[\/](react|react-dom|scheduler)[\/]/,
               chunks: 'all',
               priority: 20,
-              reuseExistingChunk: true
+              reuseExistingChunk: true,
+              enforce: true
             },
-            // Simplified framer-motion chunk configuration
-            motion: {
-              name: 'vendors-motion',
-              test: /[\/]node_modules[\/]framer-motion[\/]/,
+            // Animation libraries - safer chunking
+            animations: {
+              name: 'vendors-animations',
+              test: /[\/]node_modules[\/](framer-motion)[\/]/,
               chunks: 'all',
               priority: 15,
-              reuseExistingChunk: true
+              reuseExistingChunk: true,
+              enforce: true,
+              minSize: 20000 // Only create chunk if over 20KB
             },
+            // Icon libraries
             icons: {
               name: 'vendors-icons',
               test: /[\/]node_modules[\/](@tabler\/icons-react|lucide-react|@radix-ui\/react-icons)[\/]/,
               chunks: 'all',
-              priority: 15,
-              reuseExistingChunk: true
+              priority: 12,
+              reuseExistingChunk: true,
+              minSize: 15000
             },
+            // UI libraries
             ui: {
               name: 'vendors-ui',
               test: /[\/]node_modules[\/](@radix-ui|@hookform|react-hook-form|zod)[\/]/,
               chunks: 'all',
               priority: 10,
-              reuseExistingChunk: true
+              reuseExistingChunk: true,
+              minSize: 10000
             }
           }
         };
