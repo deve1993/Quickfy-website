@@ -38,8 +38,8 @@ export class CookieManager {
       }
 
       return parsed;
-    } catch (error) {
-      console.error('Failed to load cookie consent:', error);
+    } catch {
+      // Handle cookie consent loading error
       return DEFAULT_CONSENT;
     }
   }
@@ -60,8 +60,8 @@ export class CookieManager {
     try {
       localStorage.setItem(this.STORAGE_KEY, JSON.stringify(consentState));
       this.applyCookieConsent(consent);
-    } catch (error) {
-      console.error('Failed to save cookie consent:', error);
+    } catch {
+      // Handle cookie consent saving error
     }
   }
 
@@ -74,8 +74,8 @@ export class CookieManager {
     try {
       localStorage.removeItem(this.STORAGE_KEY);
       this.clearAllCookies();
-    } catch (error) {
-      console.error('Failed to clear cookie consent:', error);
+    } catch {
+      // Handle cookie consent clearing error
     }
   }
 
@@ -126,22 +126,22 @@ export class CookieManager {
     if (typeof window === 'undefined') return;
 
     // Enable Google Analytics
-    (window as any).gtag?.('consent', 'update', {
+    (window as { gtag?: (...args: unknown[]) => void }).gtag?.('consent', 'update', {
       analytics_storage: 'granted',
     });
 
     // Initialize GA4 if not already done
-    if (!(window as any).gtag) {
+    if (!(window as { gtag?: (...args: unknown[]) => void }).gtag) {
       const script = document.createElement('script');
       script.async = true;
       script.src = 'https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID';
       document.head.appendChild(script);
 
-      (window as any).dataLayer = (window as any).dataLayer || [];
-      function gtag(...args: any[]) {
-        (window as any).dataLayer.push(args);
+      (window as { dataLayer?: unknown[] }).dataLayer = (window as { dataLayer?: unknown[] }).dataLayer || [];
+      function gtag(...args: unknown[]) {
+        (window as { dataLayer?: unknown[] }).dataLayer?.push(args);
       }
-      (window as any).gtag = gtag;
+      (window as { gtag?: (...args: unknown[]) => void }).gtag = gtag;
 
       gtag('js', new Date());
       gtag('config', 'GA_MEASUREMENT_ID', {
@@ -158,7 +158,7 @@ export class CookieManager {
     if (typeof window === 'undefined') return;
 
     // Disable Google Analytics
-    (window as any).gtag?.('consent', 'update', {
+    (window as { gtag?: (...args: unknown[]) => void }).gtag?.('consent', 'update', {
       analytics_storage: 'denied',
     });
 
@@ -175,7 +175,7 @@ export class CookieManager {
   private static enableMarketing(): void {
     if (typeof window === 'undefined') return;
 
-    (window as any).gtag?.('consent', 'update', {
+    (window as { gtag?: (...args: unknown[]) => void }).gtag?.('consent', 'update', {
       ad_storage: 'granted',
       ad_user_data: 'granted',
       ad_personalization: 'granted',
@@ -188,7 +188,7 @@ export class CookieManager {
   private static disableMarketing(): void {
     if (typeof window === 'undefined') return;
 
-    (window as any).gtag?.('consent', 'update', {
+    (window as { gtag?: (...args: unknown[]) => void }).gtag?.('consent', 'update', {
       ad_storage: 'denied',
       ad_user_data: 'denied',
       ad_personalization: 'denied',

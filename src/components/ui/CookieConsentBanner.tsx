@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { X, Cookie, Settings, Shield, BarChart3, Target, User } from 'lucide-react';
+import { X, Cookie, Settings, Shield, BarChart3, Target } from 'lucide-react';
 import { useCookieConsent } from '@/contexts/CookieConsentContext';
 import { CookiePreferencesModal } from './CookiePreferencesModal';
 

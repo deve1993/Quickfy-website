@@ -13,8 +13,12 @@ import { ClientOnly } from '@/components/ui/ClientOnly';
 import { FloatingBreadcrumb } from '@/components/ui/QuickfyBreadcrumb';
 import { CookieConsentProvider } from '@/contexts/CookieConsentContext';
 import { CookieConsentBanner } from '@/components/ui/CookieConsentBanner';
+import { EnvironmentProvider } from '@/contexts/EnvironmentContext';
 import './globals.css';
 import Script from 'next/script';
+// Initialize environment and polyfills
+import '@/lib/init';
+import { getEnvInjectionScriptContent } from '@/lib/env-injection';
 
 // Optimize font loading
 const inter = Inter({ 
@@ -44,6 +48,15 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale} className={inter.className}>
       <head>
+        {/* Environment injection - Must be first to be available to all external scripts */}
+        <Script
+          id="env-injection"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: getEnvInjectionScriptContent()
+          }}
+        />
+
         {/* Favicon and PWA Configuration */}
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="alternate icon" href="/favicon.svg" type="image/svg+xml" />
@@ -52,6 +65,15 @@ export default async function LocaleLayout({ children, params }: Props) {
         <meta name="theme-color" content="#3B82F6" />
         <meta name="msapplication-TileColor" content="#3B82F6" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        {/* Critical Resource Hints for Performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+
+        {/* Preload critical assets */}
+        <link rel="preload" href="/quickfy_logo.svg" as="image" type="image/svg+xml" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="QuickFy" />
         
@@ -86,27 +108,11 @@ export default async function LocaleLayout({ children, params }: Props) {
           }}
         />
         
-        {/* Performance monitoring */}
+        {/* Optimized performance monitoring - external file */}
         <Script
-          id="performance-observer"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              if ('PerformanceObserver' in window) {
-                const observer = new PerformanceObserver((list) => {
-                  list.getEntries().forEach((entry) => {
-                    if (entry.entryType === 'largest-contentful-paint') {
-                      console.log('LCP:', entry.startTime);
-                    }
-                    if (entry.entryType === 'first-input') {
-                      console.log('FID:', entry.processingStart - entry.startTime);
-                    }
-                  });
-                });
-                observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input'] });
-              }
-            `
-          }}
+          src="/js/performance-monitor.js"
+          strategy="lazyOnload"
+          defer
         />
       </head>
       <body className={`${inter.className} relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30 overflow-x-hidden`}>
@@ -123,8 +129,9 @@ export default async function LocaleLayout({ children, params }: Props) {
         
         <div className="relative z-10">
           <NextIntlClientProvider messages={messages}>
-            <CookieConsentProvider>
-              <ToastProvider>
+            <EnvironmentProvider>
+              <CookieConsentProvider>
+                <ToastProvider>
                 <Header />
                 {children}
                 <Footer />
@@ -135,50 +142,17 @@ export default async function LocaleLayout({ children, params }: Props) {
                   <ResourceMonitor />
                   <CookieConsentBanner />
                 </ClientOnly>
-              </ToastProvider>
-            </CookieConsentProvider>
+                </ToastProvider>
+              </CookieConsentProvider>
+            </EnvironmentProvider>
           </NextIntlClientProvider>
         </div>
         
-        {/* Service Worker for performance and offline support */}
+        {/* Optimized service worker - external file */}
         <Script
-          id="service-worker"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              if ('serviceWorker' in navigator) {
-                window.addEventListener('load', () => {
-                  navigator.serviceWorker.register('/sw.js')
-                    .then((registration) => {
-                      console.log('SW registered: ', registration);
-                    })
-                    .catch((registrationError) => {
-                      console.log('SW registration failed: ', registrationError);
-                    });
-                });
-              }
-              
-              // BFCache optimization
-              window.addEventListener('beforeunload', () => {
-                if (navigator.serviceWorker.controller) {
-                  navigator.serviceWorker.controller.postMessage({
-                    type: 'PREPARE_BFCACHE'
-                  });
-                }
-              });
-              
-              // Clean up event listeners for BFCache
-              window.addEventListener('pagehide', (event) => {
-                if (event.persisted) {
-                  // Page is being stored in BFCache
-                  // Clean up any resources that might prevent BFCache
-                  document.querySelectorAll('video, audio').forEach(el => {
-                    el.pause();
-                  });
-                }
-              });
-            `
-          }}
+          src="/js/service-worker-init.js"
+          strategy="lazyOnload"
+          defer
         />
       </body>
     </html>

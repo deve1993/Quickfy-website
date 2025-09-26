@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { useTranslations } from 'next-intl';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -52,32 +52,35 @@ export function ContactForm() {
     mode: 'onChange' // Real-time validation for better UX
   });
 
-  const privacyAccepted = watch('privacy');
-
-  // Calculate progress starting from 0% - only count fields with actual values
   const watchedValues = watch();
-  const filledFields = [
-    watchedValues.name?.trim(),
-    watchedValues.email?.trim(),
-    watchedValues.company?.trim(),
-    watchedValues.phone?.trim(),
-    watchedValues.message?.trim()
-  ].filter(value => value && value !== '').length;
 
-  // Add privacy checkbox only if it's explicitly accepted (true)
-  const privacyCount = watchedValues.privacy === true ? 1 : 0;
-  const totalFilledFields = filledFields + privacyCount;
+  // Memoize progress calculation to prevent unnecessary re-renders
+  const progressPercentage = useMemo(() => {
+    const filledFields = [
+      watchedValues.name?.trim(),
+      watchedValues.email?.trim(),
+      watchedValues.company?.trim(),
+      watchedValues.phone?.trim(),
+      watchedValues.message?.trim()
+    ].filter(value => value && value !== '').length;
 
-  const progressPercentage = Math.round((totalFilledFields / 6) * 100);
+    // Add privacy checkbox only if it's explicitly accepted (true)
+    const privacyCount = watchedValues.privacy === true ? 1 : 0;
+    const totalFilledFields = filledFields + privacyCount;
 
-  const onSubmit = async (data: ContactFormData) => {
+    return Math.round((totalFilledFields / 6) * 100);
+  }, [watchedValues]);
+
+  const privacyAccepted = watchedValues.privacy;
+
+  const onSubmit = async () => {
     setIsSubmitting(true);
 
     try {
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 2000));
 
-      console.log('Form submitted:', data);
+      // Form submitted successfully
       setSubmitStatus('success');
       success(
         t('contact.success.title'),
@@ -91,8 +94,8 @@ export function ContactForm() {
         }
       );
       reset();
-    } catch (err) {
-      console.error('Form submission error:', err);
+    } catch {
+      // Handle form submission error
       setSubmitStatus('error');
       error(
         t('contact.form.error.title'),
@@ -156,7 +159,7 @@ export function ContactForm() {
             24H
           </div>
           <div className="text-sm text-muted-foreground font-medium">
-            {t('contact.socialProof.response')}
+            {t('contact.form.socialProof.response')}
           </div>
         </motion.div>
 
@@ -170,7 +173,7 @@ export function ContactForm() {
             500+
           </div>
           <div className="text-sm text-muted-foreground font-medium">
-            {t('contact.socialProof.clients')}
+            {t('contact.form.socialProof.clients')}
           </div>
         </motion.div>
 
@@ -184,7 +187,7 @@ export function ContactForm() {
             ROI
           </div>
           <div className="text-sm text-muted-foreground font-medium">
-            {t('contact.socialProof.roi')}
+            {t('contact.form.socialProof.roi')}
           </div>
         </motion.div>
       </motion.div>
@@ -223,7 +226,7 @@ export function ContactForm() {
                 className={cn(
                   'h-14 text-lg border-2 border-gray-200 focus:border-blue-500 focus:ring-0 transition-all duration-300 rounded-xl',
                   errors.name && 'border-red-400 focus:border-red-500',
-                  watch('name') && !errors.name && 'border-green-400'
+                  watchedValues.name && !errors.name && 'border-green-400'
                 )}
                 aria-invalid={!!errors.name}
                 aria-describedby={errors.name ? 'name-error' : undefined}
@@ -256,7 +259,7 @@ export function ContactForm() {
                 className={cn(
                   'h-14 text-lg border-2 border-gray-200 focus:border-blue-500 focus:ring-0 transition-all duration-300 rounded-xl',
                   errors.email && 'border-red-400 focus:border-red-500',
-                  watch('email') && !errors.email && 'border-green-400'
+                  watchedValues.email && !errors.email && 'border-green-400'
                 )}
                 aria-invalid={!!errors.email}
                 aria-describedby={errors.email ? 'email-error' : undefined}
@@ -291,7 +294,7 @@ export function ContactForm() {
                 className={cn(
                   'h-14 text-lg border-2 border-gray-200 focus:border-blue-500 focus:ring-0 transition-all duration-300 rounded-xl',
                   errors.company && 'border-red-400 focus:border-red-500',
-                  watch('company') && !errors.company && 'border-green-400'
+                  watchedValues.company && !errors.company && 'border-green-400'
                 )}
                 aria-invalid={!!errors.company}
                 aria-describedby={errors.company ? 'company-error' : undefined}
@@ -325,7 +328,7 @@ export function ContactForm() {
                 className={cn(
                   'h-14 text-lg border-2 border-gray-200 focus:border-blue-500 focus:ring-0 transition-all duration-300 rounded-xl',
                   errors.phone && 'border-red-400 focus:border-red-500',
-                  watch('phone') && !errors.phone && 'border-green-400'
+                  watchedValues.phone && !errors.phone && 'border-green-400'
                 )}
                 aria-invalid={!!errors.phone}
                 aria-describedby={errors.phone ? 'phone-error' : undefined}
@@ -360,7 +363,7 @@ export function ContactForm() {
               className={cn(
                 'text-lg border-2 border-gray-200 focus:border-blue-500 focus:ring-0 transition-all duration-300 rounded-xl resize-none',
                 errors.message && 'border-red-400 focus:border-red-500',
-                watch('message') && !errors.message && 'border-green-400'
+                watchedValues.message && !errors.message && 'border-green-400'
               )}
               aria-invalid={!!errors.message}
               aria-describedby={errors.message ? 'message-error' : undefined}

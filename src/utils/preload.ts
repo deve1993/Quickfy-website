@@ -3,7 +3,7 @@ export const preloadComponent = (importFn: () => Promise<unknown>) => {
   // Preload solo dopo che la pagina è stata caricata
   if (typeof window !== 'undefined') {
     requestIdleCallback(() => {
-      importFn().catch(console.error);
+      importFn().catch(() => {}); // Silent fail for preload
     });
   }
 };

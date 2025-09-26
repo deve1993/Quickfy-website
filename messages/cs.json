@@ -8,6 +8,7 @@
     "features": "Funkce",
     "benefits": "Výhody",
     "pricing": "Ceny",
+    "roadmap": "Plán vývoje",
     "testimonials": "Reference",
     "contact": "Kontakt",
     "startNow": "Začněte nyní",
@@ -21,10 +22,9 @@
   "hero": {
     "headline": "Marketing automatizace pro",
     "headlineHighlight": "růst malých firem",
-    "subheadline": "Integrovaný CRM s marketing automatizací navržený pro SME. Transformujte digitální marketing s analytikou a dosáhněte o 35% lepšího ROI.",
+    "subheadline": "Integrovaný CRM s marketingovou automatizací navržený pro SME. Transformujte digitální marketing s analytikou a dosáhněte o 35% lepšího ROI.",
     "cta": {
-      "primary": "Vyzkoušet Marketing Automatizaci",
-      "secondary": "CRM Demo"
+      "primary": "Vyzkoušet Marketing Automatizaci"
     },
     "metrics": {
       "hoursSaved": "15+ Ušetřených hodin týdně",
@@ -41,11 +41,11 @@
   "features": {
     "title": "Marketing Automatizace:",
     "titleHighlight": "3 Klíčové Moduly",
-    "subtitle": "Integrovaný CRM s digitální marketing analytikou - všechno pro efektivní automatizaci SME",
+    "subtitle": "Integrovaný CRM s digitální marketingovou analytikou - všechno pro efektivní automatizaci SME",
     "items": [
       {
         "id": "data-intelligence",
-        "title": "CRM Analytics & Digitální Marketing Intelligence",
+        "title": "CRM analytika a inteligentní digitální marketing",
         "description": "Centralizovaná CRM platforma s pokročilou digitální marketing analytikou. Všechny marketingové kanály sjednocené pro automatizaci.",
         "benefits": [
           "Jednotný CRM dashboard",
@@ -279,6 +279,54 @@
   "logos": {
     "title": "Důvěřují nám přední společnosti po celém světě",
     "description": "Připojte se k {count}+ společnostem, které důvěřují QuickFy pro svou marketingovou automatizaci"
+  },
+  "roadmap": {
+    "title": "Náš vývojový",
+    "titleHighlight": "plán",
+    "subtitle": "Kontinuální inovace založené na zpětné vazbě zákazníků a potřebách trhu",
+    "cta": "Poháněno zpětnou vazbou zákazníků",
+    "items": [
+      {
+        "quarter": "Q1 2024",
+        "status": "completed",
+        "title": "CRM základ",
+        "features": [
+          "Základní CRM funkcionalita",
+          "Základní analytický dashboard",
+          "Systém emailové automatizace"
+        ]
+      },
+      {
+        "quarter": "Q2 2025",
+        "status": "future",
+        "title": "Pokročilá analytika",
+        "features": [
+          "Real-time reportování",
+          "Prediktivní analytika",
+          "Vlastní KPI sledování"
+        ]
+      },
+      {
+        "quarter": "Q3 2026",
+        "status": "future",
+        "title": "Týmová spolupráce",
+        "features": [
+          "Multi-user pracovní prostory",
+          "Oprávnění podle rolí",
+          "Sledování aktivit"
+        ]
+      },
+      {
+        "quarter": "Q4 2026",
+        "status": "future",
+        "title": "AI integrace",
+        "features": [
+          "Inteligentní hodnocení leadů",
+          "Automatizované poznatky",
+          "Inteligentní doporučení"
+        ]
+      }
+    ]
   },
   "breadcrumb": {
     "home": "Domů",

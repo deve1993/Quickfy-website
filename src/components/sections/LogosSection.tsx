@@ -12,7 +12,7 @@ export function LogosSection() {
 
   // Get enabled partner logos from configuration
   const enabledLogos = getEnabledPartners();
-  const { animation, display } = partnersConfig;
+  const { animation } = partnersConfig;
 
   // If no logos are enabled, don't render the section
   if (enabledLogos.length === 0) {

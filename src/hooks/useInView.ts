@@ -32,15 +32,29 @@ export function useInView<T extends Element = HTMLDivElement>({
     const element = ref.current;
     if (!element) return;
 
-    observer.current = new IntersectionObserver(callback, {
+    // Create new observer instance
+    const currentObserver = new IntersectionObserver(callback, {
       threshold,
       rootMargin,
     });
-    
-    observer.current.observe(element);
 
+    // Store reference for cleanup
+    observer.current = currentObserver;
+
+    // Start observing
+    currentObserver.observe(element);
+
+    // Robust cleanup function
     return () => {
-      observer.current?.disconnect();
+      if (observer.current) {
+        try {
+          observer.current.disconnect();
+        } catch (error) {
+          console.warn('Error disconnecting intersection observer:', error);
+        } finally {
+          observer.current = undefined;
+        }
+      }
     };
   }, [callback, threshold, rootMargin]);
 

@@ -90,15 +90,6 @@ export const CookiePreferencesModal: React.FC<CookiePreferencesModalProps> = ({
     }
   };
 
-  const getCategoryColor = (category: string) => {
-    switch (category) {
-      case 'necessary': return 'green';
-      case 'analytics': return 'blue';
-      case 'marketing': return 'purple';
-      case 'preferences': return 'orange';
-      default: return 'gray';
-    }
-  };
 
   if (!isOpen) return null;
 

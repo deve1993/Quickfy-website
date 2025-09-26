@@ -62,7 +62,7 @@ export default async function PrivacyPolicyPage() {
 
           {/* Content */}
           <div className="space-y-12">
-            {sections.map((sectionKey, index) => {
+            {sections.map((sectionKey) => {
               const sectionData = t.raw(`privacyPolicy.sections.${sectionKey}`);
               
               return (

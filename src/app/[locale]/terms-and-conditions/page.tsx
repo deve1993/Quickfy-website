@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
-import { ChevronDown, ChevronUp, FileText, Calendar, Mail, Phone, MapPin } from 'lucide-react';
+import { ChevronDown, FileText, Calendar, Mail, Phone, MapPin } from 'lucide-react';
 import { BreadcrumbLayout } from '@/components/layout/BreadcrumbLayout';
 
 interface TermsAndConditionsPageProps {
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: TermsAndConditionsPageProps):
   };
 }
 
-function TableOfContents({ sections, t }: { sections: any; t: any }) {
+function TableOfContents({ sections, t }: { sections: Record<string, { title: string }>; t: (key: string) => string }) {
   const sectionKeys = Object.keys(sections);
   
   return (
@@ -47,7 +47,7 @@ function TableOfContents({ sections, t }: { sections: any; t: any }) {
           <ChevronDown className="w-5 h-5 transition-transform group-open:rotate-180" />
         </summary>
         <ol className="space-y-3">
-          {sectionKeys.map((key, index) => (
+          {sectionKeys.map((key) => (
             <li key={key}>
               <a 
                 href={`#${key}`}
@@ -74,8 +74,8 @@ function Section({
 }) {
   const renderContent = () => {
     if (Array.isArray(content)) {
-      return content.map((paragraph, index) => (
-        <p key={index} className="text-gray-700 leading-relaxed mb-4 last:mb-0">
+      return content.map((paragraph, paragraphIndex) => (
+        <p key={paragraphIndex} className="text-gray-700 leading-relaxed mb-4 last:mb-0">
           {paragraph}
         </p>
       ));

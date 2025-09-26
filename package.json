@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "npm run validate:translations && next build",
+    "dev": "cross-env NEXT_PUBLIC_NODE_ENV=development next dev",
+    "build": "npm run validate:translations && cross-env NEXT_PUBLIC_NODE_ENV=production next build",
     "build:analyze": "cross-env ANALYZE=true next build",
-    "build:prod": "cross-env NODE_ENV=production next build",
+    "build:prod": "cross-env NODE_ENV=production NEXT_PUBLIC_NODE_ENV=production NEXT_PUBLIC_APP_ENV=production next build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
@@ -16,6 +16,10 @@
     "type-check": "tsc --noEmit",
     "clean": "rm -rf .next",
     "validate:translations": "node scripts/validate-json.js",
+    "analyze:translations": "node scripts/analyze-translations.js",
+    "analyze:detailed": "node scripts/detailed-translation-analysis.js",
+    "validate:i18n": "node scripts/final-i18n-validation.js",
+    "test:performance": "node scripts/performance-test.js",
     "prebuild": "npm run validate:translations"
   },
   "dependencies": {
@@ -29,7 +33,6 @@
     "clsx": "^2.1.0",
     "framer-motion": "^10.18.0",
     "lucide-react": "^0.307.0",
-    "motion": "^12.23.12",
     "next": "15.0.3",
     "next-intl": "^3.6.2",
     "react": "^18.2.0",

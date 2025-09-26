@@ -1,13 +1,14 @@
 {
   "meta": {
-    "title": "QuickFy - Marketing Automation for Small Business",
-    "description": "CRM and marketing automation platform for SMEs. Boost your digital marketing ROI by 35% with integrated analytics and automation tools.",
+    "title": "QuickFy - Marketing Automation for Small Businesses",
+    "description": "All-in-one CRM and marketing automation platform for SMEs. Boost your digital marketing ROI by 35% with integrated analytics and intelligent automation.",
     "locale": "en"
   },
   "navigation": {
     "features": "Features",
     "benefits": "Benefits",
     "pricing": "Pricing",
+    "roadmap": "Roadmap",
     "testimonials": "Testimonials",
     "contact": "Contact",
     "startNow": "Start Now",
@@ -21,10 +22,9 @@
   "hero": {
     "headline": "Marketing automation platform for",
     "headlineHighlight": "small business growth",
-    "subheadline": "Integrated CRM with marketing automation designed for SMEs. Transform your digital marketing with analytics and achieve 35% better ROI.",
+    "subheadline": "Purpose-built CRM and marketing automation for SMEs. Transform your digital marketing with actionable analytics and achieve 35% better ROI.",
     "cta": {
-      "primary": "Try Marketing Automation",
-      "secondary": "CRM Demo"
+      "primary": "Start Free Trial"
     },
     "metrics": {
       "hoursSaved": "15+ Hours Saved Weekly",
@@ -279,6 +279,54 @@
   "logos": {
     "title": "Trusted by leading companies worldwide",
     "description": "Join {count}+ companies that trust QuickFy for their marketing automation"
+  },
+  "roadmap": {
+    "title": "Our Development",
+    "titleHighlight": "Roadmap",
+    "subtitle": "Continuous innovation based on customer feedback and market needs",
+    "cta": "Powered by Customer Feedback",
+    "items": [
+      {
+        "quarter": "Q1 2024",
+        "status": "completed",
+        "title": "CRM Foundation",
+        "features": [
+          "Core CRM functionality",
+          "Basic analytics dashboard",
+          "Email automation system"
+        ]
+      },
+      {
+        "quarter": "Q2 2025",
+        "status": "future",
+        "title": "Advanced Analytics",
+        "features": [
+          "Real-time reporting",
+          "Predictive analytics",
+          "Custom KPI tracking"
+        ]
+      },
+      {
+        "quarter": "Q3 2026",
+        "status": "future",
+        "title": "Team Collaboration",
+        "features": [
+          "Multi-user workspaces",
+          "Role-based permissions",
+          "Activity tracking"
+        ]
+      },
+      {
+        "quarter": "Q4 2026",
+        "status": "future",
+        "title": "AI Integration",
+        "features": [
+          "Smart lead scoring",
+          "Automated insights",
+          "Intelligent recommendations"
+        ]
+      }
+    ]
   },
   "breadcrumb": {
     "home": "Home",

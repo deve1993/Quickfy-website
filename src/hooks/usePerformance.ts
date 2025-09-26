@@ -147,8 +147,8 @@ export function useImagePreloader() {
   const preloadImages = useCallback(async (sources: string[]) => {
     try {
       await Promise.all(sources.map(preloadImage));
-    } catch (error) {
-      console.warn('Failed to preload some images:', error);
+    } catch {
+      // Handle image preload failure silently
     }
   }, [preloadImage]);
 

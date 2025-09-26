@@ -85,8 +85,8 @@ export const CookieConsentProvider: React.FC<CookieConsentProviderProps> = ({ ch
     setShowBanner(false);
 
     // Track consent acceptance for analytics
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'cookie_consent', {
+    if (typeof window !== 'undefined' && (window as { gtag?: (...args: unknown[]) => void }).gtag) {
+      (window as unknown as { gtag: (...args: unknown[]) => void }).gtag('event', 'cookie_consent', {
         event_category: 'engagement',
         event_label: 'accept_all',
         value: 1,
@@ -112,8 +112,8 @@ export const CookieConsentProvider: React.FC<CookieConsentProviderProps> = ({ ch
     setShowBanner(false);
 
     // Track consent rejection for analytics (if previously enabled)
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'cookie_consent', {
+    if (typeof window !== 'undefined' && (window as { gtag?: (...args: unknown[]) => void }).gtag) {
+      (window as unknown as { gtag: (...args: unknown[]) => void }).gtag('event', 'cookie_consent', {
         event_category: 'engagement',
         event_label: 'reject_all',
         value: 0,
@@ -138,8 +138,8 @@ export const CookieConsentProvider: React.FC<CookieConsentProviderProps> = ({ ch
     setShowBanner(false);
 
     // Track custom consent for analytics
-    if (typeof window !== 'undefined' && (window as any).gtag && updatedConsent.analytics) {
-      (window as any).gtag('event', 'cookie_consent', {
+    if (typeof window !== 'undefined' && (window as { gtag?: (...args: unknown[]) => void }).gtag && updatedConsent.analytics) {
+      (window as unknown as { gtag: (...args: unknown[]) => void }).gtag('event', 'cookie_consent', {
         event_category: 'engagement',
         event_label: 'custom_settings',
         value: Object.values(updatedConsent).filter(Boolean).length,

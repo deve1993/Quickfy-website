@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { ArrowRight, PlayCircle } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { memo } from 'react';
 import { useInView } from '@/hooks/useInView';
 
@@ -15,11 +15,6 @@ export const HeroSection = memo(function HeroSection() {
     });
   };
 
-  const scrollToFeatures = () => {
-    document.getElementById('features')?.scrollIntoView({
-      behavior: 'smooth'
-    });
-  };
 
   return (
     <section ref={ref} className="relative w-full min-h-screen flex flex-col items-center justify-center" role="banner" aria-label="Sezione Hero - Presentazione principale">
@@ -43,26 +38,15 @@ export const HeroSection = memo(function HeroSection() {
           </p>
         </div>
 
-        {/* Optimized CTA Hierarchy - Clear Primary Action */}
-        <div className={`flex flex-col sm:flex-row justify-center items-center gap-4 mb-16 transition-all duration-1000 delay-600 ${isIntersecting ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          {/* Primary CTA - Prominent and Clear */}
+        {/* Primary Call-to-Action */}
+        <div className={`flex justify-center items-center mb-16 transition-all duration-1000 delay-600 ${isIntersecting ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <button
             onClick={scrollToContact}
-            className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 focus:from-blue-700 focus:to-purple-700 px-8 py-4 rounded-xl text-white font-semibold text-lg shadow-lg hover:shadow-2xl focus:shadow-2xl transition-all duration-300 flex items-center space-x-3 hover:scale-105 focus:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-4 transform-gpu w-full sm:w-auto min-w-[280px]"
+            className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 focus:from-blue-700 focus:to-purple-700 px-8 py-4 rounded-xl text-white font-semibold text-lg shadow-lg hover:shadow-2xl focus:shadow-2xl transition-all duration-300 flex items-center space-x-3 hover:scale-105 focus:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-4 transform-gpu"
             aria-label={`${t('hero.cta.primary')} - Scrolla alla sezione contatti`}
           >
             <span>{t('hero.cta.primary')}</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
-          </button>
-
-          {/* Secondary CTA - Subtle and Supporting */}
-          <button
-            onClick={scrollToFeatures}
-            className="group bg-white hover:bg-gray-50 focus:bg-gray-50 border-2 border-gray-200 hover:border-blue-300 focus:border-blue-300 px-6 py-3 rounded-xl text-gray-700 hover:text-blue-600 focus:text-blue-600 font-medium text-base shadow-sm hover:shadow-md focus:shadow-md transition-all duration-300 flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 w-full sm:w-auto"
-            aria-label={`${t('hero.cta.secondary')} - Visualizza le funzionalità`}
-          >
-            <PlayCircle className="w-4 h-4 group-hover:scale-110 transition-transform" aria-hidden="true" />
-            <span>{t('hero.cta.secondary')}</span>
           </button>
         </div>
 

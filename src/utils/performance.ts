@@ -100,11 +100,11 @@ export function measurePerformance(): void {
   if ('performance' in window) {
     // Report Core Web Vitals
     import('web-vitals').then(({ onCLS, onFID, onFCP, onLCP, onTTFB }) => {
-      onCLS(console.log);
-      onFID(console.log);
-      onFCP(console.log);
-      onLCP(console.log);
-      onTTFB(console.log);
+      onCLS(() => {});
+      onFID(() => {});
+      onFCP(() => {});
+      onLCP(() => {});
+      onTTFB(() => {});
     }).catch(() => {
       // Silently fail if web-vitals is not available
     });

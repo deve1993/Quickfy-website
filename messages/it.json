@@ -8,6 +8,7 @@
     "features": "Funzionalità",
     "benefits": "Vantaggi",
     "pricing": "Prezzi",
+    "roadmap": "Roadmap",
     "testimonials": "Testimonianze",
     "contact": "Contatti",
     "startNow": "Inizia Ora",
@@ -19,12 +20,11 @@
     "mobileMenu": "Menu mobile"
   },
   "hero": {
-    "headline": "Piattaforma automazione marketing per",
-    "headlineHighlight": "crescita piccole imprese",
-    "subheadline": "CRM integrato con automazione marketing progettato per PMI. Trasforma il marketing digitale con analisi e ottieni il 35% di ROI in più.",
+    "headline": "Piattaforma di automazione marketing per la",
+    "headlineHighlight": "crescita delle piccole imprese",
+    "subheadline": "CRM integrato con automazione marketing progettato per PMI. Trasforma il marketing digitale con le analisi e ottieni il 35% di ROI in più.",
     "cta": {
-      "primary": "Prova Automazione Marketing",
-      "secondary": "Demo CRM"
+      "primary": "Prova Automazione Marketing"
     },
     "metrics": {
       "hoursSaved": "15+ Ore Risparmiate a Settimana",
@@ -41,11 +41,11 @@
   "features": {
     "title": "Automazione Marketing:",
     "titleHighlight": "3 Soluzioni Essenziali",
-    "subtitle": "CRM integrato con analisi marketing digitale - tutto quello che serve alle PMI per automazione efficace",
+    "subtitle": "CRM integrato con analisi marketing digitale - tutto quello che serve alle PMI per un'automazione efficace",
     "items": [
       {
         "id": "data-intelligence",
-        "title": "CRM Analytics & Marketing Intelligence Digitale",
+        "title": "Analisi CRM e Intelligence Marketing Digitale",
         "description": "Piattaforma CRM centralizzata con analisi marketing digitale avanzata. Tutti i canali marketing unificati per automazione.",
         "benefits": [
           "Dashboard CRM unificato",
@@ -85,7 +85,7 @@
     "items": [
       {
         "title": "Tempo Restituito",
-        "description": "Ore settimanali recuperate dall'automazione dei report",
+        "description": "Ore settimanali risparmiate grazie all'automazione dei report",
         "value": "15+",
         "unit": "ore/settimana"
       },
@@ -279,6 +279,54 @@
   "logos": {
     "title": "Aziende leader in tutto il mondo si fidano di noi",
     "description": "Unisciti a {count}+ aziende che si affidano a QuickFy per la loro automazione marketing"
+  },
+  "roadmap": {
+    "title": "Il nostro piano di",
+    "titleHighlight": "sviluppo",
+    "subtitle": "Innovazione continua basata sul feedback dei clienti e sulle esigenze del mercato",
+    "cta": "Alimentato dal feedback dei clienti",
+    "items": [
+      {
+        "quarter": "Q1 2024",
+        "status": "completed",
+        "title": "Fondamenta CRM",
+        "features": [
+          "Funzionalità CRM di base",
+          "Dashboard analitico di base",
+          "Sistema di automazione email"
+        ]
+      },
+      {
+        "quarter": "Q2 2025",
+        "status": "future",
+        "title": "Analisi avanzate",
+        "features": [
+          "Reporting in tempo reale",
+          "Analisi predittiva",
+          "Tracciamento KPI personalizzato"
+        ]
+      },
+      {
+        "quarter": "Q3 2026",
+        "status": "future",
+        "title": "Collaborazione di team",
+        "features": [
+          "Workspace multi-utente",
+          "Permessi basati sui ruoli",
+          "Tracciamento attività"
+        ]
+      },
+      {
+        "quarter": "Q4 2026",
+        "status": "future",
+        "title": "Integrazione AI",
+        "features": [
+          "Scoring intelligente dei lead",
+          "Insight automatizzati",
+          "Raccomandazioni intelligenti"
+        ]
+      }
+    ]
   },
   "breadcrumb": {
     "home": "Home",

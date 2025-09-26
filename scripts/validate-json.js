@@ -26,28 +26,7 @@ function validateJSONFile(filePath) {
       issues.push('Potential unescaped apostrophe found');
     }
     
-    // Check for unclosed strings (basic check)
-    const lines = content.split('\n');
-    lines.forEach((line, index) => {
-      const trimmed = line.trim();
-      if (trimmed.startsWith('"') && trimmed.includes(':')) {
-        const beforeColon = trimmed.split(':')[0];
-        const quoteCount = (beforeColon.match(/"/g) || []).length;
-        if (quoteCount % 2 !== 0) {
-          issues.push(`Line ${index + 1}: Possible unclosed quote in key`);
-        }
-      }
-      
-      // Check for lines ending without comma or closing bracket/brace
-      if (trimmed.endsWith('"') && !trimmed.endsWith('",') && !trimmed.endsWith('"') && 
-          index < lines.length - 1 && !lines[index + 1].trim().startsWith('}') && 
-          !lines[index + 1].trim().startsWith(']')) {
-        const nextLine = lines[index + 1].trim();
-        if (nextLine.startsWith('"') || nextLine.startsWith('{') || nextLine.startsWith('[')) {
-          issues.push(`Line ${index + 1}: Missing comma after string value`);
-        }
-      }
-    });
+    // Skip manual quote validation - rely on JSON.parse for syntax validation
     
     // Parse JSON to validate structure
     const parsed = JSON.parse(content);
