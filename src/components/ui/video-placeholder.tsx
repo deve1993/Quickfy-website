@@ -1,6 +1,6 @@
 'use client';
 
-import { Play, Volume2, Maximize, RotateCcw } from 'lucide-react';
+import { Play, Volume2, Maximize } from 'lucide-react';
 import { memo, useState } from 'react';
 
 interface VideoPlaceholderProps {

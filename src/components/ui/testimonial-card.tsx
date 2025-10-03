@@ -22,7 +22,6 @@ export const TestimonialCard = memo(function TestimonialCard({
   location = 'Milan, Italy',
   rating = 5,
   quote = 'Whappi has transformed how we handle customer communication. Our team collaboration improved by 300% and we never miss important messages anymore.',
-  avatar,
   className = '',
   variant = 'default'
 }: TestimonialCardProps) {
@@ -98,7 +97,7 @@ export const TestimonialCard = memo(function TestimonialCard({
           {renderStars(rating)}
         </div>
         <p className="text-gray-700 text-sm leading-relaxed">
-          "{quote}"
+          &ldquo;{quote}&rdquo;
         </p>
       </div>
     );
@@ -119,7 +118,7 @@ export const TestimonialCard = memo(function TestimonialCard({
 
         {/* Quote */}
         <blockquote className="text-gray-800 text-lg leading-relaxed text-center mb-8 font-medium">
-          "{quote}"
+          &ldquo;{quote}&rdquo;
         </blockquote>
 
         {/* Author info */}
@@ -173,7 +172,7 @@ export const TestimonialCard = memo(function TestimonialCard({
 
       {/* Quote */}
       <p className="text-gray-700 leading-relaxed mb-4">
-        "{quote}"
+        &ldquo;{quote}&rdquo;
       </p>
 
       {/* Bottom row with company info */}

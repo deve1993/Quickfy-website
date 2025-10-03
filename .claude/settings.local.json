@@ -81,7 +81,8 @@
       "Bash(python:*)",
       "Bash(if exist \"node_modules\\.cache\" rmdir /s /q \"node_modules\\.cache\")",
       "Bash(powershell:*)",
-      "Bash(timeout:*)"
+      "Bash(timeout:*)",
+      "Bash(git log:*)"
     ],
     "additionalDirectories": [
       "C:\\c\\Users\\devec\\progetti-web",

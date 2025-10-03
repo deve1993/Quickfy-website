@@ -1,6 +1,6 @@
 'use client';
 
-import { MessageSquare, Send, Users, Settings, Phone, Video, MoreHorizontal, Search } from 'lucide-react';
+import { MessageSquare, Send, Users, Phone, Video, MoreHorizontal, Search } from 'lucide-react';
 import { memo } from 'react';
 
 interface AppMockupProps {
@@ -74,7 +74,7 @@ export const AppMockup = memo(function AppMockup({
         <div className="flex items-start space-x-3 justify-end">
           <div className="flex-1 text-right">
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl rounded-tr-sm p-3 shadow-sm inline-block">
-              <p className="text-sm">Hello Marco! Your order is being processed and will be shipped today. You'll receive tracking info shortly. 📦</p>
+              <p className="text-sm">Hello Marco! Your order is being processed and will be shipped today. You&apos;ll receive tracking info shortly. 📦</p>
               <span className="text-blue-100 text-xs mt-1 block">9:43 AM</span>
             </div>
             <div className="text-xs text-gray-500 mt-1">✓✓ Read by Marco</div>

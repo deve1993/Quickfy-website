@@ -148,7 +148,7 @@ export const WhappiHeroSection = memo(function WhappiHeroSection() {
               Finally, Pricing That Makes Sense
             </h2>
             <p className="text-xl text-gray-600">
-              Compare traditional solutions with Whappi's simple pricing
+              Compare traditional solutions with Whappi&apos;s simple pricing
             </p>
           </div>
           <PriceComparison variant="horizontal" className="max-w-2xl mx-auto" />

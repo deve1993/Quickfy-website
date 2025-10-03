@@ -5,16 +5,13 @@ import { useTranslations } from 'next-intl';
 import {
   ArrowRight,
   Users,
-  Shield,
   Zap,
-  Euro,
   CheckCircle,
   MessageCircle,
   Send,
   Calendar,
   Play,
   Smartphone,
-  ChevronDown,
   Star,
   Clock,
   TrendingDown,
@@ -37,13 +34,11 @@ import {
 } from 'lucide-react';
 import { useInView } from '@/hooks/useInView';
 import Link from 'next/link';
-import { memo, useState } from 'react';
+import { memo } from 'react';
 import { WhappiFeaturesSectionRedesign } from './WhappiFeaturesSectionRedesign';
 
 export const WhappiSection = memo(function WhappiSection() {
   const t = useTranslations('whappi');
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [showCompetitors, setShowCompetitors] = useState(false);
 
   const { ref: heroRef, isIntersecting: isHeroInView } = useInView({ threshold: 0.2 });
   const { ref: demoRef, isIntersecting: isDemoInView } = useInView({ threshold: 0.1 });
@@ -51,8 +46,6 @@ export const WhappiSection = memo(function WhappiSection() {
   const { ref: comparisonRef, isIntersecting: isComparisonInView } = useInView({ threshold: 0.1 });
   const { ref: roadmapRef, isIntersecting: isRoadmapInView } = useInView({ threshold: 0.1 });
   const { ref: pricingRef, isIntersecting: isPricingInView } = useInView({ threshold: 0.2 });
-  const { ref: faqRef, isIntersecting: isFaqInView } = useInView({ threshold: 0.1 });
-  const { ref: ctaRef, isIntersecting: isCtaInView } = useInView({ threshold: 0.2 });
 
   return (
     <>

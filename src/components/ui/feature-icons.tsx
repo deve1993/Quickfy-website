@@ -1,6 +1,6 @@
 'use client';
 
-import { Users, Zap, Shield, TrendingUp, MessageSquare, Settings, Globe, Lock, BarChart3, Target } from 'lucide-react';
+import { Users, Zap, Shield, TrendingUp, MessageSquare, Settings, BarChart3 } from 'lucide-react';
 import { memo } from 'react';
 
 interface FeatureIconProps {
