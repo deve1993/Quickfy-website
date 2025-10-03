@@ -70,7 +70,7 @@ export function Footer() {
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" aria-hidden="true" />
                 <a 
                   href="mailto:info@quickfy.eu" 
-                  className="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
+                  className="hover:text-primary transition-colors focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 rounded"
                   aria-label={t('footer.contact.emailAria')}
                 >
                   info@quickfy.eu
@@ -80,7 +80,7 @@ export function Footer() {
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" aria-hidden="true" />
                 <PhoneLink 
                   phoneNumber="+420775113732"
-                  className="hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
+                  className="hover:text-primary transition-colors focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 rounded"
                   ariaLabel="Zavolat QuickFy"
                 >
                   +420 775 113 732
@@ -103,7 +103,7 @@ export function Footer() {
                     {isHomePage ? (
                       <button
                         onClick={() => handleQuickLinkClick(link.sectionId)}
-                        className="text-muted-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded text-left"
+                        className="text-muted-foreground hover:text-primary transition-colors focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 rounded text-left"
                         aria-label={`Vai alla sezione ${link.label}`}
                       >
                         {link.label}
@@ -111,7 +111,7 @@ export function Footer() {
                     ) : (
                       <Link
                         href={`/#${link.sectionId}`}
-                        className="text-muted-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
+                        className="text-muted-foreground hover:text-primary transition-colors focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 rounded"
                         aria-label={`Vai alla sezione ${link.label}`}
                       >
                         {link.label}
@@ -133,7 +133,7 @@ export function Footer() {
                 href="https://linkedin.com/company/quickfy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-md bg-muted hover:bg-primary hover:text-primary-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                className="p-2 rounded-md bg-muted hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2"
                 aria-label="Segui QuickFy su LinkedIn (apre in una nuova scheda)"
               >
                 <Linkedin className="w-5 h-5" aria-hidden="true" />
@@ -142,7 +142,7 @@ export function Footer() {
                 href="https://twitter.com/quickfy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-md bg-muted hover:bg-primary hover:text-primary-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                className="p-2 rounded-md bg-muted hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2"
                 aria-label="Segui QuickFy su Twitter (apre in una nuova scheda)"
               >
                 <Twitter className="w-5 h-5" aria-hidden="true" />
@@ -155,7 +155,7 @@ export function Footer() {
                 <li>
                   <Link 
                     href="/privacy-policy" 
-                    className="text-muted-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
+                    className="text-muted-foreground hover:text-primary transition-colors focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 rounded"
                   >
                     {t('footer.links.privacy')}
                   </Link>
@@ -163,7 +163,7 @@ export function Footer() {
                 <li>
                   <Link 
                     href="/terms-and-conditions" 
-                    className="text-muted-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded"
+                    className="text-muted-foreground hover:text-primary transition-colors focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 rounded"
                   >
                     {t('footer.links.terms')}
                   </Link>
@@ -182,7 +182,7 @@ export function Footer() {
           {/* Back to Top Button */}
           <motion.button
             onClick={scrollToTop}
-            className="flex items-center gap-2 px-4 py-2 rounded-md bg-muted hover:bg-primary hover:text-primary-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            className="flex items-center gap-2 px-4 py-2 rounded-md bg-muted hover:bg-primary hover:text-primary-foreground transition-colors focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.95 }}
             aria-label="Torna in cima alla pagina"

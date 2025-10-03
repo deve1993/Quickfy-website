@@ -71,7 +71,17 @@
       "Bash(npx svgo:*)",
       "Bash(move:*)",
       "Bash(timeout 25 npm run build)",
-      "Bash(PORT=3004 npm start)"
+      "Bash(PORT=3004 npm start)",
+      "Bash(npm audit:*)",
+      "WebSearch",
+      "Bash(cmd /c:*)",
+      "Bash(DISABLE_ESLINT_PLUGIN=true npm run build)",
+      "Bash(pgrep:*)",
+      "Bash(npx eslint:*)",
+      "Bash(python:*)",
+      "Bash(if exist \"node_modules\\.cache\" rmdir /s /q \"node_modules\\.cache\")",
+      "Bash(powershell:*)",
+      "Bash(timeout:*)"
     ],
     "additionalDirectories": [
       "C:\\c\\Users\\devec\\progetti-web",

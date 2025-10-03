@@ -94,15 +94,15 @@ export function FeaturesSection() {
   };
 
   return (
-    <section id="features" className="relative py-24 px-4 overflow-hidden">
+    <section id="features" className="relative py-0 px-4 overflow-hidden bg-gradient-to-br from-blue-50/30 via-purple-50/30 to-pink-50/30">
       {/* Background decorative elements */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
-        <div className="absolute top-40 right-10 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
-        <div className="absolute bottom-20 left-1/3 w-72 h-72 bg-green-200 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-500"></div>
+      <div className="absolute inset-0 opacity-40">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+        <div className="absolute top-40 right-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
+        <div className="absolute bottom-20 left-1/3 w-72 h-72 bg-emerald-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-500"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto">
+      <div className="relative max-w-7xl mx-auto py-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -138,7 +138,7 @@ export function FeaturesSection() {
                 variants={itemVariants}
                 className="group relative"
               >
-                <div className={`relative h-full min-h-[360px] md:min-h-[380px] p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl ${feature.shadowColor} transition-all duration-500 border-2 ${feature.borderColor} overflow-hidden flex flex-col`}>
+                <div className={`relative h-full min-h-[280px] sm:min-h-[320px] md:min-h-[380px] p-4 sm:p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl ${feature.shadowColor} transition-all duration-500 border-2 ${feature.borderColor} overflow-hidden flex flex-col`}>
                   {/* Background gradient overlay */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-60 transition-all duration-500 rounded-2xl`}></div>
                   
@@ -147,24 +147,24 @@ export function FeaturesSection() {
                   <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-tr from-white/10 to-transparent rounded-full opacity-40"></div>
 
                   {/* Icon section */}
-                  <div className="relative z-10 mb-5">
-                    <div className={`inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r ${feature.iconBg} rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                      <Icon className="w-6 h-6 text-white" />
+                  <div className="relative z-10 mb-3 sm:mb-5">
+                    <div className={`inline-flex items-center justify-center w-10 sm:w-12 h-10 sm:h-12 bg-gradient-to-r ${feature.iconBg} rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                      <Icon className="w-5 sm:w-6 h-5 sm:h-6 text-white" />
                     </div>
                   </div>
 
                   {/* Content section */}
                   <div className="relative z-10 flex-1 flex flex-col">
-                    <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-slate-800 transition-colors duration-300">
+                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 sm:mb-3 group-hover:text-slate-800 transition-colors duration-300">
                       {feature.title}
                     </h3>
                     
-                    <p className="text-sm text-slate-600 leading-relaxed mb-5 flex-1">
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3 sm:mb-5 flex-1">
                       {feature.description}
                     </p>
 
                     {/* Benefits list */}
-                    <div className="space-y-3 mt-auto">
+                    <div className="space-y-2 sm:space-y-3 mt-auto">
                       {feature.benefits.map((benefit, benefitIndex) => {
                         const checkBgColor = feature.theme === 'blue' ? 'bg-blue-500' :
                                             feature.theme === 'green' ? 'bg-green-500' :
@@ -177,12 +177,12 @@ export function FeaturesSection() {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ delay: index * 0.1 + benefitIndex * 0.1, duration: 0.5 }}
                             viewport={{ once: true }}
-                            className="flex items-start gap-2 text-xs text-slate-600"
+                            className="flex items-start gap-1 sm:gap-2 text-xs text-slate-600"
                           >
-                            <div className={`flex-shrink-0 w-4 h-4 rounded-full ${checkBgColor} flex items-center justify-center mt-0.5 shadow-sm`}>
-                              <Check className="w-2.5 h-2.5 text-white" />
+                            <div className={`flex-shrink-0 w-3 sm:w-4 h-3 sm:h-4 rounded-full ${checkBgColor} flex items-center justify-center mt-0.5 shadow-sm`}>
+                              <Check className="w-2 sm:w-2.5 h-2 sm:h-2.5 text-white" />
                             </div>
-                            <span className="leading-relaxed font-medium">{benefit}</span>
+                            <span className="leading-relaxed font-medium text-xs sm:text-sm">{benefit}</span>
                           </motion.div>
                         );
                       })}

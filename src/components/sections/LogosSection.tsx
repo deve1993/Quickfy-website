@@ -74,8 +74,8 @@ export function LogosSection() {
   );
 
   return (
-    <section className="relative py-24 px-4">
-      <div className="max-w-6xl mx-auto">
+    <section className="relative py-0 px-4 bg-gradient-to-br from-blue-50/30 via-purple-50/30 to-pink-50/30">
+      <div className="max-w-6xl mx-auto py-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

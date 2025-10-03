@@ -1,0 +1,404 @@
+/* Whappi-specific animations and visual enhancements */
+
+/* Marquee animation for logo scrolling */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Floating animation for badges and elements */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse with scale for attention-grabbing elements */
+@keyframes pulse-scale {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+.animate-pulse-scale {
+  animation: pulse-scale 2s ease-in-out infinite;
+}
+
+/* Gradient animation for backgrounds */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 4s ease infinite;
+}
+
+/* Shimmer effect for loading states */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: shimmer 2s infinite;
+}
+
+/* Bounce with delay for staggered animations */
+@keyframes bounce-in {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-bounce-in {
+  animation: bounce-in 0.6s ease-out;
+}
+
+.animate-bounce-in-delay-1 {
+  animation: bounce-in 0.6s ease-out 0.1s both;
+}
+
+.animate-bounce-in-delay-2 {
+  animation: bounce-in 0.6s ease-out 0.2s both;
+}
+
+.animate-bounce-in-delay-3 {
+  animation: bounce-in 0.6s ease-out 0.3s both;
+}
+
+/* Slide in from sides */
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.6s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.6s ease-out;
+}
+
+/* Typewriter effect for text */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid #3b82f6;
+  white-space: nowrap;
+  animation: typewriter 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
+}
+
+/* Glowing border effect */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(30, 64, 175, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(30, 64, 175, 0.8), 0 0 30px rgba(59, 130, 246, 0.3);
+  }
+}
+
+/* Whappi specific glow animation */
+@keyframes whappi-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(30, 64, 175, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(30, 64, 175, 0.8), 0 0 30px rgba(59, 130, 246, 0.5);
+  }
+}
+
+.animate-whappi-glow {
+  animation: whappi-glow 2s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Scale up on hover with smooth transition */
+.hover-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Gradient text utilities */
+.gradient-text-blue-purple {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-text-purple-pink {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-text-green-blue {
+  background: linear-gradient(135deg, #10b981, #3b82f6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* New Whappi Blue Gradient Text */
+.gradient-text-whappi-blue {
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Custom shadow utilities */
+.shadow-glow-blue {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+.shadow-glow-purple {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+}
+
+.shadow-glow-pink {
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.3);
+}
+
+/* Whappi Blue Gradient Shadows */
+.shadow-glow-whappi {
+  box-shadow: 0 0 20px rgba(30, 64, 175, 0.3);
+}
+
+.shadow-glow-whappi-light {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+/* Interactive button effects */
+.btn-whappi {
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-whappi:hover {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(30, 64, 175, 0.4);
+}
+
+.btn-whappi::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.btn-whappi:hover::before {
+  left: 100%;
+}
+
+/* Video overlay effects */
+.video-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(30, 64, 175, 0.9),
+    rgba(59, 130, 246, 0.8)
+  );
+}
+
+/* Whappi specific background gradients */
+.bg-whappi-gradient {
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+}
+
+.bg-whappi-gradient-light {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+}
+
+.bg-whappi-section {
+  background: linear-gradient(135deg, rgba(30, 64, 175, 0.1), rgba(59, 130, 246, 0.05));
+}
+
+/* Loading skeleton with proper timing */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Responsive utilities for better mobile experience */
+@media (max-width: 640px) {
+  .animate-marquee {
+    animation-duration: 20s;
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.02);
+  }
+
+  .btn-whappi:hover {
+    transform: translateY(-1px);
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .glass {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-strong {
+    background: rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .skeleton {
+    background: linear-gradient(90deg, #374151 25%, #4b5563 50%, #374151 75%);
+    background-size: 200% 100%;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-float,
+  .animate-pulse-scale,
+  .animate-gradient,
+  .animate-shimmer,
+  .animate-glow {
+    animation: none;
+  }
+
+  .hover-scale {
+    transition: none;
+  }
+
+  .btn-whappi {
+    transition: none;
+  }
+}

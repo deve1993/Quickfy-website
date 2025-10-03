@@ -185,17 +185,18 @@ export function PricingSection() {
 
   return (
     <section
+      id="pricing"
       ref={sectionRef}
-      className="relative py-12 px-4 overflow-hidden"
+      className="relative py-0 px-4 overflow-hidden bg-gradient-to-br from-blue-50/30 via-purple-50/30 to-pink-50/30"
     >
       {/* Background Elements */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-blue-200 to-purple-200 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-l from-purple-200 to-pink-200 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+      <div className="absolute inset-0 opacity-40">
+        <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-blue-300 to-purple-300 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-l from-purple-300 to-pink-300 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-tr from-blue-300/20 to-purple-300/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '4s'}}></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto">
+      <div className="relative max-w-7xl mx-auto py-16">
         {/* Header */}
         <motion.div
           initial="hidden"
@@ -227,13 +228,13 @@ export function PricingSection() {
                 variants={itemVariants}
                 className="group relative"
               >
-                <div className={`relative h-full min-h-[600px] p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-blue-200 overflow-hidden flex flex-col ${
+                <div className={`relative h-full min-h-[400px] sm:min-h-[500px] lg:min-h-[600px] p-4 sm:p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-blue-200 overflow-hidden flex flex-col ${
                   plan.isRecommended ? 'ring-2 ring-blue-500 ring-opacity-50' : ''
                 }`}>
                   
                   {/* Recommended Badge - DOPORUČENÉ */}
                   {plan.isRecommended && (
-                    <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-40">
+                    <div className="absolute top-4 sm:top-6 left-1/2 transform -translate-x-1/2 z-40">
                       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg flex items-center space-x-1">
                         <Zap className="w-3 h-3" />
                         <span>{t('plans.analytics.badge')}</span>
@@ -243,7 +244,7 @@ export function PricingSection() {
 
                   {/* Coming Soon Badge */}
                   {plan.isComingSoon && (
-                    <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-40">
+                    <div className="absolute top-4 sm:top-6 left-1/2 transform -translate-x-1/2 z-40">
                       <span className={`bg-gradient-to-r ${
                         plan.id === 'plus' 
                           ? 'from-purple-600 to-pink-600' 
@@ -276,14 +277,14 @@ export function PricingSection() {
                         {plan.name}
                       </h3>
                       
-                      <div className="flex items-baseline mb-6">
-                        <span className={`text-3xl font-bold bg-gradient-to-r ${plan.gradient} bg-clip-text text-transparent`}>€{plan.price}</span>
-                        <span className="text-slate-500 ml-2">/{plan.period}</span>
+                      <div className="flex items-baseline mb-4 sm:mb-6">
+                        <span className={`text-2xl sm:text-3xl font-bold bg-gradient-to-r ${plan.gradient} bg-clip-text text-transparent`}>€{plan.price}</span>
+                        <span className="text-slate-500 ml-1 sm:ml-2 text-sm sm:text-base">/{plan.period}</span>
                       </div>
                     </div>
 
                     {/* Perfect For Section */}
-                    <div className="mb-4 p-3 bg-slate-50 rounded-xl border border-slate-100">
+                    <div className="mb-3 sm:mb-4 p-2 sm:p-3 bg-slate-50 rounded-xl border border-slate-100">
                       <div className="flex items-start space-x-2">
                         <Users className="w-4 h-4 text-slate-500 mt-0.5 flex-shrink-0" />
                         <div>
@@ -296,15 +297,15 @@ export function PricingSection() {
                     </div>
 
                     {/* Features List */}
-                    <div className="mb-6 flex-grow">
-                      <h4 className="text-sm font-semibold text-slate-900 mb-3">{t('features')}</h4>
+                    <div className="mb-4 sm:mb-6 flex-grow">
+                      <h4 className="text-xs sm:text-sm font-semibold text-slate-900 mb-2 sm:mb-3">{t('features')}</h4>
                       <ul className="space-y-2">
                         {plan.features.map((feature, featureIndex) => (
-                          <li key={featureIndex} className="flex items-start space-x-2">
+                          <li key={featureIndex} className="flex items-start space-x-1 sm:space-x-2">
                             <div className={`p-1 rounded-full bg-gradient-to-r ${plan.gradient} flex-shrink-0 mt-0.5`}>
                               <Check className="w-3 h-3 text-white" />
                             </div>
-                            <span className="text-slate-600 text-xs">
+                            <span className="text-slate-600 text-xs sm:text-sm">
                               {feature}
                             </span>
                           </li>
@@ -315,7 +316,7 @@ export function PricingSection() {
                     {/* CTA Button */}
                     <motion.button
                       onClick={plan.id === 'analytics' && !plan.isComingSoon ? handleAnalyticsClick : undefined}
-                      className={`w-full py-3 px-4 rounded-xl font-semibold text-sm transition-all duration-200 flex items-center justify-center space-x-2 mt-auto ${
+                      className={`w-full py-2 sm:py-3 px-3 sm:px-4 rounded-xl font-semibold text-xs sm:text-sm transition-all duration-200 flex items-center justify-center space-x-1 sm:space-x-2 mt-auto ${
                         plan.isComingSoon
                           ? 'bg-slate-100 text-slate-400 cursor-not-allowed'
                           : plan.isRecommended

@@ -131,9 +131,9 @@ export function TestimonialsSection() {
   };
 
   return (
-    <section className="relative py-24" id="testimonials">
+    <section className="relative py-0 bg-gradient-to-br from-blue-50/30 via-purple-50/30 to-pink-50/30" id="testimonials">
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Enhanced Header */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -412,11 +412,12 @@ export function TestimonialsSection() {
           </motion.button>
         </motion.div>
 
+
         {/* Premium Trust Indicators */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1 }}
+          transition={{ duration: 0.8, delay: 1.2 }}
           viewport={{ once: true }}
           className="mt-24 text-center"
         >

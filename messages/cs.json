@@ -10,14 +10,20 @@
     "pricing": "Ceny",
     "roadmap": "Plán vývoje",
     "testimonials": "Reference",
+    "whappi": "Whappi",
     "contact": "Kontakt",
+    "home": "Domů",
     "startNow": "Začněte nyní",
     "logoAria": "QuickFy - Vrátit se na začátek stránky",
     "startNowAria": "Začněte nyní - Jít na kontaktní formulář",
     "sectionAria": "Jít na sekci {section}",
     "openMenu": "Otevřít menu",
     "closeMenu": "Zavřít menu",
-    "mobileMenu": "Mobilní menu"
+    "mobileMenu": "Mobilní menu",
+    "skipToContent": "Přejít na hlavní obsah",
+    "products": "Produkty",
+    "productsAria": "Menu produkty",
+    "whappiCta": "Předobjednat -24%"
   },
   "hero": {
     "headline": "Marketing automatizace pro",
@@ -287,43 +293,47 @@
     "cta": "Poháněno zpětnou vazbou zákazníků",
     "items": [
       {
-        "quarter": "Q1 2024",
-        "status": "completed",
-        "title": "CRM základ",
+        "quarter": "Q4 2025",
+        "status": "current",
+        "title": "Spuštění a Konsolidace",
+        "keyAction": "Oficiální uvedení produktu na trh",
         "features": [
-          "Základní CRM funkcionalita",
-          "Základní analytický dashboard",
-          "Systém emailové automatizace"
+          "Starter plán (Analytics) za €19/měsíc",
+          "Doplněk: Správa reklamy (provize 5%)",
+          "Oficiální uvedení na trh"
         ]
       },
       {
-        "quarter": "Q2 2025",
+        "quarter": "Q1 2026",
         "status": "future",
-        "title": "Pokročilá analytika",
+        "title": "První Vylepšení",
+        "keyAction": "Vydání prvního bezplatného upgradu základního plánu a současný začátek vývoje složitějších modulů",
         "features": [
-          "Real-time reportování",
-          "Prediktivní analytika",
-          "Vlastní KPI sledování"
+          "Bezplatný upgrade \"Starter AI\" pro zákazníky Starter plánu (AI upozornění a souhrny)",
+          "Zahájení vývoje: Komunikační modul a Plus plán",
+          "Průběžná vylepšení na základě zpětné vazby zákazníků"
         ]
       },
       {
-        "quarter": "Q3 2026",
+        "quarter": "Q2 2026",
         "status": "future",
-        "title": "Týmová spolupráce",
+        "title": "Komunikační Modul",
+        "keyAction": "Spuštění prvního velkého placeného doplňku, vytvoření nového zdroje příjmů",
         "features": [
-          "Multi-user pracovní prostory",
-          "Oprávnění podle rolí",
-          "Sledování aktivit"
+          "Doplněk: Integrovaný komunikační modul za €19/uživatel/měsíc",
+          "Centralizovaná správa všech komunikačních kanálů",
+          "Pokročilá automatizace komunikace"
         ]
       },
       {
-        "quarter": "Q4 2026",
+        "quarter": "H2 2026",
         "status": "future",
-        "title": "AI integrace",
+        "title": "Pokročilé Plány",
+        "keyAction": "Dokončení třístupňové nabídky, positionování QuickFy jako kompletní sady",
         "features": [
-          "Inteligentní hodnocení leadů",
-          "Automatizované poznatky",
-          "Inteligentní doporučení"
+          "Q3 2026: Plus plán (Reputation) za €39/měsíc",
+          "Q4 2026: Pro plán (Growth Suite) za €79/měsíc",
+          "Zahrnuje Social Hub a Marketing Chatbot"
         ]
       }
     ]
@@ -529,6 +539,334 @@
       }
     }
   },
+  "whappi": {
+    "badge": "INTELIGENTNÍ ROZŠÍŘENÍ CHROME",
+    "banner": {
+      "status": "Ve vývoji - Spuštění Q2 2026",
+      "preorder": "Nyní přijímáme předobjednávky se speciální cenou!"
+    },
+    "hero": {
+      "title": "Whappi: Váš copilot pro",
+      "titleHighlight": "komunikaci se zákazníky",
+      "subtitle": "Rozšíření Chrome, které integruje všechny komunikace (WhatsApp, Facebook, Instagram, Viber, Telegram, SMS, Email) přímo do vašich pracovních nástrojů. Žádné další přepínání obrazovek: pracujte tam, kde už pracujete.",
+      "painPoint": {
+        "title": "Přestaňte přeplácet za složité nástroje!",
+        "description": "Konkurence účtuje €300-400/měsíc. Whappi poskytuje stejnou sílu jen za €19/uživatel/měsíc."
+      },
+      "cta": {
+        "pricing": "Předobjednat nyní - Speciální cena",
+        "contact": "Podívejte se na demo"
+      }
+    },
+    "demo": {
+      "title": "Podívejte se na Whappi v akci",
+      "subtitle": "Sledujte, jak Whappi transformuje týmovou komunikaci a správu zákazníků",
+      "placeholder": {
+        "title": "Demo produktu",
+        "coming": "Již brzy - Q2 2026"
+      },
+      "preview": "Náhled dashboardu Whappi"
+    },
+    "integrations": {
+      "title": "Všechny vaše platformy pro zasílání zpráv na jednom místě",
+      "subtitle": "Přestaňte přepínat mezi aplikacemi. Spravujte WhatsApp, Telegram, Facebook, Instagram, Viber, SMS a Email z jednoho výkonného dashboardu.",
+      "chromeExtension": "Rozšíření Chrome",
+      "worksInsideTools": "Funguje uvnitř vašich oblíbených nástrojů",
+      "allChannelsUnified": "Všechny vaše komunikační kanály sjednocené",
+      "availableOn": "Dostupné na",
+      "chromeWebStore": "Chrome Web Store",
+      "comingQ2": "Již brzy Q2 2026",
+      "comingSoon": "Již brzy",
+      "tools": {
+        "gmail": {
+          "name": "Gmail",
+          "type": "Emailový klient"
+        },
+        "hubspot": {
+          "name": "HubSpot",
+          "type": "CRM"
+        },
+        "salesforce": {
+          "name": "Salesforce",
+          "type": "CRM"
+        },
+        "pipedrive": {
+          "name": "Pipedrive",
+          "type": "CRM"
+        },
+        "zendesk": {
+          "name": "Zendesk",
+          "type": "Podpora"
+        },
+        "more": {
+          "name": "Další",
+          "type": "Již brzy"
+        }
+      },
+      "hub": {
+        "title": "Whappi",
+        "subtitle": "Centrální centrum"
+      },
+      "platforms": {
+        "whatsapp": {
+          "name": "WhatsApp",
+          "type": "Business API"
+        },
+        "telegram": {
+          "name": "Telegram",
+          "type": "Bot API"
+        },
+        "facebook": {
+          "name": "Meta",
+          "type": "Messenger"
+        },
+        "instagram": {
+          "name": "Instagram",
+          "type": "Direct"
+        },
+        "viber": {
+          "name": "Viber",
+          "type": "Business"
+        },
+        "sms": {
+          "name": "SMS",
+          "type": "Gateway"
+        },
+        "email": {
+          "name": "Email",
+          "type": "SMTP/IMAP"
+        }
+      }
+    },
+    "comparison": {
+      "title": "Proč si malé firmy volí Whappi",
+      "subtitle": "Porovnejte Whappi s drahými alternativami a zjistěte rozdíl",
+      "tableTitle": "Porovnání funkcí",
+      "columnHeaders": {
+        "feature": "Funkce"
+      },
+      "features": {
+        "cost": "Měsíční náklady",
+        "multiPlatform": "Multi-platforma",
+        "teamCollaboration": "Týmová spolupráce",
+        "gdpr": "Shoda s GDPR",
+        "setup": "Složitost nastavení",
+        "smb": "Zaměření na malé firmy"
+      },
+      "whappi": {
+        "name": "Whappi",
+        "pricing": "€19/měsíc",
+        "pricingUnit": "na uživatele",
+        "gdprNote": "Vaše servery",
+        "setupNote": "Jednoduché"
+      },
+      "competitors": {
+        "name": "Konkurence",
+        "pricing": "€300-400/měsíc",
+        "pricingUnit": "podnikové ceny",
+        "gdprNote": "Servery dodavatele",
+        "setupNote": "Složité"
+      }
+    },
+    "features": {
+      "title": "AI funkce pro maximální produktivitu",
+      "subtitle": "Vše, co potřebujete ke správě komunikací bez opuštění vašich pracovních nástrojů",
+      "allIncluded": "Všechny funkce zahrnuty v každém plánu - Žádné skryté náklady",
+      "contextualIntelligence": {
+        "title": "Kontextová inteligence",
+        "description": "Whappi automaticky detekuje telefonní čísla na webové stránce a okamžitě zobrazuje kompletní historii konverzací napříč všemi kanály.",
+        "benefits": [
+          "Automatická detekce telefonních čísel",
+          "Okamžitá historie konverzací napříč kanály",
+          "Nulové přepínání kontextu"
+        ]
+      },
+      "aiAssistance": {
+        "title": "Integrovaný AI asistent",
+        "description": "AI Whappi vytváří automatické souhrny konverzací, navrhuje 2-3 připravené návrhy odpovědí a prohledává firemní znalostní bázi, aby vám poskytl správné informace ve správný čas.",
+        "benefits": [
+          "Souhrny konverzací jedním kliknutím",
+          "2-3 připravené AI návrhy odpovědí",
+          "Inteligentní vyhledávání ve znalostní bázi"
+        ]
+      },
+      "teamManagement": {
+        "title": "Týmová spolupráce",
+        "description": "Přidělte konverzace konkrétním členům týmu, přidávejte soukromé interní poznámky a efektivně spolupracujte na každém zákazníkovi, to vše bez opuštění vašich nástrojů.",
+        "benefits": [
+          "Přidělení konverzací operátorům",
+          "Soukromé poznámky pro tým",
+          "Zmínky a spolupráce v reálném čase"
+        ]
+      },
+      "gdprCompliance": {
+        "title": "Zaručená shoda s GDPR",
+        "description": "Vyvinuto v České republice s maximální pozorností k soukromí. Vaše data zůstávají na vašich serverech a plně vyhovují evropskému GDPR.",
+        "benefits": [
+          "Vyrobeno v České republice - 100% evropský vývoj",
+          "Data na zákaznických serverech",
+          "Plná shoda s GDPR"
+        ]
+      }
+    },
+    "trust": {
+      "title": "Postaveno pro bezpečnost a důvěru",
+      "subtitle": "Vaše data zůstávají na vašich serverech",
+      "badges": {
+        "madeInItaly": "Vyrobeno v České republice",
+        "clientServers": "Zákaznické servery",
+        "gdpr": "Plná shoda s GDPR"
+      }
+    },
+    "roadmap": {
+      "title": "Plán vývoje",
+      "subtitle": "Naše cesta k uvedení Q2 2026",
+      "badgeText": "Plán vývoje",
+      "journeyTo": "Cesta k",
+      "launchDate": "Uvedení Q2 2026",
+      "trackProgress": "Sledujte náš pokrok při budování budoucnosti firemní komunikace",
+      "progressOverview": "Přehled pokroku vývoje",
+      "progressSubtitle": "Vývojové milníky v reálném čase sledující naši cestu k uvedení",
+      "milestones": {
+        "q3_2024": {
+          "date": "Září 2024",
+          "title": "Architektura základní platformy",
+          "description": "Dokončeny základní systémy včetně bezpečnostního frameworku, databázové architektury a vývoje základních API.",
+          "status": "DOKONČENO",
+          "features": {
+            "security": "Bezpečnostní vrstva",
+            "apis": "Základní API",
+            "securityStatus": "✓ Implementováno",
+            "apisStatus": "✓ Připraveno"
+          }
+        },
+        "q4_2024": {
+          "date": "Prosinec 2024",
+          "title": "Integrace platformy",
+          "description": "Aktivní vývoj WhatsApp Business API, Telegram Bot API a Meta Messenger integrací.",
+          "status": "PROBÍHÁ",
+          "features": {
+            "whatsapp": "API WhatsApp",
+            "telegram": "Bot Telegram",
+            "whatsappStatus": "🚧 Ve vývoji",
+            "telegramStatus": "🚧 Fáze testování"
+          }
+        },
+        "q1_2025": {
+          "date": "Březen 2025",
+          "title": "Pokročilé týmové funkce",
+          "description": "Nástroje pro týmovou spolupráci, přiřazování konverzací, interní poznámky a systémy správy uživatelů.",
+          "status": "PLÁNOVÁNO",
+          "features": {
+            "management": "Správa týmu",
+            "collaboration": "Spolupráce",
+            "managementStatus": "📋 Fáze designu",
+            "collaborationStatus": "📋 Plánováno"
+          }
+        },
+        "q2_2026": {
+          "date": "Březen 2026",
+          "title": "Úplné uvedení platformy",
+          "description": "Kompletní platforma připravená se všemi funkcemi, mobilními aplikacemi, komplexní dokumentací a 24/7 podporou.",
+          "status": "🚀 PŘIPRAVENO K UVEDENÍ",
+          "features": {
+            "mobile": "Mobilní aplikace",
+            "support": "Podpora 24/7",
+            "mobileStatus": "🎯 Připraveno k uvedení",
+            "supportStatus": "🎯 Plná služba"
+          },
+          "preorderText": "🎉 Předobjednejte nyní a ušetřete 24%",
+          "launchExpected": "Očekávané uvedení: Q2 2026"
+        }
+      },
+      "progressStats": {
+        "core": "Základní platforma",
+        "integrations": "Integrace",
+        "team": "Týmové funkce",
+        "launch": "Cíl uvedení"
+      },
+      "ctaText": "🎉 Předobjednejte nyní a ušetřete 24%",
+      "ctaButton": "Zajistit předobjednávku"
+    },
+    "pricing": {
+      "title": "Jednoduché a transparentní ceny",
+      "subtitle": "Využijte roční nabídku: zaplaťte 10 měsíců, získejte 12",
+      "preorder": {
+        "badge": "ROČNÍ NABÍDKA",
+        "title": "Roční předobjednávkový plán",
+        "price": "€190",
+        "period": "/rok",
+        "subtitle": "€15.83 za měsíc",
+        "savings": "Ušetřete €38 - Zaplaťte 10 měsíců, získejte 12!",
+        "cta": "Předobjednat nyní"
+      },
+      "regular": {
+        "badge": "STANDARD",
+        "title": "Měsíční plán",
+        "price": "€19",
+        "period": "/měsíc",
+        "subtitle": "na uživatele",
+        "note": "Fakturováno měsíčně",
+        "cta": "Dostupné Q2 2026"
+      },
+      "features": [
+        "Všech 7 kanálů: WhatsApp, Facebook Messenger, Instagram, Viber, Telegram, SMS, Email",
+        "AI inteligence s automatickými souhrny a návrhy odpovědí",
+        "Automatická kontextová detekce telefonních čísel",
+        "Neomezená týmová spolupráce s přidělováním a poznámkami",
+        "Inteligentní vyhledávání ve firemní znalostní bázi",
+        "Plná shoda s GDPR - Vyrobeno v České republice"
+      ],
+      "everythingIncluded": "Vše zahrnuto",
+      "madeInCzech": "Vyrobeno v České republice - GDPR Zaručeno",
+      "savingsText": "Předobjednávka vám ušetří €38/rok"
+    },
+    "cta": {
+      "title": "Přestaňte ztrácet čas přepínáním obrazovek",
+      "subtitle": "Připojte se k týmům, které si vybraly Whappi pro lepší a rychlejší práci. Jeden inteligentní widget pro všechny komunikace, ať pracujete kdekoliv.",
+      "button": "Začít s Whappi (€19/uživatel)",
+      "formMessage": "Mám zájem o Whappi - Integrovaný komunikační modul. Rád bych získal více informací o předobjednávce a demo rozšíření Chrome."
+    }
+  },
+  "whappiSummary": {
+    "title": "Integrovaný komunikační modul",
+    "subtitle": "Rozšíření Chrome, které přináší všechny zákaznické komunikace (WhatsApp, Facebook, Instagram, Viber, Telegram, SMS, Email) přímo do vašich pracovních nástrojů.",
+    "features": {
+      "contextualIntelligence": {
+        "icon": "🧠",
+        "title": "Kontextová inteligence",
+        "description": "Automaticky detekuje telefonní čísla a zobrazuje historii konverzací napříč kanály."
+      },
+      "aiAssistance": {
+        "icon": "✨",
+        "title": "AI asistent",
+        "description": "Automatické souhrny, návrhy odpovědí a vyhledávání ve znalostní bázi."
+      },
+      "teamManagement": {
+        "icon": "👥",
+        "title": "Týmová spolupráce",
+        "description": "Přidělujte konverzace, přidávejte soukromé poznámky a spolupracujte v reálném čase."
+      },
+      "integrations": {
+        "icon": "🔗",
+        "title": "Integrace více kanálů",
+        "description": "Sjednoťte WhatsApp, Facebook, Instagram, Telegram, SMS a e-mail v jednom rozhraní."
+      },
+      "gdpr": {
+        "icon": "🔒",
+        "title": "GDPR zaručeno",
+        "description": "Vyrobeno v České republice s daty na vašich serverech a plnou shodou."
+      }
+    },
+    "pricing": {
+      "amount": "€19/uživatel",
+      "description": "za měsíc - Měsíční plán nebo €190/rok (ušetřete €38)"
+    },
+    "cta": {
+      "button": "Objevte Whappi"
+    },
+    "note": "Konečně integrovaná zákaznická komunikace bez opuštění vašich nástrojů"
+  },
   "termsAndConditions": {
     "meta": {
       "title": "Všeobecné obchodní podmínky - QuickFy",
@@ -607,7 +945,7 @@
           "d) o dodání zvukové nebo obrazové nahrávky nebo počítačového programu, pokud porušil jejich původní obal,",
           "e) o dodání novin, periodik nebo časopisů s výjimkou předplatného,",
           "f) o ubytování, přepravě, stravování nebo o využití volného času, pokud smlouva stanoví konkrétní datum nebo období plnění,",
-          "g) z elektronického obsahu nedodávaného na hmotném nosiči, pokud začal být obsah s výslovným souhlasem kupujícího poskytován ještě před uplynutím lhůty pro odstoupení od smlouvy a kupující prohlásil, že ví, že tím pozbyde právo na odstoupení od smlouvy.",
+          "g) z elektronického obsahu nedodávaného na hmotném nosiči, pokud začal být obsah s výslovným souhlasem kupujícího poskytován ještě před uplynutím lhůty pro odstoupení od smlouvy a kupující prohlásil, že ví, že tím pozbude právo na odstoupení od smlouvy.",
           "5.4. Pro odstoupení od kupní smlouvy musí kupující sdělit prodávajícímu své rozhodnutí odstoupit od kupní smlouvy jednoznačným prohlášením (např. dopisem zaslaným poštou nebo elektronickou poštou). K tomuto účelu může kupující použít vzorový formulář pro odstoupení od smlouvy poskytovaný prodávajícím, který tvoří přílohu těchto VOP. Odstoupení od kupní smlouvy může kupující sdělit prodávajícímu také prostřednictvím formuláře umístěného na webových stránkách prodávajícího. Kupující zašle sdělení o odstoupení od smlouvy prodávajícímu na adresu info@quickfy.eu nebo na adresu provozovny FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10.",
           "5.5. Kupující, který odstoupil od kupní smlouvy, je povinen bez zbytečného odkladu, nejpozději do 14 dnů od odstoupení od kupní smlouvy, vrátit prodávajícímu zboží. Kupující je povinen nést náklady spojené s vrácením zboží prodávajícímu, a to i v případě, kdy zboží nemůže být vráceno obvyklou poštovní cestou pro svou povahu.",
           "5.6. Odstoupil-li kupující od kupní smlouvy, vrátí mu prodávající bez zbytečného odkladu, nejpozději do 14 dnů od odstoupení od kupní smlouvy, všechny peněžní prostředky, které od něj na základě kupní smlouvy obdržel, včetně nákladů na dodání zboží. Prodávající vrátí kupujícímu peněžní prostředky stejným způsobem, jakým je od kupujícího obdržel. Prodávající vrátí kupujícímu peněžní prostředky jiným způsobem pouze tehdy, pokud s tím kupující souhlasí a pokud mu tím nevzniknou dodatečné náklady.",
@@ -707,6 +1045,17 @@
           "*Nehodící se škrtněte."
         ]
       }
+    }
+  },
+  "products": {
+    "quickfy": {
+      "title": "QuickFy CRM",
+      "subtitle": "Platforma Marketing Automation"
+    },
+    "whappi": {
+      "title": "Whappi",
+      "subtitle": "Integrovaný komunikační modul",
+      "badge": "PRE"
     }
   }
 }

@@ -84,7 +84,7 @@ export function FloatingLanguageSwitcher() {
             }}
             whileTap={{ scale: 0.9 }}
             onClick={() => handleLanguageChange(lang)}
-            className="group w-14 h-14 bg-white/95 backdrop-blur-md border border-gray-200/80 rounded-2xl shadow-lg hover:shadow-2xl hover:bg-gray-50/95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-white transition-all duration-300 flex items-center justify-center relative overflow-hidden"
+            className="group w-14 h-14 bg-white/95 backdrop-blur-md border border-gray-200/80 rounded-2xl shadow-lg hover:shadow-2xl hover:bg-gray-50/95 focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 transition-all duration-300 flex items-center justify-center relative overflow-hidden"
             aria-label={`Switch to ${getLanguageCode(lang)}`}
           >
             {/* Hover background effect */}
@@ -119,7 +119,7 @@ export function FloatingLanguageSwitcher() {
         }}
         whileTap={{ scale: 0.95 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white rounded-2xl shadow-xl hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-blue-500/30 transition-all duration-300 flex items-center justify-center relative overflow-hidden group"
+        className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white rounded-2xl shadow-xl hover:shadow-2xl focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2 transition-all duration-300 flex items-center justify-center relative overflow-hidden group"
         aria-label="Language switcher"
         aria-expanded={isOpen}
       >

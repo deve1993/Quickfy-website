@@ -83,17 +83,18 @@ export const BenefitsSection = memo(function BenefitsSection() {
 
   return (
     <section
+      id="benefits"
       ref={sectionRef}
-      className="relative py-16 lg:py-20 px-4 overflow-hidden bg-gradient-to-br from-white via-blue-50/20 to-purple-50/20"
+      className="relative py-0 px-4 overflow-hidden bg-gradient-to-br from-blue-50/30 via-purple-50/30 to-pink-50/30"
     >
       {/* Modern animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-10 left-10 w-64 h-64 bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-32 right-10 w-80 h-80 bg-gradient-to-br from-purple-200/20 to-pink-200/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute -bottom-8 left-1/3 w-72 h-72 bg-gradient-to-br from-pink-200/20 to-blue-200/20 rounded-full blur-3xl animate-pulse delay-500"></div>
+      <div className="absolute inset-0 overflow-hidden opacity-40">
+        <div className="absolute top-10 left-10 w-64 h-64 bg-gradient-to-br from-blue-300/30 to-purple-300/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-32 right-10 w-80 h-80 bg-gradient-to-br from-purple-300/30 to-pink-300/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute -bottom-8 left-1/3 w-72 h-72 bg-gradient-to-br from-pink-300/30 to-blue-300/30 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto">
+      <div className="relative max-w-7xl mx-auto py-16">
         {/* Modern Section Header */}
         <div className={`text-center mb-12 lg:mb-16 transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm border border-blue-200/50 rounded-full mb-6">
@@ -121,7 +122,7 @@ export const BenefitsSection = memo(function BenefitsSection() {
               style={{ transitionDelay: `${index * 150}ms` }}
             >
               {/* Modern Glass Morphism Card */}
-              <div className="relative h-full min-h-[280px] lg:min-h-[200px] xl:min-h-[180px] p-6 lg:p-4 xl:p-3 bg-white/70 backdrop-blur-xl border border-white/20 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden group-hover:scale-[1.02]">
+              <div className="relative h-full min-h-[220px] sm:min-h-[280px] lg:min-h-[200px] xl:min-h-[180px] p-4 sm:p-6 lg:p-4 xl:p-3 bg-white/70 backdrop-blur-xl border border-white/20 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden group-hover:scale-[1.02]">
                 {/* Background glow effect */}
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-50/50 via-purple-50/30 to-pink-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
@@ -130,27 +131,27 @@ export const BenefitsSection = memo(function BenefitsSection() {
 
                 <div className="relative z-10 flex flex-col h-full">
                   {/* Compact metrics section */}
-                  <div className="mb-5 lg:mb-3 xl:mb-2">
-                    <div className="flex items-end gap-2 mb-3 lg:mb-2 xl:mb-1">
-                      <div className="text-3xl md:text-4xl lg:text-3xl xl:text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                  <div className="mb-3 sm:mb-5 lg:mb-3 xl:mb-2">
+                    <div className="flex items-end gap-1 sm:gap-2 mb-2 sm:mb-3 lg:mb-2 xl:mb-1">
+                      <div className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
                         <NumberCounter
                           value={benefit.value}
                           isInView={isInView}
                           delay={index * 0.15}
                         />
                       </div>
-                      <div className="text-xs lg:text-[10px] xl:text-[9px] font-semibold text-slate-500 uppercase tracking-wider pb-1">
+                      <div className="text-[10px] sm:text-xs lg:text-[10px] xl:text-[9px] font-semibold text-slate-500 uppercase tracking-wider pb-1">
                         {benefit.unit}
                       </div>
                     </div>
                   </div>
 
                   {/* Content section */}
-                  <div className="flex-1 space-y-3 lg:space-y-2 xl:space-y-1">
-                    <h3 className="text-lg lg:text-base xl:text-sm font-bold text-slate-900 group-hover:text-blue-700 transition-colors duration-300 leading-tight">
+                  <div className="flex-1 space-y-2 sm:space-y-3 lg:space-y-2 xl:space-y-1">
+                    <h3 className="text-base sm:text-lg lg:text-base xl:text-sm font-bold text-slate-900 group-hover:text-blue-700 transition-colors duration-300 leading-tight">
                       {benefit.title}
                     </h3>
-                    <p className="text-sm lg:text-xs xl:text-[11px] text-slate-600 leading-relaxed lg:leading-snug xl:leading-tight">
+                    <p className="text-xs sm:text-sm lg:text-xs xl:text-[11px] text-slate-600 leading-relaxed lg:leading-snug xl:leading-tight">
                       {benefit.description}
                     </p>
                   </div>

@@ -153,7 +153,7 @@ function ToastItem({ toast }: { toast: Toast }) {
         {toast.action && (
           <button
             onClick={toast.action.onClick}
-            className="mt-2 text-sm font-medium underline hover:no-underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 rounded"
+            className="mt-2 text-sm font-medium underline hover:no-underline focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 rounded"
           >
             {toast.action.label}
           </button>
@@ -163,7 +163,7 @@ function ToastItem({ toast }: { toast: Toast }) {
       {/* Close button */}
       <button
         onClick={() => removeToast(toast.id)}
-        className="flex-shrink-0 p-1 rounded-md hover:bg-black/5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
+        className="flex-shrink-0 p-1 rounded-md hover:bg-black/5 focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 transition-colors"
         aria-label="Chiudi notifica"
       >
         <X className="h-4 w-4" aria-hidden="true" />

@@ -154,3 +154,49 @@ export function useImagePreloader() {
 
   return { preloadImage, preloadImages };
 }
+
+// Hook for detecting motion preferences
+export function useMotionPreference() {
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    // Check for reduced motion preference
+    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    setPrefersReducedMotion(mediaQuery.matches);
+
+    // Check if mobile device
+    const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
+    setIsMobile(isMobileDevice);
+
+    const handleChange = (e: MediaQueryListEvent) => {
+      setPrefersReducedMotion(e.matches);
+    };
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    window.addEventListener('resize', handleResize, { passive: true });
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  // Return optimized motion settings
+  return {
+    prefersReducedMotion,
+    isMobile,
+    shouldReduceMotion: prefersReducedMotion || isMobile,
+    motionConfig: {
+      duration: prefersReducedMotion ? 0.01 : isMobile ? 0.3 : 0.5,
+      ease: prefersReducedMotion ? 'linear' : 'easeOut',
+      scale: prefersReducedMotion ? 1 : isMobile ? 1.02 : 1.05
+    }
+  };
+}

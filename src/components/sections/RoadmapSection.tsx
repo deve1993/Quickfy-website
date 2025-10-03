@@ -34,12 +34,9 @@ export function RoadmapSection() {
   const [isInView, setIsInView] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
-  // Function to determine roadmap status - CRM Foundation is completed, Advanced Analytics is current
+  // Function to determine roadmap status - Q4 2025 is current (launch phase), others are future
   const getRoadmapStatus = (quarter: string): RoadmapItem['status'] => {
-    if (quarter === 'Q1 2024') {
-      return 'completed';
-    }
-    if (quarter === 'Q2 2025') {
+    if (quarter === 'Q4 2025') {
       return 'current';
     }
     return 'future';
@@ -85,7 +82,7 @@ export function RoadmapSection() {
 
   const getItemProgress = (quarter: string, status: RoadmapItem['status']): number => {
     if (status === 'completed') return 100;
-    if (quarter === 'Q2 2025') return 55; // Advanced Analytics specific progress
+    if (quarter === 'Q4 2025') return 55; // Launch and Consolidation phase specific progress
     return 0;
   };
 
@@ -183,16 +180,16 @@ export function RoadmapSection() {
     <section
       ref={sectionRef}
       id="roadmap"
-      className="relative py-12 px-4 overflow-hidden"
+      className="relative py-0 px-4 overflow-hidden bg-gradient-to-br from-blue-50/30 via-purple-50/30 to-pink-50/30"
     >
       {/* Background Elements */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-blue-200 to-purple-200 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-l from-purple-200 to-pink-200 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+      <div className="absolute inset-0 opacity-40">
+        <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-blue-300 to-purple-300 rounded-full mix-blend-multiply filter blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-l from-purple-300 to-pink-300 rounded-full mix-blend-multiply filter blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-tr from-blue-300/20 to-purple-300/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '4s'}}></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto">
+      <div className="relative max-w-7xl mx-auto py-16">
         {/* Header */}
         <motion.div
           initial="hidden"
@@ -276,7 +273,7 @@ export function RoadmapSection() {
                                 custom={item.progress}
                                 variants={progressVariants}
                                 className={`h-full rounded-full transition-all duration-300 ${
-                                  item.quarter === 'Q2 2025'
+                                  item.quarter === 'Q4 2025'
                                     ? `bg-slate-400 group-hover:bg-gradient-to-r group-hover:${config.gradient}`
                                     : `bg-gradient-to-r ${config.gradient}`
                                 }`}
@@ -312,7 +309,7 @@ export function RoadmapSection() {
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                     >
-                      {item.quarter === 'Q2 2025' ? (
+                      {item.quarter === 'Q4 2025' ? (
                         <>
                           <Hammer className="w-4 h-4" />
                           <span>Work in Progress</span>

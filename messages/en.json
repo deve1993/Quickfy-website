@@ -10,14 +10,20 @@
     "pricing": "Pricing",
     "roadmap": "Roadmap",
     "testimonials": "Testimonials",
+    "whappi": "Whappi",
     "contact": "Contact",
+    "home": "Home",
     "startNow": "Start Now",
     "logoAria": "QuickFy - Return to top of page",
     "startNowAria": "Start now - Go to contact form",
     "sectionAria": "Go to {section} section",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "mobileMenu": "Mobile menu"
+    "mobileMenu": "Mobile menu",
+    "skipToContent": "Skip to main content",
+    "products": "Products",
+    "productsAria": "Products menu",
+    "whappiCta": "Pre-Order - Save 24%"
   },
   "hero": {
     "headline": "Marketing automation platform for",
@@ -287,43 +293,47 @@
     "cta": "Powered by Customer Feedback",
     "items": [
       {
-        "quarter": "Q1 2024",
-        "status": "completed",
-        "title": "CRM Foundation",
+        "quarter": "Q4 2025",
+        "status": "current",
+        "title": "Launch and Consolidation",
+        "keyAction": "Official product launch to market",
         "features": [
-          "Core CRM functionality",
-          "Basic analytics dashboard",
-          "Email automation system"
+          "Starter Plan (Analytics) at €19/month",
+          "Add-on: Advertising Management (5% commission)",
+          "Official market launch"
         ]
       },
       {
-        "quarter": "Q2 2025",
+        "quarter": "Q1 2026",
         "status": "future",
-        "title": "Advanced Analytics",
+        "title": "First Enhancement",
+        "keyAction": "Release of first free upgrade for base plan and simultaneous development of more complex modules",
         "features": [
-          "Real-time reporting",
-          "Predictive analytics",
-          "Custom KPI tracking"
+          "Free \"Starter AI\" upgrade for Starter Plan customers (AI Alerts and Summaries)",
+          "Development Start: Communication Module and Plus Plan",
+          "Continuous improvements based on customer feedback"
         ]
       },
       {
-        "quarter": "Q3 2026",
+        "quarter": "Q2 2026",
         "status": "future",
-        "title": "Team Collaboration",
+        "title": "Communication Module",
+        "keyAction": "Launch of first major paid add-on, creating new revenue stream",
         "features": [
-          "Multi-user workspaces",
-          "Role-based permissions",
-          "Activity tracking"
+          "Add-on: Integrated Communication Module at €19/user/month",
+          "Centralized management of all communication channels",
+          "Advanced communication automation"
         ]
       },
       {
-        "quarter": "Q4 2026",
+        "quarter": "H2 2026",
         "status": "future",
-        "title": "AI Integration",
+        "title": "Advanced Plans",
+        "keyAction": "Completion of three-tier offering, positioning QuickFy as a complete suite",
         "features": [
-          "Smart lead scoring",
-          "Automated insights",
-          "Intelligent recommendations"
+          "Q3 2026: Plus Plan (Reputation) at €39/month",
+          "Q4 2026: Pro Plan (Growth Suite) at €79/month",
+          "Includes Social Hub and Marketing Chatbot"
         ]
       }
     ]
@@ -529,6 +539,334 @@
       }
     }
   },
+  "whappi": {
+    "badge": "SMART CHROME EXTENSION",
+    "banner": {
+      "status": "In Development - Q2 2026 Launch",
+      "preorder": "Now accepting pre-orders with special pricing!"
+    },
+    "hero": {
+      "title": "Whappi: Your Customer Communication",
+      "titleHighlight": "Copilot",
+      "subtitle": "Chrome extension that integrates all communications (WhatsApp, Facebook, Instagram, Viber, Telegram, SMS, Email) directly into your work tools. No more screen switching: work where you already work.",
+      "painPoint": {
+        "title": "Stop Overpaying for Complex Tools!",
+        "description": "Competitors charge €300-400/month. Whappi delivers the same power for just €19/user/month."
+      },
+      "cta": {
+        "pricing": "View Pricing (€19/user)",
+        "contact": "Request Demo"
+      }
+    },
+    "demo": {
+      "title": "See Whappi in Action",
+      "subtitle": "Watch how Whappi transforms team communication",
+      "placeholder": {
+        "title": "Product Demo",
+        "coming": "Coming Soon - Q2 2026"
+      },
+      "preview": "Whappi Dashboard Preview"
+    },
+    "integrations": {
+      "title": "All Your Messaging Platforms in One Place",
+      "subtitle": "Stop switching between apps. Manage WhatsApp, Telegram, Facebook, Instagram, Viber, SMS and Email from one powerful dashboard.",
+      "chromeExtension": "Chrome Extension",
+      "worksInsideTools": "Works Inside Your Favorite Tools",
+      "allChannelsUnified": "All Your Messaging Channels Unified",
+      "availableOn": "Available on",
+      "chromeWebStore": "Chrome Web Store",
+      "comingQ2": "Coming Q2 2026",
+      "comingSoon": "Coming Soon",
+      "tools": {
+        "gmail": {
+          "name": "Gmail",
+          "type": "Email Client"
+        },
+        "hubspot": {
+          "name": "HubSpot",
+          "type": "CRM"
+        },
+        "salesforce": {
+          "name": "Salesforce",
+          "type": "CRM"
+        },
+        "pipedrive": {
+          "name": "Pipedrive",
+          "type": "CRM"
+        },
+        "zendesk": {
+          "name": "Zendesk",
+          "type": "Support"
+        },
+        "more": {
+          "name": "More",
+          "type": "Coming Soon"
+        }
+      },
+      "hub": {
+        "title": "Whappi",
+        "subtitle": "Central Hub"
+      },
+      "platforms": {
+        "whatsapp": {
+          "name": "WhatsApp",
+          "type": "Business API"
+        },
+        "telegram": {
+          "name": "Telegram",
+          "type": "Bot API"
+        },
+        "facebook": {
+          "name": "Meta",
+          "type": "Messenger"
+        },
+        "instagram": {
+          "name": "Instagram",
+          "type": "Direct"
+        },
+        "viber": {
+          "name": "Viber",
+          "type": "Business"
+        },
+        "sms": {
+          "name": "SMS",
+          "type": "Gateway"
+        },
+        "email": {
+          "name": "Email",
+          "type": "SMTP/IMAP"
+        }
+      }
+    },
+    "comparison": {
+      "title": "Why Small Businesses Choose Whappi",
+      "subtitle": "Compare Whappi with expensive alternatives and see the difference",
+      "tableTitle": "Feature Comparison",
+      "columnHeaders": {
+        "feature": "Feature"
+      },
+      "features": {
+        "cost": "Monthly Cost",
+        "multiPlatform": "Multi-Platform",
+        "teamCollaboration": "Team Collaboration",
+        "gdpr": "GDPR Compliance",
+        "setup": "Setup Complexity",
+        "smb": "Small Business Focus"
+      },
+      "whappi": {
+        "name": "Whappi",
+        "pricing": "€19/month",
+        "pricingUnit": "per user",
+        "gdprNote": "Your Servers",
+        "setupNote": "Simple"
+      },
+      "competitors": {
+        "name": "Competitors",
+        "pricing": "€300-400/mo",
+        "pricingUnit": "enterprise pricing",
+        "gdprNote": "Vendor Servers",
+        "setupNote": "Complex"
+      }
+    },
+    "features": {
+      "title": "AI Features for Maximum Productivity",
+      "subtitle": "Everything you need to manage communications without ever leaving your work tools",
+      "allIncluded": "All features included in every plan - No hidden costs",
+      "contextualIntelligence": {
+        "title": "Contextual Intelligence",
+        "description": "Whappi automatically detects phone numbers on the web page and instantly shows the complete conversation history across all channels.",
+        "benefits": [
+          "Automatic phone number detection",
+          "Instant multi-channel conversation history",
+          "Zero context switching"
+        ]
+      },
+      "aiAssistance": {
+        "title": "Integrated AI Assistant",
+        "description": "Whappi's AI creates automatic conversation summaries, suggests 2-3 ready-to-use response drafts, and searches your company knowledge base to give you the right information at the right time.",
+        "benefits": [
+          "One-click conversation summaries",
+          "2-3 ready AI response suggestions",
+          "Smart knowledge base search"
+        ]
+      },
+      "teamManagement": {
+        "title": "Team Collaboration",
+        "description": "Assign conversations to specific team members, add private internal notes, and collaborate effectively on every single customer, all without leaving your tools.",
+        "benefits": [
+          "Assign conversations to operators",
+          "Private notes for the team",
+          "Real-time mentions and collaboration"
+        ]
+      },
+      "gdprCompliance": {
+        "title": "GDPR Compliance Guaranteed",
+        "description": "Developed in Czech Republic with maximum attention to privacy. Your data stays on your servers and fully complies with European GDPR.",
+        "benefits": [
+          "Made in Czech Republic - 100% European development",
+          "Data on customer servers",
+          "Full GDPR compliance"
+        ]
+      }
+    },
+    "trust": {
+      "title": "Built for Security & Trust",
+      "subtitle": "Your data stays on your servers",
+      "badges": {
+        "madeInItaly": "Made in Czech Republic",
+        "clientServers": "Client Servers",
+        "gdpr": "Full GDPR"
+      }
+    },
+    "roadmap": {
+      "title": "Development Roadmap",
+      "subtitle": "Our path to Q2 2026 launch",
+      "badgeText": "Development Roadmap",
+      "journeyTo": "Journey to",
+      "launchDate": "Q2 2026 Launch",
+      "trackProgress": "Track our progress as we build the future of small business messaging",
+      "progressOverview": "Development Progress Overview",
+      "progressSubtitle": "Real-time development milestones tracking our journey to launch",
+      "milestones": {
+        "q3_2024": {
+          "date": "September 2024",
+          "title": "Core Platform Architecture",
+          "description": "Foundation systems completed including security framework, database architecture, and core API development.",
+          "status": "COMPLETED",
+          "features": {
+            "security": "Security Layer",
+            "apis": "Core APIs",
+            "securityStatus": "✓ Implemented",
+            "apisStatus": "✓ Ready"
+          }
+        },
+        "q4_2024": {
+          "date": "December 2024",
+          "title": "Platform Integrations",
+          "description": "Active development of WhatsApp Business API, Telegram Bot API, and Meta Messenger integrations.",
+          "status": "IN PROGRESS",
+          "features": {
+            "whatsapp": "WhatsApp API",
+            "telegram": "Telegram Bot",
+            "whatsappStatus": "🚧 In Development",
+            "telegramStatus": "🚧 Testing Phase"
+          }
+        },
+        "q1_2025": {
+          "date": "March 2025",
+          "title": "Advanced Team Features",
+          "description": "Team collaboration tools, conversation assignment, internal notes, and user management systems.",
+          "status": "PLANNED",
+          "features": {
+            "management": "Team Management",
+            "collaboration": "Collaboration",
+            "managementStatus": "📋 Design Phase",
+            "collaborationStatus": "📋 Planned"
+          }
+        },
+        "q2_2026": {
+          "date": "March 2026",
+          "title": "Full Platform Launch",
+          "description": "Complete platform ready with all features, mobile applications, comprehensive documentation, and 24/7 support.",
+          "status": "🚀 LAUNCH READY",
+          "features": {
+            "mobile": "Mobile Apps",
+            "support": "24/7 Support",
+            "mobileStatus": "🎯 Ready for Launch",
+            "supportStatus": "🎯 Full Service"
+          },
+          "preorderText": "🎉 Pre-order now and save 24%",
+          "launchExpected": "Expected Launch: Q2 2026"
+        }
+      },
+      "progressStats": {
+        "core": "Core Platform",
+        "integrations": "Integrations",
+        "team": "Team Features",
+        "launch": "Launch Target"
+      },
+      "ctaText": "🎉 Pre-order now and save 24% off regular pricing",
+      "ctaButton": "Secure Your Pre-Order"
+    },
+    "pricing": {
+      "title": "Simple and Transparent Pricing",
+      "subtitle": "Take advantage of the annual offer: pay 10 months, get 12",
+      "preorder": {
+        "badge": "ANNUAL OFFER",
+        "title": "Annual Pre-Order Plan",
+        "price": "€190",
+        "period": "/year",
+        "subtitle": "€15.83 per month",
+        "savings": "Save €38 - Pay 10 months, get 12!",
+        "cta": "Pre-Order Now"
+      },
+      "regular": {
+        "badge": "STANDARD",
+        "title": "Monthly Plan",
+        "price": "€19",
+        "period": "/month",
+        "subtitle": "per user",
+        "note": "Billed monthly",
+        "cta": "Available Q2 2026"
+      },
+      "features": [
+        "All 7 channels: WhatsApp, Facebook Messenger, Instagram, Viber, Telegram, SMS, Email",
+        "AI intelligence with automatic summaries and response suggestions",
+        "Automatic contextual phone number detection",
+        "Unlimited team collaboration with assignments and notes",
+        "Smart company knowledge base search",
+        "Full GDPR compliance - Made in Czech Republic"
+      ],
+      "everythingIncluded": "Everything Included",
+      "madeInCzech": "Made in Czech Republic - GDPR Guaranteed",
+      "savingsText": "Pre-order saves you €14/year"
+    },
+    "cta": {
+      "title": "Stop Wasting Time Switching Screens",
+      "subtitle": "Join teams that chose Whappi to work better and faster. A single smart widget for all communications, wherever you work.",
+      "button": "Start with Whappi (€19/user)",
+      "formMessage": "I'm interested in Whappi - Integrated Communication Module. I'd like to receive more information about pre-ordering and a demo of the Chrome extension."
+    }
+  },
+  "whappiSummary": {
+    "title": "Integrated Communication Module",
+    "subtitle": "Chrome extension that brings all customer communications (WhatsApp, Facebook, Instagram, Viber, Telegram, SMS, Email) directly into your work tools.",
+    "features": {
+      "contextualIntelligence": {
+        "icon": "🧠",
+        "title": "Contextual Intelligence",
+        "description": "Automatically detects numbers and shows multi-channel conversation history."
+      },
+      "aiAssistance": {
+        "icon": "✨",
+        "title": "AI Assistant",
+        "description": "Automatic summaries, response suggestions, and knowledge base search."
+      },
+      "teamManagement": {
+        "icon": "👥",
+        "title": "Team Collaboration",
+        "description": "Assign conversations, add private notes, and collaborate in real-time."
+      },
+      "integrations": {
+        "icon": "🔗",
+        "title": "Multi-Channel Integrations",
+        "description": "Unify WhatsApp, Facebook, Instagram, Telegram, SMS, and Email in one interface."
+      },
+      "gdpr": {
+        "icon": "🔒",
+        "title": "GDPR Guaranteed",
+        "description": "Made in Czech Republic with data on your servers and full compliance."
+      }
+    },
+    "pricing": {
+      "amount": "€19/user",
+      "description": "per month - Monthly plan or €190/year (save €38)"
+    },
+    "cta": {
+      "button": "Discover Whappi"
+    },
+    "note": "Finally, integrated customer communications without leaving your tools"
+  },
   "termsAndConditions": {
     "meta": {
       "title": "General Terms and Conditions - QuickFy",
@@ -684,6 +1022,17 @@
           "*Delete as appropriate."
         ]
       }
+    }
+  },
+  "products": {
+    "quickfy": {
+      "title": "QuickFy CRM",
+      "subtitle": "Marketing Automation Platform"
+    },
+    "whappi": {
+      "title": "Whappi",
+      "subtitle": "Integrated Communication Module",
+      "badge": "PRE"
     }
   }
 }

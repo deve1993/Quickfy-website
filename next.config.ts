@@ -8,6 +8,8 @@ const withBundleAnalyzer = bundleAnalyzer({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Disable development indicator (small dot in bottom-left corner)
+  devIndicators: false,
   // Environment variable configuration
   env: {
     // Custom environment variables
@@ -28,15 +30,15 @@ const nextConfig = {
       '@radix-ui/react-slot',
       'framer-motion'
     ],
-    turbo: {
-      rules: {
-        '*.svg': {
-          loaders: ['@svgr/webpack'],
-          as: '*.js',
-        },
+    gzipSize: true
+  },
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: ['@svgr/webpack'],
+        as: '*.js',
       },
     },
-    gzipSize: true
   },
   compress: true,
   poweredByHeader: false,

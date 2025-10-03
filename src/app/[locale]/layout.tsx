@@ -10,7 +10,6 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { ToastProvider } from '@/components/ui/toast';
 import { ClientOnly } from '@/components/ui/ClientOnly';
-import { FloatingBreadcrumb } from '@/components/ui/QuickfyBreadcrumb';
 import { CookieConsentProvider } from '@/contexts/CookieConsentContext';
 import { CookieConsentBanner } from '@/components/ui/CookieConsentBanner';
 import { EnvironmentProvider } from '@/contexts/EnvironmentContext';
@@ -21,7 +20,7 @@ import '@/lib/init';
 import { getEnvInjectionScriptContent } from '@/lib/env-injection';
 
 // Optimize font loading
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   preload: true,
@@ -36,7 +35,7 @@ type Props = {
 export default async function LocaleLayout({ children, params }: Props) {
   // Await the params to get the locale
   const { locale } = await params;
-  
+
   // Validate that the incoming locale is valid
   if (!locales.includes(locale as typeof locales[number])) {
     notFound();
@@ -76,14 +75,14 @@ export default async function LocaleLayout({ children, params }: Props) {
         <link rel="preload" href="/quickfy_logo.svg" as="image" type="image/svg+xml" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="QuickFy" />
-        
+
         {/* Critical resource hints */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
-        
+
         {/* Critical CSS is automatically handled by Next.js 15 */}
-        
+
         {/* Google Analytics with consent management */}
         <Script
           id="gtag-config"
@@ -93,7 +92,7 @@ export default async function LocaleLayout({ children, params }: Props) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              
+
               // Initialize with denied consent by default
               gtag('consent', 'default', {
                 'analytics_storage': 'denied',
@@ -101,13 +100,13 @@ export default async function LocaleLayout({ children, params }: Props) {
                 'ad_user_data': 'denied',
                 'ad_personalization': 'denied'
               });
-              
+
               // Configure GA4 (replace with your actual measurement ID)
               // gtag('config', 'GA_MEASUREMENT_ID');
             `
           }}
         />
-        
+
         {/* Optimized performance monitoring - external file */}
         <Script
           src="/js/performance-monitor.js"
@@ -115,18 +114,46 @@ export default async function LocaleLayout({ children, params }: Props) {
           defer
         />
       </head>
-      <body className={`${inter.className} relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30 overflow-x-hidden`}>
-        {/* Enhanced Background Elements */}
-        <div className="fixed inset-0 z-0">
-          {/* Animated gradient orbs */}
-          <div className="absolute top-20 left-20 w-72 h-72 bg-gradient-to-r from-blue-400/20 to-purple-600/20 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-l from-purple-400/20 to-blue-600/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}} />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-tr from-blue-300/10 to-purple-300/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '4s'}} />
-          
-          {/* Grid pattern overlay */}
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:3rem_3rem]" />
+      <body className={`${inter.className} relative min-h-screen overflow-x-hidden`}>
+        {/* HIGH VISIBILITY TEST VERSION - Soft Gradient Mesh Background */}
+        <div className="fixed inset-0 z-0 pointer-events-none">
+          {/* Layer 1: Enhanced visibility gradient mesh background */}
+          <div className="absolute inset-0">
+            {/* INCREASED OPACITY: from /30 to /70 for blue, purple from /20 to /60 */}
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-100/70 via-white to-purple-100/70" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-purple-100/60 via-transparent to-blue-100/60" />
+          </div>
+
+          {/* Orthogonal Grid Pattern - Adds structure and makes content stand out */}
+          <div
+            className="absolute inset-0 opacity-[0.12]"
+            aria-hidden="true"
+            style={{
+              backgroundImage: `
+                linear-gradient(to right, rgb(148, 163, 184) 1px, transparent 1px),
+                linear-gradient(to bottom, rgb(148, 163, 184) 1px, transparent 1px)
+              `,
+              backgroundSize: '60px 60px'
+            }}
+          />
+
+          {/* Layer 2: MORE VISIBLE dot pattern - INCREASED from 0.03 to 0.15 */}
+          <div
+            className="absolute inset-0 opacity-[0.15]"
+            style={{
+              backgroundImage: 'radial-gradient(circle, #3B82F6 0.5px, transparent 0.5px)',
+              backgroundSize: '24px 24px'
+            }}
+          />
+
+          {/* Layer 3: HIGHLY VISIBLE floating gradient orbs - INCREASED from /15 to /40 */}
+          <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-gradient-to-br from-blue-300/40 to-transparent rounded-full blur-3xl animate-float-slow" />
+          <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-gradient-to-tl from-purple-300/40 to-transparent rounded-full blur-3xl animate-float-slow-delayed" />
+
+          {/* Third orb - INCREASED from /10 to /30 */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-r from-blue-200/30 to-purple-200/30 rounded-full blur-3xl" />
         </div>
-        
+
         <div className="relative z-10">
           <NextIntlClientProvider messages={messages}>
             <EnvironmentProvider>
@@ -137,7 +164,6 @@ export default async function LocaleLayout({ children, params }: Props) {
                 <Footer />
                 <ClientOnly>
                   <FloatingLanguageSwitcher />
-                  <FloatingBreadcrumb />
                   <PerformanceMonitor />
                   <ResourceMonitor />
                   <CookieConsentBanner />
@@ -147,7 +173,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             </EnvironmentProvider>
           </NextIntlClientProvider>
         </div>
-        
+
         {/* Optimized service worker - external file */}
         <Script
           src="/js/service-worker-init.js"
