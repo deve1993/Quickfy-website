@@ -8,8 +8,6 @@ const withBundleAnalyzer = bundleAnalyzer({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Disable development indicator (small dot in bottom-left corner)
-  devIndicators: false,
   // Environment variable configuration
   env: {
     // Custom environment variables

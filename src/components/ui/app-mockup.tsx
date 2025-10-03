@@ -9,8 +9,7 @@ interface AppMockupProps {
 }
 
 export const AppMockup = memo(function AppMockup({
-  className = '',
-  variant = 'default'
+  className = ''
 }: AppMockupProps) {
   return (
     <div className={`relative bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-200 ${className}`}>

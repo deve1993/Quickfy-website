@@ -10,11 +10,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const t = await getTranslations({ locale, namespace: 'whappi' });
 
   return {
-    title: `${t('title')} ${t('titleHighlight')} - Whappi Demo`,
-    description: t('subtitle'),
+    title: `${t('hero.title')} ${t('hero.titleHighlight')} - Whappi Demo`,
+    description: t('hero.subtitle'),
     openGraph: {
-      title: `${t('title')} ${t('titleHighlight')} - Whappi Demo`,
-      description: t('subtitle'),
+      title: `${t('hero.title')} ${t('hero.titleHighlight')} - Whappi Demo`,
+      description: t('hero.subtitle'),
       type: 'website',
       locale,
     },
