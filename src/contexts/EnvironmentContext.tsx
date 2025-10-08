@@ -1,7 +1,7 @@
 'use client';
 
-import { createContext, useContext, ReactNode } from 'react';
-import { clientEnv, isDevelopment, isProduction, isLocalhost } from '@/lib/env';
+import { createContext, useContext, ReactNode, useState, useEffect } from 'react';
+import { clientEnv, isDevelopment, isProduction } from '@/lib/env';
 
 interface EnvironmentContextValue {
   env: typeof clientEnv;
@@ -17,11 +17,24 @@ interface EnvironmentProviderProps {
 }
 
 export function EnvironmentProvider({ children }: EnvironmentProviderProps) {
+  // Initialize with safe default values
+  const [isLocalhost, setIsLocalhost] = useState(false);
+
+  // Check localhost only on client side after mount
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setIsLocalhost(
+        window.location.hostname === 'localhost' ||
+        window.location.hostname === '127.0.0.1'
+      );
+    }
+  }, []);
+
   const value: EnvironmentContextValue = {
     env: clientEnv,
     isDevelopment: isDevelopment(),
     isProduction: isProduction(),
-    isLocalhost: isLocalhost(),
+    isLocalhost,
   };
 
   return (

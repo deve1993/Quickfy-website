@@ -1,18 +1,12 @@
 /**
  * Application initialization
- * Sets up environment and polyfills
+ * Simplified for Next.js 15 - no auto-initialization
  */
 
-import { initializePolyfills } from './polyfills';
 import { validateEnv } from './env';
 
 export function initializeApp() {
-  // Initialize polyfills for browser environment
-  if (typeof window !== 'undefined') {
-    initializePolyfills();
-  }
-
-  // Validate environment variables
+  // Validate environment variables (server-side only)
   try {
     validateEnv();
   } catch (error) {
@@ -24,7 +18,5 @@ export function initializeApp() {
   }
 }
 
-// Auto-initialize when module is imported on client-side
-if (typeof window !== 'undefined') {
-  initializeApp();
-}
+// NOTE: No auto-initialization - must be called explicitly if needed
+// This prevents issues with module loading order and SSR

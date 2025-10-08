@@ -72,6 +72,15 @@ export function Header() {
 
   // Context-aware CTA configuration
   const ctaConfig = useMemo(() => {
+    const scrollToSection = (sectionId: string) => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setIsMenuOpen(false);
+        setIsProductsOpen(false);
+      }
+    };
+
     if (pageContext === 'whappi') {
       return {
         text: t('whappiCta'),
@@ -91,29 +100,40 @@ export function Header() {
 
   // Track active section for text color highlighting
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      if (typeof window !== 'undefined') {
-        const sections = pageContext === 'whappi'
-          ? ['whappi-features', 'whappi-preorder', 'contact']
-          : ['features', 'benefits', 'pricing', 'testimonials', 'contact'];
-        const scrollPosition = window.scrollY + 100;
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (typeof window !== 'undefined') {
+            const sections = pageContext === 'whappi'
+              ? ['whappi-features', 'whappi-preorder', 'contact']
+              : ['features', 'benefits', 'pricing', 'testimonials', 'contact'];
+            const scrollPosition = window.scrollY + 100;
 
-        for (const section of sections) {
-          const element = document.getElementById(section);
-          if (element) {
-            const offsetTop = element.offsetTop;
-            const offsetBottom = offsetTop + element.offsetHeight;
+            for (const section of sections) {
+              const element = document.getElementById(section);
+              if (element) {
+                const offsetTop = element.offsetTop;
+                const offsetBottom = offsetTop + element.offsetHeight;
 
-            if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
-              setActiveSection(section);
-              break;
+                if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+                  setActiveSection(prevSection => {
+                    // Only update if section actually changed
+                    return prevSection !== section ? section : prevSection;
+                  });
+                  break;
+                }
+              }
             }
           }
-        }
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, [pageContext]);
 
@@ -121,20 +141,29 @@ export function Header() {
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      if (!target.closest('[data-products-dropdown]') && !target.closest('[data-products-trigger]')) {
+
+      // Close products dropdown if clicking outside
+      if (isProductsOpen &&
+          !target.closest('[data-products-dropdown]') &&
+          !target.closest('[data-products-trigger]')) {
         setIsProductsOpen(false);
       }
-      if (!target.closest('[data-mobile-menu]')) {
+
+      // Close mobile menu if clicking outside (but not on menu button or menu content)
+      if (isMenuOpen &&
+          !target.closest('[data-mobile-menu]') &&
+          !menuButtonRef.current?.contains(target)) {
         setIsMenuOpen(false);
       }
     };
 
     if (isProductsOpen || isMenuOpen) {
-      document.addEventListener('click', handleClickOutside);
+      // Use capture phase to handle clicks before they reach children
+      document.addEventListener('mousedown', handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [isProductsOpen, isMenuOpen]);
 
@@ -155,23 +184,24 @@ export function Header() {
     };
   }, [isProductsOpen]);
 
-  const handleNavigation = (item: { id: string; type: string; href?: string }) => {
-    if (item.type === 'link' && item.href) {
-      router.push(item.href);
-      setIsMenuOpen(false);
-    } else if (item.type === 'dropdown') {
-      setIsProductsOpen(!isProductsOpen);
-    } else if (item.type === 'scroll') {
-      scrollToSection(item.id);
-    }
-  };
-
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       setIsMenuOpen(false);
       setIsProductsOpen(false);
+    }
+  };
+
+  const handleNavigation = (item: { id: string; type: string; href?: string }) => {
+    if (item.type === 'link' && item.href) {
+      setIsMenuOpen(false);
+      setIsProductsOpen(false);
+      router.push(item.href);
+    } else if (item.type === 'dropdown') {
+      setIsProductsOpen(!isProductsOpen);
+    } else if (item.type === 'scroll') {
+      scrollToSection(item.id);
     }
   };
 
