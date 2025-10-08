@@ -1,18 +1,19 @@
 /**
  * Environment injection utility for external scripts
  * Safely passes environment variables to client-side scripts
+ * Simplified for Next.js 15 compatibility
  */
 
-import { clientEnv } from './env';
-
 // Define which environment variables are safe to expose to external scripts
+// Using direct process.env access which is replaced at build time by Next.js
 export const SAFE_CLIENT_ENV_VARS = {
-  NODE_ENV: clientEnv.NODE_ENV,
-  APP_ENV: clientEnv.APP_ENV,
-  ANALYTICS_ENABLED: clientEnv.ANALYTICS_ENABLED ? 'true' : 'false',
-  PERFORMANCE_MONITORING: clientEnv.PERFORMANCE_MONITORING ? 'true' : 'false',
-  SERVICE_WORKER_ENABLED: clientEnv.SERVICE_WORKER_ENABLED || (clientEnv.NODE_ENV === 'production') ? 'true' : 'false',
-  DEBUG_SCRIPTS: clientEnv.DEBUG_SCRIPTS ? 'true' : 'false',
+  NODE_ENV: (typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_NODE_ENV : undefined) || 'development',
+  APP_ENV: (typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_APP_ENV : undefined) || 'development',
+  ANALYTICS_ENABLED: (typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_ANALYTICS_ENABLED : undefined) === 'true' ? 'true' : 'false',
+  PERFORMANCE_MONITORING: (typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_PERFORMANCE_MONITORING : undefined) === 'true' ? 'true' : 'false',
+  SERVICE_WORKER_ENABLED: ((typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_SERVICE_WORKER_ENABLED : undefined) === 'true' ||
+                           (typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_NODE_ENV : undefined) === 'production') ? 'true' : 'false',
+  DEBUG_SCRIPTS: (typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_DEBUG_SCRIPTS : undefined) === 'true' ? 'true' : 'false',
 } as const;
 
 /**

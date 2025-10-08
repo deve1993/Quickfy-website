@@ -56,7 +56,7 @@ export class ErrorBoundary extends Component<Props, State> {
             <p className="text-slate-600 mb-6">
               We encountered an unexpected error. Please try refreshing the page.
             </p>
-            {this.state.error && process.env.NODE_ENV === 'development' && (
+            {this.state.error && typeof process !== 'undefined' && process.env.NODE_ENV === 'development' && (
               <details className="text-left bg-slate-50 rounded-lg p-4 mb-6">
                 <summary className="cursor-pointer font-semibold text-slate-700 mb-2">
                   Error Details

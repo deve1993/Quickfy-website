@@ -13,7 +13,6 @@ import { ClientOnly } from '@/components/ui/ClientOnly';
 import { CookieConsentProvider } from '@/contexts/CookieConsentContext';
 import { CookieConsentBanner } from '@/components/ui/CookieConsentBanner';
 import { EnvironmentProvider } from '@/contexts/EnvironmentContext';
-import { ErrorBoundary } from '@/components/ErrorBoundary';
 import '../globals.css';
 import Script from 'next/script';
 import { getEnvInjectionScriptContent } from '@/lib/env-injection';
@@ -154,25 +153,23 @@ export default async function LocaleLayout({ children, params }: Props) {
         </div>
 
         <div className="relative z-10">
-          <ErrorBoundary>
-            <NextIntlClientProvider messages={messages}>
-              <EnvironmentProvider>
-                <CookieConsentProvider>
-                  <ToastProvider>
-                  <Header />
-                  {children}
-                  <Footer />
-                  <ClientOnly>
-                    <FloatingLanguageSwitcher />
-                    <PerformanceMonitor />
-                    <ResourceMonitor />
-                    <CookieConsentBanner />
-                  </ClientOnly>
-                  </ToastProvider>
-                </CookieConsentProvider>
-              </EnvironmentProvider>
-            </NextIntlClientProvider>
-          </ErrorBoundary>
+          <NextIntlClientProvider messages={messages}>
+            <EnvironmentProvider>
+              <CookieConsentProvider>
+                <ToastProvider>
+                    <Header />
+                    {children}
+                    <Footer />
+                    <ClientOnly>
+                      <FloatingLanguageSwitcher />
+                      <PerformanceMonitor />
+                      <ResourceMonitor />
+                      <CookieConsentBanner />
+                    </ClientOnly>
+                </ToastProvider>
+              </CookieConsentProvider>
+            </EnvironmentProvider>
+          </NextIntlClientProvider>
         </div>
 
         {/* Optimized service worker - external file */}

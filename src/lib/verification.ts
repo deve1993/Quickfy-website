@@ -1,10 +1,10 @@
 /**
  * Environment verification utilities
  * Tests that environment variables are accessible without process errors
+ * Simplified for Next.js 15 compatibility
  */
 
 import { isProduction, isDevelopment, getClientEnv } from './env';
-import { getProcessEnv } from './polyfills';
 
 export function verifyEnvironmentAccess(): boolean {
   try {
@@ -16,15 +16,11 @@ export function verifyEnvironmentAccess(): boolean {
     const nodeEnv = getClientEnv('NODE_ENV');
     const analyticsEnabled = getClientEnv('ANALYTICS_ENABLED');
 
-    // Test polyfill environment access
-    const processNodeEnv = getProcessEnv('NEXT_PUBLIC_NODE_ENV');
-
     console.log('Environment verification results:', {
       isProduction: prodCheck,
       isDevelopment: devCheck,
       nodeEnv,
       analyticsEnabled,
-      processNodeEnv,
       timestamp: new Date().toISOString()
     });
 
