@@ -94,9 +94,9 @@ export function FeaturesSection() {
   };
 
   return (
-    <section id="features" className="relative py-0 px-4 overflow-hidden bg-gradient-to-br from-blue-50/30 via-purple-50/30 to-pink-50/30">
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 opacity-40">
+    <section id="features" className="relative py-0 px-4 overflow-hidden bg-gradient-to-br from-blue-50/30 via-purple-50/30 to-pink-50/30" style={{ contentVisibility: 'auto' }}>
+      {/* Background decorative elements - Hidden on mobile */}
+      <div className="absolute inset-0 opacity-40 hidden md:block">
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
         <div className="absolute top-40 right-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
         <div className="absolute bottom-20 left-1/3 w-72 h-72 bg-emerald-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-500"></div>

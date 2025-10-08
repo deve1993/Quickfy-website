@@ -35,7 +35,6 @@ import {
 import { useInView } from '@/hooks/useInView';
 import Link from 'next/link';
 import { memo } from 'react';
-import { WhappiFeaturesSectionRedesign } from './WhappiFeaturesSectionRedesign';
 
 export const WhappiSection = memo(function WhappiSection() {
   const t = useTranslations('whappi');
@@ -685,9 +684,6 @@ export const WhappiSection = memo(function WhappiSection() {
           </motion.div>
         </div>
       </section>
-
-      {/* Features Section - Redesigned */}
-      <WhappiFeaturesSectionRedesign />
 
       {/* COMPACT Development Roadmap Section */}
       <section

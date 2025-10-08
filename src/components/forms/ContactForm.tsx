@@ -212,9 +212,9 @@ export function ContactForm() {
           </div>
         </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="p-8 space-y-6" noValidate aria-label={t('contact.form.ariaLabel')}>
+        <form onSubmit={handleSubmit(onSubmit)} className="p-4 sm:p-6 lg:p-8 space-y-6" noValidate aria-label={t('contact.form.ariaLabel')}>
           {/* Enhanced input fields with placeholders only */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -282,7 +282,7 @@ export function ContactForm() {
             </motion.div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -389,12 +389,12 @@ export function ContactForm() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="flex items-start gap-4 p-4 bg-slate-50 rounded-xl border-2 border-slate-300 hover:border-slate-400 transition-colors duration-200"
+            className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-slate-50 rounded-xl border-2 border-slate-300 hover:border-slate-400 transition-colors duration-200"
           >
             <Checkbox
               id="privacy"
               {...register('privacy')}
-              className="mt-1 w-5 h-5"
+              className="mt-1 w-6 h-6 sm:w-5 sm:h-5"
               aria-invalid={!!errors.privacy}
               aria-describedby={errors.privacy ? 'privacy-error' : undefined}
             />
@@ -433,7 +433,7 @@ export function ContactForm() {
             type="submit"
             disabled={isSubmitting || !privacyAccepted}
             className={cn(
-              "group relative overflow-hidden w-full h-14 sm:h-16 rounded-2xl text-white font-bold text-lg sm:text-xl shadow-2xl transition-all duration-500 transform focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2",
+              "group relative overflow-hidden w-full min-h-[44px] py-3 px-6 md:py-4 md:px-8 rounded-2xl text-white font-bold text-base sm:text-lg md:text-xl shadow-2xl transition-all duration-500 transform focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2",
               isValid && privacyAccepted
                 ? "bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 hover:scale-105 cursor-pointer"
                 : "bg-slate-400 cursor-not-allowed"

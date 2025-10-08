@@ -1,19 +1,16 @@
 import { getTranslations } from 'next-intl/server';
-import { BreadcrumbLayout } from '@/components/layout/BreadcrumbLayout';
 import { WhappiSection } from '@/components/sections/WhappiSection';
 import { ContactSection } from '@/components/sections/ContactSection';
 
 export default async function WhappiPage() {
   return (
-    <BreadcrumbLayout>
-      <main id="main-content" className="min-h-screen" role="main">
-        {/* Whappi Hero and Features Section */}
-        <WhappiSection />
+    <main id="main-content" className="min-h-screen" role="main">
+      {/* Whappi Hero and Features Section */}
+      <WhappiSection />
 
-        {/* Contact Section */}
-        <ContactSection />
-      </main>
-    </BreadcrumbLayout>
+      {/* Contact Section */}
+      <ContactSection />
+    </main>
   );
 }
 

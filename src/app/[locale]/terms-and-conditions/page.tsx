@@ -1,7 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 import { ChevronDown, FileText, Calendar, Mail, Phone, MapPin } from 'lucide-react';
-import { BreadcrumbLayout } from '@/components/layout/BreadcrumbLayout';
 
 interface TermsAndConditionsPageProps {
   params: Promise<{
@@ -130,8 +129,7 @@ export default async function TermsAndConditionsPage({ params }: TermsAndConditi
   }, {} as Record<string, { title: string; content: string | string[] }>);
 
   return (
-    <BreadcrumbLayout>
-      <main id="main-content" className="min-h-screen py-16 px-4" role="main">
+    <main id="main-content" className="min-h-screen py-16 px-4" role="main">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
@@ -237,6 +235,5 @@ export default async function TermsAndConditionsPage({ params }: TermsAndConditi
           </div>
         </div>
       </main>
-    </BreadcrumbLayout>
   );
 }

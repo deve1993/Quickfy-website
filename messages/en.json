@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "QuickFy - Marketing Automation for Small Businesses",
-    "description": "All-in-one CRM and marketing automation platform for SMEs. Boost your digital marketing ROI by 35% with integrated analytics and intelligent automation.",
+    "title": "QuickFy | Your Simplified Analytics Dashboard with AI",
+    "description": "Turn your data into winning decisions. QuickFy offers a simplified analytics dashboard and AI tools for reviews and social media management. From €19/month. Free consultation available.",
     "locale": "en"
   },
   "navigation": {
@@ -26,16 +26,16 @@
     "whappiCta": "Pre-Order - Save 24%"
   },
   "hero": {
-    "headline": "Marketing automation platform for",
-    "headlineHighlight": "small business growth",
-    "subheadline": "Purpose-built CRM and marketing automation for SMEs. Transform your digital marketing with actionable analytics and achieve 35% better ROI.",
+    "headline": "Transform Your Data Into",
+    "headlineHighlight": "Winning Decisions",
+    "subheadline": "A simplified analytics dashboard that turns complex data into clear insights. Perfect for small businesses that want to grow without unnecessary complexity.",
     "cta": {
-      "primary": "Start Free Trial"
+      "primary": "Talk to an Expert"
     },
     "metrics": {
-      "hoursSaved": "15+ Hours Saved Weekly",
-      "roiImprovement": "+35% ROI Improvement",
-      "clarity": "100% Clarity in Results"
+      "hoursSaved": "15+ Hours Saved",
+      "roiImprovement": "+40% Leads Generated",
+      "clarity": "100% Data Clarity"
     },
     "typewriter": [
       "strategic decisions",
@@ -45,79 +45,79 @@
     ]
   },
   "features": {
-    "title": "Marketing Automation:",
-    "titleHighlight": "3 Core Solutions",
-    "subtitle": "Integrated CRM with digital marketing analytics - everything SMEs need for effective automation",
+    "title": "Everything You Need:",
+    "titleHighlight": "3 Key Modules",
+    "subtitle": "Analytics dashboard, review management, and social media - all in one platform designed for small businesses",
     "items": [
       {
         "id": "data-intelligence",
-        "title": "CRM Analytics & Digital Marketing Intelligence",
-        "description": "Centralized CRM platform with advanced digital marketing analytics. All marketing channels unified for automation.",
+        "title": "Analytics Dashboard for Small Businesses",
+        "description": "A simplified dashboard that turns data from Google Analytics and ad campaigns into clear charts. No unnecessary complications: just what you really need to know.",
         "benefits": [
-          "Unified CRM dashboard",
-          "Automated marketing reports",
+          "Unified dashboard for all data",
+          "Automated email reports",
           "Clear ROI tracking"
         ],
         "icon": "BarChart3"
       },
       {
-        "id": "performance-ads",
-        "title": "Campaign Automation & ROI Optimization",
-        "description": "Advanced marketing automation with intelligent campaign optimization. Automated budget management included.",
+        "id": "reputation-management",
+        "title": "AI-Powered Review Management",
+        "description": "Respond to Google and Facebook reviews directly from one place. AI suggests responses for you - you just click and send. Fast, easy, effective.",
         "benefits": [
-          "Automated campaign optimization",
-          "Real-time ROI tracking",
-          "35% higher ROI through automation"
+          "One-click responses",
+          "AI response suggestions",
+          "Centralized management"
         ],
-        "icon": "Target"
+        "icon": "MessageSquare"
       },
       {
-        "id": "client-platform",
-        "title": "Cloud CRM Platform",
-        "description": "Secure cloud-based CRM with personalized automation dashboards. 24/7 access to marketing analytics.",
+        "id": "social-hub",
+        "title": "Social Hub: Instagram and Facebook in One",
+        "description": "Schedule posts, track performance, and respond to messages from Instagram and Facebook directly from QuickFy. Simple social media management without switching between apps.",
         "benefits": [
-          "24/7 CRM access",
-          "Personalized automation dashboards",
-          "Complete marketing transparency"
+          "Post scheduling",
+          "Performance statistics",
+          "Centralized communication"
         ],
-        "icon": "Users"
+        "icon": "Share2"
       }
     ]
   },
   "benefits": {
-    "title": "Why SMEs choose QuickFy",
-    "titleHighlight": "Marketing Automation",
-    "subtitle": "Proven results with integrated digital marketing analytics and automation processes",
+    "title": "Why Small Businesses Choose",
+    "titleHighlight": "QuickFy",
+    "subtitle": "Proven results with a simple dashboard and AI tools for your business growth",
     "items": [
       {
-        "title": "Time Returned",
-        "description": "Weekly hours recovered from report automation",
+        "title": "Time Saved",
+        "description": "Weekly hours gained from automated reports and faster review responses",
         "value": "15+",
         "unit": "hours/week"
       },
       {
-        "title": "CRM Efficiency",
-        "description": "Decisions based on digital marketing data and CRM insights",
+        "title": "Data Clarity",
+        "description": "Decisions based on clear dashboards instead of complex spreadsheets",
         "value": "100%",
         "unit": "transparency"
       },
       {
-        "title": "Marketing ROI",
-        "description": "Average ROI increase through automation and CRM optimization",
-        "value": "35%",
-        "unit": "ROI increase"
+        "title": "Lead Generation",
+        "description": "Average lead increase thanks to better review management and social media optimization",
+        "value": "+40%",
+        "unit": "more leads"
       },
       {
-        "title": "Client Retention Rate",
-        "description": "The satisfaction and trust of our clients is our priority.",
-        "value": "92%",
-        "unit": "retention rate"
+        "title": "All-in-One",
+        "description": "Data, reviews, social media, and lead management in one platform",
+        "value": "5+",
+        "unit": "integrated tools"
       }
     ]
   },
   "pricing": {
-    "title": "CRM for Small Business - Affordable Pricing",
-    "subtitle": "Marketing automation for SMEs with transparent pricing. Digital marketing solutions designed for small business budgets.",
+    "title": "Simple Pricing for Small Businesses",
+    "subtitle": "Start free with Analytics. Add features as your business grows.",
     "perfectFor": "Perfect for:",
     "features": "Features:",
     "plans": {
@@ -126,25 +126,25 @@
         "price": "19",
         "period": "month",
         "badge": "RECOMMENDED",
-        "perfectFor": "Perfect for: SMEs needing essential CRM with simple digital marketing analytics without complexity.",
+        "perfectFor": "Perfect for: Small businesses that want simple analytics tools without complexity.",
         "features": {
-          "0": "Essential CRM Platform",
-          "1": "Basic Marketing Automation",
-          "2": "Digital Marketing Dashboard",
-          "3": "CRM Support"
+          "0": "Simplified Analytics Dashboard",
+          "1": "Basic email reports",
+          "2": "Google Analytics data",
+          "3": "24/7 Support"
         },
-        "cta": "Get Started"
+        "cta": "Talk to an Expert"
       },
       "plus": {
         "name": "PLUS (Reputation)",
         "price": "39",
         "period": "month",
         "badge": "COMING SOON",
-        "perfectFor": "Perfect for: Local businesses, restaurants, hotels and professionals for whom online reviews are vital.",
+        "perfectFor": "Perfect for: Restaurants, hotels, professionals - where online reviews are critical for success.",
         "features": {
           "0": "All ANALYTICS plan features",
-          "1": "Reviews Management Module",
-          "2": "Simplified Responses"
+          "1": "AI-powered review management module",
+          "2": "One-click responses"
         },
         "cta": "Coming Soon"
       },
@@ -153,12 +153,12 @@
         "price": "69",
         "period": "month",
         "badge": "COMING SOON",
-        "perfectFor": "Perfect for: Companies that actively invest in social media and want a single place to monitor their entire online presence.",
+        "perfectFor": "Perfect for: Businesses actively using Instagram and Facebook who want to manage everything from one place.",
         "features": {
           "0": "All PLUS plan features",
-          "1": "Social Hub Module",
-          "2": "Social Media Dashboard",
-          "3": "(Future) Post scheduling capability"
+          "1": "Social Hub module",
+          "2": "Post scheduling",
+          "3": "Social media dashboard"
         },
         "cta": "Coming Soon"
       }
@@ -171,9 +171,9 @@
     }
   },
   "contact": {
-    "title": "Ready for Marketing Automation",
-    "titleHighlight": "for your SME?",
-    "subtitle": "Start with CRM and digital marketing analytics today. Free marketing automation consultation for SMEs.",
+    "title": "Ready to Transform Your",
+    "titleHighlight": "Business?",
+    "subtitle": "Start with an analytics dashboard today. Free consultation available for all new customers.",
     "form": {
       "fields": {
         "name": {
@@ -197,7 +197,7 @@
           "placeholder": "Describe your current marketing challenges..."
         }
       },
-      "submit": "Marketing Automation Consultation",
+      "submit": "Talk to an Expert",
       "submitting": "Sending...",
       "submitAnother": "Submit Another Request",
       "ariaLabel": "QuickFy contact form",
@@ -242,7 +242,7 @@
   },
   "testimonials": {
     "title": "What Our Clients Say",
-    "subtitle": "Read about the experiences of companies that automated their processes with us and achieved exceptional results",
+    "subtitle": "Read the experiences of small businesses that gained data clarity and higher ROI with QuickFy",
     "previousTestimonial": "Previous testimonial",
     "nextTestimonial": "Next testimonial",
     "goToTestimonial": "Go to testimonial",
@@ -252,34 +252,34 @@
       "projects": "1200+ successful projects"
     },
     "testimonial1": {
-      "name": "James Wilson",
-      "role": "Operations Director",
-      "company": "TechFlow Solutions",
-      "content": "QuickFy helped us reduce administrative time by 60%. Our teams can now focus on strategic tasks instead of routine activities. ROI was achieved within just 3 months."
+      "name": "John Smith",
+      "role": "Owner",
+      "company": "The Corner Bistro",
+      "content": "Before QuickFy, I didn't understand Google Analytics at all. Now I have a clear dashboard that instantly shows me how the site is doing. The review module is great—I can reply to everyone within a minute!"
     },
     "testimonial2": {
-      "name": "Sarah Johnson",
-      "role": "IT Manager",
-      "company": "FinanceFirst Ltd",
-      "content": "The integration of QuickFy into our systems was seamless. Automating financial reports saves us 20 hours per week and eliminated human errors. Highly recommended."
+      "name": "Sarah Miller",
+      "role": "Owner",
+      "company": "Salon Marie",
+      "content": "Social Hub changed my life. I schedule Instagram posts a week ahead from QuickFy and see what works. I gained +60% followers in 3 months!"
     },
     "testimonial3": {
       "name": "Michael Brown",
-      "role": "CEO",
-      "company": "LogiStream UK",
-      "content": "With QuickFy, we optimized our entire supply chain. Logistics costs decreased by 35% and efficiency increased by 45%. The best investment we've made in recent years."
+      "role": "Marketing Manager",
+      "company": "FitPark London",
+      "content": "QuickFy's dashboard immediately shows me ad ROI. I see what one new member costs and where to invest more. Result? +40% members with the same budget."
     },
     "testimonial4": {
       "name": "Emma Davis",
-      "role": "HR Director",
-      "company": "PeopleConnect Inc",
-      "content": "QuickFy automated our HR process from recruitment to onboarding. Processing new employees went from weeks to days. Both employees and managers are much happier."
+      "role": "Owner",
+      "company": "Lakeside Inn",
+      "content": "With QuickFy, I reply to Google reviews in 2 minutes. AI suggests a response, I just edit and send. Thanks to this, we have 4.8 stars and lots of new bookings!"
     },
     "testimonial5": {
       "name": "David Miller",
-      "role": "Sales Director",
-      "company": "GrowthHub London",
-      "content": "Automating our sales funnel brought a 50% increase in conversions. QuickFy analyzes customer data in real-time and suggests optimal actions. Sales have never been easier."
+      "role": "Digital Marketing Specialist",
+      "company": "TechGear Shop",
+      "content": "QuickFy gave me clarity in data. The dashboard shows which campaigns work and which don't. I stopped wasting money and ROI increased by 50% in the first month!"
     }
   },
   "logos": {
@@ -295,45 +295,45 @@
       {
         "quarter": "Q4 2025",
         "status": "current",
-        "title": "Launch and Consolidation",
-        "keyAction": "Official product launch to market",
+        "title": "Analytics Launch",
+        "keyAction": "Official launch of the basic dashboard",
         "features": [
-          "Starter Plan (Analytics) at €19/month",
-          "Add-on: Advertising Management (5% commission)",
-          "Official market launch"
+          "Analytics plan at €19/month",
+          "Simplified dashboard",
+          "Automated reports"
         ]
       },
       {
         "quarter": "Q1 2026",
         "status": "future",
         "title": "First Enhancement",
-        "keyAction": "Release of first free upgrade for base plan and simultaneous development of more complex modules",
+        "keyAction": "Free AI upgrade for existing customers",
         "features": [
-          "Free \"Starter AI\" upgrade for Starter Plan customers (AI Alerts and Summaries)",
-          "Development Start: Communication Module and Plus Plan",
-          "Continuous improvements based on customer feedback"
+          "Free AI alerts and summaries",
+          "Start of Reputation module development",
+          "Continuous dashboard improvements"
         ]
       },
       {
         "quarter": "Q2 2026",
         "status": "future",
-        "title": "Communication Module",
-        "keyAction": "Launch of first major paid add-on, creating new revenue stream",
+        "title": "Plus Plan (Reputation)",
+        "keyAction": "Launch of AI-powered review management",
         "features": [
-          "Add-on: Integrated Communication Module at €19/user/month",
-          "Centralized management of all communication channels",
-          "Advanced communication automation"
+          "Plus plan at €39/month",
+          "AI review management",
+          "One-click responses"
         ]
       },
       {
         "quarter": "H2 2026",
         "status": "future",
-        "title": "Advanced Plans",
-        "keyAction": "Completion of three-tier offering, positioning QuickFy as a complete suite",
+        "title": "Pro Plan (Social Hub)",
+        "keyAction": "Complete platform for small business growth",
         "features": [
-          "Q3 2026: Plus Plan (Reputation) at €39/month",
-          "Q4 2026: Pro Plan (Growth Suite) at €79/month",
-          "Includes Social Hub and Marketing Chatbot"
+          "Pro plan at €69/month",
+          "Social Hub for Instagram/Facebook",
+          "Post scheduling"
         ]
       }
     ]
@@ -346,7 +346,7 @@
     "separator": "Navigate to"
   },
   "footer": {
-    "description": "QuickFy - Marketing automation and CRM for SMEs. Digital marketing analytics with proven higher ROI for small and medium businesses.",
+    "description": "QuickFy - Simplified analytics dashboard and AI tools for small businesses. Data, reviews, and social media in one platform.",
     "contact": {
       "emailAria": "Send email to QuickFy"
     },
@@ -554,13 +554,13 @@
         "description": "Competitors charge €300-400/month. Whappi delivers the same power for just €19/user/month."
       },
       "cta": {
-        "pricing": "View Pricing (€19/user)",
-        "contact": "Request Demo"
+        "pricing": "Pre-Order Now - Special Price",
+        "contact": "See Demo"
       }
     },
     "demo": {
       "title": "See Whappi in Action",
-      "subtitle": "Watch how Whappi transforms team communication",
+      "subtitle": "Watch how Whappi transforms team communication and customer management",
       "placeholder": {
         "title": "Product Demo",
         "coming": "Coming Soon - Q2 2026"
@@ -819,7 +819,7 @@
       ],
       "everythingIncluded": "Everything Included",
       "madeInCzech": "Made in Czech Republic - GDPR Guaranteed",
-      "savingsText": "Pre-order saves you €14/year"
+      "savingsText": "Pre-order saves you €38/year"
     },
     "cta": {
       "title": "Stop Wasting Time Switching Screens",
@@ -1026,8 +1026,8 @@
   },
   "products": {
     "quickfy": {
-      "title": "QuickFy CRM",
-      "subtitle": "Marketing Automation Platform"
+      "title": "QuickFy Dashboard",
+      "subtitle": "Platform for analytics and growth"
     },
     "whappi": {
       "title": "Whappi",

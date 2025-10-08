@@ -13,7 +13,7 @@ import { ClientOnly } from '@/components/ui/ClientOnly';
 import { CookieConsentProvider } from '@/contexts/CookieConsentContext';
 import { CookieConsentBanner } from '@/components/ui/CookieConsentBanner';
 import { EnvironmentProvider } from '@/contexts/EnvironmentContext';
-import './globals.css';
+import '../globals.css';
 import Script from 'next/script';
 // Initialize environment and polyfills
 import '@/lib/init';
@@ -47,6 +47,258 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale} className={inter.className}>
       <head>
+        {/* SOLUZIONE ULTRA-AGGRESSIVA V2: Rimozione COMPLETA Next.js Dev Tools */}
+        <Script
+          id="remove-nextjs-devtools-complete"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                'use strict';
+
+                // === METODO 1: Override di appendChild per bloccare l'inserimento ===
+                const originalAppendChild = Element.prototype.appendChild;
+                Element.prototype.appendChild = function(child) {
+                  // Blocca l'inserimento se è il bottone dev tools o qualsiasi elemento correlato
+                  if (child && child.nodeType === 1) {
+                    const element = child;
+                    // Controlla se è il bottone o contiene il bottone
+                    if (
+                      element.id === 'next-logo' ||
+                      element.getAttribute?.('data-nextjs-dev-tools-button') === 'true' ||
+                      element.getAttribute?.('data-next-mark') === 'true' ||
+                      element.getAttribute?.('data-nextjs-portal') === 'true' ||
+                      element.getAttribute?.('data-nextjs-dialog-overlay') === 'true' ||
+                      element.querySelector?.('#next-logo') ||
+                      element.querySelector?.('[data-nextjs-dev-tools-button="true"]') ||
+                      element.querySelector?.('[data-nextjs-portal="true"]') ||
+                      // Blocca elementi fixed in posizione bottom-left
+                      (window.getComputedStyle &&
+                       window.getComputedStyle(element).position === 'fixed' &&
+                       element.style?.bottom?.includes('0') &&
+                       element.style?.left?.includes('0'))
+                    ) {
+                      console.log('[DevTools Blocker] Blocked Next.js dev tools insertion:', element);
+                      return child; // Return without appending
+                    }
+                  }
+                  return originalAppendChild.call(this, child);
+                };
+
+                // === METODO 2: Override di insertBefore ===
+                const originalInsertBefore = Element.prototype.insertBefore;
+                Element.prototype.insertBefore = function(newNode, referenceNode) {
+                  if (newNode && newNode.nodeType === 1) {
+                    const element = newNode;
+                    if (
+                      element.id === 'next-logo' ||
+                      element.getAttribute?.('data-nextjs-dev-tools-button') === 'true' ||
+                      element.getAttribute?.('data-next-mark') === 'true' ||
+                      element.getAttribute?.('data-nextjs-portal') === 'true' ||
+                      element.getAttribute?.('data-nextjs-dialog-overlay') === 'true'
+                    ) {
+                      console.log('[DevTools Blocker] Blocked Next.js dev tools via insertBefore');
+                      return newNode;
+                    }
+                  }
+                  return originalInsertBefore.call(this, newNode, referenceNode);
+                };
+
+                // === METODO 3: Funzione di rimozione COMPLETA ===
+                function removeDevToolsCompletely() {
+                  const selectors = [
+                    // Bottone principale
+                    '#next-logo',
+                    'button[id="next-logo"]',
+                    'button[data-nextjs-dev-tools-button]',
+                    'button[data-nextjs-dev-tools-button="true"]',
+                    'button[data-next-mark]',
+                    'button[data-next-mark="true"]',
+                    'button[aria-label*="Next.js"]',
+                    'button[aria-label*="Dev Tools"]',
+                    'button[aria-label*="Open Next"]',
+                    // Container e overlay
+                    'div[data-nextjs-portal]',
+                    'div[data-nextjs-portal="true"]',
+                    'div[data-nextjs-dialog-overlay]',
+                    'div[data-nextjs-dialog-overlay="true"]',
+                    '[id*="nextjs-portal"]',
+                    '[class*="nextjs-portal"]',
+                    '[class*="next-dev-tools"]',
+                    // Shadow DOM roots
+                    'nextjs-portal',
+                    'next-dev-tools',
+                    // Elementi generici fixed in bottom-left che potrebbero essere residui
+                    'body > div[style*="position: fixed"][style*="bottom"][style*="left"]',
+                    'body > div[style*="position:fixed"][style*="bottom"][style*="left"]'
+                  ];
+
+                  let removed = false;
+                  selectors.forEach(selector => {
+                    try {
+                      const elements = document.querySelectorAll(selector);
+                      elements.forEach(el => {
+                        if (el && el.parentNode) {
+                          const parent = el.parentNode;
+                          const computedStyle = window.getComputedStyle(el);
+
+                          // Log per debug
+                          console.log('[DevTools Blocker] Removing element:', {
+                            selector,
+                            tagName: el.tagName,
+                            id: el.id,
+                            position: computedStyle.position,
+                            bottom: computedStyle.bottom,
+                            left: computedStyle.left
+                          });
+
+                          // Rimuovi l'elemento
+                          el.remove();
+                          removed = true;
+
+                          // Se il parent è vuoto e non è body/html, rimuovi anche quello
+                          if (parent.children.length === 0 &&
+                              parent !== document.body &&
+                              parent !== document.documentElement) {
+                            console.log('[DevTools Blocker] Removing empty parent container');
+                            parent.remove();
+                          }
+                        }
+                      });
+                    } catch (e) {
+                      // Ignora errori di selector non validi
+                    }
+                  });
+
+                  // Ricerca avanzata: cerca elementi fixed in posizione bottom-left
+                  try {
+                    const allFixedElements = document.querySelectorAll('*');
+                    allFixedElements.forEach(el => {
+                      const style = window.getComputedStyle(el);
+                      if (style.position === 'fixed') {
+                        const bottom = parseFloat(style.bottom);
+                        const left = parseFloat(style.left);
+
+                        // Elementi in posizione bottom-left (entro 100px dai bordi)
+                        if (bottom <= 100 && left <= 100 && bottom >= 0 && left >= 0) {
+                          // Escludi elementi noti del nostro sistema
+                          const isOurElement = el.closest('[data-quickfy]') ||
+                                             el.classList.contains('floating-language-switcher') ||
+                                             el.classList.contains('cookie-consent-banner');
+
+                          if (!isOurElement && el.tagName !== 'BODY' && el.tagName !== 'HTML') {
+                            console.log('[DevTools Blocker] Removing suspicious bottom-left fixed element:', {
+                              tagName: el.tagName,
+                              id: el.id,
+                              className: el.className,
+                              bottom: style.bottom,
+                              left: style.left,
+                              width: style.width,
+                              height: style.height
+                            });
+                            el.remove();
+                            removed = true;
+                          }
+                        }
+                      }
+                    });
+                  } catch (e) {
+                    console.warn('[DevTools Blocker] Error in advanced search:', e);
+                  }
+
+                  return removed;
+                }
+
+                // === METODO 4: MutationObserver avanzato ===
+                function setupMutationObserver() {
+                  const observer = new MutationObserver(function(mutations) {
+                    let shouldCheck = false;
+
+                    mutations.forEach(mutation => {
+                      if (mutation.addedNodes.length > 0) {
+                        mutation.addedNodes.forEach(node => {
+                          if (node.nodeType === 1) {
+                            const element = node;
+                            // Controlla se è il bottone o lo contiene
+                            if (
+                              element.id === 'next-logo' ||
+                              element.getAttribute?.('data-nextjs-dev-tools-button') ||
+                              element.getAttribute?.('data-nextjs-portal') ||
+                              element.querySelector?.('#next-logo') ||
+                              element.querySelector?.('[data-nextjs-dev-tools-button]') ||
+                              element.querySelector?.('[data-nextjs-portal]')
+                            ) {
+                              shouldCheck = true;
+                            }
+
+                            // Controlla elementi fixed
+                            if (element.style?.position === 'fixed') {
+                              shouldCheck = true;
+                            }
+                          }
+                        });
+                      }
+                    });
+
+                    if (shouldCheck) {
+                      removeDevToolsCompletely();
+                    }
+                  });
+
+                  // Observer principale sul body
+                  const startObserving = () => {
+                    if (document.body) {
+                      observer.observe(document.body, {
+                        childList: true,
+                        subtree: true,
+                        attributes: true,
+                        attributeFilter: ['style', 'class', 'data-nextjs-portal', 'data-nextjs-dev-tools-button']
+                      });
+                      console.log('[DevTools Blocker] MutationObserver attivato');
+                    }
+                  };
+
+                  if (document.body) {
+                    startObserving();
+                  } else {
+                    document.addEventListener('DOMContentLoaded', startObserving);
+                  }
+                }
+
+                // === METODO 5: Controllo periodico di sicurezza ===
+                function periodicCheck() {
+                  removeDevToolsCompletely();
+                }
+
+                // === INIZIALIZZAZIONE ===
+                // Rimozione immediata
+                if (document.readyState === 'loading') {
+                  document.addEventListener('DOMContentLoaded', () => {
+                    removeDevToolsCompletely();
+                    setupMutationObserver();
+                  });
+                } else {
+                  removeDevToolsCompletely();
+                  setupMutationObserver();
+                }
+
+                // Controllo periodico ogni secondo (safety net)
+                setInterval(periodicCheck, 1000);
+
+                // Controllo aggiuntivo dopo caricamento completo
+                window.addEventListener('load', () => {
+                  setTimeout(removeDevToolsCompletely, 100);
+                  setTimeout(removeDevToolsCompletely, 500);
+                  setTimeout(removeDevToolsCompletely, 1000);
+                  setTimeout(removeDevToolsCompletely, 2000);
+                });
+
+                console.log('[DevTools Blocker] Sistema completo di rimozione Next.js Dev Tools attivato');
+              })();
+            `
+          }}
+        />
+
         {/* Environment injection - Must be first to be available to all external scripts */}
         <Script
           id="env-injection"

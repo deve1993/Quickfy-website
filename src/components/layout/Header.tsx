@@ -343,12 +343,12 @@ export function Header() {
               </motion.button>
             </nav>
 
-            {/* Enhanced Mobile Menu Button */}
+            {/* Enhanced Mobile Menu Button - OPTIMIZED */}
             <motion.button
               ref={menuButtonRef}
               data-mobile-menu
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden relative p-3 rounded-xl text-slate-900 hover:bg-slate-100 active:bg-slate-200 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+              className="md:hidden relative min-h-[48px] min-w-[48px] p-4 rounded-xl text-slate-900 hover:bg-slate-100 active:bg-slate-200 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
               aria-label={isMenuOpen ? t('closeMenu') : t('openMenu')}
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
@@ -401,73 +401,77 @@ export function Header() {
                 aria-label={t('mobileMenu')}
                 aria-orientation="vertical"
               >
-                <div className="flex flex-col space-y-2 p-4">
-                  {/* Products section in mobile */}
-                  <div className="mb-2">
-                    <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider px-5 mb-2">
+                <div className="flex flex-col p-4">
+                  {/* Products section in mobile - OPTIMIZED */}
+                  <div className="mb-3">
+                    <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider px-5 mb-3">
                       {t('products')}
                     </p>
-                    {products.map((product) => (
-                      <motion.button
-                        key={product.id}
-                        onClick={() => handleProductClick(product)}
-                        className={`w-full text-left px-5 py-3 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset ${
-                          product.isActive ? 'bg-blue-50 text-blue-600' : 'text-slate-700 hover:bg-slate-50'
-                        }`}
-                        whileTap={{ scale: 0.98 }}
+                    <div className="space-y-2">
+                      {products.map((product) => (
+                        <motion.button
+                          key={product.id}
+                          onClick={() => handleProductClick(product)}
+                          className={`w-full text-left min-h-[48px] px-5 py-4 rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset active:scale-[0.97] ${
+                            product.isActive ? 'bg-blue-50 text-blue-600' : 'text-slate-700 hover:bg-slate-50 active:bg-slate-100'
+                          }`}
+                          whileTap={{ scale: 0.97 }}
                       >
                         <div className="flex items-center justify-between">
-                          <div>
-                            <div className="flex items-center gap-2">
-                              <span className="font-medium">{product.title}</span>
+                          <div className="flex-1">
+                            <div className="flex items-center gap-2 mb-1">
+                              <span className="font-semibold text-base">{product.title}</span>
                               {product.badge && (
                                 <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-semibold">
                                   {product.badge}
                                 </span>
                               )}
                             </div>
-                            <p className="text-xs text-slate-500 mt-0.5">{product.subtitle}</p>
+                            <p className="text-xs text-slate-500">{product.subtitle}</p>
                           </div>
                           {product.isActive && (
-                            <Check className="w-5 h-5 flex-shrink-0" />
+                            <Check className="w-5 h-5 flex-shrink-0 ml-3" />
                           )}
                         </div>
                       </motion.button>
-                    ))}
+                      ))}
+                    </div>
                   </div>
 
                   {/* Divider */}
-                  <div className="h-px bg-slate-200 my-2" />
+                  <div className="h-px bg-slate-200 my-3" />
 
-                  {/* Navigation items */}
-                  {getNavigationItems.filter(item => item.type !== 'dropdown').map((item, index) => (
-                    <motion.button
-                      key={item.id}
-                      ref={(el) => {
-                        navigationItemsRef.current[index] = el;
-                      }}
-                      onClick={() => handleNavigation(item)}
-                      initial={{ opacity: 0, x: -30 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.05, duration: 0.3 }}
-                      whileTap={{ scale: 0.98 }}
-                      className="text-left px-5 py-4 rounded-lg text-slate-700 hover:bg-slate-50 hover:text-blue-600 transition-all duration-200 font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset"
+                  {/* Navigation items - OPTIMIZED */}
+                  <div className="space-y-3">
+                    {getNavigationItems.filter(item => item.type !== 'dropdown').map((item, index) => (
+                      <motion.button
+                        key={item.id}
+                        ref={(el) => {
+                          navigationItemsRef.current[index] = el;
+                        }}
+                        onClick={() => handleNavigation(item)}
+                        initial={{ opacity: 0, x: -30 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: index * 0.05, duration: 0.3 }}
+                        whileTap={{ scale: 0.97 }}
+                        className="text-left min-h-[48px] w-full px-5 py-5 rounded-lg text-slate-700 hover:bg-slate-50 active:bg-slate-100 hover:text-blue-600 transition-all duration-200 font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset active:scale-[0.97]"
                       role="menuitem"
                       aria-label={t('sectionAria', { section: item.label })}
                       tabIndex={isMenuOpen ? 0 : -1}
                     >
-                      {item.label}
-                    </motion.button>
-                  ))}
+                        {item.label}
+                      </motion.button>
+                    ))}
+                  </div>
 
-                  {/* Enhanced CTA button for mobile */}
+                  {/* Enhanced CTA button for mobile - OPTIMIZED */}
                   <motion.button
                     onClick={ctaConfig.action}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2, duration: 0.4 }}
-                    whileTap={{ scale: 0.98 }}
-                    className={`mt-6 mx-2 px-6 py-4 rounded-xl bg-gradient-to-r ${ctaConfig.gradient} text-white font-semibold text-center transition-all duration-300 shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${
+                    whileTap={{ scale: 0.97 }}
+                    className={`mt-6 mx-2 min-h-[56px] px-8 py-5 rounded-xl bg-gradient-to-r ${ctaConfig.gradient} text-white font-bold text-center text-base transition-all duration-300 shadow-xl hover:shadow-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 active:scale-[0.97] ${
                       pageContext === 'whappi' ? 'focus-visible:ring-green-500' : 'focus-visible:ring-blue-500'
                     }`}
                     role="menuitem"

@@ -1,5 +1,4 @@
 import { getTranslations } from 'next-intl/server';
-import { BreadcrumbLayout } from '@/components/layout/BreadcrumbLayout';
 import { Shield, Calendar, Mail, Phone, MapPin } from 'lucide-react';
 
 export default async function PrivacyPolicyPage() {
@@ -43,8 +42,7 @@ export default async function PrivacyPolicyPage() {
   };
 
   return (
-    <BreadcrumbLayout>
-      <main id="main-content" className="min-h-screen py-16 px-4" role="main">
+    <main id="main-content" className="min-h-screen py-16 px-4" role="main">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
@@ -163,7 +161,6 @@ export default async function PrivacyPolicyPage() {
           </div>
         </div>
       </main>
-    </BreadcrumbLayout>
   );
 }
 

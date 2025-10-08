@@ -28,7 +28,8 @@ const nextConfig = {
       '@radix-ui/react-slot',
       'framer-motion'
     ],
-    gzipSize: true
+    gzipSize: true,
+    optimizeCss: true
   },
   turbopack: {
     rules: {
@@ -48,8 +49,11 @@ const nextConfig = {
   },
   images: {
     minimumCacheTTL: 86400, // 24 hours
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920], // Reduced for better mobile
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment' as const,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     remotePatterns: [
       {
         protocol: 'https' as const,

@@ -1,21 +1,21 @@
 {
   "meta": {
-    "title": "QuickFy - Automazione Marketing per Piccole Imprese",
-    "description": "CRM e automazione marketing per PMI. Aumenta il ROI del marketing digitale del 35% con strumenti di analisi integrati.",
+    "title": "QuickFy - Dashboard Analytics Semplificata per PMI | Strumenti IA",
+    "description": "Dashboard Analytics semplificata per PMI. Gestisci dati, recensioni e social media con l'IA. Da 19€/mese. Consulenza gratuita disponibile.",
     "locale": "it"
   },
   "navigation": {
     "features": "Funzionalità",
     "benefits": "Vantaggi",
-    "pricing": "Prezzi",
+    "pricing": "Piani",
     "roadmap": "Roadmap",
     "testimonials": "Testimonianze",
     "whappi": "Whappi",
     "contact": "Contatti",
     "home": "Home",
-    "startNow": "Inizia Ora",
+    "startNow": "Parla con un Esperto",
     "logoAria": "QuickFy - Torna all'inizio della pagina",
-    "startNowAria": "Inizia ora - Vai al modulo di contatto",
+    "startNowAria": "Parla con un esperto - Vai al modulo di contatto",
     "sectionAria": "Vai alla sezione {section}",
     "openMenu": "Apri menu",
     "closeMenu": "Chiudi menu",
@@ -26,16 +26,16 @@
     "whappiCta": "Pre-Ordina -24%"
   },
   "hero": {
-    "headline": "Piattaforma di automazione marketing per la",
-    "headlineHighlight": "crescita delle piccole imprese",
-    "subheadline": "CRM integrato con automazione marketing progettato per PMI. Trasforma il marketing digitale con le analisi e ottieni il 35% di ROI in più.",
+    "headline": "Il Futuro del Marketing è Qui. Smetti di Interpretare i Dati,",
+    "headlineHighlight": "Inizia a Dominarli.",
+    "subheadline": "QuickFy è l'ecosistema intelligente che trasforma la complessità digitale in un vantaggio competitivo. La tua dashboard analytics semplificata, potenziata dall'intelligenza artificiale.",
     "cta": {
-      "primary": "Prova Automazione Marketing"
+      "primary": "Parla con un Esperto"
     },
     "metrics": {
-      "hoursSaved": "15+ Ore Risparmiate a Settimana",
-      "roiImprovement": "+35% Miglioramento del ROI",
-      "clarity": "100% Chiarezza nei Risultati"
+      "hoursSaved": "15+ Ore Risparmiate",
+      "roiImprovement": "+40% Lead Generati",
+      "clarity": "100% Chiarezza sui Dati"
     },
     "typewriter": [
       "decisioni strategiche",
@@ -45,40 +45,40 @@
     ]
   },
   "features": {
-    "title": "Automazione Marketing:",
-    "titleHighlight": "3 Soluzioni Essenziali",
-    "subtitle": "CRM integrato con analisi marketing digitale - tutto quello che serve alle PMI per un'automazione efficace",
+    "title": "Una Piattaforma Intelligente,",
+    "titleHighlight": "3 Soluzioni per la Crescita",
+    "subtitle": "Dal controllo dei dati alla gestione della reputazione, fino alla crescita proattiva. Tutto in un unico ecosistema potenziato dall'IA.",
     "items": [
       {
         "id": "data-intelligence",
-        "title": "Analisi CRM e Intelligence Marketing Digitale",
-        "description": "Piattaforma CRM centralizzata con analisi marketing digitale avanzata. Tutti i canali marketing unificati per automazione.",
+        "title": "Analytics (Piano Starter)",
+        "description": "Trasforma i dati grezzi di Google Analytics in insight chiari e immediati. Una dashboard visiva che ti mostra solo le metriche che contano davvero, spiegate in modo semplice.",
         "benefits": [
-          "Dashboard CRM unificato",
-          "Report marketing automatizzati",
-          "Tracciamento ROI chiaro"
+          "Dashboard Analytics Semplificata",
+          "Report Comprensibili per Tutti",
+          "Alert Intelligenti (Prossimamente)"
         ],
         "icon": "BarChart3"
       },
       {
         "id": "performance-ads",
-        "title": "Automazione Campagne & Ottimizzazione ROI",
-        "description": "Automazione marketing avanzata con ottimizzazione intelligente campagne. Gestione budget automatizzata inclusa.",
+        "title": "Reputation (Piano Plus)",
+        "description": "Prendi il controllo totale della tua reputazione online. Il nostro modulo IA centralizza le recensioni di Google, le analizza e prepara bozze di risposta intelligenti con un solo click.",
         "benefits": [
-          "Ottimizzazione automatica campagne",
-          "Tracciamento ROI in tempo reale",
-          "35% ROI superiore con automazione"
+          "Gestione Recensioni con IA",
+          "Risposte Rapide e Professionali",
+          "Analisi Automatica del Feedback"
         ],
         "icon": "Target"
       },
       {
         "id": "client-platform",
-        "title": "Piattaforma CRM Cloud",
-        "description": "CRM cloud sicuro con dashboard di automazione personalizzati. Accesso 24/7 alle analisi marketing.",
+        "title": "Growth Suite (Piano PRO)",
+        "description": "La suite completa per la crescita proattiva. Un Social Hub con IA che suggerisce i prossimi post e un Chatbot avanzato che trasforma i visitatori del tuo sito in contatti qualificati, 24/7.",
         "benefits": [
-          "Accesso CRM 24/7",
-          "Dashboard automazione personalizzati",
-          "Trasparenza marketing completa"
+          "Social Hub con IA",
+          "Chatbot Marketing Proattivo",
+          "Generazione Automatica di Lead"
         ],
         "icon": "Users"
       }
@@ -86,26 +86,26 @@
   },
   "benefits": {
     "title": "Perché le PMI scelgono QuickFy",
-    "titleHighlight": "Automazione Marketing",
-    "subtitle": "Risultati comprovati con analisi marketing digitale integrate e processi di automazione",
+    "titleHighlight": "per la loro crescita",
+    "subtitle": "Strumenti potenti e accessibili progettati per restituirti il pieno controllo della tua presenza online.",
     "items": [
       {
         "title": "Tempo Restituito",
-        "description": "Ore settimanali risparmiate grazie all'automazione dei report",
+        "description": "Automatizza le analisi e la gestione dei feedback per concentrarti sul tuo business.",
         "value": "15+",
         "unit": "ore/settimana"
       },
       {
-        "title": "Efficienza CRM",
-        "description": "Decisioni basate sui dati marketing digitali e insight CRM",
+        "title": "Efficienza AI",
+        "description": "Decisioni basate su dati chiari e insight generati dall'intelligenza artificiale.",
         "value": "100%",
-        "unit": "trasparenza"
+        "unit": "chiarezza"
       },
       {
-        "title": "ROI Marketing",
-        "description": "Incremento medio ROI attraverso automazione e ottimizzazione CRM",
-        "value": "35%",
-        "unit": "aumento ROI"
+        "title": "Tutto in Uno",
+        "description": "Dati, recensioni, social e lead in un'unica piattaforma integrata.",
+        "value": "5+",
+        "unit": "strumenti integrati"
       },
       {
         "title": "Tasso di Mantenimento Clienti",
@@ -116,64 +116,65 @@
     ]
   },
   "pricing": {
-    "title": "CRM per Piccole Imprese - Prezzi Accessibili",
-    "subtitle": "Automazione marketing per PMI con prezzi trasparenti. Soluzioni marketing digitale progettate per budget piccole imprese.",
+    "title": "Un Piano per Ogni Fase della Tua Crescita",
+    "subtitle": "Scegli l'intelligenza artificiale su misura per il tuo business. Inizia oggi, scala domani.",
     "perfectFor": "Perfetto per:",
-    "features": "Funzionalità:",
+    "features": "Cosa include:",
     "plans": {
       "analytics": {
-        "name": "ANALYTICS",
+        "name": "STARTER",
         "price": "19",
         "period": "mese",
-        "badge": "CONSIGLIATO",
-        "perfectFor": "Perfetto per: PMI che necessitano di CRM essenziale con semplici analisi marketing digitali senza complessità.",
+        "badge": "IDEALE PER INIZIARE",
+        "perfectFor": "Per chi vuole trasformare i dati in decisioni e avere il pieno controllo della comunicazione con i clienti.",
         "features": {
-          "0": "Piattaforma CRM Essenziale",
-          "1": "Automazione Marketing Base",
-          "2": "Dashboard Marketing Digitale",
-          "3": "Supporto CRM"
+          "0": "Dashboard Analytics Semplificata",
+          "1": "Portale Cliente Centralizzato",
+          "2": "Prossimamente: Alert Intelligenti",
+          "3": "Prossimamente: Riepiloghi AI"
         },
-        "cta": "Inizia Ora"
+        "cta": "Parla con un Esperto"
       },
       "plus": {
-        "name": "PLUS (Reputation)",
+        "name": "PLUS",
         "price": "39",
         "period": "mese",
-        "badge": "COMING SOON",
-        "perfectFor": "Perfetto per: Attività locali, ristoranti, hotel e professionisti per cui le recensioni online sono vitali.",
+        "badge": "PIÙ POPOLARE",
+        "perfectFor": "Per chi vuole costruire attivamente una reputazione online a 5 stelle, rispondendo in modo efficiente a ogni recensione.",
         "features": {
-          "0": "Tutte le funzionalità del piano ANALYTICS",
-          "1": "Modulo Gestione Recensioni",
-          "2": "Risposte Semplificate"
+          "0": "Tutto del piano STARTER",
+          "1": "Modulo Gestione Recensioni con IA",
+          "2": "Notifiche e bozze di risposta AI",
+          "3": "Categorizzazione automatica recensioni"
         },
-        "cta": "Prossimamente"
+        "cta": "Parla con un Esperto"
       },
       "pro": {
-        "name": "PRO (Social Hub)",
-        "price": "69",
+        "name": "PRO",
+        "price": "79",
         "period": "mese",
-        "badge": "COMING SOON",
-        "perfectFor": "Perfetto per: Aziende che investono attivamente sui social media e vogliono un unico luogo per monitorare tutta la loro presenza online.",
+        "badge": "CRESCITA PROATTIVA",
+        "perfectFor": "La suite completa per chi vuole il massimo controllo, dominare i social e generare contatti in automatico dal proprio sito.",
         "features": {
-          "0": "Tutte le funzionalità del piano PLUS",
-          "1": "Modulo Social Hub",
-          "2": "Dashboard Social Media",
-          "3": "(Futuro) Possibilità di programmare post"
+          "0": "Tutto del piano PLUS",
+          "1": "Modulo Social Hub con IA",
+          "2": "Assistente AI per la creazione di post",
+          "3": "Chatbot Marketing Proattivo 24/7"
         },
-        "cta": "Prossimamente"
+        "cta": "Parla con un Esperto"
       }
     },
     "consultation": {
       "title": "Non sai quale piano fa per te?",
-      "subtitle": "Prenota una consulenza gratuita di 30 minuti per scoprire la soluzione più adatta alle tue esigenze.",
-      "cta": "Consulenza Gratuita",
-      "formMessage": "Buongiorno! Vorrei prenotare una consulenza gratuita per scoprire quale piano QuickFy si adatta meglio alle esigenze della mia azienda. "
+      "subtitle": "Parla con un nostro esperto. Ti aiuteremo a identificare la soluzione perfetta per le tue esigenze con una consulenza strategica gratuita.",
+      "cta": "Richiedi Consulenza Gratuita",
+      "formMessage": "Buongiorno! Vorrei parlare con un esperto per scoprire quale piano QuickFy si adatta meglio alle esigenze della mia azienda."
     }
   },
   "contact": {
-    "title": "Pronto per Automazione Marketing",
-    "titleHighlight": "per la tua PMI?",
-    "subtitle": "Inizia con CRM e analisi marketing digitali oggi stesso. Consulenza gratuita automazione marketing per PMI.",
+    "title": "Pronto a Semplificare",
+    "titleHighlight": "il tuo Marketing?",
+    "subtitle": "Richiedi una consulenza gratuita. Un nostro esperto ti mostrerà come QuickFy può trasformare la tua presenza online.",
     "form": {
       "fields": {
         "name": {
@@ -194,10 +195,10 @@
         },
         "message": {
           "label": "Messaggio",
-          "placeholder": "Descrivi le tue sfide marketing attuali..."
+          "placeholder": "Descrivi brevemente le tue esigenze..."
         }
       },
-      "submit": "Consulenza Automazione Marketing",
+      "submit": "Parla con un Esperto",
       "submitting": "Invio in corso...",
       "submitAnother": "Invia Altra Richiesta",
       "ariaLabel": "Modulo di contatto QuickFy",
@@ -205,13 +206,13 @@
       "socialProof": {
         "response": "Risposta in 24h",
         "clients": "500+ Clienti Soddisfatti",
-        "roi": "ROI Garantito"
+        "roi": "Crescita Garantita"
       },
       "progress": {
         "label": "Progresso compilazione"
       },
       "footer": {
-        "security": "🔒 I tuoi dati sono sicuri • ✓ Risposta garantita in 24h • 💬 Consulenza gratuita di 30 minuti"
+        "security": "🔒 I tuoi dati sono sicuri • ✓ Risposta garantita in 24h • 💬 Consulenza gratuita e senza impegno"
       },
       "validation": {
         "name": "Il nome deve contenere almeno 2 caratteri",
@@ -229,7 +230,7 @@
     },
     "success": {
       "title": "Richiesta Inviata!",
-      "message": "Ti contatteremo entro 24 ore per programmare la tua consulenza gratuita."
+      "message": "Un nostro esperto ti contatterà entro 24 ore per la tua consulenza gratuita."
     }
   },
   "languageSwitcher": {
@@ -242,7 +243,7 @@
   },
   "testimonials": {
     "title": "Cosa Dicono i Nostri Clienti",
-    "subtitle": "Scopri le esperienze delle aziende che hanno automatizzato i loro processi con noi e ottenuto risultati eccezionali",
+    "subtitle": "Scopri le esperienze delle aziende che hanno ripreso il controllo del loro marketing digitale con QuickFy",
     "previousTestimonial": "Testimonianza precedente",
     "nextTestimonial": "Prossima testimonianza",
     "goToTestimonial": "Vai alla testimonianza",
@@ -253,38 +254,38 @@
     },
     "testimonial1": {
       "name": "Marco Rossi",
-      "role": "Direttore Operativo",
-      "company": "TechItalia S.p.A.",
-      "content": "QuickFy ci ha aiutato a ridurre del 60% il tempo dedicato alle attività amministrative. I nostri team ora possono concentrarsi su compiti strategici invece che su attività routinarie. ROI raggiunto in soli 3 mesi."
+      "role": "Titolare",
+      "company": "Ristorante La Trattoria",
+      "content": "Prima di QuickFy, non capivo nulla di Google Analytics. Ora ho una dashboard chiara che mi dice subito come sta andando il sito. Il modulo per le recensioni è fantastico: rispondo a tutti in un minuto!"
     },
     "testimonial2": {
       "name": "Giulia Bianchi",
-      "role": "Manager IT",
-      "company": "FinanzaPro Milano",
-      "content": "L'integrazione di QuickFy nei nostri sistemi è stata perfetta. L'automazione dei report finanziari ci fa risparmiare 20 ore a settimana ed ha eliminato gli errori umani. Altamente raccomandato."
+      "role": "Consulente Finanziario",
+      "company": "Studio Bianchi",
+      "content": "QuickFy mi ha restituito il tempo. Invece di perdere ore ad analizzare dati, mi concentro sui clienti. L'interfaccia è pulita, semplice e mi dà esattamente le informazioni di cui ho bisogno per crescere."
     },
     "testimonial3": {
       "name": "Alessandro Ferrari",
-      "role": "Amministratore Delegato",
-      "company": "LogiFlow Italia",
-      "content": "Con QuickFy abbiamo ottimizzato l'intera supply chain. I costi logistici sono diminuiti del 35% e l'efficienza è aumentata del 45%. Il miglior investimento degli ultimi anni."
+      "role": "CEO",
+      "company": "LogiTech Solutions",
+      "content": "Usiamo il piano PRO e il chatbot sul nostro sito ha aumentato i lead del 40%. Il Social Hub ci dà idee costanti per nuovi contenuti. È come avere un team marketing AI che lavora per noi 24/7."
     },
     "testimonial4": {
-      "name": "Francesca Romano",
-      "role": "Direttore HR",
-      "company": "PersonePlus S.r.l.",
-      "content": "QuickFy ha automatizzato il nostro processo HR dal reclutamento all'onboarding. Il tempo di elaborazione dei nuovi dipendenti è passato da settimane a giorni. Dipendenti e manager sono molto più soddisfatti."
+      "name": "Laura Martini",
+      "role": "Marketing Manager",
+      "company": "EcoStyle Fashion",
+      "content": "Con QuickFy ho finalmente capito quali campagne funzionano davvero. La dashboard mi dice subito dove investire e il modulo recensioni mi ha fatto risparmiare 10 ore a settimana. ROI aumentato del 30%."
     },
     "testimonial5": {
-      "name": "Luca Conti",
-      "role": "Direttore Commerciale",
-      "company": "VenditePro Roma",
-      "content": "L'automazione del nostro sales funnel ha portato un aumento del 50% delle conversioni. QuickFy analizza i dati dei clienti in tempo reale e suggerisce azioni ottimali. Le vendite non sono mai state così facili."
+      "name": "Simone Verdi",
+      "role": "Digital Marketing Specialist",
+      "company": "MediaPro Milano",
+      "content": "L'Analytics di QuickFy ha trasformato il modo in cui gestiamo i clienti. Reportistica automatica, dati chiari e actionable. I nostri clienti sono più soddisfatti e noi lavoriamo meglio."
     }
   },
   "logos": {
-    "title": "Aziende leader in tutto il mondo si fidano di noi",
-    "description": "Unisciti a {count}+ aziende che si affidano a QuickFy per la loro automazione marketing"
+    "title": "Aziende come la tua si fidano di noi ogni giorno",
+    "description": "Unisciti a {count}+ professionisti e PMI che si affidano a QuickFy per la loro crescita digitale"
   },
   "roadmap": {
     "title": "Il nostro piano di",
@@ -346,7 +347,7 @@
     "separator": "Vai a"
   },
   "footer": {
-    "description": "QuickFy - Automazione marketing e CRM per PMI. Analisi marketing digitali con ROI comprovato superiore per piccole e medie imprese.",
+    "description": "QuickFy - La piattaforma intelligente che trasforma la complessità del marketing digitale in strumenti semplici, potenti e accessibili per PMI e professionisti.",
     "contact": {
       "emailAria": "Invia email a QuickFy"
     },

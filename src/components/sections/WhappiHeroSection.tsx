@@ -44,19 +44,6 @@ export const WhappiHeroSection = memo(function WhappiHeroSection() {
 
           {/* Left Column - Content */}
           <div className="space-y-8">
-            {/* Badge */}
-            <div className={`transition-all duration-1000 delay-300 ${isIntersecting ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm border border-blue-200/50 rounded-full">
-                <div className="relative">
-                  <div className="w-2 h-2 bg-gradient-to-r from-blue-700 to-blue-500 rounded-full animate-ping absolute"></div>
-                  <div className="w-2 h-2 bg-gradient-to-r from-blue-700 to-blue-500 rounded-full"></div>
-                </div>
-                <span className="text-sm font-semibold text-blue-700 uppercase tracking-wider">
-                  {t('badge')}
-                </span>
-              </div>
-            </div>
-
             {/* Main Headline */}
             <div className={`transition-all duration-1000 delay-500 ${isIntersecting ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "QuickFy - Marketing automatizace pro malé firmy",
-    "description": "CRM a marketing automatizace pro SME. Zvyšte ROI digitálního marketingu o 35% s integrovanými analytickými nástroji.",
+    "title": "QuickFy | Váš zjednodušený analytický dashboard s AI",
+    "description": "Přeměňte svá data na vítězná rozhodnutí. QuickFy nabízí zjednodušený analytický dashboard a AI nástroje pro správu recenzí a sociálních médií. Od 19€/měsíc. Bezplatná konzultace k dispozici.",
     "locale": "cs"
   },
   "navigation": {
@@ -26,16 +26,16 @@
     "whappiCta": "Předobjednat -24%"
   },
   "hero": {
-    "headline": "Marketing automatizace pro",
-    "headlineHighlight": "růst malých firem",
-    "subheadline": "Integrovaný CRM s marketingovou automatizací navržený pro SME. Transformujte digitální marketing s analytikou a dosáhněte o 35% lepšího ROI.",
+    "headline": "Transformujte vaše data na",
+    "headlineHighlight": "vítězná rozhodnutí",
+    "subheadline": "Zjednodušený analytický dashboard, který přeměňuje složitá data na jasné poznatky. Ideální pro malé firmy, které chtějí růst bez zbytečné složitosti.",
     "cta": {
-      "primary": "Vyzkoušet Marketing Automatizaci"
+      "primary": "Spojte se s expertem"
     },
     "metrics": {
-      "hoursSaved": "15+ Ušetřených hodin týdně",
-      "roiImprovement": "+35% Zlepšení ROI",
-      "clarity": "100% Jasnost ve Výsledcích"
+      "hoursSaved": "15+ Ušetřených hodin",
+      "roiImprovement": "+40% Generovaných leadů",
+      "clarity": "100% Přehlednost dat"
     },
     "typewriter": [
       "strategická rozhodnutí",
@@ -45,79 +45,79 @@
     ]
   },
   "features": {
-    "title": "Marketing Automatizace:",
+    "title": "Vše, co potřebujete:",
     "titleHighlight": "3 Klíčové Moduly",
-    "subtitle": "Integrovaný CRM s digitální marketingovou analytikou - všechno pro efektivní automatizaci SME",
+    "subtitle": "Analytický dashboard, správa recenzí a sociální média - všechno v jedné platformě navržené pro malé firmy",
     "items": [
       {
         "id": "data-intelligence",
-        "title": "CRM analytika a inteligentní digitální marketing",
-        "description": "Centralizovaná CRM platforma s pokročilou digitální marketing analytikou. Všechny marketingové kanály sjednocené pro automatizaci.",
+        "title": "Dashboard analytics pro malé firmy",
+        "description": "Zjednodušený dashboard, který přeměňuje data z Google Analytics a reklamních kampaní na jasné grafy. Žádné zbytečné komplikace: jen to, co skutečně potřebujete vědět.",
         "benefits": [
-          "Jednotný CRM dashboard",
-          "Automatizované marketingové reporty",
+          "Jednotný dashboard pro všechna data",
+          "Automatické reporty e-mailem",
           "Jasné sledování ROI"
         ],
         "icon": "BarChart3"
       },
       {
-        "id": "performance-ads",
-        "title": "Automatizace kampaní & ROI Optimalizace",
-        "description": "Pokročilá marketing automatizace s inteligentní optimalizací kampaní. Automatizované rozpočtové řízení součástí.",
+        "id": "reputation-management",
+        "title": "Správa recenzí s pomocí AI",
+        "description": "Odpovídejte na Google a Facebook recenze přímo z jednoho místa. AI vám navrhne odpovědi, vy jen kliknete a odešlete. Rychlé, snadné, účinné.",
         "benefits": [
-          "Automatizovaná optimalizace kampaní",
-          "Real-time sledování ROI",
-          "35% vyšší ROI díky automatizaci"
+          "Odpovědi jedním kliknutím",
+          "AI návrhy odpovědí",
+          "Centralizovaná správa"
         ],
-        "icon": "Target"
+        "icon": "MessageSquare"
       },
       {
-        "id": "client-platform",
-        "title": "Cloudová CRM Platforma",
-        "description": "Zabezpečený cloudový CRM s personalizovanými automatizačními dashboardy. 24/7 přístup k marketing analytice.",
+        "id": "social-hub",
+        "title": "Social Hub: Instagram a Facebook v jednom",
+        "description": "Plánujte příspěvky, sledujte výkon a odpovídejte na zprávy z Instagramu a Facebooku přímo z QuickFy. Jednoduchá správa sociálních médií bez přepínání mezi aplikacemi.",
         "benefits": [
-          "24/7 přístup k CRM",
-          "Personalizované automatizační dashboardy",
-          "Kompletní marketingová transparentnost"
+          "Plánování příspěvků",
+          "Statistiky výkonu",
+          "Centralizovaná komunikace"
         ],
-        "icon": "Users"
+        "icon": "Share2"
       }
     ]
   },
   "benefits": {
-    "title": "Proč malé firmy volí QuickFy",
-    "titleHighlight": "Marketing Automatizaci",
-    "subtitle": "Prokazatelné výsledky s integrovanou digitální marketing analytikou a automatizačními procesy",
+    "title": "Proč malé firmy volí",
+    "titleHighlight": "QuickFy",
+    "subtitle": "Prokazatelné výsledky s jednoduchým dashboardem a AI nástroji pro růst vašeho podnikání",
     "items": [
       {
-        "title": "Vrácený Čas",
-        "description": "Týdenní hodiny získané automatizací reportů",
+        "title": "Ušetřený Čas",
+        "description": "Týdenní hodiny získané automatizací reportů a rychlejšími odpověďmi na recenze",
         "value": "15+",
         "unit": "hodin/týden"
       },
       {
-        "title": "CRM Efektivita",
-        "description": "Rozhodnutí založená na digitálních marketing datech a CRM pozorováních",
+        "title": "Jasnost Dat",
+        "description": "Rozhodnutí založená na přehledných dashboardech místo složitých tabulek",
         "value": "100%",
         "unit": "transparentnost"
       },
       {
-        "title": "Marketing ROI",
-        "description": "Průměrný nárůst ROI díky automatizaci a CRM optimalizaci",
-        "value": "35%",
-        "unit": "nárůst ROI"
+        "title": "Generování Leadů",
+        "description": "Průměrný nárůst leadů díky lepší správě recenzí a optimalizaci sociálních médií",
+        "value": "+40%",
+        "unit": "více leadů"
       },
       {
-        "title": "Míra Udržení Klientů",
-        "description": "Spokojenost a důvěra našich klientů je naší prioritou.",
-        "value": "92%",
-        "unit": "míra udržení"
+        "title": "Vše v Jednom",
+        "description": "Data, recenze, social media a lead management v jedné platformě",
+        "value": "5+",
+        "unit": "integrovaných nástrojů"
       }
     ]
   },
   "pricing": {
-    "title": "CRM pro Malé Firmy - Dostupné Ceny",
-    "subtitle": "Marketing automatizace pro SME s transparentními cenami. Digitální marketing řešení navržená pro rozpočty malých firem.",
+    "title": "Jednoduché ceny pro malé firmy",
+    "subtitle": "Začněte zdarma s Analytics. Přidejte funkce, jak vaše podnikání roste.",
     "perfectFor": "Perfektní pro:",
     "features": "Funkce:",
     "plans": {
@@ -126,25 +126,25 @@
         "price": "19",
         "period": "měsíc",
         "badge": "DOPORUČENÉ",
-        "perfectFor": "Perfektní pro: SME potřebující základní CRM s jednoduchou digitální marketing analytikou bez složitosti.",
+        "perfectFor": "Perfektní pro: Malé firmy, které chtějí jednoduché analytické nástroje bez složitosti.",
         "features": {
-          "0": "Základní CRM Platforma",
-          "1": "Základní Marketing Automatizace",
-          "2": "Digitální Marketing Dashboard",
-          "3": "CRM Podpora"
+          "0": "Zjednodušený Analytics Dashboard",
+          "1": "Základní reporty e-mailem",
+          "2": "Data z Google Analytics",
+          "3": "Podpora 24/7"
         },
-        "cta": "Začít hned"
+        "cta": "Spojte se s expertem"
       },
       "plus": {
         "name": "PLUS (Reputation)",
         "price": "39",
         "period": "měsíc",
         "badge": "COMING SOON",
-        "perfectFor": "Perfektní pro: Místní podniky, restaurace, hotely a profesionály, pro které jsou online recenze životně důležité.",
+        "perfectFor": "Perfektní pro: Restaurace, hotely, profesionály - kde jsou online recenze zásadní pro úspěch.",
         "features": {
           "0": "Všechny funkce plánu ANALYTICS",
-          "1": "Modul správy recenzí",
-          "2": "Zjednodušené odpovědi"
+          "1": "Modul správy recenzí s AI",
+          "2": "Odpovědi jedním kliknutím"
         },
         "cta": "Připravujeme"
       },
@@ -153,12 +153,12 @@
         "price": "69",
         "period": "měsíc",
         "badge": "COMING SOON",
-        "perfectFor": "Perfektní pro: Firmy, které aktivně investují do sociálních médií a chtějí jediné místo pro sledování celé své online přítomnosti.",
+        "perfectFor": "Perfektní pro: Firmy, které aktivně používají Instagram a Facebook a chtějí vše spravovat z jednoho místa.",
         "features": {
           "0": "Všechny funkce plánu PLUS",
           "1": "Social Hub modul",
-          "2": "Dashboard sociálních médií",
-          "3": "(Budoucnost) Možnost plánování příspěvků"
+          "2": "Plánování příspěvků",
+          "3": "Dashboard sociálních médií"
         },
         "cta": "Připravujeme"
       }
@@ -171,9 +171,9 @@
     }
   },
   "contact": {
-    "title": "Připraveni na Marketing Automatizaci",
-    "titleHighlight": "pro vaši SME?",
-    "subtitle": "Začněte s CRM a digitální marketing analytikou ještě dnes. Bezplatná konzultace marketing automatizace pro SME.",
+    "title": "Připraveni transformovat vaše",
+    "titleHighlight": "podnikání?",
+    "subtitle": "Začněte s analytickým dashboardem ještě dnes. Bezplatná konzultace dostupná pro všechny nové zákazníky.",
     "form": {
       "fields": {
         "name": {
@@ -197,7 +197,7 @@
           "placeholder": "Popište své současné marketingové výzvy..."
         }
       },
-      "submit": "Konzultace Marketing Automatizace",
+      "submit": "Spojte se s expertem",
       "submitting": "Odesílání...",
       "submitAnother": "Odeslat Další Žádost",
       "ariaLabel": "Kontaktní formulář QuickFy",
@@ -242,7 +242,7 @@
   },
   "testimonials": {
     "title": "Co o nás říkají naši klienti",
-    "subtitle": "Přečtěte si zkušenosti firem, které s námi automatizovaly své procesy a dosáhly výjimečných výsledků",
+    "subtitle": "Přečtěte si zkušenosti malých firem, které s QuickFy získaly jasnost v datech a vyšší ROI",
     "previousTestimonial": "Předchozí reference",
     "nextTestimonial": "Další reference",
     "goToTestimonial": "Přejít na referenci",
@@ -253,33 +253,33 @@
     },
     "testimonial1": {
       "name": "Jan Novák",
-      "role": "Provozní ředitel",
-      "company": "TechCorp Praha",
-      "content": "QuickFy nám pomohl snížit čas strávený administrativou o 60%. Naše týmy se teď mohou soustředit na strategické úkoly místo rutinních činností. ROI bylo dosaženo již za 3 měsíce."
+      "role": "Majitel",
+      "company": "Restaurace U Dobré Chuti",
+      "content": "Před QuickFy jsem nerozuměl Google Analytics. Teď mám jasný dashboard, který mi hned ukáže, jak si web vede. Modul na recenze je skvělý: odpovím všem během minuty!"
     },
     "testimonial2": {
       "name": "Marie Svobodová",
-      "role": "IT Manažerka",
-      "company": "Finanza Solutions",
-      "content": "Integrace QuickFy do našich systémů byla bezproblémová. Automatizace finančních reportů nám ušetří 20 hodin týdně a eliminovala lidské chyby. Rozhodně doporučujeme."
+      "role": "Majitelka",
+      "company": "Kadeřnictví Salon Marie",
+      "content": "Social Hub mi změnil život. Plánuji Instagram příspěvky na týden dopředu z QuickFy a vidím, co funguje. Získala jsem +60% sledujících za 3 měsíce!"
     },
     "testimonial3": {
-      "name": "Petr Koukal",
-      "role": "Generální ředitel",
-      "company": "LogiFlow Czech",
-      "content": "S QuickFy jsme optimalizovali celý supply chain. Náklady na logistiku se snížily o 35% a efektivita vzrostla o 45%. Nejlepší investice, kterou jsme za poslední roky udělali."
+      "name": "Petr Kovář",
+      "role": "Marketingový manažer",
+      "company": "FitPark Praha",
+      "content": "Dashboard QuickFy mi hned ukáže ROI z reklam. Vidím, kolik stojí jeden nový člen a kde investovat více. Výsledek? +40% členů při stejném rozpočtu."
     },
     "testimonial4": {
       "name": "Anna Horáková",
-      "role": "Vedoucí HR",
-      "company": "PeopleFirst s.r.o.",
-      "content": "QuickFy automatizoval náš HR proces od náboru po onboarding. Čas na zpracování nových zaměstnanců se zkrátil z týdnů na dny. Zaměstnanci i manažeři jsou mnohem spokojenější."
+      "role": "Majitelka",
+      "company": "Penzion U Jezu",
+      "content": "S QuickFy odpovím na Google recenze během 2 minut. AI mi navrhne odpověď, já jen upravím a odešlu. Díky tomu máme 4.8 hvězdiček a plno nových rezervací!"
     },
     "testimonial5": {
       "name": "Tomáš Černý",
-      "role": "Obchodní ředitel",
-      "company": "SalesBoost Praha",
-      "content": "Automatizace našeho sales funnelu přinesla 50% nárůst konverzí. QuickFy analyzuje zákaznická data v reálném čase a navrhuje optimální akce. Prodeje nikdy nebyly jednodušší."
+      "role": "Digitální marketing specialista",
+      "company": "E-shop TechGear",
+      "content": "QuickFy mi dal jasno v datech. Dashboard ukazuje, které kampaně fungují a které ne. Přestal jsem plýtvat peníze a ROI vzrostlo o 50% za první měsíc!"
     }
   },
   "logos": {
@@ -295,45 +295,45 @@
       {
         "quarter": "Q4 2025",
         "status": "current",
-        "title": "Spuštění a Konsolidace",
-        "keyAction": "Oficiální uvedení produktu na trh",
+        "title": "Spuštění Analytics",
+        "keyAction": "Oficiální uvedení základního dashboardu na trh",
         "features": [
-          "Starter plán (Analytics) za €19/měsíc",
-          "Doplněk: Správa reklamy (provize 5%)",
-          "Oficiální uvedení na trh"
+          "Analytics plán za €19/měsíc",
+          "Zjednodušený dashboard",
+          "Automatické reporty"
         ]
       },
       {
         "quarter": "Q1 2026",
         "status": "future",
         "title": "První Vylepšení",
-        "keyAction": "Vydání prvního bezplatného upgradu základního plánu a současný začátek vývoje složitějších modulů",
+        "keyAction": "Bezplatný AI upgrade pro existující zákazníky",
         "features": [
-          "Bezplatný upgrade \"Starter AI\" pro zákazníky Starter plánu (AI upozornění a souhrny)",
-          "Zahájení vývoje: Komunikační modul a Plus plán",
-          "Průběžná vylepšení na základě zpětné vazby zákazníků"
+          "AI upozornění a souhrny zdarma",
+          "Zahájení vývoje modulu Reputation",
+          "Průběžná vylepšení dashboardu"
         ]
       },
       {
         "quarter": "Q2 2026",
         "status": "future",
-        "title": "Komunikační Modul",
-        "keyAction": "Spuštění prvního velkého placeného doplňku, vytvoření nového zdroje příjmů",
+        "title": "Plus Plán (Reputation)",
+        "keyAction": "Spuštění správy recenzí s AI",
         "features": [
-          "Doplněk: Integrovaný komunikační modul za €19/uživatel/měsíc",
-          "Centralizovaná správa všech komunikačních kanálů",
-          "Pokročilá automatizace komunikace"
+          "Plus plán za €39/měsíc",
+          "AI správa recenzí",
+          "Odpovědi jedním kliknutím"
         ]
       },
       {
         "quarter": "H2 2026",
         "status": "future",
-        "title": "Pokročilé Plány",
-        "keyAction": "Dokončení třístupňové nabídky, positionování QuickFy jako kompletní sady",
+        "title": "Pro Plán (Social Hub)",
+        "keyAction": "Kompletní platforma pro růst malých firem",
         "features": [
-          "Q3 2026: Plus plán (Reputation) za €39/měsíc",
-          "Q4 2026: Pro plán (Growth Suite) za €79/měsíc",
-          "Zahrnuje Social Hub a Marketing Chatbot"
+          "Pro plán za €69/měsíc",
+          "Social Hub pro Instagram/Facebook",
+          "Plánování příspěvků"
         ]
       }
     ]
@@ -346,7 +346,7 @@
     "separator": "Přejít na"
   },
   "footer": {
-    "description": "QuickFy - Marketing automatizace a CRM pro SME. Digitální marketing analytika s prokazatelně vyšším ROI pro malé a střední podniky.",
+    "description": "QuickFy - Zjednodušený analytický dashboard a AI nástroje pro malé firmy. Data, recenze a sociální média v jedné platformě.",
     "contact": {
       "emailAria": "Odeslat email na QuickFy"
     },
@@ -1049,8 +1049,8 @@
   },
   "products": {
     "quickfy": {
-      "title": "QuickFy CRM",
-      "subtitle": "Platforma Marketing Automation"
+      "title": "QuickFy Dashboard",
+      "subtitle": "Platforma pro analytics a růst"
     },
     "whappi": {
       "title": "Whappi",
