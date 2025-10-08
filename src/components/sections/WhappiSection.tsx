@@ -208,7 +208,7 @@ export const WhappiSection = memo(function WhappiSection() {
       {/* Product Demo Section */}
       <section
         ref={demoRef}
-        id="whappi-demo"
+        id="whappi-features"
         className="relative py-0 px-4 bg-gradient-to-br from-blue-50/30 via-purple-50/30 to-pink-50/30 overflow-hidden"
         aria-label="Whappi product demo"
       >
