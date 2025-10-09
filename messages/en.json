@@ -168,6 +168,9 @@
       "subtitle": "Book a free 30-minute consultation to discover the solution that best fits your needs.",
       "cta": "Free Consultation",
       "formMessage": "Hello! I would like to book a free consultation to find out which QuickFy plan best suits my company's needs. "
+    },
+    "analytics": {
+      "formMessage": "I'm interested in the ANALYTICS plan (€19/month). "
     }
   },
   "contact": {

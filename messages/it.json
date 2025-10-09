@@ -169,6 +169,9 @@
       "subtitle": "Parla con un nostro esperto. Ti aiuteremo a identificare la soluzione perfetta per le tue esigenze con una consulenza strategica gratuita.",
       "cta": "Richiedi Consulenza Gratuita",
       "formMessage": "Buongiorno! Vorrei parlare con un esperto per scoprire quale piano QuickFy si adatta meglio alle esigenze della mia azienda."
+    },
+    "analytics": {
+      "formMessage": "Sono interessato al piano ANALYTICS (€19/mese). "
     }
   },
   "contact": {

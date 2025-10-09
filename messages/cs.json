@@ -168,6 +168,9 @@
       "subtitle": "Rezervujte si bezplatnou 30minutovou konzultaci a objevte řešení, které nejlépe vyhovuje vašim potřebám.",
       "cta": "Bezplatná konzultace",
       "formMessage": "Dobrý den! Rád bych si rezervoval bezplatnou konzultaci, abych zjistil, který plán QuickFy nejlépe vyhovuje potřebám mé firmy. "
+    },
+    "analytics": {
+      "formMessage": "Mám zájem o plán ANALYTICS (€19/měsíc). "
     }
   },
   "contact": {

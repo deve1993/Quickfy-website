@@ -26,28 +26,28 @@ export function PricingSection() {
   const t = useTranslations('pricing');
 
   const handleAnalyticsClick = () => {
-    const contactForm = document.getElementById('contact-form') || 
+    const contactForm = document.getElementById('contact-form') ||
                        document.querySelector('[data-contact-form]') ||
                        document.querySelector('form') ||
                        document.querySelector('.contact-form') ||
                        document.getElementById('contact');
-    
+
     if (contactForm) {
       contactForm.scrollIntoView({ behavior: 'smooth' });
-      
+
       // Pre-compila messaggio
       setTimeout(() => {
         const messageField = contactForm.querySelector('textarea') as HTMLTextAreaElement;
         if (messageField) {
-          messageField.value = 'Sono interessato al piano ANALYTICS (€19/mese). ';
+          messageField.value = t('analytics.formMessage');
           messageField.focus();
         }
       }, 500);
     } else {
       // Fallback: scroll to bottom of page if form not found
-      window.scrollTo({ 
-        top: document.body.scrollHeight, 
-        behavior: 'smooth' 
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
       });
     }
   };
