@@ -115,7 +115,7 @@ function exec(command: string, silent = false): string {
     const output = execSync(command, {
       encoding: 'utf-8',
       stdio: silent ? 'pipe' : 'inherit',
-      cwd: resolve(process.cwd(), 'component-vault'),
+      cwd: process.cwd(),
     });
     return output;
   } catch (error: any) {
@@ -374,8 +374,8 @@ async function detectSecrets(): Promise<SecretsData> {
     }
   }
 
-  // Scan component-vault directory
-  const scanDir = resolve(process.cwd(), 'component-vault');
+  // Scan current directory
+  const scanDir = process.cwd();
   scanDirectory(scanDir);
 
   // Display results
@@ -571,7 +571,7 @@ async function autoFix(): Promise<void> {
  */
 function saveReport(report: SecurityReport): void {
   const filename = `security-report-${report.timestamp.split('T')[0]}.json`;
-  const filepath = resolve(process.cwd(), 'component-vault', filename);
+  const filepath = resolve(process.cwd(), filename);
 
   writeFileSync(filepath, JSON.stringify(report, null, 2));
   console.log(`\n${colors.green}✅ Report saved to: ${filename}${colors.reset}\n`);

@@ -36,7 +36,7 @@ function exec(command: string, silent = false): string {
     const output = execSync(command, {
       encoding: 'utf-8',
       stdio: silent ? 'pipe' : 'inherit',
-      cwd: resolve(process.cwd(), 'component-vault'),
+      cwd: process.cwd(),
     });
     return output;
   } catch (error: any) {
@@ -367,7 +367,7 @@ jobs:
 function initializePipeline(): void {
   printHeader('🚀 CI/CD Pipeline Initialization');
 
-  const workflowDir = resolve(process.cwd(), 'component-vault', '.github', 'workflows');
+  const workflowDir = resolve(process.cwd(), '.github', 'workflows');
 
   // Create .github/workflows directory if it doesn't exist
   if (!existsSync(workflowDir)) {
@@ -430,7 +430,7 @@ function validatePipeline(): void {
     {
       name: 'Workflow files exist',
       check: () => {
-        const workflowDir = resolve(process.cwd(), 'component-vault', '.github', 'workflows');
+        const workflowDir = resolve(process.cwd(), '.github', 'workflows');
         return existsSync(workflowDir) && Object.keys(WORKFLOWS).every(file =>
           existsSync(resolve(workflowDir, file))
         );
@@ -439,7 +439,7 @@ function validatePipeline(): void {
     {
       name: 'package.json has required scripts',
       check: () => {
-        const pkgPath = resolve(process.cwd(), 'component-vault', 'package.json');
+        const pkgPath = resolve(process.cwd(), 'package.json');
         const pkg = JSON.parse(readFileSync(pkgPath, 'utf-8'));
         const requiredScripts = [
           'lint', 'type-check', 'test', 'test:coverage',
@@ -463,7 +463,7 @@ function validatePipeline(): void {
     {
       name: 'Dependencies installed',
       check: () => {
-        const nodeModules = resolve(process.cwd(), 'component-vault', 'node_modules');
+        const nodeModules = resolve(process.cwd(), 'node_modules');
         return existsSync(nodeModules);
       },
     },
@@ -644,7 +644,7 @@ function showStatus(): void {
   // Show local status
   printSection('📋 Local Status');
 
-  const workflowDir = resolve(process.cwd(), 'component-vault', '.github', 'workflows');
+  const workflowDir = resolve(process.cwd(), '.github', 'workflows');
   const workflowsExist = existsSync(workflowDir);
 
   console.log(`  ${getStatusIcon(workflowsExist)} Workflows configured`);
