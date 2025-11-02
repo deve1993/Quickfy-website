@@ -766,6 +766,184 @@ act(() => {
 vi.useRealTimers()
 ```
 
+## MCP Integration
+
+### Seamless UI Testing Server Integration
+
+This skill automatically integrates with the **UI Testing MCP Server** when available, providing enhanced testing capabilities beyond unit tests.
+
+#### Automatic Behavior
+
+When you test a component, the system intelligently decides which tests to run:
+
+```typescript
+// You say: "test Button component"
+
+// System automatically:
+1. ✅ Unit Tests (Vitest) - Always
+   └── Test logic, props, state, events
+
+2. ✅ Visual Regression (MCP) - If component renders UI
+   └── Screenshot, compare with baseline, detect changes
+
+3. ✅ Accessibility Audit (MCP) - Always
+   └── WCAG compliance, keyboard nav, ARIA validation
+
+4. ✅ Performance Check (MCP) - If configured
+   └── Render time, bundle size impact
+
+5. 📊 Unified Report
+   └── All results in one comprehensive report
+```
+
+#### Enhanced Test Commands
+
+**Standard Test** (Quick)
+```bash
+"test Button"
+→ Unit + Visual + A11y (5-10 seconds)
+```
+
+**Full Test Suite** (Complete)
+```bash
+"full test Button"
+→ Unit + Visual + E2E + A11y + Performance (30-60 seconds)
+```
+
+**Visual Only**
+```bash
+"screenshot Button all variants"
+→ Captures all visual variants
+```
+
+**Performance Only**
+```bash
+"profile Button"
+→ Performance metrics only
+```
+
+**Accessibility Only**
+```bash
+"audit Button accessibility"
+→ Complete WCAG audit
+```
+
+#### Integration Example
+
+```typescript
+// Button.test.tsx (Vitest)
+describe('Button', () => {
+  // Standard unit tests
+  it('calls onClick when clicked', async () => {
+    const handleClick = vi.fn()
+    const user = userEvent.setup()
+
+    render(<Button onClick={handleClick}>Click me</Button>)
+    await user.click(screen.getByRole('button'))
+
+    expect(handleClick).toHaveBeenCalledTimes(1)
+  })
+
+  // MCP integration happens automatically when you run:
+  // "test Button" in Claude Code
+  //
+  // Behind the scenes:
+  // 1. Vitest runs unit tests above
+  // 2. MCP captures visual screenshot
+  // 3. MCP runs accessibility audit
+  // 4. Results combined in single report
+})
+```
+
+#### Configuration
+
+Enable/disable MCP features in `.claude/mcp-config.json`:
+
+```json
+{
+  "component-tester": {
+    "mcpIntegration": {
+      "enabled": true,
+      "autoVisual": true,        // Auto visual test for UI components
+      "autoAccessibility": true,  // Always run a11y tests
+      "autoPerformance": false,   // Only when explicitly requested
+      "threshold": "fast"         // Only fast tests on auto-run
+    }
+  }
+}
+```
+
+#### Setup MCP Server
+
+If not already set up:
+
+```bash
+# Generate and setup UI Testing MCP Server
+cd your-project
+npx @ui-testing/setup-mcp-server
+
+# Or manually with mcp-server-generator skill
+"Generate UI Testing MCP server for this project"
+```
+
+#### Benefits
+
+**Without MCP Integration:**
+- ✅ Unit tests only
+- ⚠️ Manual visual checks
+- ⚠️ Manual a11y testing
+- ⚠️ Manual performance profiling
+
+**With MCP Integration:**
+- ✅ Unit tests (Vitest)
+- ✅ Automated visual regression
+- ✅ Automated accessibility audits
+- ✅ Automated performance checks
+- ✅ Single unified report
+- ✅ CI/CD ready
+
+#### Workflow Example
+
+**Development Workflow:**
+```bash
+# While developing Button component
+
+1. "dev Button"
+   → Opens live preview with hot reload
+   → Real-time a11y feedback
+   → Performance metrics shown
+
+2. Make changes to Button.tsx
+   → Hot reload updates preview
+   → A11y issues highlighted
+   → Performance tracked
+
+3. "test Button"
+   → Quick test suite runs
+   → Report: "✅ All passed"
+
+4. Ready to commit!
+```
+
+**Pre-Release Workflow:**
+```bash
+# Before releasing new version
+
+1. "full test Button all variants"
+   → Tests all variants (primary, secondary, outline, ghost)
+   → Tests all themes (light, dark)
+   → Tests all sizes (sm, md, lg)
+   → Tests all states (default, hover, active, disabled)
+
+2. Comprehensive report generated
+   → Unit tests: 15/15 passed
+   → Visual regression: No changes detected
+   → Accessibility: WCAG AA compliant
+   → Performance: 45ms render (within budget)
+
+3. Ready for release! ✅
+```
+
 ## When to Use This Skill
 
 Activate this skill when you need to:
@@ -781,6 +959,10 @@ Activate this skill when you need to:
 - Set up MSW handlers
 - Configure Vitest
 - Debug test issues
+- **Run automated visual regression tests** (with MCP)
+- **Perform accessibility audits** (with MCP)
+- **Profile component performance** (with MCP)
+- **Generate comprehensive test reports** (with MCP)
 
 ## Output Format
 
@@ -791,5 +973,8 @@ When writing tests, provide:
 4. **Mock Data**: Test fixtures if required
 5. **Accessibility Notes**: A11y test results
 6. **Next Steps**: Recommendations for additional tests
+7. **MCP Integration Status**: Whether MCP enhancements are active
+8. **Visual Regression Results**: If MCP server available
+9. **Performance Metrics**: If MCP server available
 
-Always write tests that are maintainable, readable, and focused on user behavior.
+Always write tests that are maintainable, readable, and focused on user behavior. When MCP integration is available, leverage it for comprehensive automated testing beyond unit tests.

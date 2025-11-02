@@ -1,0 +1,169 @@
+{
+  "description": "Common npm scripts for UI library automation",
+  "scripts": {
+    "dev": "Development commands",
+    "dev:storybook": "storybook dev -p 6006",
+    "dev:docs": "next dev",
+    "dev:watch": "tsc --watch",
+
+    "build": "Build commands",
+    "build:lib": "tsup",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:storybook": "storybook build",
+    "build:docs": "next build",
+    "build:all": "npm run build:lib && npm run build:types && npm run build:storybook",
+
+    "test": "Testing commands",
+    "test:unit": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage",
+    "test:ui": "vitest --ui",
+
+    "lint": "Linting commands",
+    "lint:code": "eslint src --ext .ts,.tsx",
+    "lint:styles": "stylelint 'src/**/*.css'",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "lint:all": "npm run lint:code && npm run lint:styles",
+
+    "format": "Formatting commands",
+    "format:check": "prettier --check 'src/**/*.{ts,tsx,css,md}'",
+    "format:write": "prettier --write 'src/**/*.{ts,tsx,css,md}'",
+
+    "typecheck": "Type checking",
+    "typecheck": "tsc --noEmit",
+    "typecheck:watch": "tsc --noEmit --watch",
+
+    "generate": "Code generation",
+    "generate:component": "node scripts/generate-component.js",
+    "generate:icons": "node scripts/generate-icons.js",
+    "generate:types": "node scripts/generate-types.js",
+
+    "clean": "Cleanup commands",
+    "clean:dist": "rimraf dist",
+    "clean:coverage": "rimraf coverage",
+    "clean:node_modules": "rimraf node_modules",
+    "clean:all": "npm run clean:dist && npm run clean:coverage",
+
+    "validate": "Validation commands",
+    "validate:components": "node scripts/validate-components.js",
+    "validate:exports": "node scripts/validate-exports.js",
+    "validate:all": "npm run validate:components && npm run validate:exports",
+
+    "ci": "CI/CD commands",
+    "ci:test": "npm run lint && npm run typecheck && npm run test:coverage",
+    "ci:build": "npm run clean:all && npm run build:all",
+    "ci:publish": "npm run ci:test && npm run ci:build && npm publish",
+
+    "release": "Release commands",
+    "release:patch": "npm version patch && git push --follow-tags",
+    "release:minor": "npm version minor && git push --follow-tags",
+    "release:major": "npm version major && git push --follow-tags",
+
+    "prepublishOnly": "Pre-publish hooks",
+    "prepublishOnly": "npm run ci:build",
+
+    "postinstall": "Post-install hooks",
+    "postinstall": "husky install",
+
+    "prepare": "Prepare hooks",
+    "prepare": "husky install"
+  },
+
+  "husky": {
+    "description": "Git hooks with Husky",
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run typecheck && npm run test",
+      "commit-msg": "commitlint --edit $1"
+    }
+  },
+
+  "lint-staged": {
+    "description": "Lint staged files",
+    "config": {
+      "*.{ts,tsx}": [
+        "eslint --fix",
+        "prettier --write"
+      ],
+      "*.{css,scss}": [
+        "stylelint --fix",
+        "prettier --write"
+      ],
+      "*.{json,md}": [
+        "prettier --write"
+      ]
+    }
+  },
+
+  "composite-scripts": {
+    "description": "Composite scripts for complex workflows",
+
+    "full-test": {
+      "description": "Run all tests and checks",
+      "script": "npm run lint && npm run typecheck && npm run test:coverage && npm run validate:all"
+    },
+
+    "pre-commit-full": {
+      "description": "Full pre-commit check",
+      "script": "npm run format:check && npm run lint && npm run typecheck && npm run test"
+    },
+
+    "release-flow": {
+      "description": "Complete release workflow",
+      "steps": [
+        "npm run full-test",
+        "npm run build:all",
+        "npm run validate:all",
+        "git add .",
+        "git commit -m 'chore: release'",
+        "npm version patch",
+        "git push --follow-tags",
+        "npm publish"
+      ]
+    },
+
+    "new-component-flow": {
+      "description": "Create new component with all files",
+      "steps": [
+        "npm run generate:component ComponentName",
+        "npm run format:write",
+        "npm run lint:fix",
+        "npm run test ComponentName"
+      ]
+    }
+  },
+
+  "examples": {
+    "description": "Example usage of scripts",
+
+    "development": {
+      "start-development": "npm run dev:storybook",
+      "watch-types": "npm run dev:watch",
+      "test-watch": "npm run test:watch"
+    },
+
+    "pre-commit": {
+      "quick-check": "npm run format:check && npm run lint",
+      "full-check": "npm run pre-commit-full"
+    },
+
+    "component-creation": {
+      "create-button": "npm run generate:component Button -- --with-tests --with-stories",
+      "create-minimal": "npm run generate:component Card -- --no-stories"
+    },
+
+    "maintenance": {
+      "clean-rebuild": "npm run clean:all && npm install && npm run build:all",
+      "validate-codebase": "npm run validate:all && npm run full-test"
+    }
+  },
+
+  "tips": [
+    "Use 'npm run' to see all available scripts",
+    "Combine scripts with && for sequential execution",
+    "Use npm run script1 & npm run script2 for parallel execution",
+    "Create custom npm scripts in package.json for your workflow",
+    "Use npx to run CLI tools without installing globally",
+    "Use --silent flag to suppress npm output: npm run build --silent"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "@ui-testing/mcp-server",
+  "version": "1.0.0",
+  "description": "Complete MCP server for UI component testing with visual regression, E2E, preview, performance, and accessibility testing",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "ui-testing-server": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "setup": "bash scripts/setup.sh",
+    "test": "node dist/index.js --test",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "testing",
+    "ui-testing",
+    "visual-regression",
+    "e2e",
+    "accessibility",
+    "performance",
+    "playwright",
+    "claude-code"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "playwright": "^1.40.0",
+    "puppeteer": "^21.0.0",
+    "axe-core": "^4.8.0",
+    "pixelmatch": "^5.3.0",
+    "pngjs": "^7.0.0",
+    "lighthouse": "^11.0.0",
+    "zod": "^3.22.0",
+    "dotenv": "^16.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/pixelmatch": "^5.2.6",
+    "@types/pngjs": "^6.0.4",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

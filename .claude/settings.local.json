@@ -63,7 +63,9 @@
       "Bash(npm run a11y:audit:*)",
       "Bash(npm run:*)",
       "Bash(cat:*)",
-      "Bash(npx eslint:*)"
+      "Bash(npx eslint:*)",
+      "Bash(timeout 180 npm run generate:test:all)",
+      "Bash(tee:*)"
     ],
     "deny": [],
     "ask": []

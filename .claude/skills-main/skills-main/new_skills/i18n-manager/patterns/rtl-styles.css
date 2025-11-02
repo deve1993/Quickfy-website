@@ -1,0 +1,351 @@
+/* RTL (Right-to-Left) CSS Patterns and Utilities */
+
+/* ============================================
+   CSS Logical Properties (Automatic RTL)
+   ============================================ */
+
+/* ✅ Use logical properties - they automatically flip for RTL */
+
+.container {
+  /* Instead of margin-left/margin-right */
+  margin-inline-start: 20px;
+  margin-inline-end: 10px;
+
+  /* Instead of padding-left/padding-right */
+  padding-inline-start: 15px;
+  padding-inline-end: 15px;
+
+  /* Instead of border-left/border-right */
+  border-inline-start: 2px solid black;
+  border-inline-end: 1px solid gray;
+
+  /* Horizontal and vertical shorthands */
+  margin-inline: 20px 10px;   /* horizontal margins */
+  padding-block: 10px 5px;    /* vertical padding */
+}
+
+.text {
+  /* Instead of text-align: left/right */
+  text-align: start;  /* left in LTR, right in RTL */
+  text-align: end;    /* right in LTR, left in RTL */
+}
+
+.positioned {
+  /* Instead of left/right */
+  inset-inline-start: 10px;  /* left in LTR, right in RTL */
+  inset-inline-end: 10px;    /* right in LTR, left in RTL */
+}
+
+/* ============================================
+   Direction-Specific Styles
+   ============================================ */
+
+/* LTR-specific styles */
+[dir="ltr"] .element {
+  margin-left: 20px;
+}
+
+/* RTL-specific styles */
+[dir="rtl"] .element {
+  margin-right: 20px;
+}
+
+/* ============================================
+   Mirroring Icons and Images
+   ============================================ */
+
+/* Icons that should flip in RTL */
+[dir="rtl"] .icon-arrow,
+[dir="rtl"] .icon-chevron,
+[dir="rtl"] .icon-menu {
+  transform: scaleX(-1);
+}
+
+/* Icons that should NOT flip (symmetric or universal) */
+.icon-close,
+.icon-download,
+.icon-upload,
+.icon-check,
+.icon-plus,
+.icon-minus,
+.icon-search {
+  /* Do not flip these */
+}
+
+/* Directional icons with explicit variants */
+.icon-arrow-right {
+  background-image: url('/icons/arrow-right.svg');
+}
+
+[dir="rtl"] .icon-arrow-right {
+  background-image: url('/icons/arrow-left.svg');
+}
+
+/* ============================================
+   Flexbox and Grid in RTL
+   ============================================ */
+
+/* Flexbox automatically respects RTL */
+.flex-container {
+  display: flex;
+  flex-direction: row; /* Automatically reverses in RTL */
+}
+
+/* Grid with logical areas */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "sidebar main"
+    "sidebar footer";
+}
+
+[dir="rtl"] .grid-container {
+  grid-template-areas:
+    "main sidebar"
+    "footer sidebar";
+}
+
+/* ============================================
+   Shadows and Transforms
+   ============================================ */
+
+.card {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+[dir="rtl"] .card {
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.rotated {
+  transform: rotate(45deg);
+}
+
+[dir="rtl"] .rotated {
+  transform: rotate(-45deg);
+}
+
+/* ============================================
+   Text Input and Forms
+   ============================================ */
+
+input[type="text"],
+input[type="email"],
+textarea {
+  text-align: start;
+  direction: inherit;
+}
+
+/* Number inputs should always be LTR */
+input[type="number"],
+input[type="tel"] {
+  direction: ltr;
+  text-align: start;
+}
+
+/* ============================================
+   Navigation and Menus
+   ============================================ */
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  margin-inline-end: 20px;
+}
+
+.nav-item:last-child {
+  margin-inline-end: 0;
+}
+
+.dropdown-menu {
+  inset-inline-start: 0;
+  text-align: start;
+}
+
+[dir="rtl"] .dropdown-menu {
+  inset-inline-start: auto;
+  inset-inline-end: 0;
+}
+
+/* ============================================
+   Scrollbars
+   ============================================ */
+
+/* Most browsers handle scrollbars automatically in RTL */
+.scrollable {
+  overflow-x: auto;
+}
+
+/* Safari needs explicit direction for scrollbar */
+[dir="rtl"] .scrollable {
+  direction: rtl;
+}
+
+/* ============================================
+   Animation Directions
+   ============================================ */
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideInFromLeft 0.3s ease-out;
+}
+
+[dir="rtl"] .slide-in {
+  animation: slideInFromRight 0.3s ease-out;
+}
+
+/* ============================================
+   BiDi Text (Mixed LTR/RTL Content)
+   ============================================ */
+
+/* Force LTR for specific elements */
+.ltr-content {
+  direction: ltr;
+  text-align: start;
+}
+
+/* Force RTL for specific elements */
+.rtl-content {
+  direction: rtl;
+  text-align: start;
+}
+
+/* Isolate BiDi content */
+.bidi-isolate {
+  unicode-bidi: isolate;
+}
+
+/* ============================================
+   Common Utility Classes
+   ============================================ */
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.float-start {
+  float: inline-start;
+}
+
+.float-end {
+  float: inline-end;
+}
+
+.ms-1 { margin-inline-start: 0.25rem; }
+.ms-2 { margin-inline-start: 0.5rem; }
+.ms-3 { margin-inline-start: 1rem; }
+.ms-4 { margin-inline-start: 1.5rem; }
+
+.me-1 { margin-inline-end: 0.25rem; }
+.me-2 { margin-inline-end: 0.5rem; }
+.me-3 { margin-inline-end: 1rem; }
+.me-4 { margin-inline-end: 1.5rem; }
+
+.ps-1 { padding-inline-start: 0.25rem; }
+.ps-2 { padding-inline-start: 0.5rem; }
+.ps-3 { padding-inline-start: 1rem; }
+.ps-4 { padding-inline-start: 1.5rem; }
+
+.pe-1 { padding-inline-end: 0.25rem; }
+.pe-2 { padding-inline-end: 0.5rem; }
+.pe-3 { padding-inline-end: 1rem; }
+.pe-4 { padding-inline-end: 1.5rem; }
+
+.border-start {
+  border-inline-start: 1px solid currentColor;
+}
+
+.border-end {
+  border-inline-end: 1px solid currentColor;
+}
+
+/* ============================================
+   RTL Testing Utilities
+   ============================================ */
+
+/* Temporarily force RTL for testing */
+.force-rtl {
+  direction: rtl !important;
+}
+
+/* Highlight direction-sensitive elements */
+.debug-rtl [dir="rtl"] {
+  outline: 2px solid red;
+}
+
+.debug-ltr [dir="ltr"] {
+  outline: 2px solid blue;
+}
+
+/* ============================================
+   Browser-Specific Fixes
+   ============================================ */
+
+/* Safari RTL scrollbar fix */
+@supports (-webkit-appearance: none) {
+  [dir="rtl"] .scrollable {
+    transform: scaleX(-1);
+  }
+
+  [dir="rtl"] .scrollable > * {
+    transform: scaleX(-1);
+  }
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+
+@media print {
+  [dir="rtl"] {
+    direction: rtl;
+  }
+
+  [dir="rtl"] body {
+    text-align: right;
+  }
+}
+
+/* ============================================
+   Best Practices Summary
+   ============================================ */
+
+/*
+✅ DO:
+- Use CSS logical properties (margin-inline-start, etc.)
+- Use start/end instead of left/right
+- Test with real RTL languages (Arabic, Hebrew)
+- Mirror directional UI elements (arrows, icons)
+- Use unicode-bidi: isolate for mixed content
+
+❌ DON'T:
+- Hard-code left/right in CSS
+- Forget to flip directional icons
+- Assume all text is one direction
+- Use absolute positioning without logical properties
+- Ignore text input direction
+*/
