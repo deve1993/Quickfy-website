@@ -80,7 +80,6 @@ export default function BrandIdentityPage() {
     updateToneOfVoice,
     reset,
     saveBrand,
-    applyTheme,
   } = useBrandStore();
 
   const [mainTab, setMainTab] = useState<"strategy" | "visual">("strategy");
@@ -154,14 +153,14 @@ export default function BrandIdentityPage() {
     setIsSaving(true);
     try {
       await saveBrand();
-      applyTheme();
+      // Note: No need to apply theme globally - brand DNA is only used in preview components
       toast.success("Brand saved successfully!");
     } catch (error) {
       console.error("Failed to save brand:", error);
       toast.error(
         `Failed to save brand: ${error instanceof Error ? error.message : "Unknown error"}`
       );
-    } finally {
+    } finally{
       setIsSaving(false);
     }
   };
@@ -175,7 +174,7 @@ export default function BrandIdentityPage() {
     setIsResetting(true);
     try {
       reset();
-      applyTheme();
+      // Note: No need to apply theme globally - brand DNA is only used in preview components
       // Update originalBrand to new default (M6 fix)
       const defaultBrand = getDefaultBrand();
       setOriginalBrand(defaultBrand);
@@ -248,7 +247,7 @@ export default function BrandIdentityPage() {
       setIsImporting(true);
       try {
         setBrand(pendingImportBrand);
-        applyTheme();
+        // Note: No need to apply theme globally - brand DNA is only used in preview components
         // Update originalBrand after successful import
         setOriginalBrand(pendingImportBrand);
         originalBrandRef.current = pendingImportBrand;
@@ -275,7 +274,7 @@ export default function BrandIdentityPage() {
     if (pendingTemplate) {
       try {
         setBrand(pendingTemplate.brandDNA);
-        applyTheme();
+        // Note: No need to apply theme globally - brand DNA is only used in preview components
         // Update originalBrand after template selection
         setOriginalBrand(pendingTemplate.brandDNA);
         originalBrandRef.current = pendingTemplate.brandDNA;
@@ -407,8 +406,8 @@ export default function BrandIdentityPage() {
         <Alert className="relative pr-12">
           <Info className="w-4 h-4" />
           <AlertDescription className="text-sm">
-            Le modifiche sono applicate in tempo reale per l'anteprima. Clicca <strong>Salva Modifiche</strong> per
-            applicarle permanentemente alla tua applicazione.
+            Le modifiche sono applicate solo all&apos;anteprima del brand, non all&apos;interfaccia dell&apos;app. Clicca <strong>Salva Modifiche</strong> per
+            salvare il tuo Brand DNA e usarlo per generare contenuti.
           </AlertDescription>
           <Button
             variant="ghost"

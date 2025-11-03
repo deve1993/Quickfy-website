@@ -1,13 +1,16 @@
 /**
  * Brand Provider
  *
- * App-wide provider that initializes and manages brand DNA theme system.
- * Automatically loads brand from storage and applies theme on mount.
+ * App-wide provider that initializes and manages brand DNA storage.
+ * Loads brand from localStorage but does NOT apply it globally to the app.
+ *
+ * Note: Brand DNA colors/fonts are applied ONLY in preview components,
+ * not to the entire application UI.
  */
 
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useBrandStore } from "@/store/useBrandStore";
 
 interface BrandProviderProps {
@@ -22,8 +25,8 @@ interface BrandProviderProps {
  *
  * Features:
  * - Auto-loads brand from localStorage on mount
- * - Applies brand theme (CSS variables + fonts) automatically
- * - Re-applies theme when brand DNA changes
+ * - Stores brand DNA in Zustand store
+ * - Does NOT apply brand theme globally (only in preview components)
  * - Handles client-side only initialization (SSR safe)
  *
  * @example
@@ -39,10 +42,7 @@ interface BrandProviderProps {
  * ```
  */
 export function BrandProvider({ children }: BrandProviderProps) {
-  const [isInitialized, setIsInitialized] = useState(false);
-  const brandDNA = useBrandStore((state) => state.brandDNA);
   const loadBrand = useBrandStore((state) => state.loadBrand);
-  const applyTheme = useBrandStore((state) => state.applyTheme);
 
   // Initialize brand on mount (client-side only)
   useEffect(() => {
@@ -50,31 +50,16 @@ export function BrandProvider({ children }: BrandProviderProps) {
       try {
         // Load brand from localStorage
         await loadBrand();
-
-        // Mark as initialized
-        setIsInitialized(true);
       } catch (error) {
         console.error("Failed to initialize brand:", error);
-        setIsInitialized(true); // Still mark as initialized to not block rendering
       }
     };
 
     initialize();
   }, [loadBrand]);
 
-  // Apply theme whenever brand DNA changes
-  useEffect(() => {
-    if (isInitialized && brandDNA) {
-      try {
-        applyTheme();
-      } catch (error) {
-        console.error("Failed to apply brand theme:", error);
-      }
-    }
-  }, [isInitialized, brandDNA, applyTheme]);
-
   // Render children immediately (no loading state needed)
-  // Theme will be applied progressively as brand loads
+  // Brand will be loaded progressively from storage
   return <>{children}</>;
 }
 

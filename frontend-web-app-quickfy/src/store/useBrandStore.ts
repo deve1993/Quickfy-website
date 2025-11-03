@@ -27,7 +27,6 @@ import {
   validateImportedJSON,
 } from "@/lib/brand/brandValidator";
 import {
-  applyBrandVariables,
   loadGoogleFonts,
 } from "@/lib/brand/brandVariables";
 
@@ -511,8 +510,18 @@ export const useBrandStore = create<BrandState & BrandActions>()(
 
       /**
        * Apply brand theme to DOM
+       *
+       * @deprecated This function is deprecated and should not be used.
+       * Brand DNA variables are now applied only to preview components via
+       * .brand-preview-scope selector, not globally to the entire app.
+       *
+       * Use BrandPreview component which handles scoped CSS automatically.
        */
       applyTheme: () => {
+        console.warn(
+          "[DEPRECATED] applyTheme() is deprecated. Brand DNA is now applied only to preview components, not globally."
+        );
+
         const { brandDNA } = get();
         if (!brandDNA) {
           console.warn("No brand data to apply");
@@ -520,18 +529,19 @@ export const useBrandStore = create<BrandState & BrandActions>()(
         }
 
         try {
-          // Apply CSS variables
-          applyBrandVariables(brandDNA);
+          // Load Google Fonts (but don't apply them globally)
+          // This only loads the font files from Google Fonts
+          loadGoogleFonts(brandDNA, false);
 
-          // Load Google Fonts
-          loadGoogleFonts(brandDNA);
+          // Note: CSS variables are NO LONGER applied globally
+          // They are applied with .brand-preview-scope selector by BrandPreview component
         } catch (error) {
-          console.error("Failed to apply brand theme:", error);
+          console.error("Failed to load brand fonts:", error);
           set({
             error:
               error instanceof Error
                 ? error.message
-                : "Failed to apply brand theme",
+                : "Failed to load brand fonts",
           });
         }
       },

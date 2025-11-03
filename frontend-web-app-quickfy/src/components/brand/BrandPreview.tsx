@@ -152,7 +152,7 @@ export function BrandPreview({
             <div
               id="brand-preview-container"
               className={cn(
-                "mx-auto transition-all duration-300",
+                "brand-preview-scope mx-auto transition-all duration-300",
                 previewTheme === "dark" && "dark",
                 scale !== "desktop" && "my-4"
               )}

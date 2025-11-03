@@ -11,12 +11,12 @@ import type { BrandDNA, ColorPalette } from "@/types/brand";
  * Generate CSS variables for color palette
  *
  * @param palette - Color palette object
- * @param prefix - CSS variable prefix (e.g., "--")
+ * @param prefix - CSS variable prefix (e.g., "--brand-")
  * @returns CSS variable declarations
  */
 function generateColorVariables(
   palette: ColorPalette,
-  prefix: string = "--"
+  prefix: string = "--brand-"
 ): Record<string, string> {
   return {
     [`${prefix}background`]: palette.background,
@@ -57,45 +57,64 @@ export function generateCSSVariables(brandDNA: BrandDNA): Record<string, string>
   const variables: Record<string, string> = {};
 
   // Color variables
-  const lightColors = generateColorVariables(brandDNA.colors.light);
-  Object.assign(variables, lightColors);
+  // Generate BOTH --brand-* and original names for backwards compatibility with Tailwind
+  const brandColors = generateColorVariables(brandDNA.colors.light, "--brand-");
+  const originalColors = generateColorVariables(brandDNA.colors.light, "--");
+  Object.assign(variables, brandColors, originalColors);
 
-  // Chart colors
+  // Chart colors (both versions)
   brandDNA.colors.chart.forEach((color, index) => {
-    variables[`--chart-${index + 1}`] = color;
+    variables[`--brand-chart-${index + 1}`] = color;
+    variables[`--chart-${index + 1}`] = color; // For Tailwind compatibility
   });
 
-  // Typography variables
-  variables["--font-heading"] = `${brandDNA.typography.fontHeading.name}, ${brandDNA.typography.fontHeading.fallback.join(", ")}`;
-  variables["--font-body"] = `${brandDNA.typography.fontBody.name}, ${brandDNA.typography.fontBody.fallback.join(", ")}`;
-  variables["--font-mono"] = `${brandDNA.typography.fontMono.name}, ${brandDNA.typography.fontMono.fallback.join(", ")}`;
+  // Typography variables (both versions)
+  const headingFont = `${brandDNA.typography.fontHeading.name}, ${brandDNA.typography.fontHeading.fallback.join(", ")}`;
+  const bodyFont = `${brandDNA.typography.fontBody.name}, ${brandDNA.typography.fontBody.fallback.join(", ")}`;
+  const monoFont = `${brandDNA.typography.fontMono.name}, ${brandDNA.typography.fontMono.fallback.join(", ")}`;
 
-  // Font sizes
+  variables["--brand-font-heading"] = headingFont;
+  variables["--font-heading"] = headingFont; // For Tailwind compatibility
+  variables["--brand-font-body"] = bodyFont;
+  variables["--font-body"] = bodyFont; // For Tailwind compatibility
+  variables["--brand-font-mono"] = monoFont;
+  variables["--font-mono"] = monoFont; // For Tailwind compatibility
+
+  // Font sizes (both versions)
   Object.entries(brandDNA.typography.scale).forEach(([key, value]) => {
-    variables[`--font-size-${key}`] = value;
+    variables[`--brand-font-size-${key}`] = value;
+    variables[`--font-size-${key}`] = value; // For Tailwind compatibility
   });
 
-  // Line heights
+  // Line heights (both versions)
+  variables["--brand-line-height-tight"] = String(brandDNA.typography.lineHeight.tight);
   variables["--line-height-tight"] = String(brandDNA.typography.lineHeight.tight);
+  variables["--brand-line-height-normal"] = String(brandDNA.typography.lineHeight.normal);
   variables["--line-height-normal"] = String(brandDNA.typography.lineHeight.normal);
+  variables["--brand-line-height-relaxed"] = String(brandDNA.typography.lineHeight.relaxed);
   variables["--line-height-relaxed"] = String(brandDNA.typography.lineHeight.relaxed);
 
-  // Letter spacing
+  // Letter spacing (both versions)
+  variables["--brand-letter-spacing-tight"] = brandDNA.typography.letterSpacing.tight;
   variables["--letter-spacing-tight"] = brandDNA.typography.letterSpacing.tight;
+  variables["--brand-letter-spacing-normal"] = brandDNA.typography.letterSpacing.normal;
   variables["--letter-spacing-normal"] = brandDNA.typography.letterSpacing.normal;
+  variables["--brand-letter-spacing-wide"] = brandDNA.typography.letterSpacing.wide;
   variables["--letter-spacing-wide"] = brandDNA.typography.letterSpacing.wide;
 
-  // Spacing variables
+  // Spacing variables (both versions)
   Object.entries(brandDNA.spacing.radius).forEach(([key, value]) => {
     if (key === "lg") {
-      // Main radius variable (default)
-      variables["--radius"] = value;
+      variables["--brand-radius"] = value;
+      variables["--radius"] = value; // For Tailwind compatibility
     }
-    variables[`--radius-${key}`] = value;
+    variables[`--brand-radius-${key}`] = value;
+    variables[`--radius-${key}`] = value; // For Tailwind compatibility
   });
 
   Object.entries(brandDNA.spacing.spacing).forEach(([key, value]) => {
-    variables[`--spacing-${key}`] = value;
+    variables[`--brand-spacing-${key}`] = value;
+    variables[`--spacing-${key}`] = value; // For Tailwind compatibility
   });
 
   return variables;
@@ -111,12 +130,15 @@ export function generateDarkThemeVariables(brandDNA: BrandDNA): Record<string, s
   const variables: Record<string, string> = {};
 
   // Dark theme colors
-  const darkColors = generateColorVariables(brandDNA.colors.dark);
-  Object.assign(variables, darkColors);
+  // Generate BOTH --brand-* and original names for backwards compatibility with Tailwind
+  const brandDarkColors = generateColorVariables(brandDNA.colors.dark, "--brand-");
+  const originalDarkColors = generateColorVariables(brandDNA.colors.dark, "--");
+  Object.assign(variables, brandDarkColors, originalDarkColors);
 
-  // Chart colors remain the same
+  // Chart colors remain the same (both versions)
   brandDNA.colors.chart.forEach((color, index) => {
-    variables[`--chart-${index + 1}`] = color;
+    variables[`--brand-chart-${index + 1}`] = color;
+    variables[`--chart-${index + 1}`] = color; // For Tailwind compatibility
   });
 
   return variables;
@@ -152,14 +174,14 @@ export function variablesToCSS(
  *
  * @example
  * const css = generateBrandCSS(brandDNA);
- * // Includes :root for light theme and .dark for dark theme
+ * // Includes .brand-preview-scope for light theme and .brand-preview-scope.dark for dark theme
  */
 export function generateBrandCSS(brandDNA: BrandDNA): string {
   const lightVars = generateCSSVariables(brandDNA);
   const darkVars = generateDarkThemeVariables(brandDNA);
 
-  const lightCSS = variablesToCSS(lightVars, ":root");
-  const darkCSS = variablesToCSS(darkVars, ".dark");
+  const lightCSS = variablesToCSS(lightVars, ".brand-preview-scope");
+  const darkCSS = variablesToCSS(darkVars, ".brand-preview-scope.dark");
 
   return `${lightCSS}\n\n${darkCSS}`;
 }
@@ -205,8 +227,9 @@ export function removeBrandVariables(elementId: string = "brand-variables"): voi
  * Load Google Fonts
  *
  * @param brandDNA - Brand DNA configuration
+ * @param applyGlobally - Whether to apply font variables to :root (default: false)
  */
-export function loadGoogleFonts(brandDNA: BrandDNA): void {
+export function loadGoogleFonts(brandDNA: BrandDNA, applyGlobally: boolean = false): void {
   const fonts = [
     brandDNA.typography.fontHeading,
     brandDNA.typography.fontBody,
@@ -229,20 +252,23 @@ export function loadGoogleFonts(brandDNA: BrandDNA): void {
     }
   });
 
-  // Apply font families to root
-  const root = document.documentElement;
-  root.style.setProperty(
-    "--font-heading",
-    `${brandDNA.typography.fontHeading.name}, ${brandDNA.typography.fontHeading.fallback.join(", ")}`
-  );
-  root.style.setProperty(
-    "--font-body",
-    `${brandDNA.typography.fontBody.name}, ${brandDNA.typography.fontBody.fallback.join(", ")}`
-  );
-  root.style.setProperty(
-    "--font-mono",
-    `${brandDNA.typography.fontMono.name}, ${brandDNA.typography.fontMono.fallback.join(", ")}`
-  );
+  // Only apply font families to root if explicitly requested
+  // (for backwards compatibility or global font changes)
+  if (applyGlobally) {
+    const root = document.documentElement;
+    root.style.setProperty(
+      "--font-heading",
+      `${brandDNA.typography.fontHeading.name}, ${brandDNA.typography.fontHeading.fallback.join(", ")}`
+    );
+    root.style.setProperty(
+      "--font-body",
+      `${brandDNA.typography.fontBody.name}, ${brandDNA.typography.fontBody.fallback.join(", ")}`
+    );
+    root.style.setProperty(
+      "--font-mono",
+      `${brandDNA.typography.fontMono.name}, ${brandDNA.typography.fontMono.fallback.join(", ")}`
+    );
+  }
 }
 
 /**
