@@ -65,7 +65,16 @@
       "Bash(cat:*)",
       "Bash(npx eslint:*)",
       "Bash(timeout 180 npm run generate:test:all)",
-      "Bash(tee:*)"
+      "Bash(tee:*)",
+      "Bash(npx create-next-app:*)",
+      "Bash(npx shadcn@latest add:*)",
+      "Bash(timeout:*)",
+      "Bash(wc -l \"c:\\VSC\\UI library\\frontend-web-app-quickfy\\src\"/**/*.{ts,tsx})",
+      "Skill(component-tester)",
+      "Bash(git rm:*)",
+      "Bash(rd /s /q \"frontend-web-app-quickfy\\.git\" 2)",
+      "Bash(nul)",
+      "Bash(if exist \"frontend-web-app-quickfy\\.git\" rd /s /q \"frontend-web-app-quickfy\\.git\")"
     ],
     "deny": [],
     "ask": []

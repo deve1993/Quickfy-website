@@ -1,0 +1,153 @@
+
+> frontend-web-app-quickfy@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.33
+  - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+
+./src/app/dashboard/brand/page.tsx
+23:3  Warning: 'DropdownMenuSeparator' is defined but never used.  @typescript-eslint/no-unused-vars
+103:64  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+140:6  Warning: React Hook useEffect has a missing dependency: 'handleSave'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+151:6  Warning: React Hook useEffect has a missing dependency: 'handleSave'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+221:34  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/app/dashboard/goals/new/page.tsx
+157:56  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+178:54  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+199:26  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+199:47  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+252:51  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+270:40  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+287:41  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+./src/app/dashboard/reviews/page.tsx
+131:73  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+./src/app/dashboard/settings/page.tsx
+80:34  Warning: '_values' is defined but never used.  @typescript-eslint/no-unused-vars
+102:36  Warning: '_values' is defined but never used.  @typescript-eslint/no-unused-vars
+129:55  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+./src/app/dashboard/social/page.tsx
+80:16  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+80:90  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+./src/app/error.tsx
+38:72  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+./src/app/global-error.tsx
+56:53  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+./src/components/animations/FadeIn.tsx
+52:33  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/components/brand/AssetManager.tsx
+169:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+184:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+199:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/brand/BeforeAfter.tsx
+65:77  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/components/brand/FontSelector.tsx
+167:85  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/components/brand/LogoPreview.tsx
+73:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+92:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+105:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+158:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/brand/LogoUploader.tsx
+150:5  Warning: React Hook useCallback has a missing dependency: 'getOptimizationSettings'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+226:13  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/brand/PreviewControls.tsx
+86:74  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/components/brand/StrategyEditor.tsx
+51:6  Warning: React Hook useEffect has missing dependencies: 'onChange' and 'strategy'. Either include them or remove the dependency array. If 'onChange' changes too often, find the parent component that defines it and wrap that definition in useCallback.  react-hooks/exhaustive-deps
+58:6  Warning: React Hook useEffect has missing dependencies: 'onChange' and 'strategy'. Either include them or remove the dependency array. If 'onChange' changes too often, find the parent component that defines it and wrap that definition in useCallback.  react-hooks/exhaustive-deps
+65:6  Warning: React Hook useEffect has missing dependencies: 'onChange' and 'strategy'. Either include them or remove the dependency array. If 'onChange' changes too often, find the parent component that defines it and wrap that definition in useCallback.  react-hooks/exhaustive-deps
+
+./src/components/brand/TypographyScale.tsx
+108:17  Warning: '_showAdvanced' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+219:71  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/components/chatbot/ChatbotWindow.tsx
+17:48  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+139:6  Warning: React Hook useEffect has missing dependencies: 'addMessage' and 'markWelcomeSeen'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/components/dashboard/ReviewCard.tsx
+66:15  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/error-boundary/ErrorBoundary.tsx
+104:76  Warning: `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`.  react/no-unescaped-entities
+
+./src/components/ui/scroll-area.tsx
+4:11  Warning: An interface declaring no members is equivalent to its supertype.  @typescript-eslint/no-empty-object-type
+
+./src/hooks/use-toast.ts
+15:7  Warning: 'actionTypes' is assigned a value but only used as a type.  @typescript-eslint/no-unused-vars
+
+./src/hooks/useDebounce.ts
+62:58  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+62:68  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/hooks/useMemoizedCallback.ts
+18:6  Warning: React Hook useMemo has a missing dependency: 'filterFn'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+18:14  Warning: React Hook useMemo has a spread element in its dependency array. This means we can't statically verify whether you've passed the correct dependencies.  react-hooks/exhaustive-deps
+32:6  Warning: React Hook useMemo has a missing dependency: 'compareFn'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+32:14  Warning: React Hook useMemo has a spread element in its dependency array. This means we can't statically verify whether you've passed the correct dependencies.  react-hooks/exhaustive-deps
+43:10  Warning: React Hook useMemo has a missing dependency: 'computeFn'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+73:58  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+73:68  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/lib/brand/brandExporter.ts
+203:12  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+232:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+284:12  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/lib/brand/brandImporter.ts
+132:12  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+148:39  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+217:29  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+217:35  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+313:12  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+314:13  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+318:14  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+319:15  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/lib/brand/brandValidator.ts
+397:13  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+400:12  Warning: 'e' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/lib/brand/imageOptimizer.ts
+198:18  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/lib/i18n/useTranslations.ts
+17:16  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/test/setup.ts
+27:31  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+58:6  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+Failed to compile.
+
+./src/app/dashboard/brand/page.tsx:23:3
+Type error: 'DropdownMenuSeparator' is declared but its value is never read.
+
+[0m [90m 21 |[39m   [33mDropdownMenuItem[39m[33m,[39m[0m
+[0m [90m 22 |[39m   [33mDropdownMenuTrigger[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 23 |[39m   [33mDropdownMenuSeparator[39m[33m,[39m[0m
+[0m [90m    |[39m   [31m[1m^[22m[39m[0m
+[0m [90m 24 |[39m } [36mfrom[39m [32m"@/components/ui/dropdown-menu"[39m[33m;[39m[0m
+[0m [90m 25 |[39m [36mimport[39m {[0m
+[0m [90m 26 |[39m   [33mPalette[39m[33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null
