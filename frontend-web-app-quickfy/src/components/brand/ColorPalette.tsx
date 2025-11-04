@@ -9,6 +9,8 @@
 
 import { useState } from "react";
 import { ColorPicker } from "./ColorPicker";
+import { SimpleColorPicker } from "./SimpleColorPicker";
+import { ColorPresets, type ColorPreset } from "./ColorPresets";
 import { ContrastChecker } from "./ContrastChecker";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -37,6 +39,11 @@ interface ColorPaletteProps {
    * Optional callback to reset to defaults
    */
   onReset?: () => void;
+  /**
+   * Enable advanced mode with all color controls
+   * @default false
+   */
+  advancedMode?: boolean;
 }
 
 /**
@@ -125,13 +132,22 @@ export function ColorPalette({
   onLightColorsChange,
   onDarkColorsChange,
   onReset,
+  advancedMode = false,
 }: ColorPaletteProps) {
   const [activeTheme, setActiveTheme] = useState<"light" | "dark">("light");
-  // const [expandedColor, setExpandedColor] = useState<string | null>(null);
 
-  const currentColors = activeTheme === "light" ? lightColors : darkColors;
-  const onColorsChange =
-    activeTheme === "light" ? onLightColorsChange : onDarkColorsChange;
+  // In simple mode, always use light colors
+  const currentColors = advancedMode
+    ? activeTheme === "light"
+      ? lightColors
+      : darkColors
+    : lightColors;
+
+  const onColorsChange = advancedMode
+    ? activeTheme === "light"
+      ? onLightColorsChange
+      : onDarkColorsChange
+    : onLightColorsChange;
 
   // Handle color change
   const handleColorChange = (key: keyof ColorPaletteType, value: ColorValue) => {
@@ -141,10 +157,68 @@ export function ColorPalette({
     });
   };
 
+  // Handle preset selection
+  const handlePresetSelect = (preset: ColorPreset) => {
+    onLightColorsChange({
+      ...lightColors,
+      primary: preset.colors.primary,
+      secondary: preset.colors.secondary,
+      accent: preset.colors.accent,
+    });
+  };
+
   // Group colors by category
   const brandColors = COLOR_DEFINITIONS.filter((c) => c.category === "brand");
   const semanticColors = COLOR_DEFINITIONS.filter((c) => c.category === "semantic");
   const systemColors = COLOR_DEFINITIONS.filter((c) => c.category === "system");
+
+  // Simple mode: render simplified interface
+  if (!advancedMode) {
+    return (
+      <div className="space-y-6">
+        {/* Header */}
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Palette className="w-5 h-5 text-primary" />
+            <h3 className="text-lg font-semibold">Colori Brand</h3>
+          </div>
+        </div>
+
+        {/* Color Presets */}
+        <ColorPresets
+          currentColors={{
+            primary: lightColors.primary,
+            secondary: lightColors.secondary,
+            accent: lightColors.accent,
+          }}
+          onSelect={handlePresetSelect}
+        />
+
+        {/* Brand Colors with Simple Picker */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-base">I Tuoi Colori</CardTitle>
+            <CardDescription>
+              Personalizza i 3 colori principali del tuo brand
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            {brandColors.map(({ key, label, description }) => (
+              <SimpleColorPicker
+                key={key}
+                label={label}
+                description={description}
+                value={currentColors[key]}
+                onChange={(value) => handleColorChange(key, value)}
+              />
+            ))}
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+
+  // Advanced mode: render full interface (original)
 
   return (
     <div className="space-y-6">

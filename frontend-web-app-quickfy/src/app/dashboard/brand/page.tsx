@@ -47,6 +47,7 @@ import { FontPreview } from "@/components/brand/FontPreview";
 import { TypographyScale } from "@/components/brand/TypographyScale";
 import { AssetManager } from "@/components/brand/AssetManager";
 import { TemplateSelector } from "@/components/brand/TemplateSelector";
+import { AdvancedModeToggle, useAdvancedMode } from "@/components/brand/AdvancedModeToggle";
 
 // Brand components - Strategic DNA
 import { StrategyEditor } from "@/components/brand/StrategyEditor";
@@ -80,7 +81,10 @@ export default function BrandIdentityPage() {
   } = useBrandStore();
 
   const [mainTab, setMainTab] = useState<"strategy" | "visual">("strategy");
-  const [visualTab, setVisualTab] = useState("overview");
+  const [visualTab, setVisualTab] = useState("templates");
+
+  // Advanced mode state with localStorage persistence
+  const [advancedMode, setAdvancedMode] = useAdvancedMode();
 
   // Loading states (M1 fix)
   const [isSaving, setIsSaving] = useState(false);
@@ -323,7 +327,12 @@ export default function BrandIdentityPage() {
               <RotateCcw className={`w-4 h-4 mr-2 ${isResetting ? "animate-spin" : ""}`} />
               {isResetting ? "Ripristino..." : "Ripristina Predefiniti"}
             </Button>
-            <div className="flex gap-2 ml-auto">
+            <div className="flex gap-2 ml-auto items-center">
+              {/* Advanced Mode Toggle */}
+              <AdvancedModeToggle value={advancedMode} onChange={setAdvancedMode} />
+
+              <div className="h-6 w-px bg-border" /> {/* Separator */}
+
               <Button variant="outline" size="sm" onClick={handleImport} disabled={isImporting}>
                 <Upload className={`w-4 h-4 mr-2 ${isImporting ? "animate-pulse" : ""}`} />
                 {isImporting ? "Importazione..." : "Importa"}
@@ -440,10 +449,10 @@ export default function BrandIdentityPage() {
             {/* ========== TAB 2: VISUAL IDENTITY ========== */}
             <TabsContent value="visual" className="mt-6">
               <Tabs value={visualTab} onValueChange={setVisualTab}>
-                <TabsList className="grid w-full grid-cols-5">
-                  <TabsTrigger value="overview">
+                <TabsList className="grid w-full grid-cols-4">
+                  <TabsTrigger value="templates">
                     <Sparkles className="w-4 h-4 mr-2" />
-                    Panoramica
+                    Modelli
                   </TabsTrigger>
                   <TabsTrigger value="colors">
                     <Palette className="w-4 h-4 mr-2" />
@@ -456,10 +465,6 @@ export default function BrandIdentityPage() {
                   <TabsTrigger value="assets">
                     <ImageIcon className="w-4 h-4 mr-2" />
                     Risorse
-                  </TabsTrigger>
-                  <TabsTrigger value="templates">
-                    <Sparkles className="w-4 h-4 mr-2" />
-                    Modelli
                   </TabsTrigger>
                 </TabsList>
 
@@ -580,6 +585,7 @@ export default function BrandIdentityPage() {
                       const defaultBrand = getDefaultBrand();
                       updateColors(defaultBrand.colors);
                     }}
+                    advancedMode={advancedMode}
                   />
                 </TabsContent>
 
