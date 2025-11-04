@@ -516,3 +516,13 @@ export interface Toast {
   description?: string;
   duration?: number;
 }
+
+// Re-export notification system types
+export type {
+  Notification,
+  NotificationCategory,
+  NotificationFilter,
+  NotificationMetadata,
+  NotificationCategoryConfig,
+  NotificationCategoryConfigMap,
+} from './notifications';

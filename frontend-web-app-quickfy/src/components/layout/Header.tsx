@@ -1,6 +1,6 @@
 "use client";
 
-import { Bell, Building2, ChevronDown, LogOut, Menu, User } from "lucide-react";
+import { Building2, ChevronDown, LogOut, Menu, User } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import {
@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { NotificationDropdown } from "@/components/notifications/NotificationDropdown";
 import { useAuthStore } from "@/store/useAuthStore";
 import { useToast } from "@/store/useToastStore";
 import { useTranslations } from "@/lib/i18n/useTranslations";
@@ -101,13 +102,7 @@ export function Header({ onMenuClick }: HeaderProps) {
 
       <div className="flex items-center gap-2">
         {/* Notifications */}
-        <Button variant="ghost" size="icon" className="relative" title={t("notifications")}>
-          <Bell className="h-5 w-5" />
-          <span className="absolute right-1 top-1 flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-          </span>
-        </Button>
+        <NotificationDropdown />
 
         {/* Theme Toggle - Hidden on mobile */}
         <div className="hidden md:flex">

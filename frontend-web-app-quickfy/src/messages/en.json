@@ -287,7 +287,24 @@
       "description": "Configure your notification preferences",
       "newReviews": "New reviews",
       "urgentTickets": "Urgent tickets",
-      "weeklyReports": "Weekly reports"
+      "weeklyReports": "Weekly reports",
+      "markAllRead": "Mark all as read",
+      "viewAll": "View all",
+      "empty": "No notifications",
+      "emptyDescription": "You're all caught up! No new notifications at the moment.",
+      "pageDescription": "Manage and review all your notifications in one place",
+      "unread": "Unread",
+      "read": "Read",
+      "unreadCount": "{count, plural, =1 {1 unread notification} other {# unread notifications}}",
+      "allRead": "All notifications read",
+      "filters": {
+        "all": "All",
+        "reviews": "Reviews",
+        "tickets": "Tickets",
+        "system": "System",
+        "reports": "Reports",
+        "mentions": "Mentions"
+      }
     },
     "error": "Error",
     "errorDesc": "An error occurred while saving. Please try again."
