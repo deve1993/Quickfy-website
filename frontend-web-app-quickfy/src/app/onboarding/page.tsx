@@ -9,7 +9,7 @@ import { WorkspaceForm } from "@/components/onboarding/WorkspaceForm";
 import { BillingForm } from "@/components/onboarding/BillingForm";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
-import { useToastStore } from "@/store/useToastStore";
+import { useToast } from "@/store/useToastStore";
 import type { SignupFormData } from "@/lib/validations/onboarding";
 import type { WorkspaceFormData } from "@/lib/validations/onboarding";
 import type { BillingFormData } from "@/lib/validations/onboarding";
@@ -17,7 +17,7 @@ import type { BillingFormData } from "@/lib/validations/onboarding";
 export default function OnboardingPage() {
   const router = useRouter();
   const [state, send] = useMachine(onboardingMachine);
-  const toast = useToastStore();
+  const toast = useToast();
 
   // Quando l'onboarding è completo, redirect alla dashboard
   if (state.matches('complete')) {
