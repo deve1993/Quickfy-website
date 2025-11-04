@@ -25,7 +25,6 @@ import {
   Palette,
   Type,
   Image as ImageIcon,
-  Eye,
   Download,
   Upload,
   Save,
@@ -47,9 +46,7 @@ import { FontSelector } from "@/components/brand/FontSelector";
 import { FontPreview } from "@/components/brand/FontPreview";
 import { TypographyScale } from "@/components/brand/TypographyScale";
 import { AssetManager } from "@/components/brand/AssetManager";
-import { BrandPreview } from "@/components/brand/BrandPreview";
 import { TemplateSelector } from "@/components/brand/TemplateSelector";
-import { BeforeAfter } from "@/components/brand/BeforeAfter";
 
 // Brand components - Strategic DNA
 import { StrategyEditor } from "@/components/brand/StrategyEditor";
@@ -84,8 +81,6 @@ export default function BrandIdentityPage() {
 
   const [mainTab, setMainTab] = useState<"strategy" | "visual">("strategy");
   const [visualTab, setVisualTab] = useState("overview");
-  const [showPreview, setShowPreview] = useState(true);
-  const [showComparison, setShowComparison] = useState(false);
 
   // Loading states (M1 fix)
   const [isSaving, setIsSaving] = useState(false);
@@ -103,15 +98,13 @@ export default function BrandIdentityPage() {
   // Dismissible alert state (M2 fix)
   const [isAlertDismissed, setIsAlertDismissed] = useState(false);
 
-  // Store original brand for Before/After comparison (C1 fix)
+  // Store original brand reference (C1 fix)
   const originalBrandRef = useRef(brandDNA || getDefaultBrand());
-  const [originalBrand, setOriginalBrand] = useState(brandDNA || getDefaultBrand());
 
-  // Initialize originalBrand when brandDNA is first loaded (C1 fix)
+  // Initialize originalBrandRef when brandDNA is first loaded (C1 fix)
   useEffect(() => {
     if (brandDNA && !originalBrandRef.current) {
       originalBrandRef.current = brandDNA;
-      setOriginalBrand(brandDNA);
     }
   }, [brandDNA]);
 
@@ -125,17 +118,11 @@ export default function BrandIdentityPage() {
           handleSave();
         }
       }
-      // Esc to close preview or dialogs
-      if (e.key === "Escape") {
-        if (showComparison) {
-          setShowComparison(false);
-        }
-      }
     };
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [hasUnsavedChanges, isSaving, showComparison]);
+  }, [hasUnsavedChanges, isSaving]);
 
   // Autosave (M7 fix)
   useEffect(() => {
@@ -175,9 +162,8 @@ export default function BrandIdentityPage() {
     try {
       reset();
       // Note: No need to apply theme globally - brand DNA is only used in preview components
-      // Update originalBrand to new default (M6 fix)
+      // Update originalBrandRef to new default (M6 fix)
       const defaultBrand = getDefaultBrand();
-      setOriginalBrand(defaultBrand);
       originalBrandRef.current = defaultBrand;
       toast.success("Brand reset to default settings");
     } catch (error) {
@@ -248,8 +234,7 @@ export default function BrandIdentityPage() {
       try {
         setBrand(pendingImportBrand);
         // Note: No need to apply theme globally - brand DNA is only used in preview components
-        // Update originalBrand after successful import
-        setOriginalBrand(pendingImportBrand);
+        // Update originalBrandRef after successful import
         originalBrandRef.current = pendingImportBrand;
         toast.success(`Brand "${pendingImportBrand.metadata.name}" imported successfully!`);
         setPendingImportBrand(null);
@@ -275,8 +260,7 @@ export default function BrandIdentityPage() {
       try {
         setBrand(pendingTemplate.brandDNA);
         // Note: No need to apply theme globally - brand DNA is only used in preview components
-        // Update originalBrand after template selection
-        setOriginalBrand(pendingTemplate.brandDNA);
+        // Update originalBrandRef after template selection
         originalBrandRef.current = pendingTemplate.brandDNA;
         toast.success(`Template "${pendingTemplate.name}" applied successfully!`);
         setPendingTemplate(null);
@@ -323,14 +307,6 @@ export default function BrandIdentityPage() {
                 Unsaved Changes
               </Badge>
             )}
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => setShowPreview(!showPreview)}
-            >
-              <Eye className="w-4 h-4 mr-2" />
-              {showPreview ? "Hide" : "Show"} Preview
-            </Button>
           </div>
         </div>
       </div>
@@ -422,9 +398,7 @@ export default function BrandIdentityPage() {
       )}
 
       {/* Main Content */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Left Column: Configuration */}
-        <div className="lg:col-span-2 space-y-6">
+      <div className="space-y-6">
           {/* MAIN TABS: Strategic DNA + Visual Identity */}
           <Tabs value={mainTab} onValueChange={(v) => setMainTab(v as "strategy" | "visual")}>
             <TabsList className="grid w-full grid-cols-2">
@@ -670,35 +644,6 @@ export default function BrandIdentityPage() {
               </Tabs>
             </TabsContent>
           </Tabs>
-        </div>
-
-        {/* Right Column: Preview */}
-        {showPreview && (
-          <div className="space-y-6">
-            <BrandPreview
-              brandDNA={brandDNA}
-              showControls={true}
-              initialTheme="light"
-            />
-
-            {/* Comparison Toggle */}
-            <Button
-              variant="outline"
-              className="w-full"
-              onClick={() => setShowComparison(!showComparison)}
-            >
-              {showComparison ? "Hide" : "Show"} Before/After
-            </Button>
-
-            {showComparison && (
-              <BeforeAfter
-                before={originalBrand}
-                after={brandDNA}
-                labels={{ before: "Original", after: "Current" }}
-              />
-            )}
-          </div>
-        )}
       </div>
 
       {/* Confirm Dialogs (C3 fix) */}
