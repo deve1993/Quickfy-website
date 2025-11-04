@@ -282,32 +282,32 @@
       "upgrade": "Upgradovat plán",
       "billing": "Spravovat fakturaci"
     },
-    "notifications": {
-      "title": "Oznámení",
-      "description": "Nakonfigurujte své předvolby oznámení",
-      "newReviews": "Nové recenze",
-      "urgentTickets": "Urgentní tikety",
-      "weeklyReports": "Týdenní reporty",
-      "markAllRead": "Označit vše jako přečtené",
-      "viewAll": "Zobrazit vše",
-      "empty": "Žádná oznámení",
-      "emptyDescription": "Jste aktuální! V tuto chvíli nemáte žádná nová oznámení.",
-      "pageDescription": "Spravujte a prohlížejte všechna svá oznámení na jednom místě",
-      "unread": "Nepřečtené",
-      "read": "Přečtené",
-      "unreadCount": "{count} nepřečtených",
-      "allRead": "Všechna oznámení přečtena",
-      "filters": {
-        "all": "Vše",
-        "reviews": "Recenze",
-        "tickets": "Tikety",
-        "system": "Systém",
-        "reports": "Reporty",
-        "mentions": "Zmínky"
-      }
-    },
     "error": "Chyba",
     "errorDesc": "Při ukládání došlo k chybě. Zkuste to prosím znovu."
+  },
+  "notifications": {
+    "title": "Oznámení",
+    "description": "Nakonfigurujte své předvolby oznámení",
+    "newReviews": "Nové recenze",
+    "urgentTickets": "Urgentní tikety",
+    "weeklyReports": "Týdenní reporty",
+    "markAllRead": "Označit vše jako přečtené",
+    "viewAll": "Zobrazit vše",
+    "empty": "Žádná oznámení",
+    "emptyDescription": "Jste aktuální! V tuto chvíli nemáte žádná nová oznámení.",
+    "pageDescription": "Spravujte a prohlížejte všechna svá oznámení na jednom místě",
+    "unread": "Nepřečtené",
+    "read": "Přečtené",
+    "unreadCount": "{count} nepřečtených",
+    "allRead": "Všechna oznámení přečtena",
+    "filters": {
+      "all": "Vše",
+      "reviews": "Recenze",
+      "tickets": "Tikety",
+      "system": "Systém",
+      "reports": "Reporty",
+      "mentions": "Zmínky"
+    }
   },
   "header": {
     "notifications": "Oznámení",

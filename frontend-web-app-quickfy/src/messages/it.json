@@ -282,32 +282,32 @@
       "upgrade": "Aggiorna Piano",
       "billing": "Gestisci Fatturazione"
     },
-    "notifications": {
-      "title": "Notifiche",
-      "description": "Configura le tue preferenze di notifica",
-      "newReviews": "Nuove recensioni",
-      "urgentTickets": "Ticket urgenti",
-      "weeklyReports": "Report settimanali",
-      "markAllRead": "Segna tutte come lette",
-      "viewAll": "Vedi tutte",
-      "empty": "Nessuna notifica",
-      "emptyDescription": "Sei aggiornato! Al momento non ci sono nuove notifiche.",
-      "pageDescription": "Gestisci e rivedi tutte le tue notifiche in un unico posto",
-      "unread": "Non lette",
-      "read": "Lette",
-      "unreadCount": "{count} non lette",
-      "allRead": "Tutte le notifiche lette",
-      "filters": {
-        "all": "Tutte",
-        "reviews": "Recensioni",
-        "tickets": "Ticket",
-        "system": "Sistema",
-        "reports": "Report",
-        "mentions": "Menzioni"
-      }
-    },
     "error": "Errore",
     "errorDesc": "Si è verificato un errore durante il salvataggio. Riprova."
+  },
+  "notifications": {
+    "title": "Notifiche",
+    "description": "Configura le tue preferenze di notifica",
+    "newReviews": "Nuove recensioni",
+    "urgentTickets": "Ticket urgenti",
+    "weeklyReports": "Report settimanali",
+    "markAllRead": "Segna tutte come lette",
+    "viewAll": "Vedi tutte",
+    "empty": "Nessuna notifica",
+    "emptyDescription": "Sei aggiornato! Al momento non ci sono nuove notifiche.",
+    "pageDescription": "Gestisci e rivedi tutte le tue notifiche in un unico posto",
+    "unread": "Non lette",
+    "read": "Lette",
+    "unreadCount": "{count} non lette",
+    "allRead": "Tutte le notifiche lette",
+    "filters": {
+      "all": "Tutte",
+      "reviews": "Recensioni",
+      "tickets": "Ticket",
+      "system": "Sistema",
+      "reports": "Report",
+      "mentions": "Menzioni"
+    }
   },
   "header": {
     "notifications": "Notifiche",
