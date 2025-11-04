@@ -295,7 +295,7 @@
       "pageDescription": "Manage and review all your notifications in one place",
       "unread": "Unread",
       "read": "Read",
-      "unreadCount": "{count, plural, =1 {1 unread notification} other {# unread notifications}}",
+      "unreadCount": "{count} unread",
       "allRead": "All notifications read",
       "filters": {
         "all": "All",

@@ -295,7 +295,7 @@
       "pageDescription": "Spravujte a prohlížejte všechna svá oznámení na jednom místě",
       "unread": "Nepřečtené",
       "read": "Přečtené",
-      "unreadCount": "{count, plural, =1 {1 nepřečtené oznámení} other {# nepřečtených oznámení}}",
+      "unreadCount": "{count} nepřečtených",
       "allRead": "Všechna oznámení přečtena",
       "filters": {
         "all": "Vše",

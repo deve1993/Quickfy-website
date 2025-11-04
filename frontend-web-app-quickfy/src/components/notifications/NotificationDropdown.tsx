@@ -16,7 +16,7 @@ import {
 import { useNotificationStore } from '@/store/useNotificationStore';
 import { NotificationItem } from './NotificationItem';
 import { NotificationFilters } from './NotificationFilters';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@/lib/i18n/useTranslations';
 
 /**
  * Componente dropdown per le notifiche

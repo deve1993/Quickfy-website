@@ -295,7 +295,7 @@
       "pageDescription": "Gestisci e rivedi tutte le tue notifiche in un unico posto",
       "unread": "Non lette",
       "read": "Lette",
-      "unreadCount": "{count, plural, =1 {1 notifica non letta} other {# notifiche non lette}}",
+      "unreadCount": "{count} non lette",
       "allRead": "Tutte le notifiche lette",
       "filters": {
         "all": "Tutte",

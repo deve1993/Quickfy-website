@@ -7,7 +7,7 @@ import { Card } from '@/components/ui/card';
 import { useNotificationStore } from '@/store/useNotificationStore';
 import { NotificationItem } from '@/components/notifications/NotificationItem';
 import { NotificationFilters } from '@/components/notifications/NotificationFilters';
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@/lib/i18n/useTranslations';
 
 /**
  * Pagina completa per visualizzare e gestire tutte le notifiche
