@@ -44,6 +44,7 @@ import {
 import { ColorPalette } from "@/components/brand/ColorPalette";
 import { FontSelector } from "@/components/brand/FontSelector";
 import { FontPreview } from "@/components/brand/FontPreview";
+import { FontPairings } from "@/components/brand/FontPairings";
 import { TypographyScale } from "@/components/brand/TypographyScale";
 import { AssetManager } from "@/components/brand/AssetManager";
 import { TemplateSelector } from "@/components/brand/TemplateSelector";
@@ -591,45 +592,71 @@ export default function BrandIdentityPage() {
 
                 {/* Typography Tab */}
                 <TabsContent value="typography" className="space-y-6 mt-6">
-                  <Card>
-                    <CardHeader>
-                      <CardTitle>Font Selection</CardTitle>
-                      <CardDescription>
-                        Choose fonts for headings and body text
-                      </CardDescription>
-                    </CardHeader>
-                    <CardContent className="space-y-6">
-                      <div>
-                        <h4 className="text-sm font-semibold mb-3">Heading Font</h4>
-                        <FontSelector
-                          value={brandDNA.typography.fontHeading}
-                          onChange={(font) =>
-                            updateTypography({ fontHeading: font })
-                          }
-                        />
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-semibold mb-3">Body Font</h4>
-                        <FontSelector
-                          value={brandDNA.typography.fontBody}
-                          onChange={(font) =>
-                            updateTypography({ fontBody: font })
-                          }
-                        />
-                      </div>
-                    </CardContent>
-                  </Card>
+                  {/* Simple Mode: Font Pairings */}
+                  {!advancedMode && (
+                    <>
+                      <FontPairings
+                        headingFont={brandDNA.typography.fontHeading}
+                        bodyFont={brandDNA.typography.fontBody}
+                        onSelect={({ heading, body }) => {
+                          updateTypography({
+                            fontHeading: heading,
+                            fontBody: body,
+                          });
+                        }}
+                      />
+                      <FontPreview
+                        headingFont={brandDNA.typography.fontHeading}
+                        bodyFont={brandDNA.typography.fontBody}
+                        monoFont={brandDNA.typography.fontMono}
+                      />
+                    </>
+                  )}
 
-                  <TypographyScale
-                    typography={brandDNA.typography}
-                    onChange={updateTypography}
-                  />
+                  {/* Advanced Mode: Full Controls */}
+                  {advancedMode && (
+                    <>
+                      <Card>
+                        <CardHeader>
+                          <CardTitle>Font Selection</CardTitle>
+                          <CardDescription>
+                            Choose fonts for headings and body text
+                          </CardDescription>
+                        </CardHeader>
+                        <CardContent className="space-y-6">
+                          <div>
+                            <h4 className="text-sm font-semibold mb-3">Heading Font</h4>
+                            <FontSelector
+                              value={brandDNA.typography.fontHeading}
+                              onChange={(font) =>
+                                updateTypography({ fontHeading: font })
+                              }
+                            />
+                          </div>
+                          <div>
+                            <h4 className="text-sm font-semibold mb-3">Body Font</h4>
+                            <FontSelector
+                              value={brandDNA.typography.fontBody}
+                              onChange={(font) =>
+                                updateTypography({ fontBody: font })
+                              }
+                            />
+                          </div>
+                        </CardContent>
+                      </Card>
 
-                  <FontPreview
-                    headingFont={brandDNA.typography.fontHeading}
-                    bodyFont={brandDNA.typography.fontBody}
-                    monoFont={brandDNA.typography.fontMono}
-                  />
+                      <TypographyScale
+                        typography={brandDNA.typography}
+                        onChange={updateTypography}
+                      />
+
+                      <FontPreview
+                        headingFont={brandDNA.typography.fontHeading}
+                        bodyFont={brandDNA.typography.fontBody}
+                        monoFont={brandDNA.typography.fontMono}
+                      />
+                    </>
+                  )}
                 </TabsContent>
 
                 {/* Assets Tab */}
@@ -637,6 +664,7 @@ export default function BrandIdentityPage() {
                   <AssetManager
                     assets={brandDNA.assets}
                     onChange={updateAssets}
+                    advancedMode={advancedMode}
                   />
                 </TabsContent>
 

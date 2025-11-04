@@ -24,12 +24,17 @@ interface AssetManagerProps {
    * Callback when assets change
    */
   onChange: (assets: BrandAssets) => void;
+  /**
+   * Enable advanced mode with theme-specific assets
+   * @default false
+   */
+  advancedMode?: boolean;
 }
 
 /**
  * Asset Manager Component
  */
-export function AssetManager({ assets, onChange }: AssetManagerProps) {
+export function AssetManager({ assets, onChange, advancedMode = false }: AssetManagerProps) {
   const [activeTheme, setActiveTheme] = useState<"light" | "dark">("light");
 
   // Handle logo upload
@@ -65,6 +70,42 @@ export function AssetManager({ assets, onChange }: AssetManagerProps) {
     });
   };
 
+  // Simple mode: unified logo upload (no theme variants)
+  if (!advancedMode) {
+    return (
+      <div className="space-y-6">
+        {/* Header */}
+        <div className="flex items-center gap-2">
+          <ImageIcon className="w-5 h-5 text-primary" />
+          <h3 className="text-lg font-semibold">Risorse Brand</h3>
+        </div>
+
+        {/* Primary Logo */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="text-base">Logo Principale</CardTitle>
+            <CardDescription>
+              Logo principale del tuo brand (usato per tutti i temi)
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <LogoUploader
+                type="primary"
+                theme="light"
+                currentLogo={assets.primaryLogo}
+                onUpload={(logo) => handleLogoUpload("primaryLogo", logo)}
+                onRemove={() => handleLogoRemove("primaryLogo")}
+              />
+              <LogoPreview logo={assets.primaryLogo} showBoth={false} />
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
+
+  // Advanced mode: full controls with theme variants
   return (
     <div className="space-y-6">
       {/* Header */}

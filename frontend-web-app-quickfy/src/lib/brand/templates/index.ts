@@ -10,15 +10,19 @@ import { minimalTemplate } from "./minimal";
 import { vibrantTemplate } from "./vibrant";
 import { professionalTemplate } from "./professional";
 import { creativeTemplate } from "./creative";
+import { startupTemplate } from "./startup";
+import { organicTemplate } from "./organic";
 
 /**
  * All available templates
  */
 export const BRAND_TEMPLATES: BrandTemplate[] = [
   defaultTemplate,
+  professionalTemplate,
+  startupTemplate,
+  organicTemplate,
   minimalTemplate,
   vibrantTemplate,
-  professionalTemplate,
   creativeTemplate,
 ];
 
@@ -38,4 +42,12 @@ export function getTemplatesByCategory(
   return BRAND_TEMPLATES.filter((template) => template.category === category);
 }
 
-export { defaultTemplate, minimalTemplate, vibrantTemplate, professionalTemplate, creativeTemplate };
+export {
+  defaultTemplate,
+  minimalTemplate,
+  vibrantTemplate,
+  professionalTemplate,
+  creativeTemplate,
+  startupTemplate,
+  organicTemplate
+};
