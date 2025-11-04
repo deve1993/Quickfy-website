@@ -83,12 +83,22 @@
   "dashboard": {
     "title": "Dashboard",
     "subtitle": "Overview of your key metrics",
+    "welcome": "Welcome, {name}! Here's an overview of your metrics.",
+    "totalSessions": "Total Sessions",
     "sessions": "Sessions",
     "users": "Users",
     "conversions": "Conversions",
     "bounceRate": "Bounce Rate",
+    "trafficTrend": "Traffic Trend",
+    "trafficTrendDesc": "Sessions and users over the last 14 days",
     "trafficSources": "Traffic Sources",
+    "trafficSourcesDesc": "Analysis of the main traffic sources to your site",
     "topPages": "Top Pages",
+    "topPagesDesc": "Pages with the highest number of views",
+    "source": "Source",
+    "page": "Page",
+    "views": "Views",
+    "avgTime": "Avg Time",
     "recentReports": "Recent Reports",
     "viewAll": "View All"
   },
@@ -230,7 +240,108 @@
     "engagement": "Engagement Rate",
     "postsThisMonth": "Posts This Month",
     "aiContentGenerator": "AI Content Generator",
-    "connectedPlatforms": "Connected Platforms"
+    "connectedPlatforms": "Connected Platforms",
+    "tabs": {
+      "generator": "Generator",
+      "library": "Library",
+      "calendar": "Calendar"
+    },
+    "platforms": {
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter/X"
+    },
+    "postTypes": {
+      "promo": "Promotional",
+      "educational": "Educational",
+      "engagement": "Engagement",
+      "storytelling": "Storytelling",
+      "product": "Product",
+      "event": "Event"
+    },
+    "postStatus": {
+      "draft": "Draft",
+      "scheduled": "Scheduled",
+      "published": "Published"
+    },
+    "generator": {
+      "title": "Generate Content with AI",
+      "selectPlatform": "Select Platform",
+      "selectType": "Post Type",
+      "topic": "Topic (optional)",
+      "topicPlaceholder": "E.g.: New feature, Marketing tips...",
+      "keywords": "Keywords",
+      "keywordsPlaceholder": "Separate with comma",
+      "targetAudience": "Target audience",
+      "audiencePlaceholder": "E.g.: Marketing managers, SMBs...",
+      "useBrandValues": "Use brand values",
+      "generateButton": "Generate with AI",
+      "regenerateButton": "Regenerate",
+      "saveAsDraft": "Save as Draft",
+      "schedule": "Schedule",
+      "generating": "Generating...",
+      "preview": "Preview",
+      "noPreview": "Configure parameters and generate content"
+    },
+    "library": {
+      "title": "Content Library",
+      "filterAll": "All",
+      "filterByPlatform": "Filter by platform",
+      "filterByType": "Filter by type",
+      "filterByStatus": "Filter by status",
+      "searchPlaceholder": "Search in content...",
+      "sortBy": "Sort by",
+      "sortDate": "Date",
+      "sortEngagement": "Engagement",
+      "viewGrid": "Grid",
+      "viewList": "List",
+      "noPosts": "No content found",
+      "createFirst": "Create your first post"
+    },
+    "postCard": {
+      "estimatedReach": "Estimated reach",
+      "estimatedEngagement": "Estimated engagement",
+      "bestTime": "Best time",
+      "scheduledFor": "Scheduled for",
+      "actions": "Actions",
+      "edit": "Edit",
+      "duplicate": "Duplicate",
+      "delete": "Delete",
+      "schedule": "Schedule",
+      "publish": "Publish",
+      "viewMetrics": "View metrics",
+      "brandAlignment": "Brand Alignment",
+      "toneOfVoice": "Tone of Voice",
+      "brandValues": "Brand Values",
+      "brandColors": "Brand Colors"
+    },
+    "calendar": {
+      "title": "Editorial Calendar",
+      "month": "Month",
+      "week": "Week",
+      "day": "Day",
+      "today": "Today",
+      "noScheduled": "No scheduled posts",
+      "dragToReschedule": "Drag to reschedule"
+    },
+    "metrics": {
+      "reach": "Reach",
+      "engagement": "Engagement",
+      "impressions": "Impressions",
+      "clicks": "Clicks",
+      "shares": "Shares",
+      "comments": "Comments",
+      "likes": "Likes"
+    },
+    "notifications": {
+      "postSaved": "Post saved as draft",
+      "postScheduled": "Post scheduled successfully",
+      "postPublished": "Post published",
+      "postDeleted": "Post deleted",
+      "postDuplicated": "Post duplicated",
+      "error": "Operation error"
+    }
   },
   "campaigns": {
     "title": "Campaigns",

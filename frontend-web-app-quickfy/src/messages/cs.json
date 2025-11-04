@@ -83,12 +83,22 @@
   "dashboard": {
     "title": "Dashboard",
     "subtitle": "Přehled vašich klíčových metrik",
+    "welcome": "Vítejte, {name}! Zde je přehled vašich metrik.",
+    "totalSessions": "Celkem relací",
     "sessions": "Relace",
     "users": "Uživatelé",
     "conversions": "Konverze",
     "bounceRate": "Míra okamžitého opuštění",
+    "trafficTrend": "Trend návštěvnosti",
+    "trafficTrendDesc": "Relace a uživatelé za posledních 14 dní",
     "trafficSources": "Zdroje návštěvnosti",
-    "topPages": "Nejlepší stránky",
+    "trafficSourcesDesc": "Analýza hlavních zdrojů návštěvnosti vašeho webu",
+    "topPages": "Nejnavštěvovanější stránky",
+    "topPagesDesc": "Stránky s nejvyšším počtem zobrazení",
+    "source": "Zdroj",
+    "page": "Stránka",
+    "views": "Zobrazení",
+    "avgTime": "Průměrný čas",
     "recentReports": "Nedávné reporty",
     "viewAll": "Zobrazit vše"
   },
@@ -230,7 +240,108 @@
     "engagement": "Míra zapojení",
     "postsThisMonth": "Příspěvky tento měsíc",
     "aiContentGenerator": "AI Generátor obsahu",
-    "connectedPlatforms": "Připojené platformy"
+    "connectedPlatforms": "Připojené platformy",
+    "tabs": {
+      "generator": "Generátor",
+      "library": "Knihovna",
+      "calendar": "Kalendář"
+    },
+    "platforms": {
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter/X"
+    },
+    "postTypes": {
+      "promo": "Propagační",
+      "educational": "Vzdělávací",
+      "engagement": "Zapojení",
+      "storytelling": "Vyprávění",
+      "product": "Produkt",
+      "event": "Událost"
+    },
+    "postStatus": {
+      "draft": "Koncept",
+      "scheduled": "Naplánováno",
+      "published": "Publikováno"
+    },
+    "generator": {
+      "title": "Generovat obsah s AI",
+      "selectPlatform": "Vyberte platformu",
+      "selectType": "Typ příspěvku",
+      "topic": "Téma (volitelné)",
+      "topicPlaceholder": "Např.: Nová funkce, Marketingové tipy...",
+      "keywords": "Klíčová slova",
+      "keywordsPlaceholder": "Oddělte čárkou",
+      "targetAudience": "Cílové publikum",
+      "audiencePlaceholder": "Např.: Marketingoví manažeři, MSP...",
+      "useBrandValues": "Použít hodnoty značky",
+      "generateButton": "Generovat s AI",
+      "regenerateButton": "Regenerovat",
+      "saveAsDraft": "Uložit jako koncept",
+      "schedule": "Naplánovat",
+      "generating": "Generování...",
+      "preview": "Náhled",
+      "noPreview": "Nakonfigurujte parametry a vygenerujte obsah"
+    },
+    "library": {
+      "title": "Knihovna obsahu",
+      "filterAll": "Vše",
+      "filterByPlatform": "Filtrovat podle platformy",
+      "filterByType": "Filtrovat podle typu",
+      "filterByStatus": "Filtrovat podle stavu",
+      "searchPlaceholder": "Hledat v obsahu...",
+      "sortBy": "Seřadit podle",
+      "sortDate": "Datum",
+      "sortEngagement": "Zapojení",
+      "viewGrid": "Mřížka",
+      "viewList": "Seznam",
+      "noPosts": "Nebyl nalezen žádný obsah",
+      "createFirst": "Vytvořte svůj první příspěvek"
+    },
+    "postCard": {
+      "estimatedReach": "Odhadovaný dosah",
+      "estimatedEngagement": "Odhadované zapojení",
+      "bestTime": "Nejlepší čas",
+      "scheduledFor": "Naplánováno na",
+      "actions": "Akce",
+      "edit": "Upravit",
+      "duplicate": "Duplikovat",
+      "delete": "Smazat",
+      "schedule": "Naplánovat",
+      "publish": "Publikovat",
+      "viewMetrics": "Zobrazit metriky",
+      "brandAlignment": "Soulad se značkou",
+      "toneOfVoice": "Tón hlasu",
+      "brandValues": "Hodnoty značky",
+      "brandColors": "Barvy značky"
+    },
+    "calendar": {
+      "title": "Redakční kalendář",
+      "month": "Měsíc",
+      "week": "Týden",
+      "day": "Den",
+      "today": "Dnes",
+      "noScheduled": "Žádné naplánované příspěvky",
+      "dragToReschedule": "Přetáhněte pro přeplánování"
+    },
+    "metrics": {
+      "reach": "Dosah",
+      "engagement": "Zapojení",
+      "impressions": "Zobrazení",
+      "clicks": "Kliknutí",
+      "shares": "Sdílení",
+      "comments": "Komentáře",
+      "likes": "Lajky"
+    },
+    "notifications": {
+      "postSaved": "Příspěvek uložen jako koncept",
+      "postScheduled": "Příspěvek úspěšně naplánován",
+      "postPublished": "Příspěvek publikován",
+      "postDeleted": "Příspěvek smazán",
+      "postDuplicated": "Příspěvek duplikován",
+      "error": "Chyba operace"
+    }
   },
   "campaigns": {
     "title": "Kampaně",

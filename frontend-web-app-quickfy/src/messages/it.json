@@ -83,12 +83,22 @@
   "dashboard": {
     "title": "Dashboard",
     "subtitle": "Panoramica delle tue metriche principali",
+    "welcome": "Benvenuto, {name}! Ecco una panoramica delle tue metriche.",
+    "totalSessions": "Sessioni Totali",
     "sessions": "Sessioni",
     "users": "Utenti",
     "conversions": "Conversioni",
-    "bounceRate": "Frequenza di Rimbalzo",
-    "trafficSources": "Fonti di Traffico",
-    "topPages": "Pagine Principali",
+    "bounceRate": "Bounce Rate",
+    "trafficTrend": "Andamento Traffico",
+    "trafficTrendDesc": "Sessioni e utenti negli ultimi 14 giorni",
+    "trafficSources": "Sorgenti di Traffico",
+    "trafficSourcesDesc": "Analisi delle principali fonti di traffico al tuo sito",
+    "topPages": "Pagine Più Visitate",
+    "topPagesDesc": "Le pagine con il maggior numero di visualizzazioni",
+    "source": "Sorgente",
+    "page": "Pagina",
+    "views": "Visualizzazioni",
+    "avgTime": "Tempo Medio",
     "recentReports": "Report Recenti",
     "viewAll": "Visualizza Tutto"
   },
@@ -230,7 +240,108 @@
     "engagement": "Engagement Rate",
     "postsThisMonth": "Post Questo Mese",
     "aiContentGenerator": "AI Content Generator",
-    "connectedPlatforms": "Piattaforme Connesse"
+    "connectedPlatforms": "Piattaforme Connesse",
+    "tabs": {
+      "generator": "Generatore",
+      "library": "Libreria",
+      "calendar": "Calendario"
+    },
+    "platforms": {
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter/X"
+    },
+    "postTypes": {
+      "promo": "Promozionale",
+      "educational": "Educativo",
+      "engagement": "Coinvolgimento",
+      "storytelling": "Storytelling",
+      "product": "Prodotto",
+      "event": "Evento"
+    },
+    "postStatus": {
+      "draft": "Bozza",
+      "scheduled": "Programmato",
+      "published": "Pubblicato"
+    },
+    "generator": {
+      "title": "Genera Contenuto con AI",
+      "selectPlatform": "Seleziona Piattaforma",
+      "selectType": "Tipo di Post",
+      "topic": "Argomento (opzionale)",
+      "topicPlaceholder": "Es: Nuova funzionalità, Tips marketing...",
+      "keywords": "Parole chiave",
+      "keywordsPlaceholder": "Separa con virgola",
+      "targetAudience": "Pubblico target",
+      "audiencePlaceholder": "Es: Marketing managers, PMI...",
+      "useBrandValues": "Usa valori del brand",
+      "generateButton": "Genera con AI",
+      "regenerateButton": "Rigenera",
+      "saveAsDraft": "Salva come Bozza",
+      "schedule": "Programma",
+      "generating": "Generazione in corso...",
+      "preview": "Anteprima",
+      "noPreview": "Configura i parametri e genera il contenuto"
+    },
+    "library": {
+      "title": "Libreria Contenuti",
+      "filterAll": "Tutti",
+      "filterByPlatform": "Filtra per piattaforma",
+      "filterByType": "Filtra per tipo",
+      "filterByStatus": "Filtra per stato",
+      "searchPlaceholder": "Cerca nei contenuti...",
+      "sortBy": "Ordina per",
+      "sortDate": "Data",
+      "sortEngagement": "Engagement",
+      "viewGrid": "Griglia",
+      "viewList": "Lista",
+      "noPosts": "Nessun contenuto trovato",
+      "createFirst": "Crea il tuo primo post"
+    },
+    "postCard": {
+      "estimatedReach": "Reach stimato",
+      "estimatedEngagement": "Engagement stimato",
+      "bestTime": "Ora migliore",
+      "scheduledFor": "Programmato per",
+      "actions": "Azioni",
+      "edit": "Modifica",
+      "duplicate": "Duplica",
+      "delete": "Elimina",
+      "schedule": "Programma",
+      "publish": "Pubblica",
+      "viewMetrics": "Vedi metriche",
+      "brandAlignment": "Allineamento Brand",
+      "toneOfVoice": "Tone of Voice",
+      "brandValues": "Valori Brand",
+      "brandColors": "Colori Brand"
+    },
+    "calendar": {
+      "title": "Calendario Editoriale",
+      "month": "Mese",
+      "week": "Settimana",
+      "day": "Giorno",
+      "today": "Oggi",
+      "noScheduled": "Nessun post programmato",
+      "dragToReschedule": "Trascina per riprogrammare"
+    },
+    "metrics": {
+      "reach": "Reach",
+      "engagement": "Engagement",
+      "impressions": "Impressioni",
+      "clicks": "Click",
+      "shares": "Condivisioni",
+      "comments": "Commenti",
+      "likes": "Like"
+    },
+    "notifications": {
+      "postSaved": "Post salvato come bozza",
+      "postScheduled": "Post programmato con successo",
+      "postPublished": "Post pubblicato",
+      "postDeleted": "Post eliminato",
+      "postDuplicated": "Post duplicato",
+      "error": "Errore nell'operazione"
+    }
   },
   "campaigns": {
     "title": "Campagne",
