@@ -10,7 +10,7 @@ expect.extend(toHaveNoViolations)
 describe('Modal', () => {
   const defaultProps: ModalProps = {
     open: true,
-    onClose: {},
+    onClose: vi.fn(),
     children: 'Test Content',
   }
 

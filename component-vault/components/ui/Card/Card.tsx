@@ -55,6 +55,13 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
       ghost: 'bg-transparent border-0',
     };
 
+    const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+      if (onClick && (event.key === 'Enter' || event.key === ' ')) {
+        event.preventDefault();
+        onClick(event as any);
+      }
+    };
+
     return (
       <div
         ref={ref}
@@ -67,6 +74,9 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
           className
         )}
         onClick={onClick}
+        role={onClick ? 'button' : undefined}
+        tabIndex={onClick ? 0 : undefined}
+        onKeyDown={onClick ? handleKeyDown : undefined}
         {...props}
       >
         {children}
