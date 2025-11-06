@@ -135,7 +135,7 @@ export default function WorkspacePage() {
           {workspaces.map((workspace) => (
             <Card
               key={workspace.id}
-              className={`relative transition-all hover:shadow-lg ${
+              className={`relative flex flex-col transition-all hover:shadow-lg ${
                 activeWorkspace?.id === workspace.id
                   ? "ring-2 ring-primary shadow-md bg-primary/5"
                   : ""
@@ -157,7 +157,7 @@ export default function WorkspacePage() {
                 </div>
               </CardHeader>
 
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-4 flex-1 flex flex-col justify-between">
                 <div className="flex items-center gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-1">
                     <Users className="h-4 w-4" />
