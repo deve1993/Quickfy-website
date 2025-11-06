@@ -135,26 +135,24 @@ export default function WorkspacePage() {
           {workspaces.map((workspace) => (
             <Card
               key={workspace.id}
-              className={`relative cursor-pointer transition-all hover:shadow-lg ${
-                activeWorkspace?.id === workspace.id ? "ring-2 ring-primary" : ""
+              className={`relative transition-all hover:shadow-lg ${
+                activeWorkspace?.id === workspace.id
+                  ? "ring-2 ring-primary shadow-md bg-primary/5"
+                  : ""
               }`}
             >
-              {activeWorkspace?.id === workspace.id && (
-                <div className="absolute top-0 right-0 w-0 h-0 border-t-[32px] border-t-primary border-l-[32px] border-l-transparent z-10" />
-              )}
-
-              <CardHeader className="relative pb-3">
-                <div className="flex items-start justify-between gap-2">
-                  <div className="flex-1 min-w-0 pr-8">
-                    <CardTitle className="flex items-center gap-2 flex-wrap">
-                      <span className="truncate">{workspace.name}</span>
-                      {activeWorkspace?.id === workspace.id && (
-                        <Badge variant="default" className="text-xs shrink-0">{t("list.active")}</Badge>
-                      )}
+              <CardHeader className="space-y-3">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex-1 min-w-0">
+                    <CardTitle className="text-lg mb-2 truncate">
+                      {workspace.name}
                     </CardTitle>
-                    <CardDescription className="mt-1">
+                    <div className="flex items-center gap-2 flex-wrap">
                       <Badge variant="outline" className="capitalize">{workspace.plan}</Badge>
-                    </CardDescription>
+                      {activeWorkspace?.id === workspace.id && (
+                        <Badge variant="default" className="text-xs">{t("list.active")}</Badge>
+                      )}
+                    </div>
                   </div>
                 </div>
               </CardHeader>
