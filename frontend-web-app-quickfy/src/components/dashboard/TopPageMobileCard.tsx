@@ -1,6 +1,9 @@
+"use client";
+
 import { Card } from "@/components/ui/card";
 import type { TopPage } from "@/types";
 import { Eye, Clock, TrendingUp } from "lucide-react";
+import { useTranslations } from "@/lib/i18n/useTranslations";
 
 interface TopPageMobileCardProps {
   page: TopPage;
@@ -13,6 +16,8 @@ const formatDuration = (seconds: number) => {
 };
 
 export function TopPageMobileCard({ page }: TopPageMobileCardProps) {
+  const t = useTranslations("dashboard");
+
   return (
     <Card className="p-4">
       {/* Page Title */}
@@ -26,21 +31,21 @@ export function TopPageMobileCard({ page }: TopPageMobileCardProps) {
         {/* Views */}
         <div className="flex flex-col items-center text-center">
           <Eye className="h-4 w-4 text-muted-foreground mb-1" />
-          <p className="text-xs text-muted-foreground">Views</p>
-          <p className="font-semibold">{page.views.toLocaleString("it-IT")}</p>
+          <p className="text-xs text-muted-foreground">{t("views")}</p>
+          <p className="font-semibold">{page.views.toLocaleString()}</p>
         </div>
 
         {/* Avg Time */}
         <div className="flex flex-col items-center text-center">
           <Clock className="h-4 w-4 text-muted-foreground mb-1" />
-          <p className="text-xs text-muted-foreground">Tempo</p>
+          <p className="text-xs text-muted-foreground">{t("avgTime")}</p>
           <p className="font-semibold">{formatDuration(page.avgTime)}</p>
         </div>
 
         {/* Bounce Rate */}
         <div className="flex flex-col items-center text-center">
           <TrendingUp className="h-4 w-4 text-muted-foreground mb-1" />
-          <p className="text-xs text-muted-foreground">Bounce</p>
+          <p className="text-xs text-muted-foreground">{t("bounceRate")}</p>
           <p className="font-semibold">{page.bounceRate}%</p>
         </div>
       </div>

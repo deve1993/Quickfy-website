@@ -10,6 +10,7 @@ import {
   YAxis,
 } from "recharts";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { useTranslations } from "@/lib/i18n/useTranslations";
 
 const data = [
   { date: "01 Nov", sessions: 4200, users: 3100 },
@@ -29,11 +30,13 @@ const data = [
 ];
 
 export function SessionsChart() {
+  const t = useTranslations("dashboard");
+
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Andamento Traffico</CardTitle>
-        <CardDescription>Sessioni e utenti negli ultimi 14 giorni</CardDescription>
+        <CardTitle>{t("trafficTrend")}</CardTitle>
+        <CardDescription>{t("trafficTrendDesc")}</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="h-[250px] md:h-[350px]">
@@ -72,7 +75,7 @@ export function SessionsChart() {
                 stroke="hsl(var(--primary))"
                 fillOpacity={1}
                 fill="url(#colorSessions)"
-                name="Sessioni"
+                name={t("sessions")}
               />
               <Area
                 type="monotone"
@@ -80,7 +83,7 @@ export function SessionsChart() {
                 stroke="hsl(var(--chart-2))"
                 fillOpacity={1}
                 fill="url(#colorUsers)"
-                name="Utenti"
+                name={t("users")}
               />
             </AreaChart>
           </ResponsiveContainer>

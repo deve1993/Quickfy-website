@@ -15,8 +15,12 @@ export function LanguageSwitcher() {
   const { language, setLanguage } = useLanguageStore();
 
   const handleLanguageChange = (newLocale: Language) => {
+    if (newLocale === language) return; // Already selected
+
+    // Set in Zustand store (will also save to localStorage)
     setLanguage(newLocale);
-    // Force a re-render by reloading the page to apply new translations
+
+    // Reload page to apply new language
     window.location.reload();
   };
 

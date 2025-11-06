@@ -57,12 +57,25 @@ export interface WorkspaceMember {
   acceptedAt?: string;
 }
 
+export interface GoogleAnalyticsSettings {
+  connected: boolean;
+  trackingId?: string; // GA4 Measurement ID (G-XXXXXXXXXX)
+  propertyId?: string; // GA4 Property ID
+}
+
+export interface GoogleAdsSettings {
+  connected: boolean;
+  customerId?: string; // Format: 123-456-7890
+  conversionId?: string; // Format: AW-XXXXXXXXXX
+  conversionLabel?: string;
+}
+
 export interface WorkspaceSettings {
   timezone: string;
   currency: string;
   locale: string;
-  analyticsConnected: boolean;
-  googleAdsConnected: boolean;
+  analytics: GoogleAnalyticsSettings;
+  googleAds: GoogleAdsSettings;
 }
 
 // ============================================

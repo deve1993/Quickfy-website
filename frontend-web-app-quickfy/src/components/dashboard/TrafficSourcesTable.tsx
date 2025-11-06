@@ -11,18 +11,21 @@ import {
 } from "@/components/ui/table";
 import type { TrafficSource } from "@/types";
 import { TrafficSourceMobileCard } from "./TrafficSourceMobileCard";
+import { useTranslations } from "@/lib/i18n/useTranslations";
 
 interface TrafficSourcesTableProps {
   data: TrafficSource[];
 }
 
 export function TrafficSourcesTable({ data }: TrafficSourcesTableProps) {
+  const t = useTranslations("dashboard");
+
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Sorgenti di Traffico</CardTitle>
+        <CardTitle>{t("trafficSources")}</CardTitle>
         <CardDescription>
-          Analisi delle principali fonti di traffico al tuo sito
+          {t("trafficSourcesDesc")}
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -31,11 +34,11 @@ export function TrafficSourcesTable({ data }: TrafficSourcesTableProps) {
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead>Sorgente</TableHead>
-                <TableHead className="text-right">Sessioni</TableHead>
-                <TableHead className="text-right">Utenti</TableHead>
-                <TableHead className="text-right">Bounce Rate</TableHead>
-                <TableHead className="text-right">Conversioni</TableHead>
+                <TableHead>{t("source")}</TableHead>
+                <TableHead className="text-right">{t("sessions")}</TableHead>
+                <TableHead className="text-right">{t("users")}</TableHead>
+                <TableHead className="text-right">{t("bounceRate")}</TableHead>
+                <TableHead className="text-right">{t("conversions")}</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>

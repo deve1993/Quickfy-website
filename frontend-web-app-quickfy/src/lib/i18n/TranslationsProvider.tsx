@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, ReactNode } from "react";
+import { createContext, useContext, ReactNode, useState, useEffect } from "react";
 import { useLanguageStore, type Language } from "@/store/useLanguageStore";
 
 // Import all translation files
@@ -26,12 +26,57 @@ const TranslationsContext = createContext<TranslationsContextType | undefined>(
 );
 
 export function TranslationsProvider({ children }: { children: ReactNode }) {
-  const { language } = useLanguageStore();
-  const currentMessages = messages[language] || messages.it;
+  const { language, setLanguage: setStoreLang } = useLanguageStore();
+  const [hydrated, setHydrated] = useState(false);
+  const [clientLanguage, setClientLanguage] = useState<Language>('it');
+
+  // Handle client-side hydration - read directly from localStorage
+  useEffect(() => {
+    // Read from localStorage on client side
+    try {
+      const stored = localStorage.getItem('quickfy-language');
+
+      if (stored) {
+        const parsed = JSON.parse(stored);
+        const lang = (parsed.state?.language || parsed.language || 'it') as Language;
+
+        // Set both states in a batch
+        setClientLanguage(lang);
+        setHydrated(true);
+
+        // Also update the store if different
+        if (lang !== language) {
+          setStoreLang(lang);
+        }
+      } else {
+        setHydrated(true);
+      }
+    } catch (error) {
+      console.error('Error reading localStorage in useEffect:', error);
+      setHydrated(true);
+    }
+  }, []);
+
+  // Use clientLanguage after hydration, italian before
+  const currentLanguage = hydrated ? clientLanguage : 'it';
+  const currentMessages = messages[currentLanguage] || messages.it;
+
+  // Don't render children until hydrated to avoid showing wrong language
+  if (!hydrated) {
+    return (
+      <TranslationsContext.Provider
+        value={{ messages: messages.it, language: 'it' }}
+      >
+        <div className="min-h-screen flex items-center justify-center">
+          <div className="animate-pulse">Loading...</div>
+        </div>
+      </TranslationsContext.Provider>
+    );
+  }
 
   return (
     <TranslationsContext.Provider
-      value={{ messages: currentMessages, language }}
+      value={{ messages: currentMessages, language: currentLanguage }}
     >
       {children}
     </TranslationsContext.Provider>

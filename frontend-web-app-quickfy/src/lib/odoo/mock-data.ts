@@ -53,8 +53,17 @@ export const mockWorkspaces: Workspace[] = [
       timezone: 'Europe/Rome',
       currency: 'EUR',
       locale: 'it_IT',
-      analyticsConnected: true,
-      googleAdsConnected: true,
+      analytics: {
+        connected: true,
+        trackingId: 'G-ABCD123456',
+        propertyId: '123456789',
+      },
+      googleAds: {
+        connected: true,
+        customerId: '123-456-7890',
+        conversionId: 'AW-987654321',
+        conversionLabel: 'abcDEF123ghiJKL',
+      },
     },
   },
 ];
@@ -467,8 +476,12 @@ export const mockApi = {
         timezone: 'Europe/Rome',
         currency: 'EUR',
         locale: 'it_IT',
-        analyticsConnected: false,
-        googleAdsConnected: false,
+        analytics: {
+          connected: false,
+        },
+        googleAds: {
+          connected: false,
+        },
       },
     };
     mockWorkspaces.push(newWorkspace);
@@ -547,7 +560,7 @@ export const mockApi = {
     workspace.members.splice(index, 1);
   },
 
-  resendInvite: async (workspaceId: string, memberId: string) => {
+  resendInvite: async (_workspaceId: string, _memberId: string) => {
     await new Promise((resolve) => setTimeout(resolve, 500));
     // Simulate API call
   },

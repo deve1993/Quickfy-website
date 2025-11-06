@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/table";
 import type { TopPage } from "@/types";
 import { TopPageMobileCard } from "./TopPageMobileCard";
+import { useTranslations } from "@/lib/i18n/useTranslations";
 
 interface TopPagesTableProps{
   data: TopPage[];
@@ -23,12 +24,14 @@ const formatDuration = (seconds: number) => {
 };
 
 export function TopPagesTable({ data }: TopPagesTableProps) {
+  const t = useTranslations("dashboard");
+
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Pagine Più Visitate</CardTitle>
+        <CardTitle>{t("topPages")}</CardTitle>
         <CardDescription>
-          Le pagine con il maggior numero di visualizzazioni
+          {t("topPagesDesc")}
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -37,10 +40,10 @@ export function TopPagesTable({ data }: TopPagesTableProps) {
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead>Pagina</TableHead>
-                <TableHead className="text-right">Visualizzazioni</TableHead>
-                <TableHead className="text-right">Tempo Medio</TableHead>
-                <TableHead className="text-right">Bounce Rate</TableHead>
+                <TableHead>{t("page")}</TableHead>
+                <TableHead className="text-right">{t("views")}</TableHead>
+                <TableHead className="text-right">{t("avgTime")}</TableHead>
+                <TableHead className="text-right">{t("bounceRate")}</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>

@@ -149,8 +149,8 @@ export const POPULAR_FONT_PAIRINGS: FontPairing[] = [
     category: "classic",
   },
   {
-    id: "oswald-sourcesans",
-    name: "Oswald + Source Sans Pro",
+    id: "oswald-opensans",
+    name: "Oswald + Open Sans",
     description: "Audace e creativo",
     heading: {
       name: "Oswald",
@@ -158,7 +158,7 @@ export const POPULAR_FONT_PAIRINGS: FontPairing[] = [
       styles: ["normal"],
     },
     body: {
-      name: "Source Sans Pro",
+      name: "Open Sans",
       weights: [400, 600, 700],
       styles: ["normal"],
     },

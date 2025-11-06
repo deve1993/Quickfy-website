@@ -593,7 +593,45 @@
       "general": "Obecné",
       "team": "Tým",
       "settings": "Nastavení",
+      "integrations": "Integrace",
       "dangerZone": "Nebezpečná zóna"
+    },
+    "integrations": {
+      "title": "Integrace",
+      "subtitle": "Propojte své účty Google Analytics a Google Ads",
+      "saveButton": "Uložit konfiguraci",
+      "saving": "Ukládání...",
+      "success": "Konfigurace uložena!",
+      "successDesc": "Nastavení integrace bylo aktualizováno",
+      "analytics": {
+        "title": "Google Analytics",
+        "description": "Připojte Google Analytics pro sledování návštěvnosti webu",
+        "connected": "Připojeno",
+        "disconnected": "Nepřipojeno",
+        "enable": "Povolit Google Analytics",
+        "trackingId": "Tracking ID (GA4)",
+        "trackingIdPlaceholder": "G-XXXXXXXXXX",
+        "trackingIdHelp": "Vaše Google Analytics 4 Measurement ID",
+        "propertyId": "Property ID",
+        "propertyIdPlaceholder": "123456789",
+        "propertyIdHelp": "ID vlastnosti GA4 (9 číslic)"
+      },
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Připojte Google Ads pro sledování konverzí kampaní",
+        "connected": "Připojeno",
+        "disconnected": "Nepřipojeno",
+        "enable": "Povolit Google Ads",
+        "customerId": "ID zákazníka",
+        "customerIdPlaceholder": "123-456-7890",
+        "customerIdHelp": "Vaše ID zákazníka Google Ads (formát: 123-456-7890)",
+        "conversionId": "ID konverze",
+        "conversionIdPlaceholder": "AW-123456789",
+        "conversionIdHelp": "ID konverze Google Ads (formát: AW-XXXXXXXXX)",
+        "conversionLabel": "Štítek konverze",
+        "conversionLabelPlaceholder": "abcDEF123ghiJKL",
+        "conversionLabelHelp": "Štítek konverze ke sledování"
+      }
     }
   }
 }

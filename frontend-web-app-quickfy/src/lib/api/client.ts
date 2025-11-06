@@ -95,8 +95,12 @@ class ApiClient {
           timezone: 'Europe/Rome',
           currency: 'EUR',
           locale: 'it_IT',
-          analyticsConnected: false,
-          googleAdsConnected: false,
+          analytics: {
+            connected: false,
+          },
+          googleAds: {
+            connected: false,
+          },
         },
       })),
     };

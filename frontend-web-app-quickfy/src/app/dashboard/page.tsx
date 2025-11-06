@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Users, TrendingUp, MousePointerClick, Clock } from "lucide-react";
 import { useAuthStore } from "@/store/useAuthStore";
+import { useTranslations } from "@/lib/i18n/useTranslations";
 import { MetricCard } from "@/components/dashboard/MetricCard";
 import { SessionsChart } from "@/components/dashboard/SessionsChart";
 import { TrafficSourcesTable } from "@/components/dashboard/TrafficSourcesTable";
@@ -14,6 +15,7 @@ import type { DashboardMetrics, TrafficSource, TopPage } from "@/types";
 
 export default function DashboardPage() {
   const { user } = useAuthStore();
+  const t = useTranslations("dashboard");
   const [metrics, setMetrics] = useState<DashboardMetrics | null>(null);
   const [trafficSources, setTrafficSources] = useState<TrafficSource[]>([]);
   const [topPages, setTopPages] = useState<TopPage[]>([]);
@@ -48,9 +50,9 @@ export default function DashboardPage() {
   return (
     <AnimatedPage className="space-y-4 md:space-y-6">
       <FadeIn direction="down">
-        <h1 className="text-2xl md:text-3xl font-bold">Dashboard</h1>
+        <h1 className="text-2xl md:text-3xl font-bold">{t("title")}</h1>
         <p className="text-sm md:text-base text-muted-foreground">
-          Benvenuto, {user?.name}! Ecco una panoramica delle tue metriche.
+          {t("welcome", { name: user?.name || "" })}
         </p>
       </FadeIn>
 
@@ -58,7 +60,7 @@ export default function DashboardPage() {
       <StaggerContainer className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4" staggerDelay={0.1}>
         <StaggerItem>
           <MetricCard
-            title="Sessioni Totali"
+            title={t("totalSessions")}
             value={metrics?.sessions.current || 0}
             metric={metrics?.sessions}
             icon={<Users className="h-4 w-4" />}
@@ -66,7 +68,7 @@ export default function DashboardPage() {
         </StaggerItem>
         <StaggerItem>
           <MetricCard
-            title="Utenti"
+            title={t("users")}
             value={metrics?.users.current || 0}
             metric={metrics?.users}
             icon={<TrendingUp className="h-4 w-4" />}
@@ -74,7 +76,7 @@ export default function DashboardPage() {
         </StaggerItem>
         <StaggerItem>
           <MetricCard
-            title="Conversioni"
+            title={t("conversions")}
             value={metrics?.conversions.current || 0}
             metric={metrics?.conversions}
             icon={<MousePointerClick className="h-4 w-4" />}
@@ -82,7 +84,7 @@ export default function DashboardPage() {
         </StaggerItem>
         <StaggerItem>
           <MetricCard
-            title="Bounce Rate"
+            title={t("bounceRate")}
             value={metrics?.bounceRate.current || 0}
             metric={metrics?.bounceRate}
             icon={<Clock className="h-4 w-4" />}

@@ -103,11 +103,11 @@ export function validateUniqueEmail(email: string, existingEmails: string[]): bo
  * Valida se un utente può eseguire un'azione in base al ruolo
  */
 export function canPerformAction(userRole: string, action: 'invite' | 'remove' | 'updateRole' | 'delete'): boolean {
-  const permissions = {
+  const permissions: Record<string, string[]> = {
     admin: ['invite', 'remove', 'updateRole', 'delete'],
     editor: ['invite'],
     viewer: [],
   };
 
-  return permissions[userRole as keyof typeof permissions]?.includes(action) || false;
+  return permissions[userRole]?.includes(action) || false;
 }

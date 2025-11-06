@@ -593,7 +593,45 @@
       "general": "Generale",
       "team": "Team",
       "settings": "Impostazioni",
+      "integrations": "Integrazioni",
       "dangerZone": "Zona Pericolosa"
+    },
+    "integrations": {
+      "title": "Integrazioni",
+      "subtitle": "Collega i tuoi account Google Analytics e Google Ads",
+      "saveButton": "Salva Configurazione",
+      "saving": "Salvataggio...",
+      "success": "Configurazione salvata!",
+      "successDesc": "Le impostazioni di integrazione sono state aggiornate",
+      "analytics": {
+        "title": "Google Analytics",
+        "description": "Collega Google Analytics per monitorare il traffico del tuo sito web",
+        "connected": "Connesso",
+        "disconnected": "Non connesso",
+        "enable": "Abilita Google Analytics",
+        "trackingId": "Tracking ID (GA4)",
+        "trackingIdPlaceholder": "G-XXXXXXXXXX",
+        "trackingIdHelp": "Il tuo Google Analytics 4 Measurement ID",
+        "propertyId": "Property ID",
+        "propertyIdPlaceholder": "123456789",
+        "propertyIdHelp": "ID della proprietà GA4 (9 cifre)"
+      },
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Collega Google Ads per monitorare le conversioni delle tue campagne",
+        "connected": "Connesso",
+        "disconnected": "Non connesso",
+        "enable": "Abilita Google Ads",
+        "customerId": "Customer ID",
+        "customerIdPlaceholder": "123-456-7890",
+        "customerIdHelp": "Il tuo ID cliente Google Ads (formato: 123-456-7890)",
+        "conversionId": "Conversion ID",
+        "conversionIdPlaceholder": "AW-123456789",
+        "conversionIdHelp": "ID conversione Google Ads (formato: AW-XXXXXXXXX)",
+        "conversionLabel": "Conversion Label",
+        "conversionLabelPlaceholder": "abcDEF123ghiJKL",
+        "conversionLabelHelp": "Etichetta della conversione da monitorare"
+      }
     }
   }
 }

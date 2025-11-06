@@ -82,7 +82,7 @@ export default function BrandIdentityPage() {
   } = useBrandStore();
 
   const [mainTab, setMainTab] = useState<"strategy" | "visual">("strategy");
-  const [visualTab, setVisualTab] = useState("templates");
+  const [visualTab, setVisualTab] = useState("colors");
 
   // Advanced mode state with localStorage persistence
   const [advancedMode, setAdvancedMode] = useAdvancedMode();
@@ -450,11 +450,7 @@ export default function BrandIdentityPage() {
             {/* ========== TAB 2: VISUAL IDENTITY ========== */}
             <TabsContent value="visual" className="mt-6">
               <Tabs value={visualTab} onValueChange={setVisualTab}>
-                <TabsList className="grid w-full grid-cols-4">
-                  <TabsTrigger value="templates">
-                    <Sparkles className="w-4 h-4 mr-2" />
-                    Modelli
-                  </TabsTrigger>
+                <TabsList className="grid w-full grid-cols-3">
                   <TabsTrigger value="colors">
                     <Palette className="w-4 h-4 mr-2" />
                     Colori
@@ -665,14 +661,6 @@ export default function BrandIdentityPage() {
                     assets={brandDNA.assets}
                     onChange={updateAssets}
                     advancedMode={advancedMode}
-                  />
-                </TabsContent>
-
-                {/* Templates Tab */}
-                <TabsContent value="templates" className="space-y-6 mt-6">
-                  <TemplateSelector
-                    currentBrand={brandDNA}
-                    onSelect={handleTemplateSelect}
                   />
                 </TabsContent>
               </Tabs>

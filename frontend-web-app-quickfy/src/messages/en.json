@@ -593,7 +593,45 @@
       "general": "General",
       "team": "Team",
       "settings": "Settings",
+      "integrations": "Integrations",
       "dangerZone": "Danger Zone"
+    },
+    "integrations": {
+      "title": "Integrations",
+      "subtitle": "Connect your Google Analytics and Google Ads accounts",
+      "saveButton": "Save Configuration",
+      "saving": "Saving...",
+      "success": "Configuration saved!",
+      "successDesc": "Integration settings have been updated",
+      "analytics": {
+        "title": "Google Analytics",
+        "description": "Connect Google Analytics to track your website traffic",
+        "connected": "Connected",
+        "disconnected": "Not connected",
+        "enable": "Enable Google Analytics",
+        "trackingId": "Tracking ID (GA4)",
+        "trackingIdPlaceholder": "G-XXXXXXXXXX",
+        "trackingIdHelp": "Your Google Analytics 4 Measurement ID",
+        "propertyId": "Property ID",
+        "propertyIdPlaceholder": "123456789",
+        "propertyIdHelp": "GA4 Property ID (9 digits)"
+      },
+      "googleAds": {
+        "title": "Google Ads",
+        "description": "Connect Google Ads to track your campaign conversions",
+        "connected": "Connected",
+        "disconnected": "Not connected",
+        "enable": "Enable Google Ads",
+        "customerId": "Customer ID",
+        "customerIdPlaceholder": "123-456-7890",
+        "customerIdHelp": "Your Google Ads Customer ID (format: 123-456-7890)",
+        "conversionId": "Conversion ID",
+        "conversionIdPlaceholder": "AW-123456789",
+        "conversionIdHelp": "Google Ads Conversion ID (format: AW-XXXXXXXXX)",
+        "conversionLabel": "Conversion Label",
+        "conversionLabelPlaceholder": "abcDEF123ghiJKL",
+        "conversionLabelHelp": "Conversion label to track"
+      }
     }
   }
 }
