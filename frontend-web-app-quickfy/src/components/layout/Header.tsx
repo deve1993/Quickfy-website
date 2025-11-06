@@ -149,7 +149,7 @@ export function Header({ onMenuClick }: HeaderProps) {
               <span>{t("profile")}</span>
             </DropdownMenuItem>
             <DropdownMenuItem
-              onClick={() => router.push("/dashboard/settings/workspace")}
+              onClick={() => router.push("/dashboard/workspace")}
             >
               <Building2 className="mr-2 h-4 w-4" />
               <span>{t("workspace")}</span>
