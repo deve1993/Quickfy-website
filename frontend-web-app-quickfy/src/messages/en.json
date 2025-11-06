@@ -485,5 +485,115 @@
     "toneDescriptionPlaceholder": "Describe how you communicate with your customers. E.g.: 'We use clear and direct language, without jargon. We are professional but always approachable.'",
     "saveChanges": "Save Changes",
     "cancel": "Cancel"
+  },
+  "workspace": {
+    "page": {
+      "title": "Workspace Management",
+      "subtitle": "Manage your workspaces and team members",
+      "createNew": "New Workspace"
+    },
+    "list": {
+      "title": "Your Workspaces",
+      "description": "List of all workspaces you have access to",
+      "empty": "No workspaces available",
+      "emptyDescription": "Create your first workspace to get started",
+      "members": "{count} members",
+      "member": "1 member",
+      "created": "Created on {date}",
+      "active": "Active",
+      "switch": "Switch to this workspace",
+      "manage": "Manage"
+    },
+    "create": {
+      "title": "Create New Workspace",
+      "subtitle": "Set up a new workspace for your team",
+      "button": "Create Workspace",
+      "creating": "Creating...",
+      "success": "Workspace created!",
+      "successDesc": "The workspace has been created successfully",
+      "error": "Creation error",
+      "errorDesc": "An error occurred while creating the workspace"
+    },
+    "update": {
+      "title": "Edit Workspace",
+      "subtitle": "Update workspace information",
+      "button": "Save Changes",
+      "updating": "Saving...",
+      "success": "Workspace updated!",
+      "successDesc": "Changes have been saved successfully"
+    },
+    "delete": {
+      "title": "Delete Workspace",
+      "subtitle": "This action is permanent and cannot be undone",
+      "confirm": "Are you sure you want to delete this workspace?",
+      "confirmDesc": "All associated data will be permanently deleted. This action cannot be undone.",
+      "button": "Delete Workspace",
+      "deleting": "Deleting...",
+      "success": "Workspace deleted",
+      "successDesc": "The workspace has been deleted successfully",
+      "cancel": "Cancel",
+      "inputLabel": "Type the workspace name to confirm",
+      "inputPlaceholder": "Workspace name"
+    },
+    "members": {
+      "title": "Team Members",
+      "description": "Manage workspace members and permissions",
+      "invite": "Invite Member",
+      "inviting": "Sending invite...",
+      "email": "Email",
+      "emailPlaceholder": "name@example.com",
+      "role": "Role",
+      "selectRole": "Select a role",
+      "invitedAt": "Invited on {date}",
+      "acceptedAt": "Accepted on {date}",
+      "pending": "Pending",
+      "active": "Active",
+      "noMembers": "No members",
+      "noMembersDesc": "Start by inviting your team members",
+      "inviteSuccess": "Invite sent!",
+      "inviteSuccessDesc": "The invite has been sent to {email}",
+      "inviteError": "Error sending invite",
+      "removeTitle": "Remove Member",
+      "removeConfirm": "Are you sure you want to remove {name} from the workspace?",
+      "removeButton": "Remove",
+      "removeSuccess": "Member removed",
+      "removeSuccessDesc": "{name} has been removed from the workspace",
+      "updateRole": "Update Role",
+      "updateRoleSuccess": "Role updated",
+      "updateRoleSuccessDesc": "{name}'s role has been updated",
+      "resendInvite": "Resend Invite",
+      "resendSuccess": "Invite resent"
+    },
+    "roles": {
+      "admin": "Admin",
+      "adminDesc": "Full access to all features",
+      "editor": "Editor",
+      "editorDesc": "Can edit content but not settings",
+      "viewer": "Viewer",
+      "viewerDesc": "View only, no editing"
+    },
+    "fields": {
+      "name": "Workspace Name",
+      "namePlaceholder": "e.g. My Company",
+      "description": "Description",
+      "descriptionPlaceholder": "Describe your workspace (optional)",
+      "slug": "Workspace URL",
+      "plan": "Plan",
+      "status": "Status",
+      "createdAt": "Created Date"
+    },
+    "settings": {
+      "title": "Workspace Settings",
+      "general": "General",
+      "team": "Team",
+      "billing": "Billing",
+      "danger": "Danger Zone"
+    },
+    "tabs": {
+      "general": "General",
+      "team": "Team",
+      "settings": "Settings",
+      "dangerZone": "Danger Zone"
+    }
   }
 }

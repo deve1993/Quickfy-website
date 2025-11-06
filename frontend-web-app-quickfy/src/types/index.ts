@@ -65,6 +65,42 @@ export interface WorkspaceSettings {
   googleAdsConnected: boolean;
 }
 
+// ============================================
+// WORKSPACE MANAGEMENT TYPES
+// ============================================
+
+export interface CreateWorkspaceData {
+  name: string;
+  description?: string;
+  slug: string;
+}
+
+export interface UpdateWorkspaceData {
+  name?: string;
+  description?: string;
+  settings?: Partial<WorkspaceSettings>;
+}
+
+export interface InviteMemberData {
+  email: string;
+  role: UserRole;
+}
+
+export interface UpdateMemberRoleData {
+  role: UserRole;
+}
+
+export interface WorkspaceInvitation {
+  id: string;
+  workspaceId: string;
+  email: string;
+  role: UserRole;
+  invitedBy: User;
+  invitedAt: string;
+  expiresAt: string;
+  status: 'pending' | 'accepted' | 'expired' | 'cancelled';
+}
+
 export interface BillingInfo {
   companyName: string;
   vatNumber?: string;

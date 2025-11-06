@@ -427,4 +427,128 @@ export const mockApi = {
     await new Promise((resolve) => setTimeout(resolve, 300));
     return mockCampaigns;
   },
+
+  // ============================================
+  // WORKSPACE MANAGEMENT
+  // ============================================
+
+  getWorkspaces: async () => {
+    await new Promise((resolve) => setTimeout(resolve, 300));
+    return mockWorkspaces;
+  },
+
+  getWorkspace: async (id: string) => {
+    await new Promise((resolve) => setTimeout(resolve, 300));
+    const workspace = mockWorkspaces.find((w) => w.id === id);
+    if (!workspace) throw new Error('Workspace not found');
+    return workspace;
+  },
+
+  createWorkspace: async (data: any) => {
+    await new Promise((resolve) => setTimeout(resolve, 800));
+    const newWorkspace: Workspace = {
+      id: Date.now().toString(),
+      name: data.name,
+      slug: data.slug,
+      plan: 'starter',
+      subscriptionStatus: 'trialing',
+      trialEndsAt: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString(),
+      members: [
+        {
+          id: '1',
+          user: mockUsers[0],
+          role: 'admin',
+          invitedAt: new Date().toISOString(),
+          acceptedAt: new Date().toISOString(),
+        },
+      ],
+      createdAt: new Date().toISOString(),
+      settings: {
+        timezone: 'Europe/Rome',
+        currency: 'EUR',
+        locale: 'it_IT',
+        analyticsConnected: false,
+        googleAdsConnected: false,
+      },
+    };
+    mockWorkspaces.push(newWorkspace);
+    return newWorkspace;
+  },
+
+  updateWorkspace: async (id: string, data: any) => {
+    await new Promise((resolve) => setTimeout(resolve, 500));
+    const index = mockWorkspaces.findIndex((w) => w.id === id);
+    if (index === -1) throw new Error('Workspace not found');
+
+    mockWorkspaces[index] = {
+      ...mockWorkspaces[index],
+      ...data,
+      settings: data.settings
+        ? { ...mockWorkspaces[index].settings, ...data.settings }
+        : mockWorkspaces[index].settings,
+    };
+    return mockWorkspaces[index];
+  },
+
+  deleteWorkspace: async (id: string) => {
+    await new Promise((resolve) => setTimeout(resolve, 800));
+    const index = mockWorkspaces.findIndex((w) => w.id === id);
+    if (index === -1) throw new Error('Workspace not found');
+    mockWorkspaces.splice(index, 1);
+  },
+
+  // ============================================
+  // WORKSPACE MEMBERS
+  // ============================================
+
+  inviteMember: async (workspaceId: string, data: any) => {
+    await new Promise((resolve) => setTimeout(resolve, 600));
+    const workspace = mockWorkspaces.find((w) => w.id === workspaceId);
+    if (!workspace) throw new Error('Workspace not found');
+
+    const newMember: any = {
+      id: Date.now().toString(),
+      user: {
+        id: Date.now().toString(),
+        email: data.email,
+        name: data.email.split('@')[0],
+        role: data.role,
+        createdAt: new Date().toISOString(),
+      },
+      role: data.role,
+      invitedAt: new Date().toISOString(),
+      // acceptedAt undefined = pending
+    };
+
+    workspace.members.push(newMember);
+    return newMember;
+  },
+
+  updateMemberRole: async (workspaceId: string, memberId: string, data: any) => {
+    await new Promise((resolve) => setTimeout(resolve, 500));
+    const workspace = mockWorkspaces.find((w) => w.id === workspaceId);
+    if (!workspace) throw new Error('Workspace not found');
+
+    const member = workspace.members.find((m) => m.id === memberId);
+    if (!member) throw new Error('Member not found');
+
+    member.role = data.role;
+    member.user.role = data.role;
+  },
+
+  removeMember: async (workspaceId: string, memberId: string) => {
+    await new Promise((resolve) => setTimeout(resolve, 500));
+    const workspace = mockWorkspaces.find((w) => w.id === workspaceId);
+    if (!workspace) throw new Error('Workspace not found');
+
+    const index = workspace.members.findIndex((m) => m.id === memberId);
+    if (index === -1) throw new Error('Member not found');
+
+    workspace.members.splice(index, 1);
+  },
+
+  resendInvite: async (workspaceId: string, memberId: string) => {
+    await new Promise((resolve) => setTimeout(resolve, 500));
+    // Simulate API call
+  },
 };

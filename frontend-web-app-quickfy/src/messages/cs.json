@@ -485,5 +485,115 @@
     "toneDescriptionPlaceholder": "Popište, jak komunikujete se svými zákazníky. Např.: 'Používáme jasný a přímý jazyk, bez žargonu. Jsme profesionální, ale vždy přístupní.'",
     "saveChanges": "Uložit změny",
     "cancel": "Zrušit"
+  },
+  "workspace": {
+    "page": {
+      "title": "Správa pracovního prostoru",
+      "subtitle": "Spravujte své pracovní prostory a členy týmu",
+      "createNew": "Nový pracovní prostor"
+    },
+    "list": {
+      "title": "Vaše pracovní prostory",
+      "description": "Seznam všech pracovních prostorů, ke kterým máte přístup",
+      "empty": "Žádné pracovní prostory",
+      "emptyDescription": "Vytvořte svůj první pracovní prostor",
+      "members": "{count} členů",
+      "member": "1 člen",
+      "created": "Vytvořeno {date}",
+      "active": "Aktivní",
+      "switch": "Přepnout na tento prostor",
+      "manage": "Spravovat"
+    },
+    "create": {
+      "title": "Vytvořit nový pracovní prostor",
+      "subtitle": "Nastavte nový pracovní prostor pro váš tým",
+      "button": "Vytvořit pracovní prostor",
+      "creating": "Vytváření...",
+      "success": "Pracovní prostor vytvořen!",
+      "successDesc": "Pracovní prostor byl úspěšně vytvořen",
+      "error": "Chyba při vytváření",
+      "errorDesc": "Při vytváření pracovního prostoru došlo k chybě"
+    },
+    "update": {
+      "title": "Upravit pracovní prostor",
+      "subtitle": "Aktualizujte informace o pracovním prostoru",
+      "button": "Uložit změny",
+      "updating": "Ukládání...",
+      "success": "Pracovní prostor aktualizován!",
+      "successDesc": "Změny byly úspěšně uloženy"
+    },
+    "delete": {
+      "title": "Smazat pracovní prostor",
+      "subtitle": "Tato akce je trvalá a nelze ji vrátit zpět",
+      "confirm": "Jste si jisti, že chcete smazat tento pracovní prostor?",
+      "confirmDesc": "Všechna související data budou trvale smazána. Tuto akci nelze vrátit zpět.",
+      "button": "Smazat pracovní prostor",
+      "deleting": "Mazání...",
+      "success": "Pracovní prostor smazán",
+      "successDesc": "Pracovní prostor byl úspěšně smazán",
+      "cancel": "Zrušit",
+      "inputLabel": "Zadejte název pracovního prostoru pro potvrzení",
+      "inputPlaceholder": "Název pracovního prostoru"
+    },
+    "members": {
+      "title": "Členové týmu",
+      "description": "Spravujte členy a oprávnění pracovního prostoru",
+      "invite": "Pozvat člena",
+      "inviting": "Odesílání pozvánky...",
+      "email": "E-mail",
+      "emailPlaceholder": "jmeno@priklad.cz",
+      "role": "Role",
+      "selectRole": "Vyberte roli",
+      "invitedAt": "Pozván {date}",
+      "acceptedAt": "Přijato {date}",
+      "pending": "Čeká",
+      "active": "Aktivní",
+      "noMembers": "Žádní členové",
+      "noMembersDesc": "Začněte pozváním členů vašeho týmu",
+      "inviteSuccess": "Pozvánka odeslána!",
+      "inviteSuccessDesc": "Pozvánka byla odeslána na {email}",
+      "inviteError": "Chyba při odesílání pozvánky",
+      "removeTitle": "Odebrat člena",
+      "removeConfirm": "Jste si jisti, že chcete odebrat {name} z pracovního prostoru?",
+      "removeButton": "Odebrat",
+      "removeSuccess": "Člen odebrán",
+      "removeSuccessDesc": "{name} byl odebrán z pracovního prostoru",
+      "updateRole": "Aktualizovat roli",
+      "updateRoleSuccess": "Role aktualizována",
+      "updateRoleSuccessDesc": "Role uživatele {name} byla aktualizována",
+      "resendInvite": "Znovu odeslat pozvánku",
+      "resendSuccess": "Pozvánka znovu odeslána"
+    },
+    "roles": {
+      "admin": "Admin",
+      "adminDesc": "Plný přístup ke všem funkcím",
+      "editor": "Editor",
+      "editorDesc": "Může upravovat obsah, ale ne nastavení",
+      "viewer": "Viewer",
+      "viewerDesc": "Pouze prohlížení, žádné úpravy"
+    },
+    "fields": {
+      "name": "Název pracovního prostoru",
+      "namePlaceholder": "např. Moje firma",
+      "description": "Popis",
+      "descriptionPlaceholder": "Popište váš pracovní prostor (volitelné)",
+      "slug": "URL pracovního prostoru",
+      "plan": "Plán",
+      "status": "Stav",
+      "createdAt": "Datum vytvoření"
+    },
+    "settings": {
+      "title": "Nastavení pracovního prostoru",
+      "general": "Obecné",
+      "team": "Tým",
+      "billing": "Fakturace",
+      "danger": "Nebezpečná zóna"
+    },
+    "tabs": {
+      "general": "Obecné",
+      "team": "Tým",
+      "settings": "Nastavení",
+      "dangerZone": "Nebezpečná zóna"
+    }
   }
 }

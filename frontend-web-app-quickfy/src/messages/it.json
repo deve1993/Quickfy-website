@@ -485,5 +485,115 @@
     "toneDescriptionPlaceholder": "Descrivi come comunichi con i tuoi clienti. Es: 'Usiamo un linguaggio chiaro e diretto, senza tecnicismi. Siamo professionali ma sempre accessibili.'",
     "saveChanges": "Salva Modifiche",
     "cancel": "Annulla"
+  },
+  "workspace": {
+    "page": {
+      "title": "Gestione Workspace",
+      "subtitle": "Gestisci i tuoi workspace e i membri del team",
+      "createNew": "Nuovo Workspace"
+    },
+    "list": {
+      "title": "I tuoi Workspace",
+      "description": "Elenco di tutti i workspace a cui hai accesso",
+      "empty": "Nessun workspace disponibile",
+      "emptyDescription": "Crea il tuo primo workspace per iniziare",
+      "members": "{count} membri",
+      "member": "1 membro",
+      "created": "Creato il {date}",
+      "active": "Attivo",
+      "switch": "Passa a questo workspace",
+      "manage": "Gestisci"
+    },
+    "create": {
+      "title": "Crea Nuovo Workspace",
+      "subtitle": "Configura un nuovo spazio di lavoro per il tuo team",
+      "button": "Crea Workspace",
+      "creating": "Creazione in corso...",
+      "success": "Workspace creato!",
+      "successDesc": "Il workspace è stato creato con successo",
+      "error": "Errore nella creazione",
+      "errorDesc": "Si è verificato un errore durante la creazione del workspace"
+    },
+    "update": {
+      "title": "Modifica Workspace",
+      "subtitle": "Aggiorna le informazioni del workspace",
+      "button": "Salva Modifiche",
+      "updating": "Salvataggio in corso...",
+      "success": "Workspace aggiornato!",
+      "successDesc": "Le modifiche sono state salvate con successo"
+    },
+    "delete": {
+      "title": "Elimina Workspace",
+      "subtitle": "Questa azione è permanente e non può essere annullata",
+      "confirm": "Sei sicuro di voler eliminare questo workspace?",
+      "confirmDesc": "Tutti i dati associati verranno eliminati definitivamente. Questa azione non può essere annullata.",
+      "button": "Elimina Workspace",
+      "deleting": "Eliminazione in corso...",
+      "success": "Workspace eliminato",
+      "successDesc": "Il workspace è stato eliminato con successo",
+      "cancel": "Annulla",
+      "inputLabel": "Digita il nome del workspace per confermare",
+      "inputPlaceholder": "Nome workspace"
+    },
+    "members": {
+      "title": "Membri del Team",
+      "description": "Gestisci i membri e i permessi del workspace",
+      "invite": "Invita Membro",
+      "inviting": "Invio invito...",
+      "email": "Email",
+      "emailPlaceholder": "nome@esempio.com",
+      "role": "Ruolo",
+      "selectRole": "Seleziona un ruolo",
+      "invitedAt": "Invitato il {date}",
+      "acceptedAt": "Accettato il {date}",
+      "pending": "In attesa",
+      "active": "Attivo",
+      "noMembers": "Nessun membro",
+      "noMembersDesc": "Inizia invitando i membri del tuo team",
+      "inviteSuccess": "Invito inviato!",
+      "inviteSuccessDesc": "L'invito è stato inviato a {email}",
+      "inviteError": "Errore nell'invio dell'invito",
+      "removeTitle": "Rimuovi Membro",
+      "removeConfirm": "Sei sicuro di voler rimuovere {name} dal workspace?",
+      "removeButton": "Rimuovi",
+      "removeSuccess": "Membro rimosso",
+      "removeSuccessDesc": "{name} è stato rimosso dal workspace",
+      "updateRole": "Aggiorna Ruolo",
+      "updateRoleSuccess": "Ruolo aggiornato",
+      "updateRoleSuccessDesc": "Il ruolo di {name} è stato aggiornato",
+      "resendInvite": "Reinvia Invito",
+      "resendSuccess": "Invito reinviato"
+    },
+    "roles": {
+      "admin": "Admin",
+      "adminDesc": "Accesso completo a tutte le funzionalità",
+      "editor": "Editor",
+      "editorDesc": "Può modificare contenuti ma non le impostazioni",
+      "viewer": "Viewer",
+      "viewerDesc": "Solo visualizzazione, nessuna modifica"
+    },
+    "fields": {
+      "name": "Nome Workspace",
+      "namePlaceholder": "Es: La mia azienda",
+      "description": "Descrizione",
+      "descriptionPlaceholder": "Descrivi il tuo workspace (opzionale)",
+      "slug": "URL Workspace",
+      "plan": "Piano",
+      "status": "Stato",
+      "createdAt": "Data Creazione"
+    },
+    "settings": {
+      "title": "Impostazioni Workspace",
+      "general": "Generale",
+      "team": "Team",
+      "billing": "Fatturazione",
+      "danger": "Zona Pericolosa"
+    },
+    "tabs": {
+      "general": "Generale",
+      "team": "Team",
+      "settings": "Impostazioni",
+      "dangerZone": "Zona Pericolosa"
+    }
   }
 }
