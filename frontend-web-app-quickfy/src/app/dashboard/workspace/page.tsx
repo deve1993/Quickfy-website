@@ -140,16 +140,16 @@ export default function WorkspacePage() {
               }`}
             >
               {activeWorkspace?.id === workspace.id && (
-                <div className="absolute top-0 right-0 w-0 h-0 border-t-[40px] border-t-primary border-l-[40px] border-l-transparent" />
+                <div className="absolute top-0 right-0 w-0 h-0 border-t-[32px] border-t-primary border-l-[32px] border-l-transparent z-10" />
               )}
 
-              <CardHeader>
-                <div className="flex items-start justify-between">
-                  <div className="flex-1">
-                    <CardTitle className="flex items-center gap-2">
-                      {workspace.name}
+              <CardHeader className="relative pb-3">
+                <div className="flex items-start justify-between gap-2">
+                  <div className="flex-1 min-w-0 pr-8">
+                    <CardTitle className="flex items-center gap-2 flex-wrap">
+                      <span className="truncate">{workspace.name}</span>
                       {activeWorkspace?.id === workspace.id && (
-                        <Badge variant="default" className="text-xs">{t("list.active")}</Badge>
+                        <Badge variant="default" className="text-xs shrink-0">{t("list.active")}</Badge>
                       )}
                     </CardTitle>
                     <CardDescription className="mt-1">
