@@ -341,6 +341,96 @@
       "postDeleted": "Příspěvek smazán",
       "postDuplicated": "Příspěvek duplikován",
       "error": "Chyba operace"
+    },
+    "textGenerator": {
+      "title": "Generování textu s AI",
+      "description": "Vytvářejte poutavý obsah s umělou inteligencí",
+      "advancedOptions": "Pokročilé možnosti",
+      "tone": "Tón hlasu",
+      "tones": {
+        "professional": "Profesionální",
+        "friendly": "Přátelský",
+        "playful": "Hravý",
+        "formal": "Formální"
+      },
+      "length": "Délka",
+      "lengths": {
+        "short": "Krátký (~50 slov)",
+        "medium": "Střední (~100 slov)",
+        "long": "Dlouhý (~200 slov)"
+      },
+      "includeEmojis": "Zahrnout emoji",
+      "emojisYes": "Ano 😊",
+      "emojisNo": "Ne",
+      "generateButton": "Generovat text s AI",
+      "generating": "Generování...",
+      "textLabel": "Vygenerovaný text (upravitelný)",
+      "textPlaceholder": "Text vygenerovaný AI se zobrazí zde. Před publikováním ho můžete volně upravit.",
+      "characterCount": "{count} znaků",
+      "helpText": "Buďte konkrétní pro lepší výsledky. Zahrňte podrobnosti o stylu, barvách, atmosféře atd.",
+      "errorNoPlatform": "Nejprve vyberte platformu a typ příspěvku",
+      "successGenerated": "Text úspěšně vygenerován!"
+    },
+    "mediaUploader": {
+      "title": "Nahrát soubor",
+      "dragDrop": "Přetáhněte soubor sem nebo klikněte pro výběr",
+      "uploading": "Nahrávání...",
+      "supportedFormats": "Podporované formáty: JPG, PNG, GIF, MP4, MOV",
+      "maxSize": "Max 10MB pro obrázky, 50MB pro videa",
+      "preview": "Náhled",
+      "fileName": "Název souboru",
+      "fileType": "Typ",
+      "fileSize": "Velikost",
+      "typeImage": "Obrázek",
+      "typeVideo": "Video",
+      "remove": "Odebrat",
+      "errorUnsupportedFormat": "Nepodporovaný formát souboru. Použijte JPG, PNG, GIF, MP4 nebo MOV.",
+      "errorTooLarge": "Soubor je příliš velký. Maximální velikost: {maxSize}MB.",
+      "successUploaded": "Soubor úspěšně nahrán!"
+    },
+    "aiImageGenerator": {
+      "title": "Generovat s AI",
+      "promptLabel": "Popište obrázek, který chcete vytvořit",
+      "promptPlaceholder": "Např.: Kočka sedící na stole s počítačem, moderní minimalistický styl, pastelové barvy",
+      "promptHelp": "Buďte konkrétní pro lepší výsledky. Zahrňte podrobnosti o stylu, barvách, atmosféře atd.",
+      "style": "Styl",
+      "styles": {
+        "realistic": "🖼️ Realistický",
+        "artistic": "🎨 Umělecký",
+        "cartoon": "🎭 Kreslený",
+        "minimalist": "⚪ Minimalistický",
+        "3d": "🎲 3D Render"
+      },
+      "dimensions": "Rozměry",
+      "dimensionLabels": {
+        "1:1": "1:1 Čtverec (Instagram příspěvek)",
+        "16:9": "16:9 Na šířku (Facebook, LinkedIn)",
+        "9:16": "9:16 Na výšku (Instagram Story)",
+        "4:5": "4:5 Instagram na výšku"
+      },
+      "quality": "Kvalita",
+      "qualities": {
+        "standard": "⚡ Standardní",
+        "hd": "✨ HD",
+        "ultra": "💎 Ultra HD"
+      },
+      "generateButton": "Generovat obrázek s AI",
+      "generating": "Generování...",
+      "progress": "{percent}% dokončeno...",
+      "confirmed": "✓ Obrázek potvrzen",
+      "viewButton": "Zobrazit",
+      "previewTitle": "Náhled vygenerovaného obrázku",
+      "previewDescription": "Zkontrolujte obrázek před potvrzením nebo vygenerujte znovu se stejným nastavením",
+      "regenerateButton": "Vygenerovat znovu",
+      "confirmButton": "Potvrdit obrázek",
+      "errorNoPrompt": "Zadejte prosím popis obrázku",
+      "errorGeneration": "Chyba při generování obrázku",
+      "successGenerated": "Obrázek úspěšně vygenerován!",
+      "successConfirmed": "Obrázek potvrzen!"
+    },
+    "mediaTabs": {
+      "upload": "Nahrát soubor",
+      "ai": "Generovat s AI"
     }
   },
   "campaigns": {

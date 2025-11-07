@@ -92,12 +92,80 @@ function SocialContent() {
 
   const handleSaveAsDraft = () => {
     if (!generatedPost) return;
-    toast.success(t("notifications.postSaved"));
+
+    // Prepare post data with all media and content
+    const postToSave = {
+      ...generatedPost,
+      content: {
+        ...generatedPost.content,
+        text: generatedText || generatedPost.content.text,
+      },
+      media: generatedPost.media,
+      metadata: {
+        hasUploadedMedia: uploadedMedia !== null,
+        hasAIGeneratedImage: aiGeneratedImage !== null,
+        uploadedMediaType: uploadedMedia?.type,
+        uploadedMediaSize: uploadedMedia?.size,
+        uploadedMediaName: uploadedMedia?.file.name,
+      },
+    };
+
+    // In production, this would save to backend/database
+    // For now, we'll store in localStorage
+    try {
+      const existingDrafts = JSON.parse(localStorage.getItem('social_drafts') || '[]');
+      existingDrafts.push(postToSave);
+      localStorage.setItem('social_drafts', JSON.stringify(existingDrafts));
+
+      toast.success(t("notifications.postSaved"));
+
+      // Log saved data for debugging
+      console.log('Post saved as draft:', postToSave);
+    } catch (error) {
+      console.error('Error saving draft:', error);
+      toast.error(t("notifications.error"));
+    }
   };
 
   const handleSchedule = () => {
     if (!generatedPost) return;
-    toast.success(t("notifications.postScheduled"));
+
+    // Prepare post data with scheduling info and media
+    const postToSchedule = {
+      ...generatedPost,
+      status: 'scheduled' as const,
+      content: {
+        ...generatedPost.content,
+        text: generatedText || generatedPost.content.text,
+      },
+      media: generatedPost.media,
+      scheduling: {
+        scheduledFor: new Date(Date.now() + 24 * 60 * 60 * 1000), // Example: 24 hours from now
+        timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+      },
+      metadata: {
+        hasUploadedMedia: uploadedMedia !== null,
+        hasAIGeneratedImage: aiGeneratedImage !== null,
+        uploadedMediaType: uploadedMedia?.type,
+        uploadedMediaSize: uploadedMedia?.size,
+        uploadedMediaName: uploadedMedia?.file.name,
+      },
+    };
+
+    // In production, this would save to backend/database with scheduling
+    try {
+      const existingScheduled = JSON.parse(localStorage.getItem('social_scheduled') || '[]');
+      existingScheduled.push(postToSchedule);
+      localStorage.setItem('social_scheduled', JSON.stringify(existingScheduled));
+
+      toast.success(t("notifications.postScheduled"));
+
+      // Log scheduled data for debugging
+      console.log('Post scheduled:', postToSchedule);
+    } catch (error) {
+      console.error('Error scheduling post:', error);
+      toast.error(t("notifications.error"));
+    }
   };
 
   return (

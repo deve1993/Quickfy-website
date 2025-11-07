@@ -155,7 +155,7 @@ export function SimpleColorPicker({
   // Handle manual HEX input
   const handleHexInputChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
-      let newHex = e.target.value;
+      const newHex = e.target.value;
       setHexValue(newHex);
 
       // Only convert if valid hex

@@ -341,6 +341,96 @@
       "postDeleted": "Post eliminato",
       "postDuplicated": "Post duplicato",
       "error": "Errore nell'operazione"
+    },
+    "textGenerator": {
+      "title": "Generazione Testo con AI",
+      "description": "Crea contenuti coinvolgenti con l'intelligenza artificiale",
+      "advancedOptions": "Opzioni Avanzate",
+      "tone": "Tono di Voce",
+      "tones": {
+        "professional": "Professionale",
+        "friendly": "Amichevole",
+        "playful": "Divertente",
+        "formal": "Formale"
+      },
+      "length": "Lunghezza",
+      "lengths": {
+        "short": "Corto (~50 parole)",
+        "medium": "Medio (~100 parole)",
+        "long": "Lungo (~200 parole)"
+      },
+      "includeEmojis": "Includi Emoji",
+      "emojisYes": "Sì 😊",
+      "emojisNo": "No",
+      "generateButton": "Genera Testi con AI",
+      "generating": "Generazione in corso...",
+      "textLabel": "Testo Generato (Editabile)",
+      "textPlaceholder": "Il testo generato dall'AI apparirà qui. Potrai modificarlo liberamente prima di pubblicare.",
+      "characterCount": "{count} caratteri",
+      "helpText": "Sii specifico per ottenere risultati migliori. Includi dettagli su stile, colori, atmosfera, ecc.",
+      "errorNoPlatform": "Seleziona prima piattaforma e tipo di post",
+      "successGenerated": "Testo generato con successo!"
+    },
+    "mediaUploader": {
+      "title": "Carica File",
+      "dragDrop": "Trascina un file qui o clicca per selezionare",
+      "uploading": "Caricamento in corso...",
+      "supportedFormats": "Formati supportati: JPG, PNG, GIF, MP4, MOV",
+      "maxSize": "Max 10MB per immagini, 50MB per video",
+      "preview": "Anteprima",
+      "fileName": "Nome file",
+      "fileType": "Tipo",
+      "fileSize": "Dimensione",
+      "typeImage": "Immagine",
+      "typeVideo": "Video",
+      "remove": "Rimuovi",
+      "errorUnsupportedFormat": "Formato file non supportato. Usa JPG, PNG, GIF, MP4 o MOV.",
+      "errorTooLarge": "File troppo grande. Dimensione massima: {maxSize}MB.",
+      "successUploaded": "File caricato con successo!"
+    },
+    "aiImageGenerator": {
+      "title": "Genera con AI",
+      "promptLabel": "Descrivi l'immagine che vuoi creare",
+      "promptPlaceholder": "Es: Un gatto seduto su una scrivania con un computer, stile moderno e minimalista, colori pastello",
+      "promptHelp": "Sii specifico per ottenere risultati migliori. Includi dettagli su stile, colori, atmosfera, ecc.",
+      "style": "Stile",
+      "styles": {
+        "realistic": "🖼️ Realistico",
+        "artistic": "🎨 Artistico",
+        "cartoon": "🎭 Cartoon",
+        "minimalist": "⚪ Minimalista",
+        "3d": "🎲 3D Render"
+      },
+      "dimensions": "Dimensioni",
+      "dimensionLabels": {
+        "1:1": "1:1 Square (Instagram Post)",
+        "16:9": "16:9 Landscape (Facebook, LinkedIn)",
+        "9:16": "9:16 Portrait (Instagram Story)",
+        "4:5": "4:5 Instagram Portrait"
+      },
+      "quality": "Qualità",
+      "qualities": {
+        "standard": "⚡ Standard",
+        "hd": "✨ HD",
+        "ultra": "💎 Ultra HD"
+      },
+      "generateButton": "Genera Immagine con AI",
+      "generating": "Generazione in corso...",
+      "progress": "{percent}% completato...",
+      "confirmed": "✓ Immagine confermata",
+      "viewButton": "Visualizza",
+      "previewTitle": "Anteprima Immagine Generata",
+      "previewDescription": "Rivedi l'immagine prima di confermare o rigenerala con le stesse impostazioni",
+      "regenerateButton": "Rigenera",
+      "confirmButton": "Conferma Immagine",
+      "errorNoPrompt": "Inserisci una descrizione dell'immagine",
+      "errorGeneration": "Errore nella generazione dell'immagine",
+      "successGenerated": "Immagine generata con successo!",
+      "successConfirmed": "Immagine confermata!"
+    },
+    "mediaTabs": {
+      "upload": "Carica File",
+      "ai": "Genera con AI"
     }
   },
   "campaigns": {
