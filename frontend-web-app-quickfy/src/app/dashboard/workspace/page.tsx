@@ -174,24 +174,25 @@ export default function WorkspacePage() {
                 </div>
 
                 <div className="flex gap-2">
-                  {activeWorkspace?.id !== workspace.id && (
+                  {activeWorkspace?.id !== workspace.id ? (
                     <Button
                       variant="outline"
                       size="sm"
                       onClick={() => handleSwitch(workspace)}
-                      className="flex-1"
+                      className="w-full"
                     >
                       {t("list.switch")}
                     </Button>
+                  ) : (
+                    <Button
+                      size="sm"
+                      onClick={() => handleManage(workspace.id)}
+                      className="w-full"
+                    >
+                      {t("list.manage")}
+                      <ArrowRight className="h-4 w-4 ml-1" />
+                    </Button>
                   )}
-                  <Button
-                    size="sm"
-                    onClick={() => handleManage(workspace.id)}
-                    className="flex-1"
-                  >
-                    {t("list.manage")}
-                    <ArrowRight className="h-4 w-4 ml-1" />
-                  </Button>
                 </div>
               </CardContent>
             </Card>
