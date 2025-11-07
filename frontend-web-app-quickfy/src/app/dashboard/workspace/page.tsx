@@ -27,6 +27,10 @@ export default function WorkspacePage() {
 
   const handleCreate = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Prevent double submission
+    if (isCreating) return;
+
     if (!newWorkspace.name.trim()) {
       toast.error("Nome workspace richiesto");
       return;
@@ -157,8 +161,8 @@ export default function WorkspacePage() {
                 </div>
               </CardHeader>
 
-              <CardContent className="space-y-4 flex-1 flex flex-col justify-between">
-                <div className="flex items-center gap-4 text-sm text-muted-foreground">
+              <CardContent className="flex-1 flex flex-col">
+                <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
                   <div className="flex items-center gap-1">
                     <Users className="h-4 w-4" />
                     <span>
@@ -173,7 +177,7 @@ export default function WorkspacePage() {
                   </div>
                 </div>
 
-                <div className="flex gap-2">
+                <div className="flex gap-2 mt-auto">
                   {activeWorkspace?.id !== workspace.id && (
                     <Button
                       variant="outline"
