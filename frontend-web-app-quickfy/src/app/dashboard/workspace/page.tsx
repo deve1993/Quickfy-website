@@ -179,7 +179,7 @@ export default function WorkspacePage() {
                       variant="outline"
                       size="sm"
                       onClick={() => handleSwitch(workspace)}
-                      className="w-full"
+                      className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                     >
                       {t("list.switch")}
                     </Button>
