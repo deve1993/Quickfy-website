@@ -139,30 +139,26 @@ export default function WorkspacePage() {
           {workspaces.map((workspace) => (
             <Card
               key={workspace.id}
-              className={`relative flex flex-col transition-all hover:shadow-lg ${
+              className={`relative overflow-hidden transition-all hover:shadow-lg ${
                 activeWorkspace?.id === workspace.id
                   ? "ring-2 ring-primary shadow-md bg-primary/5"
                   : ""
               }`}
             >
-              <CardHeader className="space-y-3">
-                <div className="flex items-start justify-between gap-3">
-                  <div className="flex-1 min-w-0">
-                    <CardTitle className="text-lg mb-2 truncate">
-                      {workspace.name}
-                    </CardTitle>
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <Badge variant="outline" className="capitalize">{workspace.plan}</Badge>
-                      {activeWorkspace?.id === workspace.id && (
-                        <Badge variant="default" className="text-xs">{t("list.active")}</Badge>
-                      )}
-                    </div>
-                  </div>
-                </div>
+              <CardHeader className="pb-3">
+                <CardTitle className="text-lg truncate">
+                  {workspace.name}
+                </CardTitle>
+                <CardDescription className="flex items-center gap-2 flex-wrap">
+                  <Badge variant="outline" className="capitalize">{workspace.plan}</Badge>
+                  {activeWorkspace?.id === workspace.id && (
+                    <Badge variant="default" className="text-xs">{t("list.active")}</Badge>
+                  )}
+                </CardDescription>
               </CardHeader>
 
-              <CardContent className="flex-1 flex flex-col">
-                <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
+              <CardContent className="space-y-4">
+                <div className="flex items-center gap-4 text-sm text-muted-foreground flex-wrap">
                   <div className="flex items-center gap-1">
                     <Users className="h-4 w-4" />
                     <span>
@@ -177,7 +173,7 @@ export default function WorkspacePage() {
                   </div>
                 </div>
 
-                <div className="flex gap-2 mt-auto">
+                <div className="flex gap-2">
                   {activeWorkspace?.id !== workspace.id && (
                     <Button
                       variant="outline"
