@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Share2, TrendingUp, Users, Zap, Sparkles } from "lucide-react";
+import { Share2, TrendingUp, Users, Zap, Sparkles, Upload, Wand2 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FeatureGate } from "@/components/shared/FeatureGate";
 import { Button } from "@/components/ui/button";
@@ -10,11 +10,14 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useTranslations } from "@/lib/i18n/useTranslations";
-import type { SocialPlatform, PostType, SocialPost } from "@/types/social";
+import type { SocialPlatform, PostType, SocialPost, UploadedMedia } from "@/types/social";
 import { PlatformSelector } from "@/components/social/PlatformSelector";
 import { PostTypeSelector } from "@/components/social/PostTypeSelector";
 import { PostPreview } from "@/components/social/PostPreview";
 import { ContentLibrary } from "@/components/social/ContentLibrary";
+import { TextGenerator } from "@/components/social/TextGenerator";
+import { MediaUploader } from "@/components/social/MediaUploader";
+import { AIImageGenerator } from "@/components/social/AIImageGenerator";
 import { mockSocialPosts } from "@/lib/data/mockSocialPosts";
 import { toast } from "sonner";
 
@@ -32,6 +35,12 @@ function SocialContent() {
   const [generatedPost, setGeneratedPost] = useState<SocialPost | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
 
+  // AI Features state
+  const [generatedText, setGeneratedText] = useState("");
+  const [uploadedMedia, setUploadedMedia] = useState<UploadedMedia | null>(null);
+  const [aiGeneratedImage, setAiGeneratedImage] = useState<string | null>(null);
+  const [activeMediaTab, setActiveMediaTab] = useState<"upload" | "ai">("upload");
+
   const handleGenerate = () => {
     if (!selectedPlatform || !selectedType) {
       toast.error("Seleziona piattaforma e tipo di post");
@@ -47,12 +56,33 @@ function SocialContent() {
         p => p.platform === selectedPlatform && p.type === selectedType
       ) || mockSocialPosts[0];
 
+      // Create media object if we have uploaded or AI-generated media
+      let media = matchingPost.media;
+      if (aiGeneratedImage) {
+        media = {
+          type: 'image',
+          url: aiGeneratedImage,
+          alt: 'AI Generated Image',
+        };
+      } else if (uploadedMedia) {
+        media = {
+          type: uploadedMedia.type,
+          url: uploadedMedia.preview,
+          alt: uploadedMedia.file.name,
+        };
+      }
+
       setGeneratedPost({
         ...matchingPost,
         id: `generated-${Date.now()}`,
         status: 'draft',
         createdAt: new Date(),
         updatedAt: new Date(),
+        content: {
+          ...matchingPost.content,
+          text: generatedText || matchingPost.content.text,
+        },
+        media,
       });
 
       setIsGenerating(false);
@@ -211,9 +241,56 @@ function SocialContent() {
                       </Label>
                     </div>
                   </div>
+                </CardContent>
+              </Card>
 
+              {/* Text Generator Component */}
+              <TextGenerator
+                platform={selectedPlatform}
+                postType={selectedType}
+                topic={topic}
+                keywords={keywords}
+                targetAudience={targetAudience}
+                onTextGenerated={setGeneratedText}
+              />
+
+              {/* Media Section */}
+              <Card className="border-2">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Upload className="h-5 w-5 text-primary" />
+                    Media
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <Tabs value={activeMediaTab} onValueChange={(value) => setActiveMediaTab(value as "upload" | "ai")}>
+                    <TabsList className="grid w-full grid-cols-2">
+                      <TabsTrigger value="upload">
+                        <Upload className="mr-2 h-4 w-4" />
+                        Carica File
+                      </TabsTrigger>
+                      <TabsTrigger value="ai">
+                        <Wand2 className="mr-2 h-4 w-4" />
+                        Genera con AI
+                      </TabsTrigger>
+                    </TabsList>
+
+                    <TabsContent value="upload" className="mt-4">
+                      <MediaUploader onMediaUpload={setUploadedMedia} />
+                    </TabsContent>
+
+                    <TabsContent value="ai" className="mt-4">
+                      <AIImageGenerator onImageGenerated={setAiGeneratedImage} />
+                    </TabsContent>
+                  </Tabs>
+                </CardContent>
+              </Card>
+
+              {/* Actions Card */}
+              <Card>
+                <CardContent className="pt-6 space-y-4">
                   {/* Actions */}
-                  <div className="flex gap-2 pt-4">
+                  <div className="flex gap-2">
                     <Button
                       onClick={handleGenerate}
                       disabled={!selectedPlatform || !selectedType || isGenerating}

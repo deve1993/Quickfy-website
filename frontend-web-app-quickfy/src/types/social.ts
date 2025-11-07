@@ -15,6 +15,32 @@ export type PostType =
 
 export type PostStatus = 'draft' | 'scheduled' | 'published';
 
+export type AITone = 'professional' | 'friendly' | 'playful' | 'formal';
+export type AILength = 'short' | 'medium' | 'long';
+export type AIImageStyle = 'realistic' | 'artistic' | 'cartoon' | 'minimalist' | '3d';
+export type AIImageDimensions = '1:1' | '16:9' | '9:16' | '4:5';
+export type AIImageQuality = 'standard' | 'hd' | 'ultra';
+
+export interface AITextOptions {
+  tone: AITone;
+  length: AILength;
+  includeEmojis: boolean;
+}
+
+export interface AIImageOptions {
+  prompt: string;
+  style: AIImageStyle;
+  dimensions: AIImageDimensions;
+  quality: AIImageQuality;
+}
+
+export interface UploadedMedia {
+  file: File;
+  preview: string;
+  type: 'image' | 'video';
+  size: number;
+}
+
 export interface PostMetrics {
   estimatedReach: number;
   estimatedEngagement: number; // percentage

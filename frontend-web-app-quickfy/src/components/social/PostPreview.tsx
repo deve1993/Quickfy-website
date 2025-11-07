@@ -71,10 +71,20 @@ function InstagramPreview({ post }: { post: SocialPost }) {
         </div>
       </div>
 
-      {/* Image placeholder */}
+      {/* Media (Image or Video) */}
       {post.media && (
-        <div className="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 flex items-center justify-center">
-          <div className="text-4xl opacity-30">📸</div>
+        <div className="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900">
+          {post.media.url ? (
+            post.media.type === 'video' ? (
+              <video src={post.media.url} className="w-full h-full object-cover" controls />
+            ) : (
+              <img src={post.media.url} alt={post.media.alt || 'Post media'} className="w-full h-full object-cover" />
+            )
+          ) : (
+            <div className="w-full h-full flex items-center justify-center">
+              <div className="text-4xl opacity-30">📸</div>
+            </div>
+          )}
         </div>
       )}
 
@@ -128,10 +138,20 @@ function FacebookPreview({ post }: { post: SocialPost }) {
         )}
       </div>
 
-      {/* Image */}
+      {/* Media (Image or Video) */}
       {post.media && (
-        <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 flex items-center justify-center">
-          <div className="text-5xl opacity-30">🖼️</div>
+        <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900">
+          {post.media.url ? (
+            post.media.type === 'video' ? (
+              <video src={post.media.url} className="w-full h-full object-cover" controls />
+            ) : (
+              <img src={post.media.url} alt={post.media.alt || 'Post media'} className="w-full h-full object-cover" />
+            )
+          ) : (
+            <div className="w-full h-full flex items-center justify-center">
+              <div className="text-5xl opacity-30">🖼️</div>
+            </div>
+          )}
         </div>
       )}
 
@@ -183,10 +203,20 @@ function LinkedInPreview({ post }: { post: SocialPost }) {
         )}
       </div>
 
-      {/* Image */}
+      {/* Media (Image or Video) */}
       {post.media && (
-        <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 flex items-center justify-center">
-          <div className="text-5xl opacity-30">💼</div>
+        <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900">
+          {post.media.url ? (
+            post.media.type === 'video' ? (
+              <video src={post.media.url} className="w-full h-full object-cover" controls />
+            ) : (
+              <img src={post.media.url} alt={post.media.alt || 'Post media'} className="w-full h-full object-cover" />
+            )
+          ) : (
+            <div className="w-full h-full flex items-center justify-center">
+              <div className="text-5xl opacity-30">💼</div>
+            </div>
+          )}
         </div>
       )}
 
@@ -252,10 +282,20 @@ function TwitterPreview({ post }: { post: SocialPost }) {
             </div>
           )}
 
-          {/* Image */}
+          {/* Media (Image or Video) */}
           {post.media && (
-            <div className="mt-3 aspect-video bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 rounded-xl flex items-center justify-center">
-              <div className="text-5xl opacity-30">🐦</div>
+            <div className="mt-3 aspect-video bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 rounded-xl overflow-hidden">
+              {post.media.url ? (
+                post.media.type === 'video' ? (
+                  <video src={post.media.url} className="w-full h-full object-cover" controls />
+                ) : (
+                  <img src={post.media.url} alt={post.media.alt || 'Post media'} className="w-full h-full object-cover" />
+                )
+              ) : (
+                <div className="w-full h-full flex items-center justify-center">
+                  <div className="text-5xl opacity-30">🐦</div>
+                </div>
+              )}
             </div>
           )}
 
