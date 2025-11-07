@@ -30,7 +30,6 @@ import {
   Save,
   RotateCcw,
   Info,
-  Sparkles,
   AlertTriangle,
   Dna,
   Brush,
@@ -47,7 +46,6 @@ import { FontPreview } from "@/components/brand/FontPreview";
 import { FontPairings } from "@/components/brand/FontPairings";
 import { TypographyScale } from "@/components/brand/TypographyScale";
 import { AssetManager } from "@/components/brand/AssetManager";
-import { TemplateSelector } from "@/components/brand/TemplateSelector";
 import { AdvancedModeToggle, useAdvancedMode } from "@/components/brand/AdvancedModeToggle";
 
 // Brand components - Strategic DNA
@@ -255,10 +253,11 @@ export default function BrandIdentityPage() {
   };
 
   // Handle template selection (C2 fix: error handling, C3 fix: use ConfirmDialog)
-  const handleTemplateSelect = (template: BrandTemplate) => {
-    setPendingTemplate(template);
-    setTemplateDialogOpen(true);
-  };
+  // TODO: Re-enable when TemplateSelector is integrated
+  // const handleTemplateSelect = (template: BrandTemplate) => {
+  //   setPendingTemplate(template);
+  //   setTemplateDialogOpen(true);
+  // };
 
   const confirmTemplateSelect = () => {
     if (pendingTemplate) {

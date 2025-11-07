@@ -45,19 +45,23 @@ export function ContentLibrary({ posts, className }: ContentLibraryProps) {
     return matchesSearch && matchesPlatform && matchesType && matchesStatus;
   });
 
-  const handleEdit = (_post: SocialPost) => {
+  const handleEdit = (post: SocialPost) => {
+    console.log('Edit post:', post.id);
     toast.info("Edit functionality - Coming soon!");
   };
 
-  const handleDuplicate = (_post: SocialPost) => {
+  const handleDuplicate = (post: SocialPost) => {
+    console.log('Duplicate post:', post.id);
     toast.success(t("notifications.postDuplicated"));
   };
 
-  const handleDelete = (_post: SocialPost) => {
+  const handleDelete = (post: SocialPost) => {
+    console.log('Delete post:', post.id);
     toast.success(t("notifications.postDeleted"));
   };
 
-  const handleSchedule = (_post: SocialPost) => {
+  const handleSchedule = (post: SocialPost) => {
+    console.log('Schedule post:', post.id);
     toast.success(t("notifications.postScheduled"));
   };
 

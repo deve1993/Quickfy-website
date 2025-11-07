@@ -85,7 +85,7 @@ export function TextGenerator({
               Generazione Testo con AI
             </CardTitle>
             <CardDescription>
-              Crea contenuti coinvolgenti con l'intelligenza artificiale
+              Crea contenuti coinvolgenti con l&apos;intelligenza artificiale
             </CardDescription>
           </div>
           <Button

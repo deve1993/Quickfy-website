@@ -101,7 +101,7 @@ export function AIImageGenerator({ onImageGenerated }: AIImageGeneratorProps) {
       <div className="space-y-4">
         {/* Prompt */}
         <div className="space-y-2">
-          <Label htmlFor="ai-prompt">Descrivi l'immagine che vuoi creare</Label>
+          <Label htmlFor="ai-prompt">Descrivi l&apos;immagine che vuoi creare</Label>
           <Textarea
             id="ai-prompt"
             value={prompt}
@@ -243,7 +243,7 @@ export function AIImageGenerator({ onImageGenerated }: AIImageGeneratorProps) {
           <DialogHeader>
             <DialogTitle>Anteprima Immagine Generata</DialogTitle>
             <DialogDescription>
-              Rivedi l'immagine prima di confermare o rigenerala con le stesse impostazioni
+              Rivedi l&apos;immagine prima di confermare o rigenerala con le stesse impostazioni
             </DialogDescription>
           </DialogHeader>
 
