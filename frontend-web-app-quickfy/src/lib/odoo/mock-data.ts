@@ -484,7 +484,8 @@ export const mockApi = {
         },
       },
     };
-    mockWorkspaces.push(newWorkspace);
+    // Don't push to mockWorkspaces - the store will handle adding it
+    // mockWorkspaces.push(newWorkspace);
     return newWorkspace;
   },
 
