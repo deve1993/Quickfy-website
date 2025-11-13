@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Linkedin, Twitter, ArrowUp } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, ArrowUp, Facebook, Instagram } from 'lucide-react';
 import { memo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -185,7 +185,8 @@ export const MinimalFooter = memo(function MinimalFooter() {
             <h3 className="text-base font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-5 uppercase tracking-wide">
               {t('followUs')}
             </h3>
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-3">
+              {/* LinkedIn */}
               <motion.a
                 href="https://linkedin.com/company/quickfy"
                 target="_blank"
@@ -198,16 +199,46 @@ export const MinimalFooter = memo(function MinimalFooter() {
                 <Linkedin className="w-6 h-6" aria-hidden="true" />
               </motion.a>
 
+              {/* Facebook */}
               <motion.a
-                href="https://twitter.com/quickfy"
+                href="https://facebook.com/quickfy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-400 to-sky-500 hover:from-sky-500 hover:to-sky-600 shadow-lg hover:shadow-xl flex items-center justify-center text-white transition-all group"
+                className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-xl flex items-center justify-center text-white transition-all group"
                 whileHover={shouldReduceMotion ? {} : { scale: 1.1, rotate: -5 }}
                 whileTap={shouldReduceMotion ? {} : { scale: 0.95 }}
-                aria-label="Seguici su Twitter"
+                aria-label="Seguici su Facebook"
               >
-                <Twitter className="w-6 h-6" aria-hidden="true" />
+                <Facebook className="w-6 h-6" aria-hidden="true" />
+              </motion.a>
+
+              {/* Instagram */}
+              <motion.a
+                href="https://instagram.com/quickfy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-xl bg-gradient-to-br from-pink-500 via-purple-500 to-orange-500 hover:from-pink-600 hover:via-purple-600 hover:to-orange-600 shadow-lg hover:shadow-xl flex items-center justify-center text-white transition-all group"
+                whileHover={shouldReduceMotion ? {} : { scale: 1.1, rotate: 5 }}
+                whileTap={shouldReduceMotion ? {} : { scale: 0.95 }}
+                aria-label="Seguici su Instagram"
+              >
+                <Instagram className="w-6 h-6" aria-hidden="true" />
+              </motion.a>
+
+              {/* X (Twitter) */}
+              <motion.a
+                href="https://x.com/quickfy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-xl bg-gradient-to-br from-slate-800 to-slate-900 hover:from-slate-900 hover:to-black shadow-lg hover:shadow-xl flex items-center justify-center text-white transition-all group"
+                whileHover={shouldReduceMotion ? {} : { scale: 1.1, rotate: -5 }}
+                whileTap={shouldReduceMotion ? {} : { scale: 0.95 }}
+                aria-label="Seguici su X (Twitter)"
+              >
+                {/* X Logo - Custom SVG */}
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
               </motion.a>
             </div>
           </div>
