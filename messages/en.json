@@ -1,0 +1,1140 @@
+{
+  "meta": {
+    "title": "QuickFy | Your Simplified Analytics Dashboard with AI",
+    "description": "Turn your data into winning decisions. QuickFy offers a simplified analytics dashboard and AI tools for reviews and social media management. From €19/month. Free consultation available.",
+    "locale": "en"
+  },
+  "navigation": {
+    "features": "Features",
+    "benefits": "Benefits",
+    "pricing": "Pricing",
+    "roadmap": "Roadmap",
+    "testimonials": "Testimonials",
+    "whappi": "Whappi",
+    "contact": "Contact",
+    "home": "Home",
+    "startNow": "Start Now",
+    "logoAria": "QuickFy - Return to top of page",
+    "startNowAria": "Start now - Go to contact form",
+    "sectionAria": "Go to {section} section",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobileMenu": "Mobile menu",
+    "skipToContent": "Skip to main content",
+    "products": "Products",
+    "productsAria": "Products menu",
+    "whappiCta": "Pre-Order - Save 24%"
+  },
+  "hero": {
+    "headline": "Transform Your Data Into",
+    "headlineHighlight": "Winning Decisions",
+    "subheadline": "A simplified analytics dashboard that turns complex data into clear insights. Perfect for small businesses that want to grow without unnecessary complexity.",
+    "cta": {
+      "primary": "Talk to an Expert",
+      "ariaLabel": "Talk to an expert - Go to contact form"
+    },
+    "valueProposition": "✓ Free installation • ✓ 24/7 support • ✓ ROI guaranteed in 30 days",
+    "metrics": {
+      "hoursSaved": "15+ Hours Saved",
+      "roiImprovement": "+40% Leads Generated",
+      "clarity": "100% Data Clarity",
+      "perMonth": "per month",
+      "vsTraditional": "vs traditional methods",
+      "realTime": "in real-time"
+    },
+    "typewriter": [
+      "strategic decisions",
+      "sustainable growth",
+      "measurable results",
+      "digital success"
+    ]
+  },
+  "features": {
+    "title": "Everything You Need:",
+    "titleHighlight": "3 Key Modules",
+    "subtitle": "Analytics dashboard, review management, and social media - all in one platform designed for small businesses",
+    "items": [
+      {
+        "id": "data-intelligence",
+        "title": "Analytics Dashboard for Small Businesses",
+        "description": "A simplified dashboard that turns data from Google Analytics and ad campaigns into clear charts. No unnecessary complications: just what you really need to know.",
+        "benefits": [
+          "Unified dashboard for all data",
+          "Automated email reports",
+          "Clear ROI tracking"
+        ],
+        "icon": "BarChart3"
+      },
+      {
+        "id": "reputation-management",
+        "title": "AI-Powered Review Management",
+        "description": "Respond to Google and Facebook reviews directly from one place. AI suggests responses for you - you just click and send. Fast, easy, effective.",
+        "benefits": [
+          "One-click responses",
+          "AI response suggestions",
+          "Centralized management"
+        ],
+        "icon": "MessageSquare"
+      },
+      {
+        "id": "social-hub",
+        "title": "Social Hub: Instagram and Facebook in One",
+        "description": "Schedule posts, track performance, and respond to messages from Instagram and Facebook directly from QuickFy. Simple social media management without switching between apps.",
+        "benefits": [
+          "Post scheduling",
+          "Performance statistics",
+          "Centralized communication"
+        ],
+        "icon": "Share2"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Why Small Businesses Choose",
+    "titleHighlight": "QuickFy",
+    "subtitle": "Proven results with a simple dashboard and AI tools for your business growth",
+    "items": [
+      {
+        "title": "Time Saved",
+        "description": "Weekly hours gained from automated reports and faster review responses",
+        "value": "15+",
+        "unit": "hours/week"
+      },
+      {
+        "title": "Data Clarity",
+        "description": "Decisions based on clear dashboards instead of complex spreadsheets",
+        "value": "100%",
+        "unit": "transparency"
+      },
+      {
+        "title": "Lead Generation",
+        "description": "Average lead increase thanks to better review management and social media optimization",
+        "value": "+40%",
+        "unit": "more leads"
+      },
+      {
+        "title": "All-in-One",
+        "description": "Data, reviews, social media, and lead management in one platform",
+        "value": "5+",
+        "unit": "integrated tools"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Simple Pricing for Small Businesses",
+    "subtitle": "Start free with Analytics. Add features as your business grows.",
+    "perfectFor": "Perfect for:",
+    "features": "Features:",
+    "billingToggle": {
+      "monthly": "Monthly",
+      "annual": "Annual"
+    },
+    "savingsBadge": "Save 2 months!",
+    "period": {
+      "month": "month",
+      "year": "year"
+    },
+    "savings": "Save €{amount}",
+    "plans": {
+      "starter": {
+        "name": "STARTER",
+        "period": {
+          "monthly": "month",
+          "annual": "year"
+        },
+        "badge": "RECOMMENDED",
+        "perfectFor": "Perfect for: Small businesses that want simple analytics tools without complexity.",
+        "features": {
+          "0": "Simplified Analytics Dashboard",
+          "1": "Basic email reports",
+          "2": "Google Analytics data",
+          "3": "24/7 Support"
+        },
+        "cta": "Talk to an Expert"
+      },
+      "plus": {
+        "name": "PLUS",
+        "period": {
+          "monthly": "month",
+          "annual": "year"
+        },
+        "perfectFor": "Perfect for: Restaurants, hotels, professionals - where online reviews are critical for success.",
+        "features": {
+          "0": "All STARTER plan features",
+          "1": "AI-powered review management module",
+          "2": "One-click responses"
+        },
+        "cta": "Talk to an Expert"
+      },
+      "pro": {
+        "name": "PRO",
+        "period": {
+          "monthly": "month",
+          "annual": "year"
+        },
+        "perfectFor": "Perfect for: Businesses actively using Instagram and Facebook who want to manage everything from one place.",
+        "features": {
+          "0": "All PLUS plan features",
+          "1": "Social Hub module",
+          "2": "Post scheduling",
+          "3": "Social media dashboard"
+        },
+        "cta": "Talk to an Expert"
+      }
+    },
+    "consultation": {
+      "title": "Not sure which plan is right for you?",
+      "subtitle": "Book a free 30-minute consultation to discover the solution that best fits your needs.",
+      "cta": "Free Consultation",
+      "formMessage": "Hello! I would like to book a free consultation to find out which QuickFy plan best suits my company's needs. "
+    }
+  },
+  "contact": {
+    "title": "Ready to Transform Your",
+    "titleHighlight": "Business?",
+    "subtitle": "Start with an analytics dashboard today. Free consultation available for all new customers.",
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Full Name",
+          "placeholder": "Your full name"
+        },
+        "email": {
+          "label": "Email Address",
+          "placeholder": "Your business email"
+        },
+        "company": {
+          "label": "Company",
+          "placeholder": "Company name"
+        },
+        "phone": {
+          "label": "Phone",
+          "placeholder": "Phone number"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Describe your current marketing challenges..."
+        }
+      },
+      "submit": "Talk to an Expert",
+      "submitting": "Sending...",
+      "submitAnother": "Submit Another Request",
+      "ariaLabel": "QuickFy contact form",
+      "privacy": "I agree to the processing of personal data according to the Privacy Policy",
+      "socialProof": {
+        "response": "24h Response",
+        "clients": "500+ Satisfied Clients",
+        "roi": "Guaranteed ROI"
+      },
+      "progress": {
+        "label": "Completion progress"
+      },
+      "footer": {
+        "security": "🔒 Your data is secure • ✓ Guaranteed response within 24h • 💬 Free 30-minute consultation"
+      },
+      "validation": {
+        "name": "Name must contain at least 2 characters",
+        "email": "Please enter a valid email address",
+        "company": "Company name must contain at least 2 characters",
+        "phone": "Phone number must contain at least 10 digits",
+        "message": "Message must contain at least 10 characters",
+        "privacy": "You must accept the processing of personal data"
+      },
+      "error": {
+        "title": "Request Sending Error",
+        "message": "An error occurred. Please try again or contact us directly.",
+        "retry": "Retry"
+      }
+    },
+    "success": {
+      "title": "Request Sent!",
+      "message": "We will contact you within 24 hours to schedule your free consultation."
+    }
+  },
+  "languageSwitcher": {
+    "label": "Change language",
+    "languages": {
+      "cs": "Čeština",
+      "en": "English",
+      "it": "Italiano"
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Read the experiences of small businesses that gained data clarity and higher ROI with QuickFy",
+    "previousTestimonial": "Previous testimonial",
+    "nextTestimonial": "Next testimonial",
+    "goToTestimonial": "Go to testimonial",
+    "trustIndicators": {
+      "rating": "4.9/5 rating",
+      "clients": "500+ satisfied clients",
+      "projects": "1200+ successful projects"
+    },
+    "testimonial1": {
+      "name": "John Smith",
+      "role": "Owner",
+      "company": "The Corner Bistro",
+      "content": "Before QuickFy, I didn't understand Google Analytics at all. Now I have a clear dashboard that instantly shows me how the site is doing. The review module is great—I can reply to everyone within a minute!"
+    },
+    "testimonial2": {
+      "name": "Sarah Miller",
+      "role": "Owner",
+      "company": "Salon Marie",
+      "content": "Social Hub changed my life. I schedule Instagram posts a week ahead from QuickFy and see what works. I gained +60% followers in 3 months!"
+    },
+    "testimonial3": {
+      "name": "Michael Brown",
+      "role": "Marketing Manager",
+      "company": "FitPark London",
+      "content": "QuickFy's dashboard immediately shows me ad ROI. I see what one new member costs and where to invest more. Result? +40% members with the same budget."
+    },
+    "testimonial4": {
+      "name": "Emma Davis",
+      "role": "Owner",
+      "company": "Lakeside Inn",
+      "content": "With QuickFy, I reply to Google reviews in 2 minutes. AI suggests a response, I just edit and send. Thanks to this, we have 4.8 stars and lots of new bookings!"
+    },
+    "testimonial5": {
+      "name": "David Miller",
+      "role": "Digital Marketing Specialist",
+      "company": "TechGear Shop",
+      "content": "QuickFy gave me clarity in data. The dashboard shows which campaigns work and which don't. I stopped wasting money and ROI increased by 50% in the first month!"
+    }
+  },
+  "logos": {
+    "title": "Trusted by leading companies worldwide",
+    "description": "Join {count}+ companies that trust QuickFy for their marketing automation"
+  },
+  "roadmap": {
+    "title": "Our Development",
+    "titleHighlight": "Roadmap",
+    "subtitle": "Continuous innovation based on customer feedback and market needs",
+    "cta": "Powered by Customer Feedback",
+    "items": [
+      {
+        "quarter": "Q4 2025",
+        "status": "current",
+        "title": "Analytics Launch",
+        "keyAction": "Official launch of the basic dashboard",
+        "features": [
+          "Analytics plan at €19/month",
+          "Simplified dashboard",
+          "Automated reports"
+        ]
+      },
+      {
+        "quarter": "Q1 2026",
+        "status": "future",
+        "title": "First Enhancement",
+        "keyAction": "Free AI upgrade for existing customers",
+        "features": [
+          "Free AI alerts and summaries",
+          "Start of Reputation module development",
+          "Continuous dashboard improvements"
+        ]
+      },
+      {
+        "quarter": "Q2 2026",
+        "status": "future",
+        "title": "Plus Plan (Reputation)",
+        "keyAction": "Launch of AI-powered review management",
+        "features": [
+          "Plus plan at €39/month",
+          "AI review management",
+          "One-click responses"
+        ]
+      },
+      {
+        "quarter": "H2 2026",
+        "status": "future",
+        "title": "Pro Plan (Social Hub)",
+        "keyAction": "Complete platform for small business growth",
+        "features": [
+          "Pro plan at €69/month",
+          "Social Hub for Instagram/Facebook",
+          "Post scheduling"
+        ]
+      }
+    ]
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "homeAria": "Go back to homepage",
+    "currentPageAria": "Current page",
+    "navigationAria": "Breadcrumb navigation",
+    "separator": "Navigate to"
+  },
+  "footer": {
+    "description": "QuickFy - Simplified analytics dashboard and AI tools for small businesses. Data, reviews, and social media in one platform.",
+    "contact": {
+      "emailAria": "Send email to QuickFy"
+    },
+    "newsletter": {
+      "title": "Subscribe to Newsletter",
+      "subtitle": "Get updates on the latest features and tips to improve your performance",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "Enter your email",
+      "submit": "Subscribe",
+      "submitting": "Sending...",
+      "privacy": "We respect your privacy. Unsubscribe at any time.",
+      "trust": {
+        "subscribers": "Subscribers",
+        "frequency": "Weekly",
+        "updates": "Updates",
+        "spam": "Spam"
+      },
+      "success": {
+        "title": "Subscription Complete!",
+        "message": "Thank you for subscribing to our newsletter. You will receive updates at {email}",
+        "description": "You will soon receive your first update with exclusive content and practical tips.",
+        "cta": "Back to Form"
+      },
+      "error": {
+        "title": "Subscription Error",
+        "message": "An error occurred during subscription. Please try again in a moment."
+      }
+    },
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "General Terms and Conditions",
+      "contact": "Contact"
+    },
+    "copyright": "© 2024 QuickFy. All rights reserved."
+  },
+  "cookieConsent": {
+    "title": "We use cookies for a better experience",
+    "description": "We use cookies for essential website functionality, traffic analysis, and to improve your experience. You can choose which types of cookies you want to allow.",
+    "acceptAll": "Accept All",
+    "rejectAll": "Reject All",
+    "managePreferences": "Manage Preferences",
+    "savePreferences": "Save Preferences",
+    "close": "Close",
+    "legalNotice": "More information about our use of cookies can be found in our",
+    "categories": {
+      "necessary": "Necessary",
+      "analytics": "Analytics",
+      "marketing": "Marketing",
+      "preferences": "Preferences",
+      "alwaysEnabled": "Always enabled",
+      "optional": "Optional",
+      "necessaryDescription": "These cookies are essential for the proper functioning of the website and cannot be disabled. They are usually set in response to user actions such as language setting or login.",
+      "analyticsDescription": "Analytics cookies help us understand how visitors interact with the website, provide traffic information and help us improve site performance.",
+      "marketingDescription": "Marketing cookies are used to personalize ads and provide more relevant content. They may be used to measure the effectiveness of advertising campaigns.",
+      "preferencesDescription": "Preference cookies remember your choices and personalize your experience, such as your preferred language or user interface settings."
+    },
+    "preferences": {
+      "title": "Cookie Settings",
+      "subtitle": "Manage your cookie and privacy preferences",
+      "introduction": "You can choose which types of cookies you want to allow on our site. Your choices will be respected and stored for 1 year."
+    }
+  },
+  "privacyPolicy": {
+    "meta": {
+      "title": "Privacy Policy - QuickFy",
+      "description": "Privacy Policy for QuickFy Performance Suite. Transparent information about the processing of your personal data according to GDPR."
+    },
+    "title": "Privacy Policy of FL1 s.r.o.",
+    "lastUpdated": "Last updated: {date}",
+    "sections": {
+      "introduction": {
+        "title": "I. Introduction",
+        "content": "This Privacy Policy (the \"Policy\") defines how FL1 s.r.o., with registered office at Moskevská 1464/61, Vršovice, 101 00 Praha 10, Company ID: 19990146, registered in the Commercial Register maintained by the Municipal Court in Prague, Section C, Insert 398569 (hereinafter \"Controller\" or \"QuickFy\"), collects, uses, stores and protects personal data of users of its services."
+      },
+      "dataController": {
+        "title": "II. Data Controller",
+        "content": [
+          "The data controller under GDPR is:",
+          "FL1 s.r.o.",
+          "Moskevská 1464/61, Vršovice, 101 00 Praha 10",
+          "Company ID: 19990146",
+          "Email: info@quickfy.eu",
+          "Phone: +420 775 113 732"
+        ]
+      },
+      "typesOfData": {
+        "title": "III. What personal data we process",
+        "content": [
+          "a) Identification data: name, surname, email address, phone number",
+          "b) Company data: company name, position in company, company address",
+          "c) Technical data: IP address, cookies, device and browser information",
+          "d) Service usage data: usage statistics, preferences, settings",
+          "e) Communication data: inquiry content, correspondence, feedback"
+        ]
+      },
+      "purposes": {
+        "title": "IV. Purposes of personal data processing",
+        "content": [
+          "We process your personal data for the following purposes:",
+          "a) Providing QuickFy Performance Suite services",
+          "b) Communication with users and technical support",
+          "c) Improving the quality and functionality of our services",
+          "d) Marketing purposes (only with consent)",
+          "e) Fulfilling legal obligations",
+          "f) Fraud protection and security assurance"
+        ]
+      },
+      "legalBasis": {
+        "title": "V. Legal basis for processing",
+        "content": [
+          "We process personal data based on:",
+          "a) Contract - for providing services and fulfilling contractual obligations",
+          "b) Legitimate interest - for technical operation of services and their improvement",
+          "c) Consent - for marketing purposes and newsletter sending",
+          "d) Legal obligation - for archiving and accounting records"
+        ]
+      },
+      "sharing": {
+        "title": "VI. Sharing data with third parties",
+        "content": [
+          "We may share your personal data with:",
+          "a) IT service and cloud solution providers",
+          "b) Partners for analysis and performance optimization",
+          "c) Public authorities in case of legal obligation",
+          "d) Auditors and legal advisors",
+          "All recipients are bound by confidentiality and GDPR compliance."
+        ]
+      },
+      "internationalTransfer": {
+        "title": "VII. International data transfer",
+        "content": [
+          "In case of transfer of personal data to third countries, we ensure:",
+          "a) Transfer only to countries with EC adequacy decision",
+          "b) Use of standard contractual clauses approved by EC",
+          "c) Implementation of appropriate safeguards according to GDPR",
+          "d) Obtaining your explicit consent in other cases"
+        ]
+      },
+      "retention": {
+        "title": "VIII. Data retention period",
+        "content": [
+          "We retain personal data for:",
+          "a) Duration of contractual relationship + 3 years after termination",
+          "b) Until consent withdrawal (marketing purposes)",
+          "c) Period stipulated by law (accounting documents 10 years)",
+          "d) Period necessary for asserting claims (max. 3 years)"
+        ]
+      },
+      "rights": {
+        "title": "IX. Your rights",
+        "content": [
+          "In connection with personal data processing, you have the right:",
+          "a) To access personal data - obtain information about processing",
+          "b) To rectification - request correction of inaccurate data",
+          "c) To erasure (\"right to be forgotten\") - subject to legal conditions",
+          "d) To restriction of processing - in cases specified by GDPR",
+          "e) To data portability - receive data in structured format",
+          "f) To object to processing - especially for marketing purposes",
+          "g) To lodge a complaint with supervisory authority - Office for Personal Data Protection"
+        ]
+      },
+      "security": {
+        "title": "X. Data security",
+        "content": [
+          "We implement appropriate technical and organizational measures:",
+          "a) Data encryption during transmission and storage",
+          "b) Regular security audits and testing",
+          "c) Limited access only to authorized persons",
+          "d) Regular employee training on data protection",
+          "e) Incident response plans for security breaches",
+          "f) Regular data backup and recovery"
+        ]
+      },
+      "cookies": {
+        "title": "XI. Cookies and tracking technologies",
+        "content": [
+          "On our websites we use:",
+          "a) Necessary cookies for website functionality",
+          "b) Analytical cookies for traffic measurement (Google Analytics)",
+          "c) Marketing cookies (only with consent)",
+          "d) Cookies for user experience personalization",
+          "You can manage cookies in your browser settings."
+        ]
+      },
+      "minors": {
+        "title": "XII. Protection of minors",
+        "content": [
+          "Our services are not intended for persons under 16 years of age. If we learn that we have collected personal data from a minor without parental consent, we will immediately delete such data. Parents can contact our customer support to address these matters."
+        ]
+      },
+      "changes": {
+        "title": "XIII. Changes to this policy",
+        "content": [
+          "This Policy may be updated in accordance with the development of our services and changes in legal regulations. We will inform you about significant changes through:",
+          "a) Email notification",
+          "b) Notice on our websites",
+          "c) Notification directly in the QuickFy application",
+          "By continuing to use our services after changes to the Policy, you express consent to the updated terms."
+        ]
+      },
+      "contact": {
+        "title": "Contact",
+        "content": [
+          "For inquiries regarding personal data protection, contact us:",
+          "Email: privacy@quickfy.eu",
+          "Phone: +420 775 113 732",
+          "Postal address: FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10",
+          "",
+          "You can file complaints with the supervisory authority:",
+          "Office for Personal Data Protection",
+          "Pplk. Sochora 27, 170 00 Prague 7",
+          "Tel.: +420 234 665 111",
+          "Email: posta@uoou.cz"
+        ]
+      }
+    }
+  },
+  "whappi": {
+    "badge": "SMART CHROME EXTENSION",
+    "banner": {
+      "status": "In Development - Q2 2026 Launch",
+      "preorder": "Now accepting pre-orders with special pricing!"
+    },
+    "hero": {
+      "title": "Whappi: Your Customer Communication",
+      "titleHighlight": "Copilot",
+      "subtitle": "Chrome extension that integrates all communications (WhatsApp, Facebook, Instagram, Viber, Telegram, SMS, Email) directly into your work tools. No more screen switching: work where you already work.",
+      "painPoint": {
+        "title": "Stop Overpaying for Complex Tools!",
+        "description": "Competitors charge €300-400/month. Whappi delivers the same power for just €19/user/month."
+      },
+      "cta": {
+        "pricing": "Pre-Order Now - Special Price",
+        "contact": "See Demo"
+      }
+    },
+    "demo": {
+      "title": "See Whappi in Action",
+      "subtitle": "Watch how Whappi transforms team communication and customer management",
+      "placeholder": {
+        "title": "Product Demo",
+        "coming": "Coming Soon - Q2 2026"
+      },
+      "preview": "Whappi Dashboard Preview"
+    },
+    "integrations": {
+      "title": "All Your Messaging Platforms in One Place",
+      "subtitle": "Stop switching between apps. Manage WhatsApp, Telegram, Facebook, Instagram, Viber, SMS and Email from one powerful dashboard.",
+      "chromeExtension": "Chrome Extension",
+      "worksInsideTools": "Works Inside Your Favorite Tools",
+      "allChannelsUnified": "All Your Messaging Channels Unified",
+      "availableOn": "Available on",
+      "chromeWebStore": "Chrome Web Store",
+      "comingQ2": "Coming Q2 2026",
+      "comingSoon": "Coming Soon",
+      "tools": {
+        "gmail": {
+          "name": "Gmail",
+          "type": "Email Client"
+        },
+        "hubspot": {
+          "name": "HubSpot",
+          "type": "CRM"
+        },
+        "salesforce": {
+          "name": "Salesforce",
+          "type": "CRM"
+        },
+        "pipedrive": {
+          "name": "Pipedrive",
+          "type": "CRM"
+        },
+        "zendesk": {
+          "name": "Zendesk",
+          "type": "Support"
+        },
+        "more": {
+          "name": "More",
+          "type": "Coming Soon"
+        }
+      },
+      "hub": {
+        "title": "Whappi",
+        "subtitle": "Central Hub"
+      },
+      "platforms": {
+        "whatsapp": {
+          "name": "WhatsApp",
+          "type": "Business API"
+        },
+        "telegram": {
+          "name": "Telegram",
+          "type": "Bot API"
+        },
+        "facebook": {
+          "name": "Meta",
+          "type": "Messenger"
+        },
+        "instagram": {
+          "name": "Instagram",
+          "type": "Direct"
+        },
+        "viber": {
+          "name": "Viber",
+          "type": "Business"
+        },
+        "sms": {
+          "name": "SMS",
+          "type": "Gateway"
+        },
+        "email": {
+          "name": "Email",
+          "type": "SMTP/IMAP"
+        }
+      }
+    },
+    "comparison": {
+      "title": "Why Small Businesses Choose Whappi",
+      "subtitle": "Compare Whappi with expensive alternatives and see the difference",
+      "tableTitle": "Feature Comparison",
+      "columnHeaders": {
+        "feature": "Feature"
+      },
+      "features": {
+        "cost": "Monthly Cost",
+        "multiPlatform": "Multi-Platform",
+        "teamCollaboration": "Team Collaboration",
+        "gdpr": "GDPR Compliance",
+        "setup": "Setup Complexity",
+        "smb": "Small Business Focus"
+      },
+      "whappi": {
+        "name": "Whappi",
+        "pricing": "€19/month",
+        "pricingUnit": "per user",
+        "gdprNote": "Your Servers",
+        "setupNote": "Simple"
+      },
+      "competitors": {
+        "name": "Competitors",
+        "pricing": "€300-400/mo",
+        "pricingUnit": "enterprise pricing",
+        "gdprNote": "Vendor Servers",
+        "setupNote": "Complex"
+      }
+    },
+    "features": {
+      "title": "AI Features for Maximum Productivity",
+      "subtitle": "Everything you need to manage communications without ever leaving your work tools",
+      "allIncluded": "All features included in every plan - No hidden costs",
+      "contextualIntelligence": {
+        "title": "Contextual Intelligence",
+        "description": "Whappi automatically detects phone numbers on the web page and instantly shows the complete conversation history across all channels.",
+        "benefits": [
+          "Automatic phone number detection",
+          "Instant multi-channel conversation history",
+          "Zero context switching"
+        ]
+      },
+      "aiAssistance": {
+        "title": "Integrated AI Assistant",
+        "description": "Whappi's AI creates automatic conversation summaries, suggests 2-3 ready-to-use response drafts, and searches your company knowledge base to give you the right information at the right time.",
+        "benefits": [
+          "One-click conversation summaries",
+          "2-3 ready AI response suggestions",
+          "Smart knowledge base search"
+        ]
+      },
+      "teamManagement": {
+        "title": "Team Collaboration",
+        "description": "Assign conversations to specific team members, add private internal notes, and collaborate effectively on every single customer, all without leaving your tools.",
+        "benefits": [
+          "Assign conversations to operators",
+          "Private notes for the team",
+          "Real-time mentions and collaboration"
+        ]
+      },
+      "gdprCompliance": {
+        "title": "GDPR Compliance Guaranteed",
+        "description": "Developed in Czech Republic with maximum attention to privacy. Your data stays on your servers and fully complies with European GDPR.",
+        "benefits": [
+          "Made in Czech Republic - 100% European development",
+          "Data on customer servers",
+          "Full GDPR compliance"
+        ]
+      }
+    },
+    "trust": {
+      "title": "Built for Security & Trust",
+      "subtitle": "Your data stays on your servers",
+      "badges": {
+        "madeInItaly": "Made in Czech Republic",
+        "clientServers": "Client Servers",
+        "gdpr": "Full GDPR"
+      }
+    },
+    "roadmap": {
+      "title": "Development Roadmap",
+      "subtitle": "Our path to Q2 2026 launch",
+      "badgeText": "Development Roadmap",
+      "journeyTo": "Journey to",
+      "launchDate": "Q2 2026 Launch",
+      "trackProgress": "Track our progress as we build the future of small business messaging",
+      "progressOverview": "Development Progress Overview",
+      "progressSubtitle": "Real-time development milestones tracking our journey to launch",
+      "milestones": {
+        "q3_2024": {
+          "date": "September 2024",
+          "title": "Core Platform Architecture",
+          "description": "Foundation systems completed including security framework, database architecture, and core API development.",
+          "status": "COMPLETED",
+          "features": {
+            "security": "Security Layer",
+            "apis": "Core APIs",
+            "securityStatus": "✓ Implemented",
+            "apisStatus": "✓ Ready"
+          }
+        },
+        "q4_2024": {
+          "date": "December 2024",
+          "title": "Platform Integrations",
+          "description": "Active development of WhatsApp Business API, Telegram Bot API, and Meta Messenger integrations.",
+          "status": "IN PROGRESS",
+          "features": {
+            "whatsapp": "WhatsApp API",
+            "telegram": "Telegram Bot",
+            "whatsappStatus": "🚧 In Development",
+            "telegramStatus": "🚧 Testing Phase"
+          }
+        },
+        "q1_2025": {
+          "date": "March 2025",
+          "title": "Advanced Team Features",
+          "description": "Team collaboration tools, conversation assignment, internal notes, and user management systems.",
+          "status": "PLANNED",
+          "features": {
+            "management": "Team Management",
+            "collaboration": "Collaboration",
+            "managementStatus": "📋 Design Phase",
+            "collaborationStatus": "📋 Planned"
+          }
+        },
+        "q2_2026": {
+          "date": "March 2026",
+          "title": "Full Platform Launch",
+          "description": "Complete platform ready with all features, mobile applications, comprehensive documentation, and 24/7 support.",
+          "status": "🚀 LAUNCH READY",
+          "features": {
+            "mobile": "Mobile Apps",
+            "support": "24/7 Support",
+            "mobileStatus": "🎯 Ready for Launch",
+            "supportStatus": "🎯 Full Service"
+          },
+          "preorderText": "🎉 Pre-order now and save 24%",
+          "launchExpected": "Expected Launch: Q2 2026"
+        }
+      },
+      "progressStats": {
+        "core": "Core Platform",
+        "integrations": "Integrations",
+        "team": "Team Features",
+        "launch": "Launch Target"
+      },
+      "ctaText": "🎉 Pre-order now and save 24% off regular pricing",
+      "ctaButton": "Secure Your Pre-Order"
+    },
+    "pricing": {
+      "title": "Simple and Transparent Pricing",
+      "subtitle": "Take advantage of the annual offer: pay 10 months, get 12",
+      "preorder": {
+        "badge": "ANNUAL OFFER",
+        "title": "Annual Pre-Order Plan",
+        "price": "€190",
+        "period": "/year",
+        "subtitle": "€15.83 per month",
+        "savings": "Save €38 - Pay 10 months, get 12!",
+        "cta": "Pre-Order Now"
+      },
+      "regular": {
+        "badge": "STANDARD",
+        "title": "Monthly Plan",
+        "price": "€19",
+        "period": "/month",
+        "subtitle": "per user",
+        "note": "Billed monthly",
+        "cta": "Available Q2 2026"
+      },
+      "features": [
+        "All 7 channels: WhatsApp, Facebook Messenger, Instagram, Viber, Telegram, SMS, Email",
+        "AI intelligence with automatic summaries and response suggestions",
+        "Automatic contextual phone number detection",
+        "Unlimited team collaboration with assignments and notes",
+        "Smart company knowledge base search",
+        "Full GDPR compliance - Made in Czech Republic"
+      ],
+      "everythingIncluded": "Everything Included",
+      "madeInCzech": "Made in Czech Republic - GDPR Guaranteed",
+      "savingsText": "Pre-order saves you €38/year"
+    },
+    "cta": {
+      "title": "Stop Wasting Time Switching Screens",
+      "subtitle": "Join teams that chose Whappi to work better and faster. A single smart widget for all communications, wherever you work.",
+      "button": "Start with Whappi (€19/user)",
+      "formMessage": "I'm interested in Whappi - Integrated Communication Module. I'd like to receive more information about pre-ordering and a demo of the Chrome extension."
+    }
+  },
+  "whappiSummary": {
+    "title": "Integrated Communication Module",
+    "subtitle": "Chrome extension that brings all customer communications (WhatsApp, Facebook, Instagram, Viber, Telegram, SMS, Email) directly into your work tools.",
+    "features": {
+      "contextualIntelligence": {
+        "icon": "🧠",
+        "title": "Contextual Intelligence",
+        "description": "Automatically detects numbers and shows multi-channel conversation history."
+      },
+      "aiAssistance": {
+        "icon": "✨",
+        "title": "AI Assistant",
+        "description": "Automatic summaries, response suggestions, and knowledge base search."
+      },
+      "teamManagement": {
+        "icon": "👥",
+        "title": "Team Collaboration",
+        "description": "Assign conversations, add private notes, and collaborate in real-time."
+      },
+      "integrations": {
+        "icon": "🔗",
+        "title": "Multi-Channel Integrations",
+        "description": "Unify WhatsApp, Facebook, Instagram, Telegram, SMS, and Email in one interface."
+      },
+      "gdpr": {
+        "icon": "🔒",
+        "title": "GDPR Guaranteed",
+        "description": "Made in Czech Republic with data on your servers and full compliance."
+      }
+    },
+    "pricing": {
+      "amount": "€19/user",
+      "description": "per month - Monthly plan or €190/year (save €38)"
+    },
+    "cta": {
+      "button": "Discover Whappi"
+    },
+    "note": "Finally, integrated customer communications without leaving your tools"
+  },
+  "termsAndConditions": {
+    "meta": {
+      "title": "General Terms and Conditions - QuickFy",
+      "description": "General Terms and Conditions for QuickFy Performance Suite. Complete contractual terms and conditions for using our services."
+    },
+    "title": "General Terms and Conditions of FL1 s.r.o.",
+    "lastUpdated": "Last updated: {date}",
+    "tableOfContents": {
+      "title": "Table of Contents",
+      "showToc": "Show table of contents",
+      "hideToc": "Hide table of contents"
+    },
+    "sections": {
+      "basicProvisions": {
+        "title": "I. Basic Provisions",
+        "content": [
+          "1.1. These general terms and conditions (hereinafter \"GTC\") regulate the mutual rights and obligations arising from a purchase contract (hereinafter \"purchase contract\") concluded through the web interface located at www.quickfy.eu (hereinafter \"web interface\") between FL1 s.r.o., with registered office at Moskevská 1464/61, Vršovice, 101 00 Praha 10, Company ID: 19990146, registered in the Commercial Register maintained by the Municipal Court in Prague, Section C, Insert 398569 (hereinafter \"seller\") and a natural person who concludes a contract unrelated to their business activity as a consumer, or in direct connection with their business activity (hereinafter \"buyer\").",
+          "1.2. Provisions deviating from the GTC may be agreed in the purchase contract. Deviating agreements in the purchase contract take precedence over the provisions of the GTC.",
+          "1.3. The provisions of the GTC are an integral part of the purchase contract. The purchase contract and GTC are written in Czech. The purchase contract can be concluded in Czech.",
+          "1.4. The seller may change or supplement the wording of the GTC. This provision does not affect rights and obligations arising during the validity of the previous wording of the GTC."
+        ]
+      },
+      "userAccount": {
+        "title": "II. User Account",
+        "content": [
+          "2.1. Based on the buyer's registration in the web interface, the buyer can access their user account. From their user account, the buyer can order goods (hereinafter \"user account\").",
+          "2.2. When registering for a user account and when ordering goods, the buyer is obliged to provide all information correctly and truthfully. The buyer is obliged to update the information provided in the user account in case of any changes. The information provided by the buyer in the user account and when ordering goods is considered correct by the seller.",
+          "2.3. Access to the user account is secured by username and password. The buyer is obliged to maintain confidentiality regarding the information needed to access their user account.",
+          "2.4. The buyer must not allow third parties to use the user account.",
+          "2.5. The seller may cancel the user account, especially if the buyer has not used their user account for more than 1 year, or if the buyer violates their obligations under the purchase contract (especially payment conditions).",
+          "2.6. The buyer acknowledges that the user account may not be available continuously, especially due to necessary maintenance of the seller's hardware and software equipment, or necessary maintenance of third-party hardware and software equipment."
+        ]
+      },
+      "contractConclusion": {
+        "title": "III. Conclusion of Purchase Contract",
+        "content": [
+          "3.1. All presentation of goods placed in the web interface is of an informative nature and the seller is not obliged to conclude a purchase contract regarding such goods. Section 1732 paragraph 2 of the Civil Code does not apply.",
+          "3.2. The web interface contains information about goods, including prices of individual goods and costs for returning goods, if such goods cannot be returned by ordinary mail due to their nature. Prices of goods are stated including value added tax and all related fees. Prices of goods remain valid for the period they are displayed in the web interface. This provision does not limit the seller's possibility to conclude a purchase contract under individually agreed conditions.",
+          "3.3. The web interface also contains information about costs related to packaging and delivery of goods. Information about costs related to packaging and delivery of goods stated in the web interface applies only when goods are delivered within the territory of the Czech Republic.",
+          "3.4. To order goods, the buyer fills out an order form in the web interface. The order form contains information about: a) ordered goods (ordered goods are \"placed\" by the buyer in the electronic shopping cart of the web interface), b) payment method for the purchase price of goods, information about the required method of delivery of ordered goods, c) information about costs related to delivery of goods (hereinafter collectively referred to as \"order\").",
+          "3.5. Before sending the order to the seller, the buyer is allowed to check and change the data that the buyer entered in the order, also considering the buyer's ability to recognize and correct errors that occurred when entering data into the order. The buyer sends the order to the seller by clicking the \"complete order\" button. The data stated in the order is considered correct by the seller. The condition for the validity of the order is filling in all mandatory data in the order form and confirmation by the buyer that they have read these GTC.",
+          "3.6. Immediately after receiving the order, the seller sends the buyer confirmation of receipt of the order to the electronic address that the buyer provided when ordering goods. This confirmation is automatic and is not considered conclusion of the contract. Along with the confirmation, the buyer receives these GTC. The purchase contract is concluded only upon confirmation of the order by the seller to the buyer's electronic address."
+        ]
+      },
+      "priceAndPayment": {
+        "title": "IV. Price and Payment Conditions",
+        "content": [
+          "4.1. The buyer can pay the seller the price of goods and any costs related to delivery of goods according to the purchase contract in the following ways: cashlessly by transfer to the seller's account No. 2801707992/2010, maintained at Fio banka, a.s.; cashlessly by payment card; cashlessly through payment system.",
+          "4.2. Together with the purchase price, the buyer is obliged to pay the seller also costs related to packaging and delivery of goods in the agreed amount. Unless expressly stated otherwise, the purchase price also includes costs related to delivery of goods.",
+          "4.3. The seller does not require a deposit or other similar payment from the buyer. This does not apply to cases when payment of the purchase price is required before sending goods.",
+          "4.4. In case of payment through a payment gateway, the buyer is redirected to the interface of the relevant bank to make the payment.",
+          "4.5. In case of cashless payment, the buyer's obligation to pay the purchase price is fulfilled when the relevant amount is credited to the seller's account.",
+          "4.6. The seller is entitled, especially if the buyer does not subsequently confirm the order, to require payment of the entire purchase price before sending goods to the buyer. Section 2119 paragraph 1 of the Civil Code does not apply.",
+          "4.7. Any discounts on the price of goods provided by the seller to the buyer cannot be mutually combined.",
+          "4.8. If it is customary in business relations or if required by generally binding legal regulations, the seller will issue the buyer a tax document - invoice regarding payments made based on the purchase contract. The seller is a VAT payer. The seller will issue a tax document - invoice to the buyer after payment of the price of goods and send it in electronic form to the buyer's electronic address."
+        ]
+      },
+      "cancellationWithdrawal": {
+        "title": "V. Withdrawal from Contract",
+        "content": [
+          "5.1. The buyer who concluded a purchase contract outside their business activity as a consumer has the right to withdraw from the purchase contract.",
+          "5.2. The deadline for withdrawal from the contract is 14 days: a) from receipt of goods, b) from receipt of the last piece of goods, if several pieces of goods are the subject of the order, c) from receipt of the first delivery, if the subject of the contract is regular repeated delivery of goods.",
+          "5.3. The buyer cannot, among other things, withdraw from the purchase contract: a) for provision of services, if they were provided completely and the service began to be provided with the buyer's express consent before the deadline for withdrawal from the contract expired and the buyer declared that they know that after complete provision of the service by the seller, they will lose the right to withdraw from the contract, b) for delivery of goods modified according to the buyer's wishes or for their person, c) for delivery of goods that are subject to rapid deterioration, as well as goods that were irreversibly mixed with other goods after delivery, d) for delivery of audio or video recordings or computer programs if they violated their original packaging, e) for delivery of newspapers, periodicals or magazines except for subscription, f) for accommodation, transport, catering or use of leisure time, if the contract specifies a specific date or period of performance, g) for electronic content not delivered on a physical medium, if the content began to be provided with the buyer's express consent before the deadline for withdrawal from the contract expired and the buyer declared that they know they will lose the right to withdraw from the contract.",
+          "5.4. To withdraw from the purchase contract, the buyer must inform the seller of their decision to withdraw from the purchase contract by an unambiguous statement (e.g., a letter sent by mail or email). For this purpose, the buyer can use the sample withdrawal form provided by the seller, which forms an appendix to these GTC. The buyer can also inform the seller of withdrawal from the purchase contract through a form located on the seller's website. The buyer sends notice of withdrawal from the contract to the seller at info@quickfy.eu or to the address of FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10.",
+          "5.5. The buyer who withdrew from the purchase contract is obliged to return the goods to the seller without undue delay, at the latest within 14 days of withdrawal from the purchase contract. The buyer is obliged to bear the costs associated with returning goods to the seller, even if the goods cannot be returned by ordinary mail due to their nature.",
+          "5.6. If the buyer withdrew from the purchase contract, the seller will return all monetary funds received from them based on the purchase contract without undue delay, at the latest within 14 days of withdrawal from the purchase contract, including costs for delivery of goods. The seller will return monetary funds to the buyer in the same way they received them from the buyer. The seller will return monetary funds to the buyer in a different way only if the buyer agrees and if this does not incur additional costs.",
+          "5.7. If the buyer withdrew from the purchase contract, the seller is not obliged to return monetary funds to the buyer before the buyer returns the goods or proves that they sent the goods to the seller.",
+          "5.8. The buyer must return goods to the seller undamaged, unused and unsoiled and if possible in original packaging. The seller is entitled to unilaterally offset compensation for damage caused to goods against the buyer's claim for return of the purchase price.",
+          "5.9. The seller is entitled to withdraw from the purchase contract due to sold out stock, unavailability of goods, or when the manufacturer, importer or supplier of goods terminated production or import of goods. The seller immediately informs the buyer through the electronic address stated in the order and returns all monetary funds received from them based on the purchase contract within a reasonable period, at the latest within 14 days of notification of withdrawal from the purchase contract."
+        ]
+      },
+      "transportDelivery": {
+        "title": "VI. Transport and Delivery of Goods",
+        "content": [
+          "6.1. If the method of transport is agreed based on a special request from the buyer, the buyer bears the risk and any additional costs associated with this method of transport.",
+          "6.2. If the seller is obliged according to the purchase contract to deliver goods to a place designated by the buyer in the order, the buyer is obliged to take over the goods upon delivery.",
+          "6.3. If, for reasons on the buyer's side, it is necessary to deliver goods repeatedly or in a different way than stated in the order, the buyer is obliged to pay costs associated with repeated delivery of goods, or costs associated with a different method of delivery.",
+          "6.4. When taking over goods from the carrier, the buyer is obliged to check the integrity of the packaging of goods and in case of any defects, immediately notify the carrier. If damage to packaging indicating unauthorized entry into the shipment is found, the buyer does not have to take over the shipment from the carrier.",
+          "6.5. Additional rights and obligations of parties during transport of goods may be regulated by special delivery conditions of the seller, if issued by the seller."
+        ]
+      },
+      "rightsDefects": {
+        "title": "VII. Rights from Defective Performance",
+        "content": [
+          "7.1. Rights and obligations of contractual parties regarding rights from defective performance are governed by relevant generally binding legal regulations (especially provisions of Sections 1914 to 1925, 2099 to 2117 and 2161 to 2174 of the Civil Code).",
+          "7.2. The seller is liable to the buyer that goods have no defects upon receipt. In particular, the seller is liable to the buyer that at the time when the buyer took over the goods: a) goods have properties that the parties agreed upon, and if there is no agreement, such properties that the seller or manufacturer described or that the buyer expected considering the nature of goods and based on advertising conducted by them, b) goods are suitable for the purpose that the seller states for their use or for which goods of this type are usually used, c) goods correspond to the quality or design of the contractual sample or template, if quality or design was determined according to the contractual sample or template, d) goods are in the appropriate quantity, measure or weight and e) goods comply with legal requirements.",
+          "7.3. The provisions stated in point 7.2 of these GTC do not apply to goods sold at a lower price for a defect for which the lower price was agreed, for wear of goods caused by their usual use, for used goods for a defect corresponding to the degree of use or wear that goods had when taken over by the buyer, or if it follows from the nature of goods.",
+          "7.4. If a defect manifests within six months of receipt, it is assumed that goods were defective upon receipt. The buyer can assert the right from a defect that occurs in consumer goods within twenty-four months of receipt. This provision does not apply to goods sold at a lower price for a defect for which the lower price was agreed, for wear of goods caused by their usual use, for used goods for a defect corresponding to the degree of use or wear that goods had when taken over by the buyer, or if it follows from the nature of goods.",
+          "7.5. The buyer asserts rights from defective performance with the seller at FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10, or according to the buyer's decision also at the address of a branch where acceptance of complaints is possible considering the range of goods sold, or at the headquarters or designated branch. The moment of asserting a complaint is counted from the day when the seller received the complaint.",
+          "7.6. Additional requirements and conditions for handling complaints may be regulated by the seller's complaint procedure, if issued by the seller."
+        ]
+      },
+      "additionalRights": {
+        "title": "VIII. Additional Rights and Obligations of Contractual Parties",
+        "content": [
+          "8.1. The buyer acquires ownership of goods by paying the entire purchase price of goods.",
+          "8.2. The seller is not bound by any codes of conduct towards the buyer in the sense of Section 1826 paragraph 1 letter e) of the Civil Code.",
+          "8.3. Out-of-court resolution of disputes arising from consumer contracts is provided by the Czech Trade Inspection, with headquarters at Štěpánská 567/15, 120 00 Praha 2, Company ID: 000 20 869, website: https://adr.coi.cz. The platform for online dispute resolution located at https://ec.europa.eu/consumers/odr can be used for resolving disputes between the seller and buyer from the purchase contract.",
+          "8.4. European Consumer Centre Czech Republic, with headquarters at Štěpánská 567/15, 120 00 Praha 2, website: http://www.evropskyspotrebitel.cz is the contact point according to Regulation (EU) No 524/2013 of the European Parliament and of the Council on online dispute resolution for consumer disputes and amending Regulation (EC) No 2006/2004 and Directive 2009/22/ES (Regulation on online dispute resolution for consumer disputes).",
+          "8.5. The seller is authorized to sell goods based on trade authorization. Trade control is carried out within its scope by the relevant trade office. Supervision over the area of personal data protection is exercised by the Office for Personal Data Protection. The Czech Trade Inspection exercises supervision over compliance with Act No. 634/1992 Coll., on consumer protection, as amended, within a defined scope.",
+          "8.6. The buyer hereby acknowledges that the seller is not obliged to deliver goods to the buyer if the goods are already sold out or unavailable from the supplier, in which case the buyer will be immediately informed of this fact and any already paid amount will be returned."
+        ]
+      },
+      "dataProtection": {
+        "title": "IX. Personal Data Protection",
+        "content": [
+          "9.1. Protection of personal data of the buyer who is a natural person is regulated in the seller's personal data protection principles.",
+          "9.2. The buyer consents to the processing of these personal data: name and surname, residence, identification number, tax identification number, electronic address, telephone number (hereinafter \"personal data\") by the seller for the purpose of realizing rights and obligations from the purchase contract and for the purpose of maintaining the user account. The buyer consents to the processing of personal data by the seller for the purpose of sending information and commercial communications to the buyer. The buyer consents to the processing of personal data by the seller for the purpose of sending information and commercial communications to the buyer through electronic means of communication.",
+          "9.3. The buyer acknowledges that they are obliged to provide their personal data (during registration, in the order, when concluding the purchase contract) correctly and truthfully and that they are obliged to immediately inform the seller of changes to their personal data.",
+          "9.4. The seller may entrust the processing of personal data to a third party as a processor. Personal data will not be transferred to third parties or made available to third parties without the buyer's prior consent.",
+          "9.5. Personal data will be processed for the period necessary for the exercise of rights and obligations arising from the purchase contract and assertion of claims from this contract and for a period of 3 years from termination of the contractual relationship between the buyer and seller.",
+          "9.6. The buyer has the right to ask the seller for information about what personal data the seller processes about them, ask for their correction or completion, or under conditions set in relevant legal regulations ask for their liquidation and also has the right to raise an objection against processing of personal data intended for direct marketing purposes and the right to personal data portability. The buyer has the right to revoke consent to personal data processing.",
+          "9.7. If the buyer believes that their personal data is being processed in violation of the buyer's privacy and personal life or in violation of legal regulations, especially if personal data is inaccurate considering the purpose of their processing, they may: a) ask the seller for explanation, b) demand that the seller remedy such situation.",
+          "9.8. If the buyer requests information according to point 9.6 of these GTC, the seller is obliged to provide this information. For providing information according to this point, the seller may require reasonable compensation not exceeding costs necessary for providing information."
+        ]
+      },
+      "deliveryElectronic": {
+        "title": "X. Delivery of Electronic Communications",
+        "content": [
+          "10.1. The buyer consents to delivery of electronic communications related to contract performance to the electronic address they provided in the order or in their user account.",
+          "10.2. The seller delivers electronic communications to the buyer at the buyer's electronic address stated in the order or registered in the buyer's user account. The buyer is obliged to regularly check the electronic address stated in the order or registered in their user account and familiarize themselves with delivered electronic communications.",
+          "10.3. The buyer acknowledges that some electronic communications regarding the order or legal relationship with the seller may contain confidential information. Therefore, the buyer is obliged to ensure protection of their electronic address against misuse by third parties and also against unauthorized access by third parties to this electronic address.",
+          "10.4. The seller delivers electronic communications to the buyer's electronic address to their electronic mailbox through the buyer's email service provider. Electronic communication is considered delivered when the message appears in the recipient's electronic mailbox at their email service provider, regardless of whether the recipient learns about the communication."
+        ]
+      },
+      "finalProvisions": {
+        "title": "XI. Final Provisions",
+        "content": [
+          "11.1. If a relationship established by the purchase contract contains an international (foreign) element, the parties agreed that the relationship is governed by Czech law. This does not affect consumer rights arising from generally binding legal regulations.",
+          "11.2. If any provision of the GTC becomes invalid or ineffective, provisions whose meaning most closely approximates the invalid or ineffective provision will replace the invalid provisions. The invalidity or ineffectiveness of one provision does not affect the validity of other provisions. Changes and additions to the purchase contract or GTC require written form.",
+          "11.3. The purchase contract including GTC is archived by the seller in electronic form and is not accessible.",
+          "11.4. The sample withdrawal form constitutes an appendix to these GTC.",
+          "11.5. Seller's contact details: delivery address FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10, electronic address info@quickfy.eu, telephone +420775113732."
+        ]
+      },
+      "withdrawalForm": {
+        "title": "Sample Withdrawal Form",
+        "content": [
+          "Addressee: FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10, electronic address: info@quickfy.eu",
+          "",
+          "I/We* hereby give notice of my/our* withdrawal from my/our* contract of sale of the following goods*/for the provision of the following service*:",
+          "",
+          "Ordered on*/received on*:",
+          "",
+          "Name of consumer(s):",
+          "",
+          "Address of consumer(s):",
+          "",
+          "Signature of consumer(s) (only if this form is submitted in paper form):",
+          "",
+          "Date:",
+          "",
+          "*Delete as appropriate."
+        ]
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked",
+    "titleHighlight": "Questions",
+    "subtitle": "Find answers to common questions about QuickFy",
+    "ctaText": "Can't find the answer you're looking for?",
+    "ctaButton": "Contact Us",
+    "items": {
+      "0": {
+        "question": "What is QuickFy and how does it work?",
+        "answer": "QuickFy is a simplified analytics dashboard designed for small businesses. It connects to your Google Analytics and ad campaigns to create clear, easy-to-understand reports. You get automated email reports and a simple dashboard that shows exactly what you need to know."
+      },
+      "1": {
+        "question": "How is QuickFy different from Google Analytics?",
+        "answer": "Google Analytics shows everything, which can be overwhelming. QuickFy takes that data and shows you only what matters for your business: traffic trends, conversion rates, and ROI. Think of it as a simplified, actionable version of Google Analytics."
+      },
+      "2": {
+        "question": "Do I need technical knowledge to use QuickFy?",
+        "answer": "No! QuickFy is specifically designed for business owners who want results without complexity. The interface is intuitive and the reports are written in clear language, not technical jargon."
+      },
+      "3": {
+        "question": "How long does it take to set up?",
+        "answer": "Initial setup takes about 15 minutes. You connect your Google Analytics account, we configure the dashboard according to your needs, and you're ready to go. Our team provides free support during setup."
+      },
+      "4": {
+        "question": "Can I cancel anytime?",
+        "answer": "Yes, absolutely. There are no long-term contracts. You can cancel your subscription at any time directly from your dashboard, and you'll retain access until the end of your billing period."
+      }
+    }
+  },
+  "exitIntent": {
+    "title": "Wait!",
+    "subtitle": "Discover how much you could save with QuickFy",
+    "closeLabel": "Close modal",
+    "monthlyBudget": "Monthly Marketing Budget",
+    "currentROI": "Current ROI (%)",
+    "resultsTitle": "With QuickFy you could get:",
+    "improvedROI": "Improved ROI",
+    "timeSaved": "Time Saved",
+    "perMonth": "per month",
+    "estimatedAnnualSavings": "Estimated Annual Savings",
+    "vsNow": "vs now",
+    "ctaButton": "Request Free Demo",
+    "benefits": "✓ No credit card required • ✓ Setup in 5 minutes • ✓ 24/7 Support",
+    "prefillMessage": "I'm interested in discovering how QuickFy can improve my ROI by 35% and save me {hours}+ hours per month."
+  },
+  "products": {
+    "quickfy": {
+      "title": "QuickFy",
+      "subtitle": "Platform for analytics and growth"
+    }
+  },
+  "accessibility": {
+    "skipLinks": {
+      "content": "Skip to main content",
+      "navigation": "Skip to navigation",
+      "footer": "Skip to footer"
+    }
+  },
+  "productSchema": {
+    "features": {
+      "0": "Real-time analytics",
+      "1": "Marketing campaign automation",
+      "2": "CRM client management",
+      "3": "Customizable dashboards",
+      "4": "ROI tracking",
+      "5": "WhatsApp integration",
+      "6": "Automated reports"
+    }
+  }
+}

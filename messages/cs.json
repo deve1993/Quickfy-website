@@ -1,0 +1,1163 @@
+{
+  "meta": {
+    "title": "QuickFy | Váš zjednodušený analytický dashboard s AI",
+    "description": "Přeměňte svá data na vítězná rozhodnutí. QuickFy nabízí zjednodušený analytický dashboard a AI nástroje pro správu recenzí a sociálních médií. Od 19€/měsíc. Bezplatná konzultace k dispozici.",
+    "locale": "cs"
+  },
+  "navigation": {
+    "features": "Funkce",
+    "benefits": "Výhody",
+    "pricing": "Ceny",
+    "roadmap": "Plán vývoje",
+    "testimonials": "Reference",
+    "whappi": "Whappi",
+    "contact": "Kontakt",
+    "home": "Domů",
+    "startNow": "Začněte nyní",
+    "logoAria": "QuickFy - Vrátit se na začátek stránky",
+    "startNowAria": "Začněte nyní - Jít na kontaktní formulář",
+    "sectionAria": "Jít na sekci {section}",
+    "openMenu": "Otevřít menu",
+    "closeMenu": "Zavřít menu",
+    "mobileMenu": "Mobilní menu",
+    "skipToContent": "Přejít na hlavní obsah",
+    "products": "Produkty",
+    "productsAria": "Menu produkty",
+    "whappiCta": "Předobjednat -24%"
+  },
+  "hero": {
+    "headline": "Transformujte vaše data na",
+    "headlineHighlight": "vítězná rozhodnutí",
+    "subheadline": "Zjednodušený analytický dashboard, který přeměňuje složitá data na jasné poznatky. Ideální pro malé firmy, které chtějí růst bez zbytečné složitosti.",
+    "cta": {
+      "primary": "Spojte se s expertem",
+      "ariaLabel": "Spojte se s expertem - Jít na kontaktní formulář"
+    },
+    "valueProposition": "✓ Zdarma instalace • ✓ Podpora 24/7 • ✓ ROI garantováno do 30 dnů",
+    "metrics": {
+      "hoursSaved": "15+ Ušetřených hodin",
+      "roiImprovement": "+40% Generovaných leadů",
+      "clarity": "100% Přehlednost dat",
+      "perMonth": "měsíčně",
+      "vsTraditional": "oproti tradičním metodám",
+      "realTime": "v reálném čase"
+    },
+    "typewriter": [
+      "strategická rozhodnutí",
+      "udržitelný růst",
+      "měřitelné výsledky",
+      "digitální úspěch"
+    ]
+  },
+  "features": {
+    "title": "Vše, co potřebujete:",
+    "titleHighlight": "3 Klíčové Moduly",
+    "subtitle": "Analytický dashboard, správa recenzí a sociální média - všechno v jedné platformě navržené pro malé firmy",
+    "items": [
+      {
+        "id": "data-intelligence",
+        "title": "Dashboard analytics pro malé firmy",
+        "description": "Zjednodušený dashboard, který přeměňuje data z Google Analytics a reklamních kampaní na jasné grafy. Žádné zbytečné komplikace: jen to, co skutečně potřebujete vědět.",
+        "benefits": [
+          "Jednotný dashboard pro všechna data",
+          "Automatické reporty e-mailem",
+          "Jasné sledování ROI"
+        ],
+        "icon": "BarChart3"
+      },
+      {
+        "id": "reputation-management",
+        "title": "Správa recenzí s pomocí AI",
+        "description": "Odpovídejte na Google a Facebook recenze přímo z jednoho místa. AI vám navrhne odpovědi, vy jen kliknete a odešlete. Rychlé, snadné, účinné.",
+        "benefits": [
+          "Odpovědi jedním kliknutím",
+          "AI návrhy odpovědí",
+          "Centralizovaná správa"
+        ],
+        "icon": "MessageSquare"
+      },
+      {
+        "id": "social-hub",
+        "title": "Social Hub: Instagram a Facebook v jednom",
+        "description": "Plánujte příspěvky, sledujte výkon a odpovídejte na zprávy z Instagramu a Facebooku přímo z QuickFy. Jednoduchá správa sociálních médií bez přepínání mezi aplikacemi.",
+        "benefits": [
+          "Plánování příspěvků",
+          "Statistiky výkonu",
+          "Centralizovaná komunikace"
+        ],
+        "icon": "Share2"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Proč malé firmy volí",
+    "titleHighlight": "QuickFy",
+    "subtitle": "Prokazatelné výsledky s jednoduchým dashboardem a AI nástroji pro růst vašeho podnikání",
+    "items": [
+      {
+        "title": "Ušetřený Čas",
+        "description": "Týdenní hodiny získané automatizací reportů a rychlejšími odpověďmi na recenze",
+        "value": "15+",
+        "unit": "hodin/týden"
+      },
+      {
+        "title": "Jasnost Dat",
+        "description": "Rozhodnutí založená na přehledných dashboardech místo složitých tabulek",
+        "value": "100%",
+        "unit": "transparentnost"
+      },
+      {
+        "title": "Generování Leadů",
+        "description": "Průměrný nárůst leadů díky lepší správě recenzí a optimalizaci sociálních médií",
+        "value": "+40%",
+        "unit": "více leadů"
+      },
+      {
+        "title": "Vše v Jednom",
+        "description": "Data, recenze, social media a lead management v jedné platformě",
+        "value": "5+",
+        "unit": "integrovaných nástrojů"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Jednoduché ceny pro malé firmy",
+    "subtitle": "Začněte zdarma s Analytics. Přidejte funkce, jak vaše podnikání roste.",
+    "perfectFor": "Perfektní pro:",
+    "features": "Funkce:",
+    "billingToggle": {
+      "monthly": "Měsíční",
+      "annual": "Roční"
+    },
+    "savingsBadge": "Ušetřete 2 měsíce!",
+    "period": {
+      "month": "měsíc",
+      "year": "rok"
+    },
+    "savings": "Ušetřete €{amount}",
+    "plans": {
+      "starter": {
+        "name": "STARTER",
+        "period": {
+          "monthly": "měsíc",
+          "annual": "rok"
+        },
+        "badge": "DOPORUČENÉ",
+        "perfectFor": "Perfektní pro: Malé firmy, které chtějí jednoduché analytické nástroje bez složitosti.",
+        "features": {
+          "0": "Zjednodušený Analytics Dashboard",
+          "1": "Základní reporty e-mailem",
+          "2": "Data z Google Analytics",
+          "3": "Podpora 24/7"
+        },
+        "cta": "Spojte se s expertem"
+      },
+      "plus": {
+        "name": "PLUS",
+        "period": {
+          "monthly": "měsíc",
+          "annual": "rok"
+        },
+        "perfectFor": "Perfektní pro: Restaurace, hotely, profesionály - kde jsou online recenze zásadní pro úspěch.",
+        "features": {
+          "0": "Všechny funkce plánu STARTER",
+          "1": "Modul správy recenzí s AI",
+          "2": "Odpovědi jedním kliknutím"
+        },
+        "cta": "Spojte se s expertem"
+      },
+      "pro": {
+        "name": "PRO",
+        "period": {
+          "monthly": "měsíc",
+          "annual": "rok"
+        },
+        "perfectFor": "Perfektní pro: Firmy, které aktivně používají Instagram a Facebook a chtějí vše spravovat z jednoho místa.",
+        "features": {
+          "0": "Všechny funkce plánu PLUS",
+          "1": "Social Hub modul",
+          "2": "Plánování příspěvků",
+          "3": "Dashboard sociálních médií"
+        },
+        "cta": "Spojte se s expertem"
+      }
+    },
+    "consultation": {
+      "title": "Nevíte, který plán je pro vás správný?",
+      "subtitle": "Rezervujte si bezplatnou 30minutovou konzultaci a objevte řešení, které nejlépe vyhovuje vašim potřebám.",
+      "cta": "Bezplatná konzultace",
+      "formMessage": "Dobrý den! Rád bych si rezervoval bezplatnou konzultaci, abych zjistil, který plán QuickFy nejlépe vyhovuje potřebám mé firmy. "
+    }
+  },
+  "contact": {
+    "title": "Připraveni transformovat vaše",
+    "titleHighlight": "podnikání?",
+    "subtitle": "Začněte s analytickým dashboardem ještě dnes. Bezplatná konzultace dostupná pro všechny nové zákazníky.",
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Celé jméno",
+          "placeholder": "Vaše celé jméno"
+        },
+        "email": {
+          "label": "E-mailová adresa",
+          "placeholder": "Váš firemní email"
+        },
+        "company": {
+          "label": "Společnost",
+          "placeholder": "Název společnosti"
+        },
+        "phone": {
+          "label": "Telefon",
+          "placeholder": "Telefonní číslo"
+        },
+        "message": {
+          "label": "Zpráva",
+          "placeholder": "Popište své současné marketingové výzvy..."
+        }
+      },
+      "submit": "Spojte se s expertem",
+      "submitting": "Odesílání...",
+      "submitAnother": "Odeslat Další Žádost",
+      "ariaLabel": "Kontaktní formulář QuickFy",
+      "privacy": "Souhlasím se zpracováním osobních údajů podle Zásad ochrany osobních údajů",
+      "socialProof": {
+        "response": "Odpověď do 24h",
+        "clients": "500+ Spokojených Klientů",
+        "roi": "Garantované ROI"
+      },
+      "progress": {
+        "label": "Průběh vyplnění"
+      },
+      "footer": {
+        "security": "🔒 Vaše data jsou v bezpečí • ✓ Garantovaná odpověď do 24h • 💬 Bezplatná 30minutová konzultace"
+      },
+      "validation": {
+        "name": "Jméno musí obsahovat alespoň 2 znaky",
+        "email": "Zadejte platnou e-mailovou adresu",
+        "company": "Název společnosti musí obsahovat alespoň 2 znaky",
+        "phone": "Telefonní číslo musí obsahovat alespoň 10 číslic",
+        "message": "Zpráva musí obsahovat alespoň 10 znaků",
+        "privacy": "Musíte souhlasit se zpracováním osobních údajů"
+      },
+      "error": {
+        "title": "Chyba při odesílání žádosti",
+        "message": "Došlo k chybě. Zkuste to znovu nebo nás kontaktujte přímo.",
+        "retry": "Zkusit znovu"
+      }
+    },
+    "success": {
+      "title": "Žádost Odeslána!",
+      "message": "Budeme vás kontaktovat do 24 hodin pro naplánování vaší bezplatné konzultace."
+    }
+  },
+  "languageSwitcher": {
+    "label": "Změnit jazyk",
+    "languages": {
+      "cs": "Čeština",
+      "en": "English",
+      "it": "Italiano"
+    }
+  },
+  "testimonials": {
+    "title": "Co o nás říkají naši klienti",
+    "subtitle": "Přečtěte si zkušenosti malých firem, které s QuickFy získaly jasnost v datech a vyšší ROI",
+    "previousTestimonial": "Předchozí reference",
+    "nextTestimonial": "Další reference",
+    "goToTestimonial": "Přejít na referenci",
+    "trustIndicators": {
+      "rating": "4.9/5 hodnocení",
+      "clients": "500+ spokojených klientů",
+      "projects": "1200+ úspěšných projektů"
+    },
+    "testimonial1": {
+      "name": "Jan Novák",
+      "role": "Majitel",
+      "company": "Restaurace U Dobré Chuti",
+      "content": "Před QuickFy jsem nerozuměl Google Analytics. Teď mám jasný dashboard, který mi hned ukáže, jak si web vede. Modul na recenze je skvělý: odpovím všem během minuty!"
+    },
+    "testimonial2": {
+      "name": "Marie Svobodová",
+      "role": "Majitelka",
+      "company": "Kadeřnictví Salon Marie",
+      "content": "Social Hub mi změnil život. Plánuji Instagram příspěvky na týden dopředu z QuickFy a vidím, co funguje. Získala jsem +60% sledujících za 3 měsíce!"
+    },
+    "testimonial3": {
+      "name": "Petr Kovář",
+      "role": "Marketingový manažer",
+      "company": "FitPark Praha",
+      "content": "Dashboard QuickFy mi hned ukáže ROI z reklam. Vidím, kolik stojí jeden nový člen a kde investovat více. Výsledek? +40% členů při stejném rozpočtu."
+    },
+    "testimonial4": {
+      "name": "Anna Horáková",
+      "role": "Majitelka",
+      "company": "Penzion U Jezu",
+      "content": "S QuickFy odpovím na Google recenze během 2 minut. AI mi navrhne odpověď, já jen upravím a odešlu. Díky tomu máme 4.8 hvězdiček a plno nových rezervací!"
+    },
+    "testimonial5": {
+      "name": "Tomáš Černý",
+      "role": "Digitální marketing specialista",
+      "company": "E-shop TechGear",
+      "content": "QuickFy mi dal jasno v datech. Dashboard ukazuje, které kampaně fungují a které ne. Přestal jsem plýtvat peníze a ROI vzrostlo o 50% za první měsíc!"
+    }
+  },
+  "logos": {
+    "title": "Důvěřují nám přední společnosti po celém světě",
+    "description": "Připojte se k {count}+ společnostem, které důvěřují QuickFy pro svou marketingovou automatizaci"
+  },
+  "roadmap": {
+    "title": "Náš vývojový",
+    "titleHighlight": "plán",
+    "subtitle": "Kontinuální inovace založené na zpětné vazbě zákazníků a potřebách trhu",
+    "cta": "Poháněno zpětnou vazbou zákazníků",
+    "items": [
+      {
+        "quarter": "Q4 2025",
+        "status": "current",
+        "title": "Spuštění Analytics",
+        "keyAction": "Oficiální uvedení základního dashboardu na trh",
+        "features": [
+          "Analytics plán za €19/měsíc",
+          "Zjednodušený dashboard",
+          "Automatické reporty"
+        ]
+      },
+      {
+        "quarter": "Q1 2026",
+        "status": "future",
+        "title": "První Vylepšení",
+        "keyAction": "Bezplatný AI upgrade pro existující zákazníky",
+        "features": [
+          "AI upozornění a souhrny zdarma",
+          "Zahájení vývoje modulu Reputation",
+          "Průběžná vylepšení dashboardu"
+        ]
+      },
+      {
+        "quarter": "Q2 2026",
+        "status": "future",
+        "title": "Plus Plán (Reputation)",
+        "keyAction": "Spuštění správy recenzí s AI",
+        "features": [
+          "Plus plán za €39/měsíc",
+          "AI správa recenzí",
+          "Odpovědi jedním kliknutím"
+        ]
+      },
+      {
+        "quarter": "H2 2026",
+        "status": "future",
+        "title": "Pro Plán (Social Hub)",
+        "keyAction": "Kompletní platforma pro růst malých firem",
+        "features": [
+          "Pro plán za €69/měsíc",
+          "Social Hub pro Instagram/Facebook",
+          "Plánování příspěvků"
+        ]
+      }
+    ]
+  },
+  "breadcrumb": {
+    "home": "Domů",
+    "homeAria": "Zpět na domovskou stránku",
+    "currentPageAria": "Aktuální stránka",
+    "navigationAria": "Navigace drobečkové cesty",
+    "separator": "Přejít na"
+  },
+  "footer": {
+    "description": "QuickFy - Zjednodušený analytický dashboard a AI nástroje pro malé firmy. Data, recenze a sociální média v jedné platformě.",
+    "contact": {
+      "emailAria": "Odeslat email na QuickFy"
+    },
+    "newsletter": {
+      "title": "Přihlaste se k newsletteru",
+      "subtitle": "Získejte aktualizace o nejnovějších funkcích a tipy pro zlepšení vašeho výkonu",
+      "emailLabel": "Emailová adresa",
+      "emailPlaceholder": "Zadejte váš email",
+      "submit": "Přihlásit se",
+      "submitting": "Odesílání...",
+      "privacy": "Respektujeme vaše soukromí. Kdykoli se můžete odhlásit.",
+      "trust": {
+        "subscribers": "Odběratelé",
+        "frequency": "Týdně",
+        "updates": "Aktualizace",
+        "spam": "Spam"
+      },
+      "success": {
+        "title": "Přihlášení dokončeno!",
+        "message": "Děkujeme za přihlášení k odběru našeho newsletteru. Budete dostávat aktualizace na adresu {email}",
+        "description": "Brzy obdržíte první aktualizaci s exkluzivním obsahem a praktickými tipy.",
+        "cta": "Zpět na formulář"
+      },
+      "error": {
+        "title": "Chyba při přihlašování",
+        "message": "Při přihlašování došlo k chybě. Zkuste to prosím znovu za chvíli."
+      }
+    },
+    "links": {
+      "privacy": "Zásady ochrany osobních údajů",
+      "terms": "Všeobecné obchodní podmínky",
+      "contact": "Kontakt"
+    },
+    "copyright": "© 2024 QuickFy. Všechna práva vyhrazena."
+  },
+  "cookieConsent": {
+    "title": "Používáme cookies pro lepší zážitek",
+    "description": "Používáme cookies pro základní fungování webu, analýzu návštěvnosti a zlepšení vašeho zážitku. Můžete si vybrat, které typy cookies chcete povolit.",
+    "acceptAll": "Přijmout vše",
+    "rejectAll": "Odmítnout vše",
+    "managePreferences": "Spravovat předvolby",
+    "savePreferences": "Uložit předvolby",
+    "close": "Zavřít",
+    "legalNotice": "Více informací o používání cookies najdete v našich",
+    "categories": {
+      "necessary": "Nezbytné",
+      "analytics": "Analytické",
+      "marketing": "Marketingové",
+      "preferences": "Předvolby",
+      "alwaysEnabled": "Vždy povoleno",
+      "optional": "Volitelné",
+      "necessaryDescription": "Tyto cookies jsou nezbytné pro správné fungování webových stránek a nelze je zakázat. Obvykle se nastavují pouze v reakci na akce uživatele, jako je nastavení jazyka nebo přihlašování.",
+      "analyticsDescription": "Analytické cookies nám pomáhají porozumět tomu, jak návštěvníci interagují s webem, poskytují informace o návštěvnosti a pomáhají nám zlepšovat výkon stránek.",
+      "marketingDescription": "Marketingové cookies se používají k personalizaci reklam a poskytování relevantnějšího obsahu. Mohou být použity k měření účinnosti reklamních kampaní.",
+      "preferencesDescription": "Cookies předvoleb si zapamatují vaše volby a personalizují váš zážitek, jako je preferovaný jazyk nebo nastavení uživatelského rozhraní."
+    },
+    "preferences": {
+      "title": "Nastavení cookies",
+      "subtitle": "Spravujte své preference týkající se cookies a ochrany soukromí",
+      "introduction": "Můžete si zvolit, které typy cookies chcete na našich stránkách povolit. Vaše volby budou respektovány a uloženy na 1 rok."
+    }
+  },
+  "privacyPolicy": {
+    "meta": {
+      "title": "Zásady ochrany osobních údajů - QuickFy",
+      "description": "Zásady ochrany osobních údajů pro QuickFy Performance Suite. Transparentní informace o zpracování vašich osobních údajů podle GDPR."
+    },
+    "title": "Zásady ochrany osobních údajů FL1 s.r.o.",
+    "lastUpdated": "Poslední aktualizace: {date}",
+    "sections": {
+      "introduction": {
+        "title": "I. Úvod",
+        "content": "Tyto zásady ochrany osobních údajů (dále jen \"Zásady\") definují způsob, jakým společnost FL1 s.r.o., se sídlem Moskevská 1464/61, Vršovice, 101 00 Praha 10, IČO: 19990146, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, odd. C, vložka 398569 (dále jen \"Správce\" nebo \"QuickFy\"), shromažďuje, používá, uchovává a chrání osobní údaje uživatelů svých služeb."
+      },
+      "dataController": {
+        "title": "II. Správce osobních údajů",
+        "content": [
+          "Správcem osobních údajů podle nařízení GDPR je:",
+          "FL1 s.r.o.",
+          "Moskevská 1464/61, Vršovice, 101 00 Praha 10",
+          "IČO: 19990146",
+          "E-mail: info@quickfy.eu",
+          "Telefon: +420 775 113 732"
+        ]
+      },
+      "typesOfData": {
+        "title": "III. Jaké osobní údaje zpracováváme",
+        "content": [
+          "a) Identifikační údaje: jméno, příjmení, e-mailová adresa, telefonní číslo",
+          "b) Firemní údaje: název společnosti, pozice ve firmě, firemní adresa",
+          "c) Technické údaje: IP adresa, cookies, informace o zařízení a prohlížeči",
+          "d) Údaje o využívání služeb: statistiky používání, preference, nastavení",
+          "e) Komunikační údaje: obsah dotazů, korespondence, zpětná vazba"
+        ]
+      },
+      "purposes": {
+        "title": "IV. Účely zpracování osobních údajů",
+        "content": [
+          "Vaše osobní údaje zpracováváme za těmito účely:",
+          "a) Poskytování služeb QuickFy Performance Suite",
+          "b) Komunikace s uživateli a technická podpora",
+          "c) Zlepšování kvality a funkcionalit našich služeb",
+          "d) Marketingové účely (pouze se souhlasem)",
+          "e) Plnění zákonných povinností",
+          "f) Ochrana před podvody a zajištění bezpečnosti"
+        ]
+      },
+      "legalBasis": {
+        "title": "V. Právní základ pro zpracování",
+        "content": [
+          "Osobní údaje zpracováváme na základě:",
+          "a) Smlouvy - pro poskytování služeb a plnění smluvních závazků",
+          "b) Oprávněného zájmu - pro technické fungování služeb a jejich zlepšování",
+          "c) Souhlasu - pro marketingové účely a zasílání newsletterů",
+          "d) Zákonné povinnosti - pro archivaci a účetní evidence"
+        ]
+      },
+      "sharing": {
+        "title": "VI. Předávání údajů třetím stranám",
+        "content": [
+          "Vaše osobní údaje můžeme předávat:",
+          "a) Dodavatelům IT služeb a cloudových řešení",
+          "b) Partnerům pro analýzu a optimalizaci výkonu",
+          "c) Orgánům veřejné moci v případě zákonné povinnosti",
+          "d) Auditorům a právním poradcům",
+          "Všichni příjemci jsou vázáni mlčenlivostí a dodržováním GDPR."
+        ]
+      },
+      "internationalTransfer": {
+        "title": "VII. Mezinárodní přenos údajů",
+        "content": [
+          "V případě přenosu osobních údajů do třetích zemí zajišťujeme:",
+          "a) Přenos pouze do zemí s rozhodnutím o přiměřenosti EK",
+          "b) Použití standardních smluvních doložek schválených EK",
+          "c) Implementaci přiměřených záruk podle GDPR",
+          "d) Získání vašeho výslovného souhlasu v ostatních případech"
+        ]
+      },
+      "retention": {
+        "title": "VIII. Doba uchování údajů",
+        "content": [
+          "Osobní údaje uchováváme po dobu:",
+          "a) Trvání smluvního vztahu + 3 roky po jeho ukončení",
+          "b) Do odvolání souhlasu (marketingové účely)",
+          "c) Po dobu stanovenou zákonem (účetní doklady 10 let)",
+          "d) Po dobu nezbytnou pro uplatnění nároků (max. 3 roky)"
+        ]
+      },
+      "rights": {
+        "title": "IX. Vaše práva",
+        "content": [
+          "V souvislosti se zpracováním osobních údajů máte právo:",
+          "a) Na přístup k osobním údajům - získat informace o zpracování",
+          "b) Na opravu - požádat o opravu nepřesných údajů",
+          "c) Na výmaz (\"právo být zapomenut\") - za splnění zákonných podmínek",
+          "d) Na omezení zpracování - v případech stanovených GDPR",
+          "e) Na přenositelnost údajů - obdržet údaje ve strukturovaném formátu",
+          "f) Vznést námitku proti zpracování - zejména pro marketingové účely",
+          "g) Podat stížnost u dozorového orgánu - Úřad pro ochranu osobních údajů"
+        ]
+      },
+      "security": {
+        "title": "X. Bezpečnost údajů",
+        "content": [
+          "Implementujeme přiměřená technická a organizační opatření:",
+          "a) Šifrování dat při přenosu i ukládání",
+          "b) Pravidelné bezpečnostní audity a testování",
+          "c) Omezený přístup pouze autorizovaným osobám",
+          "d) Pravidelné školení zaměstnanců o ochraně údajů",
+          "e) Incident response plány pro případy narušení bezpečnosti",
+          "f) Pravidelné zálohování a obnovu dat"
+        ]
+      },
+      "cookies": {
+        "title": "XI. Cookies a sledovací technologie",
+        "content": [
+          "Na našich webových stránkách používáme:",
+          "a) Nezbytné cookies pro fungování webu",
+          "b) Analytické cookies pro měření návštěvnosti (Google Analytics)",
+          "c) Marketingové cookies (pouze se souhlasem)",
+          "d) Cookies pro personalizaci uživatelského prostředí",
+          "Cookies můžete spravovat v nastavení vašeho prohlížeče."
+        ]
+      },
+      "minors": {
+        "title": "XII. Ochrana nezletilých",
+        "content": [
+          "Naše služby nejsou určeny osobám mladším 16 let. Pokud se dozvíme, že jsme shromáždili osobní údaje od nezletilé osoby bez souhlasu rodičů, tyto údaje neprodleně vymažeme. Rodiče mohou kontaktovat naši zákaznickou podporu pro řešení těchto záležitostí."
+        ]
+      },
+      "changes": {
+        "title": "XIII. Změny těchto zásad",
+        "content": [
+          "Tyto Zásady mohou být aktualizovány v souladu s vývojem našich služeb a změnami právních předpisů. O významných změnách vás budeme informovat prostřednictvím:",
+          "a) E-mailového upozornění",
+          "b) Oznámení na našich webových stránkách",
+          "c) Oznámení přímo v aplikaci QuickFy",
+          "Pokračováním v používání našich služeb po změně Zásad vyjadřujete souhlas s aktualizovanými podmínkami."
+        ]
+      },
+      "contact": {
+        "title": "Kontakt",
+        "content": [
+          "Pro dotazy týkající se ochrany osobních údajů nás kontaktujte:",
+          "E-mail: privacy@quickfy.eu",
+          "Telefon: +420 775 113 732",
+          "Poštovní adresa: FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10",
+          "",
+          "Stížnosti můžete podat u dozorového orgánu:",
+          "Úřad pro ochranu osobních údajů",
+          "Pplk. Sochora 27, 170 00 Praha 7",
+          "Tel.: +420 234 665 111",
+          "E-mail: posta@uoou.cz"
+        ]
+      }
+    }
+  },
+  "whappi": {
+    "badge": "INTELIGENTNÍ ROZŠÍŘENÍ CHROME",
+    "banner": {
+      "status": "Ve vývoji - Spuštění Q2 2026",
+      "preorder": "Nyní přijímáme předobjednávky se speciální cenou!"
+    },
+    "hero": {
+      "title": "Whappi: Váš copilot pro",
+      "titleHighlight": "komunikaci se zákazníky",
+      "subtitle": "Rozšíření Chrome, které integruje všechny komunikace (WhatsApp, Facebook, Instagram, Viber, Telegram, SMS, Email) přímo do vašich pracovních nástrojů. Žádné další přepínání obrazovek: pracujte tam, kde už pracujete.",
+      "painPoint": {
+        "title": "Přestaňte přeplácet za složité nástroje!",
+        "description": "Konkurence účtuje €300-400/měsíc. Whappi poskytuje stejnou sílu jen za €19/uživatel/měsíc."
+      },
+      "cta": {
+        "pricing": "Předobjednat nyní - Speciální cena",
+        "contact": "Podívejte se na demo"
+      }
+    },
+    "demo": {
+      "title": "Podívejte se na Whappi v akci",
+      "subtitle": "Sledujte, jak Whappi transformuje týmovou komunikaci a správu zákazníků",
+      "placeholder": {
+        "title": "Demo produktu",
+        "coming": "Již brzy - Q2 2026"
+      },
+      "preview": "Náhled dashboardu Whappi"
+    },
+    "integrations": {
+      "title": "Všechny vaše platformy pro zasílání zpráv na jednom místě",
+      "subtitle": "Přestaňte přepínat mezi aplikacemi. Spravujte WhatsApp, Telegram, Facebook, Instagram, Viber, SMS a Email z jednoho výkonného dashboardu.",
+      "chromeExtension": "Rozšíření Chrome",
+      "worksInsideTools": "Funguje uvnitř vašich oblíbených nástrojů",
+      "allChannelsUnified": "Všechny vaše komunikační kanály sjednocené",
+      "availableOn": "Dostupné na",
+      "chromeWebStore": "Chrome Web Store",
+      "comingQ2": "Již brzy Q2 2026",
+      "comingSoon": "Již brzy",
+      "tools": {
+        "gmail": {
+          "name": "Gmail",
+          "type": "Emailový klient"
+        },
+        "hubspot": {
+          "name": "HubSpot",
+          "type": "CRM"
+        },
+        "salesforce": {
+          "name": "Salesforce",
+          "type": "CRM"
+        },
+        "pipedrive": {
+          "name": "Pipedrive",
+          "type": "CRM"
+        },
+        "zendesk": {
+          "name": "Zendesk",
+          "type": "Podpora"
+        },
+        "more": {
+          "name": "Další",
+          "type": "Již brzy"
+        }
+      },
+      "hub": {
+        "title": "Whappi",
+        "subtitle": "Centrální centrum"
+      },
+      "platforms": {
+        "whatsapp": {
+          "name": "WhatsApp",
+          "type": "Business API"
+        },
+        "telegram": {
+          "name": "Telegram",
+          "type": "Bot API"
+        },
+        "facebook": {
+          "name": "Meta",
+          "type": "Messenger"
+        },
+        "instagram": {
+          "name": "Instagram",
+          "type": "Direct"
+        },
+        "viber": {
+          "name": "Viber",
+          "type": "Business"
+        },
+        "sms": {
+          "name": "SMS",
+          "type": "Gateway"
+        },
+        "email": {
+          "name": "Email",
+          "type": "SMTP/IMAP"
+        }
+      }
+    },
+    "comparison": {
+      "title": "Proč si malé firmy volí Whappi",
+      "subtitle": "Porovnejte Whappi s drahými alternativami a zjistěte rozdíl",
+      "tableTitle": "Porovnání funkcí",
+      "columnHeaders": {
+        "feature": "Funkce"
+      },
+      "features": {
+        "cost": "Měsíční náklady",
+        "multiPlatform": "Multi-platforma",
+        "teamCollaboration": "Týmová spolupráce",
+        "gdpr": "Shoda s GDPR",
+        "setup": "Složitost nastavení",
+        "smb": "Zaměření na malé firmy"
+      },
+      "whappi": {
+        "name": "Whappi",
+        "pricing": "€19/měsíc",
+        "pricingUnit": "na uživatele",
+        "gdprNote": "Vaše servery",
+        "setupNote": "Jednoduché"
+      },
+      "competitors": {
+        "name": "Konkurence",
+        "pricing": "€300-400/měsíc",
+        "pricingUnit": "podnikové ceny",
+        "gdprNote": "Servery dodavatele",
+        "setupNote": "Složité"
+      }
+    },
+    "features": {
+      "title": "AI funkce pro maximální produktivitu",
+      "subtitle": "Vše, co potřebujete ke správě komunikací bez opuštění vašich pracovních nástrojů",
+      "allIncluded": "Všechny funkce zahrnuty v každém plánu - Žádné skryté náklady",
+      "contextualIntelligence": {
+        "title": "Kontextová inteligence",
+        "description": "Whappi automaticky detekuje telefonní čísla na webové stránce a okamžitě zobrazuje kompletní historii konverzací napříč všemi kanály.",
+        "benefits": [
+          "Automatická detekce telefonních čísel",
+          "Okamžitá historie konverzací napříč kanály",
+          "Nulové přepínání kontextu"
+        ]
+      },
+      "aiAssistance": {
+        "title": "Integrovaný AI asistent",
+        "description": "AI Whappi vytváří automatické souhrny konverzací, navrhuje 2-3 připravené návrhy odpovědí a prohledává firemní znalostní bázi, aby vám poskytl správné informace ve správný čas.",
+        "benefits": [
+          "Souhrny konverzací jedním kliknutím",
+          "2-3 připravené AI návrhy odpovědí",
+          "Inteligentní vyhledávání ve znalostní bázi"
+        ]
+      },
+      "teamManagement": {
+        "title": "Týmová spolupráce",
+        "description": "Přidělte konverzace konkrétním členům týmu, přidávejte soukromé interní poznámky a efektivně spolupracujte na každém zákazníkovi, to vše bez opuštění vašich nástrojů.",
+        "benefits": [
+          "Přidělení konverzací operátorům",
+          "Soukromé poznámky pro tým",
+          "Zmínky a spolupráce v reálném čase"
+        ]
+      },
+      "gdprCompliance": {
+        "title": "Zaručená shoda s GDPR",
+        "description": "Vyvinuto v České republice s maximální pozorností k soukromí. Vaše data zůstávají na vašich serverech a plně vyhovují evropskému GDPR.",
+        "benefits": [
+          "Vyrobeno v České republice - 100% evropský vývoj",
+          "Data na zákaznických serverech",
+          "Plná shoda s GDPR"
+        ]
+      }
+    },
+    "trust": {
+      "title": "Postaveno pro bezpečnost a důvěru",
+      "subtitle": "Vaše data zůstávají na vašich serverech",
+      "badges": {
+        "madeInItaly": "Vyrobeno v České republice",
+        "clientServers": "Zákaznické servery",
+        "gdpr": "Plná shoda s GDPR"
+      }
+    },
+    "roadmap": {
+      "title": "Plán vývoje",
+      "subtitle": "Naše cesta k uvedení Q2 2026",
+      "badgeText": "Plán vývoje",
+      "journeyTo": "Cesta k",
+      "launchDate": "Uvedení Q2 2026",
+      "trackProgress": "Sledujte náš pokrok při budování budoucnosti firemní komunikace",
+      "progressOverview": "Přehled pokroku vývoje",
+      "progressSubtitle": "Vývojové milníky v reálném čase sledující naši cestu k uvedení",
+      "milestones": {
+        "q3_2024": {
+          "date": "Září 2024",
+          "title": "Architektura základní platformy",
+          "description": "Dokončeny základní systémy včetně bezpečnostního frameworku, databázové architektury a vývoje základních API.",
+          "status": "DOKONČENO",
+          "features": {
+            "security": "Bezpečnostní vrstva",
+            "apis": "Základní API",
+            "securityStatus": "✓ Implementováno",
+            "apisStatus": "✓ Připraveno"
+          }
+        },
+        "q4_2024": {
+          "date": "Prosinec 2024",
+          "title": "Integrace platformy",
+          "description": "Aktivní vývoj WhatsApp Business API, Telegram Bot API a Meta Messenger integrací.",
+          "status": "PROBÍHÁ",
+          "features": {
+            "whatsapp": "API WhatsApp",
+            "telegram": "Bot Telegram",
+            "whatsappStatus": "🚧 Ve vývoji",
+            "telegramStatus": "🚧 Fáze testování"
+          }
+        },
+        "q1_2025": {
+          "date": "Březen 2025",
+          "title": "Pokročilé týmové funkce",
+          "description": "Nástroje pro týmovou spolupráci, přiřazování konverzací, interní poznámky a systémy správy uživatelů.",
+          "status": "PLÁNOVÁNO",
+          "features": {
+            "management": "Správa týmu",
+            "collaboration": "Spolupráce",
+            "managementStatus": "📋 Fáze designu",
+            "collaborationStatus": "📋 Plánováno"
+          }
+        },
+        "q2_2026": {
+          "date": "Březen 2026",
+          "title": "Úplné uvedení platformy",
+          "description": "Kompletní platforma připravená se všemi funkcemi, mobilními aplikacemi, komplexní dokumentací a 24/7 podporou.",
+          "status": "🚀 PŘIPRAVENO K UVEDENÍ",
+          "features": {
+            "mobile": "Mobilní aplikace",
+            "support": "Podpora 24/7",
+            "mobileStatus": "🎯 Připraveno k uvedení",
+            "supportStatus": "🎯 Plná služba"
+          },
+          "preorderText": "🎉 Předobjednejte nyní a ušetřete 24%",
+          "launchExpected": "Očekávané uvedení: Q2 2026"
+        }
+      },
+      "progressStats": {
+        "core": "Základní platforma",
+        "integrations": "Integrace",
+        "team": "Týmové funkce",
+        "launch": "Cíl uvedení"
+      },
+      "ctaText": "🎉 Předobjednejte nyní a ušetřete 24%",
+      "ctaButton": "Zajistit předobjednávku"
+    },
+    "pricing": {
+      "title": "Jednoduché a transparentní ceny",
+      "subtitle": "Využijte roční nabídku: zaplaťte 10 měsíců, získejte 12",
+      "preorder": {
+        "badge": "ROČNÍ NABÍDKA",
+        "title": "Roční předobjednávkový plán",
+        "price": "€190",
+        "period": "/rok",
+        "subtitle": "€15.83 za měsíc",
+        "savings": "Ušetřete €38 - Zaplaťte 10 měsíců, získejte 12!",
+        "cta": "Předobjednat nyní"
+      },
+      "regular": {
+        "badge": "STANDARD",
+        "title": "Měsíční plán",
+        "price": "€19",
+        "period": "/měsíc",
+        "subtitle": "na uživatele",
+        "note": "Fakturováno měsíčně",
+        "cta": "Dostupné Q2 2026"
+      },
+      "features": [
+        "Všech 7 kanálů: WhatsApp, Facebook Messenger, Instagram, Viber, Telegram, SMS, Email",
+        "AI inteligence s automatickými souhrny a návrhy odpovědí",
+        "Automatická kontextová detekce telefonních čísel",
+        "Neomezená týmová spolupráce s přidělováním a poznámkami",
+        "Inteligentní vyhledávání ve firemní znalostní bázi",
+        "Plná shoda s GDPR - Vyrobeno v České republice"
+      ],
+      "everythingIncluded": "Vše zahrnuto",
+      "madeInCzech": "Vyrobeno v České republice - GDPR Zaručeno",
+      "savingsText": "Předobjednávka vám ušetří €38/rok"
+    },
+    "cta": {
+      "title": "Přestaňte ztrácet čas přepínáním obrazovek",
+      "subtitle": "Připojte se k týmům, které si vybraly Whappi pro lepší a rychlejší práci. Jeden inteligentní widget pro všechny komunikace, ať pracujete kdekoliv.",
+      "button": "Začít s Whappi (€19/uživatel)",
+      "formMessage": "Mám zájem o Whappi - Integrovaný komunikační modul. Rád bych získal více informací o předobjednávce a demo rozšíření Chrome."
+    }
+  },
+  "whappiSummary": {
+    "title": "Integrovaný komunikační modul",
+    "subtitle": "Rozšíření Chrome, které přináší všechny zákaznické komunikace (WhatsApp, Facebook, Instagram, Viber, Telegram, SMS, Email) přímo do vašich pracovních nástrojů.",
+    "features": {
+      "contextualIntelligence": {
+        "icon": "🧠",
+        "title": "Kontextová inteligence",
+        "description": "Automaticky detekuje telefonní čísla a zobrazuje historii konverzací napříč kanály."
+      },
+      "aiAssistance": {
+        "icon": "✨",
+        "title": "AI asistent",
+        "description": "Automatické souhrny, návrhy odpovědí a vyhledávání ve znalostní bázi."
+      },
+      "teamManagement": {
+        "icon": "👥",
+        "title": "Týmová spolupráce",
+        "description": "Přidělujte konverzace, přidávejte soukromé poznámky a spolupracujte v reálném čase."
+      },
+      "integrations": {
+        "icon": "🔗",
+        "title": "Integrace více kanálů",
+        "description": "Sjednoťte WhatsApp, Facebook, Instagram, Telegram, SMS a e-mail v jednom rozhraní."
+      },
+      "gdpr": {
+        "icon": "🔒",
+        "title": "GDPR zaručeno",
+        "description": "Vyrobeno v České republice s daty na vašich serverech a plnou shodou."
+      }
+    },
+    "pricing": {
+      "amount": "€19/uživatel",
+      "description": "za měsíc - Měsíční plán nebo €190/rok (ušetřete €38)"
+    },
+    "cta": {
+      "button": "Objevte Whappi"
+    },
+    "note": "Konečně integrovaná zákaznická komunikace bez opuštění vašich nástrojů"
+  },
+  "termsAndConditions": {
+    "meta": {
+      "title": "Všeobecné obchodní podmínky - QuickFy",
+      "description": "Všeobecné obchodní podmínky pro QuickFy Performance Suite. Úplné smluvní podmínky a pravidla používání našich služeb."
+    },
+    "title": "Všeobecné obchodní podmínky FL1 s.r.o.",
+    "lastUpdated": "Poslední aktualizace: {date}",
+    "tableOfContents": {
+      "title": "Obsah",
+      "showToc": "Zobrazit obsah",
+      "hideToc": "Skrýt obsah"
+    },
+    "sections": {
+      "basicProvisions": {
+        "title": "I. Základní ustanovení",
+        "content": [
+          "1.1. Tyto všeobecné obchodní podmínky (dále jen \"VOP\") upravují vzájemná práva a povinnosti vzniklé na základě kupní smlouvy (dále jen \"kupní smlouva\") uzavřené prostřednictvím webového rozhraní umístěného na internetové adrese www.quickfy.eu (dále jen \"webové rozhraní\") mezi společností FL1 s.r.o., se sídlem Moskevská 1464/61, Vršovice, 101 00 Praha 10, IČO: 19990146, zapsanou v obchodním rejstříku vedeném Městským soudem v Praze, odd. C, vložka 398569 (dále jen \"prodávající\") a fyzickou osobou, která uzavírá smlouvu nesouvisející s její podnikatelskou činností jako spotřebitel, nebo v přímé souvislosti se svou podnikatelskou činností (dále jen \"kupující\").",
+          "1.2. Ustanovení odchylná od VOP je možné sjednat v kupní smlouvě. Odchylná ujednání v kupní smlouvě mají přednost před ustanoveními VOP.",
+          "1.3. Ustanovení VOP jsou nedílnou součástí kupní smlouvy. Kupní smlouva a VOP jsou sepsány v českém jazyce. Kupní smlouvu lze uzavřít v českém jazyce.",
+          "1.4. Znění VOP může prodávající měnit či doplňovat. Toto ustanovení neovlivňuje práva a povinnosti vzniklé po dobu účinnosti předchozího znění VOP."
+        ]
+      },
+      "userAccount": {
+        "title": "II. Uživatelský účet",
+        "content": [
+          "2.1. Na základě registrace kupujícího provedené ve webovém rozhraní může kupující přistupovat ke svému uživatelskému účtu. Ze svého uživatelského účtu může kupující provádět objednávání zboží (dále jen \"uživatelský účet\").",
+          "2.2. Při registraci do uživatelského účtu a při objednávání zboží je kupující povinen uvádět správně a pravdivě všechny údaje. Údaje uvedené v uživatelském účtu je kupující povinen při jakékoli jejich změně aktualizovat. Údaje uvedené kupujícím v uživatelském účtu a při objednávání zboží považuje prodávající za správné.",
+          "2.3. Přístup k uživatelskému účtu je zabezpečen uživatelským jménem a heslem. Kupující je povinen zachovávat mlčenlivost ohledně údajů potřebných pro přístup ke svému uživatelskému účtu.",
+          "2.4. Kupující nesmí umožnit využívání uživatelského účtu třetím osobám.",
+          "2.5. Prodávající může zrušit uživatelský účet, zejména v případě, kdy kupující svůj uživatelský účet déle jak 1 rok nevyužívá, či v případě, kdy kupující poruší své povinnosti z kupní smlouvy (zejména podmínky platby).",
+          "2.6. Kupující bere na vědomí, že uživatelský účet nemusí být dostupný nepřetržitě, zejména s ohledem na nutnou údržbu hardwarového a softwarového vybavení prodávajícího, popř. nutnou údržbu hardwarového a softwarového vybavení třetích osob."
+        ]
+      },
+      "contractConclusion": {
+        "title": "III. Uzavření kupní smlouvy",
+        "content": [
+          "3.1. Veškerá prezentace zboží umístěná ve webovém rozhraní je informativního charakteru a prodávající není povinen uzavřít kupní smlouvu ohledně tohoto zboží. Ustanovení § 1732 odst. 2 občanského zákoníku se nepoužije.",
+          "3.2. Webové rozhraní obsahuje informace o zboží, včetně uvedení cen jednotlivého zboží a nákladů za vrácení zboží, pokud toto zboží ze své podstaty nemůže být vráceno obvyklou poštovní cestou. Ceny zboží jsou uvedeny včetně daně z přidané hodnoty a všech souvisejících poplatků. Ceny zboží zůstávají v platnosti po dobu, po kterou jsou zobrazovány ve webovém rozhraní. Toto ustanovení neomezuje možnost prodávajícího uzavřít kupní smlouvu za individuálně sjednaných podmínek.",
+          "3.3. Webové rozhraní obsahuje také informace o nákladech spojených s balením a dodáním zboží. Informace o nákladech spojených s balením a dodáním zboží uvedené ve webovém rozhraní platí pouze v případech, kdy je zboží dodáváno v rámci území České republiky.",
+          "3.4. Pro objednání zboží vyplní kupující objednávkový formulář ve webovém rozhraní. Objednávkový formulář obsahuje zejména informace o:",
+          "a) objednávaném zboží (objednané zboží \"vloží\" kupující do elektronického nákupního košíku webového rozhraní),",
+          "b) způsobu platby kupní ceny zboží, údajích o požadovaném způsobu dodání objednaného zboží,",
+          "c) informacích o nákladech spojených s dodáním zboží (dále souhrnně jen jako \"objednávka\").",
+          "3.5. Před odesláním objednávky prodávajícímu je kupujícímu umožněno kontrolovat a měnit údaje, které do objednávky kupující vložil, a to i s ohledem na možnost kupujícího rozpoznat a opravit chyby vzniklé při zadávání údajů do objednávky. Objednávku odešle kupující prodávajícímu kliknutím na tlačítko \"dokončit objednávku\". Údaje uvedené v objednávce považuje prodávající za správné. Podmínkou platnosti objednávky je vyplnění všech povinných údajů v objednávkovém formuláři a potvrzení kupujícího o tom, že se seznámil s těmito VOP.",
+          "3.6. Neprodleně po obdržení objednávky zašle prodávající kupujícímu potvrzení o obdržení objednávky na elektronickou adresu, kterou kupující uvedl při objednávání zboží. Toto potvrzení je automatické a nepovažuje se za uzavření smlouvy. Současně s potvrzením obdrží kupující tyto VOP. Kupní smlouva je uzavřena teprve potvrzením objednávky prodávajícím na elektronickou adresu kupujícího."
+        ]
+      },
+      "priceAndPayment": {
+        "title": "IV. Cena a platební podmínky",
+        "content": [
+          "4.1. Kupující může prodávajícímu zaplatit cenu zboží a případné náklady spojené s dodáním zboží podle kupní smlouvy následujícími způsoby:",
+          "- bezhotovostně převodem na účet prodávajícího č. 2801707992/2010, vedeným u Fio banka, a.s.;",
+          "- bezhotovostně platební kartou;",
+          "- bezhotovostně prostřednictvím platebního systému.",
+          "4.2. Společně s kupní cenou je kupující povinen zaplatit prodávajícímu také náklady spojené s balením a dodáním zboží ve sjednané výši. Není-li výslovně uvedeno jinak, rozumí se kupní cenou i náklady spojené s dodáním zboží.",
+          "4.3. Prodávající nevyžaduje od kupujícího zálohu či jinou obdobnou platbu. Toto se netýká případů, kdy je vyžadována úhrada kupní ceny před odesláním zboží.",
+          "4.4. V případě platby prostřednictvím platební brány je kupující přesměrován do rozhraní příslušné banky pro provedení platby.",
+          "4.5. V případě bezhotovostní platby je závazek kupujícího zaplatit kupní cenu splněn okamžikem připsání příslušné částky na účet prodávajícího.",
+          "4.6. Prodávající je oprávněn, zejména v případě, že kupující dodatečně nepotvrdí objednávku, požadovat uhrazení celé kupní ceny ještě před odesláním zboží kupujícímu. Ustanovení § 2119 odst. 1 občanského zákoníku se nepoužije.",
+          "4.7. Případné slevy z ceny zboží poskytnuté prodávajícím kupujícímu nelze vzájemně kombinovat.",
+          "4.8. Je-li to v obchodních vztazích obvyklé nebo stanoví-li tak obecně závazné právní předpisy, vystaví prodávající kupujícímu daňový doklad - fakturu ohledně plateb prováděných na základě kupní smlouvy. Prodávající je plátcem daně z přidané hodnoty. Daňový doklad - fakturu vystaví prodávající kupujícímu po uhrazení ceny zboží a zašle ji v elektronické podobě na elektronickou adresu kupujícího."
+        ]
+      },
+      "cancellationWithdrawal": {
+        "title": "V. Odstoupení od smlouvy",
+        "content": [
+          "5.1. Kupující, který uzavřel kupní smlouvu mimo svou podnikatelskou činnost jako spotřebitel, má právo odstoupit od kupní smlouvy.",
+          "5.2. Lhůta pro odstoupení od smlouvy činí 14 dnů:",
+          "a) od převzetí zboží,",
+          "b) od převzetí posledního kusu zboží, pokud je předmětem objednávky několik kusů zboží,",
+          "c) od převzetí první dodávky, pokud je předmětem smlouvy pravidelné opakované dodávání zboží.",
+          "5.3. Kupující nemůže mimo jiné odstoupit od kupní smlouvy:",
+          "a) o poskytování služeb, jestliže byly poskytnuty úplně a služba začala být s výslovným souhlasem kupujícího poskytována ještě před uplynutím lhůty pro odstoupení od smlouvy a kupující prohlásil, že ví, že po úplném poskytnutí služby prodávajícím pozbude právo na odstoupení od smlouvy,",
+          "b) o dodání zboží upraveného podle přání kupujícího nebo pro jeho osobu,",
+          "c) o dodání zboží, které podléhá rychlé zkáze, jakož i zboží, které bylo po dodání nenávratně smíseno s jiným zbožím,",
+          "d) o dodání zvukové nebo obrazové nahrávky nebo počítačového programu, pokud porušil jejich původní obal,",
+          "e) o dodání novin, periodik nebo časopisů s výjimkou předplatného,",
+          "f) o ubytování, přepravě, stravování nebo o využití volného času, pokud smlouva stanoví konkrétní datum nebo období plnění,",
+          "g) z elektronického obsahu nedodávaného na hmotném nosiči, pokud začal být obsah s výslovným souhlasem kupujícího poskytován ještě před uplynutím lhůty pro odstoupení od smlouvy a kupující prohlásil, že ví, že tím pozbude právo na odstoupení od smlouvy.",
+          "5.4. Pro odstoupení od kupní smlouvy musí kupující sdělit prodávajícímu své rozhodnutí odstoupit od kupní smlouvy jednoznačným prohlášením (např. dopisem zaslaným poštou nebo elektronickou poštou). K tomuto účelu může kupující použít vzorový formulář pro odstoupení od smlouvy poskytovaný prodávajícím, který tvoří přílohu těchto VOP. Odstoupení od kupní smlouvy může kupující sdělit prodávajícímu také prostřednictvím formuláře umístěného na webových stránkách prodávajícího. Kupující zašle sdělení o odstoupení od smlouvy prodávajícímu na adresu info@quickfy.eu nebo na adresu provozovny FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10.",
+          "5.5. Kupující, který odstoupil od kupní smlouvy, je povinen bez zbytečného odkladu, nejpozději do 14 dnů od odstoupení od kupní smlouvy, vrátit prodávajícímu zboží. Kupující je povinen nést náklady spojené s vrácením zboží prodávajícímu, a to i v případě, kdy zboží nemůže být vráceno obvyklou poštovní cestou pro svou povahu.",
+          "5.6. Odstoupil-li kupující od kupní smlouvy, vrátí mu prodávající bez zbytečného odkladu, nejpozději do 14 dnů od odstoupení od kupní smlouvy, všechny peněžní prostředky, které od něj na základě kupní smlouvy obdržel, včetně nákladů na dodání zboží. Prodávající vrátí kupujícímu peněžní prostředky stejným způsobem, jakým je od kupujícího obdržel. Prodávající vrátí kupujícímu peněžní prostředky jiným způsobem pouze tehdy, pokud s tím kupující souhlasí a pokud mu tím nevzniknou dodatečné náklady.",
+          "5.7. Odstoupil-li kupující od kupní smlouvy, není prodávající povinen vrátit kupujícímu peněžní prostředky dříve, než mu kupující zboží vrátí nebo prokáže, že zboží prodávajícímu odeslal.",
+          "5.8. Zboží musí kupující vrátit prodávajícímu nepoškozené, neopotřebované a neznečištěné a pokud možno v původním obalu. Prodávající je oprávněn jednostranně započíst náhradu škody vzniklé na zboží proti pohledávce kupujícího na vrácení kupní ceny.",
+          "5.9. Prodávající je oprávněn odstoupit od kupní smlouvy z důvodu vyprodání zásob, nedostupnosti zboží, nebo když výrobce, dovozce či dodavatel zboží ukončil výrobu nebo dovoz zboží. Prodávající neprodleně informuje kupujícího prostřednictvím elektronické adresy uvedené v objednávce a vrátí mu v přiměřené lhůtě, nejpozději do 14 dnů od oznámení o odstoupení od kupní smlouvy, veškeré peněžní prostředky, které od něj na základě kupní smlouvy obdržel."
+        ]
+      },
+      "transportDelivery": {
+        "title": "VI. Doprava a dodání zboží",
+        "content": [
+          "6.1. V případě, že je způsob dopravy sjednán na základě zvláštního požadavku kupujícího, nese kupující riziko a případné dodatečné náklady spojené s tímto způsobem dopravy.",
+          "6.2. Je-li prodávající podle kupní smlouvy povinen dodat zboží na místo určené kupujícím v objednávce, je kupující povinen převzít zboží při dodání.",
+          "6.3. V případě, že z důvodů na straně kupujícího je nutno zboží doručovat opakovaně nebo jiným způsobem, než který byl uveden v objednávce, je kupující povinen uhradit náklady spojené s opakovaným doručováním zboží, resp. náklady spojené s jiným způsobem dodání.",
+          "6.4. Při převzetí zboží od přepravce je kupující povinen zkontrolovat neporušenost obalů zboží a v případě jakýchkoli závad toto neprodleně oznámit přepravci. V případě zjištění porušení obalu svědčícího o neoprávněném vniknutí do zásilky nemusí kupující zásilku od přepravce převzít.",
+          "6.5. Další práva a povinnosti stran při přepravě zboží může upravovat zvláštní doručovací podmínky prodávajícího, pokud jsou prodávajícím vydány."
+        ]
+      },
+      "rightsDefects": {
+        "title": "VII. Práva z vadného plnění",
+        "content": [
+          "7.1. Práva a povinnosti smluvních stran ohledně práv z vadného plnění se řídí příslušnými obecně závaznými právními předpisy (zejména ustanoveními § 1914 až 1925, § 2099 až 2117 a § 2161 až 2174 občanského zákoníku).",
+          "7.2. Prodávající odpovídá kupujícímu, že zboží při převzetí nemá vady. Zejména prodávající odpovídá kupujícímu, že v době, kdy kupující zboží převzal:",
+          "a) má zboží vlastnosti, které si strany ujednaly, a chybí-li ujednání, takové vlastnosti, které prodávající nebo výrobce popsal nebo které kupující očekával s ohledem na povahu zboží a na základě reklamy jimi prováděné,",
+          "b) se zboží hodí k účelu, který pro jeho použití prodávající uvádí nebo ke kterému se zboží tohoto druhu obvykle používá,",
+          "c) zboží odpovídá jakosti nebo provedení smluvního vzorku nebo předlohy, pokud byla jakost nebo provedení určena podle smluvního vzorku nebo předlohy,",
+          "d) je zboží v odpovídajícím množství, míře nebo hmotnosti a",
+          "e) zboží vyhovuje požadavkům právních předpisů.",
+          "7.3. Ustanovení uvedená v bodě 7.2 těchto VOP se nepoužijí u zboží prodávaného za nižší cenu na vadu, pro kterou byla nižší cena sjednána, na opotřebení zboží způsobené jeho obvyklým používáním, u použitého zboží na vadu odpovídající míře používání nebo opotřebení, kterou zboží mělo při převzetí kupujícím, nebo vyplývá-li to z povahy zboží.",
+          "7.4. Projeví-li se vada v průběhu šesti měsíců od převzetí, má se za to, že zboží bylo vadné již při převzetí. Kupující může uplatnit právo z vady, která se vyskytne u spotřebního zboží v době dvaceti čtyř měsíců od převzetí. Toto ustanovení se nepoužije u zboží prodaného za nižší cenu na vadu, pro kterou byla nižší cena sjednána, na opotřebení zboží způsobené jeho obvyklým používáním, u použitého zboží na vadu odpovídající míře používání nebo opotřebení, kterou zboží mělo při převzetí kupujícím, nebo vyplývá-li to z povahy zboží.",
+          "7.5. Práva z vadného plnění uplatňuje kupující u prodávajícího na adrese FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10, případně podle rozhodnutí kupujícího také na adrese provozovny, v níž je přijetí reklamace možné s ohledem na sortiment prodávaného zboží, popř. v sídle nebo určené provozovně. Okamžik uplatnění reklamace se počítá ode dne, kdy prodávající reklamaci obdržel.",
+          "7.6. Další náležitosti a podmínky vyřizování reklamací může upravovat reklamační řád prodávajícího, pokud je prodávajícím vydán."
+        ]
+      },
+      "additionalRights": {
+        "title": "VIII. Další práva a povinnosti smluvních stran",
+        "content": [
+          "8.1. Kupující nabývá vlastnictví ke zboží zaplacením celé kupní ceny zboží.",
+          "8.2. Prodávající není vůči kupujícímu vázán žádnými kodexy chování ve smyslu ustanovení § 1826 odst. 1 písm. e) občanského zákoníku.",
+          "8.3. Mimosoudní řešení sporů vyplývajících ze spotřebitelských smluv zajišťuje Česká obchodní inspekce, se sídlem Štěpánská 567/15, 120 00 Praha 2, IČO: 000 20 869, internetová adresa: https://adr.coi.cz. Platformu pro řešení sporů online umístěnou na internetové adrese https://ec.europa.eu/consumers/odr lze využít při řešení sporů mezi prodávajícím a kupujícím z kupní smlouvy.",
+          "8.4. Evropské spotřebitelské centrum Česká republika, se sídlem Štěpánská 567/15, 120 00 Praha 2, internetová adresa: http://www.evropskyspotrebitel.cz je kontaktním místem podle nařízení Evropského parlamentu a Rady (EU) č. 524/2013 o řešení spotřebitelských sporů online a o změně nařízení (ES) č. 2006/2004 a směrnice 2009/22/ES (nařízení o řešení spotřebitelských sporů online).",
+          "8.5. Prodávající je oprávněn prodávat zboží na základě živnostenského oprávnění. Živnostenskou kontrolu provádí v rámci své působnosti příslušný živnostenský úřad. Dozor nad oblastí ochrany osobních údajů vykonává Úřad pro ochranu osobních údajů. Česká obchodní inspekce vykonává ve vymezeném rozsahu mimo jiné dozor nad dodržováním zákona č. 634/1992 Sb., o ochraně spotřebitele, ve znění pozdějších předpisů.",
+          "8.6. Kupující tímto bere na vědomí, že prodávající není povinen dodat kupujícímu zboží v případě, že je zboží již vyprodáno nebo není dostupné u dodavatele, přičemž v tomto případě bude kupující o této skutečnosti neprodleně informován a bude mu vrácena případná již uhrazená částka."
+        ]
+      },
+      "dataProtection": {
+        "title": "IX. Ochrana osobních údajů",
+        "content": [
+          "9.1. Ochrana osobních údajů kupujícího, který je fyzickou osobou, je upravena v zásadách ochrany osobních údajů prodávajícího.",
+          "9.2. Kupující souhlasí se zpracováním těchto osobních údajů: jméno a příjmení, bydliště, identifikační číslo, daňové identifikační číslo, elektronická adresa, telefonní číslo (dále jen \"osobní údaje\") prodávajícím za účelem realizace práv a povinností z kupní smlouvy a za účelem vedení uživatelského účtu. Kupující souhlasí se zpracováním osobních údajů prodávajícím za účelem zasílání informací a komerčních sdělení kupujícímu. Kupující souhlasí se zpracováním osobních údajů prodávajícím za účelem zasílání informací a komerčních sdělení kupujícímu prostřednictvím elektronických prostředků komunikace.",
+          "9.3. Kupující bere na vědomí, že je povinen uvést své osobní údaje (při registraci, v objednávce, při uzavírání kupní smlouvy) správně a pravdivě a že je povinen prodávajícího neprodleně informovat o změně svých osobních údajů.",
+          "9.4. Prodávající může pověřit zpracováním osobních údajů třetí osobu jako zpracovatele. Osobní údaje nebudou předány třetím stranám ani zpřístupněny třetím stranám bez předchozího souhlasu kupujícího.",
+          "9.5. Osobní údaje budou zpracovávány po dobu nezbytnou k výkonu práv a povinností vyplývajících z kupní smlouvy a uplatnění nároků z této smlouvy a po dobu 3 let od ukončení smluvního vztahu mezi kupujícím a prodávajícím.",
+          "9.6. Kupující má právo požádat prodávajícího o informaci, jaké osobní údaje o něm prodávající zpracovává, požádat o jejich opravu či doplnění, popřípadě za podmínek stanovených v příslušných právních předpisech požádat o jejich likvidaci a dále má právo vznést námitku proti zpracování osobních údajů určených pro účely přímého marketingu a právo na přenositelnost osobních údajů. Kupující má právo odvolat souhlas se zpracováním osobních údajů.",
+          "9.7. V případě, že se kupující domnívá, že dochází ke zpracování jeho osobních údajů v rozporu s ochranou soukromého a osobního života kupujícího nebo v rozporu s právními předpisy, zejména jsou-li osobní údaje nepřesné s ohledem na účel jejich zpracování, může:",
+          "a) požádat prodávajícího o vysvětlení,",
+          "b) požadovat, aby prodávající odstranil takto vzniklý stav.",
+          "9.8. Pokud kupující požádá o informace dle bodu 9.6 těchto VOP, je prodávající povinen mu tyto informace poskytnout. Za poskytnutí informací podle tohoto bodu může prodávající požadovat přiměřenou úhradu nepřevyšující náklady nutné pro poskytnutí informací."
+        ]
+      },
+      "deliveryElectronic": {
+        "title": "X. Doručování elektronických sdělení",
+        "content": [
+          "10.1. Kupující souhlasí s doručováním elektronických sdělení souvisejících s plněním smlouvy na elektronickou adresu, kterou uvedl v objednávce nebo ve svém uživatelském účtu.",
+          "10.2. Prodávající doručuje kupujícímu elektronická sdělení na elektronickou adresu kupujícího uvedenou v objednávce nebo registrovanou v uživatelském účtu kupujícího. Kupující je povinen pravidelně kontrolovat elektronickou adresu uvedenou v objednávce, popř. registrovanou ve svém uživatelském účtu a seznamovat se s doručenými elektronickými sděleními.",
+          "10.3. Kupující bere na vědomí, že některá elektronická sdělení týkající se objednávky nebo právního vztahu s prodávajícím mohou obsahovat důvěrné informace. Proto je kupující povinen zajistit ochranu své elektronické adresy před zneužitím třetími osobami a také před neoprávněným přístupem třetích osob k této elektronické adrese.",
+          "10.4. Prodávající doručuje elektronická sdělení na elektronickou adresu kupujícího do jeho elektronické schránky prostřednictvím poskytovatele služeb elektronické pošty kupujícího. Elektronické sdělení se považuje za doručené okamžikem, kdy se zpráva objeví v elektronické schránce příjemce u jeho poskytovatele služeb elektronické pošty, a to bez ohledu na to, zda se příjemce o sdělení dozví."
+        ]
+      },
+      "finalProvisions": {
+        "title": "XI. Závěrečná ustanovení",
+        "content": [
+          "11.1. Pokud vztah založený kupní smlouvou obsahuje mezinárodní (zahraniční) prvek, pak se strany dohodly, že vztah se řídí českým právem. Tímto nejsou dotčena práva spotřebitele vyplývající z obecně závazných právních předpisů.",
+          "11.2. Pokud se některé ustanovení VOP stane neplatným nebo neúčinným, namísto neplatných ustanovení nastoupí ustanovení, jehož smysl se neplatnému či neúčinnému ustanovení co nejvíce přibližuje. Neplatností či neúčinností jednoho ustanovení není dotčena platnost ostatních ustanovení. Změny a doplňky kupní smlouvy či VOP vyžadují písemnou formu.",
+          "11.3. Kupní smlouva včetně VOP je archivována prodávajícím v elektronické podobě a není přístupná.",
+          "11.4. Vzorový formulář pro odstoupení od smlouvy tvoří přílohu těchto VOP.",
+          "11.5. Kontaktní údaje prodávajícího: doručovací adresa FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10, elektronická adresa info@quickfy.eu, telefon +420775113732."
+        ]
+      },
+      "withdrawalForm": {
+        "title": "Vzorový formulář pro odstoupení od smlouvy",
+        "content": [
+          "Adresát: FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10, elektronická adresa: info@quickfy.eu",
+          "",
+          "Tímto oznamuji/oznamujeme* odstoupení od mé/naší* smlouvy o koupi následujícího zboží*/o poskytnutí následující služby*:",
+          "",
+          "Objednáno dne*/převzato dne*:",
+          "",
+          "Jméno spotřebitele/spotřebitelů:",
+          "",
+          "Adresa spotřebitele/spotřebitelů:",
+          "",
+          "Podpis spotřebitele/spotřebitelů (pouze pokud je tento formulář předkládán v listinné podobě):",
+          "",
+          "Datum:",
+          "",
+          "*Nehodící se škrtněte."
+        ]
+      }
+    }
+  },
+  "faq": {
+    "title": "Často kladené",
+    "titleHighlight": "otázky",
+    "subtitle": "Najděte odpovědi na běžné otázky o QuickFy",
+    "ctaText": "Nenašli jste odpověď, kterou hledáte?",
+    "ctaButton": "Kontaktujte nás",
+    "items": {
+      "0": {
+        "question": "Co je QuickFy a jak funguje?",
+        "answer": "QuickFy je zjednodušený analytický dashboard navržený pro malé firmy. Připojuje se k vašemu Google Analytics a reklamním kampaním a vytváří jasné, snadno srozumitelné reporty. Dostáváte automatické emailové reporty a jednoduchý dashboard, který ukazuje přesně to, co potřebujete vědět."
+      },
+      "1": {
+        "question": "Čím se QuickFy liší od Google Analytics?",
+        "answer": "Google Analytics zobrazuje všechno, což může být přehlédnuté. QuickFy bere tato data a ukazuje vám pouze to, co je důležité pro vaše podnikání: trendy návštěvnosti, konverzní poměry a ROI. Představte si to jako zjednodušenou, akční verzi Google Analytics."
+      },
+      "2": {
+        "question": "Potřebuji technické znalosti k použití QuickFy?",
+        "answer": "Ne! QuickFy je speciálně navržen pro majitele firem, kteří chtějí výsledky bez složitosti. Rozhraní je intuitivní a reporty jsou napsány jasným jazykem, ne technickým žargonem."
+      },
+      "3": {
+        "question": "Jak dlouho trvá nastavení?",
+        "answer": "Počáteční nastavení trvá přibližně 15 minut. Připojíte svůj účet Google Analytics, nakonfigurujeme dashboard podle vašich potřeb a jste připraveni začít. Náš tým poskytuje bezplatnou podporu během nastavení."
+      },
+      "4": {
+        "question": "Mohu kdykoli zrušit?",
+        "answer": "Ano, absolutně. Neexistují žádné dlouhodobé smlouvy. Můžete zrušit své předplatné kdykoli přímo z vašeho dashboardu a zachováte si přístup do konce vašeho fakturačního období."
+      }
+    }
+  },
+  "exitIntent": {
+    "title": "Počkejte!",
+    "subtitle": "Zjistěte, kolik byste mohli ušetřit s QuickFy",
+    "closeLabel": "Zavřít modal",
+    "monthlyBudget": "Měsíční marketingový rozpočet",
+    "currentROI": "Aktuální ROI (%)",
+    "resultsTitle": "S QuickFy byste mohli získat:",
+    "improvedROI": "Vylepšené ROI",
+    "timeSaved": "Ušetřený čas",
+    "perMonth": "za měsíc",
+    "estimatedAnnualSavings": "Odhadovaná roční úspora",
+    "vsNow": "oproti současnosti",
+    "ctaButton": "Vyžádat bezplatnou ukázku",
+    "benefits": "✓ Nevyžaduje se kreditní karta • ✓ Nastavení za 5 minut • ✓ Podpora 24/7",
+    "prefillMessage": "Zajímá mě, jak QuickFy může zlepšit mé ROI o 35% a ušetřit mi {hours}+ hodin měsíčně."
+  },
+  "products": {
+    "quickfy": {
+      "title": "QuickFy",
+      "subtitle": "Platforma pro analytics a růst"
+    }
+  },
+  "accessibility": {
+    "skipLinks": {
+      "content": "Přejít na hlavní obsah",
+      "navigation": "Přejít na navigaci",
+      "footer": "Přejít na zápatí"
+    }
+  },
+  "productSchema": {
+    "features": {
+      "0": "Analýzy v reálném čase",
+      "1": "Automatizace marketingových kampaní",
+      "2": "Správa klientů CRM",
+      "3": "Přizpůsobitelné dashboardy",
+      "4": "Sledování ROI",
+      "5": "Integrace WhatsApp",
+      "6": "Automatické reporty"
+    }
+  }
+}

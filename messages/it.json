@@ -1,0 +1,1140 @@
+{
+  "meta": {
+    "title": "QuickFy - Dashboard Analytics Semplificata per PMI | Strumenti IA",
+    "description": "Dashboard Analytics semplificata per PMI. Gestisci dati, recensioni e social media con l'IA. Da 19€/mese. Consulenza gratuita disponibile.",
+    "locale": "it"
+  },
+  "navigation": {
+    "features": "Funzionalità",
+    "benefits": "Vantaggi",
+    "pricing": "Piani",
+    "roadmap": "Roadmap",
+    "testimonials": "Testimonianze",
+    "whappi": "Whappi",
+    "contact": "Contatti",
+    "home": "Home",
+    "startNow": "Parla con un Esperto",
+    "logoAria": "QuickFy - Torna all'inizio della pagina",
+    "startNowAria": "Parla con un esperto - Vai al modulo di contatto",
+    "sectionAria": "Vai alla sezione {section}",
+    "openMenu": "Apri menu",
+    "closeMenu": "Chiudi menu",
+    "mobileMenu": "Menu mobile",
+    "skipToContent": "Vai al contenuto principale",
+    "products": "Prodotti",
+    "productsAria": "Menu prodotti",
+    "whappiCta": "Pre-Ordina -24%"
+  },
+  "hero": {
+    "headline": "Il Futuro del Marketing è Qui. Smetti di Interpretare i Dati,",
+    "headlineHighlight": "Inizia a Dominarli.",
+    "subheadline": "QuickFy è l'ecosistema intelligente che trasforma la complessità digitale in un vantaggio competitivo. La tua dashboard analytics semplificata, potenziata dall'intelligenza artificiale.",
+    "cta": {
+      "primary": "Parla con un Esperto",
+      "ariaLabel": "Parla con un esperto - Vai al modulo di contatto"
+    },
+    "valueProposition": "✓ Installazione gratuita • ✓ Supporto 24/7 • ✓ ROI garantito in 30 giorni",
+    "metrics": {
+      "hoursSaved": "15+ Ore Risparmiate",
+      "roiImprovement": "+40% Lead Generati",
+      "clarity": "100% Chiarezza sui Dati",
+      "perMonth": "al mese",
+      "vsTraditional": "vs metodi tradizionali",
+      "realTime": "in tempo reale"
+    },
+    "typewriter": [
+      "decisioni strategiche",
+      "crescita sostenibile",
+      "risultati misurabili",
+      "successo digitale"
+    ]
+  },
+  "features": {
+    "title": "Una Piattaforma Intelligente,",
+    "titleHighlight": "3 Soluzioni per la Crescita",
+    "subtitle": "Dal controllo dei dati alla gestione della reputazione, fino alla crescita proattiva. Tutto in un unico ecosistema potenziato dall'IA.",
+    "items": [
+      {
+        "id": "data-intelligence",
+        "title": "Analytics (Piano Starter)",
+        "description": "Trasforma i dati grezzi di Google Analytics in insight chiari e immediati. Una dashboard visiva che ti mostra solo le metriche che contano davvero, spiegate in modo semplice.",
+        "benefits": [
+          "Dashboard Analytics Semplificata",
+          "Report Comprensibili per Tutti",
+          "Alert Intelligenti (Prossimamente)"
+        ],
+        "icon": "BarChart3"
+      },
+      {
+        "id": "performance-ads",
+        "title": "Reputation (Piano Plus)",
+        "description": "Prendi il controllo totale della tua reputazione online. Il nostro modulo IA centralizza le recensioni di Google, le analizza e prepara bozze di risposta intelligenti con un solo click.",
+        "benefits": [
+          "Gestione Recensioni con IA",
+          "Risposte Rapide e Professionali",
+          "Analisi Automatica del Feedback"
+        ],
+        "icon": "Target"
+      },
+      {
+        "id": "client-platform",
+        "title": "Growth Suite (Piano PRO)",
+        "description": "La suite completa per la crescita proattiva. Un Social Hub con IA che suggerisce i prossimi post e un Chatbot avanzato che trasforma i visitatori del tuo sito in contatti qualificati, 24/7.",
+        "benefits": [
+          "Social Hub con IA",
+          "Chatbot Marketing Proattivo",
+          "Generazione Automatica di Lead"
+        ],
+        "icon": "Users"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Perché le PMI scelgono QuickFy",
+    "titleHighlight": "per la loro crescita",
+    "subtitle": "Strumenti potenti e accessibili progettati per restituirti il pieno controllo della tua presenza online.",
+    "items": [
+      {
+        "title": "Tempo Restituito",
+        "description": "Automatizza le analisi e la gestione dei feedback per concentrarti sul tuo business.",
+        "value": "15+",
+        "unit": "ore/settimana"
+      },
+      {
+        "title": "Efficienza AI",
+        "description": "Decisioni basate su dati chiari e insight generati dall'intelligenza artificiale.",
+        "value": "100%",
+        "unit": "chiarezza"
+      },
+      {
+        "title": "Tutto in Uno",
+        "description": "Dati, recensioni, social e lead in un'unica piattaforma integrata.",
+        "value": "5+",
+        "unit": "strumenti integrati"
+      },
+      {
+        "title": "Tasso di Mantenimento Clienti",
+        "description": "La soddisfazione e la fiducia dei nostri clienti è la nostra priorità.",
+        "value": "92%",
+        "unit": "tasso mantenimento"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Un Piano per Ogni Fase della Tua Crescita",
+    "subtitle": "Scegli l'intelligenza artificiale su misura per il tuo business. Inizia oggi, scala domani.",
+    "perfectFor": "Perfetto per:",
+    "features": "Cosa include:",
+    "billingToggle": {
+      "monthly": "Mensile",
+      "annual": "Annuale"
+    },
+    "savingsBadge": "Risparmia 2 mesi!",
+    "period": {
+      "month": "mese",
+      "year": "anno"
+    },
+    "savings": "Risparmia €{amount}",
+    "plans": {
+      "starter": {
+        "name": "STARTER",
+        "period": {
+          "monthly": "mese",
+          "annual": "anno"
+        },
+        "badge": "IDEALE PER INIZIARE",
+        "perfectFor": "Per chi vuole trasformare i dati in decisioni e avere il pieno controllo della comunicazione con i clienti.",
+        "features": {
+          "0": "Dashboard Analytics Semplificata",
+          "1": "Portale Cliente Centralizzato",
+          "2": "Prossimamente: Alert Intelligenti",
+          "3": "Prossimamente: Riepiloghi AI"
+        },
+        "cta": "Parla con un Esperto"
+      },
+      "plus": {
+        "name": "PLUS",
+        "period": {
+          "monthly": "mese",
+          "annual": "anno"
+        },
+        "perfectFor": "Per chi vuole costruire attivamente una reputazione online a 5 stelle, rispondendo in modo efficiente a ogni recensione.",
+        "features": {
+          "0": "Tutto del piano STARTER",
+          "1": "Modulo Gestione Recensioni con IA",
+          "2": "Notifiche e bozze di risposta AI"
+        },
+        "cta": "Parla con un Esperto"
+      },
+      "pro": {
+        "name": "PRO",
+        "period": {
+          "monthly": "mese",
+          "annual": "anno"
+        },
+        "perfectFor": "La suite completa per chi vuole il massimo controllo, dominare i social e generare contatti in automatico dal proprio sito.",
+        "features": {
+          "0": "Tutto del piano PLUS",
+          "1": "Modulo Social Hub con IA",
+          "2": "Assistente AI per la creazione di post",
+          "3": "Chatbot Marketing Proattivo 24/7"
+        },
+        "cta": "Parla con un Esperto"
+      }
+    },
+    "consultation": {
+      "title": "Non sai quale piano fa per te?",
+      "subtitle": "Parla con un nostro esperto. Ti aiuteremo a identificare la soluzione perfetta per le tue esigenze con una consulenza strategica gratuita.",
+      "cta": "Richiedi Consulenza Gratuita",
+      "formMessage": "Buongiorno! Vorrei parlare con un esperto per scoprire quale piano QuickFy si adatta meglio alle esigenze della mia azienda."
+    }
+  },
+  "contact": {
+    "title": "Pronto a Semplificare",
+    "titleHighlight": "il tuo Marketing?",
+    "subtitle": "Richiedi una consulenza gratuita. Un nostro esperto ti mostrerà come QuickFy può trasformare la tua presenza online.",
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Nome Completo",
+          "placeholder": "Il tuo nome completo"
+        },
+        "email": {
+          "label": "Indirizzo Email",
+          "placeholder": "La tua email aziendale"
+        },
+        "company": {
+          "label": "Azienda",
+          "placeholder": "Nome dell'azienda"
+        },
+        "phone": {
+          "label": "Telefono",
+          "placeholder": "Numero di telefono"
+        },
+        "message": {
+          "label": "Messaggio",
+          "placeholder": "Descrivi brevemente le tue esigenze..."
+        }
+      },
+      "submit": "Parla con un Esperto",
+      "submitting": "Invio in corso...",
+      "submitAnother": "Invia Altra Richiesta",
+      "ariaLabel": "Modulo di contatto QuickFy",
+      "privacy": "Accetto il trattamento dei dati personali secondo la Privacy Policy",
+      "socialProof": {
+        "response": "Risposta in 24h",
+        "clients": "500+ Clienti Soddisfatti",
+        "roi": "Crescita Garantita"
+      },
+      "progress": {
+        "label": "Progresso compilazione"
+      },
+      "footer": {
+        "security": "🔒 I tuoi dati sono sicuri • ✓ Risposta garantita in 24h • 💬 Consulenza gratuita e senza impegno"
+      },
+      "validation": {
+        "name": "Il nome deve contenere almeno 2 caratteri",
+        "email": "Inserisci un indirizzo email valido",
+        "company": "Il nome dell'azienda deve contenere almeno 2 caratteri",
+        "phone": "Il numero di telefono deve contenere almeno 10 cifre",
+        "message": "Il messaggio deve contenere almeno 10 caratteri",
+        "privacy": "Devi accettare il trattamento dei dati personali"
+      },
+      "error": {
+        "title": "Errore nell'invio della richiesta",
+        "message": "Si è verificato un problema. Riprova o contattaci direttamente.",
+        "retry": "Riprova"
+      }
+    },
+    "success": {
+      "title": "Richiesta Inviata!",
+      "message": "Un nostro esperto ti contatterà entro 24 ore per la tua consulenza gratuita."
+    }
+  },
+  "languageSwitcher": {
+    "label": "Cambia lingua",
+    "languages": {
+      "cs": "Čeština",
+      "en": "English",
+      "it": "Italiano"
+    }
+  },
+  "testimonials": {
+    "title": "Cosa Dicono i Nostri Clienti",
+    "subtitle": "Scopri le esperienze delle aziende che hanno ripreso il controllo del loro marketing digitale con QuickFy",
+    "previousTestimonial": "Testimonianza precedente",
+    "nextTestimonial": "Prossima testimonianza",
+    "goToTestimonial": "Vai alla testimonianza",
+    "trustIndicators": {
+      "rating": "4.9/5 valutazione",
+      "clients": "500+ clienti soddisfatti",
+      "projects": "1200+ progetti di successo"
+    },
+    "testimonial1": {
+      "name": "Marco Rossi",
+      "role": "Titolare",
+      "company": "Ristorante La Trattoria",
+      "content": "Prima di QuickFy, non capivo nulla di Google Analytics. Ora ho una dashboard chiara che mi dice subito come sta andando il sito. Il modulo per le recensioni è fantastico: rispondo a tutti in un minuto!"
+    },
+    "testimonial2": {
+      "name": "Giulia Bianchi",
+      "role": "Consulente Finanziario",
+      "company": "Studio Bianchi",
+      "content": "QuickFy mi ha restituito il tempo. Invece di perdere ore ad analizzare dati, mi concentro sui clienti. L'interfaccia è pulita, semplice e mi dà esattamente le informazioni di cui ho bisogno per crescere."
+    },
+    "testimonial3": {
+      "name": "Alessandro Ferrari",
+      "role": "CEO",
+      "company": "LogiTech Solutions",
+      "content": "Usiamo il piano PRO e il chatbot sul nostro sito ha aumentato i lead del 40%. Il Social Hub ci dà idee costanti per nuovi contenuti. È come avere un team marketing AI che lavora per noi 24/7."
+    },
+    "testimonial4": {
+      "name": "Laura Martini",
+      "role": "Marketing Manager",
+      "company": "EcoStyle Fashion",
+      "content": "Con QuickFy ho finalmente capito quali campagne funzionano davvero. La dashboard mi dice subito dove investire e il modulo recensioni mi ha fatto risparmiare 10 ore a settimana. ROI aumentato del 30%."
+    },
+    "testimonial5": {
+      "name": "Simone Verdi",
+      "role": "Digital Marketing Specialist",
+      "company": "MediaPro Milano",
+      "content": "L'Analytics di QuickFy ha trasformato il modo in cui gestiamo i clienti. Reportistica automatica, dati chiari e actionable. I nostri clienti sono più soddisfatti e noi lavoriamo meglio."
+    }
+  },
+  "logos": {
+    "title": "Aziende come la tua si fidano di noi ogni giorno",
+    "description": "Unisciti a {count}+ professionisti e PMI che si affidano a QuickFy per la loro crescita digitale"
+  },
+  "roadmap": {
+    "title": "Il nostro piano di",
+    "titleHighlight": "sviluppo",
+    "subtitle": "Innovazione continua basata sul feedback dei clienti e sulle esigenze del mercato",
+    "cta": "Alimentato dal feedback dei clienti",
+    "items": [
+      {
+        "quarter": "Q4 2025",
+        "status": "current",
+        "title": "Lancio e Consolidamento",
+        "keyAction": "Lancio ufficiale del prodotto sul mercato",
+        "features": [
+          "Piano Starter (Analytics) a 19€/mese",
+          "Add-on Gestione Pubblicità (commissione 5%)",
+          "Lancio ufficiale sul mercato"
+        ]
+      },
+      {
+        "quarter": "Q1 2026",
+        "status": "future",
+        "title": "Primo Potenziamento",
+        "keyAction": "Rilascio del primo upgrade gratuito per il piano base e avvio simultaneo dello sviluppo dei moduli più complessi",
+        "features": [
+          "Upgrade \"Starter AI\" gratuito per clienti Piano Starter (Alert e Riepiloghi AI)",
+          "Inizio Sviluppo: Modulo di Comunicazione e Piano Plus",
+          "Miglioramenti continui basati sul feedback dei clienti"
+        ]
+      },
+      {
+        "quarter": "Q2 2026",
+        "status": "future",
+        "title": "Modulo Comunicazione",
+        "keyAction": "Lancio del primo grande add-on a pagamento, creando un nuovo flusso di ricavi",
+        "features": [
+          "Add-on: Modulo di Comunicazione Integrata a 19€/utente/mese",
+          "Gestione centralizzata di tutti i canali di comunicazione",
+          "Automazione avanzata delle comunicazioni"
+        ]
+      },
+      {
+        "quarter": "H2 2026",
+        "status": "future",
+        "title": "Piani Avanzati",
+        "keyAction": "Completamento dell'offerta a tre livelli, posizionando QuickFy come una suite completa",
+        "features": [
+          "Q3 2026: Piano Plus (Reputation) a 39€/mese",
+          "Q4 2026: Piano Pro (Growth Suite) a 79€/mese",
+          "Include Social Hub e Chatbot Marketing"
+        ]
+      }
+    ]
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "homeAria": "Torna alla homepage",
+    "currentPageAria": "Pagina corrente",
+    "navigationAria": "Navigazione breadcrumb",
+    "separator": "Vai a"
+  },
+  "footer": {
+    "description": "QuickFy - La piattaforma intelligente che trasforma la complessità del marketing digitale in strumenti semplici, potenti e accessibili per PMI e professionisti.",
+    "contact": {
+      "emailAria": "Invia email a QuickFy"
+    },
+    "newsletter": {
+      "title": "Iscriviti alla Newsletter",
+      "subtitle": "Ricevi aggiornamenti sulle ultime funzionalità e consigli per migliorare le tue performance",
+      "emailLabel": "Indirizzo email",
+      "emailPlaceholder": "Inserisci la tua email",
+      "submit": "Iscriviti",
+      "submitting": "Invio...",
+      "privacy": "Rispettiamo la tua privacy. Annulla l'iscrizione in qualsiasi momento.",
+      "trust": {
+        "subscribers": "Iscritti",
+        "frequency": "Weekly",
+        "updates": "Aggiornamenti",
+        "spam": "Spam"
+      },
+      "success": {
+        "title": "Iscrizione Completata!",
+        "message": "Grazie per esserti iscritto alla nostra newsletter. Riceverai aggiornamenti all'indirizzo {email}",
+        "description": "Riceverai presto il primo aggiornamento con contenuti esclusivi e consigli pratici.",
+        "cta": "Torna al Form"
+      },
+      "error": {
+        "title": "Errore di Iscrizione",
+        "message": "Si è verificato un errore durante l'iscrizione. Riprova tra qualche istante."
+      }
+    },
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Termini e Condizioni Generali",
+      "contact": "Contatti"
+    },
+    "copyright": "© 2024 QuickFy. Tutti i diritti riservati."
+  },
+  "cookieConsent": {
+    "title": "Utilizziamo i cookie per una migliore esperienza",
+    "description": "Utilizziamo i cookie per il funzionamento essenziale del sito, l'analisi del traffico e per migliorare la tua esperienza. Puoi scegliere quali tipi di cookie consentire.",
+    "acceptAll": "Accetta Tutti",
+    "rejectAll": "Rifiuta Tutti",
+    "managePreferences": "Gestisci Preferenze",
+    "savePreferences": "Salva Preferenze",
+    "close": "Chiudi",
+    "legalNotice": "Maggiori informazioni sull'utilizzo dei cookie sono disponibili nella nostra",
+    "categories": {
+      "necessary": "Necessari",
+      "analytics": "Analitici",
+      "marketing": "Marketing",
+      "preferences": "Preferenze",
+      "alwaysEnabled": "Sempre abilitati",
+      "optional": "Opzionali",
+      "necessaryDescription": "Questi cookie sono essenziali per il corretto funzionamento del sito web e non possono essere disabilitati. Sono solitamente impostati in risposta ad azioni dell'utente come l'impostazione della lingua o l'accesso.",
+      "analyticsDescription": "I cookie analitici ci aiutano a capire come i visitatori interagiscono con il sito web, forniscono informazioni sul traffico e ci aiutano a migliorare le prestazioni del sito.",
+      "marketingDescription": "I cookie di marketing vengono utilizzati per personalizzare gli annunci e fornire contenuti più rilevanti. Possono essere utilizzati per misurare l'efficacia delle campagne pubblicitarie.",
+      "preferencesDescription": "I cookie delle preferenze ricordano le tue scelte e personalizzano la tua esperienza, come la lingua preferita o le impostazioni dell'interfaccia utente."
+    },
+    "preferences": {
+      "title": "Impostazioni Cookie",
+      "subtitle": "Gestisci le tue preferenze sui cookie e sulla privacy",
+      "introduction": "Puoi scegliere quali tipi di cookie consentire sul nostro sito. Le tue scelte saranno rispettate e memorizzate per 1 anno."
+    }
+  },
+  "privacyPolicy": {
+    "meta": {
+      "title": "Privacy Policy - QuickFy",
+      "description": "Privacy Policy per QuickFy Performance Suite. Informazioni trasparenti sul trattamento dei tuoi dati personali secondo GDPR."
+    },
+    "title": "Privacy Policy di FL1 s.r.o.",
+    "lastUpdated": "Ultimo aggiornamento: {date}",
+    "sections": {
+      "introduction": {
+        "title": "I. Introduzione",
+        "content": "Questa Privacy Policy (la \"Policy\") definisce il modo in cui FL1 s.r.o., con sede legale in Moskevská 1464/61, Vršovice, 101 00 Praha 10, Partita IVA: 19990146, registrata nel Registro delle Imprese tenuto dal Tribunale Municipale di Praga, Sezione C, Inserto 398569 (di seguito \"Titolare\" o \"QuickFy\"), raccoglie, utilizza, conserva e protegge i dati personali degli utenti dei suoi servizi."
+      },
+      "dataController": {
+        "title": "II. Titolare del trattamento",
+        "content": [
+          "Il titolare del trattamento secondo il GDPR è:",
+          "FL1 s.r.o.",
+          "Moskevská 1464/61, Vršovice, 101 00 Praha 10",
+          "Partita IVA: 19990146",
+          "Email: info@quickfy.eu",
+          "Telefono: +420 775 113 732"
+        ]
+      },
+      "typesOfData": {
+        "title": "III. Quali dati personali trattiamo",
+        "content": [
+          "a) Dati identificativi: nome, cognome, indirizzo email, numero di telefono",
+          "b) Dati aziendali: nome dell'azienda, posizione in azienda, indirizzo aziendale",
+          "c) Dati tecnici: indirizzo IP, cookies, informazioni su dispositivo e browser",
+          "d) Dati di utilizzo servizi: statistiche di utilizzo, preferenze, impostazioni",
+          "e) Dati di comunicazione: contenuto richieste, corrispondenza, feedback"
+        ]
+      },
+      "purposes": {
+        "title": "IV. Finalità del trattamento dei dati personali",
+        "content": [
+          "Trattiamo i tuoi dati personali per le seguenti finalità:",
+          "a) Fornitura dei servizi QuickFy Performance Suite",
+          "b) Comunicazione con gli utenti e supporto tecnico",
+          "c) Miglioramento della qualità e delle funzionalità dei nostri servizi",
+          "d) Finalità di marketing (solo con consenso)",
+          "e) Adempimento agli obblighi di legge",
+          "f) Protezione dalle frodi e garanzia della sicurezza"
+        ]
+      },
+      "legalBasis": {
+        "title": "V. Base giuridica per il trattamento",
+        "content": [
+          "Trattiamo i dati personali sulla base di:",
+          "a) Contratto - per la fornitura di servizi e l'adempimento degli obblighi contrattuali",
+          "b) Interesse legittimo - per il funzionamento tecnico dei servizi e il loro miglioramento",
+          "c) Consenso - per finalità di marketing e invio newsletter",
+          "d) Obbligo legale - per archiviazione e registrazioni contabili"
+        ]
+      },
+      "sharing": {
+        "title": "VI. Condivisione dei dati con terze parti",
+        "content": [
+          "Possiamo condividere i tuoi dati personali con:",
+          "a) Fornitori di servizi IT e soluzioni cloud",
+          "b) Partner per analisi e ottimizzazione delle prestazioni",
+          "c) Autorità pubbliche in caso di obbligo legale",
+          "d) Revisori e consulenti legali",
+          "Tutti i destinatari sono vincolati da riservatezza e conformità GDPR."
+        ]
+      },
+      "internationalTransfer": {
+        "title": "VII. Trasferimento internazionale dei dati",
+        "content": [
+          "In caso di trasferimento di dati personali verso paesi terzi, garantiamo:",
+          "a) Trasferimento solo verso paesi con decisione di adeguatezza CE",
+          "b) Uso di clausole contrattuali standard approvate dalla CE",
+          "c) Implementazione di garanzie appropriate secondo GDPR",
+          "d) Ottenimento del tuo consenso esplicito negli altri casi"
+        ]
+      },
+      "retention": {
+        "title": "VIII. Periodo di conservazione dei dati",
+        "content": [
+          "Conserviamo i dati personali per:",
+          "a) Durata del rapporto contrattuale + 3 anni dopo la cessazione",
+          "b) Fino alla revoca del consenso (finalità di marketing)",
+          "c) Periodo stabilito dalla legge (documenti contabili 10 anni)",
+          "d) Periodo necessario per far valere i diritti (max. 3 anni)"
+        ]
+      },
+      "rights": {
+        "title": "IX. I tuoi diritti",
+        "content": [
+          "In relazione al trattamento dei dati personali, hai il diritto:",
+          "a) Di accesso ai dati personali - ottenere informazioni sul trattamento",
+          "b) Di rettifica - richiedere la correzione di dati inesatti",
+          "c) Di cancellazione (\"diritto all'oblio\") - soggetto alle condizioni legali",
+          "d) Di limitazione del trattamento - nei casi specificati dal GDPR",
+          "e) Alla portabilità dei dati - ricevere i dati in formato strutturato",
+          "f) Di opposizione al trattamento - specialmente per finalità di marketing",
+          "g) Di presentare reclamo presso l'autorità di controllo - Garante per la Protezione dei Dati Personali"
+        ]
+      },
+      "security": {
+        "title": "X. Sicurezza dei dati",
+        "content": [
+          "Implementiamo misure tecniche e organizzative appropriate:",
+          "a) Crittografia dei dati durante la trasmissione e la conservazione",
+          "b) Audit di sicurezza regolari e test",
+          "c) Accesso limitato solo al personale autorizzato",
+          "d) Formazione regolare del personale sulla protezione dei dati",
+          "e) Piani di risposta agli incidenti per violazioni della sicurezza",
+          "f) Backup e ripristino regolare dei dati"
+        ]
+      },
+      "cookies": {
+        "title": "XI. Cookies e tecnologie di tracciamento",
+        "content": [
+          "Sui nostri siti web utilizziamo:",
+          "a) Cookies necessari per il funzionamento del sito",
+          "b) Cookies analitici per la misurazione del traffico (Google Analytics)",
+          "c) Cookies di marketing (solo con consenso)",
+          "d) Cookies per la personalizzazione dell'esperienza utente",
+          "Puoi gestire i cookies nelle impostazioni del tuo browser."
+        ]
+      },
+      "minors": {
+        "title": "XII. Protezione dei minori",
+        "content": [
+          "I nostri servizi non sono destinati a persone di età inferiore ai 16 anni. Se veniamo a sapere di aver raccolto dati personali da un minore senza il consenso dei genitori, cancelleremo immediatamente tali dati. I genitori possono contattare il nostro supporto clienti per affrontare queste questioni."
+        ]
+      },
+      "changes": {
+        "title": "XIII. Modifiche a questa policy",
+        "content": [
+          "Questa Policy può essere aggiornata in conformità con lo sviluppo dei nostri servizi e i cambiamenti nelle normative legali. Ti informeremo di modifiche significative attraverso:",
+          "a) Notifica via email",
+          "b) Avviso sui nostri siti web",
+          "c) Notifica direttamente nell'applicazione QuickFy",
+          "Continuando a utilizzare i nostri servizi dopo le modifiche alla Policy, esprimi il consenso ai termini aggiornati."
+        ]
+      },
+      "contact": {
+        "title": "Contatti",
+        "content": [
+          "Per domande riguardanti la protezione dei dati personali, contattaci:",
+          "Email: privacy@quickfy.eu",
+          "Telefono: +420 775 113 732",
+          "Indirizzo postale: FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10",
+          "",
+          "Puoi presentare reclami presso l'autorità di controllo:",
+          "Garante per la Protezione dei Dati Personali",
+          "Piazza di Monte Citorio, n. 121, 00186 Roma",
+          "Tel.: +39 06 69677 1",
+          "Email: garante@gpdp.it"
+        ]
+      }
+    }
+  },
+  "whappi": {
+    "badge": "ESTENSIONE CHROME INTELLIGENTE",
+    "banner": {
+      "status": "In Sviluppo - Lancio Q2 2026",
+      "preorder": "Ora accettiamo pre-ordini con prezzi speciali!"
+    },
+    "hero": {
+      "title": "Whappi: Il tuo copilota per le",
+      "titleHighlight": "Comunicazioni Cliente",
+      "subtitle": "Estensione Chrome che integra tutte le comunicazioni (WhatsApp, Facebook, Instagram, Viber, Telegram, SMS, Email) direttamente nei tuoi strumenti di lavoro. Niente più cambi di schermo: lavora dove lavori già.",
+      "painPoint": {
+        "title": "Basta pagare troppo per strumenti complessi!",
+        "description": "I concorrenti fanno pagare €300-400/mese. Whappi offre la stessa potenza per soli €19/utente/mese."
+      },
+      "cta": {
+        "pricing": "Pre-Ordina Ora - Prezzo Speciale",
+        "contact": "Guarda la Demo"
+      }
+    },
+    "demo": {
+      "title": "Vedi Whappi in Azione",
+      "subtitle": "Guarda come Whappi trasforma la comunicazione del team e la gestione clienti",
+      "placeholder": {
+        "title": "Demo del Prodotto",
+        "coming": "In arrivo - Q2 2026"
+      },
+      "preview": "Anteprima Dashboard Whappi"
+    },
+    "integrations": {
+      "title": "Tutte le tue piattaforme di messaggistica in un unico posto",
+      "subtitle": "Smetti di cambiare app. Gestisci WhatsApp, Telegram, Facebook, Instagram, Viber, SMS ed Email da un'unica potente dashboard.",
+      "chromeExtension": "Estensione Chrome",
+      "worksInsideTools": "Funziona all'interno dei Tuoi Strumenti Preferiti",
+      "allChannelsUnified": "Tutti i Tuoi Canali di Messaggistica Unificati",
+      "availableOn": "Disponibile su",
+      "chromeWebStore": "Chrome Web Store",
+      "comingQ2": "In arrivo Q2 2026",
+      "comingSoon": "In arrivo",
+      "tools": {
+        "gmail": {
+          "name": "Gmail",
+          "type": "Client Email"
+        },
+        "hubspot": {
+          "name": "HubSpot",
+          "type": "CRM"
+        },
+        "salesforce": {
+          "name": "Salesforce",
+          "type": "CRM"
+        },
+        "pipedrive": {
+          "name": "Pipedrive",
+          "type": "CRM"
+        },
+        "zendesk": {
+          "name": "Zendesk",
+          "type": "Supporto"
+        },
+        "more": {
+          "name": "Altri",
+          "type": "In arrivo"
+        }
+      },
+      "hub": {
+        "title": "Whappi",
+        "subtitle": "Hub Centrale"
+      },
+      "platforms": {
+        "whatsapp": {
+          "name": "WhatsApp",
+          "type": "Business API"
+        },
+        "telegram": {
+          "name": "Telegram",
+          "type": "Bot API"
+        },
+        "facebook": {
+          "name": "Meta",
+          "type": "Messenger"
+        },
+        "instagram": {
+          "name": "Instagram",
+          "type": "Direct"
+        },
+        "viber": {
+          "name": "Viber",
+          "type": "Business"
+        },
+        "sms": {
+          "name": "SMS",
+          "type": "Gateway"
+        },
+        "email": {
+          "name": "Email",
+          "type": "SMTP/IMAP"
+        }
+      }
+    },
+    "comparison": {
+      "title": "Perché le Piccole Imprese Scelgono Whappi",
+      "subtitle": "Confronta Whappi con le alternative costose e scopri la differenza",
+      "tableTitle": "Confronto Funzionalità",
+      "columnHeaders": {
+        "feature": "Funzionalità"
+      },
+      "features": {
+        "cost": "Costo Mensile",
+        "multiPlatform": "Multi-Piattaforma",
+        "teamCollaboration": "Collaborazione Team",
+        "gdpr": "Conformità GDPR",
+        "setup": "Complessità Setup",
+        "smb": "Focus Piccole Imprese"
+      },
+      "whappi": {
+        "name": "Whappi",
+        "pricing": "€19/mese",
+        "pricingUnit": "per utente",
+        "gdprNote": "I Tuoi Server",
+        "setupNote": "Semplice"
+      },
+      "competitors": {
+        "name": "Concorrenti",
+        "pricing": "€300-400/mese",
+        "pricingUnit": "prezzi enterprise",
+        "gdprNote": "Server del Fornitore",
+        "setupNote": "Complesso"
+      }
+    },
+    "features": {
+      "title": "Funzionalità AI per Massima Produttività",
+      "subtitle": "Tutto quello che serve per gestire le comunicazioni senza mai lasciare i tuoi strumenti di lavoro",
+      "allIncluded": "Tutte le funzionalità incluse in ogni piano - Nessun costo nascosto",
+      "contextualIntelligence": {
+        "title": "Intelligenza Contestuale",
+        "description": "Whappi rileva automaticamente i numeri di telefono sulla pagina web e mostra istantaneamente la cronologia completa delle conversazioni su tutti i canali.",
+        "benefits": [
+          "Rilevamento automatico numeri di telefono",
+          "Cronologia conversazioni multi-canale istantanea",
+          "Zero cambi di contesto"
+        ]
+      },
+      "aiAssistance": {
+        "title": "Assistente AI Integrato",
+        "description": "L'AI di Whappi crea riepiloghi automatici delle conversazioni, suggerisce 2-3 bozze di risposta pronte all'uso e cerca nella knowledge base aziendale per darti le informazioni giuste al momento giusto.",
+        "benefits": [
+          "Riepiloghi conversazioni con un click",
+          "2-3 suggerimenti di risposta AI pronti",
+          "Ricerca intelligente knowledge base"
+        ]
+      },
+      "teamManagement": {
+        "title": "Collaborazione Team",
+        "description": "Assegna conversazioni a membri specifici del team, aggiungi note private interne e collabora efficacemente su ogni singolo cliente, tutto senza uscire dai tuoi strumenti.",
+        "benefits": [
+          "Assegnazione conversazioni a operatori",
+          "Note private per il team",
+          "Menzioni e collaborazione in tempo reale"
+        ]
+      },
+      "gdprCompliance": {
+        "title": "Conformità GDPR Garantita",
+        "description": "Sviluppato in Repubblica Ceca con massima attenzione alla privacy. I tuoi dati rimangono sui tuoi server e rispettano completamente il GDPR europeo.",
+        "benefits": [
+          "Sviluppato in Repubblica Ceca - Sviluppo 100% europeo",
+          "Dati sui server del cliente",
+          "Conformità GDPR completa"
+        ]
+      }
+    },
+    "trust": {
+      "title": "Costruito per Sicurezza e Fiducia",
+      "subtitle": "I tuoi dati rimangono sui tuoi server",
+      "badges": {
+        "madeInItaly": "Sviluppato in Repubblica Ceca",
+        "clientServers": "Server del Cliente",
+        "gdpr": "GDPR Completo"
+      }
+    },
+    "roadmap": {
+      "title": "Roadmap di Sviluppo",
+      "subtitle": "Il nostro percorso verso il lancio Q2 2026",
+      "badgeText": "Roadmap di Sviluppo",
+      "journeyTo": "Percorso verso il",
+      "launchDate": "Lancio Q2 2026",
+      "trackProgress": "Segui i nostri progressi mentre costruiamo il futuro della messaggistica per piccole imprese",
+      "progressOverview": "Panoramica Progressi di Sviluppo",
+      "progressSubtitle": "Milestone di sviluppo in tempo reale che tracciano il nostro percorso verso il lancio",
+      "milestones": {
+        "q3_2024": {
+          "date": "Settembre 2024",
+          "title": "Architettura Piattaforma Core",
+          "description": "Sistemi fondamentali completati incluso framework di sicurezza, architettura database e sviluppo API core.",
+          "status": "COMPLETATO",
+          "features": {
+            "security": "Layer di Sicurezza",
+            "apis": "API Core",
+            "securityStatus": "✓ Implementato",
+            "apisStatus": "✓ Pronto"
+          }
+        },
+        "q4_2024": {
+          "date": "Dicembre 2024",
+          "title": "Integrazioni Piattaforma",
+          "description": "Sviluppo attivo di WhatsApp Business API, Telegram Bot API e integrazioni Meta Messenger.",
+          "status": "IN CORSO",
+          "features": {
+            "whatsapp": "API WhatsApp",
+            "telegram": "Bot Telegram",
+            "whatsappStatus": "🚧 In Sviluppo",
+            "telegramStatus": "🚧 Fase di Test"
+          }
+        },
+        "q1_2025": {
+          "date": "Marzo 2025",
+          "title": "Funzionalità Team Avanzate",
+          "description": "Strumenti di collaborazione team, assegnazione conversazioni, note interne e sistemi di gestione utenti.",
+          "status": "PIANIFICATO",
+          "features": {
+            "management": "Gestione Team",
+            "collaboration": "Collaborazione",
+            "managementStatus": "📋 Fase di Design",
+            "collaborationStatus": "📋 Pianificato"
+          }
+        },
+        "q2_2026": {
+          "date": "Marzo 2026",
+          "title": "Lancio Piattaforma Completa",
+          "description": "Piattaforma completa pronta con tutte le funzionalità, applicazioni mobile, documentazione completa e supporto 24/7.",
+          "status": "🚀 PRONTO AL LANCIO",
+          "features": {
+            "mobile": "App Mobile",
+            "support": "Supporto 24/7",
+            "mobileStatus": "🎯 Pronto al Lancio",
+            "supportStatus": "🎯 Servizio Completo"
+          },
+          "preorderText": "🎉 Pre-ordina ora e risparmia il 24%",
+          "launchExpected": "Lancio Previsto: Q2 2026"
+        }
+      },
+      "progressStats": {
+        "core": "Piattaforma Core",
+        "integrations": "Integrazioni",
+        "team": "Funzionalità Team",
+        "launch": "Obiettivo Lancio"
+      },
+      "ctaText": "🎉 Pre-ordina ora e risparmia il 24% sul prezzo normale",
+      "ctaButton": "Proteggi il Tuo Pre-Ordine"
+    },
+    "pricing": {
+      "title": "Prezzi Semplici e Trasparenti",
+      "subtitle": "Approfitta dell'offerta annuale: paghi 10 mesi, ne ricevi 12",
+      "preorder": {
+        "badge": "OFFERTA ANNUALE",
+        "title": "Piano Annuale Pre-Ordine",
+        "price": "€190",
+        "period": "/anno",
+        "subtitle": "€15.83 al mese",
+        "savings": "Risparmi €38 - Paghi 10 mesi, ricevi 12!",
+        "cta": "Pre-Ordina Ora"
+      },
+      "regular": {
+        "badge": "STANDARD",
+        "title": "Piano Mensile",
+        "price": "€19",
+        "period": "/mese",
+        "subtitle": "per utente",
+        "note": "Fatturato mensilmente",
+        "cta": "Disponibile Q2 2026"
+      },
+      "features": [
+        "Tutti i 7 canali: WhatsApp, Facebook Messenger, Instagram, Viber, Telegram, SMS, Email",
+        "Intelligenza AI con riepiloghi automatici e suggerimenti di risposta",
+        "Rilevamento contestuale automatico dei numeri di telefono",
+        "Collaborazione team illimitata con assegnazioni e note",
+        "Ricerca intelligente nella knowledge base aziendale",
+        "Conformità GDPR completa - Sviluppato in Repubblica Ceca"
+      ],
+      "everythingIncluded": "Tutto Incluso",
+      "madeInCzech": "Sviluppato in Repubblica Ceca - GDPR Garantito",
+      "savingsText": "Il pre-ordine ti fa risparmiare €14/anno"
+    },
+    "cta": {
+      "title": "Smetti di Perdere Tempo Cambiando Schermo",
+      "subtitle": "Unisciti ai team che hanno scelto Whappi per lavorare meglio e più velocemente. Un unico widget intelligente per tutte le comunicazioni, ovunque tu lavori.",
+      "button": "Inizia con Whappi (€19/utente)",
+      "formMessage": "Sono interessato a Whappi - Modulo di Comunicazione Integrata. Vorrei ricevere maggiori informazioni sul pre-ordine e una demo dell'estensione Chrome."
+    }
+  },
+  "whappiSummary": {
+    "title": "Modulo di Comunicazione Integrata",
+    "subtitle": "Estensione Chrome che porta tutte le comunicazioni cliente (WhatsApp, Facebook, Instagram, Viber, Telegram, SMS, Email) direttamente nei tuoi strumenti di lavoro.",
+    "features": {
+      "contextualIntelligence": {
+        "icon": "🧠",
+        "title": "Intelligenza Contestuale",
+        "description": "Rileva automaticamente numeri e mostra cronologia conversazioni multi-canale."
+      },
+      "aiAssistance": {
+        "icon": "✨",
+        "title": "Assistente AI",
+        "description": "Riepiloghi automatici, suggerimenti di risposta e ricerca knowledge base."
+      },
+      "teamManagement": {
+        "icon": "👥",
+        "title": "Collaborazione Team",
+        "description": "Assegna conversazioni, aggiungi note private e collabora in tempo reale."
+      },
+      "integrations": {
+        "icon": "🔗",
+        "title": "Integrazioni Multi-Canale",
+        "description": "Unifica WhatsApp, Facebook, Instagram, Telegram, SMS ed Email in un'unica interfaccia."
+      },
+      "gdpr": {
+        "icon": "🔒",
+        "title": "GDPR Garantito",
+        "description": "Sviluppato in Repubblica Ceca con dati sui tuoi server e conformità completa."
+      }
+    },
+    "pricing": {
+      "amount": "€19/utente",
+      "description": "al mese - Piano mensile o €190/anno (risparmi €38)"
+    },
+    "cta": {
+      "button": "Scopri Whappi"
+    },
+    "note": "Finalmente, comunicazioni cliente integrate senza lasciare i tuoi strumenti"
+  },
+  "termsAndConditions": {
+    "meta": {
+      "title": "Termini e Condizioni Generali - QuickFy",
+      "description": "Termini e Condizioni Generali per QuickFy Performance Suite. Condizioni contrattuali complete per l'utilizzo dei nostri servizi."
+    },
+    "title": "Termini e Condizioni Generali di FL1 s.r.o.",
+    "lastUpdated": "Ultimo aggiornamento: {date}",
+    "tableOfContents": {
+      "title": "Indice",
+      "showToc": "Mostra indice",
+      "hideToc": "Nascondi indice"
+    },
+    "sections": {
+      "basicProvisions": {
+        "title": "I. Disposizioni Generali",
+        "content": [
+          "1.1. Le presenti condizioni generali di contratto (di seguito \"CGC\") regolano i diritti e gli obblighi reciproci derivanti da un contratto di acquisto (di seguito \"contratto di acquisto\") concluso tramite l'interfaccia web situata all'indirizzo www.quickfy.eu (di seguito \"interfaccia web\") tra FL1 s.r.o., con sede legale in Moskevská 1464/61, Vršovice, 101 00 Praha 10, Partita IVA: 19990146, iscritta nel Registro delle Imprese tenuto dal Tribunale Municipale di Praga, Sezione C, Inserto 398569 (di seguito \"venditore\") e una persona fisica che conclude un contratto non relativo alla sua attività commerciale come consumatore, o in diretta connessione con la sua attività commerciale (di seguito \"acquirente\").",
+          "1.2. Le disposizioni che deviano dalle CGC possono essere concordate nel contratto di acquisto. Gli accordi devianti nel contratto di acquisto hanno precedenza sulle disposizioni delle CGC.",
+          "1.3. Le disposizioni delle CGC sono parte integrante del contratto di acquisto. Il contratto di acquisto e le CGC sono redatti in lingua ceca. Il contratto di acquisto può essere concluso in lingua ceca.",
+          "1.4. Il venditore può modificare o integrare il testo delle CGC. Questa disposizione non pregiudica i diritti e gli obblighi sorti durante la validità del precedente testo delle CGC."
+        ]
+      },
+      "userAccount": {
+        "title": "II. Account Utente",
+        "content": [
+          "2.1. Sulla base della registrazione dell'acquirente nell'interfaccia web, l'acquirente può accedere al proprio account utente. Dal proprio account utente, l'acquirente può ordinare merci (di seguito \"account utente\").",
+          "2.2. Quando si registra per un account utente e quando si ordinano merci, l'acquirente è obbligato a fornire tutte le informazioni correttamente e veracemente. L'acquirente è obbligato ad aggiornare le informazioni fornite nell'account utente in caso di modifiche. Le informazioni fornite dall'acquirente nell'account utente e quando si ordinano merci sono considerate corrette dal venditore.",
+          "2.3. L'accesso all'account utente è protetto da nome utente e password. L'acquirente è obbligato a mantenere la riservatezza riguardo alle informazioni necessarie per accedere al proprio account utente.",
+          "2.4. L'acquirente non deve consentire a terzi di utilizzare l'account utente.",
+          "2.5. Il venditore può cancellare l'account utente, specialmente se l'acquirente non ha utilizzato il proprio account utente per più di 1 anno, o se l'acquirente viola i propri obblighi derivanti dal contratto di acquisto (specialmente le condizioni di pagamento).",
+          "2.6. L'acquirente riconosce che l'account utente potrebbe non essere disponibile continuamente, specialmente a causa della necessaria manutenzione dell'hardware e software del venditore, o della necessaria manutenzione dell'hardware e software di terzi."
+        ]
+      },
+      "contractConclusion": {
+        "title": "III. Conclusione del Contratto di Acquisto",
+        "content": [
+          "3.1. Tutta la presentazione delle merci inserita nell'interfaccia web è di natura informativa e il venditore non è obbligato a concludere un contratto di acquisto riguardo a tali merci. L'articolo 1732 paragrafo 2 del Codice Civile non si applica.",
+          "3.2. L'interfaccia web contiene informazioni sulle merci, inclusi i prezzi delle singole merci e i costi per la restituzione delle merci, se tali merci non possono essere restituite per posta ordinaria a causa della loro natura. I prezzi delle merci sono indicati comprensivi di IVA e tutte le commissioni correlate. I prezzi delle merci rimangono validi per il periodo in cui sono visualizzati nell'interfaccia web. Questa disposizione non limita la possibilità del venditore di concludere un contratto di acquisto secondo condizioni concordate individualmente.",
+          "3.3. L'interfaccia web contiene anche informazioni sui costi relativi all'imballaggio e alla consegna delle merci. Le informazioni sui costi relativi all'imballaggio e alla consegna delle merci indicate nell'interfaccia web si applicano solo quando le merci vengono consegnate nel territorio della Repubblica Ceca.",
+          "3.4. Per ordinare merci, l'acquirente compila un modulo d'ordine nell'interfaccia web. Il modulo d'ordine contiene informazioni su: a) merci ordinate (le merci ordinate sono \"inserite\" dall'acquirente nel carrello elettronico dell'interfaccia web), b) metodo di pagamento per il prezzo di acquisto delle merci, informazioni sul metodo richiesto di consegna delle merci ordinate, c) informazioni sui costi relativi alla consegna delle merci (di seguito collettivamente denominato \"ordine\").",
+          "3.5. Prima di inviare l'ordine al venditore, all'acquirente è consentito controllare e modificare i dati che l'acquirente ha inserito nell'ordine, considerando anche la capacità dell'acquirente di riconoscere e correggere errori verificatisi durante l'inserimento dei dati nell'ordine. L'acquirente invia l'ordine al venditore facendo clic sul pulsante \"completa ordine\". I dati indicati nell'ordine sono considerati corretti dal venditore. La condizione per la validità dell'ordine è la compilazione di tutti i dati obbligatori nel modulo d'ordine e la conferma da parte dell'acquirente di aver letto queste CGC.",
+          "3.6. Immediatamente dopo aver ricevuto l'ordine, il venditore invia all'acquirente la conferma di ricezione dell'ordine all'indirizzo elettronico che l'acquirente ha fornito quando ha ordinato le merci. Questa conferma è automatica e non è considerata conclusione del contratto. Insieme alla conferma, l'acquirente riceve queste CGC. Il contratto di acquisto è concluso solo con la conferma dell'ordine da parte del venditore all'indirizzo elettronico dell'acquirente."
+        ]
+      },
+      "priceAndPayment": {
+        "title": "IV. Prezzo e Condizioni di Pagamento",
+        "content": [
+          "4.1. L'acquirente può pagare al venditore il prezzo delle merci e gli eventuali costi relativi alla consegna delle merci secondo il contratto di acquisto nei seguenti modi: senza contanti tramite bonifico sul conto del venditore n. 2801707992/2010, tenuto presso Fio banka, a.s.; senza contanti tramite carta di pagamento; senza contanti tramite sistema di pagamento.",
+          "4.2. Insieme al prezzo di acquisto, l'acquirente è obbligato a pagare al venditore anche i costi relativi all'imballaggio e alla consegna delle merci nell'importo concordato. Se non diversamente specificato, il prezzo di acquisto include anche i costi relativi alla consegna delle merci.",
+          "4.3. Il venditore non richiede un deposito o altro pagamento simile dall'acquirente. Questo non si applica ai casi in cui è richiesto il pagamento del prezzo di acquisto prima dell'invio delle merci.",
+          "4.4. In caso di pagamento tramite gateway di pagamento, l'acquirente viene reindirizzato all'interfaccia della banca pertinente per effettuare il pagamento.",
+          "4.5. In caso di pagamento senza contanti, l'obbligo dell'acquirente di pagare il prezzo di acquisto è soddisfatto quando l'importo pertinente viene accreditato sul conto del venditore.",
+          "4.6. Il venditore ha diritto, specialmente se l'acquirente non conferma successivamente l'ordine, di richiedere il pagamento dell'intero prezzo di acquisto prima di inviare le merci all'acquirente. L'articolo 2119 paragrafo 1 del Codice Civile non si applica.",
+          "4.7. Eventuali sconti sul prezzo delle merci forniti dal venditore all'acquirente non possono essere combinati reciprocamente.",
+          "4.8. Se è consuetudine nelle relazioni commerciali o se richiesto da normative legali generalmente vincolanti, il venditore emetterà all'acquirente un documento fiscale - fattura riguardo ai pagamenti effettuati sulla base del contratto di acquisto. Il venditore è un contribuente IVA. Il venditore emetterà un documento fiscale - fattura all'acquirente dopo il pagamento del prezzo delle merci e lo invierà in forma elettronica all'indirizzo elettronico dell'acquirente."
+        ]
+      },
+      "cancellationWithdrawal": {
+        "title": "V. Recesso dal Contratto",
+        "content": [
+          "5.1. L'acquirente che ha concluso un contratto di acquisto al di fuori della sua attività commerciale come consumatore ha il diritto di recedere dal contratto di acquisto.",
+          "5.2. Il termine per il recesso dal contratto è di 14 giorni: a) dalla ricezione delle merci, b) dalla ricezione dell'ultimo pezzo di merci, se diversi pezzi di merci sono oggetto dell'ordine, c) dalla ricezione della prima consegna, se oggetto del contratto è la consegna regolare ripetuta di merci.",
+          "5.3. L'acquirente non può, tra l'altro, recedere dal contratto di acquisto: a) per la fornitura di servizi, se sono stati forniti completamente e il servizio ha iniziato ad essere fornito con il consenso espresso dell'acquirente prima della scadenza del termine per il recesso dal contratto e l'acquirente ha dichiarato di sapere che dopo la fornitura completa del servizio da parte del venditore perderà il diritto di recesso dal contratto, b) per la consegna di merci modificate secondo i desideri dell'acquirente o per la sua persona, c) per la consegna di merci soggette a rapido deterioramento, nonché merci che sono state irreversibilmente mescolate con altre merci dopo la consegna, d) per la consegna di registrazioni audio o video o programmi per computer se hanno violato il loro imballaggio originale, e) per la consegna di giornali, periodici o riviste ad eccezione degli abbonamenti, f) per alloggio, trasporto, ristorazione o uso del tempo libero, se il contratto specifica una data o periodo specifico di esecuzione, g) per contenuto elettronico non consegnato su supporto fisico, se il contenuto ha iniziato ad essere fornito con il consenso espresso dell'acquirente prima della scadenza del termine per il recesso dal contratto e l'acquirente ha dichiarato di sapere che perderà il diritto di recesso dal contratto.",
+          "5.4. Per recedere dal contratto di acquisto, l'acquirente deve informare il venditore della sua decisione di recedere dal contratto di acquisto con una dichiarazione inequivocabile (ad esempio, una lettera inviata per posta o email). A questo scopo, l'acquirente può utilizzare il modulo di recesso campione fornito dal venditore, che costituisce un'appendice a queste CGC. L'acquirente può anche informare il venditore del recesso dal contratto di acquisto tramite un modulo situato sul sito web del venditore. L'acquirente invia avviso di recesso dal contratto al venditore a info@quickfy.eu o all'indirizzo di FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10.",
+          "5.5. L'acquirente che ha receduto dal contratto di acquisto è obbligato a restituire le merci al venditore senza indebito ritardo, al più tardi entro 14 giorni dal recesso dal contratto di acquisto. L'acquirente è obbligato a sostenere i costi associati alla restituzione delle merci al venditore, anche se le merci non possono essere restituite per posta ordinaria a causa della loro natura.",
+          "5.6. Se l'acquirente ha receduto dal contratto di acquisto, il venditore restituirà tutti i fondi monetari ricevuti da lui sulla base del contratto di acquisto senza indebito ritardo, al più tardi entro 14 giorni dal recesso dal contratto di acquisto, inclusi i costi per la consegna delle merci. Il venditore restituirà i fondi monetari all'acquirente nello stesso modo in cui li ha ricevuti dall'acquirente. Il venditore restituirà i fondi monetari all'acquirente in modo diverso solo se l'acquirente è d'accordo e se questo non comporta costi aggiuntivi.",
+          "5.7. Se l'acquirente ha receduto dal contratto di acquisto, il venditore non è obbligato a restituire i fondi monetari all'acquirente prima che l'acquirente restituisca le merci o dimostri di aver inviato le merci al venditore.",
+          "5.8. L'acquirente deve restituire le merci al venditore non danneggiate, inutilizzate e non sporche e se possibile nell'imballaggio originale. Il venditore ha diritto di compensare unilateralmente il risarcimento per danni causati alle merci contro la richiesta dell'acquirente per la restituzione del prezzo di acquisto.",
+          "5.9. Il venditore ha diritto di recedere dal contratto di acquisto a causa di scorte esaurite, indisponibilità delle merci, o quando il produttore, importatore o fornitore delle merci ha terminato la produzione o l'importazione delle merci. Il venditore informa immediatamente l'acquirente tramite l'indirizzo elettronico indicato nell'ordine e restituisce tutti i fondi monetari ricevuti da lui sulla base del contratto di acquisto entro un periodo ragionevole, al più tardi entro 14 giorni dalla notifica del recesso dal contratto di acquisto."
+        ]
+      },
+      "transportDelivery": {
+        "title": "VI. Trasporto e Consegna delle Merci",
+        "content": [
+          "6.1. Se il metodo di trasporto è concordato sulla base di una richiesta speciale dell'acquirente, l'acquirente sopporta il rischio e gli eventuali costi aggiuntivi associati a questo metodo di trasporto.",
+          "6.2. Se il venditore è obbligato secondo il contratto di acquisto a consegnare le merci in un luogo designato dall'acquirente nell'ordine, l'acquirente è obbligato a prendere in consegna le merci alla consegna.",
+          "6.3. Se, per motivi dalla parte dell'acquirente, è necessario consegnare le merci ripetutamente o in modo diverso da quello indicato nell'ordine, l'acquirente è obbligato a pagare i costi associati alla consegna ripetuta delle merci, o i costi associati a un metodo diverso di consegna.",
+          "6.4. Quando prende in consegna le merci dal corriere, l'acquirente è obbligato a controllare l'integrità dell'imballaggio delle merci e in caso di difetti, notificare immediatamente il corriere. Se viene riscontrato danno all'imballaggio che indica ingresso non autorizzato nella spedizione, l'acquirente non deve prendere in consegna la spedizione dal corriere.",
+          "6.5. Diritti e obblighi aggiuntivi delle parti durante il trasporto delle merci possono essere regolati da condizioni di consegna speciali del venditore, se emesse dal venditore."
+        ]
+      },
+      "rightsDefects": {
+        "title": "VII. Diritti da Prestazione Difettosa",
+        "content": [
+          "7.1. I diritti e gli obblighi delle parti contrattuali riguardo ai diritti da prestazione difettosa sono regolati dalle pertinenti normative legali generalmente vincolanti (specialmente le disposizioni degli articoli da 1914 a 1925, da 2099 a 2117 e da 2161 a 2174 del Codice Civile).",
+          "7.2. Il venditore è responsabile verso l'acquirente che le merci non abbiano difetti alla ricezione. In particolare, il venditore è responsabile verso l'acquirente che al momento in cui l'acquirente ha preso in consegna le merci: a) le merci abbiano proprietà che le parti hanno concordato, e se non c'è accordo, tali proprietà che il venditore o produttore ha descritto o che l'acquirente si aspettava considerando la natura delle merci e sulla base della pubblicità da loro condotta, b) le merci siano adatte allo scopo che il venditore indica per il loro uso o per il quale le merci di questo tipo sono solitamente utilizzate, c) le merci corrispondano alla qualità o design del campione contrattuale o modello, se la qualità o design è stata determinata secondo il campione contrattuale o modello, d) le merci siano nella quantità, misura o peso appropriati e e) le merci rispettino i requisiti legali.",
+          "7.3. Le disposizioni indicate nel punto 7.2 di queste CGC non si applicano alle merci vendute a prezzo inferiore per un difetto per il quale è stato concordato il prezzo inferiore, per usura delle merci causata dal loro uso abituale, per merci usate per un difetto corrispondente al grado di uso o usura che le merci avevano quando prese in consegna dall'acquirente, o se segue dalla natura delle merci.",
+          "7.4. Se un difetto si manifesta entro sei mesi dalla ricezione, si presume che le merci fossero difettose alla ricezione. L'acquirente può far valere il diritto da un difetto che si verifica nei beni di consumo entro ventiquattro mesi dalla ricezione. Questa disposizione non si applica alle merci vendute a prezzo inferiore per un difetto per il quale è stato concordato il prezzo inferiore, per usura delle merci causata dal loro uso abituale, per merci usate per un difetto corrispondente al grado di uso o usura che le merci avevano quando prese in consegna dall'acquirente, o se segue dalla natura delle merci.",
+          "7.5. L'acquirente fa valere i diritti da prestazione difettosa presso il venditore a FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10, o secondo la decisione dell'acquirente anche all'indirizzo di una filiale dove l'accettazione di reclami è possibile considerando la gamma di merci vendute, o nella sede centrale o filiale designata. Il momento di presentazione di un reclamo è contato dal giorno in cui il venditore ha ricevuto il reclamo.",
+          "7.6. Requisiti e condizioni aggiuntivi per la gestione dei reclami possono essere regolati dalla procedura di reclamo del venditore, se emessa dal venditore."
+        ]
+      },
+      "additionalRights": {
+        "title": "VIII. Diritti e Obblighi Aggiuntivi delle Parti Contrattuali",
+        "content": [
+          "8.1. L'acquirente acquisisce la proprietà delle merci pagando l'intero prezzo di acquisto delle merci.",
+          "8.2. Il venditore non è vincolato da alcun codice di condotta verso l'acquirente nel senso dell'articolo 1826 paragrafo 1 lettera e) del Codice Civile.",
+          "8.3. La risoluzione extragiudiziale delle controversie derivanti da contratti di consumo è fornita dall'Ispezione Commerciale Ceca, con sede in Štěpánská 567/15, 120 00 Praha 2, Partita IVA: 000 20 869, sito web: https://adr.coi.cz. La piattaforma per la risoluzione online delle controversie situata su https://ec.europa.eu/consumers/odr può essere utilizzata per risolvere controversie tra il venditore e l'acquirente dal contratto di acquisto.",
+          "8.4. Centro Europeo Consumatori Repubblica Ceca, con sede in Štěpánská 567/15, 120 00 Praha 2, sito web: http://www.evropskyspotrebitel.cz è il punto di contatto secondo il Regolamento (UE) n. 524/2013 del Parlamento Europeo e del Consiglio sulla risoluzione online delle controversie dei consumatori e che modifica il Regolamento (CE) n. 2006/2004 e la Direttiva 2009/22/CE (Regolamento sulla risoluzione online delle controversie dei consumatori).",
+          "8.5. Il venditore è autorizzato a vendere merci sulla base di autorizzazione commerciale. Il controllo commerciale è effettuato nel suo ambito dall'ufficio commerciale pertinente. La supervisione sull'area della protezione dei dati personali è esercitata dall'Ufficio per la Protezione dei Dati Personali. L'Ispezione Commerciale Ceca esercita la supervisione sul rispetto della Legge n. 634/1992 Racc., sulla protezione dei consumatori, come modificata, entro un ambito definito.",
+          "8.6. L'acquirente riconosce con la presente che il venditore non è obbligato a consegnare merci all'acquirente se le merci sono già esaurite o non disponibili dal fornitore, nel qual caso l'acquirente sarà immediatamente informato di questo fatto e qualsiasi importo già pagato sarà restituito."
+        ]
+      },
+      "dataProtection": {
+        "title": "IX. Protezione dei Dati Personali",
+        "content": [
+          "9.1. La protezione dei dati personali dell'acquirente che è una persona fisica è regolata nei principi di protezione dei dati personali del venditore.",
+          "9.2. L'acquirente consente al trattamento di questi dati personali: nome e cognome, residenza, numero di identificazione, numero di identificazione fiscale, indirizzo elettronico, numero di telefono (di seguito \"dati personali\") da parte del venditore allo scopo di realizzare diritti e obblighi dal contratto di acquisto e allo scopo di mantenere l'account utente. L'acquirente consente al trattamento dei dati personali da parte del venditore allo scopo di inviare informazioni e comunicazioni commerciali all'acquirente. L'acquirente consente al trattamento dei dati personali da parte del venditore allo scopo di inviare informazioni e comunicazioni commerciali all'acquirente tramite mezzi elettronici di comunicazione.",
+          "9.3. L'acquirente riconosce di essere obbligato a fornire i propri dati personali (durante la registrazione, nell'ordine, quando conclude il contratto di acquisto) correttamente e veracemente e di essere obbligato a informare immediatamente il venditore dei cambiamenti ai propri dati personali.",
+          "9.4. Il venditore può affidare il trattamento dei dati personali a una terza parte come processore. I dati personali non saranno trasferiti a terze parti o resi disponibili a terze parti senza il consenso preventivo dell'acquirente.",
+          "9.5. I dati personali saranno trattati per il periodo necessario per l'esercizio dei diritti e obblighi derivanti dal contratto di acquisto e l'asserzione di rivendicazioni da questo contratto e per un periodo di 3 anni dalla cessazione del rapporto contrattuale tra l'acquirente e il venditore.",
+          "9.6. L'acquirente ha il diritto di chiedere al venditore informazioni su quali dati personali il venditore tratta su di lui, chiedere la loro correzione o completamento, o sotto condizioni stabilite nelle pertinenti normative legali chiedere la loro liquidazione e ha anche il diritto di sollevare un'obiezione contro il trattamento di dati personali destinati a scopi di marketing diretto e il diritto alla portabilità dei dati personali. L'acquirente ha il diritto di revocare il consenso al trattamento dei dati personali.",
+          "9.7. Se l'acquirente crede che i suoi dati personali siano trattati in violazione della privacy e vita personale dell'acquirente o in violazione delle normative legali, specialmente se i dati personali sono inesatti considerando lo scopo del loro trattamento, può: a) chiedere al venditore spiegazioni, b) richiedere che il venditore rimedi a tale situazione.",
+          "9.8. Se l'acquirente richiede informazioni secondo il punto 9.6 di queste CGC, il venditore è obbligato a fornire queste informazioni. Per fornire informazioni secondo questo punto, il venditore può richiedere un compenso ragionevole che non superi i costi necessari per fornire informazioni."
+        ]
+      },
+      "deliveryElectronic": {
+        "title": "X. Consegna di Comunicazioni Elettroniche",
+        "content": [
+          "10.1. L'acquirente consente alla consegna di comunicazioni elettroniche relative all'esecuzione del contratto all'indirizzo elettronico che ha fornito nell'ordine o nel suo account utente.",
+          "10.2. Il venditore consegna comunicazioni elettroniche all'acquirente all'indirizzo elettronico dell'acquirente indicato nell'ordine o registrato nell'account utente dell'acquirente. L'acquirente è obbligato a controllare regolarmente l'indirizzo elettronico indicato nell'ordine o registrato nel suo account utente e familiarizzare con le comunicazioni elettroniche consegnate.",
+          "10.3. L'acquirente riconosce che alcune comunicazioni elettroniche riguardanti l'ordine o rapporto legale con il venditore possono contenere informazioni riservate. Pertanto, l'acquirente è obbligato a garantire la protezione del suo indirizzo elettronico contro l'abuso da parte di terzi e anche contro l'accesso non autorizzato da parte di terzi a questo indirizzo elettronico.",
+          "10.4. Il venditore consegna comunicazioni elettroniche all'indirizzo elettronico dell'acquirente nella sua casella di posta elettronica tramite il fornitore di servizi email dell'acquirente. La comunicazione elettronica è considerata consegnata quando il messaggio appare nella casella di posta elettronica del destinatario presso il suo fornitore di servizi email, indipendentemente dal fatto che il destinatario venga a conoscenza della comunicazione."
+        ]
+      },
+      "finalProvisions": {
+        "title": "XI. Disposizioni Finali",
+        "content": [
+          "11.1. Se un rapporto stabilito dal contratto di acquisto contiene un elemento internazionale (straniero), le parti hanno concordato che il rapporto è regolato dalla legge ceca. Questo non pregiudica i diritti dei consumatori derivanti da normative legali generalmente vincolanti.",
+          "11.2. Se qualche disposizione delle CGC diventa invalida o inefficace, le disposizioni il cui significato si avvicina di più alla disposizione invalida o inefficace sostituiranno le disposizioni invalide. L'invalidità o l'inefficacia di una disposizione non pregiudica la validità delle altre disposizioni. Modifiche e aggiunte al contratto di acquisto o alle CGC richiedono forma scritta.",
+          "11.3. Il contratto di acquisto incluse le CGC è archiviato dal venditore in forma elettronica e non è accessibile.",
+          "11.4. Il modulo di recesso campione costituisce un'appendice a queste CGC.",
+          "11.5. Dettagli di contatto del venditore: indirizzo di consegna FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10, indirizzo elettronico info@quickfy.eu, telefono +420775113732."
+        ]
+      },
+      "withdrawalForm": {
+        "title": "Modulo di Recesso Campione",
+        "content": [
+          "Destinatario: FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10, indirizzo elettronico: info@quickfy.eu",
+          "",
+          "Con la presente notifico/notifichiamo* il mio/nostro* recesso dal mio/nostro* contratto di vendita delle seguenti merci*/per la fornitura del seguente servizio*:",
+          "",
+          "Ordinato il*/ricevuto il*:",
+          "",
+          "Nome del/dei consumatore/i:",
+          "",
+          "Indirizzo del/dei consumatore/i:",
+          "",
+          "Firma del/dei consumatore/i (solo se questo modulo è presentato in forma cartacea):",
+          "",
+          "Data:",
+          "",
+          "*Cancellare quanto non appropriato."
+        ]
+      }
+    }
+  },
+  "products": {
+    "quickfy": {
+      "title": "QuickFy",
+      "subtitle": "Piattaforma Marketing Automation"
+    }
+  },
+  "faq": {
+    "title": "Domande",
+    "titleHighlight": "Frequenti",
+    "subtitle": "Trova risposte rapide alle domande più comuni su QuickFy",
+    "ctaText": "Non trovi la risposta che cerchi?",
+    "ctaButton": "Contattaci",
+    "items": {
+      "0": {
+        "question": "Quanto tempo serve per iniziare ad usare QuickFy?",
+        "answer": "L'installazione è immediata e gratuita. Dopo la registrazione, puoi iniziare a usare QuickFy in meno di 5 minuti. Il nostro team ti fornirà supporto gratuito per configurare tutto perfettamente."
+      },
+      "1": {
+        "question": "QuickFy è adatto alla mia piccola azienda?",
+        "answer": "Assolutamente sì! QuickFy è stato progettato specificamente per PMI e piccole aziende. Il piano Analytics parte da €299/mese e offre tutto ciò di cui hai bisogno per gestire marketing e analytics in modo professionale."
+      },
+      "2": {
+        "question": "Posso provare QuickFy prima di acquistare?",
+        "answer": "Sì, offriamo una consulenza gratuita dove ti mostriamo tutte le funzionalità di QuickFy e come può aiutare la tua azienda. Inoltre, garantiamo il ROI entro 30 giorni o rimborsiamo."
+      },
+      "3": {
+        "question": "I miei dati sono al sicuro con QuickFy?",
+        "answer": "Assolutamente. Utilizziamo crittografia end-to-end, server europei certificati e siamo pienamente conformi al GDPR. I tuoi dati non vengono mai condivisi con terze parti."
+      },
+      "4": {
+        "question": "Posso disdire in qualsiasi momento?",
+        "answer": "Sì, non ci sono vincoli contrattuali. Puoi disdire in qualsiasi momento con un semplice click dal tuo pannello. Nessuna penale, nessuna domanda."
+      }
+    }
+  },
+  "exitIntent": {
+    "title": "Aspetta!",
+    "subtitle": "Scopri quanto potresti risparmiare con QuickFy",
+    "closeLabel": "Chiudi modal",
+    "monthlyBudget": "Budget Marketing Mensile",
+    "currentROI": "ROI Attuale (%)",
+    "resultsTitle": "Con QuickFy potresti ottenere:",
+    "improvedROI": "ROI Migliorato",
+    "timeSaved": "Tempo Risparmiato",
+    "perMonth": "al mese",
+    "estimatedAnnualSavings": "Risparmio Annuale Stimato",
+    "vsNow": "rispetto ad ora",
+    "ctaButton": "Richiedi Demo Gratuita",
+    "benefits": "✓ Nessuna carta di credito richiesta • ✓ Setup in 5 minuti • ✓ Supporto 24/7",
+    "prefillMessage": "Sono interessato a scoprire come QuickFy può migliorare il mio ROI del 35% e farmi risparmiare {hours}+ ore al mese."
+  },
+  "accessibility": {
+    "skipLinks": {
+      "content": "Salta al contenuto principale",
+      "navigation": "Salta alla navigazione",
+      "footer": "Salta al footer"
+    }
+  },
+  "productSchema": {
+    "features": {
+      "0": "Analytics in tempo reale",
+      "1": "Automazione campagne marketing",
+      "2": "Gestione clienti CRM",
+      "3": "Dashboard personalizzabili",
+      "4": "ROI tracking",
+      "5": "Integrazione WhatsApp",
+      "6": "Report automatici"
+    }
+  }
+}
