@@ -47,3 +47,11 @@ nul
 
 # MCP configuration (contains sensitive tokens)
 .mcp.json
+
+# Project-specific exclusions
+/component-vault/
+/frontend-web-app-quickfy/
+/.claude/
+build-error.log
+build-output.log
+*.log

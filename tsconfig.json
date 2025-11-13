@@ -37,6 +37,9 @@
   ],
   "exclude": [
     "node_modules",
+    "component-vault/**/*",
+    "frontend-web-app-quickfy/**/*",
+    ".claude/**/*",
     "vitest.config.ts",
     "src/test/**/*",
     "**/*.test.ts",
