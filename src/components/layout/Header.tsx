@@ -456,18 +456,19 @@ export function Header() {
           <AnimatePresence>
             {isMenuOpen && (
               <>
-                {/* Backdrop Overlay */}
+                {/* Backdrop Overlay - Fixed positioning */}
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="md:hidden fixed inset-0 bg-slate-900/20 backdrop-blur-sm z-40"
+                  className="md:hidden fixed inset-0 bg-slate-900/20 backdrop-blur-sm z-[45]"
+                  style={{ top: '72px' }} // Start below header
                   onClick={() => setIsMenuOpen(false)}
                   aria-hidden="true"
                 />
 
-                {/* Mobile Menu */}
+                {/* Mobile Menu - Fixed positioning */}
                 <motion.div
                   ref={mobileMenuRef}
                   id="mobile-menu"
@@ -476,7 +477,8 @@ export function Header() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3, ease: "easeOut" }}
-                  className="md:hidden absolute left-0 right-0 top-full mt-2 mx-3 bg-white rounded-2xl border border-slate-200 shadow-2xl z-50 max-h-[calc(100vh-100px)] overflow-y-auto"
+                  className="md:hidden fixed left-0 right-0 mx-3 bg-white rounded-2xl border border-slate-200 shadow-2xl z-[60] max-h-[calc(100vh-100px)] overflow-y-auto"
+                  style={{ top: '80px' }} // Position below header
                   role="menu"
                   aria-label={t('mobileMenu')}
                   aria-orientation="vertical"

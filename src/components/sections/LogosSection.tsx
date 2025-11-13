@@ -5,14 +5,21 @@ import Image from 'next/image';
 import { getEnabledPartners, partnersConfig } from '@/config/partners';
 import type { PartnerLogo } from '@/types/partners';
 import { useTranslations } from 'next-intl';
+import { useIsMobile } from '@/hooks/useMediaQuery';
 
 export function LogosSection() {
   // Get translations
   const t = useTranslations('logos');
 
+  // Detect mobile viewport
+  const isMobile = useIsMobile();
+
   // Get enabled partner logos from configuration
   const enabledLogos = getEnabledPartners();
   const { animation } = partnersConfig;
+
+  // Animation duration: faster on mobile (30s) vs desktop (60s)
+  const scrollDuration = isMobile ? 30 : animation.scrollDuration;
 
   // If no logos are enabled, don't render the section
   if (enabledLogos.length === 0) {
@@ -109,7 +116,7 @@ export function LogosSection() {
             }}
             animate={animation.enabled ? { x: [`0%`, `-50%`] } : {}}
             transition={{
-              duration: animation.scrollDuration,
+              duration: scrollDuration,
               repeat: Infinity,
               repeatType: "loop",
               ease: "linear"
