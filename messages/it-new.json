@@ -1,0 +1,388 @@
+{
+  "meta": {
+    "title": "QuickFy - Dashboard Analytics Semplificata per PMI | Strumenti IA",
+    "description": "Dashboard Analytics semplificata per PMI. Gestisci dati, recensioni e social media con l'IA. Da 19€/mese. Consulenza gratuita disponibile.",
+    "locale": "it"
+  },
+  "navigation": {
+    "features": "Funzionalità",
+    "benefits": "Vantaggi",
+    "pricing": "Piani",
+    "roadmap": "Roadmap",
+    "testimonials": "Testimonianze",
+    "whappi": "Whappi",
+    "contact": "Contatti",
+    "home": "Home",
+    "startNow": "Parla con un Esperto",
+    "logoAria": "QuickFy - Torna all'inizio della pagina",
+    "startNowAria": "Parla con un esperto - Vai al modulo di contatto",
+    "sectionAria": "Vai alla sezione {section}",
+    "openMenu": "Apri menu",
+    "closeMenu": "Chiudi menu",
+    "mobileMenu": "Menu mobile",
+    "skipToContent": "Vai al contenuto principale",
+    "products": "Prodotti",
+    "productsAria": "Menu prodotti",
+    "whappiCta": "Pre-Ordina -24%"
+  },
+  "hero": {
+    "headline": "Il Futuro del Marketing è Qui. Smetti di Interpretare i Dati,",
+    "headlineHighlight": "Inizia a Dominarli.",
+    "subheadline": "QuickFy è l'ecosistema intelligente che trasforma la complessità digitale in un vantaggio competitivo. La tua dashboard analytics semplificata, potenziata dall'intelligenza artificiale.",
+    "cta": {
+      "primary": "Parla con un Esperto"
+    },
+    "metrics": {
+      "hoursSaved": "15+ Ore Risparmiate",
+      "roiImprovement": "+40% Lead Generati",
+      "clarity": "100% Chiarezza sui Dati"
+    },
+    "typewriter": [
+      "decisioni strategiche",
+      "crescita sostenibile",
+      "risultati misurabili",
+      "successo digitale"
+    ]
+  },
+  "features": {
+    "title": "Una Piattaforma Intelligente,",
+    "titleHighlight": "3 Soluzioni per la Crescita",
+    "subtitle": "Dal controllo dei dati alla gestione della reputazione, fino alla crescita proattiva. Tutto in un unico ecosistema potenziato dall'IA.",
+    "items": [
+      {
+        "id": "data-intelligence",
+        "title": "Analytics (Piano Starter)",
+        "description": "Trasforma i dati grezzi di Google Analytics in insight chiari e immediati. Una dashboard visiva che ti mostra solo le metriche che contano davvero, spiegate in modo semplice.",
+        "benefits": [
+          "Dashboard Analytics Semplificata",
+          "Report Comprensibili per Tutti",
+          "Alert Intelligenti (Prossimamente)"
+        ],
+        "icon": "BarChart3"
+      },
+      {
+        "id": "performance-ads",
+        "title": "Reputation (Piano Plus)",
+        "description": "Prendi il controllo totale della tua reputazione online. Il nostro modulo IA centralizza le recensioni di Google, le analizza e prepara bozze di risposta intelligenti con un solo click.",
+        "benefits": [
+          "Gestione Recensioni con IA",
+          "Risposte Rapide e Professionali",
+          "Analisi Automatica del Feedback"
+        ],
+        "icon": "Target"
+      },
+      {
+        "id": "client-platform",
+        "title": "Growth Suite (Piano PRO)",
+        "description": "La suite completa per la crescita proattiva. Un Social Hub con IA che suggerisce i prossimi post e un Chatbot avanzato che trasforma i visitatori del tuo sito in contatti qualificati, 24/7.",
+        "benefits": [
+          "Social Hub con IA",
+          "Chatbot Marketing Proattivo",
+          "Generazione Automatica di Lead"
+        ],
+        "icon": "Users"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Perché le PMI scelgono QuickFy",
+    "titleHighlight": "per la loro crescita",
+    "subtitle": "Strumenti potenti e accessibili progettati per restituirti il pieno controllo della tua presenza online.",
+    "items": [
+      {
+        "title": "Tempo Restituito",
+        "description": "Automatizza le analisi e la gestione dei feedback per concentrarti sul tuo business.",
+        "value": "15+",
+        "unit": "ore/settimana"
+      },
+      {
+        "title": "Efficienza AI",
+        "description": "Decisioni basate su dati chiari e insight generati dall'intelligenza artificiale.",
+        "value": "100%",
+        "unit": "chiarezza"
+      },
+      {
+        "title": "Tutto in Uno",
+        "description": "Dati, recensioni, social e lead in un'unica piattaforma integrata.",
+        "value": "5+",
+        "unit": "strumenti integrati"
+      },
+      {
+        "title": "Tasso di Mantenimento Clienti",
+        "description": "La soddisfazione e la fiducia dei nostri clienti è la nostra priorità.",
+        "value": "92%",
+        "unit": "tasso mantenimento"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Un Piano per Ogni Fase della Tua Crescita",
+    "subtitle": "Scegli l'intelligenza artificiale su misura per il tuo business. Inizia oggi, scala domani.",
+    "perfectFor": "Perfetto per:",
+    "features": "Cosa include:",
+    "plans": {
+      "analytics": {
+        "name": "STARTER",
+        "price": "19",
+        "period": "mese",
+        "badge": "IDEALE PER INIZIARE",
+        "perfectFor": "Per chi vuole trasformare i dati in decisioni e avere il pieno controllo della comunicazione con i clienti.",
+        "features": {
+          "0": "Dashboard Analytics Semplificata",
+          "1": "Portale Cliente Centralizzato",
+          "2": "Prossimamente: Alert Intelligenti",
+          "3": "Prossimamente: Riepiloghi AI"
+        },
+        "cta": "Parla con un Esperto"
+      },
+      "plus": {
+        "name": "PLUS",
+        "price": "39",
+        "period": "mese",
+        "badge": "PIÙ POPOLARE",
+        "perfectFor": "Per chi vuole costruire attivamente una reputazione online a 5 stelle, rispondendo in modo efficiente a ogni recensione.",
+        "features": {
+          "0": "Tutto del piano STARTER",
+          "1": "Modulo Gestione Recensioni con IA",
+          "2": "Notifiche e bozze di risposta AI",
+          "3": "Categorizzazione automatica recensioni"
+        },
+        "cta": "Parla con un Esperto"
+      },
+      "pro": {
+        "name": "PRO",
+        "price": "79",
+        "period": "mese",
+        "badge": "CRESCITA PROATTIVA",
+        "perfectFor": "La suite completa per chi vuole il massimo controllo, dominare i social e generare contatti in automatico dal proprio sito.",
+        "features": {
+          "0": "Tutto del piano PLUS",
+          "1": "Modulo Social Hub con IA",
+          "2": "Assistente AI per la creazione di post",
+          "3": "Chatbot Marketing Proattivo 24/7"
+        },
+        "cta": "Parla con un Esperto"
+      }
+    },
+    "consultation": {
+      "title": "Non sai quale piano fa per te?",
+      "subtitle": "Parla con un nostro esperto. Ti aiuteremo a identificare la soluzione perfetta per le tue esigenze con una consulenza strategica gratuita.",
+      "cta": "Richiedi Consulenza Gratuita",
+      "formMessage": "Buongiorno! Vorrei parlare con un esperto per scoprire quale piano QuickFy si adatta meglio alle esigenze della mia azienda."
+    }
+  },
+  "contact": {
+    "title": "Pronto a Semplificare",
+    "titleHighlight": "il tuo Marketing?",
+    "subtitle": "Richiedi una consulenza gratuita. Un nostro esperto ti mostrerà come QuickFy può trasformare la tua presenza online.",
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Nome Completo",
+          "placeholder": "Il tuo nome completo"
+        },
+        "email": {
+          "label": "Indirizzo Email",
+          "placeholder": "La tua email aziendale"
+        },
+        "company": {
+          "label": "Azienda",
+          "placeholder": "Nome dell'azienda"
+        },
+        "phone": {
+          "label": "Telefono",
+          "placeholder": "Numero di telefono"
+        },
+        "message": {
+          "label": "Messaggio",
+          "placeholder": "Descrivi brevemente le tue esigenze..."
+        }
+      },
+      "submit": "Parla con un Esperto",
+      "submitting": "Invio in corso...",
+      "submitAnother": "Invia Altra Richiesta",
+      "ariaLabel": "Modulo di contatto QuickFy",
+      "privacy": "Accetto il trattamento dei dati personali secondo la Privacy Policy",
+      "socialProof": {
+        "response": "Risposta in 24h",
+        "clients": "500+ Clienti Soddisfatti",
+        "roi": "Crescita Garantita"
+      },
+      "progress": {
+        "label": "Progresso compilazione"
+      },
+      "footer": {
+        "security": "🔒 I tuoi dati sono sicuri • ✓ Risposta garantita in 24h • 💬 Consulenza gratuita e senza impegno"
+      },
+      "validation": {
+        "name": "Il nome deve contenere almeno 2 caratteri",
+        "email": "Inserisci un indirizzo email valido",
+        "company": "Il nome dell'azienda deve contenere almeno 2 caratteri",
+        "phone": "Il numero di telefono deve contenere almeno 10 cifre",
+        "message": "Il messaggio deve contenere almeno 10 caratteri",
+        "privacy": "Devi accettare il trattamento dei dati personali"
+      },
+      "error": {
+        "title": "Errore nell'invio della richiesta",
+        "message": "Si è verificato un problema. Riprova o contattaci direttamente.",
+        "retry": "Riprova"
+      }
+    },
+    "success": {
+      "title": "Richiesta Inviata!",
+      "message": "Un nostro esperto ti contatterà entro 24 ore per la tua consulenza gratuita."
+    }
+  },
+  "languageSwitcher": {
+    "label": "Cambia lingua",
+    "languages": {
+      "cs": "Čeština",
+      "en": "English",
+      "it": "Italiano"
+    }
+  },
+  "testimonials": {
+    "title": "Cosa Dicono i Nostri Clienti",
+    "subtitle": "Scopri le esperienze delle aziende che hanno ripreso il controllo del loro marketing digitale con QuickFy",
+    "previousTestimonial": "Testimonianza precedente",
+    "nextTestimonial": "Prossima testimonianza",
+    "goToTestimonial": "Vai alla testimonianza",
+    "trustIndicators": {
+      "rating": "4.9/5 valutazione",
+      "clients": "500+ clienti soddisfatti",
+      "projects": "1200+ progetti di successo"
+    },
+    "testimonial1": {
+      "name": "Marco Rossi",
+      "role": "Titolare",
+      "company": "Ristorante La Trattoria",
+      "content": "Prima di QuickFy, non capivo nulla di Google Analytics. Ora ho una dashboard chiara che mi dice subito come sta andando il sito. Il modulo per le recensioni è fantastico: rispondo a tutti in un minuto!"
+    },
+    "testimonial2": {
+      "name": "Giulia Bianchi",
+      "role": "Consulente Finanziario",
+      "company": "Studio Bianchi",
+      "content": "QuickFy mi ha restituito il tempo. Invece di perdere ore ad analizzare dati, mi concentro sui clienti. L'interfaccia è pulita, semplice e mi dà esattamente le informazioni di cui ho bisogno per crescere."
+    },
+    "testimonial3": {
+      "name": "Alessandro Ferrari",
+      "role": "CEO",
+      "company": "LogiTech Solutions",
+      "content": "Usiamo il piano PRO e il chatbot sul nostro sito ha aumentato i lead del 40%. Il Social Hub ci dà idee costanti per nuovi contenuti. È come avere un team marketing AI che lavora per noi 24/7."
+    },
+    "testimonial4": {
+      "name": "Laura Martini",
+      "role": "Marketing Manager",
+      "company": "EcoStyle Fashion",
+      "content": "Con QuickFy ho finalmente capito quali campagne funzionano davvero. La dashboard mi dice subito dove investire e il modulo recensioni mi ha fatto risparmiare 10 ore a settimana. ROI aumentato del 30%."
+    },
+    "testimonial5": {
+      "name": "Simone Verdi",
+      "role": "Digital Marketing Specialist",
+      "company": "MediaPro Milano",
+      "content": "L'Analytics di QuickFy ha trasformato il modo in cui gestiamo i clienti. Reportistica automatica, dati chiari e actionable. I nostri clienti sono più soddisfatti e noi lavoriamo meglio."
+    }
+  },
+  "logos": {
+    "title": "Aziende come la tua si fidano di noi ogni giorno",
+    "description": "Unisciti a {count}+ professionisti e PMI che si affidano a QuickFy per la loro crescita digitale"
+  },
+  "roadmap": {
+    "title": "Il nostro piano di",
+    "titleHighlight": "sviluppo",
+    "subtitle": "Innovazione continua basata sul feedback dei clienti e sulle esigenze del mercato",
+    "cta": "Alimentato dal feedback dei clienti",
+    "items": [
+      {
+        "quarter": "Q4 2025",
+        "status": "current",
+        "title": "Lancio e Consolidamento",
+        "keyAction": "Lancio ufficiale del prodotto sul mercato",
+        "features": [
+          "Piano Starter (Analytics) a 19€/mese",
+          "Add-on Gestione Pubblicità (commissione 5%)",
+          "Lancio ufficiale sul mercato"
+        ]
+      },
+      {
+        "quarter": "Q1 2026",
+        "status": "future",
+        "title": "Primo Potenziamento",
+        "keyAction": "Rilascio del primo upgrade gratuito per il piano base e avvio simultaneo dello sviluppo dei moduli più complessi",
+        "features": [
+          "Upgrade \"Starter AI\" gratuito per clienti Piano Starter (Alert e Riepiloghi AI)",
+          "Inizio Sviluppo: Modulo di Comunicazione e Piano Plus",
+          "Miglioramenti continui basati sul feedback dei clienti"
+        ]
+      },
+      {
+        "quarter": "Q2 2026",
+        "status": "future",
+        "title": "Modulo Comunicazione",
+        "keyAction": "Lancio del primo grande add-on a pagamento, creando un nuovo flusso di ricavi",
+        "features": [
+          "Add-on: Modulo di Comunicazione Integrata a 19€/utente/mese",
+          "Gestione centralizzata di tutti i canali di comunicazione",
+          "Automazione avanzata delle comunicazioni"
+        ]
+      },
+      {
+        "quarter": "H2 2026",
+        "status": "future",
+        "title": "Piani Avanzati",
+        "keyAction": "Completamento dell'offerta a tre livelli, posizionando QuickFy come una suite completa",
+        "features": [
+          "Q3 2026: Piano Plus (Reputation) a 39€/mese",
+          "Q4 2026: Piano Pro (Growth Suite) a 79€/mese",
+          "Include Social Hub e Chatbot Marketing"
+        ]
+      }
+    ]
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "homeAria": "Torna alla homepage",
+    "currentPageAria": "Pagina corrente",
+    "navigationAria": "Navigazione breadcrumb",
+    "separator": "Vai a"
+  },
+  "footer": {
+    "description": "QuickFy - La piattaforma intelligente che trasforma la complessità del marketing digitale in strumenti semplici, potenti e accessibili per PMI e professionisti.",
+    "contact": {
+      "emailAria": "Invia email a QuickFy"
+    },
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Termini e Condizioni Generali",
+      "contact": "Contatti"
+    },
+    "copyright": "© 2024 QuickFy. Tutti i diritti riservati."
+  },
+  "cookieConsent": {
+    "title": "Utilizziamo i cookie per una migliore esperienza",
+    "description": "Utilizziamo i cookie per il funzionamento essenziale del sito, l'analisi del traffico e per migliorare la tua esperienza. Puoi scegliere quali tipi di cookie consentire.",
+    "acceptAll": "Accetta Tutti",
+    "rejectAll": "Rifiuta Tutti",
+    "managePreferences": "Gestisci Preferenze",
+    "savePreferences": "Salva Preferenze",
+    "close": "Chiudi",
+    "legalNotice": "Maggiori informazioni sull'utilizzo dei cookie sono disponibili nella nostra",
+    "categories": {
+      "necessary": "Necessari",
+      "analytics": "Analitici",
+      "marketing": "Marketing",
+      "preferences": "Preferenze",
+      "alwaysEnabled": "Sempre abilitati",
+      "optional": "Opzionali",
+      "necessaryDescription": "Questi cookie sono essenziali per il corretto funzionamento del sito web e non possono essere disabilitati. Sono solitamente impostati in risposta ad azioni dell'utente come l'impostazione della lingua o l'accesso.",
+      "analyticsDescription": "I cookie analitici ci aiutano a capire come i visitatori interagiscono con il sito web, forniscono informazioni sul traffico e ci aiutano a migliorare le prestazioni del sito.",
+      "marketingDescription": "I cookie di marketing vengono utilizzati per personalizzare gli annunci e fornire contenuti più rilevanti. Possono essere utilizzati per misurare l'efficacia delle campagne pubblicitarie.",
+      "preferencesDescription": "I cookie delle preferenze ricordano le tue scelte e personalizzano la tua esperienza, come la lingua preferita o le impostazioni dell'interfaccia utente."
+    },
+    "preferences": {
+      "title": "Impostazioni Cookie",
+      "subtitle": "Gestisci le tue preferenze sui cookie e sulla privacy",
+      "introduction": "Puoi scegliere quali tipi di cookie consentire sul nostro sito. Le tue scelte saranno rispettate e memorizzate per 1 anno."
+    }
+  }
+}
