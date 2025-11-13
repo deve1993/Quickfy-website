@@ -1,24 +1,15 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { BarChart3, Mail, Phone, MapPin, ArrowUp, Linkedin, Twitter, Send, Users, Shield, CheckCircle } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { BarChart3, Mail, Phone, MapPin, ArrowUp, Linkedin, Twitter } from 'lucide-react';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { PhoneLink } from '../ui/PhoneLink';
-import { useState } from 'react';
-import { trackNewsletterSignup } from '@/lib/analytics';
-import { useToastHelpers } from '@/components/ui/toast';
-import { useMotionPreference } from '@/hooks/usePerformance';
 
 export function Footer() {
   const t = useTranslations();
   const pathname = usePathname();
-  const [email, setEmail] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const { success, error } = useToastHelpers();
-  const shouldReduceMotion = useMotionPreference();
 
   // Check if we're on the home page (any locale home page)
   const isHomePage = pathname === '/' || pathname?.match(/^\/[a-z]{2}$/);
@@ -47,45 +38,6 @@ export function Footer() {
     } else {
       // If we're not on home page, navigate to home page with hash
       window.location.href = `/#${sectionId}`;
-    }
-  };
-
-  const handleNewsletterSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      // Simulate submission (replace with actual API call)
-      await new Promise(resolve => setTimeout(resolve, 1000));
-
-      // Track successful newsletter signup
-      trackNewsletterSignup('footer');
-
-      // Set success status
-      setSubmitStatus('success');
-
-      // Show success toast
-      success(
-        t('footer.newsletter.success.title'),
-        t('footer.newsletter.success.message', { email })
-      );
-
-      // Reset email after a delay
-      setTimeout(() => {
-        setEmail('');
-      }, 3000);
-    } catch (err) {
-      // Set error status
-      setSubmitStatus('error');
-
-      // Show error toast
-      error(
-        t('footer.newsletter.error.title'),
-        t('footer.newsletter.error.message')
-      );
-      console.error('Newsletter signup failed:', err);
-    } finally {
-      setIsSubmitting(false);
     }
   };
 

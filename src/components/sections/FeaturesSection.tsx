@@ -7,6 +7,7 @@ import { BarChart3, Target, Users, LucideIcon } from 'lucide-react';
 import { Check } from 'lucide-react';
 import Image from 'next/image';
 import { BrowserFrame } from '@/components/ui/BrowserFrame';
+import { useIsMobile } from '@/hooks/useMediaQuery';
 
 interface Feature {
   title: string;
@@ -28,32 +29,35 @@ interface FeatureItemProps {
 const FeatureItem = memo(function FeatureItem({ feature, index, isReverse }: FeatureItemProps) {
   const Icon = feature.icon;
   const screenshotClass = `feature-screenshot feature-screenshot-${feature.theme}`;
+  const isMobile = useIsMobile();
 
-  // Parallax effect for screenshot - Enhanced for more visibility
+  // Parallax effect for screenshot - Enhanced for more visibility (disabled on mobile)
   const screenshotRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: screenshotRef,
     offset: ["start end", "end start"]
   });
-  const y = useTransform(scrollYProgress, [0, 1], [150, -150]);
-  const scale = useTransform(scrollYProgress, [0, 1], [0.9, 1.1]);
-  const rotateX = useTransform(scrollYProgress, [0, 0.5, 1], [8, 0, -8]);
-  const rotateY = useTransform(scrollYProgress, [0, 0.5, 1], [isReverse ? -5 : 5, 0, isReverse ? 5 : -5]);
 
-  // Parallax effect for content (counter-movement) - Intelligent text parallax
+  // Disable parallax on mobile for better performance
+  const y = useTransform(scrollYProgress, [0, 1], isMobile ? [0, 0] : [150, -150]);
+  const scale = useTransform(scrollYProgress, [0, 1], isMobile ? [1, 1] : [0.9, 1.1]);
+  const rotateX = useTransform(scrollYProgress, [0, 0.5, 1], isMobile ? [0, 0, 0] : [8, 0, -8]);
+  const rotateY = useTransform(scrollYProgress, [0, 0.5, 1], isMobile ? [0, 0, 0] : [isReverse ? -5 : 5, 0, isReverse ? 5 : -5]);
+
+  // Parallax effect for content (counter-movement) - Intelligent text parallax (disabled on mobile)
   const contentRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress: contentScrollProgress } = useScroll({
     target: contentRef,
     offset: ["start end", "end start"]
   });
 
-  // Counter-movement: text moves opposite to screenshot with less intensity
-  const iconY = useTransform(contentScrollProgress, [0, 1], [-30, 30]);
-  const iconRotate = useTransform(contentScrollProgress, [0, 1], [-5, 5]);
-  const titleY = useTransform(contentScrollProgress, [0, 1], [-50, 50]);
-  const titleScale = useTransform(contentScrollProgress, [0, 0.5, 1], [0.98, 1, 1.02]);
-  const descriptionY = useTransform(contentScrollProgress, [0, 1], [-40, 40]);
-  const benefitsY = useTransform(contentScrollProgress, [0, 1], [-30, 30]);
+  // Counter-movement: text moves opposite to screenshot with less intensity (disabled on mobile)
+  const iconY = useTransform(contentScrollProgress, [0, 1], isMobile ? [0, 0] : [-30, 30]);
+  const iconRotate = useTransform(contentScrollProgress, [0, 1], isMobile ? [0, 0] : [-5, 5]);
+  const titleY = useTransform(contentScrollProgress, [0, 1], isMobile ? [0, 0] : [-50, 50]);
+  const titleScale = useTransform(contentScrollProgress, [0, 0.5, 1], isMobile ? [1, 1, 1] : [0.98, 1, 1.02]);
+  const descriptionY = useTransform(contentScrollProgress, [0, 1], isMobile ? [0, 0] : [-40, 40]);
+  const benefitsY = useTransform(contentScrollProgress, [0, 1], isMobile ? [0, 0] : [-30, 30]);
 
   return (
     <motion.div

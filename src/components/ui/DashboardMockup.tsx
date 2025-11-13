@@ -5,6 +5,7 @@ import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import Image from 'next/image';
 import { BarChart3, Users, TrendingUp } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useIsMobile } from '@/hooks/useMediaQuery';
 
 interface DashboardMockupProps {
   imageSrc?: string;
@@ -25,6 +26,7 @@ export function DashboardMockup({
 }: DashboardMockupProps) {
   const [isHovered, setIsHovered] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const isMobile = useIsMobile();
 
   // Mouse position for tilt effect
   const mouseX = useMotionValue(0);
@@ -88,8 +90,8 @@ export function DashboardMockup({
     return () => mediaQuery.removeEventListener('change', handleChange);
   }, []);
 
-  // Disable animations if user prefers reduced motion
-  const shouldAnimate = !prefersReducedMotion;
+  // Disable animations if user prefers reduced motion OR on mobile
+  const shouldAnimate = !prefersReducedMotion && !isMobile;
 
   return (
     <div
