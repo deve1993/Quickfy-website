@@ -473,7 +473,7 @@ export function Header() {
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.3 }}
                   className="md:hidden fixed inset-0 bg-slate-900/20 backdrop-blur-sm z-[45] pointer-events-none"
-                  style={{ top: '72px' }}
+                  style={{ top: '68px' }}
                   aria-hidden="true"
                 />
 
@@ -485,22 +485,25 @@ export function Header() {
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                  className="md:hidden fixed left-0 right-0 mx-3 bg-white rounded-2xl border border-slate-200 shadow-2xl z-[60] max-h-[calc(100vh-100px)] overflow-y-auto pointer-events-auto"
-                  style={{ top: '80px' }}
+                  transition={{ duration: 0.2, ease: "easeOut" }}
+                  className="md:hidden fixed left-0 right-0 mx-2 sm:mx-3 bg-white rounded-2xl border border-slate-200 shadow-2xl z-[60] max-h-[min(85vh,calc(100vh-88px))] overflow-y-auto pointer-events-auto"
+                  style={{
+                    top: '76px',
+                    paddingBottom: 'max(1rem, env(safe-area-inset-bottom))'
+                  }}
                   role="menu"
                   aria-label={t('mobileMenu')}
                   aria-orientation="vertical"
                 >
-                  <div className="flex flex-col p-5">
+                  <div className="flex flex-col px-4 py-4">
                     {/* Enhanced CTA button for mobile */}
                     <motion.button
                       onClick={ctaConfig.action}
                       initial={{ opacity: 0, scale: 0.95 }}
                       animate={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: 0.1, duration: 0.3 }}
+                      transition={{ delay: 0.05, duration: 0.2 }}
                       whileTap={{ scale: 0.97 }}
-                      className="mb-5 min-h-[56px] px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold text-center text-base shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 active:scale-[0.97] touch-manipulation transition-all duration-300"
+                      className="mb-4 min-h-[56px] px-6 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold text-center text-base shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 active:scale-[0.97] touch-manipulation transition-all duration-300"
                       role="menuitem"
                       aria-label={t('startNowAria')}
                       tabIndex={isMenuOpen ? 0 : -1}
@@ -509,24 +512,24 @@ export function Header() {
                     </motion.button>
 
                     {/* Divider with gradient */}
-                    <div className="h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent mb-4" />
+                    <div className="h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent mb-3" />
 
                     {/* Products section in mobile */}
-                    <div className="mb-4">
-                      <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider px-4 mb-3">
+                    <div className="mb-3">
+                      <p className="text-sm font-semibold text-slate-700 px-3 mb-2">
                         {t('products')}
                       </p>
-                      <div className="space-y-2">
+                      <div className="space-y-1.5">
                         {products.map((product, index) => (
                           <motion.button
                             key={product.id}
                             onClick={() => handleProductClick(product)}
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.15 + (index * 0.05), duration: 0.3 }}
-                            className={`w-full text-left min-h-[56px] px-4 py-3 rounded-xl transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset active:scale-[0.98] touch-manipulation ${
+                            transition={{ delay: 0.08 + (index * 0.03), duration: 0.2 }}
+                            className={`w-full text-left min-h-[52px] px-3 py-2.5 rounded-xl transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset active:scale-[0.98] touch-manipulation ${
                               product.isActive
-                                ? 'bg-gradient-to-r from-blue-50 to-purple-50 border-l-4 border-blue-600 text-blue-700'
+                                ? 'bg-gradient-to-r from-blue-100 to-purple-100 border-l-4 border-blue-600 text-blue-800 pl-4'
                                 : 'text-slate-700 hover:bg-slate-50 active:bg-slate-100'
                             }`}
                             whileTap={{ scale: 0.98 }}
@@ -535,18 +538,18 @@ export function Header() {
                           >
                             <div className="flex items-center justify-between">
                               <div className="flex-1">
-                                <div className="flex items-center gap-2 mb-1">
-                                  <span className="font-semibold text-base">{product.title}</span>
+                                <div className="flex items-center gap-2 mb-0.5">
+                                  <span className="font-semibold text-sm">{product.title}</span>
                                 </div>
-                                <p className="text-xs text-slate-600 leading-relaxed">{product.subtitle}</p>
+                                <p className="text-sm text-slate-700 leading-snug">{product.subtitle}</p>
                               </div>
                               {product.isActive && (
                                 <motion.div
                                   initial={{ scale: 0 }}
                                   animate={{ scale: 1 }}
-                                  transition={{ delay: 0.2 }}
+                                  transition={{ delay: 0.15 }}
                                 >
-                                  <Check className="w-5 h-5 text-blue-600 flex-shrink-0 ml-3" />
+                                  <Check className="w-4 h-4 text-blue-700 flex-shrink-0 ml-2" />
                                 </motion.div>
                               )}
                             </div>
@@ -556,10 +559,10 @@ export function Header() {
                     </div>
 
                     {/* Divider with gradient */}
-                    <div className="h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent my-4" />
+                    <div className="h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent my-3" />
 
                     {/* Navigation items */}
-                    <div className="space-y-2">
+                    <div className="space-y-1.5">
                       {getNavigationItems.filter(item => item.type !== 'dropdown').map((item, index) => (
                         <motion.button
                           key={item.id}
@@ -569,11 +572,11 @@ export function Header() {
                           onClick={() => handleNavigation(item)}
                           initial={{ opacity: 0, x: -20 }}
                           animate={{ opacity: 1, x: 0 }}
-                          transition={{ delay: 0.2 + (index * 0.05), duration: 0.3 }}
+                          transition={{ delay: 0.12 + (index * 0.03), duration: 0.2 }}
                           whileTap={{ scale: 0.98 }}
-                          className={`text-left min-h-[56px] w-full px-4 py-4 rounded-xl transition-all duration-200 font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset active:scale-[0.98] touch-manipulation ${
+                          className={`text-left min-h-[52px] w-full px-3 py-3 rounded-xl transition-all duration-200 font-semibold text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset active:scale-[0.98] touch-manipulation ${
                             activeSection === item.id && item.type === 'scroll'
-                              ? 'bg-gradient-to-r from-blue-50 to-purple-50 text-blue-700 shadow-sm'
+                              ? 'bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 shadow-sm'
                               : 'text-slate-700 hover:bg-slate-50 active:bg-slate-100 hover:text-blue-600'
                           }`}
                           role="menuitem"
