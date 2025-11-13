@@ -456,19 +456,27 @@ export function Header() {
           <AnimatePresence>
             {isMenuOpen && (
               <>
-                {/* Backdrop Overlay - Fixed positioning */}
+                {/* Backdrop Overlay - Click area that closes menu */}
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="md:hidden fixed inset-0 bg-slate-900/20 backdrop-blur-sm z-[45]"
-                  style={{ top: '72px' }} // Start below header
-                  onClick={() => setIsMenuOpen(false)}
+                  className="md:hidden fixed inset-0 z-[45]"
+                  style={{ top: '72px' }}
                   aria-hidden="true"
-                />
+                >
+                  {/* Visual backdrop with blur - pointer-events-none so clicks pass through to clickable area */}
+                  <div className="absolute inset-0 bg-slate-900/20 backdrop-blur-sm pointer-events-none" />
 
-                {/* Mobile Menu - Fixed positioning */}
+                  {/* Clickable area that closes menu - covers everything */}
+                  <div
+                    className="absolute inset-0 pointer-events-auto"
+                    onClick={() => setIsMenuOpen(false)}
+                  />
+                </motion.div>
+
+                {/* Mobile Menu - Fixed positioning with higher z-index */}
                 <motion.div
                   ref={mobileMenuRef}
                   id="mobile-menu"
@@ -477,8 +485,8 @@ export function Header() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3, ease: "easeOut" }}
-                  className="md:hidden fixed left-0 right-0 mx-3 bg-white rounded-2xl border border-slate-200 shadow-2xl z-[60] max-h-[calc(100vh-100px)] overflow-y-auto"
-                  style={{ top: '80px' }} // Position below header
+                  className="md:hidden fixed left-0 right-0 mx-3 bg-white rounded-2xl border border-slate-200 shadow-2xl z-[60] max-h-[calc(100vh-100px)] overflow-y-auto pointer-events-auto"
+                  style={{ top: '80px' }}
                   role="menu"
                   aria-label={t('mobileMenu')}
                   aria-orientation="vertical"
