@@ -1,0 +1,39 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#eff6ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f3e8ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fdf2f8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <!-- QuickFy Logo Text -->
+  <text x="600" y="220" font-family="Arial, sans-serif" font-size="96" font-weight="bold" text-anchor="middle" fill="#1e3a8a">
+    QuickFy
+  </text>
+
+  <!-- Tagline -->
+  <text x="600" y="300" font-family="Arial, sans-serif" font-size="36" text-anchor="middle" fill="#475569">
+    Marketing Automation Platform
+  </text>
+
+  <!-- Value Props -->
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#64748b">
+    ✓ Risparmia 15+ ore al mese
+  </text>
+  <text x="600" y="430" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#64748b">
+    ✓ +35% ROI garantito
+  </text>
+  <text x="600" y="480" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#64748b">
+    ✓ Analytics in tempo reale
+  </text>
+
+  <!-- CTA -->
+  <rect x="450" y="520" width="300" height="60" rx="30" fill="#2563eb"/>
+  <text x="600" y="560" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="white">
+    Prova Gratis
+  </text>
+</svg>

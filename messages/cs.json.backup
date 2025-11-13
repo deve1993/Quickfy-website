@@ -1,0 +1,653 @@
+{
+  "meta": {
+    "title": "Marketing Automatizace SME | CRM pro malé firmy - QuickFy",
+    "description": "Digitální marketing analýza a CRM pro malé firmy. Marketing automatizace SME s 35% lepším ROI. Zjednodušte svůj marketing s QuickFy Performance Suite.",
+    "locale": "cs"
+  },
+  "navigation": {
+    "features": "Funkce",
+    "benefits": "Výhody",
+    "pricing": "Ceny",
+    "testimonials": "Reference",
+    "contact": "Kontakt",
+    "startNow": "Začněte nyní",
+    "logoAria": "QuickFy - Vrátit se na začátek stránky",
+    "startNowAria": "Začněte nyní - Jít na kontaktní formulář",
+    "sectionAria": "Jít na sekci {section}",
+    "openMenu": "Otevřít menu",
+    "closeMenu": "Zavřít menu",
+    "mobileMenu": "Mobilní menu"
+  },
+  "hero": {
+    "headline": "Marketing automatizace SME pro",
+    "headlineHighlight": "digitální marketing analýza a růst",
+    "subheadline": "CRM pro malé firmy s integrovanou marketing automatizací. Transformujte digitální marketing analýzu na strategický růst s 35% lepším ROI pro SME.",
+    "cta": {
+      "primary": "Vyzkoušet Marketing Automatizaci",
+      "secondary": "Demo CRM pro SME"
+    },
+    "metrics": {
+      "hoursSaved": "15+ Ušetřených hodin týdně",
+      "roiImprovement": "+35% Zlepšení ROI",
+      "clarity": "100% Jasnost ve Výsledcích"
+    },
+    "typewriter": [
+      "strategická rozhodnutí",
+      "udržitelný růst",
+      "měřitelné výsledky",
+      "digitální úspěch"
+    ]
+  },
+  "features": {
+    "title": "Marketing Automatizace SME:",
+    "titleHighlight": "3 Klíčové Moduly",
+    "subtitle": "CRM pro malé firmy s integrovanou digitální marketing analýzou - všechno na jednom místě pro efektivní marketing automatizaci",
+    "items": [
+      {
+        "id": "data-intelligence",
+        "title": "CRM Analytics & Digitální Marketing Analýza",
+        "description": "Centralizovaný CRM pro malé firmy s pokročilou digitální marketing analýzou. Všechny marketingové kanály na jednom místě pro SME.",
+        "benefits": [
+          "Jednotný CRM dashboard pro SME",
+          "Automatizovaná digitální marketing analýza",
+          "Marketing automatizace s jasným ROI"
+        ],
+        "icon": "BarChart3"
+      },
+      {
+        "id": "performance-ads",
+        "title": "Marketing Automatizace & ROI Optimalizace",
+        "description": "Pokročilá marketing automatizace SME s inteligentní optimalizací kampaní. CRM pro malé firmy s automatizovaným rozpočtovým managementem.",
+        "benefits": [
+          "Automatizace marketingových kampaní pro SME",
+          "Real-time digitální marketing analýza",
+          "35% vyšší ROI díky automatizaci"
+        ],
+        "icon": "Target"
+      },
+      {
+        "id": "client-platform",
+        "title": "Cloudové CRM pro Malé Firmy",
+        "description": "Zabezpečené cloudové CRM pro malé firmy s personalizovanými dashboardy pro marketing automatizaci. 24/7 přístup k digitální marketing analýze.",
+        "benefits": [
+          "24/7 přístup k CRM pro SME",
+          "Personalizované marketing automatizace dashboardy",
+          "Kompletní transparentnost digitální marketing analýzy"
+        ],
+        "icon": "Users"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "Proč malé firmy volí QuickFy",
+    "titleHighlight": "Marketing Automatizaci",
+    "subtitle": "Prokazatelné výsledky CRM pro malé firmy s integrovanou digitální marketing analýzou a automatizací procesů",
+    "items": [
+      {
+        "title": "Vrácený Čas",
+        "description": "Týdenní hodiny získané automatizací reportů",
+        "value": "15+",
+        "unit": "hodin/týden"
+      },
+      {
+        "title": "CRM Efektivita pro SME",
+        "description": "Rozhodnutí založená na digitální marketing analýze a CRM datech pro malé firmy",
+        "value": "100%",
+        "unit": "transparentnost"
+      },
+      {
+        "title": "Marketing Automatizace ROI",
+        "description": "Průměrný nárůst ROI díky marketing automatizaci SME a CRM optimalizaci",
+        "value": "35%",
+        "unit": "nárůst ROI"
+      },
+      {
+        "title": "Míra Udržení Klientů",
+        "description": "Spokojenost a důvěra našich klientů je naší prioritou.",
+        "value": "92%",
+        "unit": "míra udržení"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "CRM pro Malé Firmy - Dostupné Ceny",
+    "subtitle": "Marketing automatizace SME s transparentními cenami. Digitální marketing analýza a CRM řešení přizpůsobené malým firmám.",
+    "perfectFor": "Perfektní pro:",
+    "features": "Funkce:",
+    "plans": {
+      "analytics": {
+        "name": "ANALYTICS",
+        "price": "19",
+        "period": "měsíc",
+        "badge": "DOPORUČENÉ",
+        "perfectFor": "Perfektní pro: SME, které potřebují základní CRM pro malé firmy s jednoduchou digitální marketing analýzou bez složitosti.",
+        "features": {
+          "0": "Základní CRM pro malé firmy",
+          "1": "Marketing automatizace SME - základní",
+          "2": "Digitální marketing analýza dashboard",
+          "3": "CRM podpora pro SME"
+        },
+        "cta": "Začít hned"
+      },
+      "plus": {
+        "name": "PLUS (Reputation)",
+        "price": "39",
+        "period": "měsíc",
+        "badge": "COMING SOON",
+        "perfectFor": "Perfektní pro: Místní podniky, restaurace, hotely a profesionály, pro které jsou online recenze životně důležité.",
+        "features": {
+          "0": "Všechny funkce plánu ANALYTICS",
+          "1": "Modul správy recenzí",
+          "2": "Zjednodušené odpovědi"
+        },
+        "cta": "Připravujeme"
+      },
+      "pro": {
+        "name": "PRO (Social Hub)",
+        "price": "69",
+        "period": "měsíč",
+        "badge": "COMING SOON",
+        "perfectFor": "Perfektní pro: Firmy, které aktivně investují do sociálních médií a chtějí jediné místo pro sledování celé své online přítomnosti.",
+        "features": {
+          "0": "Všechny funkce plánu PLUS",
+          "1": "Social Hub modul",
+          "2": "Dashboard sociálních médií",
+          "3": "(Budoucnost) Možnost plánování příspěvků"
+        },
+        "cta": "Připravujeme"
+      }
+    },
+    "consultation": {
+      "title": "Nevíte, který plán je pro vás správný?",
+      "subtitle": "Rezervujte si bezplatnou 30minutovou konzultaci a objevte řešení, které nejlépe vyhovuje vašim potřebám.",
+      "cta": "Bezplatná konzultace",
+      "formMessage": "Dobrý den! Rád bych si rezervoval bezplatnou konzultaci, abych zjistil, který plán QuickFy nejlépe vyhovuje potřebám mé firmy. "
+    }
+  },
+  "contact": {
+    "title": "Připraveni na Marketing Automatizaci",
+    "titleHighlight": "pro vaši SME?",
+    "subtitle": "Začněte s CRM pro malé firmy a digitální marketing analýzou ještě dnes. Bezplatná konzultace marketing automatizace SME.",
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Jméno",
+          "placeholder": "Vaše jméno"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Váš firemní email"
+        },
+        "company": {
+          "label": "Společnost",
+          "placeholder": "Název společnosti"
+        },
+        "phone": {
+          "label": "Telefon",
+          "placeholder": "Telefonní číslo"
+        },
+        "message": {
+          "label": "Zpráva",
+          "placeholder": "Popište své současné marketingové výzvy..."
+        }
+      },
+      "submit": "Konzultace Marketing Automatizace SME",
+      "submitting": "Odesílání...",
+      "submitAnother": "Odeslat Další Žádost",
+      "ariaLabel": "Kontaktní formulář QuickFy",
+      "privacy": "Souhlasím se zpracováním osobních údajů podle Zásad ochrany osobních údajů",
+      "validation": {
+        "name": "Jméno musí obsahovat alespoň 2 znaky",
+        "email": "Zadejte platnou e-mailovou adresu",
+        "company": "Název společnosti musí obsahovat alespoň 2 znaky",
+        "phone": "Telefonní číslo musí obsahovat alespoň 10 číslic",
+        "message": "Zpráva musí obsahovat alespoň 10 znaků",
+        "privacy": "Musíte souhlasit se zpracováním osobních údajů"
+      },
+      "error": {
+        "title": "Chyba při odesílání žádosti",
+        "message": "Došlo k chybě. Zkuste to znovu nebo nás kontaktujte přímo.",
+        "retry": "Zkusit znovu"
+      }
+    },
+    "success": {
+      "title": "Žádost Odeslána!",
+      "message": "Budeme vás kontaktovat do 24 hodin pro naplánování vaší bezplatné konzultace."
+    }
+  },
+  "languageSwitcher": {
+    "label": "Změnit jazyk",
+    "languages": {
+      "cs": "Čeština",
+      "en": "English",
+      "it": "Italiano"
+    }
+  },
+  "testimonials": {
+    "title": "Co o nás říkají naši klienti",
+    "subtitle": "Přečtěte si zkušenosti firem, které s námi automatizovaly své procesy a dosáhly výjimečných výsledků",
+    "previousTestimonial": "Předchozí reference",
+    "nextTestimonial": "Další reference", 
+    "goToTestimonial": "Přejít na referenci",
+    "trustIndicators": {
+      "rating": "4.9/5 hodnocení",
+      "clients": "500+ spokojených klientů",
+      "projects": "1200+ úspěšných projektů"
+    },
+    "testimonial1": {
+      "name": "Jan Novák",
+      "role": "Provozní ředitel",
+      "company": "TechCorp Praha",
+      "content": "QuickFy nám pomohl snížit čas strávený administrativou o 60%. Naše týmy se teď mohou soustředit na strategické úkoly místo rutinních činností. ROI bylo dosaženo již za 3 měsíce."
+    },
+    "testimonial2": {
+      "name": "Marie Svobodová",
+      "role": "IT Manažerka",
+      "company": "Finanza Solutions",
+      "content": "Integrace QuickFy do našich systémů byla bezproblémová. Automatizace finančních reportů nám ušetří 20 hodin týdně a eliminovala lidské chyby. Rozhodně doporučujeme."
+    },
+    "testimonial3": {
+      "name": "Petr Koukal",
+      "role": "Generální ředitel",
+      "company": "LogiFlow Czech",
+      "content": "S QuickFy jsme optimalizovali celý supply chain. Náklady na logistiku se snížily o 35% a efektivita vzrostla o 45%. Nejlepší investice, kterou jsme za poslední roky udělali."
+    },
+    "testimonial4": {
+      "name": "Anna Horáková",
+      "role": "Vedoucí HR",
+      "company": "PeopleFirst s.r.o.",
+      "content": "QuickFy automatizoval náš HR proces od náboru po onboarding. Čas na zpracování nových zaměstnanců se zkrátil z týdnů na dny. Zaměstnanci i manažeři jsou mnohem spokojenější."
+    },
+    "testimonial5": {
+      "name": "Tomáš Černý",
+      "role": "Obchodní ředitel",
+      "company": "SalesBoost Praha",
+      "content": "Automatizace našeho sales funnelu přinesla 50% nárůst konverzí. QuickFy analyzuje zákaznická data v reálném čase a navrhuje optimální akce. Prodeje nikdy nebyly jednodušší."
+    }
+  },
+  "logos": {
+    "title": "Důvěřují nám přední společnosti po celém světě",
+    "description": "Připojte se k {count}+ společnostem, které důvěřují QuickFy pro svou marketingovou automatizaci"
+  },
+  "breadcrumb": {
+    "home": "Domů",
+    "homeAria": "Zpět na domovskou stránku",
+    "currentPageAria": "Aktuální stránka",
+    "navigationAria": "Navigace drobečkové cesty",
+    "separator": "Přejít na"
+  },
+  "footer": {
+    "description": "QuickFy - Marketing automatizace SME a CRM pro malé firmy. Digitální marketing analýza s prokazatelně vyšším ROI pro malé a střední podniky.",
+    "contact": {
+      "emailAria": "Odeslat email na QuickFy"
+    },
+    "links": {
+      "privacy": "Zásady ochrany osobních údajů",
+      "terms": "Všeobecné obchodní podmínky",
+      "contact": "Kontakt"
+    },
+    "copyright": "© 2024 QuickFy. Všechna práva vyhrazena."
+  },
+  "cookieConsent": {
+    "title": "Používáme cookies pro lepší zážitek",
+    "description": "Používáme cookies pro základní fungování webu, analýzu návštěvnosti a zlepšení vašeho zážitku. Můžete si vybrat, které typy cookies chcete povolit.",
+    "acceptAll": "Přijmout vše",
+    "rejectAll": "Odmítnout vše",
+    "managePreferences": "Spravovat předvolby",
+    "savePreferences": "Uložit předvolby",
+    "close": "Zavřít",
+    "legalNotice": "Více informací o používání cookies najdete v našich",
+    "categories": {
+      "necessary": "Nezbytné",
+      "analytics": "Analytické",
+      "marketing": "Marketingové",
+      "preferences": "Předvolby",
+      "alwaysEnabled": "Vždy povoleno",
+      "optional": "Volitelné",
+      "necessaryDescription": "Tyto cookies jsou nezbytné pro správné fungování webových stránek a nelze je zakázat. Obvykle se nastavují pouze v reakci na akce uživatele, jako je nastavení jazyka nebo přihlašování.",
+      "analyticsDescription": "Analytické cookies nám pomáhají porozumět tomu, jak návštěvníci interagují s webem, poskytují informace o návštěvnosti a pomáhají nám zlepšovat výkon stránek.",
+      "marketingDescription": "Marketingové cookies se používají k personalizaci reklam a poskytování relevantnějšího obsahu. Mohou být použity k měření účinnosti reklamních kampaní.",
+      "preferencesDescription": "Cookies předvoleb si zapamatují vaše volby a personalizují váš zážitek, jako je preferovaný jazyk nebo nastavení uživatelského rozhraní."
+    },
+    "preferences": {
+      "title": "Nastavení cookies",
+      "subtitle": "Spravujte své preference týkající se cookies a ochrany soukromí",
+      "introduction": "Můžete si zvolit, které typy cookies chcete na našich stránkách povolit. Vaše volby budou respektovány a uloženy na 1 rok."
+    }
+  },
+  "privacyPolicy": {
+    "meta": {
+      "title": "Zásady ochrany osobních údajů - QuickFy",
+      "description": "Zásady ochrany osobních údajů pro QuickFy Performance Suite. Transparentní informace o zpracování vašich osobních údajů podle GDPR."
+    },
+    "title": "Zásady ochrany osobních údajů FL1 s.r.o.",
+    "lastUpdated": "Poslední aktualizace: {date}",
+    "sections": {
+      "introduction": {
+        "title": "I. Úvod",
+        "content": "Tyto zásady ochrany osobních údajů (dále jen \"Zásady\") definují způsob, jakým společnost FL1 s.r.o., se sídlem Moskevská 1464/61, Vršovice, 101 00 Praha 10, IČO: 19990146, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, odd. C, vložka 398569 (dále jen \"Správce\" nebo \"QuickFy\"), shromažďuje, používá, uchovává a chrání osobní údaje uživatelů svých služeb."
+      },
+      "dataController": {
+        "title": "II. Správce osobních údajů",
+        "content": [
+          "Správcem osobních údajů podle nařízení GDPR je:",
+          "FL1 s.r.o.",
+          "Moskevská 1464/61, Vršovice, 101 00 Praha 10",
+          "IČO: 19990146",
+          "E-mail: info@quickfy.eu",
+          "Telefon: +420 775 113 732"
+        ]
+      },
+      "typesOfData": {
+        "title": "III. Jaké osobní údaje zpracováváme",
+        "content": [
+          "a) Identifikační údaje: jméno, příjmení, e-mailová adresa, telefonní číslo",
+          "b) Firemní údaje: název společnosti, pozice ve firmě, firemní adresa",
+          "c) Technické údaje: IP adresa, cookies, informace o zařízení a prohlížeči",
+          "d) Údaje o využívání služeb: statistiky používání, preference, nastavení",
+          "e) Komunikační údaje: obsah dotazů, korespondence, zpětná vazba"
+        ]
+      },
+      "purposes": {
+        "title": "IV. Účely zpracování osobních údajů",
+        "content": [
+          "Vaše osobní údaje zpracováváme za těmito účely:",
+          "a) Poskytování služeb QuickFy Performance Suite",
+          "b) Komunikace s uživateli a technická podpora",
+          "c) Zlepšování kvality a funkcionalit našich služeb",
+          "d) Marketingové účely (pouze se souhlasem)",
+          "e) Plnění zákonných povinností",
+          "f) Ochrana před podvody a zajištění bezpečnosti"
+        ]
+      },
+      "legalBasis": {
+        "title": "V. Právní základ pro zpracování",
+        "content": [
+          "Osobní údaje zpracováváme na základě:",
+          "a) Smlouvy - pro poskytování služeb a plnění smluvních závazků",
+          "b) Oprávněného zájmu - pro technické fungování služeb a jejich zlepšování",
+          "c) Souhlasu - pro marketingové účely a zasílání newsletterů",
+          "d) Zákonné povinnosti - pro archivaci a účetní evidence"
+        ]
+      },
+      "sharing": {
+        "title": "VI. Předávání údajů třetím stranám",
+        "content": [
+          "Vaše osobní údaje můžeme předávat:",
+          "a) Dodavatelům IT služeb a cloudových řešení",
+          "b) Partnerům pro analýzu a optimalizaci výkonu",
+          "c) Orgánům veřejné moci v případě zákonné povinnosti",
+          "d) Auditorům a právním poradcům",
+          "Všichni příjemci jsou vázáni mlčenlivostí a dodržováním GDPR."
+        ]
+      },
+      "internationalTransfer": {
+        "title": "VII. Mezinárodní přenos údajů",
+        "content": [
+          "V případě přenosu osobních údajů do třetích zemí zajišťujeme:",
+          "a) Přenos pouze do zemí s rozhodnutím o přiměřenosti EK",
+          "b) Použití standardních smluvních doložek schválených EK",
+          "c) Implementaci přiměřených záruk podle GDPR",
+          "d) Získání vašeho výslovného souhlasu v ostatních případech"
+        ]
+      },
+      "retention": {
+        "title": "VIII. Doba uchování údajů",
+        "content": [
+          "Osobní údaje uchováváme po dobu:",
+          "a) Trvání smluvního vztahu + 3 roky po jeho ukončení",
+          "b) Do odvolání souhlasu (marketingové účely)",
+          "c) Po dobu stanovenou zákonem (účetní doklady 10 let)",
+          "d) Po dobu nezbytnou pro uplatnění nároků (max. 3 roky)"
+        ]
+      },
+      "rights": {
+        "title": "IX. Vaše práva",
+        "content": [
+          "V souvislosti se zpracováním osobních údajů máte právo:",
+          "a) Na přístup k osobním údajům - získat informace o zpracování",
+          "b) Na opravu - požádat o opravu nepřesných údajů",
+          "c) Na výmaz (\"právo být zapomenut\") - za splnění zákonných podmínek",
+          "d) Na omezení zpracování - v případech stanovených GDPR",
+          "e) Na přenositelnost údajů - obdržet údaje ve strukturovaném formátu",
+          "f) Vznést námitku proti zpracování - zejména pro marketingové účely",
+          "g) Podat stížnost u dozorového orgánu - Úřad pro ochranu osobních údajů"
+        ]
+      },
+      "security": {
+        "title": "X. Bezpečnost údajů",
+        "content": [
+          "Implementujeme přiměřená technická a organizační opatření:",
+          "a) Šifrování dat při přenosu i ukládání",
+          "b) Pravidelné bezpečnostní audity a testování",
+          "c) Omezený přístup pouze autorizovaným osobám",
+          "d) Pravidelné školení zaměstnanců o ochraně údajů",
+          "e) Incident response plány pro případy narušení bezpečnosti",
+          "f) Pravidelné zálohování a obnovu dat"
+        ]
+      },
+      "cookies": {
+        "title": "XI. Cookies a sledovací technologie",
+        "content": [
+          "Na našich webových stránkách používáme:",
+          "a) Nezbytné cookies pro fungování webu",
+          "b) Analytické cookies pro měření návštěvnosti (Google Analytics)",
+          "c) Marketingové cookies (pouze se souhlasem)",
+          "d) Cookies pro personalizaci uživatelského prostředí",
+          "Cookies můžete spravovat v nastavení vašeho prohlížeče."
+        ]
+      },
+      "minors": {
+        "title": "XII. Ochrana nezletilých",
+        "content": [
+          "Naše služby nejsou určeny osobám mladším 16 let. Pokud se dozvíme, že jsme shromáždili osobní údaje od nezletilé osoby bez souhlasu rodičů, tyto údaje neprodleně vymažeme. Rodiče mohou kontaktovat naši zákaznickou podporu pro řešení těchto záležitostí."
+        ]
+      },
+      "changes": {
+        "title": "XIII. Změny těchto zásad",
+        "content": [
+          "Tyto Zásady mohou být aktualizovány v souladu s vývojem našich služeb a změnami právních předpisů. O významných změnách vás budeme informovat prostřednictvím:",
+          "a) E-mailového upozornění",
+          "b) Oznámení na našich webových stránkách",
+          "c) Oznámení přímo v aplikaci QuickFy",
+          "Pokračováním v používání našich služeb po změně Zásad vyjadřujete souhlas s aktualizovanými podmínkami."
+        ]
+      },
+      "contact": {
+        "title": "Kontakt",
+        "content": [
+          "Pro dotazy týkající se ochrany osobních údajů nás kontaktujte:",
+          "E-mail: privacy@quickfy.eu",
+          "Telefon: +420 775 113 732",
+          "Poštovní adresa: FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10",
+          "",
+          "Stížnosti můžete podat u dozorového orgánu:",
+          "Úřad pro ochranu osobních údajů",
+          "Pplk. Sochora 27, 170 00 Praha 7",
+          "Tel.: +420 234 665 111",
+          "E-mail: posta@uoou.cz"
+        ]
+      }
+    }
+  },
+  "termsAndConditions": {
+    "meta": {
+      "title": "Všeobecné obchodní podmínky - QuickFy",
+      "description": "Všeobecné obchodní podmínky pro QuickFy Performance Suite. Úplné smluvní podmínky a pravidla používání našich služeb."
+    },
+    "title": "Všeobecné obchodní podmínky FL1 s.r.o.",
+    "lastUpdated": "Poslední aktualizace: {date}",
+    "tableOfContents": {
+      "title": "Obsah",
+      "showToc": "Zobrazit obsah",
+      "hideToc": "Skrýt obsah"
+    },
+    "sections": {
+      "basicProvisions": {
+        "title": "I. Základní ustanovení",
+        "content": [
+          "1.1. Tyto všeobecné obchodní podmínky (dále jen \"VOP\") upravují vzájemná práva a povinnosti vzniklé na základě kupní smlouvy (dále jen \"kupní smlouva\") uzavřené prostřednictvím webového rozhraní umístěného na internetové adrese www.quickfy.eu (dále jen \"webové rozhraní\") mezi společností FL1 s.r.o., se sídlem Moskevská 1464/61, Vršovice, 101 00 Praha 10, IČO: 19990146, zapsanou v obchodním rejstříku vedeném Městským soudem v Praze, odd. C, vložka 398569 (dále jen \"prodávající\") a fyzickou osobou, která uzavírá smlouvu nesouvisející s její podnikatelskou činností jako spotřebitel, nebo v přímé souvislosti se svou podnikatelskou činností (dále jen \"kupující\").",
+          "1.2. Ustanovení odchylná od VOP je možné sjednat v kupní smlouvě. Odchylná ujednání v kupní smlouvě mají přednost před ustanoveními VOP.",
+          "1.3. Ustanovení VOP jsou nedílnou součástí kupní smlouvy. Kupní smlouva a VOP jsou sepsány v českém jazyce. Kupní smlouvu lze uzavřít v českém jazyce.",
+          "1.4. Znění VOP může prodávající měnit či doplňovat. Toto ustanovení neovlivňuje práva a povinnosti vzniklé po dobu účinnosti předchozího znění VOP."
+        ]
+      },
+      "userAccount": {
+        "title": "II. Uživatelský účet",
+        "content": [
+          "2.1. Na základě registrace kupujícího provedené ve webovém rozhraní může kupující přistupovat ke svému uživatelskému účtu. Ze svého uživatelského účtu může kupující provádět objednávání zboží (dále jen \"uživatelský účet\").",
+          "2.2. Při registraci do uživatelského účtu a při objednávání zboží je kupující povinen uvádět správně a pravdivě všechny údaje. Údaje uvedené v uživatelském účtu je kupující povinen při jakékoli jejich změně aktualizovat. Údaje uvedené kupujícím v uživatelském účtu a při objednávání zboží považuje prodávající za správné.",
+          "2.3. Přístup k uživatelskému účtu je zabezpečen uživatelským jménem a heslem. Kupující je povinen zachovávat mlčenlivost ohledně údajů potřebných pro přístup ke svému uživatelskému účtu.",
+          "2.4. Kupující nesmí umožnit využívání uživatelského účtu třetím osobám.",
+          "2.5. Prodávající může zrušit uživatelský účet, zejména v případě, kdy kupující svůj uživatelský účet déle jak 1 rok nevyužívá, či v případě, kdy kupující poruší své povinnosti z kupní smlouvy (zejména podmínky platby).",
+          "2.6. Kupující bere na vědomí, že uživatelský účet nemusí být dostupný nepřetržitě, zejména s ohledem na nutnou údržbu hardwarového a softwarového vybavení prodávajícího, popř. nutnou údržbu hardwarového a softwarového vybavení třetích osob."
+        ]
+      },
+      "contractConclusion": {
+        "title": "III. Uzavření kupní smlouvy",
+        "content": [
+          "3.1. Veškerá prezentace zboží umístěná ve webovém rozhraní je informativního charakteru a prodávající není povinen uzavřít kupní smlouvu ohledně tohoto zboží. Ustanovení § 1732 odst. 2 občanského zákoníku se nepoužije.",
+          "3.2. Webové rozhraní obsahuje informace o zboží, včetně uvedení cen jednotlivého zboží a nákladů za vrácení zboží, pokud toto zboží ze své podstaty nemůže být vráceno obvyklou poštovní cestou. Ceny zboží jsou uvedeny včetně daně z přidané hodnoty a všech souvisejících poplatků. Ceny zboží zůstávají v platnosti po dobu, po kterou jsou zobrazovány ve webovém rozhraní. Toto ustanovení neomezuje možnost prodávajícího uzavřít kupní smlouvu za individuálně sjednaných podmínek.",
+          "3.3. Webové rozhraní obsahuje také informace o nákladech spojených s balením a dodáním zboží. Informace o nákladech spojených s balením a dodáním zboží uvedené ve webovém rozhraní platí pouze v případech, kdy je zboží dodáváno v rámci území České republiky.",
+          "3.4. Pro objednání zboží vyplní kupující objednávkový formulář ve webovém rozhraní. Objednávkový formulář obsahuje zejména informace o:",
+          "a) objednávaném zboží (objednané zboží \"vloží\" kupující do elektronického nákupního košíku webového rozhraní),",
+          "b) způsobu platby kupní ceny zboží, údajích o požadovaném způsobu dodání objednaného zboží,",
+          "c) informacích o nákladech spojených s dodáním zboží (dále souhrnně jen jako \"objednávka\").",
+          "3.5. Před odesláním objednávky prodávajícímu je kupujícímu umožněno kontrolovat a měnit údaje, které do objednávky kupující vložil, a to i s ohledem na možnost kupujícího rozpoznat a opravit chyby vzniklé při zadávání údajů do objednávky. Objednávku odešle kupující prodávajícímu kliknutím na tlačítko \"dokončit objednávku\". Údaje uvedené v objednávce považuje prodávající za správné. Podmínkou platnosti objednávky je vyplnění všech povinných údajů v objednávkovém formuláři a potvrzení kupujícího o tom, že se seznámil s těmito VOP.",
+          "3.6. Neprodleně po obdržení objednávky zašle prodávající kupujícímu potvrzení o obdržení objednávky na elektronickou adresu, kterou kupující uvedl při objednávání zboží. Toto potvrzení je automatické a nepovažuje se za uzavření smlouvy. Současně s potvrzením obdrží kupující tyto VOP. Kupní smlouva je uzavřena teprve potvrzením objednávky prodávajícím na elektronickou adresu kupujícího."
+        ]
+      },
+      "priceAndPayment": {
+        "title": "IV. Cena a platební podmínky",
+        "content": [
+          "4.1. Kupující může prodávajícímu zaplatit cenu zboží a případné náklady spojené s dodáním zboží podle kupní smlouvy následujícími způsoby:",
+          "- bezhotovostně převodem na účet prodávajícího č. 2801707992/2010, vedeným u Fio banka, a.s.;",
+          "- bezhotovostně platební kartou;",
+          "- bezhotovostně prostřednictvím platebního systému.",
+          "4.2. Společně s kupní cenou je kupující povinen zaplatit prodávajícímu také náklady spojené s balením a dodáním zboží ve sjednané výši. Není-li výslovně uvedeno jinak, rozumí se kupní cenou i náklady spojené s dodáním zboží.",
+          "4.3. Prodávající nevyžaduje od kupujícího zálohu či jinou obdobnou platbu. Toto se netýká případů, kdy je vyžadována úhrada kupní ceny před odesláním zboží.",
+          "4.4. V případě platby prostřednictvím platební brány je kupující přesměrován do rozhraní příslušné banky pro provedení platby.",
+          "4.5. V případě bezhotovostní platby je závazek kupujícího zaplatit kupní cenu splněn okamžikem připsání příslušné částky na účet prodávajícího.",
+          "4.6. Prodávající je oprávněn, zejména v případě, že kupující dodatečně nepotvrdí objednávku, požadovat uhrazení celé kupní ceny ještě před odesláním zboží kupujícímu. Ustanovení § 2119 odst. 1 občanského zákoníku se nepoužije.",
+          "4.7. Případné slevy z ceny zboží poskytnuté prodávajícím kupujícímu nelze vzájemně kombinovat.",
+          "4.8. Je-li to v obchodních vztazích obvyklé nebo stanoví-li tak obecně závazné právní předpisy, vystaví prodávající kupujícímu daňový doklad - fakturu ohledně plateb prováděných na základě kupní smlouvy. Prodávající je plátcem daně z přidané hodnoty. Daňový doklad - fakturu vystaví prodávající kupujícímu po uhrazení ceny zboží a zašle ji v elektronické podobě na elektronickou adresu kupujícího."
+        ]
+      },
+      "cancellationWithdrawal": {
+        "title": "V. Odstoupení od smlouvy",
+        "content": [
+          "5.1. Kupující, který uzavřel kupní smlouvu mimo svou podnikatelskou činnost jako spotřebitel, má právo odstoupit od kupní smlouvy.",
+          "5.2. Lhůta pro odstoupení od smlouvy činí 14 dnů",
+          "a) od převzetí zboží,",
+          "b) od převzetí posledního kusu zboží, pokud je předmětem objednávky několik kusů zboží,",
+          "c) od převzetí první dodávky, pokud je předmětem smlouvy pravidelné opakované dodávání zboží.",
+          "5.3. Kupující nemůže mimo jiné odstoupit od kupní smlouvy:",
+          "a) o poskytování služeb, jestliže byly poskytnuty úplně a služba začala být s výslovným souhlasem kupujícího poskytována ještě před uplynutím lhůty pro odstoupení od smlouvy a kupující prohlásil, že ví, že po úplném poskytnutí služby prodávajícím pozbude právo na odstoupení od smlouvy,",
+          "b) o dodání zboží upraveného podle přání kupujícího nebo pro jeho osobu,",
+          "c) o dodání zboží, které podléhá rychlé zkáze, jakož i zboží, které bylo po dodání nenávratně smíseno s jiným zbožím,",
+          "d) o dodání zvukové nebo obrazové nahrávky nebo počítačového programu, pokud porušil jejich původní obal,",
+          "e) o dodání novin, periodik nebo časopisů s výjimkou předplatného,",
+          "f) o ubytování, přepravě, stravování nebo o využití volného času, pokud smlouva stanoví konkrétní datum nebo období plnění,",
+          "g) z elektronického obsahu nedodávaného na hmotném nosiči, pokud začal být obsah s výslovným souhlasem kupujícího poskytován ještě před uplynutím lhůty pro odstoupení od smlouvy a kupující prohlásil, že ví, že tím pozbyde právo na odstoupení od smlouvy.",
+          "5.4. Pro odstoupení od kupní smlouvy musí kupující sdělit prodávajícímu své rozhodnutí odstoupit od kupní smlouvy jednoznačným prohlášením (např. dopisem zaslaným poštou nebo elektronickou poštou). K tomuto účelu může kupující použít vzorový formulář pro odstoupení od smlouvy poskytovaný prodávajícím, který tvoří přílohu těchto VOP. Odstoupení od kupní smlouvy může kupující sdělit prodávajícímu také prostřednictvím formuláře umístěného na webových stránkách prodávajícího. Kupující zašle sdělení o odstoupení od smlouvy prodávajícímu na adresu info@quickfy.eu nebo na adresu provozovny FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10.",
+          "5.5. Kupující, který odstoupil od kupní smlouvy, je povinen bez zbytečného odkladu, nejpozději do 14 dnů od odstoupení od kupní smlouvy, vrátit prodávajícímu zboží. Kupující je povinen nést náklady spojené s vrácením zboží prodávajícímu, a to i v případě, kdy zboží nemůže být vráceno obvyklou poštovní cestou pro svou povahu.",
+          "5.6. Odstoupil-li kupující od kupní smlouvy, vrátí mu prodávající bez zbytečného odkladu, nejpozději do 14 dnů od odstoupení od kupní smlouvy, všechny peněžní prostředky, které od něj na základě kupní smlouvy obdržel, včetně nákladů na dodání zboží. Prodávající vrátí kupujícímu peněžní prostředky stejným způsobem, jakým je od kupujícího obdržel. Prodávající vrátí kupujícímu peněžní prostředky jiným způsobem pouze tehdy, pokud s tím kupující souhlasí a pokud mu tím nevzniknou dodatečné náklady.",
+          "5.7. Odstoupil-li kupující od kupní smlouvy, není prodávající povinen vrátit kupujícímu peněžní prostředky dříve, než mu kupující zboží vrátí nebo prokáže, že zboží prodávajícímu odeslal.",
+          "5.8. Zboží musí kupující vrátit prodávajícímu nepoškozené, neopotřebované a neznečištěné a pokud možno v původním obalu. Prodávající je oprávněn jednostranně započíst náhradu škody vzniklé na zboží proti pohledávce kupujícího na vrácení kupní ceny.",
+          "5.9. Prodávající je oprávněn odstoupit od kupní smlouvy z důvodu vyprodání zásob, nedostupnosti zboží, nebo když výrobce, dovozce či dodavatel zboží ukončil výrobu nebo dovoz zboží. Prodávající neprodleně informuje kupujícího prostřednictvím elektronické adresy uvedené v objednávce a vrátí mu v přiměřené lhůtě, nejpozději do 14 dnů od oznámení o odstoupení od kupní smlouvy, veškeré peněžní prostředky, které od něj na základě kupní smlouvy obdržel."
+        ]
+      },
+      "transportDelivery": {
+        "title": "VI. Doprava a dodání zboží",
+        "content": [
+          "6.1. V případě, že je způsob dopravy sjednán na základě zvláštního požadavku kupujícího, nese kupující riziko a případné dodatečné náklady spojené s tímto způsobem dopravy.",
+          "6.2. Je-li prodávající podle kupní smlouvy povinen dodat zboží na místo určené kupujícím v objednávce, je kupující povinen převzít zboží při dodání.",
+          "6.3. V případě, že z důvodů na straně kupujícího je nutno zboží doručovat opakovaně nebo jiným způsobem, než který byl uveden v objednávce, je kupující povinen uhradit náklady spojené s opakovaným doručováním zboží, resp. náklady spojené s jiným způsobem dodání.",
+          "6.4. Při převzetí zboží od přepravce je kupující povinen zkontrolovat neporušenost obalů zboží a v případě jakýchkoli závad toto neprodleně oznámit přepravci. V případě zjištění porušení obalu svědčícího o neoprávněném vniknutí do zásilky nemusí kupující zásilku od přepravce převzít.",
+          "6.5. Další práva a povinnosti stran při přepravě zboží může upravovat zvláštní doručovací podmínky prodávajícího, pokud jsou prodávajícím vydány."
+        ]
+      },
+      "rightsDefects": {
+        "title": "VII. Práva z vadného plnění",
+        "content": [
+          "7.1. Práva a povinnosti smluvních stran ohledně práv z vadného plnění se řídí příslušnými obecně závaznými právními předpisy (zejména ustanoveními § 1914 až 1925, § 2099 až 2117 a § 2161 až 2174 občanského zákoníku).",
+          "7.2. Prodávající odpovídá kupujícímu, že zboží při převzetí nemá vady. Zejména prodávající odpovídá kupujícímu, že v době, kdy kupující zboží převzal:",
+          "a) má zboží vlastnosti, které si strany ujednaly, a chybí-li ujednání, takové vlastnosti, které prodávající nebo výrobce popsal nebo které kupující očekával s ohledem na povahu zboží a na základě reklamy jimi prováděné,",
+          "b) se zboží hodí k účelu, který pro jeho použití prodávající uvádí nebo ke kterému se zboží tohoto druhu obvykle používá,",
+          "c) zboží odpovídá jakosti nebo provedení smluvního vzorku nebo předlohy, pokud byla jakost nebo provedení určena podle smluvního vzorku nebo předlohy,",
+          "d) je zboží v odpovídajícím množství, míře nebo hmotnosti a",
+          "e) zboží vyhovuje požadavkům právních předpisů.",
+          "7.3. Ustanovení uvedená v bodě 7.2 těchto VOP se nepoužijí u zboží prodávaného za nižší cenu na vadu, pro kterou byla nižší cena sjednána, na opotřebení zboží způsobené jeho obvyklým používáním, u použitého zboží na vadu odpovídající míře používání nebo opotřebení, kterou zboží mělo při převzetí kupujícím, nebo vyplývá-li to z povahy zboží.",
+          "7.4. Projeví-li se vada v průběhu šesti měsíců od převzetí, má se za to, že zboží bylo vadné již při převzetí. Kupující může uplatnit právo z vady, která se vyskytne u spotřebního zboží v době dvaceti čtyř měsíců od převzetí. Toto ustanovení se nepoužije u zboží prodaného za nižší cenu na vadu, pro kterou byla nižší cena sjednána, na opotřebení zboží způsobené jeho obvyklým používáním, u použitého zboží na vadu odpovídající míře používání nebo opotřebení, kterou zboží mělo při převzetí kupujícím, nebo vyplývá-li to z povahy zboží.",
+          "7.5. Práva z vadného plnění uplatňuje kupující u prodávajícího na adrese FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10, případně podle rozhodnutí kupujícího také na adrese provozovny, v níž je přijetí reklamace možné s ohledem na sortiment prodávaného zboží, popř. v sídle nebo určené provozovně. Okamžik uplatnění reklamace se počítá ode dne, kdy prodávající reklamaci obdržel.",
+          "7.6. Další náležitosti a podmínky vyřizování reklamací může upravovat reklamační řád prodávajícího, pokud je prodávajícím vydán."
+        ]
+      },
+      "additionalRights": {
+        "title": "VIII. Další práva a povinnosti smluvních stran",
+        "content": [
+          "8.1. Kupující nabývá vlastnictví ke zboží zaplacením celé kupní ceny zboží.",
+          "8.2. Prodávající není vůči kupujícímu vázán žádnými kodexy chování ve smyslu ustanovení § 1826 odst. 1 písm. e) občanského zákoníku.",
+          "8.3. Mimosoudní řešení sporů vyplývajících ze spotřebitelských smluv zajišťuje Česká obchodní inspekce, se sídlem Štěpánská 567/15, 120 00 Praha 2, IČO: 000 20 869, internetová adresa: https://adr.coi.cz. Platformu pro řešení sporů online umístěnou na internetové adrese https://ec.europa.eu/consumers/odr lze využít při řešení sporů mezi prodávajícím a kupujícím z kupní smlouvy.",
+          "8.4. Evropské spotřebitelské centrum Česká republika, se sídlem Štěpánská 567/15, 120 00 Praha 2, internetová adresa: http://www.evropskyspotrebitel.cz je kontaktním místem podle nařízení Evropského parlamentu a Rady (EU) č. 524/2013 o řešení spotřebitelských sporů online a o změně nařízení (ES) č. 2006/2004 a směrnice 2009/22/ES (nařízení o řešení spotřebitelských sporů online).",
+          "8.5. Prodávající je oprávněn prodávat zboží na základě živnostenského oprávnění. Živnostenskou kontrolu provádí v rámci své působnosti příslušný živnostenský úřad. Dozor nad oblastí ochrany osobních údajů vykonává Úřad pro ochranu osobních údajů. Česká obchodní inspekce vykonává ve vymezeném rozsahu mimo jiné dozor nad dodržováním zákona č. 634/1992 Sb., o ochraně spotřebitele, ve znění pozdějších předpisů.",
+          "8.6. Kupující tímto bere na vědomí, že prodávající není povinen dodat kupujícímu zboží v případě, že je zboží již vyprodáno nebo není dostupné u dodavatele, přičemž v tomto případě bude kupující o této skutečnosti neprodleně informován a bude mu vrácena případná již uhrazená částka."
+        ]
+      },
+      "dataProtection": {
+        "title": "IX. Ochrana osobních údajů",
+        "content": [
+          "9.1. Ochrana osobních údajů kupujícího, který je fyzickou osobou, je upravena v zásadách ochrany osobních údajů prodávajícího.",
+          "9.2. Kupující souhlasí se zpracováním těchto osobních údajů: jméno a příjmení, bydliště, identifikační číslo, daňové identifikační číslo, elektronická adresa, telefonní číslo (dále jen \"osobní údaje\") prodávajícím za účelem realizace práv a povinností z kupní smlouvy a za účelem vedení uživatelského účtu. Kupující souhlasí se zpracováním osobních údajů prodávajícím za účelem zasílání informací a komerčních sdělení kupujícímu. Kupující souhlasí se zpracováním osobních údajů prodávajícím za účelem zasílání informací a komerčních sdělení kupujícímu prostřednictvím elektronických prostředků komunikace.",
+          "9.3. Kupující bere na vědomí, že je povinen uvést své osobní údaje (při registraci, v objednávce, při uzavírání kupní smlouvy) správně a pravdivě a že je povinen prodávajícího neprodleně informovat o změně svých osobních údajů.",
+          "9.4. Prodávající může pověřit zpracováním osobních údajů třetí osobu jako zpracovatele. Osobní údaje nebudou předány třetím stranám ani zpřístupněny třetím stranám bez předchozího souhlasu kupujícího.",
+          "9.5. Osobní údaje budou zpracovávány po dobu nezbytnou k výkonu práv a povinností vyplývajících z kupní smlouvy a uplatnění nároků z této smlouvy a po dobu 3 let od ukončení smluvního vztahu mezi kupujícím a prodávajícím.",
+          "9.6. Kupující má právo požádat prodávajícího o informaci, jaké osobní údaje o něm prodávající zpracovává, požádat o jejich opravu či doplnění, popřípadě za podmínek stanovených v příslušných právních předpisech požádat o jejich likvidaci a dále má právo vznést námitku proti zpracování osobních údajů určených pro účely přímého marketingu a právo na přenositelnost osobních údajů. Kupující má právo odvolat souhlas se zpracováním osobních údajů.",
+          "9.7. V případě, že se kupující domnívá, že dochází ke zpracování jeho osobních údajů v rozporu s ochranou soukromého a osobního života kupujícího nebo v rozporu s právními předpisy, zejména jsou-li osobní údaje nepřesné s ohledem na účel jejich zpracování, může:",
+          "a) požádat prodávajícího o vysvětlení,",
+          "b) požadovat, aby prodávající odstranil takto vzniklý stav.",
+          "9.8. Pokud kupující požádá o informace dle bodu 9.6 těchto VOP, je prodávající povinen mu tyto informace poskytnout. Za poskytnutí informací podle tohoto bodu může prodávající požadovat přiměřenou úhradu nepřevyšující náklady nutné pro poskytnutí informací."
+        ]
+      },
+      "deliveryElectronic": {
+        "title": "X. Doručování elektronických sdělení",
+        "content": [
+          "10.1. Kupující souhlasí s doručováním elektronických sdělení souvisejících s plněním smlouvy na elektronickou adresu, kterou uvedl v objednávce nebo ve svém uživatelském účtu.",
+          "10.2. Prodávající doručuje kupujícímu elektronická sdělení na elektronickou adresu kupujícího uvedenou v objednávce nebo registrovanou v uživatelském účtu kupujícího. Kupující je povinen pravidelně kontrolovat elektronickou adresu uvedenou v objednávce, popř. registrovanou ve svém uživatelském účtu a seznamovat se s doručenými elektronickými sděleními.",
+          "10.3. Kupující bere na vědomí, že některá elektronická sdělení týkající se objednávky nebo právního vztahu s prodávajícím mohou obsahovat důvěrné informace. Proto je kupující povinen zajistit ochranu své elektronické adresy před zneužitím třetími osobami a také před neoprávněným přístupem třetích osob k této elektronické adrese.",
+          "10.4. Prodávající doručuje elektronická sdělení na elektronickou adresu kupujícího do jeho elektronické schránky prostřednictvím poskytovatele služeb elektronické pošty kupujícího. Elektronické sdělení se považuje za doručené okamžikem, kdy se zpráva objeví v elektronické schránce příjemce u jeho poskytovatele služeb elektronické pošty, a to bez ohledu na to, zda se příjemce o sdělení dozví."
+        ]
+      },
+      "finalProvisions": {
+        "title": "XI. Závěrečná ustanovení",
+        "content": [
+          "11.1. Pokud vztah založený kupní smlouvou obsahuje mezinárodní (zahraniční) prvek, pak se strany dohodly, že vztah se řídí českým právem. Tímto nejsou dotčena práva spotřebitele vyplývající z obecně závazných právních předpisů.",
+          "11.2. Pokud se některé ustanovení VOP stane neplatným nebo neúčinným, namísto neplatných ustanovení nastoupí ustanovení, jehož smysl se neplatnému či neúčinnému ustanovení co nejvíce přibližuje. Neplatností či neúčinností jednoho ustanovení není dotčena platnost ostatních ustanovení. Změny a doplňky kupní smlouvy či VOP vyžadují písemnou formu.",
+          "11.3. Kupní smlouva včetně VOP je archivována prodávajícím v elektronické podobě a není přístupná.",
+          "11.4. Vzorový formulář pro odstoupení od smlouvy tvoří přílohu těchto VOP.",
+          "11.5. Kontaktní údaje prodávajícího: doručovací adresa FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10, elektronická adresa info@quickfy.eu, telefon +420775113732."
+        ]
+      },
+      "withdrawalForm": {
+        "title": "Vzorový formulář pro odstoupení od smlouvy",
+        "content": [
+          "Adresát: FL1 s.r.o., Moskevská 1464/61, Vršovice, 101 00 Praha 10, elektronická adresa: info@quickfy.eu",
+          "",
+          "Tímto oznamuji/oznamujeme* odstoupení od mé/naší* smlouvy o koupi následujícího zboží*/o poskytnutí následující služby*:",
+          "",
+          "Objednáno dne*/převzato dne*:",
+          "",
+          "Jméno spotřebitele/spotřebitelů:",
+          "",
+          "Adresa spotřebitele/spotřebitelů:",
+          "",
+          "Podpis spotřebitele/spotřebitelů (pouze pokud je tento formulář předkládán v listinné podobě):",
+          "",
+          "Datum:",
+          "",
+          "*Nehodící se škrtněte."
+        ]
+      }
+    }
+  }
+}

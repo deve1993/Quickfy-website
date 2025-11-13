@@ -1,0 +1,55 @@
+{
+  "name": "QuickFy - Performance Marketing Suite",
+  "short_name": "QuickFy",
+  "description": "Transform digital marketing data into clear business decisions",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3B82F6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["business", "productivity", "analytics", "marketing"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Performance Dashboard",
+      "short_name": "Dashboard",
+      "description": "View marketing performance insights",
+      "url": "/#features",
+      "icons": [{
+        "src": "/favicon.svg",
+        "sizes": "any"
+      }]
+    },
+    {
+      "name": "Pricing Plans",
+      "short_name": "Pricing",
+      "description": "Choose your performance suite plan",
+      "url": "/#pricing",
+      "icons": [{
+        "src": "/favicon.svg",
+        "sizes": "any"
+      }]
+    }
+  ]
+}

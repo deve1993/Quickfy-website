@@ -1,0 +1,926 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Clean White Theme - Modern Professional */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Modern Blue Primary */
+    --primary: 214 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Subtle Gray Backgrounds */
+    --secondary: 0 0% 98%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 220 13% 97%;
+    --muted-foreground: 215 25% 27%;
+    --accent: 214 100% 97%;
+    --accent-foreground: 214 100% 50%;
+
+    /* Clean Borders & States */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 214 100% 50%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Background Beams Styles */
+@keyframes meteor {
+  0% {
+    transform: translateY(-100vh) translateX(-50px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(50px);
+    opacity: 0;
+  }
+}
+
+.meteor {
+  animation: meteor 3s linear infinite;
+}
+
+/* Typewriter Effect */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  animation: typewriter 4s steps(40, end), blinkCursor 0.75s step-end infinite;
+}
+
+/* Text Generate Effect */
+.text-generate {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero Highlight */
+.hero-highlight {
+  background: linear-gradient(to bottom right, #4f46e5, #06b6d4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Accessible Focus Styles - Proper Outlines for Keyboard Users */
+.focus-accessible {
+  @apply focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 transition-all duration-200;
+}
+
+.focus-accessible-button {
+  @apply focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2 transition-all duration-200;
+}
+
+.focus-accessible-input {
+  @apply focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-1 transition-all duration-200;
+}
+
+.focus-accessible-navbar {
+  @apply focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 transition-all duration-200;
+}
+
+/* Focus Cards Hover Effects */
+.focus-card {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.focus-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-color: rgba(79, 70, 229, 0.3);
+}
+
+/* Background Beams Container */
+.beams-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.beam {
+  position: absolute;
+  top: -100%;
+  width: 1px;
+  height: 200%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(79, 70, 229, 0.4),
+    transparent
+  );
+  animation: beam-animation 8s infinite linear;
+}
+
+@keyframes beam-animation {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+/* Mobile Performance & Motion Reduction */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .meteor,
+  .beam,
+  .animate-pulse {
+    animation: none !important;
+  }
+}
+
+/* Mobile-optimized animations */
+@media (max-width: 768px) {
+  .meteor {
+    animation-duration: 6s;
+  }
+
+  .beam {
+    animation-duration: 12s;
+  }
+
+  .animate-pulse {
+    animation-duration: 4s;
+  }
+
+  /* Reduce complex transforms on mobile */
+  .focus-card:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* Touch-friendly interactions */
+@media (pointer: coarse) {
+  .group:hover .group-hover\:scale-110 {
+    transform: scale(1.05);
+  }
+
+  .hover\:scale-105:hover {
+    transform: scale(1.02);
+  }
+}
+
+/* Optimized Hero Section Animations - CSS Only */
+.hero-headline,
+.hero-subheadline,
+.hero-cta,
+.hero-stats {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.hero-headline.hero-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+
+.hero-subheadline.hero-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+.hero-cta.hero-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+
+.hero-stats.hero-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.7s;
+}
+
+/* Hero Button Optimized Hover */
+.hero-button {
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  will-change: transform;
+}
+
+.hero-button:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.hero-button:active {
+  transform: scale(0.95);
+}
+
+.hero-button .hero-arrow {
+  transition: transform 0.3s ease;
+}
+
+.hero-button:hover .hero-arrow {
+  transform: translateX(4px);
+}
+
+/* Hero Stats Cards Hover with Gradient Ring - Enhanced */
+.hero-stat-card {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform, box-shadow;
+}
+
+.hero-stat-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  padding: 2px;
+  background: transparent;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Card 1: Blue-Purple Gradient Ring */
+.hero-stat-card:nth-child(1)::before {
+  background: linear-gradient(to right, rgb(37, 99, 235), rgb(147, 51, 234));
+}
+
+/* Card 2: Purple-Pink Gradient Ring */
+.hero-stat-card:nth-child(2)::before {
+  background: linear-gradient(to right, rgb(147, 51, 234), rgb(219, 39, 119));
+}
+
+/* Card 3: Pink-Orange Gradient Ring */
+.hero-stat-card:nth-child(3)::before {
+  background: linear-gradient(to right, rgb(219, 39, 119), rgb(249, 115, 22));
+}
+
+.hero-stat-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.hero-stat-card:hover::before {
+  opacity: 1;
+}
+
+/* Remove backdrop-blur on mobile for better performance */
+@media (max-width: 768px) {
+  .hero-headline,
+  .hero-subheadline,
+  .hero-cta,
+  .hero-stats {
+    transition-duration: 0.6s;
+  }
+
+  .hero-button:hover {
+    transform: scale(1.02);
+  }
+
+  .hero-stat-card {
+    backdrop-filter: none !important;
+  }
+}
+
+/* Remove will-change after animation completes to save memory */
+.hero-section.animations-complete .hero-headline,
+.hero-section.animations-complete .hero-subheadline,
+.hero-section.animations-complete .hero-cta,
+.hero-section.animations-complete .hero-stats,
+.hero-section.animations-complete .hero-button {
+  will-change: auto;
+}
+
+/* Features Section - Gradient Ring Hover Effects */
+.feature-card {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform, box-shadow;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  padding: 2px;
+  background: transparent;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Feature Card 1: Blue Gradient Ring */
+.feature-card-blue::before {
+  background: linear-gradient(135deg, rgb(59, 130, 246), rgb(99, 102, 241));
+}
+
+/* Feature Card 2: Green Gradient Ring */
+.feature-card-green::before {
+  background: linear-gradient(135deg, rgb(34, 197, 94), rgb(16, 185, 129));
+}
+
+/* Feature Card 3: Purple Gradient Ring */
+.feature-card-purple::before {
+  background: linear-gradient(135deg, rgb(168, 85, 247), rgb(147, 51, 234));
+}
+
+.feature-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+}
+
+/* Floating Icons Animation */
+@keyframes floatIcon {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.feature-icon {
+  animation: floatIcon 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: rotate(10deg);
+}
+
+/* Remove backdrop-blur on mobile for better performance */
+@media (max-width: 768px) {
+  .feature-card:hover {
+    transform: scale(1.02);
+  }
+}
+
+/* Diagonal Split-Screen Feature Sections */
+.feature-split-section {
+  position: relative;
+  min-height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 2rem;
+  overflow: hidden;
+}
+
+.feature-split-section.reverse {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Diagonal divider (visual only) */
+.diagonal-divider {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.1), transparent);
+  transform: skewX(-15deg);
+  pointer-events: none;
+}
+
+/* Screenshot placeholder container */
+.feature-screenshot {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Placeholder content inside screenshot */
+.screenshot-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  position: relative;
+}
+
+.screenshot-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px),
+    linear-gradient(rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.5;
+}
+
+/* Feature content area */
+.feature-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* Glow effect for screenshots */
+.feature-screenshot-blue {
+  box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.3);
+}
+
+.feature-screenshot-green {
+  box-shadow: 0 25px 50px -12px rgba(34, 197, 94, 0.3);
+}
+
+.feature-screenshot-purple {
+  box-shadow: 0 25px 50px -12px rgba(168, 85, 247, 0.3);
+}
+
+/* Mobile responsive */
+@media (max-width: 1024px) {
+  .feature-split-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    min-height: auto;
+    padding: 3rem 1.5rem;
+  }
+
+  .feature-split-section.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .diagonal-divider {
+    display: none;
+  }
+
+  .feature-screenshot {
+    order: -1; /* Always show screenshot first on mobile */
+  }
+}
+
+/* Browser Frame Styles */
+.browser-frame {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.browser-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #f3f4f6;
+  border-bottom: 1px solid #e5e7eb;
+  min-height: 44px;
+}
+
+.browser-controls {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.browser-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transition: opacity 0.2s;
+}
+
+.browser-dot-red {
+  background: #ff5f57;
+}
+
+.browser-dot-yellow {
+  background: #ffbd2e;
+}
+
+.browser-dot-green {
+  background: #28c840;
+}
+
+.browser-address-bar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.browser-url {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  max-width: 400px;
+  width: 100%;
+}
+
+.browser-lock-icon {
+  color: #6b7280;
+  flex-shrink: 0;
+}
+
+.browser-url-text {
+  font-size: 13px;
+  color: #374151;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.browser-menu {
+  color: #6b7280;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.browser-menu:hover {
+  background: #e5e7eb;
+}
+
+.browser-content {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .browser-header {
+    padding: 8px 12px;
+    min-height: 40px;
+  }
+
+  .browser-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .browser-url {
+    padding: 4px 8px;
+  }
+
+  .browser-url-text {
+    font-size: 12px;
+  }
+}
+
+/* Header Optimized Animations - CSS Only */
+@keyframes headerFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-animated {
+  animation: headerFadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Mobile Menu Animations */
+@keyframes mobileMenuSlideIn {
+  from {
+    opacity: 0;
+    transform: scaleY(0.95);
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+    max-height: 600px;
+  }
+}
+
+@keyframes mobileMenuSlideOut {
+  from {
+    opacity: 1;
+    transform: scaleY(1);
+    max-height: 600px;
+  }
+  to {
+    opacity: 0;
+    transform: scaleY(0.95);
+    max-height: 0;
+  }
+}
+
+.mobile-menu-enter {
+  animation: mobileMenuSlideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  transform-origin: top;
+}
+
+.mobile-menu-exit {
+  animation: mobileMenuSlideOut 0.25s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  transform-origin: top;
+}
+
+/* Mobile Menu Items Stagger Animation */
+@keyframes menuItemFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.menu-item {
+  opacity: 0;
+  animation: menuItemFadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.menu-item:nth-child(1) { animation-delay: 0.05s; }
+.menu-item:nth-child(2) { animation-delay: 0.1s; }
+.menu-item:nth-child(3) { animation-delay: 0.15s; }
+.menu-item:nth-child(4) { animation-delay: 0.2s; }
+.menu-item:nth-child(5) { animation-delay: 0.25s; }
+
+/* Hamburger Icon Animation - Pure CSS */
+.hamburger-line {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+}
+
+.hamburger-open .hamburger-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-open .hamburger-line:nth-child(2) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.hamburger-open .hamburger-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Products Dropdown Animation */
+@keyframes dropdownSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-enter {
+  animation: dropdownSlideIn 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Button Hover Effects - Optimized */
+.btn-hover {
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-hover:hover {
+  transform: translateY(-1px) scale(1.02);
+}
+
+.btn-hover:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .btn-hover:hover {
+    transform: scale(1.02);
+  }
+
+  /* Faster animations on mobile */
+  .mobile-menu-enter {
+    animation-duration: 0.25s;
+  }
+
+  .menu-item {
+    animation-duration: 0.25s;
+  }
+}
+
+/* ========================================================================== */
+/* === RIMOZIONE COMPLETA NEXT.JS DEV TOOLS - ULTRA AGGRESSIVE V2 === */
+/* ========================================================================== */
+
+/* Target il bottone principale con tutti i possibili selettori */
+button#next-logo,
+button[id="next-logo"],
+button[data-nextjs-dev-tools-button],
+button[data-nextjs-dev-tools-button="true"],
+button[data-next-mark],
+button[data-next-mark="true"],
+button[aria-label*="Next.js"],
+button[aria-label*="Dev Tools"],
+button[aria-label*="Open Next"],
+/* Container e overlay del portal */
+div[data-nextjs-portal],
+div[data-nextjs-portal="true"],
+div[data-nextjs-dialog-overlay],
+div[data-nextjs-dialog-overlay="true"],
+[id*="nextjs-portal"],
+[class*="nextjs-portal"],
+[class*="next-dev-tools"],
+/* Parent containers */
+div:has(> button#next-logo),
+div:has(> button[data-nextjs-dev-tools-button]),
+div:has(> button[data-next-mark]),
+/* Custom elements e Shadow DOM */
+nextjs-portal,
+next-dev-tools {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  z-index: -9999 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* SVG e contenuti interni */
+button[data-nextjs-dev-tools-button] svg,
+button#next-logo svg,
+button[data-next-mark] svg,
+button[data-nextjs-dev-tools-button] *,
+button#next-logo *,
+button[data-next-mark] * {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* === RIMOZIONE ELEMENTI FIXED IN BOTTOM-LEFT === */
+/* Nasconde QUALSIASI elemento in posizione fixed vicino al bottom-left */
+/* ESCLUDIAMO solo i nostri componenti conosciuti */
+
+/* Regola generale per fixed bottom-left (con esclusioni specifiche) */
+body > *:not([data-quickfy]):not(.floating-language-switcher):not(.cookie-consent-banner) {
+  /* Questa regola viene applicata tramite JavaScript per evitare falsi positivi */
+}
+
+/* Nascondi specificamente elementi sospetti in bottom-left */
+/* Tutti i div diretti figli di body in posizione fixed bottom-left */
+body > div[style*="position: fixed"],
+body > div[style*="position:fixed"] {
+  /* Verrà gestito dallo script JS per controllare posizione esatta */
+}
+
+/* === BACKUP RULE: Nascondi TUTTO in una posizione specifica === */
+/* Se lo script JS rileva un elemento a coordinate precise, questo lo nasconde */
+.__nextjs-dev-tools-removed {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+  width: 0 !important;
+  height: 0 !important;
+  z-index: -9999 !important;
+}
+
+/* === PSEUDO-ELEMENTI === */
+/* Rimuovi eventuali pseudo-elementi creati dalle dev tools */
+button#next-logo::before,
+button#next-logo::after,
+button[data-nextjs-dev-tools-button]::before,
+button[data-nextjs-dev-tools-button]::after,
+div[data-nextjs-portal]::before,
+div[data-nextjs-portal]::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* === FALLBACK SPECIFICO PER DIMENSIONI SOSPETTE === */
+/* Nascondi elementi molto piccoli in posizione fixed (potrebbero essere artefatti) */
+body > *[style*="position: fixed"][style*="bottom"][style*="left"] {
+  /* Solo se dimensioni molto piccole - gestito da JS */
+}
+
+/* === PROTEZIONE OVERLAY === */
+/* Se appare un overlay scuro delle dev tools */
+[data-nextjs-dialog-overlay],
+[class*="nextjs-dialog"],
+[class*="next-overlay"] {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+  z-index: -9999 !important;
+}

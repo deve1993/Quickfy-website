@@ -1,0 +1,86 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f9ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#faf5ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fdf2f8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#bgGradient)"/>
+
+  <!-- Dashboard Header -->
+  <rect x="40" y="40" width="1120" height="80" rx="12" fill="white" opacity="0.9"/>
+  <text x="70" y="90" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e3a8a">QuickFy Dashboard</text>
+
+  <!-- Stats Cards Row -->
+  <g id="statsCards">
+    <!-- Card 1: Analytics -->
+    <rect x="40" y="150" width="350" height="200" rx="16" fill="white" opacity="0.95"/>
+    <rect x="40" y="150" width="350" height="8" rx="4" fill="url(#cardGradient)"/>
+    <text x="60" y="190" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#64748b">Total Conversations</text>
+    <text x="60" y="250" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#1e293b">2,847</text>
+    <text x="60" y="280" font-family="Arial, sans-serif" font-size="14" fill="#10b981">↑ +18.2% vs last month</text>
+
+    <!-- Card 2: Engagement -->
+    <rect x="425" y="150" width="350" height="200" rx="16" fill="white" opacity="0.95"/>
+    <rect x="425" y="150" width="350" height="8" rx="4" fill="url(#cardGradient)"/>
+    <text x="445" y="190" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#64748b">Response Rate</text>
+    <text x="445" y="250" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#1e293b">94.3%</text>
+    <text x="445" y="280" font-family="Arial, sans-serif" font-size="14" fill="#10b981">↑ +5.1% improvement</text>
+
+    <!-- Card 3: Campaigns -->
+    <rect x="810" y="150" width="350" height="200" rx="16" fill="white" opacity="0.95"/>
+    <rect x="810" y="150" width="350" height="8" rx="4" fill="url(#cardGradient)"/>
+    <text x="830" y="190" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#64748b">Active Campaigns</text>
+    <text x="830" y="250" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#1e293b">24</text>
+    <text x="830" y="280" font-family="Arial, sans-serif" font-size="14" fill="#3b82f6">6 launching this week</text>
+  </g>
+
+  <!-- Main Content Area -->
+  <g id="mainContent">
+    <!-- Chart Section -->
+    <rect x="40" y="380" width="720" height="330" rx="16" fill="white" opacity="0.95"/>
+    <text x="60" y="420" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#1e293b">Conversation Trends</text>
+
+    <!-- Simple line chart illustration -->
+    <polyline
+      points="80,620 150,580 220,590 290,540 360,560 430,490 500,510 570,460 640,480 710,430"
+      fill="none"
+      stroke="url(#cardGradient)"
+      stroke-width="3"
+      stroke-linecap="round"
+      opacity="0.8"
+    />
+    <circle cx="710" cy="430" r="6" fill="#8b5cf6"/>
+
+    <!-- Sidebar - Recent Activity -->
+    <rect x="790" y="380" width="370" height="330" rx="16" fill="white" opacity="0.95"/>
+    <text x="810" y="420" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#1e293b">Recent Activity</text>
+
+    <!-- Activity items -->
+    <g opacity="0.7">
+      <circle cx="820" cy="460" r="8" fill="#10b981"/>
+      <text x="840" y="465" font-family="Arial, sans-serif" font-size="14" fill="#475569">New WhatsApp message</text>
+
+      <circle cx="820" cy="500" r="8" fill="#3b82f6"/>
+      <text x="840" y="505" font-family="Arial, sans-serif" font-size="14" fill="#475569">Campaign sent to 245 users</text>
+
+      <circle cx="820" cy="540" r="8" fill="#8b5cf6"/>
+      <text x="840" y="545" font-family="Arial, sans-serif" font-size="14" fill="#475569">Team member invited</text>
+
+      <circle cx="820" cy="580" r="8" fill="#f59e0b"/>
+      <text x="840" y="585" font-family="Arial, sans-serif" font-size="14" fill="#475569">Analytics report ready</text>
+    </g>
+  </g>
+
+  <!-- Bottom status bar -->
+  <rect x="40" y="680" width="1120" height="30" rx="8" fill="#1e293b" opacity="0.05"/>
+  <text x="60" y="702" font-family="Arial, sans-serif" font-size="12" fill="#64748b">Last updated: Just now</text>
+</svg>

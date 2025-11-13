@@ -1,0 +1,18 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "no-console": ["warn", { "allow": ["error"] }],
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": "error",
+    "react/display-name": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-no-target-blank": ["error", { "allowReferrer": false }],
+    "react/no-unescaped-entities": "warn"
+  }
+}
