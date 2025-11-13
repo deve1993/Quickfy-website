@@ -256,7 +256,7 @@ export function Footer() {
           {/* Back to Top Button */}
           <motion.button
             onClick={scrollToTop}
-            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-200 focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 order-1 sm:order-2"
+            className="flex items-center gap-2 min-h-[56px] min-w-[56px] px-4 py-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-all duration-200 focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 order-1 sm:order-2 touch-manipulation"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.95 }}
             aria-label="Torna in cima alla pagina"

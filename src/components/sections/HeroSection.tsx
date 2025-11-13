@@ -33,7 +33,7 @@ export const HeroSection = memo(function HeroSection() {
         {tAccessibility('skipLinks.content')}
       </a>
 
-      <div className="relative z-30 w-full max-w-7xl mx-auto px-4 pt-32 pb-6 sm:pt-28 sm:pb-10 lg:pt-32 lg:pb-12">
+      <div className="relative z-30 w-full max-w-7xl mx-auto px-4 pt-20 pb-4 sm:pt-24 sm:pb-8 md:pt-28 md:pb-10 lg:pt-32 lg:pb-12">
         {/* Grid Layout: Text Left, Mockup Right on Desktop */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12">
 
@@ -41,7 +41,7 @@ export const HeroSection = memo(function HeroSection() {
           <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
             {/* Main Headline */}
             <div className={`hero-headline mb-8 ${isVisible ? 'hero-visible' : ''}`}>
-              <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
                 <span className="text-gray-900">{t('headline')} </span>
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">{t('headlineHighlight')}</span>
               </h1>

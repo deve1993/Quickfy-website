@@ -107,6 +107,31 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Body scroll lock when mobile menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      // Store original body styles
+      const scrollY = window.scrollY;
+      const body = document.body;
+
+      // Lock scroll
+      body.style.position = 'fixed';
+      body.style.top = `-${scrollY}px`;
+      body.style.width = '100%';
+      body.style.overflow = 'hidden';
+
+      // Cleanup function
+      return () => {
+        // Restore scroll position
+        body.style.position = '';
+        body.style.top = '';
+        body.style.width = '';
+        body.style.overflow = '';
+        window.scrollTo(0, scrollY);
+      };
+    }
+  }, [isMenuOpen]);
+
   // Close dropdowns when clicking outside - Enhanced
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -248,7 +273,7 @@ export function Header() {
         role="banner"
         aria-label="Main navigation header"
       >
-        <div className="max-w-7xl mx-auto px-4 py-4">
+        <div className="max-w-7xl mx-auto px-4 py-2 sm:py-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
             <div className="flex items-center">
@@ -354,7 +379,7 @@ export function Header() {
               ref={menuButtonRef}
               data-mobile-menu
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden relative min-h-[48px] min-w-[48px] p-4 rounded-xl text-slate-900 hover:bg-slate-100 active:bg-slate-200 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+              className="md:hidden relative min-h-[56px] min-w-[56px] p-4 rounded-xl text-slate-900 hover:bg-slate-100 active:bg-slate-200 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 touch-manipulation"
               aria-label={isMenuOpen ? t('closeMenu') : t('openMenu')}
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
@@ -415,7 +440,7 @@ export function Header() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1, duration: 0.3 }}
                     whileTap={{ scale: 0.97 }}
-                    className="mb-4 min-h-[56px] px-8 py-5 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-center text-base transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 active:scale-[0.97]"
+                    className="mb-4 min-h-[56px] px-8 py-3 sm:py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-center text-base transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 active:scale-[0.97] touch-manipulation"
                     role="menuitem"
                     aria-label={t('startNowAria')}
                     tabIndex={isMenuOpen ? 0 : -1}

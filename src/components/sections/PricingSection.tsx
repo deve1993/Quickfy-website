@@ -284,7 +284,7 @@ export const PricingSection = memo(function PricingSection() {
                 variants={itemVariants}
                 className="group relative"
               >
-                <div className={`relative h-full min-h-[280px] sm:min-h-[350px] lg:min-h-[420px] p-4 sm:p-6 rounded-2xl shadow-lg transition-all duration-300 border overflow-hidden flex flex-col ${
+                <div className={`relative h-full sm:min-h-[320px] lg:min-h-[380px] p-4 sm:p-6 rounded-2xl shadow-lg transition-all duration-300 border overflow-hidden flex flex-col ${
                   plan.isClosed
                     ? 'bg-slate-50 border-slate-200 opacity-75'
                     : plan.isRecommended
