@@ -18,7 +18,7 @@ interface DashboardMockupProps {
 export function DashboardMockup({
   imageSrc = '/screenshots/2.png',
   alt = 'QuickFy Dashboard Interface',
-  enableParallax = true,
+  enableParallax: _enableParallax = true,
   enableTilt = true,
   enableFloating = true,
   className
