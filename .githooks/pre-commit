@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+# Pre-commit hook to validate JSON translation files
+# Prevents commits with invalid JSON that would break the build
+#
+
+echo "🔍 Validating translation files before commit..."
+
+# Check if validation script exists
+if [ ! -f "scripts/validate-json.js" ]; then
+    echo "❌ Validation script not found. Please ensure scripts/validate-json.js exists."
+    exit 1
+fi
+
+# Run JSON validation
+node scripts/validate-json.js
+
+# Check validation result
+if [ $? -ne 0 ]; then
+    echo ""
+    echo "💥 Commit blocked: Translation files contain errors"
+    echo "Please fix the JSON errors above before committing."
+    echo ""
+    echo "To bypass this check (not recommended): git commit --no-verify"
+    exit 1
+fi
+
+echo "✅ All translation files are valid. Proceeding with commit..."
+exit 0

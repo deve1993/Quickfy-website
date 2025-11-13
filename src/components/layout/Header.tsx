@@ -53,18 +53,23 @@ export function Header() {
 
   // CTA configuration
   const ctaConfig = useMemo(() => {
-    const scrollToSection = (sectionId: string) => {
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        setIsMenuOpen(false);
-        setIsProductsOpen(false);
-      }
+    const scrollToCTA = () => {
+      // Close menus FIRST to unlock body scroll
+      setIsMenuOpen(false);
+      setIsProductsOpen(false);
+
+      // Wait for menu to close and body to unlock before scrolling
+      setTimeout(() => {
+        const element = document.getElementById('contact');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
     };
 
     return {
       text: t('startNow'),
-      action: () => scrollToSection('contact'),
+      action: scrollToCTA,
       gradient: 'from-blue-600 to-purple-600',
       hoverGradient: 'from-blue-700 to-purple-700'
     };
@@ -219,12 +224,17 @@ export function Header() {
   }, [isMenuOpen]);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      setIsMenuOpen(false);
-      setIsProductsOpen(false);
-    }
+    // Close menus FIRST to unlock body scroll
+    setIsMenuOpen(false);
+    setIsProductsOpen(false);
+
+    // Wait for menu to close and body to unlock before scrolling
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
   };
 
   const handleNavigation = (item: { id: string; type: string; href?: string }) => {
