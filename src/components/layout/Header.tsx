@@ -456,25 +456,16 @@ export function Header() {
           <AnimatePresence>
             {isMenuOpen && (
               <>
-                {/* Backdrop Overlay - Click area that closes menu */}
+                {/* Backdrop Overlay - purely visual, no click events */}
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="md:hidden fixed inset-0 z-[45]"
+                  className="md:hidden fixed inset-0 bg-slate-900/20 backdrop-blur-sm z-[45] pointer-events-none"
                   style={{ top: '72px' }}
                   aria-hidden="true"
-                >
-                  {/* Visual backdrop with blur - pointer-events-none so clicks pass through to clickable area */}
-                  <div className="absolute inset-0 bg-slate-900/20 backdrop-blur-sm pointer-events-none" />
-
-                  {/* Clickable area that closes menu - covers everything */}
-                  <div
-                    className="absolute inset-0 pointer-events-auto"
-                    onClick={() => setIsMenuOpen(false)}
-                  />
-                </motion.div>
+                />
 
                 {/* Mobile Menu - Fixed positioning with higher z-index */}
                 <motion.div
