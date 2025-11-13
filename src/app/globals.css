@@ -31,6 +31,16 @@
     --input: 220 13% 91%;
     --ring: 214 100% 50%;
     --radius: 0.75rem;
+
+    /* Z-Index Scale - Consistent layering system */
+    --z-base: 0;
+    --z-sticky: 40;
+    --z-header: 50;
+    --z-dropdown: 60;
+    --z-overlay: 70;
+    --z-modal: 80;
+    --z-popover: 90;
+    --z-toast: 100;
   }
 
   .dark {
@@ -147,6 +157,48 @@
 
 .focus-accessible-navbar {
   @apply focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 transition-all duration-200;
+}
+
+/* Z-Index Utility Classes */
+.z-sticky {
+  z-index: var(--z-sticky);
+}
+
+.z-header {
+  z-index: var(--z-header);
+}
+
+.z-dropdown {
+  z-index: var(--z-dropdown);
+}
+
+.z-overlay {
+  z-index: var(--z-overlay);
+}
+
+.z-modal {
+  z-index: var(--z-modal);
+}
+
+.z-popover {
+  z-index: var(--z-popover);
+}
+
+.z-toast {
+  z-index: var(--z-toast);
+}
+
+/* Touch/Active States for Mobile */
+.touch-feedback {
+  @apply active:scale-[0.98] active:opacity-90 transition-transform duration-150;
+}
+
+.touch-feedback-card {
+  @apply active:scale-[0.99] active:shadow-md transition-all duration-150;
+}
+
+.touch-feedback-button {
+  @apply active:scale-[0.97] active:brightness-95 transition-all duration-150;
 }
 
 /* Focus Cards Hover Effects */

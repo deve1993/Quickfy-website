@@ -43,7 +43,7 @@ export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const { success, error } = useToastHelpers();
-  const { motionConfig, shouldReduceMotion } = useMotionPreference();
+  const { shouldReduceMotion } = useMotionPreference();
 
   // Rate limiting: 3 submissions per minute
   const { isAllowed, remainingRequests: _remainingRequests, resetTime } = useRateLimit({
@@ -302,7 +302,7 @@ export function ContactForm() {
       <motion.div
         whileHover={shouldReduceMotion ? {} : { y: -4 }}
         transition={shouldReduceMotion ? {} : { type: "spring", stiffness: 300 }}
-        className="bg-white rounded-3xl shadow-2xl border-2 border-transparent ring-2 ring-blue-400/50 hover:ring-blue-500 transition-all duration-300 overflow-hidden"
+        className="bg-white rounded-3xl shadow-2xl border-2 border-transparent ring-2 ring-blue-400/50 hover:ring-blue-500 transition-all duration-300"
       >
         {/* Progress Bar - Desktop */}
         <div className="bg-gradient-to-r from-slate-50 to-slate-100 p-3 sm:p-4 hidden sm:block">
@@ -380,6 +380,7 @@ export function ContactForm() {
                 id="email"
                 {...register('email')}
                 type="email"
+                inputMode="email"
                 placeholder={t('contact.form.fields.email.placeholder')}
                 className={cn(
                   'h-12 sm:h-14 text-base sm:text-lg border-2 border-slate-300 hover:border-slate-400 focus:border-blue-600 focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-1 transition-all duration-300 rounded-xl',
@@ -449,6 +450,8 @@ export function ContactForm() {
                 id="phone"
                 {...register('phone')}
                 type="tel"
+                inputMode="tel"
+                pattern="[0-9+\-\s()]*"
                 placeholder={`${t('contact.form.fields.phone.placeholder')} (Opzionale)`}
                 className={cn(
                   'h-12 sm:h-14 text-base sm:text-lg border-2 border-slate-300 hover:border-slate-400 focus:border-blue-600 focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-1 transition-all duration-300 rounded-xl',
