@@ -170,6 +170,7 @@ export function Header() {
       }
       if (isMenuOpen && e.key === 'Escape') {
         setIsMenuOpen(false);
+        menuButtonRef.current?.focus();
       }
     };
 
@@ -181,6 +182,41 @@ export function Header() {
       document.removeEventListener('keydown', handleKeyDown);
     };
   }, [isProductsOpen, isMenuOpen]);
+
+  // Focus trap for mobile menu - Enhanced accessibility
+  useEffect(() => {
+    if (isMenuOpen && mobileMenuRef.current) {
+      const focusableElements = mobileMenuRef.current.querySelectorAll(
+        'button[tabindex="0"], a[tabindex="0"]'
+      );
+      const firstElement = focusableElements[0] as HTMLElement;
+      const lastElement = focusableElements[focusableElements.length - 1] as HTMLElement;
+
+      // Focus first element when menu opens
+      setTimeout(() => firstElement?.focus(), 100);
+
+      const handleTabKey = (e: KeyboardEvent) => {
+        if (e.key !== 'Tab') return;
+
+        if (e.shiftKey) {
+          // Shift + Tab
+          if (document.activeElement === firstElement) {
+            e.preventDefault();
+            lastElement?.focus();
+          }
+        } else {
+          // Tab
+          if (document.activeElement === lastElement) {
+            e.preventDefault();
+            firstElement?.focus();
+          }
+        }
+      };
+
+      document.addEventListener('keydown', handleTabKey);
+      return () => document.removeEventListener('keydown', handleTabKey);
+    }
+  }, [isMenuOpen]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -416,104 +452,131 @@ export function Header() {
             </motion.button>
           </div>
 
-          {/* Enhanced Mobile Menu - CTA moved to TOP */}
+          {/* Enhanced Mobile Menu with Backdrop */}
           <AnimatePresence>
             {isMenuOpen && (
-              <motion.div
-                ref={mobileMenuRef}
-                id="mobile-menu"
-                data-mobile-menu
-                initial={{ opacity: 0, height: 0, scale: 0.95 }}
-                animate={{ opacity: 1, height: 'auto', scale: 1 }}
-                exit={{ opacity: 0, height: 0, scale: 0.95 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
-                className="md:hidden mt-6 pb-6 rounded-2xl mx-2 bg-white border border-slate-200 shadow-xl"
-                role="menu"
-                aria-label={t('mobileMenu')}
-                aria-orientation="vertical"
-              >
-                <div className="flex flex-col p-4">
-                  {/* Enhanced CTA button for mobile - MOVED TO TOP */}
-                  <motion.button
-                    onClick={ctaConfig.action}
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.1, duration: 0.3 }}
-                    whileTap={{ scale: 0.97 }}
-                    className="mb-4 min-h-[56px] px-8 py-3 sm:py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold text-center text-base transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 active:scale-[0.97] touch-manipulation"
-                    role="menuitem"
-                    aria-label={t('startNowAria')}
-                    tabIndex={isMenuOpen ? 0 : -1}
-                  >
-                    {ctaConfig.text}
-                  </motion.button>
+              <>
+                {/* Backdrop Overlay */}
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="md:hidden fixed inset-0 bg-slate-900/20 backdrop-blur-sm z-40"
+                  onClick={() => setIsMenuOpen(false)}
+                  aria-hidden="true"
+                />
 
-                  {/* Divider */}
-                  <div className="h-px bg-slate-200 mb-3" />
+                {/* Mobile Menu */}
+                <motion.div
+                  ref={mobileMenuRef}
+                  id="mobile-menu"
+                  data-mobile-menu
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                  className="md:hidden absolute left-0 right-0 top-full mt-2 mx-3 bg-white rounded-2xl border border-slate-200 shadow-2xl z-50 max-h-[calc(100vh-100px)] overflow-y-auto"
+                  role="menu"
+                  aria-label={t('mobileMenu')}
+                  aria-orientation="vertical"
+                >
+                  <div className="flex flex-col p-5">
+                    {/* Enhanced CTA button for mobile */}
+                    <motion.button
+                      onClick={ctaConfig.action}
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: 0.1, duration: 0.3 }}
+                      whileTap={{ scale: 0.97 }}
+                      className="mb-5 min-h-[56px] px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold text-center text-base shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 active:scale-[0.97] touch-manipulation transition-all duration-300"
+                      role="menuitem"
+                      aria-label={t('startNowAria')}
+                      tabIndex={isMenuOpen ? 0 : -1}
+                    >
+                      {ctaConfig.text}
+                    </motion.button>
 
-                  {/* Products section in mobile */}
-                  <div className="mb-3">
-                    <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider px-5 mb-3">
-                      {t('products')}
-                    </p>
-                    <div className="space-y-2">
-                      {products.map((product) => (
-                        <motion.button
-                          key={product.id}
-                          onClick={() => handleProductClick(product)}
-                          className={`w-full text-left min-h-[48px] px-5 py-4 rounded-lg transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset active:scale-[0.97] ${
-                            product.isActive ? 'bg-blue-50 text-blue-600' : 'text-slate-700 hover:bg-slate-50 active:bg-slate-100'
-                          }`}
-                          whileTap={{ scale: 0.97 }}
-                      >
-                        <div className="flex items-center justify-between">
-                          <div className="flex-1">
-                            <div className="flex items-center gap-2 mb-1">
-                              <span className="font-semibold text-base">{product.title}</span>
+                    {/* Divider with gradient */}
+                    <div className="h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent mb-4" />
+
+                    {/* Products section in mobile */}
+                    <div className="mb-4">
+                      <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider px-4 mb-3">
+                        {t('products')}
+                      </p>
+                      <div className="space-y-2">
+                        {products.map((product, index) => (
+                          <motion.button
+                            key={product.id}
+                            onClick={() => handleProductClick(product)}
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.15 + (index * 0.05), duration: 0.3 }}
+                            className={`w-full text-left min-h-[56px] px-4 py-3 rounded-xl transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset active:scale-[0.98] touch-manipulation ${
+                              product.isActive
+                                ? 'bg-gradient-to-r from-blue-50 to-purple-50 border-l-4 border-blue-600 text-blue-700'
+                                : 'text-slate-700 hover:bg-slate-50 active:bg-slate-100'
+                            }`}
+                            whileTap={{ scale: 0.98 }}
+                            role="menuitem"
+                            tabIndex={isMenuOpen ? 0 : -1}
+                          >
+                            <div className="flex items-center justify-between">
+                              <div className="flex-1">
+                                <div className="flex items-center gap-2 mb-1">
+                                  <span className="font-semibold text-base">{product.title}</span>
+                                </div>
+                                <p className="text-xs text-slate-600 leading-relaxed">{product.subtitle}</p>
+                              </div>
+                              {product.isActive && (
+                                <motion.div
+                                  initial={{ scale: 0 }}
+                                  animate={{ scale: 1 }}
+                                  transition={{ delay: 0.2 }}
+                                >
+                                  <Check className="w-5 h-5 text-blue-600 flex-shrink-0 ml-3" />
+                                </motion.div>
+                              )}
                             </div>
-                            <p className="text-xs text-slate-500">{product.subtitle}</p>
-                          </div>
-                          {product.isActive && (
-                            <Check className="w-5 h-5 flex-shrink-0 ml-3" />
-                          )}
-                        </div>
-                      </motion.button>
+                          </motion.button>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Divider with gradient */}
+                    <div className="h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent my-4" />
+
+                    {/* Navigation items */}
+                    <div className="space-y-2">
+                      {getNavigationItems.filter(item => item.type !== 'dropdown').map((item, index) => (
+                        <motion.button
+                          key={item.id}
+                          ref={(el) => {
+                            navigationItemsRef.current[index] = el;
+                          }}
+                          onClick={() => handleNavigation(item)}
+                          initial={{ opacity: 0, x: -20 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{ delay: 0.2 + (index * 0.05), duration: 0.3 }}
+                          whileTap={{ scale: 0.98 }}
+                          className={`text-left min-h-[56px] w-full px-4 py-4 rounded-xl transition-all duration-200 font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset active:scale-[0.98] touch-manipulation ${
+                            activeSection === item.id && item.type === 'scroll'
+                              ? 'bg-gradient-to-r from-blue-50 to-purple-50 text-blue-700 shadow-sm'
+                              : 'text-slate-700 hover:bg-slate-50 active:bg-slate-100 hover:text-blue-600'
+                          }`}
+                          role="menuitem"
+                          aria-label={t('sectionAria', { section: item.label })}
+                          aria-current={activeSection === item.id && item.type === 'scroll' ? 'true' : undefined}
+                          tabIndex={isMenuOpen ? 0 : -1}
+                        >
+                          {item.label}
+                        </motion.button>
                       ))}
                     </div>
                   </div>
-
-                  {/* Divider */}
-                  <div className="h-px bg-slate-200 my-3" />
-
-                  {/* Navigation items */}
-                  <div className="space-y-3">
-                    {getNavigationItems.filter(item => item.type !== 'dropdown').map((item, index) => (
-                      <motion.button
-                        key={item.id}
-                        ref={(el) => {
-                          navigationItemsRef.current[index] = el;
-                        }}
-                        onClick={() => handleNavigation(item)}
-                        initial={{ opacity: 0, x: -30 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 0.15 + (index * 0.05), duration: 0.3 }}
-                        whileTap={{ scale: 0.97 }}
-                        className={`text-left min-h-[48px] w-full px-5 py-5 rounded-lg transition-all duration-200 font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset active:scale-[0.97] ${
-                          activeSection === item.id && item.type === 'scroll'
-                            ? 'bg-blue-50 text-blue-600'
-                            : 'text-slate-700 hover:bg-slate-50 active:bg-slate-100 hover:text-blue-600'
-                        }`}
-                      role="menuitem"
-                      aria-label={t('sectionAria', { section: item.label })}
-                      aria-current={activeSection === item.id && item.type === 'scroll' ? 'true' : undefined}
-                      tabIndex={isMenuOpen ? 0 : -1}
-                    >
-                        {item.label}
-                      </motion.button>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
+                </motion.div>
+              </>
             )}
           </AnimatePresence>
         </div>
