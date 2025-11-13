@@ -366,6 +366,9 @@
   },
   "footer": {
     "description": "QuickFy - Simplified analytics dashboard and AI tools for small businesses. Data, reviews, and social media in one platform.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "backToTop": "Back to Top",
     "contact": {
       "emailAria": "Send email to QuickFy"
     },

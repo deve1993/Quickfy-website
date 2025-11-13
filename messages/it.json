@@ -366,6 +366,9 @@
   },
   "footer": {
     "description": "QuickFy - La piattaforma intelligente che trasforma la complessità del marketing digitale in strumenti semplici, potenti e accessibili per PMI e professionisti.",
+    "quickLinks": "Link Rapidi",
+    "followUs": "Seguici",
+    "backToTop": "Torna su",
     "contact": {
       "emailAria": "Invia email a QuickFy"
     },

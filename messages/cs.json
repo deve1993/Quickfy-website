@@ -366,6 +366,9 @@
   },
   "footer": {
     "description": "QuickFy - Zjednodušený analytický dashboard a AI nástroje pro malé firmy. Data, recenze a sociální média v jedné platformě.",
+    "quickLinks": "Rychlé odkazy",
+    "followUs": "Sledujte nás",
+    "backToTop": "Zpět nahoru",
     "contact": {
       "emailAria": "Odeslat email na QuickFy"
     },
