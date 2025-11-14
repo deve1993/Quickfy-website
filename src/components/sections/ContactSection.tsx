@@ -9,12 +9,16 @@ export function ContactSection() {
   const t = useTranslations();
 
   return (
-    <section id="contact" className="relative py-0 px-4 overflow-hidden">
+    <section id="contact" className="relative py-0 px-4 overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/30">
       {/* Background Decorations */}
       <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-        {/* Gradient Orbs */}
-        <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-full blur-3xl" />
+        {/* Gradient Orbs - Enhanced */}
+        <div className="absolute top-20 -left-20 w-[500px] h-[500px] bg-gradient-to-r from-blue-400/30 to-cyan-400/30 rounded-full blur-3xl animate-pulse-slow" />
+        <div className="absolute bottom-20 -right-20 w-[500px] h-[500px] bg-gradient-to-r from-purple-400/30 to-pink-400/30 rounded-full blur-3xl animate-pulse-slow" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-violet-400/20 to-indigo-400/20 rounded-full blur-3xl" />
+
+        {/* Grid Pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)] bg-[size:4rem_4rem]" />
       </div>
 
       <div className="max-w-6xl mx-auto py-12">

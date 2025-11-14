@@ -101,6 +101,10 @@ const config: Config = {
         'slide-in-right': {
           '0%': { opacity: '0', transform: 'translateX(30px)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        'pulse-slow': {
+          '0%, 100%': { opacity: '0.3' },
+          '50%': { opacity: '0.5' },
         }
       },
       animation: {
@@ -112,6 +116,7 @@ const config: Config = {
         'fade-in': 'fade-in 0.6s ease-out forwards',
         'slide-in-left': 'slide-in-left 0.6s ease-out forwards',
         'slide-in-right': 'slide-in-right 0.6s ease-out forwards',
+        'pulse-slow': 'pulse-slow 4s ease-in-out infinite',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
