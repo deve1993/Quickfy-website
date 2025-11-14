@@ -38,15 +38,10 @@ export const CookieConsentProvider: React.FC<CookieConsentProviderProps> = ({ ch
     setMounted(true);
     const savedConsent = CookieManager.loadConsent();
     setConsentState(savedConsent);
-    
-    // Show banner if user hasn't consented yet
-    if (!savedConsent.hasConsented) {
-      // Delay showing banner to avoid being intrusive
-      const timer = setTimeout(() => {
-        setShowBanner(true);
-      }, 2000); // Show after 2 seconds
 
-      return () => clearTimeout(timer);
+    // Show banner immediately if user hasn't consented yet
+    if (!savedConsent.hasConsented) {
+      setShowBanner(true);
     }
   }, []);
 
