@@ -141,7 +141,7 @@ export const CookieConsentBanner: React.FC = () => {
                   >
                     <Settings size={16} />
                     <span className="hidden sm:inline">{t('cookieConsent.managePreferences')}</span>
-                    <span className="sm:hidden">Impostazioni</span>
+                    <span className="sm:hidden">{t('cookieConsent.settings')}</span>
                   </motion.button>
                 </div>
 

@@ -216,6 +216,7 @@
           "placeholder": "Descrivi brevemente le tue esigenze..."
         }
       },
+      "optionalField": "Opzionale",
       "submit": "Parla con un Esperto",
       "submitting": "Invio in corso...",
       "submitAnother": "Invia Altra Richiesta",
@@ -410,6 +411,7 @@
     "acceptAll": "Accetta Tutti",
     "rejectAll": "Rifiuta Tutti",
     "managePreferences": "Gestisci Preferenze",
+    "settings": "Impostazioni",
     "savePreferences": "Salva Preferenze",
     "close": "Chiudi",
     "legalNotice": "Maggiori informazioni sull'utilizzo dei cookie sono disponibili nella nostra",

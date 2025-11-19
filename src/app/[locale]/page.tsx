@@ -2,9 +2,6 @@ import { getTranslations } from 'next-intl/server';
 import { Suspense } from 'react';
 import dynamicImport from 'next/dynamic';
 
-// Force dynamic rendering to avoid prerendering issues with next-intl
-export const dynamic = 'force-dynamic';
-
 // Import HeroSection directly for critical above-the-fold content
 import { HeroSection } from '@/components/sections/HeroSection';
 import { ProductSchema } from '@/components/seo/ProductSchema';

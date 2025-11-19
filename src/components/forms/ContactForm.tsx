@@ -137,9 +137,27 @@ export function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      // TODO: Replace with actual API call using _sanitizedData
-      // Example: await fetch('/api/contact', { method: 'POST', body: JSON.stringify(_sanitizedData) })
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Send form data to API
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: _sanitizedData.name,
+          email: _sanitizedData.email,
+          company: _sanitizedData.company,
+          phone: _sanitizedData.phone,
+          message: _sanitizedData.message,
+          consent: _sanitizedData.privacy
+        })
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to submit form');
+      }
 
       // Form submitted successfully
       setSubmitStatus('success');
@@ -593,7 +611,7 @@ export function ContactForm() {
                 <Input
                   id="company"
                   {...register('company')}
-                  placeholder={`${t('contact.form.fields.company.placeholder')} (Opzionale)`}
+                  placeholder={`${t('contact.form.fields.company.placeholder')} (${t('contact.form.optionalField')})`}
                   className={cn(
                     'h-12 sm:h-14 text-base sm:text-lg px-4 transition-all duration-500',
                     'bg-gradient-to-br from-white to-slate-50/30',
@@ -663,7 +681,7 @@ export function ContactForm() {
                   type="tel"
                   inputMode="tel"
                   pattern="[0-9+\-\s()]*"
-                  placeholder={`${t('contact.form.fields.phone.placeholder')} (Opzionale)`}
+                  placeholder={`${t('contact.form.fields.phone.placeholder')} (${t('contact.form.optionalField')})`}
                   className={cn(
                     'h-12 sm:h-14 text-base sm:text-lg px-4 transition-all duration-500',
                     'bg-gradient-to-br from-white to-slate-50/30',

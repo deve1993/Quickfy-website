@@ -76,7 +76,8 @@
       "Bash(nul)",
       "Bash(if exist \"frontend-web-app-quickfy\\.git\" rd /s /q \"frontend-web-app-quickfy\\.git\")",
       "Bash(git reset:*)",
-      "Bash(if exist node_modules.cache rd /s /q node_modules.cache)"
+      "Bash(if exist node_modules.cache rd /s /q node_modules.cache)",
+      "Bash(del \"c:\\Users\\devec\\progetti-web\\quickfy-website\\src\\components\\modals\\ExitIntentModal.tsx\")"
     ],
     "deny": [],
     "ask": []

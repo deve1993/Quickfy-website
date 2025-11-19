@@ -216,6 +216,7 @@
           "placeholder": "Popište své současné marketingové výzvy..."
         }
       },
+      "optionalField": "Volitelné",
       "submit": "Spojte se s expertem",
       "submitting": "Odesílání...",
       "submitAnother": "Odeslat Další Žádost",
@@ -410,6 +411,7 @@
     "acceptAll": "Přijmout vše",
     "rejectAll": "Odmítnout vše",
     "managePreferences": "Spravovat předvolby",
+    "settings": "Nastavení",
     "savePreferences": "Uložit předvolby",
     "close": "Zavřít",
     "legalNotice": "Více informací o používání cookies najdete v našich",

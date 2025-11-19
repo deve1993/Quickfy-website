@@ -216,6 +216,7 @@
           "placeholder": "Describe your current marketing challenges..."
         }
       },
+      "optionalField": "Optional",
       "submit": "Talk to an Expert",
       "submitting": "Sending...",
       "submitAnother": "Submit Another Request",
@@ -410,6 +411,7 @@
     "acceptAll": "Accept All",
     "rejectAll": "Reject All",
     "managePreferences": "Manage Preferences",
+    "settings": "Settings",
     "savePreferences": "Save Preferences",
     "close": "Close",
     "legalNotice": "More information about our use of cookies can be found in our",

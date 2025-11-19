@@ -1,6 +1,6 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Linkedin, ArrowUp, Facebook, Instagram } from 'lucide-react';
 import { memo } from 'react';
@@ -11,6 +11,7 @@ import { useMotionPreference } from '@/hooks/usePerformance';
 export const MinimalFooter = memo(function MinimalFooter() {
   const t = useTranslations('footer');
   const tAccessibility = useTranslations('accessibility');
+  const locale = useLocale();
   const { shouldReduceMotion } = useMotionPreference();
 
   const scrollToTop = () => {
@@ -253,14 +254,14 @@ export const MinimalFooter = memo(function MinimalFooter() {
               <span className="hidden sm:inline text-gray-400">•</span>
               <div className="flex items-center gap-4">
                 <Link
-                  href="/privacy-policy"
+                  href={`/${locale}/privacy-policy`}
                   className="hover:text-blue-600 transition-colors"
                 >
                   {t('links.privacy')}
                 </Link>
                 <span className="text-gray-400">•</span>
                 <Link
-                  href="/terms-and-conditions"
+                  href={`/${locale}/terms-and-conditions`}
                   className="hover:text-blue-600 transition-colors"
                 >
                   {t('links.terms')}
