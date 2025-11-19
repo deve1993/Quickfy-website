@@ -164,7 +164,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-r from-blue-200/30 to-purple-200/30 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative z-10">
+        <div className="relative">
           <NextIntlClientProvider messages={messages}>
             <EnvironmentProvider>
               <CookieConsentProvider>
@@ -173,10 +173,10 @@ export default async function LocaleLayout({ children, params }: Props) {
                     {children}
                     <MinimalFooter />
                     <ClientOnly>
+                      <CookieConsentBanner />
                       <FloatingLanguageSwitcher />
                       <PerformanceMonitor />
                       <ResourceMonitor />
-                      <CookieConsentBanner />
                     </ClientOnly>
                 </ToastProvider>
               </CookieConsentProvider>

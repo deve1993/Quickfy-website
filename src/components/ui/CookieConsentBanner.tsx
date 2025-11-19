@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { X, Cookie, Settings, Shield, BarChart3, Target } from 'lucide-react';
@@ -11,8 +12,14 @@ export const CookieConsentBanner: React.FC = () => {
   const t = useTranslations();
   const { showBanner, acceptAll, rejectAll, closeBanner } = useCookieConsent();
   const [showPreferences, setShowPreferences] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  if (!showBanner) return null;
+  // Ensure component is mounted before using Portal (SSR safety)
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!showBanner || !mounted) return null;
 
   const handleManagePreferences = () => {
     setShowPreferences(true);
@@ -22,7 +29,10 @@ export const CookieConsentBanner: React.FC = () => {
     setShowPreferences(false);
   };
 
-  return (
+  // Portal must be used AFTER getting the context, not before
+  // This ensures the component has access to CookieConsentProvider
+
+  const bannerContent = (
     <>
       <AnimatePresence>
         {showBanner && (
@@ -32,7 +42,7 @@ export const CookieConsentBanner: React.FC = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden"
+              className="fixed inset-0 bg-black/20 backdrop-blur-sm z-[60] md:hidden"
               onClick={closeBanner}
             />
 
@@ -46,7 +56,7 @@ export const CookieConsentBanner: React.FC = () => {
                 stiffness: 300,
                 damping: 30,
               }}
-              className="fixed bottom-0 left-0 right-0 z-50 md:bottom-6 md:left-6 md:right-6 md:max-w-2xl md:mx-auto"
+              className="fixed bottom-0 left-0 right-0 z-[70] md:bottom-6 md:left-6 md:right-6 md:max-w-2xl md:mx-auto"
             >
               <div className="relative overflow-hidden bg-white/90 backdrop-blur-2xl border border-white/30 shadow-2xl shadow-blue-500/10 rounded-none md:rounded-3xl p-6 md:p-8">
                 {/* Ambient gradient background */}
@@ -163,4 +173,7 @@ export const CookieConsentBanner: React.FC = () => {
       />
     </>
   );
+
+  // Use Portal to render banner directly in document.body
+  return createPortal(bannerContent, document.body);
 };

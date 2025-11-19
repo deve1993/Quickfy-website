@@ -62,8 +62,6 @@ const FAQSection = dynamicImport(
   }
 );
 
-// Import the client-side exit intent provider
-import { ExitIntentProvider } from '@/components/providers/ExitIntentProvider';
 
 // Optimized lightweight skeleton components
 function SectionSkeleton({ height = "h-96" }: { height?: string }) {
@@ -147,9 +145,6 @@ export default async function HomePage() {
           <ContactSection />
         </Suspense>
       </main>
-
-      {/* Exit Intent Modal - Lead magnet */}
-      <ExitIntentProvider />
     </>
   );
 }

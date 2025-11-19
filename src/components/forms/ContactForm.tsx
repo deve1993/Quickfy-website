@@ -240,19 +240,40 @@ export function ContactForm() {
         viewport={{ once: true }}
         className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12"
       >
-        {/* 24H Response */}
+        {/* 24H Response - Neomorphism */}
         <motion.div
           whileHover={shouldReduceMotion ? {} : { y: -8, scale: 1.02 }}
           transition={shouldReduceMotion ? {} : { type: "spring", stiffness: 300 }}
-          className="relative group text-center p-6 bg-white/80 backdrop-blur-xl rounded-2xl shadow-lg shadow-blue-500/10 border border-white/20 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 overflow-hidden"
+          className="relative group text-center p-6 bg-gradient-to-br from-white to-blue-50/30 rounded-2xl shadow-[8px_8px_16px_rgba(148,163,184,0.15),-8px_-8px_16px_rgba(255,255,255,0.7)] hover:shadow-[12px_12px_24px_rgba(148,163,184,0.2),-12px_-12px_24px_rgba(255,255,255,0.8)] transition-all duration-500 overflow-hidden border border-blue-200/30"
+          style={{
+            background: 'linear-gradient(145deg, #ffffff, #f0f4ff)'
+          }}
         >
-          {/* Gradient overlay on hover */}
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+          {/* Animated gradient border */}
+          <motion.div
+            className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            style={{
+              background: 'linear-gradient(45deg, #3b82f6, #06b6d4, #3b82f6)',
+              backgroundSize: '200% 200%',
+              padding: '2px',
+              WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+              WebkitMaskComposite: 'xor',
+              maskComposite: 'exclude'
+            }}
+            animate={{
+              backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: 'linear'
+            }}
+          />
 
           {/* Content */}
           <div className="relative z-10">
             <div className="flex justify-center mb-3">
-              <div className="p-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg shadow-lg shadow-blue-500/30">
+              <div className="p-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg shadow-[4px_4px_8px_rgba(59,130,246,0.3),-2px_-2px_6px_rgba(6,182,212,0.2)]">
                 <Clock className="w-6 h-6 text-white" />
               </div>
             </div>
@@ -265,19 +286,40 @@ export function ContactForm() {
           </div>
         </motion.div>
 
-        {/* 500+ Clients */}
+        {/* 500+ Clients - Neomorphism */}
         <motion.div
           whileHover={shouldReduceMotion ? {} : { y: -8, scale: 1.02 }}
           transition={shouldReduceMotion ? {} : { type: "spring", stiffness: 300 }}
-          className="relative group text-center p-6 bg-white/80 backdrop-blur-xl rounded-2xl shadow-lg shadow-green-500/10 border border-white/20 hover:shadow-2xl hover:shadow-green-500/20 transition-all duration-300 overflow-hidden"
+          className="relative group text-center p-6 bg-gradient-to-br from-white to-green-50/30 rounded-2xl shadow-[8px_8px_16px_rgba(148,163,184,0.15),-8px_-8px_16px_rgba(255,255,255,0.7)] hover:shadow-[12px_12px_24px_rgba(148,163,184,0.2),-12px_-12px_24px_rgba(255,255,255,0.8)] transition-all duration-500 overflow-hidden border border-green-200/30"
+          style={{
+            background: 'linear-gradient(145deg, #ffffff, #f0fdf4)'
+          }}
         >
-          {/* Gradient overlay on hover */}
-          <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+          {/* Animated gradient border */}
+          <motion.div
+            className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            style={{
+              background: 'linear-gradient(45deg, #10b981, #059669, #10b981)',
+              backgroundSize: '200% 200%',
+              padding: '2px',
+              WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+              WebkitMaskComposite: 'xor',
+              maskComposite: 'exclude'
+            }}
+            animate={{
+              backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: 'linear'
+            }}
+          />
 
           {/* Content */}
           <div className="relative z-10">
             <div className="flex justify-center mb-3">
-              <div className="p-3 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg shadow-lg shadow-green-500/30">
+              <div className="p-3 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg shadow-[4px_4px_8px_rgba(16,185,129,0.3),-2px_-2px_6px_rgba(5,150,105,0.2)]">
                 <Users className="w-6 h-6 text-white" />
               </div>
             </div>
@@ -290,19 +332,40 @@ export function ContactForm() {
           </div>
         </motion.div>
 
-        {/* ROI Guaranteed */}
+        {/* ROI Guaranteed - Neomorphism */}
         <motion.div
           whileHover={shouldReduceMotion ? {} : { y: -8, scale: 1.02 }}
           transition={shouldReduceMotion ? {} : { type: "spring", stiffness: 300 }}
-          className="relative group text-center p-6 bg-white/80 backdrop-blur-xl rounded-2xl shadow-lg shadow-purple-500/10 border border-white/20 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 overflow-hidden"
+          className="relative group text-center p-6 bg-gradient-to-br from-white to-purple-50/30 rounded-2xl shadow-[8px_8px_16px_rgba(148,163,184,0.15),-8px_-8px_16px_rgba(255,255,255,0.7)] hover:shadow-[12px_12px_24px_rgba(148,163,184,0.2),-12px_-12px_24px_rgba(255,255,255,0.8)] transition-all duration-500 overflow-hidden border border-purple-200/30"
+          style={{
+            background: 'linear-gradient(145deg, #ffffff, #faf5ff)'
+          }}
         >
-          {/* Gradient overlay on hover */}
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+          {/* Animated gradient border */}
+          <motion.div
+            className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            style={{
+              background: 'linear-gradient(45deg, #a855f7, #7c3aed, #a855f7)',
+              backgroundSize: '200% 200%',
+              padding: '2px',
+              WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+              WebkitMaskComposite: 'xor',
+              maskComposite: 'exclude'
+            }}
+            animate={{
+              backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: 'linear'
+            }}
+          />
 
           {/* Content */}
           <div className="relative z-10">
             <div className="flex justify-center mb-3">
-              <div className="p-3 bg-gradient-to-r from-purple-500 to-violet-500 rounded-lg shadow-lg shadow-purple-500/30">
+              <div className="p-3 bg-gradient-to-r from-purple-500 to-violet-500 rounded-lg shadow-[4px_4px_8px_rgba(168,85,247,0.3),-2px_-2px_6px_rgba(124,58,237,0.2)]">
                 <TrendingUp className="w-6 h-6 text-white" />
               </div>
             </div>
@@ -316,14 +379,38 @@ export function ContactForm() {
         </motion.div>
       </motion.div>
 
-      {/* Main Form with Enhanced UX */}
+      {/* Main Form with Neomorphism */}
       <motion.div
         whileHover={shouldReduceMotion ? {} : { y: -4 }}
         transition={shouldReduceMotion ? {} : { type: "spring", stiffness: 300 }}
-        className="relative overflow-hidden bg-white/90 backdrop-blur-2xl rounded-3xl shadow-2xl shadow-blue-500/10 border border-white/30 hover:shadow-blue-500/20 transition-all duration-500"
+        className="relative overflow-hidden rounded-3xl shadow-[16px_16px_32px_rgba(148,163,184,0.2),-16px_-16px_32px_rgba(255,255,255,0.9)] hover:shadow-[20px_20px_40px_rgba(148,163,184,0.25),-20px_-20px_40px_rgba(255,255,255,1)] transition-all duration-500 border border-slate-200/50"
+        style={{
+          background: 'linear-gradient(145deg, #ffffff, #f8fafc)'
+        }}
       >
-        {/* Ambient gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-transparent to-purple-50/30 pointer-events-none" />
+        {/* Animated gradient border overlay */}
+        <motion.div
+          className="absolute inset-0 rounded-3xl opacity-30"
+          style={{
+            background: 'linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6)',
+            backgroundSize: '300% 300%',
+            padding: '1px',
+            WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+            WebkitMaskComposite: 'xor',
+            maskComposite: 'exclude'
+          }}
+          animate={{
+            backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
+          }}
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            ease: 'linear'
+          }}
+        />
+
+        {/* Subtle texture overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 via-transparent to-purple-50/20 pointer-events-none" />
         {/* Progress Bar - Desktop */}
         <div className="relative z-10 bg-gradient-to-r from-blue-50/50 to-purple-50/50 backdrop-blur-sm p-3 sm:p-4 hidden sm:block border-b border-white/20">
           <div className="flex justify-between items-center mb-2">
@@ -364,24 +451,53 @@ export function ContactForm() {
               transition={{ delay: 0.1, type: "spring", stiffness: 300 }}
               className="relative group"
             >
-              <Input
-                id="name"
-                {...register('name')}
-                placeholder={t('contact.form.fields.name.placeholder')}
-                className={cn(
-                  'h-12 sm:h-14 text-base sm:text-lg px-4 transition-all duration-300',
-                  'bg-white/50 backdrop-blur-sm',
-                  'border-2 border-slate-300/50 hover:border-slate-400/70',
-                  'rounded-xl shadow-sm hover:shadow-md',
-                  'focus:border-blue-500 focus:bg-white/70 focus:shadow-lg focus:shadow-blue-500/20 focus:ring-4 focus:ring-blue-500/10 focus:-translate-y-0.5',
-                  errors.name && 'border-red-500 bg-red-50/30 shadow-red-500/20',
-                  watchedValues.name && !errors.name && 'border-green-500 bg-green-50/30 shadow-green-500/10'
-                )}
-                aria-invalid={!!errors.name}
-                aria-describedby={errors.name ? 'name-error' : undefined}
-              />
-              {/* Focus glow indicator */}
-              <div className="absolute inset-0 rounded-xl bg-blue-500/5 opacity-0 group-focus-within:opacity-100 transition-opacity pointer-events-none" />
+              <div className="relative">
+                <Input
+                  id="name"
+                  {...register('name')}
+                  placeholder={t('contact.form.fields.name.placeholder')}
+                  className={cn(
+                    'h-12 sm:h-14 text-base sm:text-lg px-4 transition-all duration-500',
+                    'bg-gradient-to-br from-white to-slate-50/30',
+                    'border-2 border-transparent',
+                    'rounded-xl',
+                    'shadow-[inset_4px_4px_8px_rgba(148,163,184,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.9)]',
+                    'hover:shadow-[inset_5px_5px_10px_rgba(148,163,184,0.15),inset_-5px_-5px_10px_rgba(255,255,255,1)]',
+                    'focus:shadow-[inset_6px_6px_12px_rgba(59,130,246,0.15),inset_-6px_-6px_12px_rgba(255,255,255,1)] focus:ring-0 focus:outline-none',
+                    errors.name && 'shadow-[inset_4px_4px_8px_rgba(239,68,68,0.2),inset_-4px_-4px_8px_rgba(255,255,255,0.9)]',
+                    watchedValues.name && !errors.name && 'shadow-[inset_4px_4px_8px_rgba(34,197,94,0.15),inset_-4px_-4px_8px_rgba(255,255,255,0.9)]'
+                  )}
+                  style={{
+                    background: errors.name
+                      ? 'linear-gradient(145deg, #fef2f2, #ffffff)'
+                      : watchedValues.name && !errors.name
+                        ? 'linear-gradient(145deg, #f0fdf4, #ffffff)'
+                        : 'linear-gradient(145deg, #ffffff, #f8fafc)'
+                  }}
+                  aria-invalid={!!errors.name}
+                  aria-describedby={errors.name ? 'name-error' : undefined}
+                />
+                {/* Animated gradient border on focus */}
+                <motion.div
+                  className="absolute inset-0 rounded-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-500 pointer-events-none"
+                  style={{
+                    background: 'linear-gradient(90deg, #3b82f6, #8b5cf6, #3b82f6)',
+                    backgroundSize: '200% 200%',
+                    padding: '2px',
+                    WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                    WebkitMaskComposite: 'xor',
+                    maskComposite: 'exclude'
+                  }}
+                  animate={{
+                    backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: 'linear'
+                  }}
+                />
+              </div>
               {errors.name && (
                 <motion.p
                   id="name-error"
@@ -402,26 +518,55 @@ export function ContactForm() {
               transition={{ delay: 0.2, type: "spring", stiffness: 300 }}
               className="relative group"
             >
-              <Input
-                id="email"
-                {...register('email')}
-                type="email"
-                inputMode="email"
-                placeholder={t('contact.form.fields.email.placeholder')}
-                className={cn(
-                  'h-12 sm:h-14 text-base sm:text-lg px-4 transition-all duration-300',
-                  'bg-white/50 backdrop-blur-sm',
-                  'border-2 border-slate-300/50 hover:border-slate-400/70',
-                  'rounded-xl shadow-sm hover:shadow-md',
-                  'focus:border-blue-500 focus:bg-white/70 focus:shadow-lg focus:shadow-blue-500/20 focus:ring-4 focus:ring-blue-500/10 focus:-translate-y-0.5',
-                  errors.email && 'border-red-500 bg-red-50/30 shadow-red-500/20',
-                  watchedValues.email && !errors.email && 'border-green-500 bg-green-50/30 shadow-green-500/10'
-                )}
-                aria-invalid={!!errors.email}
-                aria-describedby={errors.email ? 'email-error' : undefined}
-                autoComplete="email"
-              />
-              <div className="absolute inset-0 rounded-xl bg-blue-500/5 opacity-0 group-focus-within:opacity-100 transition-opacity pointer-events-none" />
+              <div className="relative">
+                <Input
+                  id="email"
+                  {...register('email')}
+                  type="email"
+                  inputMode="email"
+                  placeholder={t('contact.form.fields.email.placeholder')}
+                  className={cn(
+                    'h-12 sm:h-14 text-base sm:text-lg px-4 transition-all duration-500',
+                    'bg-gradient-to-br from-white to-slate-50/30',
+                    'border-2 border-transparent',
+                    'rounded-xl',
+                    'shadow-[inset_4px_4px_8px_rgba(148,163,184,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.9)]',
+                    'hover:shadow-[inset_5px_5px_10px_rgba(148,163,184,0.15),inset_-5px_-5px_10px_rgba(255,255,255,1)]',
+                    'focus:shadow-[inset_6px_6px_12px_rgba(59,130,246,0.15),inset_-6px_-6px_12px_rgba(255,255,255,1)] focus:ring-0 focus:outline-none',
+                    errors.email && 'shadow-[inset_4px_4px_8px_rgba(239,68,68,0.2),inset_-4px_-4px_8px_rgba(255,255,255,0.9)]',
+                    watchedValues.email && !errors.email && 'shadow-[inset_4px_4px_8px_rgba(34,197,94,0.15),inset_-4px_-4px_8px_rgba(255,255,255,0.9)]'
+                  )}
+                  style={{
+                    background: errors.email
+                      ? 'linear-gradient(145deg, #fef2f2, #ffffff)'
+                      : watchedValues.email && !errors.email
+                        ? 'linear-gradient(145deg, #f0fdf4, #ffffff)'
+                        : 'linear-gradient(145deg, #ffffff, #f8fafc)'
+                  }}
+                  aria-invalid={!!errors.email}
+                  aria-describedby={errors.email ? 'email-error' : undefined}
+                  autoComplete="email"
+                />
+                <motion.div
+                  className="absolute inset-0 rounded-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-500 pointer-events-none"
+                  style={{
+                    background: 'linear-gradient(90deg, #3b82f6, #8b5cf6, #3b82f6)',
+                    backgroundSize: '200% 200%',
+                    padding: '2px',
+                    WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                    WebkitMaskComposite: 'xor',
+                    maskComposite: 'exclude'
+                  }}
+                  animate={{
+                    backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: 'linear'
+                  }}
+                />
+              </div>
               {errors.email && (
                 <motion.p
                   id="email-error"
@@ -444,24 +589,53 @@ export function ContactForm() {
               transition={{ delay: 0.3, type: "spring", stiffness: 300 }}
               className="relative group"
             >
-              <Input
-                id="company"
-                {...register('company')}
-                placeholder={`${t('contact.form.fields.company.placeholder')} (Opzionale)`}
-                className={cn(
-                  'h-12 sm:h-14 text-base sm:text-lg px-4 transition-all duration-300',
-                  'bg-white/50 backdrop-blur-sm',
-                  'border-2 border-slate-300/50 hover:border-slate-400/70',
-                  'rounded-xl shadow-sm hover:shadow-md',
-                  'focus:border-blue-500 focus:bg-white/70 focus:shadow-lg focus:shadow-blue-500/20 focus:ring-4 focus:ring-blue-500/10 focus:-translate-y-0.5',
-                  errors.company && 'border-red-500 bg-red-50/30 shadow-red-500/20',
-                  watchedValues.company && !errors.company && 'border-green-500 bg-green-50/30 shadow-green-500/10'
-                )}
-                aria-invalid={!!errors.company}
-                aria-describedby={errors.company ? 'company-error' : undefined}
-                autoComplete="organization"
-              />
-              <div className="absolute inset-0 rounded-xl bg-blue-500/5 opacity-0 group-focus-within:opacity-100 transition-opacity pointer-events-none" />
+              <div className="relative">
+                <Input
+                  id="company"
+                  {...register('company')}
+                  placeholder={`${t('contact.form.fields.company.placeholder')} (Opzionale)`}
+                  className={cn(
+                    'h-12 sm:h-14 text-base sm:text-lg px-4 transition-all duration-500',
+                    'bg-gradient-to-br from-white to-slate-50/30',
+                    'border-2 border-transparent',
+                    'rounded-xl',
+                    'shadow-[inset_4px_4px_8px_rgba(148,163,184,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.9)]',
+                    'hover:shadow-[inset_5px_5px_10px_rgba(148,163,184,0.15),inset_-5px_-5px_10px_rgba(255,255,255,1)]',
+                    'focus:shadow-[inset_6px_6px_12px_rgba(59,130,246,0.15),inset_-6px_-6px_12px_rgba(255,255,255,1)] focus:ring-0 focus:outline-none',
+                    errors.company && 'shadow-[inset_4px_4px_8px_rgba(239,68,68,0.2),inset_-4px_-4px_8px_rgba(255,255,255,0.9)]',
+                    watchedValues.company && !errors.company && 'shadow-[inset_4px_4px_8px_rgba(34,197,94,0.15),inset_-4px_-4px_8px_rgba(255,255,255,0.9)]'
+                  )}
+                  style={{
+                    background: errors.company
+                      ? 'linear-gradient(145deg, #fef2f2, #ffffff)'
+                      : watchedValues.company && !errors.company
+                        ? 'linear-gradient(145deg, #f0fdf4, #ffffff)'
+                        : 'linear-gradient(145deg, #ffffff, #f8fafc)'
+                  }}
+                  aria-invalid={!!errors.company}
+                  aria-describedby={errors.company ? 'company-error' : undefined}
+                  autoComplete="organization"
+                />
+                <motion.div
+                  className="absolute inset-0 rounded-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-500 pointer-events-none"
+                  style={{
+                    background: 'linear-gradient(90deg, #3b82f6, #8b5cf6, #3b82f6)',
+                    backgroundSize: '200% 200%',
+                    padding: '2px',
+                    WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                    WebkitMaskComposite: 'xor',
+                    maskComposite: 'exclude'
+                  }}
+                  animate={{
+                    backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: 'linear'
+                  }}
+                />
+              </div>
               {errors.company && (
                 <motion.p
                   id="company-error"
@@ -482,27 +656,56 @@ export function ContactForm() {
               transition={{ delay: 0.4, type: "spring", stiffness: 300 }}
               className="relative group"
             >
-              <Input
-                id="phone"
-                {...register('phone')}
-                type="tel"
-                inputMode="tel"
-                pattern="[0-9+\-\s()]*"
-                placeholder={`${t('contact.form.fields.phone.placeholder')} (Opzionale)`}
-                className={cn(
-                  'h-12 sm:h-14 text-base sm:text-lg px-4 transition-all duration-300',
-                  'bg-white/50 backdrop-blur-sm',
-                  'border-2 border-slate-300/50 hover:border-slate-400/70',
-                  'rounded-xl shadow-sm hover:shadow-md',
-                  'focus:border-blue-500 focus:bg-white/70 focus:shadow-lg focus:shadow-blue-500/20 focus:ring-4 focus:ring-blue-500/10 focus:-translate-y-0.5',
-                  errors.phone && 'border-red-500 bg-red-50/30 shadow-red-500/20',
-                  watchedValues.phone && !errors.phone && 'border-green-500 bg-green-50/30 shadow-green-500/10'
-                )}
-                aria-invalid={!!errors.phone}
-                aria-describedby={errors.phone ? 'phone-error' : undefined}
-                autoComplete="tel"
-              />
-              <div className="absolute inset-0 rounded-xl bg-blue-500/5 opacity-0 group-focus-within:opacity-100 transition-opacity pointer-events-none" />
+              <div className="relative">
+                <Input
+                  id="phone"
+                  {...register('phone')}
+                  type="tel"
+                  inputMode="tel"
+                  pattern="[0-9+\-\s()]*"
+                  placeholder={`${t('contact.form.fields.phone.placeholder')} (Opzionale)`}
+                  className={cn(
+                    'h-12 sm:h-14 text-base sm:text-lg px-4 transition-all duration-500',
+                    'bg-gradient-to-br from-white to-slate-50/30',
+                    'border-2 border-transparent',
+                    'rounded-xl',
+                    'shadow-[inset_4px_4px_8px_rgba(148,163,184,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.9)]',
+                    'hover:shadow-[inset_5px_5px_10px_rgba(148,163,184,0.15),inset_-5px_-5px_10px_rgba(255,255,255,1)]',
+                    'focus:shadow-[inset_6px_6px_12px_rgba(59,130,246,0.15),inset_-6px_-6px_12px_rgba(255,255,255,1)] focus:ring-0 focus:outline-none',
+                    errors.phone && 'shadow-[inset_4px_4px_8px_rgba(239,68,68,0.2),inset_-4px_-4px_8px_rgba(255,255,255,0.9)]',
+                    watchedValues.phone && !errors.phone && 'shadow-[inset_4px_4px_8px_rgba(34,197,94,0.15),inset_-4px_-4px_8px_rgba(255,255,255,0.9)]'
+                  )}
+                  style={{
+                    background: errors.phone
+                      ? 'linear-gradient(145deg, #fef2f2, #ffffff)'
+                      : watchedValues.phone && !errors.phone
+                        ? 'linear-gradient(145deg, #f0fdf4, #ffffff)'
+                        : 'linear-gradient(145deg, #ffffff, #f8fafc)'
+                  }}
+                  aria-invalid={!!errors.phone}
+                  aria-describedby={errors.phone ? 'phone-error' : undefined}
+                  autoComplete="tel"
+                />
+                <motion.div
+                  className="absolute inset-0 rounded-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-500 pointer-events-none"
+                  style={{
+                    background: 'linear-gradient(90deg, #3b82f6, #8b5cf6, #3b82f6)',
+                    backgroundSize: '200% 200%',
+                    padding: '2px',
+                    WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                    WebkitMaskComposite: 'xor',
+                    maskComposite: 'exclude'
+                  }}
+                  animate={{
+                    backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: 'linear'
+                  }}
+                />
+              </div>
               {errors.phone && (
                 <motion.p
                   id="phone-error"
@@ -524,24 +727,53 @@ export function ContactForm() {
             transition={{ delay: 0.5, type: "spring", stiffness: 300 }}
             className="relative group"
           >
-            <Textarea
-              id="message"
-              {...register('message')}
-              placeholder={t('contact.form.fields.message.placeholder')}
-              rows={5}
-              className={cn(
-                'text-base sm:text-lg px-4 py-3 transition-all duration-300 resize-none',
-                'bg-white/50 backdrop-blur-sm',
-                'border-2 border-slate-300/50 hover:border-slate-400/70',
-                'rounded-xl shadow-sm hover:shadow-md',
-                'focus:border-blue-500 focus:bg-white/70 focus:shadow-lg focus:shadow-blue-500/20 focus:ring-4 focus:ring-blue-500/10 focus:-translate-y-0.5',
-                errors.message && 'border-red-500 bg-red-50/30 shadow-red-500/20',
-                watchedValues.message && !errors.message && 'border-green-500 bg-green-50/30 shadow-green-500/10'
-              )}
-              aria-invalid={!!errors.message}
-              aria-describedby={errors.message ? 'message-error' : undefined}
-            />
-            <div className="absolute inset-0 rounded-xl bg-blue-500/5 opacity-0 group-focus-within:opacity-100 transition-opacity pointer-events-none" />
+            <div className="relative">
+              <Textarea
+                id="message"
+                {...register('message')}
+                placeholder={t('contact.form.fields.message.placeholder')}
+                rows={5}
+                className={cn(
+                  'text-base sm:text-lg px-4 py-3 transition-all duration-500 resize-none',
+                  'bg-gradient-to-br from-white to-slate-50/30',
+                  'border-2 border-transparent',
+                  'rounded-xl',
+                  'shadow-[inset_4px_4px_8px_rgba(148,163,184,0.1),inset_-4px_-4px_8px_rgba(255,255,255,0.9)]',
+                  'hover:shadow-[inset_5px_5px_10px_rgba(148,163,184,0.15),inset_-5px_-5px_10px_rgba(255,255,255,1)]',
+                  'focus:shadow-[inset_6px_6px_12px_rgba(59,130,246,0.15),inset_-6px_-6px_12px_rgba(255,255,255,1)] focus:ring-0 focus:outline-none',
+                  errors.message && 'shadow-[inset_4px_4px_8px_rgba(239,68,68,0.2),inset_-4px_-4px_8px_rgba(255,255,255,0.9)]',
+                  watchedValues.message && !errors.message && 'shadow-[inset_4px_4px_8px_rgba(34,197,94,0.15),inset_-4px_-4px_8px_rgba(255,255,255,0.9)]'
+                )}
+                style={{
+                  background: errors.message
+                    ? 'linear-gradient(145deg, #fef2f2, #ffffff)'
+                    : watchedValues.message && !errors.message
+                      ? 'linear-gradient(145deg, #f0fdf4, #ffffff)'
+                      : 'linear-gradient(145deg, #ffffff, #f8fafc)'
+                }}
+                aria-invalid={!!errors.message}
+                aria-describedby={errors.message ? 'message-error' : undefined}
+              />
+              <motion.div
+                className="absolute inset-0 rounded-xl opacity-0 group-focus-within:opacity-100 transition-opacity duration-500 pointer-events-none"
+                style={{
+                  background: 'linear-gradient(90deg, #3b82f6, #8b5cf6, #3b82f6)',
+                  backgroundSize: '200% 200%',
+                  padding: '2px',
+                  WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                  WebkitMaskComposite: 'xor',
+                  maskComposite: 'exclude'
+                }}
+                animate={{
+                  backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: 'linear'
+                }}
+              />
+            </div>
             {errors.message && (
               <motion.p
                 id="message-error"
@@ -556,13 +788,16 @@ export function ContactForm() {
             )}
           </motion.div>
 
-          {/* Enhanced Privacy Checkbox */}
+          {/* Privacy Checkbox - Neomorphism */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, type: "spring", stiffness: 300 }}
             whileHover={shouldReduceMotion ? {} : { scale: 1.01 }}
-            className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 bg-gradient-to-br from-slate-50/50 to-blue-50/30 backdrop-blur-sm rounded-xl border border-slate-200/50 shadow-inner hover:border-blue-300/50 hover:from-blue-50/40 hover:to-purple-50/30 transition-all duration-300"
+            className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl border border-slate-200/30 shadow-[4px_4px_8px_rgba(148,163,184,0.12),-4px_-4px_8px_rgba(255,255,255,0.8)] hover:shadow-[5px_5px_10px_rgba(148,163,184,0.15),-5px_-5px_10px_rgba(255,255,255,0.9)] transition-all duration-500"
+            style={{
+              background: 'linear-gradient(145deg, #ffffff, #f8fafc)'
+            }}
           >
             <Controller
               name="privacy"
@@ -608,64 +843,85 @@ export function ContactForm() {
             </motion.div>
           )}
 
-          {/* Enhanced Submit Button with Conversion Optimization */}
-          <motion.button
-            type="submit"
-            disabled={isSubmitting || !privacyAccepted}
-            className={cn(
-              "group relative overflow-hidden w-full min-h-[44px] py-3 px-6 md:py-4 md:px-8 rounded-2xl text-white font-bold text-base sm:text-lg md:text-xl transition-all duration-500 transform focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2",
-              isValid && privacyAccepted
-                ? "bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 hover:scale-105 cursor-pointer border-2 border-blue-400/30 hover:border-purple-400/50 shadow-2xl shadow-blue-600/30 hover:shadow-purple-600/40"
-                : "bg-slate-400 cursor-not-allowed shadow-lg"
-            )}
-            whileHover={shouldReduceMotion ? {} : {
-              scale: !isSubmitting && privacyAccepted && isValid ? 1.02 : 1,
-              y: !isSubmitting && privacyAccepted && isValid ? -4 : 0,
-              boxShadow: "0 25px 50px -12px rgba(30, 64, 175, 0.6)"
-            }}
-            whileTap={shouldReduceMotion ? {} : { scale: !isSubmitting && privacyAccepted && isValid ? 0.98 : 1 }}
-            aria-label={isSubmitting ? t('contact.form.submitting') : t('contact.form.submit')}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, type: "spring", stiffness: 300 }}
-          >
-            {/* Animated background */}
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
-              initial={{ x: '-100%' }}
-              whileHover={{ x: '100%' }}
-              transition={{ duration: 0.8, repeat: Infinity }}
-            />
-
-            {/* Button content */}
-            <div className="relative flex items-center justify-center space-x-4">
-              {isSubmitting ? (
-                <>
-                  <motion.div
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                    className="w-6 h-6 border-3 border-white border-t-transparent rounded-full"
-                    aria-hidden="true"
-                  />
-                  <span>{t('contact.form.submitting')}</span>
-                </>
-              ) : (
-                <>
-                  <span className="tracking-wide">{t('contact.form.submit')}</span>
-                  <motion.div
-                    className="flex items-center justify-center"
-                    whileHover={{ x: 5 }}
-                    transition={{ type: "spring", stiffness: 400 }}
-                  >
-                    <Send className="w-6 h-6" aria-hidden="true" />
-                  </motion.div>
-                </>
+          {/* Submit Button - Neomorphism Premium */}
+          <div className="relative">
+            <motion.button
+              type="submit"
+              disabled={isSubmitting || !privacyAccepted}
+              className={cn(
+                "group relative overflow-hidden w-full min-h-[44px] py-3 px-6 md:py-4 md:px-8 rounded-2xl text-white font-bold text-base sm:text-lg md:text-xl transition-all duration-500 transform focus-visible:outline-2 focus-visible:outline-white focus-visible:outline-offset-2",
+                isValid && privacyAccepted
+                  ? "bg-gradient-to-r from-blue-600 to-purple-600 shadow-[8px_8px_16px_rgba(59,130,246,0.3),-8px_-8px_16px_rgba(139,92,246,0.2)] hover:shadow-[12px_12px_24px_rgba(59,130,246,0.4),-12px_-12px_24px_rgba(139,92,246,0.3)] cursor-pointer"
+                  : "bg-slate-400 shadow-[4px_4px_8px_rgba(148,163,184,0.3)] cursor-not-allowed"
               )}
-            </div>
+              whileHover={shouldReduceMotion ? {} : {
+                scale: !isSubmitting && privacyAccepted && isValid ? 1.02 : 1,
+                y: !isSubmitting && privacyAccepted && isValid ? -4 : 0
+              }}
+              whileTap={shouldReduceMotion ? {} : { scale: !isSubmitting && privacyAccepted && isValid ? 0.98 : 1 }}
+              aria-label={isSubmitting ? t('contact.form.submitting') : t('contact.form.submit')}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7, type: "spring", stiffness: 300 }}
+            >
+              {/* Animated gradient border */}
+              {isValid && privacyAccepted && (
+                <motion.div
+                  className="absolute inset-0 rounded-2xl"
+                  style={{
+                    background: 'linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6)',
+                    backgroundSize: '300% 300%',
+                    padding: '2px',
+                    WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                    WebkitMaskComposite: 'xor',
+                    maskComposite: 'exclude'
+                  }}
+                  animate={{
+                    backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: 'linear'
+                  }}
+                />
+              )}
 
-            {/* Glow effect */}
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 blur-xl opacity-50 group-hover:opacity-75 -z-10 transition-opacity duration-500" />
-          </motion.button>
+              {/* Shine effect */}
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
+                initial={{ x: '-100%' }}
+                animate={{ x: '200%' }}
+                transition={{ duration: 3, repeat: Infinity, repeatDelay: 1 }}
+              />
+
+              {/* Button content */}
+              <div className="relative flex items-center justify-center space-x-4">
+                {isSubmitting ? (
+                  <>
+                    <motion.div
+                      animate={{ rotate: 360 }}
+                      transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                      className="w-6 h-6 border-3 border-white border-t-transparent rounded-full"
+                      aria-hidden="true"
+                    />
+                    <span>{t('contact.form.submitting')}</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="tracking-wide">{t('contact.form.submit')}</span>
+                    <motion.div
+                      className="flex items-center justify-center"
+                      whileHover={{ x: 5 }}
+                      transition={{ type: "spring", stiffness: 400 }}
+                    >
+                      <Send className="w-6 h-6" aria-hidden="true" />
+                    </motion.div>
+                  </>
+                )}
+              </div>
+            </motion.button>
+          </div>
 
           {/* Conversion-focused footer */}
           <motion.div
